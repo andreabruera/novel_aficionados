@@ -5,4 +5,4 @@ l=($(wc -l $1))
 lines=${l[0]}
 count=$(expr $lines / 2 + 1)
 echo $count
-split -a 1 -l $count filename.txt ${1}_part_
+split -a 1 -l $count $1 ${1}_part_
