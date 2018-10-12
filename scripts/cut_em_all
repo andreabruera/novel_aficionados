@@ -1,0 +1,3 @@
+#! /bin/bash
+
+find ../novels -iname '*.txt' -exec ./bash_cut {} \;
