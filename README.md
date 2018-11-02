@@ -10,7 +10,7 @@
 </div>
   <p>In order to verify the effectiveness of the model at building semantic representations of the characters, for each novel I will use two tests.</p>
   <ol>
-  <li>For the first one (the reference test) I will first split each text in two parts, obtaining all the characters’ representations twice, one for each part. Then, I’ll check if the system is able to correctly match the representations taken from one part of the novel with those coming from the other part - i.e. if the model is able to correctly match (and distinguish) characters. </li>
-    <li>The second one (the fidelity test) will check to what extent each character’s semantic representation extracted from a novel matches the one extracted from the corresponding character’s description on Wikipedia (hence, an informatively rich description) - i.e. if the model is able to build faithful representations of the characters. This will be done, of course, only for the novels that have a Wikipedia page, and a sufficiently detailed one.</li>
+  <li>For the first one (the <strong>reference test</strong>) I will first split each text in two parts, obtaining all the characters’ representations twice, one for each part. Then, I’ll check if the system is able to correctly match the representations taken from one part of the novel with those coming from the other part - i.e. if the model is able to correctly match (and distinguish) characters. </li>
+  <li>The second one (the <strong>fidelity test</strong>) will check to what extent each character’s semantic representation extracted from a novel matches the one extracted from the corresponding character’s description on Wikipedia (hence, an informatively rich description) - i.e. if the model is able to build faithful representations of the characters. This will be done, of course, only for the novels that have a Wikipedia page, and a sufficiently detailed one.</li>
   </ol>
 </html>
