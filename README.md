@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<strong>Novel Aficionados - <em>learning semantic representations of individuals from limited linguistic data</em></strong><br><br>
+<strong>Fast Mapping for Novel Aficionados: <em>learning semantic representations of individuals from limited linguistic data</em></strong><br><br>
 <div>
   <p>The final goal is to be able to generate a faithful semantic representation for each character within a novel. The representations would have to be clearly distinguishable from each other, reflecting the unicity of each individual character in a novel. Furthermore, and this is a crucial point, these representations would have to faithfully represent the main semantic features of each entity, reflecting the original properties of the individual character.</p>
 </div>
