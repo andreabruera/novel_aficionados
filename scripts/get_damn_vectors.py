@@ -79,7 +79,7 @@ def _cosine_similarity(peer_v, query_v):
     return num / (math.sqrt(den_a) * math.sqrt(den_b))
 
 
-results=open('results.txt','w')
+results=open('results/results.txt','w')
 #results_unsorted=open('results_unsorted.txt','w')
 for key in characters_vectors:
     good_vector=numpy.array(characters_vectors[key],dtype=float)
@@ -93,6 +93,6 @@ for key in characters_vectors:
     sorted_simil_dict=sorted(simil_dict,reverse=True)
     for s in sorted_simil_dict:    
     #for s in simil_dict:    
-        results.write('\t{} - similarity: {}\n'.format(s,simil_dict[s]))
+        results.write('\t{} - {}\n'.format(s,simil_dict[s].replace('_308_clean.txt_','_').replace('_ready.character_vectors','')))
         #results_unsorted.write('\t{} - similarity: {}\n'.format(s,simil_dict[s]))
 
