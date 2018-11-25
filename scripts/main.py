@@ -15,9 +15,9 @@ import numpy as np
 
 import gensim
 
-import utilities
-
 from gensim.models import Word2Vec
+
+import nonce2vec.utils.utilities
 
 import nonce2vec.utils.config as cutils
 import nonce2vec.utils.files as futils
@@ -26,7 +26,7 @@ from nonce2vec.models.nonce2vec import Nonce2Vec, Nonce2VecVocab, \
                                        Nonce2VecTrainables
 from nonce2vec.utils.files import Samples
 
-from utilities import *
+from nonce2vec.utils.utilities import *
 
 logging.config.dictConfig(
     cutils.load(
@@ -66,7 +66,7 @@ def _load_nonce2vec_model(args, nonce):
     model.vocabulary = Nonce2VecVocab.load(model.vocabulary)
     model.trainables = Nonce2VecTrainables.load(model.trainables)
     model.sg = 1
-    #model.min_count = 1  # min_count should be the same as the background model!!
+    model.min_count = 5  # min_count should be the same as the background model!!
     model.sample = args.sample
     logger.info('Running original n2v code for replication...')
     if args.sample is None:
@@ -98,32 +98,6 @@ def _load_nonce2vec_model(args, nonce):
     logger.info('Model loaded')
     return model
 
-def _test_on_novel(args):
-
-    char_list=get_characters_list(novel)
-    books_list=get_books_list(novel)
-
-    for book in books_list:
-        with open(book) as b:
-            lines=b.readlines()
-            for c in char_list:
-                if type(c)!=list:
-                   character=str(c)
-                elif type(c)==list:
-                   character=str(c[0])
-                out_file=open('{}.character_vectors'.format(book),'w')
-                model=_load_nonce2vec_model(args,character)
-                model.vocabulary.nonce=character
-                for l in lines:
-                    line=lines.strip('\n').strip('\b').split(' ')
-                    sentence=[line]
-                    vocab_size=len(model.wv.vocab)
-                    model.build_vocab(sentence, update=True)
-                    if not args.sum_only:
-                        model.train(sentence, total_examples=model.corpus_count,epochs=model.iter)
-                character_vector=model.wv[character]
-                out_file.write('{}\t{}\n'.format(character,character_vector)
-
 def _test_on_chimeras(args):
     nonce = '___'
     rhos = []
@@ -151,7 +125,7 @@ def _test_on_chimeras(args):
         # model.wv.index2word.append('___')
         vocab_size = len(model.wv.vocab)
         logger.info('vocab size = {}'.format(vocab_size))
-        model.build_vocab(sentences, update=True)
+        model.build_vocab(novel_count,sentences, update=True)
         if not args.sum_only:
             model.train(sentences, total_examples=model.corpus_count,
                         epochs=model.iter)
@@ -222,9 +196,6 @@ def _test_on_nonces(args):
                                                      rank)
         num_sent += 1
     logger.info('Final MRR =  {}'.format(relative_ranks/count))
-
-def _test_on_novels(args):
-    
 
 def _get_men_pairs_and_sim(men_dataset):
     pairs = []
@@ -304,7 +275,7 @@ def _test(args):
     elif args.on == 'nonces':
         _test_on_nonces(args)
     elif args.on == 'novels':
-        _test_on_novels(args)
+        test_on_novel(args)
 
 
 def main():
@@ -385,3 +356,46 @@ def main():
                                   'sum initialization')
     args = parser.parse_args()
     args.func(args)
+
+#########################################################################################
+
+def test_on_novel(args):
+
+    char_list=get_characters_list(args.dataset)
+    books_list=get_books_list(args.dataset)
+    nonce='___'
+
+    for version in books_list:
+        out_file=open('{}.character_vectors'.format(version),'w')
+        for character in char_list:
+            novel_count=1
+
+            similarities_out=open('{}_{}.top_similarities'.format(character,version),'w')
+
+            model=_load_nonce2vec_model(args, nonce)
+            model.vocabulary.nonce=nonce
+
+            w2v_vocab=[key for key in model.wv.vocab]
+            logger.info('Lenghth of vocabulary: {}'.format(len(w2v_vocab)))
+
+            sent_list,sent_vocab_list=get_novel_sentences(version,w2v_vocab,character)
+            logger.info('\nlist of sentences created!\n')
+            logger.info('Number of total sentences: {}'.format(len(sent_list)))
+
+            for index,sentence in enumerate(sent_list):
+                if '___' in sentence:
+                    vocab_sentence=[sentence]
+                    logger.info('{}'.format(vocab_sentence))
+                    model.build_vocab(novel_count,vocab_sentence, update=True)
+                    vocab_size=len(model.wv.vocab)
+                    logger.info('vocab size = {}'.format(vocab_size))
+                    logger.info('nonce: {}'.format(character))
+                    logger.info('\n\nsentence: {}\n\n'.format(sentence))
+                    if not args.sum_only:
+                        model.train(vocab_sentence, total_examples=model.corpus_count,epochs=model.iter)
+                        top_similarities=model.most_similar(nonce,topn=20)
+                        logger.info('\n\n{}\n\n'.format(top_similarities))
+                        similarities_out.write('{} - Sentence n. {}\t {}:\t{}\n\n'.format(character, novel_count,vocab_sentence,top_similarities))
+                    novel_count+=1
+            character_vector=model.wv[nonce]
+            out_file.write('{}\t{}\n'.format(character,character_vector))
