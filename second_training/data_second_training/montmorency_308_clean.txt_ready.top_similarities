@@ -1,0 +1,360 @@
+montmorency - Sentence n. 0
+ Alpha: Current alpha: 1.014388242751048
+
+Words: [['george', 'and', 'harris', 'and', '___', 'are', 'not', 'poetic', 'ideals', 'but', 'things', 'of', 'flesh', 'and', 'blood', 'especially', 'george', 'who', 'weighs', 'about', 'twelve', 'stone']]
+Top similarities:[('concision', 0.45314860343933105), ('metaphors', 0.43543562293052673), ('imagism', 0.4353356957435608), ('suggestiveness', 0.4229711890220642), ('individuality', 0.4184197783470154), ('idealize', 0.4176235795021057), ('lyricism', 0.4165664315223694), ('aestheticism', 0.41604849696159363), ('epigrammatic', 0.4131224453449249), ('ingenuous', 0.41145893931388855), ('sentimentality', 0.4101289212703705), ('poetic', 0.40827250480651855), ('generalities', 0.4055593013763428), ('niceties', 0.4039812386035919), ('conceits', 0.4034910798072815), ('womanly', 0.40171247720718384), ('irony', 0.40067028999328613), ('imaginative', 0.3998069763183594), ('dispassionately', 0.39909374713897705), ('sense', 0.3988712430000305)]
+
+montmorency - Sentence n. 1
+ Alpha: Current alpha: 1.0
+
+Words: [['three', 'invalids', 'sufferings', 'of', 'george', 'and', 'harris', 'a', 'victim', 'to', 'one', 'hundred', 'and', 'seven', 'fatal', 'maladies', 'useful', 'prescriptions', 'cure', 'for', 'liver', 'complaint', 'in', 'children', 'we', 'agree', 'that', 'we', 'are', 'overworked', 'and', 'need', 'rest', 'a', 'week', 'on', 'the', 'rolling', 'deep', 'george', 'suggests', 'the', 'river', '___', 'lodges', 'an', 'objection', 'original', 'motion', 'carried', 'by', 'majority', 'of', 'three', 'to', 'one']]
+Top similarities:[('sameness', 0.36535564064979553), ('timelessness', 0.36203110218048096), ('concision', 0.35610657930374146), ('imagism', 0.34499967098236084), ('meanderings', 0.3423643112182617), ('undulations', 0.3412262201309204), ('discernable', 0.34031444787979126), ('imaginative', 0.33905237913131714), ('expansive', 0.3370978832244873), ('lyricism', 0.33698326349258423), ('hopefulness', 0.33693134784698486), ('ironic', 0.33314698934555054), ('absurdity', 0.3330920934677124), ('aesthetic', 0.3312664330005646), ('non-rational', 0.3304513990879059), ('unhurried', 0.3299722671508789), ('irony', 0.3256564438343048), ('presupposes', 0.3251473605632782), ('metaphorical', 0.3237265944480896), ('lyrical', 0.32265663146972656)]
+
+montmorency - Sentence n. 2
+ Alpha: Current alpha: 0.9858158423524046
+
+Words: [['there', 'were', 'four', 'of', 'us', 'george', 'and', 'william', 'samuel', 'harris', 'and', 'myself', 'and', '___']]
+Top similarities:[('rolling', 0.2681644558906555), ('darent', 0.22559508681297302), ('thro', 0.2248534858226776), ('vedder', 0.21114978194236755), ('to-morrow', 0.2063072919845581), ('okkervil', 0.20587164163589478), ('goodge', 0.20414230227470398), ('‘if', 0.20244520902633667), ('rea', 0.2016485631465912), ('carmans', 0.20102018117904663), ('end”', 0.2006543129682541), ('embanked', 0.20028701424598694), ('lethem', 0.1997283548116684), ('“there', 0.19655928015708923), ('that-', 0.19155378639698029), ('podmore', 0.19139361381530762), ('over”', 0.19021514058113098), ('jarrard', 0.19008275866508484), ('…the', 0.18983711302280426), ('escott', 0.18907180428504944)]
+
+montmorency - Sentence n. 3
+ Alpha: Current alpha: 0.9718328750329811
+
+Words: [['picture', '___', 'the', 'only', 'one', 'who', 'was', 'not', 'struck', 'with', 'the', 'suggestion', 'was', '___']]
+Top similarities:[('struck', 0.38816016912460327), ('post-hypnotic', 0.3729170858860016), ('overruling', 0.3581162095069885), ('overruled', 0.35500475764274597), ('!bgcolor=#cccccc', 0.34649282693862915), ('foreseeability', 0.3454575836658478), ('overrule', 0.3411721885204315), ('overturned', 0.34065550565719604), ('inexplicable', 0.3400763273239136), ('__notoc__', 0.33509987592697144), ('downburst', 0.33418649435043335), ('!date', 0.33288487792015076), ('anti-sodomy', 0.33171355724334717), ('flinching', 0.33079904317855835), ('near-miss', 0.3294789791107178), ('overturn', 0.3276230990886688), ('unintentional', 0.3270006775856018), ('crippling', 0.3268624544143677), ('microburst', 0.3253086507320404), ('negate', 0.32455217838287354)]
+
+montmorency - Sentence n. 4
+ Alpha: Current alpha: 0.9580482443263975
+
+Words: [['he', 'never', 'did', 'care', 'for', 'the', 'river', 'did', '___']]
+Top similarities:[('__notoc__', 0.3719695806503296), ('malingering', 0.342763215303421), ('categoryliving', 0.33788949251174927), ('traumatised', 0.3355455696582794), ('!bgcolor=#cccccc', 0.3342544436454773), ('neuroleptics', 0.3325607478618622), ('seriously', 0.33128178119659424), ('really', 0.33060020208358765), ('doesn’t', 0.32949402928352356), ('anti-depressants', 0.32856255769729614), ('didn’t', 0.3283758759498596), ('might', 0.3257731795310974), ('alcohol-induced', 0.3247717022895813), ('psychosocial', 0.32436031103134155), ('iatrogenic', 0.32341131567955017), ('doesnt', 0.32190150022506714), ('afflicted', 0.32163792848587036), ('elderly', 0.3209960460662842), ('ill', 0.3208732306957245), ('post-hypnotic', 0.3208039104938507)]
+
+montmorency - Sentence n. 5
+ Alpha: Current alpha: 0.9444591369948698
+
+Words: [['plans', 'discussed', 'pleasures', 'of', 'camping', 'out', 'on', 'fine', 'nights', 'ditto', 'wet', 'nights', 'compromise', 'decided', 'on', '___', 'first', 'impressions', 'of', 'fears', 'lest', 'he', 'is', 'too', 'good', 'for', 'this', 'world', 'fears', 'subsequently', 'dismissed', 'as', 'groundless', 'meeting']]
+Top similarities:[('feverish', 0.3052856922149658), ('myself', 0.29728251695632935), ('well!', 0.29571980237960815), ('long?', 0.29392093420028687), ('‘i', 0.2898993492126465), ('ravings', 0.2863156795501709), ('“keep', 0.2859911322593689), ('uncomfortably', 0.2834487855434418), ('soiled', 0.2793887257575989), ('groaned', 0.2781871557235718), ('my', 0.27363699674606323), ('fevered', 0.27315402030944824), ('alas!', 0.27314865589141846), ('away!', 0.2718560993671417), ('chandar', 0.2697354257106781), ('you’', 0.2685222625732422), ('“i', 0.26782771944999695), ('maybe', 0.26767128705978394), ('pammi', 0.2658792734146118), ('shrug', 0.2650083899497986)]
+
+montmorency - Sentence n. 6
+ Alpha: Current alpha: 0.9310627797040227
+
+Words: [['___', 'hailed', 'this', 'compromise', 'with', 'much', 'approval']]
+Top similarities:[('shrug', 0.24945661425590515), ('well!', 0.24866239726543427), ('kaikeyi', 0.24711059033870697), ('overdone', 0.2454649955034256), ('“keep', 0.2444327473640442), ('debera', 0.23884645104408264), ('vibhishana', 0.23884159326553345), ('salutary', 0.23740831017494202), ('feverish', 0.23718051612377167), ('ogress', 0.2368706613779068), ('junayd', 0.2366638332605362), ('al-hajjaj', 0.23637926578521729), ('you’', 0.2359929084777832), ('kumayl', 0.23555852472782135), ('indiaglitz', 0.2318556159734726), ('nastiness', 0.2311454862356186), ('aristagoras', 0.22918537259101868), ('odaenathus', 0.22828911244869232), ('embolden', 0.22792886197566986), ('alas!', 0.22738735377788544)]
+
+montmorency - Sentence n. 7
+ Alpha: Current alpha: 0.9178564384568926
+
+Words: [['to', 'look', 'at', '___', 'you', 'would', 'imagine', 'that', 'he', 'was', 'an', 'angel', 'sent', 'upon', 'the', 'earth', 'for', 'some', 'reason', 'withheld', 'from', 'mankind', 'in', 'the', 'shape', 'of', 'a', 'small', 'fox', 'terrier']]
+Top similarities:[('me', 0.3439611792564392), ('lord!', 0.3405303955078125), ('aristagoras', 0.33871525526046753), ('you’', 0.3325607180595398), ('“keep', 0.332038551568985), ('away!', 0.32988178730010986), ('my', 0.3276851177215576), ('forevers', 0.32168006896972656), ('gelimer', 0.3169800639152527), ('voulez-vous', 0.31457895040512085), ('groaned', 0.31353145837783813), ('!bgcolor=#cccccc', 0.3116533160209656), ('soul!', 0.31105536222457886), ('it!', 0.309456467628479), ('strike!', 0.3086223006248474), ('crucify', 0.3068218231201172), ('myself', 0.30601802468299866), ('allahs', 0.30497005581855774), ('lacedaemonians', 0.30404913425445557), ('embolden', 0.30358442664146423)]
+
+montmorency - Sentence n. 8
+ Alpha: Current alpha: 0.9048374180359595
+
+Words: [['there', 'is', 'a', 'sort', 'of', 'oh', 'what', 'a', 'wicked', 'world', 'this', 'is', 'and', 'how', 'i', 'wish', 'i', 'could', 'do', 'something', 'to', 'make', 'it', 'better', 'and', 'nobler', 'expression', 'about', '___', 'that', 'has', 'been', 'known', 'to', 'bring', 'the', 'tears', 'into', 'the', 'eyes', 'of', 'pious', 'old', 'ladies', 'and', 'gentlemen']]
+Top similarities:[('hopefulness', 0.406785249710083), ('inmost', 0.37991249561309814), ('expression”', 0.3778965473175049), ('unexpressed', 0.375171422958374), ('concision', 0.37034106254577637), ('timelessness', 0.3602573275566101), ('will”', 0.3587262034416199), ('non-rational', 0.35817185044288635), ('subtlest', 0.355861097574234), ('nobler', 0.3530350923538208), ('alone”', 0.35233333706855774), ('irreducibly', 0.35147690773010254), ('alas!', 0.35065481066703796), ('chimerical', 0.35027605295181274), ('reproducible', 0.3457540273666382), ('potently', 0.3457135558128357), ('indefinable', 0.34520423412323), ('icam-1', 0.34486454725265503), ('artless', 0.34480786323547363), ('limpid', 0.34400486946105957)]
+
+montmorency - Sentence n. 9
+ Alpha: Current alpha: 0.8920030614530944
+
+Words: [['to', 'hang', 'about', 'a', 'stable', 'and', 'collect', 'a', 'gang', 'of', 'the', 'most', 'disreputable', 'dogs', 'to', 'be', 'found', 'in', 'the', 'town', 'and', 'lead', 'them', 'out', 'to', 'march', 'round', 'the', 'slums', 'to', 'fight', 'other', 'disreputable', 'dogs', 'is', '___', 's', 'idea', 'of', 'life', 'and', 'so', 'as', 'i', 'before', 'observed', 'he', 'gave', 'to', 'the', 'suggestion', 'of', 'inns', 'and', 'pubs', 'and', 'hotels', 'his', 'most', 'emphatic', 'approbation']]
+Top similarities:[('will”', 0.3265414237976074), ('hopefulness', 0.3259173631668091), ('expression”', 0.32021579146385193), ('presupposes', 0.31957927346229553), ('expression', 0.3088284730911255), ('surest', 0.30838093161582947), ('anthropocentrism', 0.3067767024040222), ('humanitarianism', 0.3065947890281677), ('cathepsin', 0.3057635426521301), ('self-assertion', 0.3054901361465454), ('icam-1', 0.30467450618743896), ('inmost', 0.3046049177646637), ('…the', 0.30152904987335205), ('ameliorating', 0.298755943775177), ('moralities', 0.2958146929740906), ('humanity”', 0.29494747519493103), ('being”', 0.2945427894592285), ('nobler', 0.29448479413986206), ('potently', 0.2931057810783386), ('darwinian', 0.290595680475235)]
+
+montmorency - Sentence n. 10
+ Alpha: Current alpha: 0.879350749407306
+
+Words: [['the', 'food', 'question', 'objections', 'to', 'oil', 'as', 'an', 'atmosphere', 'advantages', 'of', 'cheese', 'as', 'a', 'travelling', 'companion', 'a', 'married', 'woman', 'deserts', 'her', 'home', 'further', 'provision', 'for', 'getting', 'upset', 'i', 'pack', 'of', 'tooth', 'brushes', 'george', 'and', 'harris', 'pack', 'awful', 'behaviour', 'of', '___', 'we', 'retire', 'to', 'rest']]
+Top similarities:[('surest', 0.32329845428466797), ('hopefulness', 0.3180429935455322), ('will”', 0.3152071237564087), ('inmost', 0.3090786337852478), ('humanitarianism', 0.30547794699668884), ('nobler', 0.29736173152923584), ('ironies', 0.28848788142204285), ('…the', 0.2879803776741028), ('wildness', 0.2847396731376648), ('humanitys', 0.2843000888824463), ('humanity’s', 0.2813746929168701), ('expression”', 0.2791897654533386), ('being”', 0.2790835499763489), ('unflinchingly', 0.27809464931488037), ('love’s', 0.27768266201019287), ('nihilism', 0.2772022783756256), ('suburbia', 0.27500465512275696), ('humankind', 0.27484703063964844), ('epitomises', 0.2738935351371765), ('anticipations', 0.27166587114334106)]
+
+montmorency - Sentence n. 11
+ Alpha: Current alpha: 0.8668778997501816
+
+Words: [['___', 'was', 'in', 'it', 'all', 'of', 'course']]
+Top similarities:[('surest', 0.32329845428466797), ('hopefulness', 0.3180429935455322), ('will”', 0.3152071237564087), ('inmost', 0.3090786337852478), ('humanitarianism', 0.30547794699668884), ('nobler', 0.29736173152923584), ('ironies', 0.28848788142204285), ('…the', 0.2879803776741028), ('wildness', 0.2847396731376648), ('humanitys', 0.2843000888824463), ('humanity’s', 0.2813746929168701), ('expression”', 0.2791897654533386), ('being”', 0.2790835499763489), ('unflinchingly', 0.27809464931488037), ('love’s', 0.27768266201019287), ('nihilism', 0.2772022783756256), ('suburbia', 0.27500465512275696), ('humankind', 0.27484703063964844), ('epitomises', 0.2738935351371765), ('anticipations', 0.27166587114334106)]
+
+montmorency - Sentence n. 12
+ Alpha: Current alpha: 0.8545819669589086
+
+Words: [['___', 's', 'ambition', 'in', 'life', 'is', 'to', 'get', 'in', 'the', 'way', 'and', 'be', 'sworn', 'at']]
+Top similarities:[('surest', 0.3445638418197632), ('will”', 0.3295040726661682), ('hopefulness', 0.32219427824020386), ('nobler', 0.31503725051879883), ('inmost', 0.31368523836135864), ('love’s', 0.3043309450149536), ('wildness', 0.29907387495040894), ('humanitarianism', 0.2975463569164276), ('ironies', 0.29159003496170044), ('…the', 0.2877025604248047), ('suburbia', 0.28715649247169495), ('fondest', 0.2862975597381592), ('prouder', 0.2854419946670532), ('truest', 0.2838805913925171), ('epitomises', 0.2824375331401825), ('better!', 0.2822633385658264), ('expression”', 0.2820459008216858), ('hope', 0.2815612256526947), ('thinkin', 0.2811242341995239), ('anyone’s', 0.2808908224105835)]
+
+montmorency - Sentence n. 13
+ Alpha: Current alpha: 0.8424604416167714
+
+Words: [['___', 'had', 'invited', 'two', 'other', 'dogs', 'to', 'come', 'and', 'see', 'him', 'off', 'and', 'they', 'were', 'away', 'the', 'time', 'by', 'fighting', 'on', 'the', 'doorstep']]
+Top similarities:[('23-0', 0.27991846203804016), ('géminiani', 0.27377548813819885), ('matyushenko', 0.2730509340763092), ('riggs', 0.2729983627796173), ('arenacup', 0.2723243832588196), ('seigaku', 0.27185583114624023), ('juanito', 0.26920121908187866), ('theirs', 0.26800966262817383), ('macklin', 0.2673851251602173), ('sims', 0.2656209468841553), ('pack', 0.2652232050895691), ('jmu', 0.26496195793151855), ('jabbawockeez', 0.26312702894210815), ('mccree', 0.2626652717590332), ('kharitonov', 0.2604336440563202), ('tournament', 0.2575279176235199), ('wallace', 0.25722941756248474), ('nchc', 0.2559237778186798), ('folks!', 0.2553104758262634), ('2017-18', 0.2545086741447449)]
+
+montmorency - Sentence n. 14
+ Alpha: Current alpha: 0.8305108499010163
+
+Words: [['he', 'was', 'evidently', 'in', 'a', 'great', 'hurry', 'when', 'he', 'first', 'dawned', 'upon', 'the', 'vision', 'but', 'on', 'catching', 'sight', 'of', 'harris', 'and', 'me', 'and', '___', 'and', 'the', 'things', 'he', 'eased', 'up', 'and', 'stared']]
+Top similarities:[('faugheen', 0.346693754196167), ('place!', 0.3331420123577118), ('exhilarated', 0.3329647183418274), ('folks!', 0.3284446895122528), ('did!', 0.3261287808418274), ('sight', 0.3242858350276947), ('better!', 0.32411783933639526), ('you’d', 0.32350388169288635), ('gone!', 0.32110822200775146), ('boys!', 0.3202136158943176), ('oooh', 0.3139934539794922), ('schtick', 0.31249740719795227), ('cummings', 0.3124251365661621), ('matyushenko', 0.3120008409023285), ('they’ll', 0.31137970089912415), ('!date', 0.31022942066192627), ('thinkin', 0.30891337990760803), ('mardle', 0.30652281641960144), ('homestretch', 0.3063913881778717), ('heartily', 0.30478429794311523)]
+
+montmorency - Sentence n. 15
+ Alpha: Current alpha: 0.8187307530779818
+
+Words: [['at', 'last', 'an', 'empty', 'cab', 'turned', 'up', 'it', 'is', 'a', 'street', 'where', 'as', 'a', 'rule', 'and', 'when', 'they', 'are', 'not', 'wanted', 'empty', 'cabs', 'pass', 'at', 'the', 'rate', 'of', 'three', 'a', 'minute', 'and', 'hang', 'about', 'and', 'get', 'in', 'your', 'way', 'and', 'packing', 'ourselves', 'and', 'our', 'belongings', 'into', 'it', 'and', 'shooting', 'out', 'a', 'couple', 'of', '___', 's', 'friends', 'who', 'had', 'evidently', 'sworn', 'never', 'to', 'forsake', 'him', 'we', 'drove', 'away', 'amidst', 'the', 'cheers', 'of', 'the', 'crowd', 'biggs', 's', 'boy', 'shying', 'a', 'carrot', 'after', 'us', 'for', 'luck']]
+Top similarities:[('unavailing', 0.26837778091430664), ('thro', 0.26356780529022217), ('unshaken', 0.26142969727516174), ('serenely', 0.2547798454761505), ('harrisons', 0.2484406679868698), ('exhilarated', 0.24640868604183197), ('to-morrow', 0.24315094947814941), ('weary', 0.2427503764629364), ('alas!', 0.24209502339363098), ('brocius', 0.2406974583864212), ('luckily', 0.24041520059108734), ('ewells', 0.2400956153869629), ('unerring', 0.23977944254875183), ('calmly', 0.23896069824695587), ('place!', 0.23851367831230164), ('‘when', 0.2379450798034668), ('unhurried', 0.23702499270439148), ('sight', 0.23573458194732666), ('lo!', 0.23492474853992462), ('…the', 0.23404759168624878)]
+
+montmorency - Sentence n. 16
+ Alpha: Current alpha: 0.8071177470053893
+
+Words: [['right', 'it', 'is', 'we', 'answered', 'and', 'with', 'harris', 'at', 'the', 'sculls', 'and', 'i', 'at', 'the', 'tiller', 'lines', 'and', '___', 'unhappy', 'and', 'deeply', 'suspicious', 'in', 'the', 'prow', 'out', 'we', 'shot', 'on', 'to', 'the', 'waters', 'which', 'for', 'a', 'fortnight', 'were', 'to', 'be', 'our', 'home']]
+Top similarities:[('ayliffe', 0.26928970217704773), ('stupidly', 0.26369011402130127), ('rudderless', 0.26284438371658325), ('unavailing', 0.262569785118103), ('terribly', 0.2536581754684448), ('coyly', 0.25253021717071533), ('shaky', 0.24739302694797516), ('catling', 0.24684308469295502), ('rashly', 0.2466813027858734), ('unromantic', 0.24463841319084167), ('dreadfully', 0.24452292919158936), ('burnard', 0.2434297502040863), ('indignantly', 0.24267420172691345), ('girdlestone', 0.24181461334228516), ('straighten', 0.24138081073760986), ('messed', 0.2406906634569168), ('sellar', 0.23898079991340637), ('mehserle', 0.2378181517124176), ('miln', 0.23773200809955597), ('nathanial', 0.23716925084590912)]
+
+montmorency - Sentence n. 17
+ Alpha: Current alpha: 0.7956694616416928
+
+Words: [['___', 'howled', 'and', 'turned', 'a', 'somersault', 'and', 'the', 'top', 'hamper', 'jumped', 'up', 'and', 'all', 'the', 'things', 'came', 'out']]
+Top similarities:[('rudderless', 0.27373048663139343), ('stupidly', 0.26370638608932495), ('up-and-down', 0.2586820721626282), ('shaky', 0.25830942392349243), ('dreadfully', 0.2570265531539917), ('messed', 0.256670743227005), ('terribly', 0.24677413702011108), ('rashly', 0.24488180875778198), ('ayliffe', 0.24394777417182922), ('unavailing', 0.24339081346988678), ('coyly', 0.24285733699798584), ('lightly', 0.24272504448890686), ('straighten', 0.24193795025348663), ('with”', 0.24158450961112976), ('unsurprisingly', 0.24155867099761963), ('rollin', 0.2404005378484726), ('catling', 0.23818275332450867), ('desultory', 0.23726385831832886), ('seemed', 0.2357901632785797), ('definitely', 0.23512126505374908)]
+
+montmorency - Sentence n. 18
+ Alpha: Current alpha: 0.7843835605623898
+
+Words: [['___', 'set', 'up', 'a', 'furious', 'barking', 'i', 'harris', 'roared', 'george', 'waved', 'his', 'hat', 'and', 'yelled', 'back']]
+Top similarities:[('rudderless', 0.29253706336021423), ('messed', 0.2682051658630371), ('rashly', 0.2598910331726074), ('sideways', 0.2587166428565979), ('shaky', 0.2564961910247803), ('up-and-down', 0.25595977902412415), ('stupidly', 0.2506164312362671), ('steadied', 0.24887359142303467), ('theyd', 0.2409818321466446), ('lurched', 0.24045056104660034), ('bridgett', 0.240022674202919), ('ayliffe', 0.23919236660003662), ('unsurprisingly', 0.23845183849334717), ('podmore', 0.23753497004508972), ('sharons', 0.23730520904064178), ('stanning', 0.23684197664260864), ('bumping', 0.23669403791427612), ('alarmingly', 0.23667652904987335), ('burnard', 0.23601670563220978), ('miln', 0.23589496314525604)]
+
+montmorency - Sentence n. 19
+ Alpha: Current alpha: 0.7732577404831906
+
+Words: [['i', 'had', 'been', 'told', 'to', 'stand', 'where', 'i', 'was', 'and', 'wait', 'till', 'the', 'canvas', 'came', 'to', 'me', 'and', '___', 'and', 'i', 'stood', 'there', 'and', 'waited', 'both', 'as', 'good', 'as', 'gold']]
+Top similarities:[('rudderless', 0.31333789229393005), ('rocking', 0.2963416576385498), ('photo-finish', 0.2955091595649719), ('theyd', 0.29412317276000977), ('oars', 0.2888299822807312), ('see?', 0.28598642349243164), ('she’d', 0.2854353189468384), ('5-track', 0.28477025032043457), ('at?', 0.28442639112472534), ('ive', 0.28410106897354126), ('nickalls', 0.28096848726272583), ('dreadfully', 0.27867361903190613), ('sideways', 0.27798742055892944), ('messed', 0.27732396125793457), ('steadied', 0.2760683298110962), ('hed', 0.275746613740921), ('side-to-side', 0.27550822496414185), ('lightly', 0.27335497736930847), ('podmore', 0.2730943560600281), ('nervously', 0.27288007736206055)]
+
+montmorency - Sentence n. 20
+ Alpha: Current alpha: 0.7622897307899537
+
+Words: [['too', 'and', 'threw', 'his', 'plate', 'out', 'on', 'the', 'bank', 'and', 'three', 'minutes', 'later', 'than', 'that', '___', 'gave', 'the', 'first', 'sign', 'of', 'contentment', 'he', 'had', 'exhibited', 'since', 'we', 'had', 'started', 'and', 'rolled', 'over', 'on', 'his', 'side', 'and', 'spread', 'his', 'legs', 'out', 'and', 'then', 'i', 'said', 'ah']]
+Top similarities:[('oars', 0.2885338366031647), ('podmore', 0.27537772059440613), ('half-finished', 0.26911747455596924), ('side-to-side', 0.26553940773010254), ('she’d', 0.26213350892066956), ('yo!', 0.25771304965019226), ('ndtv', 0.2567988634109497), ('hee-dong', 0.25561270117759705), ('oxen', 0.2513350248336792), ('four-and-a-half', 0.25062432885169983), ('inward', 0.2461688369512558), ('sprightly', 0.2436312735080719), ('rocking', 0.24358417093753815), ('humped', 0.24287942051887512), ('ominous', 0.24226464331150055), ('tummy', 0.24168959259986877), ('three-and-a-half', 0.2388404905796051), ('3½', 0.238460510969162), ('briskly', 0.23827825486660004), ('groaning', 0.2382320761680603)]
+
+montmorency - Sentence n. 21
+ Alpha: Current alpha: 0.751477293075286
+
+Words: [['how', 'george', 'once', 'upon', 'a', 'time', 'got', 'up', 'early', 'in', 'the', 'morning', 'george', 'harris', 'and', '___', 'do', 'not', 'like', 'the', 'look', 'of', 'the', 'cold', 'water', 'heroism', 'and', 'determination', 'on', 'the', 'part', 'of', 'j', 'george', 'and', 'his', 'shirt', 'story', 'with', 'a', 'moral', 'harris', 'as', 'cook', 'historical', 'retrospect', 'specially', 'inserted', 'for', 'the', 'use', 'of', 'schools']]
+Top similarities:[('rippling', 0.29436248540878296), ('graceful', 0.29396629333496094), ('humped', 0.2925601303577423), ('transcendentalism', 0.2866213023662567), ('progress”', 0.28312498331069946), ('imagination”', 0.28156745433807373), ('stilted', 0.2810671329498291), ('simplistically', 0.28094950318336487), ('like', 0.2792239189147949), ('compellingly', 0.2786494195461273), ('abounding', 0.2784295678138733), ('eloquently', 0.2781793475151062), ('there’s', 0.2779574990272522), ('limpid', 0.27644506096839905), ('krehbiel', 0.27589336037635803), ('lippy', 0.27571821212768555), ('“there’s', 0.2748977541923523), ('breimeier', 0.2748950123786926), ('podmore', 0.2745645046234131), ('powerfully', 0.2737608551979065)]
+
+montmorency - Sentence n. 22
+ Alpha: Current alpha: 0.7408182206817179
+
+Words: [['we', 'soon', 'let', 'him', 'know', 'where', 'he', 'was', 'however', 'by', 'the', 'aid', 'of', 'the', 'hitcher', 'and', 'he', 'sat', 'up', 'suddenly', 'sending', '___', 'who', 'had', 'been', 'sleeping', 'the', 'sleep', 'of', 'the', 'just', 'right', 'on', 'the', 'middle', 'of', 'his', 'chest', 'sprawling', 'across', 'the', 'boat']]
+Top similarities:[('whimpering', 0.3216230869293213), ('muttered', 0.3209104537963867), ('things?', 0.3188111484050751), ('they’d', 0.3175548017024994), ('mumbling', 0.315250962972641), ('words”', 0.31492042541503906), ('you’ve', 0.30985552072525024), ('blockhead', 0.3092968165874481), ('mumbled', 0.3090870976448059), ('she’d', 0.3089354932308197), ('blurted', 0.3084613084793091), ('drooling', 0.3081093430519104), ('about”', 0.3053637146949768), ('it’', 0.30319279432296753), ('mustve', 0.3030310571193695), ('‘i', 0.3027218282222748), ('groaning', 0.3017946183681488), ('ive', 0.2991849184036255), ('hed', 0.29887115955352783), ('he’s', 0.29856398701667786)]
+
+montmorency - Sentence n. 23
+ Alpha: Current alpha: 0.7303103382513573
+
+Words: [['___', 'gave', 'vent', 'to', 'an', 'involuntary', 'howl', 'as', 'if', 'merely', 'thinking', 'of', 'the', 'thing', 'had', 'given', 'him', 'the', 'horrors', 'and', 'harris', 'said', 'it', 'would', 'be', 'so', 'difficult', 'to', 'get', 'into', 'the', 'boat', 'again', 'and', 'went', 'back', 'and', 'sorted', 'out', 'his', 'trousers']]
+Top similarities:[('involuntarily', 0.36457327008247375), ('involuntary', 0.32695305347442627), ('semi-conscious', 0.32318317890167236), ('sleep-deprived', 0.31644949316978455), ('woke', 0.30241429805755615), ('intoxicated', 0.29326772689819336), ('plead', 0.2873062491416931), ('screams', 0.2860964834690094), ('sedated', 0.28404393792152405), ('asleep', 0.2807496190071106), ('screaming', 0.28029757738113403), ('trances', 0.27749454975128174), ('earplugs', 0.2771749496459961), ('hysterics', 0.2770332098007202), ('hallucinations', 0.2769290804862976), ('stupor', 0.27688127756118774), ('rainstorm', 0.27639344334602356), ('momentarily', 0.27592241764068604), ('futilely', 0.2756838798522949), ('unwell', 0.2755690813064575)]
+
+montmorency - Sentence n. 24
+ Alpha: Current alpha: 0.7199515012819313
+
+Words: [['___', 'went', 'and', 'put', 'his', 'nose', 'over', 'it', 'once', 'and', 'the', 'fat', 'up', 'and', 'scalded', 'him', 'and', 'then', 'he', 'began', 'dancing', 'and', 'cursing']]
+Top similarities:[('coughing', 0.3822634220123291), ('involuntarily', 0.3746594786643982), ('woke', 0.37289831042289734), ('sleep-deprived', 0.3651963472366333), ('sneeze', 0.35935962200164795), ('drooling', 0.35804882645606995), ('squealing', 0.35411694645881653), ('breath', 0.35406115651130676), ('sneezing', 0.3522626459598541), ('screaming', 0.3507624864578247), ('semi-conscious', 0.35056814551353455), ('asleep', 0.35011589527130127), ('nose', 0.349038302898407), ('whimpering', 0.347149521112442), ('inhales', 0.34308531880378723), ('convulsive', 0.34234943985939026), ('bowels', 0.33980679512023926), ('vomit', 0.3383535146713257), ('eyeball', 0.337057888507843), ('sneezes', 0.33633697032928467)]
+
+montmorency - Sentence n. 25
+ Alpha: Current alpha: 0.7097395956891255
+
+Words: [['marlow', 'bisham', 'abbey', 'the', 'medmenham', 'monks', '___', 'thinks', 'he', 'will', 'murder', 'an', 'old', 'tom', 'cat', 'but', 'eventually', 'decides', 'that', 'he', 'will', 'let', 'it', 'live', 'shameful', 'conduct', 'of', 'a', 'fox', 'terrier', 'at', 'the', 'civil', 'service', 'stores', 'our', 'departure', 'from', 'marlow', 'an', 'imposing', 'procession', 'the', 'steam', 'launch', 'useful', 'receipts', 'for', 'annoying', 'and', 'hindering', 'it', 'we', 'decline', 'to', 'drink', 'the', 'river', 'a', 'peaceful', 'dog', 'strange', 'disappearance', 'of', 'harris', 'and', 'a', 'pie']]
+Top similarities:[('snoring', 0.347828209400177), ('addled', 0.3166866898536682), ('groaning', 0.31575125455856323), ('whimpering', 0.3113235533237457), ('sobbing', 0.3106791377067566), ('muttering', 0.30971062183380127), ('bowels', 0.30859020352363586), ('terrified', 0.3073543310165405), ('woken', 0.3065595030784607), ('yelling', 0.3007524609565735), ('sneeze', 0.2991501986980438), ('sobbed', 0.2972528040409088), ('moaning', 0.29646533727645874), ('howled', 0.2957778573036194), ('coughing', 0.29465988278388977), ('awoken', 0.2929239571094513), ('beringar', 0.29291850328445435), ('parson', 0.29282116889953613), ('haunts', 0.28858864307403564), ('giggling', 0.28749215602874756)]
+
+montmorency - Sentence n. 26
+ Alpha: Current alpha: 0.6996725373751304
+
+Words: [['we', 'got', 'up', 'tolerably', 'early', 'on', 'the', 'monday', 'morning', 'at', 'marlow', 'and', 'went', 'for', 'a', 'bathe', 'before', 'breakfast', 'and', 'coming', 'back', '___', 'made', 'an', 'awful', 'ass', 'of', 'himself']]
+Top similarities:[('snoring', 0.36301785707473755), ('beaky', 0.34432804584503174), ('whimpering', 0.337963730096817), ('spittle', 0.333479106426239), ('laughing', 0.33089643716812134), ('vomit', 0.32681530714035034), ('killjoy', 0.3258606195449829), ('gluttonous', 0.323908269405365), ('whines', 0.3235240578651428), ('moans', 0.32214540243148804), ('addled', 0.32019615173339844), ('torments', 0.3198879659175873), ('yelping', 0.3194954991340637), ('hoarse', 0.3186180591583252), ('torment', 0.3158400356769562), ('piglet', 0.315411776304245), ('grimacing', 0.31522607803344727), ('baying', 0.31340891122817993), ('screams', 0.31294843554496765), ('clucking', 0.312896728515625)]
+
+montmorency - Sentence n. 27
+ Alpha: Current alpha: 0.6897482718033084
+
+Words: [['the', 'only', 'subject', 'on', 'which', '___', 'and', 'i', 'have', 'any', 'serious', 'difference', 'of', 'opinion', 'is', 'cats']]
+Top similarities:[('beaky', 0.3769468665122986), ('bleating', 0.3735790252685547), ('hoarse', 0.3715774416923523), ('snoring', 0.37102317810058594), ('groaning', 0.369528591632843), ('it’', 0.3614835739135742), ('orwell', 0.35751479864120483), ('you’d', 0.3556550443172455), ('whimpering', 0.3551262319087982), ('stooping', 0.3535057306289673), ('chuckling', 0.35340383648872375), ('grunting', 0.3514588177204132), ('grimacing', 0.35075056552886963), ('puffing', 0.34955501556396484), ('…', 0.34839510917663574), ('she’d', 0.346161425113678), ('anorexic', 0.3456465005874634), ('tickled', 0.34330955147743225), ('‘he', 0.3427353501319885), ('characterful', 0.3415739834308624)]
+
+montmorency - Sentence n. 28
+ Alpha: Current alpha: 0.6799647735788938
+
+Words: [['i', 'like', 'cats', '___', 'does', 'not']]
+Top similarities:[('snoring', 0.3832166790962219), ('grimacing', 0.3651580512523651), ('groaning', 0.3624348044395447), ('bleating', 0.3562833070755005), ('clucking', 0.3532049059867859), ('whimpering', 0.3459673225879669), ('beaky', 0.34205979108810425), ('grunting', 0.3366583585739136), ('words”', 0.33553043007850647), ('hoarse', 0.33388450741767883), ('tickled', 0.3309888243675232), ('swallowing', 0.33084896206855774), ('anesthetized', 0.33070114254951477), ('urinate', 0.33048850297927856), ('‘i', 0.3278292715549469), ('pig', 0.32676857709884644), ('pigs', 0.32555484771728516), ('fowls', 0.324258416891098), ('self-mutilation', 0.3230687081813812), ('she’d', 0.32281506061553955)]
+
+montmorency - Sentence n. 29
+ Alpha: Current alpha: 0.6703200460356393
+
+Words: [['when', '___', 'meets', 'a', 'cat', 'the', 'whole', 'street', 'knows', 'about', 'it', 'and', 'there', 'is', 'enough', 'bad', 'language', 'wasted', 'in', 'ten', 'seconds', 'to', 'last', 'an', 'ordinarily', 'respectable', 'man', 'all', 'his', 'life', 'with', 'care']]
+Top similarities:[('snoring', 0.39494892954826355), ('bleating', 0.368308961391449), ('groaning', 0.3557503819465637), ('grimacing', 0.35574838519096375), ('whimpering', 0.3494858741760254), ('beaky', 0.3454551100730896), ('clucking', 0.34522175788879395), ('pig', 0.331881582736969), ('stooping', 0.33054178953170776), ('urinate', 0.330294668674469), ('laughing', 0.3297829031944275), ('alehouse', 0.32603418827056885), ('pot-bellied', 0.3257867693901062), ('words”', 0.3211856484413147), ('anorexic', 0.32031893730163574), ('wheezing', 0.3183565139770508), ('fowls', 0.3182336688041687), ('prosaically', 0.3172736167907715), ('characterful', 0.3168756663799286), ('tickled', 0.31555187702178955)]
+
+montmorency - Sentence n. 30
+ Alpha: Current alpha: 0.6608121208283264
+
+Words: [['such', 'is', 'the', 'nature', 'of', 'fox', 'terriers', 'and', 'therefore', 'i', 'do', 'not', 'blame', '___', 'for', 'his', 'tendency', 'to', 'row', 'with', 'cats', 'but', 'he', 'wished', 'he', 'had', 'not', 'given', 'way', 'to', 'it', 'that', 'morning']]
+Top similarities:[('hadnt', 0.2961275577545166), ('telephoned', 0.27864617109298706), ('had', 0.27663668990135193), ('affidavit', 0.27087029814720154), ('knew', 0.2706436514854431), ('didnt', 0.2678951323032379), ('phoned', 0.26697710156440735), ('passer-by', 0.26672783493995667), ('mehserle', 0.2658028304576874), ('beforehand', 0.26454100012779236), ('unwell', 0.2644466757774353), ('she’d', 0.26306912302970886), ('hadn’t', 0.26290494203567505), ('gualino', 0.2619468867778778), ('hed', 0.2619059383869171), ('furnari', 0.2614805996417999), ('bagarella', 0.2612699866294861), ('didn’t', 0.26036906242370605), ('theyd', 0.25786393880844116), ('“was', 0.2575015127658844)]
+
+montmorency - Sentence n. 31
+ Alpha: Current alpha: 0.6514390575310556
+
+Words: [['___', 'gave', 'a', 'cry', 'of', 'joy', 'the', 'cry', 'of', 'a', 'stern', 'warrior', 'who', 'sees', 'his', 'enemy', 'given', 'over', 'to', 'his', 'hands', 'the', 'sort', 'of', 'cry', 'cromwell', 'might', 'have', 'uttered', 'when', 'the', 'scots', 'came', 'down', 'the', 'hill', 'and', 'flew', 'after', 'his', 'prey']]
+Top similarities:[('‘if', 0.3607504069805145), ('unavailing', 0.34861862659454346), ('alas!', 0.3377145826816559), ('myself', 0.3126988410949707), ('‘oh', 0.31014400720596313), ('anybodys', 0.3070845901966095), ('gratified', 0.30659499764442444), ('scroggs', 0.3049998879432678), ('deplore', 0.30323630571365356), ('hadn’t', 0.30304384231567383), ('sobbed', 0.301214337348938), ('alone”', 0.30067121982574463), ('‘that', 0.29954272508621216), ('sic', 0.29912692308425903), ('ruefully', 0.29873862862586975), ('haven’t', 0.29771876335144043), ('sincerely', 0.2974260151386261), ('quipping', 0.2921004593372345), ('regret', 0.2917701005935669), ('“so', 0.2915108799934387)]
+
+montmorency - Sentence n. 32
+ Alpha: Current alpha: 0.6421989432412342
+
+Words: [['___', 'went', 'for', 'that', 'poor', 'cat', 'at', 'the', 'rate', 'of', 'twenty', 'miles', 'an', 'hour', 'but', 'the', 'cat', 'did', 'not', 'hurry', 'up', 'did', 'not', 'seem', 'to', 'have', 'grasped', 'the', 'idea', 'that', 'its', 'life', 'was', 'in', 'danger']]
+Top similarities:[('alas!', 0.3483259677886963), ('alone”', 0.3364683985710144), ('misery', 0.3329508602619171), ('hopefulness', 0.3311403691768646), ('quipping', 0.329815536737442), ('it’', 0.32944461703300476), ('toil', 0.32547473907470703), ('despair', 0.32153797149658203), ('sorrow', 0.3178069293498993), ('self-examination', 0.3177765905857086), ('anybodys', 0.3169637620449066), ('gratified', 0.31610018014907837), ('inconsolable', 0.3150842785835266), ('did!', 0.31500551104545593), ('exhilarated', 0.314976304769516), ('thered', 0.31300875544548035), ('‘if', 0.312151163816452), ('‘oh', 0.31166714429855347), ('better?', 0.3098542094230652), ('utter', 0.30840003490448)]
+
+montmorency - Sentence n. 33
+ Alpha: Current alpha: 0.6330898921891813
+
+Words: [['it', 'trotted', 'quietly', 'on', 'until', 'its', 'would', 'be', 'assassin', 'was', 'within', 'a', 'yard', 'of', 'it', 'and', 'then', 'it', 'turned', 'round', 'and', 'sat', 'down', 'in', 'the', 'middle', 'of', 'the', 'road', 'and', 'looked', 'at', '___', 'with', 'a', 'gentle', 'inquiring', 'expression', 'that', 'said', 'yes']]
+Top similarities:[('self-examination', 0.3367406129837036), ('‘oh', 0.3287256360054016), ('inmost', 0.3195710778236389), ('‘when', 0.3145681321620941), ('so!', 0.3131219148635864), ('chuckling', 0.3122132420539856), ('away?', 0.31093770265579224), ('about”', 0.3108821511268616), ('it’', 0.307492733001709), ('end”', 0.30646440386772156), ('loudest', 0.30512797832489014), ('bellowing', 0.305002897977829), ('weirder', 0.304579496383667), ('laughter', 0.30178821086883545), ('turiya', 0.3014175593852997), ('bleating', 0.3013807535171509), ('did!', 0.3010755777359009), ('hoarse', 0.30106833577156067), ('heaven’s', 0.3010483682155609), ('thered', 0.3008143901824951)]
+
+montmorency - Sentence n. 34
+ Alpha: Current alpha: 0.6241100453532709
+
+Words: [['___', 'does', 'not', 'lack', 'pluck', 'but', 'there', 'was', 'something', 'about', 'the', 'look', 'of', 'that', 'cat', 'that', 'might', 'have', 'chilled', 'the', 'heart', 'of', 'the', 'boldest', 'dog']]
+Top similarities:[('loudest', 0.27997148036956787), ('alarm', 0.2587154805660248), ('questions?', 0.24942468106746674), ('ikh', 0.24672004580497742), ('allahu', 0.24468202888965607), ('shul', 0.24460768699645996), ('baitul', 0.24400001764297485), ('questioners', 0.24263691902160645), ('kuh-e', 0.24210268259048462), ('so!', 0.24074727296829224), ('akashvani', 0.23712345957756042), ('am?', 0.23497465252876282), ('wakeup', 0.23480093479156494), ('ajaan', 0.23477783799171448), ('hooting', 0.23307402431964874), ('webcast', 0.2313826084136963), ('away?', 0.23070365190505981), ('next?', 0.23060929775238037), ('intoned', 0.23021826148033142), ('defcon', 0.22992616891860962)]
+
+montmorency - Sentence n. 35
+ Alpha: Current alpha: 0.6152575700805322
+
+Words: [['___', 'no', 'no', 'thanks']]
+Top similarities:[('loudest', 0.31600314378738403), ('alarm', 0.3108561038970947), ('on-the-air', 0.2971994876861572), ('so!', 0.29580575227737427), ('am?', 0.2939252257347107), ('before?', 0.29259753227233887), ('questions?', 0.2921048402786255), ('possible?', 0.289593368768692), ('questioners', 0.2893281877040863), ('excited', 0.2893083095550537), ('hooting', 0.28891098499298096), ('away?', 0.2885649800300598), ('defcon', 0.28832948207855225), ('next?', 0.2869609296321869), ('xfm', 0.28665125370025635), ('heaven’s', 0.28603869676589966), ('knbr', 0.2853441834449768), ('“everyone', 0.283777117729187), ('wakeup', 0.28336477279663086), ('laughter', 0.2806186378002167)]
+
+montmorency - Sentence n. 36
+ Alpha: Current alpha: 0.6065306597126334
+
+Words: [['___', 'backing', 'down', 'the', 'high', 'street', 'oh', 'no', 'not', 'at', 'all', 'certainly', 'don', 't', 'you', 'trouble']]
+Top similarities:[('so!', 0.33586692810058594), ('am?', 0.3226512670516968), ('loudest', 0.31106260418891907), ('shit!', 0.3039030134677887), ('tonight?', 0.3038121461868286), ('before?', 0.3005259037017822), ('playlisted', 0.2974594831466675), ('away?', 0.2970988154411316), ('questions?', 0.29579612612724304), ('one!', 0.29527515172958374), ('xfm', 0.2945275604724884), ('shoulda', 0.29249924421310425), ('intoned', 0.2920183539390564), ('yeah', 0.2899673581123352), ('harnell', 0.2890937924385071), ('‘oh', 0.28805267810821533), ('scroobius', 0.2868054509162903), ('song!', 0.2863861322402954), ('night!', 0.2854403555393219), ('lord?', 0.2850041091442108)]
+
+montmorency - Sentence n. 37
+ Alpha: Current alpha: 0.5979275332171694
+
+Words: [['___', 'still', 'backing', 'not', 'at', 'all', 'thanks', 'not', 'at', 'all', 'very', 'kind', 'of', 'you']]
+Top similarities:[('so!', 0.3494158983230591), ('am?', 0.3342057466506958), ('loudest', 0.31875941157341003), ('shit!', 0.3136541247367859), ('tonight?', 0.3114456832408905), ('before?', 0.30879324674606323), ('away?', 0.3055296540260315), ('one!', 0.3043826222419739), ('song!', 0.3042236566543579), ('ive', 0.30349448323249817), ('‘oh', 0.3001976013183594), ('yeah', 0.29658353328704834), ('playlisted', 0.2965765595436096), ('night!', 0.29647618532180786), ('shoulda', 0.2951083779335022), ('lord?', 0.2949345111846924), ('did!', 0.2948564291000366), ('intoned', 0.29465803503990173), ('questions?', 0.2939549684524536), ('“we’ve', 0.2936553955078125)]
+
+montmorency - Sentence n. 38
+ Alpha: Current alpha: 0.5894464348241792
+
+Words: [['then', 'the', 'cat', 'rose', 'and', 'continued', 'his', 'trot', 'and', '___', 'fitting', 'what', 'he', 'calls', 'his', 'tail', 'carefully', 'into', 'its', 'groove', 'came', 'back', 'to', 'us', 'and', 'took', 'up', 'an', 'unimportant', 'position', 'in', 'the', 'rear']]
+Top similarities:[('out?', 0.30833011865615845), ('am?', 0.30592554807662964), ('‘well', 0.3016982972621918), ('lord?', 0.3012266159057617), ('whatll', 0.29797127842903137), ('then?', 0.29608792066574097), ('ive', 0.29499679803848267), ('intoned', 0.2933485507965088), ('shit!', 0.2922624945640564), ('gone!', 0.29221227765083313), ('need?', 0.2914623022079468), ('about”', 0.2912656366825104), ('so!', 0.289422869682312), ('before?', 0.28768718242645264), ('did!', 0.2860652208328247), ('thered', 0.28495028614997864), ('happy?', 0.2813567519187927), ('‘oh', 0.28097814321517944), ('yknow', 0.27983468770980835), ('about?', 0.2796485424041748)]
+
+montmorency - Sentence n. 39
+ Alpha: Current alpha: 0.5810856336678201
+
+Words: [['to', '___', 'he', 'will', 'visibly', 'shrink', 'and', 'look', 'up', 'at', 'you', 'as', 'if', 'to', 'say', 'please', 'don', 't']]
+Top similarities:[('yeah', 0.36821961402893066), ('it!', 0.367246150970459), ('no!', 0.35896921157836914), ('squeaking', 0.35359400510787964), ('know?', 0.35355982184410095), ('shit!', 0.3490864038467407), ('groaned', 0.3484621047973633), ('soundbox', 0.34831809997558594), ('dog!', 0.34698155522346497), ('b/w', 0.3469148278236389), ('am?', 0.3464409112930298), ('c/w', 0.34637144207954407), ('that!', 0.34502866864204407), ('whistle', 0.3436809182167053), ('out?', 0.3432265818119049), ('clucking', 0.34105974435806274), ('crazy!', 0.3401528298854828), ('darlin', 0.33895277976989746), ('so!', 0.3365477919578552), ('night!', 0.33560049533843994)]
+
+montmorency - Sentence n. 40
+ Alpha: Current alpha: 0.5728434234331229
+
+Words: [['the', 'order', 'of', 'the', 'procession', 'was', 'as', 'follows', '___', 'carrying', 'a', 'stick']]
+Top similarities:[('squeaking', 0.32548150420188904), ('no!', 0.3170585036277771), ('b/w', 0.31654202938079834), ('it!', 0.3148763179779053), ('clucking', 0.3139791190624237), ('whistle', 0.3138974905014038), ('yeah', 0.313240647315979), ('bellowing', 0.3117910325527191), ('exhaling', 0.3104623556137085), ('out?', 0.30992722511291504), ('night?', 0.3091135025024414), ('c/w', 0.30899620056152344), ('shit!', 0.308472603559494), ('groaned', 0.30819445848464966), ('night!', 0.3072960078716278), ('hooting', 0.30643585324287415), ('soundbox', 0.3064082860946655), ('crazy!', 0.306272953748703), ('chime', 0.3025744557380676), ('that!', 0.30097758769989014)]
+
+montmorency - Sentence n. 41
+ Alpha: Current alpha: 0.5647181220077593
+
+Words: [['two', 'disreputable', 'looking', 'friends', 'of', '___', 's']]
+Top similarities:[('lord?', 0.36543506383895874), ('bellowing', 0.36089015007019043), ('groaned', 0.3521440029144287), ('so!', 0.3506510555744171), ('alas!', 0.34950506687164307), ('tonight?', 0.34895944595336914), ('ive', 0.3485680818557739), ('no!', 0.34715235233306885), ('hooting', 0.3458274006843567), ('crazy!', 0.34429290890693665), ('‘oh', 0.34177643060684204), ('shit!', 0.34053367376327515), ('dog!', 0.3396463990211487), ('it!', 0.3385204076766968), ('gone!', 0.3377150893211365), ('yeah', 0.33570605516433716), ('night?', 0.3352331519126892), ('b/w', 0.33344438672065735), ('laughter', 0.33318138122558594), ('licked', 0.33266013860702515)]
+
+montmorency - Sentence n. 42
+ Alpha: Current alpha: 0.5567080711387471
+
+Words: [['wargrave', 'waxworks', 'sonning', 'our', 'stew', '___', 'is', 'sarcastic', 'fight', 'between', '___', 'and', 'the', 'tea', 'kettle', 'george', 's', 'banjo', 'studies', 'meet', 'with', 'discouragement', 'difficulties', 'in', 'the', 'way', 'of', 'the', 'musical', 'amateur', 'learning', 'to', 'play', 'the', 'bagpipes', 'harris', 'feels', 'sad', 'after', 'supper', 'george', 'and', 'i', 'go', 'for', 'a', 'walk', 'return', 'hungry', 'and', 'wet', 'there', 'is', 'a', 'strangeness', 'about', 'harris', 'harris', 'and', 'the', 'swans', 'a', 'remarkable', 'story', 'harris', 'has', 'a', 'troubled', 'night']]
+Top similarities:[('!bgcolor=#cccccc', 0.5170339345932007), ('!date', 0.5092560052871704), ('__notoc__', 0.49032720923423767), ('gone!', 0.4585113227367401), ('her!', 0.4540506601333618), ('brother?', 0.4532068073749542), ('categoryliving', 0.44965964555740356), ('did!', 0.447248250246048), ('away?', 0.4425969421863556), ('anyway', 0.44035160541534424), ('|}', 0.43919286131858826), ('am?', 0.43758732080459595), ('everyones', 0.4342474341392517), ('alone!', 0.43114256858825684), ('everyone', 0.4290071725845337), ('head!', 0.427418053150177), ('victory!', 0.42713209986686707), ('me/', 0.4238271117210388), ('country!', 0.42301902174949646), ('money!', 0.42286649346351624)]
+
+montmorency - Sentence n. 43
+ Alpha: Current alpha: 0.5488116360940264
+
+Words: [['i', 'forget', 'the', 'other', 'ingredients', 'but', 'i', 'know', 'nothing', 'was', 'wasted', 'and', 'i', 'remember', 'that', 'towards', 'the', 'end', '___', 'who', 'had', 'evinced', 'great', 'interest', 'in', 'the', 'proceedings', 'throughout', 'strolled', 'away', 'with', 'an', 'earnest', 'and', 'thoughtful', 'air', 'reappearing', 'a', 'few', 'minutes', 'afterwards', 'with', 'a', 'dead', 'water', 'rat', 'in', 'his', 'mouth', 'which', 'he', 'evidently', 'wished', 'to', 'present', 'as', 'his', 'contribution', 'to', 'the', 'dinner', 'whether', 'in', 'a', 'sarcastic', 'spirit', 'or', 'with', 'a', 'genuine', 'desire', 'to', 'assist', 'i', 'cannot', 'say']]
+Top similarities:[('her!', 0.34858959913253784), ('ladyship', 0.3432476222515106), ('clamouring', 0.34270909428596497), ('maráthás', 0.34089481830596924), ('sympathy', 0.34034889936447144), ('mustnt', 0.33715561032295227), ('rancour', 0.3369844853878021), ('forbear', 0.3341897130012512), ('everyones', 0.3282284438610077), ('beseech', 0.3268669545650482), ('everyone', 0.326865553855896), ('bygones', 0.32685625553131104), ('momín', 0.3261084258556366), ('comrades', 0.3247826397418976), ('money!', 0.3227313756942749), ('gratefully', 0.32200148701667786), ('applause', 0.31943318247795105), ('indignation', 0.31723594665527344), ('humbly', 0.31612882018089294), ('gone!', 0.3152496814727783)]
+
+montmorency - Sentence n. 44
+ Alpha: Current alpha: 0.541027205328834
+
+Words: [['___', 'had', 'a', 'fight', 'with', 'the', 'kettle', 'during', 'tea', 'time', 'and', 'came', 'off', 'a', 'poor', 'second']]
+Top similarities:[('unavailing', 0.33224424719810486), ('clamouring', 0.3234822452068329), ('her!', 0.3219624161720276), ('kosoko', 0.319552481174469), ('maráthás', 0.31448400020599365), ('rajoys', 0.31224948167800903), ('ex-confederates', 0.3099294900894165), ('tashons', 0.30803656578063965), ('me/', 0.3062441945075989), ('to-morrow', 0.3031293749809265), ('us!', 0.30228307843208313), ('rohillas', 0.30222272872924805), ('lord?', 0.3018491864204407), ('momín', 0.30113160610198975), ('everyones', 0.3011292815208435), ('beseech', 0.3008967638015747), ('country!', 0.2988659739494324), ('sympathy', 0.29659608006477356), ('chaudhrys', 0.2940203547477722), ('gratefully', 0.29355284571647644)]
+
+montmorency - Sentence n. 45
+ Alpha: Current alpha: 0.5333531901568119
+
+Words: [['picture', '___', 'and', 'the', 'kettle', 'ah']]
+Top similarities:[('her!', 0.37175992131233215), ('lord?', 0.36830294132232666), ('me/', 0.35797542333602905), ('brother?', 0.3541916608810425), ('gone!', 0.34563297033309937), ('kosoko', 0.34509897232055664), ('father!', 0.3430444300174713), ('“now', 0.3358447551727295), ('nizam-ul-mulk', 0.3355404734611511), ('heart?', 0.3353915214538574), ('alas!', 0.3353198170661926), ('tashons', 0.33231449127197266), ('did!', 0.33205634355545044), ('country!', 0.3311132788658142), ('unavailing', 0.33083677291870117), ('us!', 0.3302083909511566), ('death!', 0.3292074203491211), ('money!', 0.3291028141975403), ('misuari', 0.32880455255508423), ('jám', 0.3280442953109741)]
+
+montmorency - Sentence n. 46
+ Alpha: Current alpha: 0.5257880244257798
+
+Words: [['growled', '___', 'showing', 'his', 'teeth', 'i', 'll', 'teach', 'ye', 'to', 'cheek', 'a', 'hard', 'working', 'respectable', 'dog', 'ye', 'miserable', 'long', 'nosed', 'dirty', 'looking', 'scoundrel', 'ye']]
+Top similarities:[('gi-tae', 0.28657567501068115), ('gratefully', 0.2771228551864624), ('obligingly', 0.2728842496871948), ('granddad', 0.2712523937225342), ('drunkenly', 0.27119123935699463), ('calmly', 0.27101218700408936), ('exclaiming', 0.27092444896698), ('englishmen', 0.27066588401794434), ('farquharson', 0.2703544497489929), ('excitedly', 0.2693440914154053), ('hankey', 0.2664411664009094), ('dismissively', 0.26424044370651245), ('sobbed', 0.2637733817100525), ('fainted', 0.2616364359855652), ('shouted', 0.2604503035545349), ('kellestine', 0.2601574659347534), ('yelled', 0.25796160101890564), ('young-min', 0.25766801834106445), ('niggers', 0.25757932662963867), ('akinwande', 0.2547878324985504)]
+
+montmorency - Sentence n. 47
+ Alpha: Current alpha: 0.5183301641981067
+
+Words: [['then', 'across', 'the', 'evening', 'stillness', 'broke', 'a', 'blood', 'curdling', 'yelp', 'and', '___', 'left', 'the', 'boat', 'and', 'did', 'a', 'constitutional', 'three', 'times', 'round', 'the', 'island', 'at', 'the', 'rate', 'of', 'thirty', 'five', 'miles', 'an', 'hour', 'stopping', 'every', 'now', 'and', 'then', 'to', 'bury', 'his', 'nose', 'in', 'a', 'bit', 'of', 'cool', 'mud']]
+Top similarities:[('gi-tae', 0.33603304624557495), ('fainted', 0.32020923495292664), ('loudly', 0.31376713514328003), ('gasps', 0.3120883107185364), ('nervously', 0.31017011404037476), ('vomited', 0.30730879306793213), ('curdling', 0.3032985329627991), ('threateningly', 0.29749175906181335), ('chandar', 0.2966266870498657), ('leotardo', 0.2963906228542328), ('malnourishment', 0.29621684551239014), ('young-min', 0.29464274644851685), ('whines', 0.293714702129364), ('whiti', 0.2923372983932495), ('calmly', 0.29233479499816895), ('coughs', 0.2922478914260864), ('cries', 0.29211947321891785), ('drunkenly', 0.2910269498825073), ('jeers', 0.28884848952293396), ('sobbed', 0.2871476113796234)]
+
+montmorency - Sentence n. 48
+ Alpha: Current alpha: 0.5109780874356169
+
+Words: [['from', 'that', 'day', '___', 'regarded', 'the', 'kettle', 'with', 'a', 'mixture', 'of', 'awe', 'suspicion', 'and', 'hate']]
+Top similarities:[('curdling', 0.3232659697532654), ('gi-tae', 0.30651378631591797), ('belching', 0.29684698581695557), ('gasps', 0.29568445682525635), ('nibbling', 0.2948039174079895), ('loudly', 0.2925384044647217), ('outcries', 0.28938567638397217), ('stoically', 0.28801029920578003), ('threateningly', 0.2865571081638336), ('fainted', 0.2864767611026764), ('vomited', 0.28491148352622986), ('turd', 0.2846590280532837), ('whiti', 0.28321295976638794), ('shechita', 0.2824873924255371), ('mutunga', 0.2816326916217804), ('calmly', 0.2796771824359894), ('sipped', 0.2787337005138397), ('cries', 0.2785181403160095), ('laughter', 0.2773708999156952), ('coughs', 0.2765827775001526)]
+
+montmorency - Sentence n. 49
+ Alpha: Current alpha: 0.5037302936889633
+
+Words: [['harris', 's', 'language', 'used', 'to', 'be', 'enough', 'to', 'any', 'man', 'added', 'to', 'which', '___', 'would', 'sit', 'and', 'howl', 'steadily', 'right', 'through', 'the', 'performance']]
+Top similarities:[('curdling', 0.32744213938713074), ('gi-tae', 0.3101375699043274), ('vomited', 0.3055804669857025), ('jerked', 0.30275124311447144), ('belching', 0.3017041087150574), ('sipped', 0.29886841773986816), ('gasps', 0.2983130216598511), ('loudly', 0.2939137816429138), ('hollering', 0.29333704710006714), ('threateningly', 0.2904972434043884), ('simmered', 0.29045727849006653), ('sugared', 0.2900328040122986), ('nibbling', 0.289797306060791), ('massaged', 0.2890093922615051), ('saaphyri', 0.2886029779911041), ('fainted', 0.28747016191482544), ('calmly', 0.2869513928890228), ('groaned', 0.2868019938468933), ('wrong”', 0.28462451696395874), ('nervously', 0.2834504246711731)]
+
+montmorency - Sentence n. 50
+ Alpha: Current alpha: 0.4965853037914095
+
+Words: [['it', 'was', 'a', 'dismal', 'night', 'with', 'a', 'thin', 'rain', 'falling', 'and', 'as', 'we', 'through', 'the', 'dark', 'silent', 'fields', 'talking', 'low', 'to', 'each', 'other', 'and', 'wondering', 'if', 'we', 'were', 'going', 'right', 'or', 'not', 'we', 'thought', 'of', 'the', 'cosy', 'boat', 'with', 'the', 'bright', 'light', 'streaming', 'through', 'the', 'tight', 'drawn', 'canvas', 'of', 'harris', 'and', '___', 'and', 'the', 'whisky', 'and', 'wished', 'that', 'we', 'were', 'there']]
+Top similarities:[('curdling', 0.3327801525592804), ('simmered', 0.3145751953125), ('unadulterated', 0.3141763508319855), ('blood”', 0.3017826974391937), ('boiled', 0.2996079921722412), ('doenjang', 0.29659366607666016), ('outcries', 0.29658570885658264), ('sipped', 0.29544541239738464), ('sugared', 0.2938113808631897), ('uncooked', 0.2936149835586548), ('laughter', 0.29132944345474243), ('ghee', 0.29087454080581665), ('curds', 0.2904563844203949), ('suet', 0.29022741317749023), ('minced', 0.29005998373031616), ('air-dried', 0.2892390787601471), ('loudly', 0.2892257869243622), ('will”', 0.28918394446372986), ('belching', 0.2885380685329437), ('more?', 0.28723105788230896)]
+
+montmorency - Sentence n. 51
+ Alpha: Current alpha: 0.4895416595569531
+
+Words: [['music', 'of', 'the', 'darkness', 'we', 'heard', 'the', 'answering', 'bark', 'of', '___']]
+Top similarities:[('curdling', 0.33245205879211426), ('unadulterated', 0.3097747564315796), ('blood”', 0.30712658166885376), ('simmered', 0.30480653047561646), ('boiled', 0.3026631772518158), ('sipped', 0.3005343973636627), ('uncooked', 0.2909884750843048), ('chewed', 0.2904893159866333), ('sugared', 0.28992000222206116), ('vomited', 0.2896551787853241), ('soaked', 0.2894657850265503), ('laughter', 0.28813737630844116), ('doenjang', 0.2873800992965698), ('coughs', 0.28676411509513855), ('groaned', 0.285255491733551), ('belching', 0.28468334674835205), ('bitterness', 0.2842911183834076), ('air-dried', 0.2838280200958252), ('suet', 0.2834962010383606), ('gasps', 0.28322991728782654)]
+
+montmorency - Sentence n. 52
+ Alpha: Current alpha: 0.48259792348273184
+
+Words: [['the', 'swans', 'had', 'tried', 'to', 'drag', 'him', 'and', '___', 'out', 'of', 'the', 'boat', 'and', 'drown', 'them', 'and', 'he', 'had', 'defended', 'himself', 'like', 'a', 'hero', 'for', 'four', 'hours', 'and', 'had', 'killed', 'the', 'lot', 'and', 'they', 'had', 'all', 'paddled', 'away', 'to', 'die']]
+Top similarities:[('curdling', 0.33445218205451965), ('vomited', 0.3260420560836792), ('groaned', 0.31390291452407837), ('chewed', 0.3100108802318573), ('boiled', 0.3099920153617859), ('suet', 0.3093871474266052), ('cried', 0.3063575029373169), ('sipped', 0.304676353931427), ('uncooked', 0.3003188371658325), ('loudly', 0.3001334071159363), ('blood”', 0.29795902967453003), ('air-dried', 0.29608583450317383), ('blanched', 0.2944979667663574), ('lord?', 0.2937172055244446), ('soaked', 0.29035043716430664), ('jerked', 0.2898644804954529), ('unwashed', 0.28927353024482727), ('spilt', 0.28907305002212524), ('minced', 0.2855980396270752), ('wonton', 0.28525540232658386)]
+
+montmorency - Sentence n. 53
+ Alpha: Current alpha: 0.4757526784556506
+
+Words: [['___', 'looked', 'as', 'if', 'he', 'knew', 'something', 'but', 'said', 'nothing']]
+Top similarities:[('vomited', 0.33611637353897095), ('groaned', 0.3311994671821594), ('cried', 0.32659831643104553), ('curdling', 0.32308292388916016), ('lord?', 0.3111364543437958), ('chewed', 0.3078973591327667), ('loudly', 0.3011205196380615), ('then?', 0.29817256331443787), ('sipped', 0.2972918748855591), ('wrong”', 0.2941822409629822), ('blood”', 0.2937448024749756), ('suet', 0.2924826145172119), ('jerked', 0.29142075777053833), ('me/', 0.2898250222206116), ('unwashed', 0.2888641059398651), ('turd', 0.2886163890361786), ('spilt', 0.28734254837036133), ('blanched', 0.2873038053512573), ('boiled', 0.2869323492050171), ('whoever', 0.2845258116722107)]
+
+montmorency - Sentence n. 54
+ Alpha: Current alpha: 0.4690045274631699
+
+Words: [['we', 'had', 'intended', 'to', 'push', 'on', 'to', 'wallingford', 'that', 'day', 'but', 'the', 'sweet', 'smiling', 'face', 'of', 'the', 'river', 'here', 'lured', 'us', 'to', 'linger', 'for', 'a', 'while', 'and', 'so', 'we', 'left', 'our', 'boat', 'at', 'the', 'bridge', 'and', 'went', 'up', 'into', 'streatley', 'and', 'lunched', 'at', 'the', 'bull', 'much', 'to', '___', 's', 'satisfaction']]
+Top similarities:[('unwashed', 0.3710232377052307), ('groaned', 0.37099435925483704), ('curdling', 0.3438999652862549), ('lord?', 0.3400118350982666), ('groaning', 0.3396471440792084), ('dripping', 0.334684282541275), ('nibbling', 0.33115988969802856), ('belching', 0.3303663730621338), ('clammy', 0.32904863357543945), ('swabs', 0.32806316018104553), ('perspiration', 0.32504329085350037), ('blanching', 0.32300251722335815), ('effectually', 0.3226407468318939), ('distension', 0.32244282960891724), ('undigested', 0.32201847434043884), ('alas!', 0.3200069069862366), ('wheezing', 0.3183364272117615), ('aching', 0.3174770474433899), ('excreting', 0.3169649541378021), ('excrement', 0.3150399923324585)]
+
+montmorency - Sentence n. 55
+ Alpha: Current alpha: 0.4623520933081963
+
+Words: [['oxford', '___', 's', 'idea', 'of', 'heaven', 'the', 'hired', 'up', 'river', 'boat', 'its', 'beauties', 'and', 'advantages', 'the', 'pride', 'of', 'the', 'thames']]
+Top similarities:[('groaned', 0.3829026222229004), ('unwashed', 0.3586188554763794), ('lord?', 0.3431151509284973), ('perspiration', 0.3339807689189911), ('curdling', 0.3333468437194824), ('nibbling', 0.32798299193382263), ('groaning', 0.3253052234649658), ('dripping', 0.3248300850391388), ('blood”', 0.32463985681533813), ('swabs', 0.32020705938339233), ('wringing', 0.31809794902801514), ('alas!', 0.31587809324264526), ('forbear', 0.3157570958137512), ('sinews', 0.3130292296409607), ('turd', 0.31177854537963867), ('vomit', 0.3111743927001953), ('vomited', 0.3108501434326172), ('lakish', 0.3093167543411255), ('illumined', 0.3068675994873047), ('belching', 0.30551329255104065)]
+
+montmorency - Sentence n. 56
+ Alpha: Current alpha: 0.4557940183280172
+
+Words: [['___', 'had', 'eleven', 'fights', 'on', 'the', 'first', 'day', 'and', 'fourteen', 'on', 'the', 'second', 'and', 'evidently', 'thought', 'he', 'had', 'got', 'to', 'heaven']]
+Top similarities:[('groaned', 0.3590575158596039), ('lord?', 0.3265678286552429), ('blood”', 0.3142710328102112), ('unwashed', 0.30672648549079895), ('perspiration', 0.30436864495277405), ('groaning', 0.3019619584083557), ('swabs', 0.3018927574157715), ('nibbling', 0.3003286123275757), ('“never', 0.29924437403678894), ('uncircumcised', 0.29590338468551636), ('inoculating', 0.2954083979129791), ('‘old', 0.2946300506591797), ('turd', 0.29427993297576904), ('iniquity', 0.29406365752220154), ('watchfulness', 0.2935514450073242), ('vomited', 0.2917545735836029), ('forbear', 0.29164472222328186), ('gapes', 0.2913060784339905), ('sodomites', 0.29023465514183044), ('sinews', 0.2865346074104309)]
+
+montmorency - Sentence n. 57
+ Alpha: Current alpha: 0.44932896411722156
+
+Words: [['i', 'felt', 'i', 'wanted', 'whitebait', 'and', 'a', 'cutlet', 'harris', 'of', 'soles', 'and', 'white', 'sauce', 'and', 'passed', 'the', 'remains', 'of', 'his', 'pie', 'to', '___', 'who', 'declined', 'it', 'and', 'apparently', 'insulted', 'by', 'the', 'offer', 'went', 'and', 'sat', 'over', 'at', 'the', 'other', 'end', 'of', 'the', 'boat', 'by', 'himself']]
+Top similarities:[('groaned', 0.3492256700992584), ('unwashed', 0.3353569805622101), ('inoculating', 0.3177964389324188), ('lord?', 0.3156089782714844), ('‘old', 0.31383949518203735), ('swabs', 0.31189996004104614), ('illumined', 0.30663037300109863), ('blood”', 0.3050296902656555), ('distemper', 0.29873043298721313), ('shew', 0.2978556752204895), ('perspiration', 0.29571348428726196), ('aspirates', 0.2951624095439911), ('sodomites', 0.2946520149707794), ('gapes', 0.29234039783477783), ('groaning', 0.2916782796382904), ('unmanly', 0.29158419370651245), ('curdling', 0.29122161865234375), ('dripping', 0.2908473014831543), ('turd', 0.289157509803772), ('alas!', 0.2882575988769531)]
+
+montmorency - Sentence n. 58
+ Alpha: Current alpha: 0.4429556112545522
+
+Words: [['we', 'reached', 'paddington', 'at', 'seven', 'and', 'drove', 'direct', 'to', 'the', 'restaurant', 'i', 'have', 'before', 'described', 'where', 'we', 'partook', 'of', 'a', 'light', 'meal', 'left', '___', 'together', 'with', 'suggestions', 'for', 'a', 'supper', 'to', 'be', 'ready', 'at', 'half', 'past', 'ten', 'and', 'then', 'continued', 'our', 'way', 'to', 'leicester', 'square']]
+Top similarities:[('groaned', 0.3708958625793457), ('illumined', 0.3486260771751404), ('communicants', 0.344821959733963), ('sackcloth', 0.34469354152679443), ('wearied', 0.3397541642189026), ('lord?', 0.3397354781627655), ('unwashed', 0.33360135555267334), ('gentlewomen', 0.33249080181121826), ('shew', 0.33064666390419006), ('withal', 0.32983511686325073), ('inoculating', 0.3257675766944885), ('‘old', 0.3213229775428772), ('alas!', 0.32045137882232666), ('morsel', 0.3186498284339905), ('them—and', 0.316367506980896), ('pharisees', 0.3152397572994232), ('smelled', 0.31356149911880493), ('teetotal', 0.3134254217147827), ('leaven', 0.31331515312194824), ('victuals', 0.3102186322212219)]
+
+montmorency - Sentence n. 59
+ Alpha: Current alpha: 0.4366726590336306
+
+Words: [['and', '___', 'standing', 'on', 'his', 'hind', 'legs', 'before', 'the', 'window', 'peering', 'out', 'into', 'the', 'night', 'gave', 'a', 'short', 'bark', 'of', 'decided', 'concurrence', 'with', 'the', 'toast']]
+Top similarities:[('illumined', 0.3360384404659271), ('communicants', 0.2949548065662384), ('whitened', 0.29436391592025757), ('light-coloured', 0.2906326949596405), ('shammai', 0.27976974844932556), ('gapes', 0.27909940481185913), ('puckering', 0.2785786986351013), ('godolphin', 0.2782019376754761), ('discoloured', 0.27599555253982544), ('purplish-red', 0.27575036883354187), ('gelding', 0.27493903040885925), ('gentlewomen', 0.2745802402496338), ('withal', 0.2742193937301636), ('foreleg', 0.27234727144241333), ('wearied', 0.2720230221748352), ('freckles', 0.27189189195632935), ('sackcloth', 0.27138078212738037), ('unwashed', 0.27059197425842285), ('skeat', 0.2702082097530365), ('roans', 0.267965704202652)]
+
