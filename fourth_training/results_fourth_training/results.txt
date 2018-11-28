@@ -1,0 +1,648 @@
+
+Results for the vector: george - full novel
+
+	0.9999999999999998 - george - full novel
+	0.09221958968203015 - goring_part_b
+	0.07419866108680574 - marlow - full novel
+	0.06933214527123427 - marlow_part_b
+	0.06523643206439209 - harris_part_a
+	0.06245193918188523 - goring - full novel
+	0.058525303951594526 - marlow_part_a
+	0.032981849503225656 - tom_part_b
+	-0.011857063786507008 - montmorency_part_a
+	-0.012588722944027148 - tom - full novel
+	-0.025225382394481348 - biggs_part_a
+	-0.032870560748803374 - montmorency_part_b
+	-0.04681810357434533 - biggs_part_b
+	-0.05579711897539412 - harris - full novel
+	-0.061296179765772105 - harris_part_b
+	-0.07342362769524326 - tom_part_a
+	-0.07407063020807271 - goring_part_a
+	-0.10739755778067869 - montmorency - full novel
+	-0.1271162951800983 - george_part_b
+	-0.1574435082473697 - john_part_b
+	-0.3844959324763028 - george_part_a
+
+Results for the vector: harris - full novel
+
+	0.9999999999999999 - harris - full novel
+	0.2618659639086651 - marlow - full novel
+	0.22374568231995112 - harris_part_a
+	0.19291342731087296 - tom_part_b
+	0.17371445560481805 - goring_part_a
+	0.1605464538962856 - george_part_a
+	0.14302024646388117 - goring_part_b
+	0.14022647166062613 - john_part_b
+	0.13879568925705604 - tom - full novel
+	0.13321953284153332 - montmorency_part_a
+	0.13244289826727798 - tom_part_a
+	0.12100390590044753 - marlow_part_a
+	0.12085918904545877 - montmorency_part_b
+	0.1198254088728304 - harris_part_b
+	0.10061894566369947 - george_part_b
+	0.0922018905400172 - biggs_part_a
+	0.0731482981626209 - montmorency - full novel
+	0.04273662749140981 - goring - full novel
+	0.02273598945046801 - biggs_part_b
+	-0.023578822475834336 - marlow_part_b
+	-0.05579711897539412 - george - full novel
+
+Results for the vector: montmorency - full novel
+
+	1.0000000000000002 - montmorency - full novel
+	0.42113396567777045 - montmorency_part_a
+	0.21678055375724375 - montmorency_part_b
+	0.15046058051113756 - john_part_b
+	0.0731482981626209 - harris - full novel
+	0.06868081719886088 - marlow_part_a
+	0.06082254526659744 - goring_part_a
+	0.059189160263456046 - harris_part_b
+	0.058074855744052065 - goring_part_b
+	0.057734462865239526 - george_part_b
+	0.05500612902139736 - tom - full novel
+	0.04512093629920882 - marlow - full novel
+	0.026976293025316008 - biggs_part_b
+	1.2325443600602728e-05 - tom_part_a
+	-0.0017927753267578384 - goring - full novel
+	-0.007983358776466599 - tom_part_b
+	-0.027250530174658182 - george_part_a
+	-0.07659813771022564 - harris_part_a
+	-0.08219441976468993 - biggs_part_a
+	-0.10739755778067869 - george - full novel
+	-0.11420494244310438 - marlow_part_b
+
+Results for the vector: tom - full novel
+
+	0.9999999999999999 - tom - full novel
+	0.21288126077821434 - tom_part_b
+	0.18143894938427366 - goring_part_a
+	0.18026786848074766 - george_part_a
+	0.1713314505096194 - goring_part_b
+	0.16229866148174216 - marlow - full novel
+	0.13879568925705604 - harris - full novel
+	0.12956464681297117 - goring - full novel
+	0.12903826698137122 - marlow_part_a
+	0.12200904008215552 - biggs_part_b
+	0.09651818329230623 - george_part_b
+	0.09519305493526824 - montmorency_part_a
+	0.08680038692980703 - harris_part_a
+	0.08364683426364553 - harris_part_b
+	0.07655128397285235 - biggs_part_a
+	0.07136152937616376 - montmorency_part_b
+	0.05500612902139736 - montmorency - full novel
+	0.022248932280431438 - john_part_b
+	0.017719932538739932 - tom_part_a
+	-0.012588722944027148 - george - full novel
+	-0.021357607310849396 - marlow_part_b
+
+Results for the vector: john - full novel
+
+	1.0 - john_part_b
+	0.27042788932123074 - marlow - full novel
+	0.15046058051113756 - montmorency - full novel
+	0.14022647166062613 - harris - full novel
+	0.12988345043012184 - montmorency_part_b
+	0.12775959271780193 - goring - full novel
+	0.11343840488497205 - george_part_b
+	0.07936425139978556 - goring_part_a
+	0.07513265085751955 - tom_part_b
+	0.06858220548672428 - goring_part_b
+	0.06264018783922744 - montmorency_part_a
+	0.055184710981545475 - harris_part_a
+	0.05379222752947692 - marlow_part_a
+	0.05180551839546484 - marlow_part_b
+	0.04940059447094019 - biggs_part_b
+	0.03527134447460787 - harris_part_b
+	0.03435653580234659 - george_part_a
+	0.022248932280431438 - tom - full novel
+	-0.04380956182735492 - biggs_part_a
+	-0.05286471221164008 - tom_part_a
+	-0.1574435082473697 - george - full novel
+
+Results for the vector: uncle_podger - full novel
+
+	1.0000000000000002 - biggs_part_b
+	0.21564201647457146 - goring_part_a
+	0.18945190104357496 - george_part_b
+	0.16506011346796512 - tom_part_a
+	0.12200904008215552 - tom - full novel
+	0.07037030147567727 - goring - full novel
+	0.06228736126248314 - harris_part_a
+	0.04940059447094019 - john_part_b
+	0.04501334968262294 - marlow - full novel
+	0.03841676911087163 - montmorency_part_b
+	0.03829780951165261 - tom_part_b
+	0.026976293025316008 - montmorency - full novel
+	0.02273598945046801 - harris - full novel
+	0.020936100223756273 - goring_part_b
+	0.01567810881930964 - george_part_a
+	0.01023814741621196 - harris_part_b
+	-0.010688404959877421 - biggs_part_a
+	-0.0172346731772474 - montmorency_part_a
+	-0.02002457290669898 - marlow_part_a
+	-0.033708199165497936 - marlow_part_b
+	-0.04681810357434533 - george - full novel
+
+Results for the vector: marlow - full novel
+
+	1.0 - marlow - full novel
+	0.30566865700251117 - goring_part_b
+	0.300028466573977 - goring_part_a
+	0.2860702299776483 - marlow_part_a
+	0.27042788932123074 - john_part_b
+	0.2618659639086651 - harris - full novel
+	0.23265018203189816 - tom_part_b
+	0.19368112054138892 - montmorency_part_a
+	0.192262563549784 - goring - full novel
+	0.1898694824937177 - marlow_part_b
+	0.16229866148174216 - tom - full novel
+	0.13108112210851675 - harris_part_a
+	0.12765319323476412 - george_part_a
+	0.11775197134361971 - biggs_part_a
+	0.10255957354698567 - tom_part_a
+	0.07419866108680574 - george - full novel
+	0.04512093629920882 - montmorency - full novel
+	0.04501334968262294 - biggs_part_b
+	0.021966297182298568 - harris_part_b
+	0.015080660000166302 - montmorency_part_b
+	0.0064009462252110835 - george_part_b
+
+Results for the vector: biggs - full novel
+
+	1.0 - biggs_part_a
+	0.28633273260316017 - tom_part_a
+	0.19880198628170365 - goring_part_a
+	0.19682010270949032 - marlow_part_a
+	0.19326984039416478 - george_part_a
+	0.1670731768300947 - tom_part_b
+	0.11778290972024891 - goring_part_b
+	0.11775197134361971 - marlow - full novel
+	0.0998768858860201 - harris_part_b
+	0.09404148937937716 - harris_part_a
+	0.0922018905400172 - harris - full novel
+	0.07655128397285235 - tom - full novel
+	0.06575601184276365 - marlow_part_b
+	0.053273481027832595 - montmorency_part_a
+	0.01342602545903936 - george_part_b
+	-0.010688404959877421 - biggs_part_b
+	-0.01442317003771672 - goring - full novel
+	-0.025225382394481348 - george - full novel
+	-0.04380956182735492 - john_part_b
+	-0.08219441976468993 - montmorency - full novel
+	-0.11788931027465543 - montmorency_part_b
+
+Results for the vector: goring - full novel
+
+	1.0000000000000002 - goring - full novel
+	0.2352977803835835 - marlow_part_a
+	0.20361189167373953 - goring_part_b
+	0.1991790598945527 - harris_part_a
+	0.192262563549784 - marlow - full novel
+	0.17688409103088062 - tom_part_b
+	0.15586274815559897 - goring_part_a
+	0.1504824861399803 - marlow_part_b
+	0.12956464681297117 - tom - full novel
+	0.12775959271780193 - john_part_b
+	0.1256169638753122 - tom_part_a
+	0.08752527043984779 - montmorency_part_a
+	0.08131199224896257 - george_part_a
+	0.07037030147567727 - biggs_part_b
+	0.06245193918188523 - george - full novel
+	0.04951228166940887 - george_part_b
+	0.04273662749140981 - harris - full novel
+	0.03342244037063123 - harris_part_b
+	-0.0017927753267578384 - montmorency - full novel
+	-0.01442317003771672 - biggs_part_a
+	-0.05143565443931931 - montmorency_part_b
+
+Results for the vector: george_part_a
+
+	1.0 - george_part_a
+	0.22519229990163472 - goring_part_a
+	0.20890869986407604 - marlow_part_a
+	0.19326984039416478 - biggs_part_a
+	0.18487163942934168 - tom_part_b
+	0.18026786848074766 - tom - full novel
+	0.1605464538962856 - harris - full novel
+	0.12765319323476412 - marlow - full novel
+	0.08131199224896257 - goring - full novel
+	0.08008572390187525 - goring_part_b
+	0.07850420013677703 - montmorency_part_a
+	0.07778153343652035 - tom_part_a
+	0.07397538072739461 - harris_part_a
+	0.061220184639912675 - marlow_part_b
+	0.03435653580234659 - john_part_b
+	0.01567810881930964 - biggs_part_b
+	0.00867667613468914 - george_part_b
+	-0.0135813517397105 - montmorency_part_b
+	-0.027250530174658182 - montmorency - full novel
+	-0.0387588814224633 - harris_part_b
+	-0.3844959324763028 - george - full novel
+
+Results for the vector: harris_part_a
+
+	1.0 - harris_part_a
+	0.22374568231995112 - harris - full novel
+	0.21461579748799445 - goring_part_a
+	0.1991790598945527 - goring - full novel
+	0.1817673560339265 - goring_part_b
+	0.15679990112255154 - tom_part_b
+	0.13108112210851675 - marlow - full novel
+	0.10643245373414148 - marlow_part_a
+	0.09690004387586598 - montmorency_part_a
+	0.09404148937937716 - biggs_part_a
+	0.08680038692980703 - tom - full novel
+	0.07397538072739461 - george_part_a
+	0.06955396673418279 - tom_part_a
+	0.06523643206439209 - george - full novel
+	0.06228736126248314 - biggs_part_b
+	0.05581381627416616 - george_part_b
+	0.055184710981545475 - john_part_b
+	0.019921829076996182 - marlow_part_b
+	-0.056172454282909144 - montmorency_part_b
+	-0.07659813771022564 - montmorency - full novel
+	-0.11919744227003427 - harris_part_b
+
+Results for the vector: montmorency_part_a
+
+	1.0 - montmorency_part_a
+	0.42113396567777045 - montmorency - full novel
+	0.19594866050993895 - goring_part_a
+	0.19368112054138892 - marlow - full novel
+	0.18810247518735299 - marlow_part_a
+	0.1766526480032277 - goring_part_b
+	0.13321953284153332 - harris - full novel
+	0.12546805884182127 - tom_part_a
+	0.10072497221970748 - harris_part_b
+	0.09924761230708823 - george_part_b
+	0.09690004387586598 - harris_part_a
+	0.09519305493526824 - tom - full novel
+	0.08752527043984779 - goring - full novel
+	0.07850420013677703 - george_part_a
+	0.07261987500560942 - tom_part_b
+	0.06264018783922744 - john_part_b
+	0.053273481027832595 - biggs_part_a
+	0.05018783605190383 - marlow_part_b
+	0.02176849580261851 - montmorency_part_b
+	-0.011857063786507008 - george - full novel
+	-0.0172346731772474 - biggs_part_b
+
+Results for the vector: tom_part_a
+
+	0.9999999999999999 - tom_part_a
+	0.28633273260316017 - biggs_part_a
+	0.27923015575836846 - goring_part_a
+	0.16506011346796512 - biggs_part_b
+	0.13824576120403925 - goring_part_b
+	0.13244289826727798 - harris - full novel
+	0.1256169638753122 - goring - full novel
+	0.12546805884182127 - montmorency_part_a
+	0.11436015596412281 - marlow_part_a
+	0.10255957354698567 - marlow - full novel
+	0.10139183190831973 - tom_part_b
+	0.07778153343652035 - george_part_a
+	0.07348117169338592 - george_part_b
+	0.06955396673418279 - harris_part_a
+	0.036362793502012915 - marlow_part_b
+	0.017719932538739932 - tom - full novel
+	1.2325443600602728e-05 - montmorency - full novel
+	-0.011835334150572396 - harris_part_b
+	-0.05286471221164008 - john_part_b
+	-0.07342362769524326 - george - full novel
+	-0.07751362591430329 - montmorency_part_b
+
+Results for the vector: john_part_a
+
+	1.0000000000000002 - biggs_part_b
+	0.21564201647457146 - goring_part_a
+	0.18945190104357496 - george_part_b
+	0.16506011346796512 - tom_part_a
+	0.12200904008215552 - tom - full novel
+	0.07037030147567727 - goring - full novel
+	0.06228736126248314 - harris_part_a
+	0.04940059447094019 - john_part_b
+	0.04501334968262294 - marlow - full novel
+	0.03841676911087163 - montmorency_part_b
+	0.03829780951165261 - tom_part_b
+	0.026976293025316008 - montmorency - full novel
+	0.02273598945046801 - harris - full novel
+	0.020936100223756273 - goring_part_b
+	0.01567810881930964 - george_part_a
+	0.01023814741621196 - harris_part_b
+	-0.010688404959877421 - biggs_part_a
+	-0.0172346731772474 - montmorency_part_a
+	-0.02002457290669898 - marlow_part_a
+	-0.033708199165497936 - marlow_part_b
+	-0.04681810357434533 - george - full novel
+
+Results for the vector: uncle_podger_part_a
+
+	1.0000000000000002 - biggs_part_b
+	0.21564201647457146 - goring_part_a
+	0.18945190104357496 - george_part_b
+	0.16506011346796512 - tom_part_a
+	0.12200904008215552 - tom - full novel
+	0.07037030147567727 - goring - full novel
+	0.06228736126248314 - harris_part_a
+	0.04940059447094019 - john_part_b
+	0.04501334968262294 - marlow - full novel
+	0.03841676911087163 - montmorency_part_b
+	0.03829780951165261 - tom_part_b
+	0.026976293025316008 - montmorency - full novel
+	0.02273598945046801 - harris - full novel
+	0.020936100223756273 - goring_part_b
+	0.01567810881930964 - george_part_a
+	0.01023814741621196 - harris_part_b
+	-0.010688404959877421 - biggs_part_a
+	-0.0172346731772474 - montmorency_part_a
+	-0.02002457290669898 - marlow_part_a
+	-0.033708199165497936 - marlow_part_b
+	-0.04681810357434533 - george - full novel
+
+Results for the vector: marlow_part_a
+
+	1.0 - marlow_part_a
+	0.2860702299776483 - marlow - full novel
+	0.26398714443731364 - tom_part_b
+	0.24575811667486508 - goring_part_a
+	0.2352977803835835 - goring - full novel
+	0.22891872982083086 - goring_part_b
+	0.20890869986407604 - george_part_a
+	0.19682010270949032 - biggs_part_a
+	0.18810247518735299 - montmorency_part_a
+	0.153264735254853 - marlow_part_b
+	0.13212848234429397 - harris_part_b
+	0.12903826698137122 - tom - full novel
+	0.12100390590044753 - harris - full novel
+	0.11436015596412281 - tom_part_a
+	0.10643245373414148 - harris_part_a
+	0.06868081719886088 - montmorency - full novel
+	0.058525303951594526 - george - full novel
+	0.05379222752947692 - john_part_b
+	-0.00010151170175738268 - george_part_b
+	-0.02002457290669898 - biggs_part_b
+	-0.060799141504372274 - montmorency_part_b
+
+Results for the vector: biggs_part_a
+
+	1.0 - biggs_part_a
+	0.28633273260316017 - tom_part_a
+	0.19880198628170365 - goring_part_a
+	0.19682010270949032 - marlow_part_a
+	0.19326984039416478 - george_part_a
+	0.1670731768300947 - tom_part_b
+	0.11778290972024891 - goring_part_b
+	0.11775197134361971 - marlow - full novel
+	0.0998768858860201 - harris_part_b
+	0.09404148937937716 - harris_part_a
+	0.0922018905400172 - harris - full novel
+	0.07655128397285235 - tom - full novel
+	0.06575601184276365 - marlow_part_b
+	0.053273481027832595 - montmorency_part_a
+	0.01342602545903936 - george_part_b
+	-0.010688404959877421 - biggs_part_b
+	-0.01442317003771672 - goring - full novel
+	-0.025225382394481348 - george - full novel
+	-0.04380956182735492 - john_part_b
+	-0.08219441976468993 - montmorency - full novel
+	-0.11788931027465543 - montmorency_part_b
+
+Results for the vector: goring_part_a
+
+	1.0 - goring_part_a
+	0.300028466573977 - marlow - full novel
+	0.2825769751598691 - tom_part_b
+	0.2818429606643699 - goring_part_b
+	0.27923015575836846 - tom_part_a
+	0.24575811667486508 - marlow_part_a
+	0.22519229990163472 - george_part_a
+	0.21564201647457146 - biggs_part_b
+	0.21461579748799445 - harris_part_a
+	0.19880198628170365 - biggs_part_a
+	0.19594866050993895 - montmorency_part_a
+	0.18143894938427366 - tom - full novel
+	0.17371445560481805 - harris - full novel
+	0.15586274815559897 - goring - full novel
+	0.08179780753010976 - marlow_part_b
+	0.07936425139978556 - john_part_b
+	0.06082254526659744 - montmorency - full novel
+	0.021211005052763545 - george_part_b
+	-0.05811391839661248 - montmorency_part_b
+	-0.07407063020807271 - george - full novel
+	-0.10407324378680288 - harris_part_b
+
+Results for the vector: george_part_b
+
+	1.0 - george_part_b
+	0.18945190104357496 - biggs_part_b
+	0.11343840488497205 - john_part_b
+	0.10061894566369947 - harris - full novel
+	0.09924761230708823 - montmorency_part_a
+	0.09651818329230623 - tom - full novel
+	0.07595829137184436 - harris_part_b
+	0.07348117169338592 - tom_part_a
+	0.057734462865239526 - montmorency - full novel
+	0.05581381627416616 - harris_part_a
+	0.05016541724367865 - montmorency_part_b
+	0.04951228166940887 - goring - full novel
+	0.021211005052763545 - goring_part_a
+	0.01342602545903936 - biggs_part_a
+	0.00867667613468914 - george_part_a
+	0.0064009462252110835 - marlow - full novel
+	-0.00010151170175738268 - marlow_part_a
+	-0.04554460840054646 - marlow_part_b
+	-0.046363197237865555 - goring_part_b
+	-0.09720413313155392 - tom_part_b
+	-0.1271162951800983 - george - full novel
+
+Results for the vector: harris_part_b
+
+	1.0 - harris_part_b
+	0.13212848234429397 - marlow_part_a
+	0.12870265818054635 - tom_part_b
+	0.1198254088728304 - harris - full novel
+	0.10072497221970748 - montmorency_part_a
+	0.0998768858860201 - biggs_part_a
+	0.08364683426364553 - tom - full novel
+	0.07595829137184436 - george_part_b
+	0.059189160263456046 - montmorency - full novel
+	0.03527134447460787 - john_part_b
+	0.03342244037063123 - goring - full novel
+	0.021966297182298568 - marlow - full novel
+	0.01023814741621196 - biggs_part_b
+	0.007156228735939577 - montmorency_part_b
+	0.0003011102498060228 - goring_part_b
+	-0.011835334150572396 - tom_part_a
+	-0.0387588814224633 - george_part_a
+	-0.061296179765772105 - george - full novel
+	-0.08133961686987717 - marlow_part_b
+	-0.10407324378680288 - goring_part_a
+	-0.11919744227003427 - harris_part_a
+
+Results for the vector: montmorency_part_b
+
+	0.9999999999999998 - montmorency_part_b
+	0.21678055375724375 - montmorency - full novel
+	0.12988345043012184 - john_part_b
+	0.12085918904545877 - harris - full novel
+	0.07136152937616376 - tom - full novel
+	0.06906894092519095 - tom_part_b
+	0.05016541724367865 - george_part_b
+	0.03841676911087163 - biggs_part_b
+	0.02561812616411227 - goring_part_b
+	0.02176849580261851 - montmorency_part_a
+	0.015080660000166302 - marlow - full novel
+	0.007156228735939577 - harris_part_b
+	-0.0135813517397105 - george_part_a
+	-0.022600310262473763 - marlow_part_b
+	-0.032870560748803374 - george - full novel
+	-0.05143565443931931 - goring - full novel
+	-0.056172454282909144 - harris_part_a
+	-0.05811391839661248 - goring_part_a
+	-0.060799141504372274 - marlow_part_a
+	-0.07751362591430329 - tom_part_a
+	-0.11788931027465543 - biggs_part_a
+
+Results for the vector: tom_part_b
+
+	1.0 - tom_part_b
+	0.2825769751598691 - goring_part_a
+	0.2659200861629686 - goring_part_b
+	0.26398714443731364 - marlow_part_a
+	0.23265018203189816 - marlow - full novel
+	0.21288126077821434 - tom - full novel
+	0.19291342731087296 - harris - full novel
+	0.18487163942934168 - george_part_a
+	0.17688409103088062 - goring - full novel
+	0.1670731768300947 - biggs_part_a
+	0.15679990112255154 - harris_part_a
+	0.12870265818054635 - harris_part_b
+	0.10139183190831973 - tom_part_a
+	0.07513265085751955 - john_part_b
+	0.07261987500560942 - montmorency_part_a
+	0.06906894092519095 - montmorency_part_b
+	0.03829780951165261 - biggs_part_b
+	0.032981849503225656 - george - full novel
+	0.02949703659013757 - marlow_part_b
+	-0.007983358776466599 - montmorency - full novel
+	-0.09720413313155392 - george_part_b
+
+Results for the vector: john_part_b
+
+	1.0 - john_part_b
+	0.27042788932123074 - marlow - full novel
+	0.15046058051113756 - montmorency - full novel
+	0.14022647166062613 - harris - full novel
+	0.12988345043012184 - montmorency_part_b
+	0.12775959271780193 - goring - full novel
+	0.11343840488497205 - george_part_b
+	0.07936425139978556 - goring_part_a
+	0.07513265085751955 - tom_part_b
+	0.06858220548672428 - goring_part_b
+	0.06264018783922744 - montmorency_part_a
+	0.055184710981545475 - harris_part_a
+	0.05379222752947692 - marlow_part_a
+	0.05180551839546484 - marlow_part_b
+	0.04940059447094019 - biggs_part_b
+	0.03527134447460787 - harris_part_b
+	0.03435653580234659 - george_part_a
+	0.022248932280431438 - tom - full novel
+	-0.04380956182735492 - biggs_part_a
+	-0.05286471221164008 - tom_part_a
+	-0.1574435082473697 - george - full novel
+
+Results for the vector: uncle_podger_part_b
+
+	1.0000000000000002 - biggs_part_b
+	0.21564201647457146 - goring_part_a
+	0.18945190104357496 - george_part_b
+	0.16506011346796512 - tom_part_a
+	0.12200904008215552 - tom - full novel
+	0.07037030147567727 - goring - full novel
+	0.06228736126248314 - harris_part_a
+	0.04940059447094019 - john_part_b
+	0.04501334968262294 - marlow - full novel
+	0.03841676911087163 - montmorency_part_b
+	0.03829780951165261 - tom_part_b
+	0.026976293025316008 - montmorency - full novel
+	0.02273598945046801 - harris - full novel
+	0.020936100223756273 - goring_part_b
+	0.01567810881930964 - george_part_a
+	0.01023814741621196 - harris_part_b
+	-0.010688404959877421 - biggs_part_a
+	-0.0172346731772474 - montmorency_part_a
+	-0.02002457290669898 - marlow_part_a
+	-0.033708199165497936 - marlow_part_b
+	-0.04681810357434533 - george - full novel
+
+Results for the vector: marlow_part_b
+
+	1.0 - marlow_part_b
+	0.1898694824937177 - marlow - full novel
+	0.153264735254853 - marlow_part_a
+	0.1504824861399803 - goring - full novel
+	0.09350886808814969 - goring_part_b
+	0.08179780753010976 - goring_part_a
+	0.06933214527123427 - george - full novel
+	0.06575601184276365 - biggs_part_a
+	0.061220184639912675 - george_part_a
+	0.05180551839546484 - john_part_b
+	0.05018783605190383 - montmorency_part_a
+	0.036362793502012915 - tom_part_a
+	0.02949703659013757 - tom_part_b
+	0.019921829076996182 - harris_part_a
+	-0.021357607310849396 - tom - full novel
+	-0.022600310262473763 - montmorency_part_b
+	-0.023578822475834336 - harris - full novel
+	-0.033708199165497936 - biggs_part_b
+	-0.04554460840054646 - george_part_b
+	-0.08133961686987717 - harris_part_b
+	-0.11420494244310438 - montmorency - full novel
+
+Results for the vector: biggs_part_b
+
+	1.0000000000000002 - biggs_part_b
+	0.21564201647457146 - goring_part_a
+	0.18945190104357496 - george_part_b
+	0.16506011346796512 - tom_part_a
+	0.12200904008215552 - tom - full novel
+	0.07037030147567727 - goring - full novel
+	0.06228736126248314 - harris_part_a
+	0.04940059447094019 - john_part_b
+	0.04501334968262294 - marlow - full novel
+	0.03841676911087163 - montmorency_part_b
+	0.03829780951165261 - tom_part_b
+	0.026976293025316008 - montmorency - full novel
+	0.02273598945046801 - harris - full novel
+	0.020936100223756273 - goring_part_b
+	0.01567810881930964 - george_part_a
+	0.01023814741621196 - harris_part_b
+	-0.010688404959877421 - biggs_part_a
+	-0.0172346731772474 - montmorency_part_a
+	-0.02002457290669898 - marlow_part_a
+	-0.033708199165497936 - marlow_part_b
+	-0.04681810357434533 - george - full novel
+
+Results for the vector: goring_part_b
+
+	1.0000000000000002 - goring_part_b
+	0.30566865700251117 - marlow - full novel
+	0.2818429606643699 - goring_part_a
+	0.2659200861629686 - tom_part_b
+	0.22891872982083086 - marlow_part_a
+	0.20361189167373953 - goring - full novel
+	0.1817673560339265 - harris_part_a
+	0.1766526480032277 - montmorency_part_a
+	0.1713314505096194 - tom - full novel
+	0.14302024646388117 - harris - full novel
+	0.13824576120403925 - tom_part_a
+	0.11778290972024891 - biggs_part_a
+	0.09350886808814969 - marlow_part_b
+	0.09221958968203015 - george - full novel
+	0.08008572390187525 - george_part_a
+	0.06858220548672428 - john_part_b
+	0.058074855744052065 - montmorency - full novel
+	0.02561812616411227 - montmorency_part_b
+	0.020936100223756273 - biggs_part_b
+	0.0003011102498060228 - harris_part_b
+	-0.046363197237865555 - george_part_b

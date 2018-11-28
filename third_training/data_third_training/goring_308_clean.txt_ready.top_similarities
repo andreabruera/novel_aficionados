@@ -1,0 +1,60 @@
+goring - Sentence n. 0
+ Alpha: Current alpha: 1.001429592322817
+
+Words: [['i', 'was', 'out', 'with', 'a', 'young', 'lady', 'cousin', 'on', 'my', 'mother', 's', 'side', 'and', 'we', 'were', 'pulling', 'down', 'to', '___']]
+Top similarities:[('we', 0.45915699005126953), ('i', 0.458688884973526), ('let', 0.43985575437545776), ('my', 0.43741852045059204), ('side', 0.43537452816963196), ('you', 0.4264989495277405), ('down?', 0.41974782943725586), ('down', 0.4189634323120117), ('me', 0.41739100217819214), ('our', 0.4062657654285431), ('me/', 0.39771488308906555), ('‘oh', 0.3933967351913452), ('…', 0.39271289110183716), ('let’s', 0.39264827966690063), ('we’ll', 0.39183303713798523), ('just', 0.39147669076919556), ('again”', 0.3860965967178345), ('her!', 0.38566070795059204), ('cant', 0.3795495927333832), ('we’re', 0.3779342770576477)]
+
+goring - Sentence n. 1
+ Alpha: Current alpha: 1.0
+
+Words: [['he', 'between', 'his', 'contented', 'addressing', 'the', 'two', 'novices', 'who', 'have', 'been', 'grinding', 'away', 'steadily', 'up', 'stream', 'for', 'the', 'last', 'hour', 'and', 'a', 'half', 'why', 'jim', 'and', 'jack', 'and', 'i', 'last', 'season', 'pulled', 'up', 'from', 'marlow', 'to', '___', 'in', 'one', 'afternoon', 'never', 'stopped', 'once']]
+Top similarities:[('we', 0.44833284616470337), ('i’d', 0.41724833846092224), ('i', 0.40141963958740234), ('hes', 0.39003878831863403), ('we’re', 0.3847609758377075), ('we’ll', 0.38301390409469604), ('ive', 0.3821481168270111), ('you', 0.38073650002479553), ('you’ve', 0.3782563805580139), ('we’ve', 0.3768453598022461), ('my', 0.37614870071411133), ('weve', 0.37545889616012573), ('i’ll', 0.37447482347488403), ('i’m', 0.3722934126853943), ('we’d', 0.37070268392562866), ('myself', 0.36993488669395447), ('she’s', 0.3649396002292633), ('again”', 0.36296045780181885), ('theyll', 0.3624303340911865), ('i’ve', 0.36022478342056274)]
+
+goring - Sentence n. 2
+ Alpha: Current alpha: 0.9985724484938566
+
+Words: [['reading', 'we', 'are', 'towed', 'by', 'steam', 'launch', 'irritating', 'behaviour', 'of', 'small', 'boats', 'how', 'they', 'get', 'in', 'the', 'way', 'of', 'steam', 'launches', 'george', 'and', 'harris', 'again', 'shirk', 'their', 'work', 'rather', 'a', 'hackneyed', 'story', 'streatley', 'and', '___']]
+Top similarities:[('we', 0.29786980152130127), ('i’d', 0.28241634368896484), ('side', 0.2685213088989258), ('you’ll', 0.26395416259765625), ('we’d', 0.26381099224090576), ('streatley', 0.2542002201080322), ('my', 0.2528228163719177), ('you’ve', 0.24541255831718445), ('…', 0.24515827000141144), ('diverges', 0.24488459527492523), ('veering', 0.24475349485874176), ('we’ll', 0.23969107866287231), ('youd', 0.23932647705078125), ('just', 0.2370796501636505), ('i', 0.23649267852306366), ('beeley', 0.23628012835979462), ('moving', 0.23567594587802887), ('halliford', 0.23403161764144897), ('we’re', 0.23371976613998413), ('i’m', 0.23203957080841064)]
+
+goring - Sentence n. 3
+ Alpha: Current alpha: 0.997146934891016
+
+Words: [['she', 'had', 'made', 'one', 'last', 'appeal', 'to', 'friends', 'but', 'against', 'the', 'chill', 'wall', 'of', 'their', 'respectability', 'the', 'voice', 'of', 'the', 'erring', 'outcast', 'fell', 'unheeded', 'and', 'then', 'she', 'had', 'gone', 'to', 'see', 'her', 'child', 'had', 'held', 'it', 'in', 'her', 'arms', 'and', 'kissed', 'it', 'in', 'a', 'weary', 'dull', 'sort', 'of', 'way', 'and', 'without', 'betraying', 'any', 'particular', 'emotion', 'of', 'any', 'kind', 'and', 'had', 'left', 'it', 'after', 'putting', 'into', 'its', 'hand', 'a', 'penny', 'box', 'of', 'chocolate', 'she', 'had', 'bought', 'it', 'and', 'afterwards', 'with', 'her', 'last', 'few', 'shillings', 'had', 'taken', 'a', 'ticket', 'and', 'come', 'down', 'to', '___']]
+Top similarities:[('i’d', 0.3693614602088928), ('you’ll', 0.3665410280227661), ('we', 0.35464179515838623), ('we’d', 0.3432585597038269), ('youd', 0.3401227295398712), ('i’m', 0.3351295590400696), ('london-bound', 0.3328678607940674), ('you’ve', 0.3297719955444336), ('my', 0.32887887954711914), ('manhattan-bound', 0.32679226994514465), ('i', 0.32388371229171753), ('ive', 0.32065147161483765), ('we’ve', 0.3198893070220947), ('veering', 0.31947124004364014), ('you', 0.31765180826187134), ('we’re', 0.31735363602638245), ('we’ll', 0.31683868169784546), ('you’d', 0.3160053491592407), ('rush-hour', 0.3152931034564972), ('myself', 0.3149709105491638)]
+
+goring - Sentence n. 4
+ Alpha: Current alpha: 0.9957234562822662
+
+Words: [['picture', 'woman', 'in', 'the', 'water', 'it', 'seemed', 'that', 'the', 'bitterest', 'thoughts', 'of', 'her', 'life', 'must', 'have', 'centred', 'about', 'the', 'wooded', 'reaches', 'and', 'the', 'bright', 'green', 'meadows', 'around', '___', 'but', 'women', 'strangely', 'hug', 'the', 'knife', 'that', 'stabs', 'them', 'and', 'perhaps', 'amidst', 'the', 'gall', 'there', 'may', 'have', 'mingled', 'also', 'sunny', 'memories', 'of', 'sweetest', 'hours', 'spent', 'upon', 'those', 'shadowed', 'deeps', 'over', 'which', 'the', 'great', 'trees', 'bend', 'their', 'branches', 'down', 'so', 'low']]
+Top similarities:[('veering', 0.30090028047561646), ('pratfalls', 0.296615868806839), ('unfunny', 0.2848479151725769), ('wearying', 0.2834116518497467), ('veers', 0.279755175113678), ('unobtrusively', 0.278885155916214), ('chuckling', 0.2770901322364807), ('edie', 0.2755991816520691), ('lurches', 0.27445632219314575), ('you’ll', 0.2739293575286865), ('timetabled', 0.27350282669067383), ('schtick', 0.273011177778244), ('inane', 0.2722868025302887), ('jolting', 0.2720162272453308), ('crazily', 0.2720135450363159), ('leisurely', 0.2717147469520569), ('smug', 0.27110522985458374), ('overlong', 0.2702738642692566), ('laugh-out-loud', 0.26977449655532837), ('motorists', 0.268388032913208)]
+
+goring - Sentence n. 5
+ Alpha: Current alpha: 0.9943020097625482
+
+Words: [['___', 'on', 'the', 'left', 'bank', 'and', 'streatley', 'on', 'the', 'right', 'are', 'both', 'or', 'either', 'charming', 'places', 'to', 'stay', 'at', 'for', 'a', 'few', 'days']]
+Top similarities:[('sundgau', 0.2894526720046997), ('non-business', 0.2877199053764343), ('muncy', 0.2786444127559662), ('werra', 0.2782804071903229), ('pibor', 0.27442774176597595), ('shyok', 0.2721051871776581), ('non-financial', 0.2713375687599182), ('ailette', 0.2707827687263489), ('soča', 0.2700262665748596), ('tapti', 0.26997411251068115), ('limmat', 0.26862090826034546), ('tonlé', 0.26836490631103516), ('microfinance', 0.26811978220939636), ('ostrach', 0.2680519223213196), ('interest-free', 0.26795339584350586), ('workforce', 0.26745086908340454), ('alsenz', 0.2663499116897583), ('ilo', 0.26605772972106934), ('eckbach', 0.2645866572856903), ('chillisquaque', 0.26449817419052124)]
+
+goring - Sentence n. 6
+ Alpha: Current alpha: 0.9928825924309503
+
+Words: [['they', 'say', 'that', 'the', 'hills', 'on', 'each', 'ride', 'of', 'the', 'stream', 'here', 'once', 'joined', 'and', 'formed', 'a', 'barrier', 'across', 'what', 'is', 'now', 'the', 'thames', 'and', 'that', 'then', 'the', 'river', 'ended', 'there', 'above', '___', 'in', 'one', 'vast', 'lake']]
+Top similarities:[('tonlé', 0.28954601287841797), ('limmat', 0.286332905292511), ('muncy', 0.2839863896369934), ('thames', 0.2836295962333679), ('sihl', 0.28273463249206543), ('shyok', 0.27447524666786194), ('salzach', 0.2695338726043701), ('sundgau', 0.26655781269073486), ('blies', 0.26265063881874084), ('eamont', 0.26115086674690247), ('baztan', 0.2610427141189575), ('eckbach', 0.2593594193458557), ('rhine', 0.25777339935302734), ('alsenz', 0.25753816962242126), ('váh', 0.25748735666275024), ('tonle', 0.25691890716552734), ('speyerbach', 0.25676095485687256), ('ailette', 0.2556213140487671), ('north-flowing', 0.2553268074989319), ('kolpa', 0.25498148798942566)]
+
+goring - Sentence n. 7
+ Alpha: Current alpha: 0.991465201390702
+
+Words: [['___', 'is', 'not', 'nearly', 'so', 'pretty', 'a', 'little', 'spot', 'to', 'stop', 'at', 'as', 'streatley', 'if', 'you', 'have', 'your', 'choice', 'but', 'it', 'is', 'passing', 'fair', 'enough', 'in', 'its', 'way', 'and', 'is', 'nearer', 'the', 'railway', 'in', 'case', 'you', 'want', 'to', 'slip', 'off', 'without', 'paying', 'your', 'hotel', 'bill']]
+Top similarities:[('north-flowing', 0.2992973327636719), ('eckbach', 0.279843807220459), ('muncy', 0.2794739007949829), ('eamont', 0.27775853872299194), ('sub-watershed', 0.2754678428173065), ('watershed', 0.273826539516449), ('east-flowing', 0.2729007601737976), ('shyok', 0.2706194519996643), ('meandering', 0.27045369148254395), ('thrifts', 0.2680920958518982), ('banks', 0.2646430730819702), ('eastvale', 0.2637198567390442), ('tonlé', 0.2626008987426758), ('borrowers', 0.26154226064682007), ('sulm', 0.26126232743263245), ('south-flowing', 0.2610144317150116), ('sundgau', 0.2592577040195465), ('enjoyable', 0.257461279630661), ('floodplain', 0.2570897340774536), ('tapti', 0.2566150426864624)]
+
+goring - Sentence n. 8
+ Alpha: Current alpha: 0.9900498337491681
+
+Words: [['the', 'neighbourhood', 'of', 'streatley', 'and', '___', 'is', 'a', 'great', 'fishing', 'centre']]
+Top similarities:[('hogsmill', 0.35948407649993896), ('halliford', 0.3564729690551758), ('darent', 0.3493235409259796), ('characterful', 0.3433144688606262), ('thames', 0.34024131298065186), ('meandering', 0.3398932218551636), ('traffic-free', 0.33619385957717896), ('sence', 0.3333180844783783), ('rivelin', 0.32128894329071045), ('stretches', 0.31963467597961426), ('gallions', 0.31613993644714355), ('a149', 0.31494632363319397), ('wharfe', 0.3129401206970215), ('hinksey', 0.3097957968711853), ('wensum', 0.30878114700317383), ('wraysbury', 0.30856069922447205), ('culverted', 0.3083523213863373), ('eamont', 0.30818095803260803), ('meanders', 0.3046530783176422), ('unspoilt', 0.3038223683834076)]
+
+goring - Sentence n. 9
+ Alpha: Current alpha: 0.9886364866178425
+
+Words: [['we', 'were', 'a', 'little', 'past', '___', 'then', 'and', 'we', 'decided', 'to', 'paddle', 'on', 'to', 'pangbourne', 'and', 'put', 'up', 'there', 'for', 'the', 'night']]
+Top similarities:[('paddle', 0.4484803080558777), ('steamer', 0.3711886405944824), ('paddle-wheel', 0.37094029784202576), ('sidewheel', 0.3664606809616089), ('side-wheel', 0.366169273853302), ('stern-wheel', 0.3652235269546509), ('steam-powered', 0.3620430529117584), ('pontoon', 0.36147400736808777), ('towline', 0.3609645962715149), ('linkspan', 0.3543274402618408), ('ocean-going', 0.35193127393722534), ('outriggers', 0.34654441475868225), ('deploy', 0.345924437046051), ('vessel', 0.3439258635044098), ('manoeuver', 0.3438681364059448), ('shallow-draft', 0.3438323140144348), ('sternwheel', 0.34358179569244385), ('sidewheeler', 0.3423539400100708), ('dredge', 0.3412399888038635), ('detach', 0.3408028483390808)]
+

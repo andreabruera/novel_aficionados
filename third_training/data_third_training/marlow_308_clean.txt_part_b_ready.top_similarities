@@ -1,0 +1,84 @@
+marlow - Sentence n. 0
+ Alpha: Current alpha: 1.001429592322817
+
+Words: [['he', 'said', 'a', 'mind', 'like', 'mine', 'ought', 'not', 'to', 'be', 'expected', 'to', 'give', 'itself', 'away', 'in', 'steering', 'boats', 'better', 'let', 'a', 'mere', 'commonplace', 'human', 'being', 'see', 'after', 'that', 'boat', 'before', 'we', 'jolly', 'well', 'all', 'got', 'drowned', 'and', 'he', 'took', 'the', 'lines', 'and', 'brought', 'us', 'up', 'to', '___']]
+Top similarities:[('so', 0.5335193872451782), ('we', 0.5268251895904541), ('back', 0.5189147591590881), ('finally', 0.5066571235656738), ('just', 0.49214228987693787), ('up', 0.4905948042869568), ('before', 0.47640466690063477), ('even', 0.47142231464385986), ('get', 0.46913087368011475), ('what', 0.46817025542259216), ('you', 0.4665564298629761), ('said', 0.4616556167602539), ('let', 0.46066713333129883), ('never', 0.4602881371974945), ('here', 0.45860403776168823), ('again', 0.4585399031639099), ('really', 0.45799529552459717), ('then', 0.4561482071876526), ('eventually', 0.4540732502937317), ('all', 0.4537421762943268)]
+
+marlow - Sentence n. 1
+ Alpha: Current alpha: 1.0
+
+Words: [['and', 'at', '___', 'we', 'left', 'the', 'boat', 'by', 'the', 'bridge', 'and', 'went', 'and', 'put', 'up', 'for', 'the', 'night', 'at', 'the', 'crown']]
+Top similarities:[('just', 0.4860105812549591), ('we', 0.46909981966018677), ('so', 0.46704286336898804), ('back', 0.45896539092063904), ('finally', 0.4520988464355469), ('here', 0.4323935806751251), ('up', 0.4304032325744629), ('before', 0.425251841545105), ('over', 0.42384666204452515), ('another', 0.4136825501918793), ('then', 0.41270995140075684), ('what', 0.40923410654067993), ('the', 0.40312910079956055), ('you', 0.4019591510295868), ('down', 0.4014958143234253), ('never', 0.39959657192230225), ('off', 0.3995893597602844), ('all', 0.39706727862358093), ('that', 0.3970276713371277), ('again', 0.39547669887542725)]
+
+marlow - Sentence n. 2
+ Alpha: Current alpha: 0.9985724484938566
+
+Words: [['___', 'bisham', 'abbey', 'the', 'medmenham', 'monks', 'montmorency', 'thinks', 'he', 'will', 'murder', 'an', 'old', 'tom', 'cat', 'but', 'eventually', 'decides', 'that', 'he', 'will', 'let', 'it', 'live', 'shameful', 'conduct', 'of', 'a', 'fox', 'terrier', 'at', 'the', 'civil', 'service', 'stores', 'our', 'departure', 'from', '___', 'an', 'imposing', 'procession', 'the', 'steam', 'launch', 'useful', 'receipts', 'for', 'annoying', 'and', 'hindering', 'it', 'we', 'decline', 'to', 'drink', 'the', 'river', 'a', 'peaceful', 'dog', 'strange', 'disappearance', 'of', 'harris', 'and', 'a', 'pie']]
+Top similarities:[('just', 0.3442375957965851), ('here', 0.32544147968292236), ('like', 0.29678136110305786), ('barges', 0.2902344763278961), ('we', 0.286958783864975), ('bridge', 0.2843676507472992), ('few', 0.27937230467796326), ('many', 0.2748463749885559), ('before', 0.27476003766059875), ('millbay', 0.2740881145000458), ('sampans', 0.27365899085998535), ('powick', 0.27346527576446533), ('signalbox', 0.2733001708984375), ('our', 0.27317529916763306), ('so', 0.2703794240951538), ('barge', 0.2698371410369873), ('nearby', 0.2674421966075897), ('wylam', 0.26670002937316895), ('some', 0.2664027214050293), ('upon', 0.2659585177898407)]
+
+marlow - Sentence n. 3
+ Alpha: Current alpha: 0.997146934891016
+
+Words: [['___', 'is', 'one', 'of', 'the', 'river', 'centres', 'i', 'know', 'of']]
+Top similarities:[('here', 0.3691616654396057), ('just', 0.356930673122406), ('like', 0.35678112506866455), ('we', 0.3419090509414673), ('our', 0.3205012083053589), ('many', 0.31601980328559875), ('so', 0.31254228949546814), ('even', 0.31207114458084106), ('powick', 0.3096349239349365), ('other', 0.3082229495048523), ('before', 0.3080753982067108), ('finally', 0.3073168992996216), ('all', 0.3042556643486023), ('those', 0.3040059804916382), ('barges', 0.30243417620658875), ('…', 0.300306499004364), ('you', 0.30016225576400757), ('few', 0.2985740005970001), ('really', 0.29797476530075073), ('nearby', 0.29682618379592896)]
+
+marlow - Sentence n. 4
+ Alpha: Current alpha: 0.9957234562822662
+
+Words: [['it', 'is', 'a', 'bustling', 'lively', 'little', 'town', 'not', 'very', 'picturesque', 'on', 'the', 'whole', 'it', 'is', 'true', 'but', 'there', 'are', 'many', 'quaint', 'nooks', 'and', 'corners', 'to', 'be', 'found', 'in', 'it', 'nevertheless', 'standing', 'arches', 'in', 'the', 'shattered', 'bridge', 'of', 'time', 'over', 'which', 'our', 'fancy', 'travels', 'back', 'to', 'the', 'days', 'when', '___', 'manor', 'owned', 'saxon', 'algar', 'for', 'its', 'lord', 'ere', 'conquering', 'william', 'seized', 'it', 'to', 'give', 'to', 'queen', 'matilda', 'ere', 'it', 'passed', 'to', 'the', 'earls', 'of', 'warwick', 'or', 'to', 'worldly', 'wise', 'lord', 'paget', 'the', 'councillor', 'of', 'four', 'successive', 'sovereigns']]
+Top similarities:[('millbay', 0.373953640460968), ('here', 0.37146836519241333), ('just', 0.35062628984451294), ('nearby', 0.34989219903945923), ('barges', 0.34479692578315735), ('powick', 0.3397735357284546), ('aynho', 0.33964061737060547), ('even', 0.3375530242919922), ('staithe', 0.3367440700531006), ('ld&ecr', 0.33529794216156006), ('military', 0.3337635397911072), ('packhorse', 0.3322286009788513), ('woosung', 0.33140841126441956), ('flatboats', 0.33133968710899353), ('boats', 0.3300721049308777), ('we', 0.33001312613487244), ('steamer', 0.3298303782939911), ('leipzig–dresden', 0.3290715217590332), ('transhipped', 0.3287675380706787), ('ship', 0.32860082387924194)]
+
+marlow - Sentence n. 5
+ Alpha: Current alpha: 0.9943020097625482
+
+Words: [['picture', 'bisham', 'abbey', 'from', '___', 'up', 'to', 'sonning', 'is', 'even', 'fairer', 'yet']]
+Top similarities:[('godstow', 0.3789742887020111), ('powick', 0.3752410113811493), ('fordingbridge', 0.36578917503356934), ('shiplake', 0.36216509342193604), ('darent', 0.35916781425476074), ('nunney', 0.3590550720691681), ('barlaston', 0.3559274673461914), ('staithe', 0.3551408648490906), ('itchen', 0.3526247441768646), ('pateley', 0.3524008095264435), ('alresford', 0.3523160517215729), ('aynho', 0.35033804178237915), ('eamont', 0.3499411642551422), ('gunville', 0.34987905621528625), ('kirtlington', 0.3497571647167206), ('addingham', 0.3496900796890259), ('erth', 0.34941577911376953), ('lechlade', 0.3488660454750061), ('wetheral', 0.346964955329895), ('saltford', 0.34664666652679443)]
+
+marlow - Sentence n. 6
+ Alpha: Current alpha: 0.9928825924309503
+
+Words: [['grand', 'old', 'bisham', 'abbey', 'whose', 'stone', 'walls', 'have', 'rung', 'to', 'the', 'shouts', 'of', 'the', 'knights', 'templars', 'and', 'which', 'at', 'one', 'time', 'was', 'the', 'home', 'of', 'anne', 'of', 'cleves', 'and', 'at', 'another', 'of', 'queen', 'elizabeth', 'is', 'passed', 'on', 'the', 'right', 'bank', 'just', 'half', 'a', 'mile', 'above', '___', 'bridge']]
+Top similarities:[('godstow', 0.3721390962600708), ('hogsmill', 0.36768943071365356), ('shiplake', 0.36576682329177856), ('sonning', 0.35738736391067505), ('itchen', 0.3531039357185364), ('cholsey', 0.3488502502441406), ('lechlade', 0.34791630506515503), ('teign', 0.34697777032852173), ('plym', 0.34631213545799255), ('otterton', 0.34541499614715576), ('fordingbridge', 0.3440026640892029), ('barlaston', 0.3422794044017792), ('darent', 0.3404986262321472), ('gunville', 0.34037208557128906), ('nunney', 0.3401087522506714), ('stort', 0.33976930379867554), ('cuckmere', 0.33939871191978455), ('shalford', 0.3393643796443939), ('wylye', 0.3393622636795044), ('littleworth', 0.339285284280777)]
+
+marlow - Sentence n. 7
+ Alpha: Current alpha: 0.991465201390702
+
+Words: [['it', 'was', 'while', 'floating', 'in', 'his', 'boat', 'under', 'the', 'bisham', 'beeches', 'that', 'shelley', 'who', 'was', 'then', 'living', 'at', '___', 'you', 'can', 'see', 'his', 'house', 'now', 'in', 'west', 'street', 'composed', 'the', 'revolt', 'of', 'islam']]
+Top similarities:[('darent', 0.42361268401145935), ('shiplake', 0.3930397927761078), ('hogsmill', 0.3868137001991272), ('lechlade', 0.3857489228248596), ('mapledurham', 0.385176420211792), ('barlaston', 0.3826301693916321), ('roughton', 0.3735384941101074), ('otterton', 0.37036430835723877), ('yalding', 0.3691861033439636), ('dinton', 0.36827096343040466), ('gunville', 0.36725908517837524), ('sonning', 0.36604440212249756), ('kirtlington', 0.36577898263931274), ('wargrave', 0.36535561084747314), ('littleworth', 0.3646213412284851), ('staithe', 0.3624786138534546), ('burpham', 0.36230987310409546), ('missenden', 0.3614828586578369), ('tadley', 0.36136025190353394), ('puttenham', 0.3604249656200409)]
+
+marlow - Sentence n. 8
+ Alpha: Current alpha: 0.9900498337491681
+
+Words: [['we', 'got', 'up', 'tolerably', 'early', 'on', 'the', 'monday', 'morning', 'at', '___', 'and', 'went', 'for', 'a', 'bathe', 'before', 'breakfast', 'and', 'coming', 'back', 'montmorency', 'made', 'an', 'awful', 'ass', 'of', 'himself']]
+Top similarities:[('15-20%', 0.21529853343963623), ('2005-2009', 0.2127625048160553), ('nasls', 0.20627890527248383), ('marlboros', 0.20594578981399536), ('2007–2011', 0.20410820841789246), ('2-3%', 0.20293378829956055), ('2003–2009', 0.20251159369945526), ('strike-shortened', 0.2021470069885254), ('interleague', 0.20195206999778748), ('ldps', 0.2015777975320816), ('divisie', 0.20133627951145172), ('2013-2017', 0.19753165543079376), ('late-season', 0.19675052165985107), ('cataractes', 0.19613531231880188), ('quebecer', 0.1951514184474945), ('eight-game', 0.19478780031204224), ('record-low', 0.1942741870880127), ('javelinas', 0.19358128309249878), ('season-opening', 0.19348907470703125), ('2009-2013', 0.1931486427783966)]
+
+marlow - Sentence n. 9
+ Alpha: Current alpha: 0.9886364866178425
+
+Words: [['our', 'departure', 'from', '___', 'i', 'regard', 'as', 'one', 'of', 'our', 'greatest', 'successes']]
+Top similarities:[('our', 0.3118849992752075), ('countrys', 0.280426561832428), ('yushchenkos', 0.2787449061870575), ('surinames', 0.27866679430007935), ('nationss', 0.2753586173057556), ('czechoslovakias', 0.27116256952285767), ('countries’', 0.2707133889198303), ('worsening', 0.270607590675354), ('country’s', 0.27003616094589233), ('coalition’s', 0.2681785225868225), ('two-decade', 0.26593083143234253), ('shortfalls', 0.2654596269130707), ('hampering', 0.26541611552238464), ('jamaica’s', 0.2649669051170349), ('!date', 0.26475584506988525), ('kazakhstan’s', 0.26458293199539185), ('impoverishment', 0.2635912001132965), ('recession', 0.26296180486679077), ('19-point', 0.261147677898407), ('yugoslavias', 0.2603203058242798)]
+
+marlow - Sentence n. 10
+ Alpha: Current alpha: 0.9872251571123429
+
+Words: [['we', 'went', 'to', 'a', 'good', 'many', 'shops', 'adopting', 'this', 'principle', 'at', 'each', 'one', 'and', 'the', 'consequence', 'was', 'that', 'by', 'the', 'time', 'we', 'had', 'finished', 'we', 'had', 'as', 'fine', 'a', 'collection', 'of', 'boys', 'with', 'baskets', 'following', 'us', 'around', 'as', 'heart', 'could', 'desire', 'and', 'our', 'final', 'march', 'down', 'the', 'middle', 'of', 'the', 'high', 'street', 'to', 'the', 'river', 'must', 'have', 'been', 'as', 'imposing', 'a', 'spectacle', 'as', '___', 'had', 'seen', 'for', 'many', 'a', 'long', 'day']]
+Top similarities:[('spectacle', 0.28282806277275085), ('breath-taking', 0.2288074791431427), ('river’s', 0.2205025851726532), ('lake”', 0.21781186759471893), ('nallah', 0.20746539533138275), ('babine', 0.20682965219020844), ('ecotourism', 0.2048340141773224), ('fleuve', 0.20423710346221924), ('backwater', 0.2028515338897705), ('vesle', 0.20187267661094666), ('tawachiche', 0.19948138296604156), ('scenic', 0.19907325506210327), ('breathtaking', 0.19859002530574799), ('manmade', 0.19764208793640137), ('acheloos', 0.19759246706962585), ('meanders', 0.19674043357372284), ('iguazu', 0.19634191691875458), ('man-made', 0.19339951872825623), ('meanderings', 0.1933489292860031), ('dizzying', 0.19287335872650146)]
+
+marlow - Sentence n. 11
+ Alpha: Current alpha: 0.9858158423524046
+
+Words: [['he', 'between', 'his', 'contented', 'addressing', 'the', 'two', 'novices', 'who', 'have', 'been', 'grinding', 'away', 'steadily', 'up', 'stream', 'for', 'the', 'last', 'hour', 'and', 'a', 'half', 'why', 'jim', 'and', 'jack', 'and', 'i', 'last', 'season', 'pulled', 'up', 'from', '___', 'to', 'goring', 'in', 'one', 'afternoon', 'never', 'stopped', 'once']]
+Top similarities:[('goring', 0.37916654348373413), ('ufford', 0.3645283877849579), ('|}', 0.3607017993927002), ('grimston', 0.3538082242012024), ('__notoc__', 0.3470810055732727), ('lady-in-waiting', 0.3431735634803772), ('arabella', 0.3403191566467285), ('!date', 0.33830806612968445), ('margery', 0.3361230492591858), ('bergavenny', 0.33468931913375854), ('benger', 0.3337087631225586), ('pre-prep', 0.33350205421447754), ('living-room', 0.33082932233810425), ('whorwood', 0.3303428292274475), ('mignon', 0.32922908663749695), ('style=|exhibition', 0.3272401690483093), ('!bgcolor=#cccccc', 0.32697755098342896), ('!colspan=5|jr', 0.3263557255268097), ('ghislaine', 0.324917197227478), ('adeane', 0.3248610198497772)]
+
+marlow - Sentence n. 12
+ Alpha: Current alpha: 0.9844085394618745
+
+Words: [['the', 'boats', 'that', 'as', 'a', 'rule', 'are', 'let', 'for', 'hire', 'on', 'the', 'thames', 'above', '___', 'are', 'very', 'good', 'boats']]
+Top similarities:[('sir!', 0.30735787749290466), ('itll', 0.3069674074649811), ('you', 0.29129743576049805), ('good!', 0.2886388301849365), ('somebody', 0.2790106236934662), ('advisable', 0.2741345763206482), ('damn', 0.27256834506988525), ('pleasure', 0.2715763747692108), ('squib', 0.26878678798675537), ('calm', 0.26679617166519165), ('relaxing', 0.2659384310245514), ('quiet', 0.2654809057712555), ('anybody', 0.2637045383453369), ('wouldn’t', 0.2635664939880371), ('blustery', 0.2634589672088623), ('please', 0.26332271099090576), ('youd', 0.26279789209365845), ('myself', 0.26036056876182556), ('graciously', 0.2592325806617737), ('boats', 0.25892800092697144)]
+
+marlow - Sentence n. 13
+ Alpha: Current alpha: 0.9830032455687053
+
+Words: [['the', 'boat', 'you', 'hire', 'up', 'the', 'river', 'above', '___', 'is', 'not', 'the', 'sort', 'of', 'boat', 'in', 'which', 'you', 'can', 'flash', 'about', 'and', 'give', 'yourself', 'airs']]
+Top similarities:[('flash', 0.3164893090724945), ('itll', 0.31368762254714966), ('you', 0.309049129486084), ('somebody', 0.30057111382484436), ('good!', 0.2998785972595215), ('sir!', 0.28784698247909546), ('youd', 0.2853916883468628), ('fun', 0.2799854874610901), ('anybody', 0.27247482538223267), ('can’t', 0.2723395526409149), ('frights', 0.27060699462890625), ('your', 0.2703447639942169), ('she’d', 0.2699137330055237), ('sensible', 0.26969388127326965), ('yourself', 0.26922622323036194), ('scary', 0.2678805887699127), ('quiet', 0.2646948993206024), ('this?', 0.26441383361816406), ('damn', 0.26410073041915894), ('ridiculous', 0.2635701298713684)]
+

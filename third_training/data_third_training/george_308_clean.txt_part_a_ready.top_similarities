@@ -1,0 +1,654 @@
+george - Sentence n. 0
+ Alpha: Current alpha: 1.001429592322817
+
+Words: [['___', 'and', 'harris', 'and', 'montmorency', 'are', 'not', 'poetic', 'ideals', 'but', 'things', 'of', 'flesh', 'and', 'blood', 'especially', '___', 'who', 'weighs', 'about', 'twelve', 'stone']]
+Top similarities:[('weighs', 0.39035215973854065), ('concision', 0.3798142969608307), ('coarseness', 0.3584750294685364), ('versification', 0.3564203977584839), ('niceties', 0.35405537486076355), ('scansion', 0.35371458530426025), ('sentimentality', 0.353240966796875), ('conciseness', 0.35319840908050537), ('singable', 0.34615129232406616), ('trochaic', 0.3460826873779297), ('epigrammatic', 0.3454109728336334), ('roundness', 0.3452902138233185), ('bombast', 0.3449997305870056), ('sweetness', 0.3444124460220337), ('lyricism', 0.34324634075164795), ('similes', 0.34299394488334656), ('conceits', 0.3429314196109772), ('syrupy', 0.3409302532672882), ('deftness', 0.3391575217247009), ('digestible', 0.3376833200454712)]
+
+george - Sentence n. 1
+ Alpha: Current alpha: 1.0
+
+Words: [['three', 'invalids', 'sufferings', 'of', '___', 'and', 'harris', 'a', 'victim', 'to', 'one', 'hundred', 'and', 'seven', 'fatal', 'maladies', 'useful', 'prescriptions', 'cure', 'for', 'liver', 'complaint', 'in', 'children', 'we', 'agree', 'that', 'we', 'are', 'overworked', 'and', 'need', 'rest', 'a', 'week', 'on', 'the', 'rolling', 'deep', '___', 'suggests', 'the', 'river', 'montmorency', 'lodges', 'an', 'objection', 'original', 'motion', 'carried', 'by', 'majority', 'of', 'three', 'to', 'one']]
+Top similarities:[('hundredweight', 0.3158609867095947), ('mock-heroic', 0.3090932369232178), ('stone', 0.3087833523750305), ('troutbeck', 0.2996126413345337), ('hundred', 0.29571032524108887), ('hill”', 0.2925857603549957), ('pemmican', 0.29251497983932495), ('fieldstone', 0.2889276146888733), ('inclosed', 0.28863635659217834), ('stone”', 0.284577339887619), ('barns', 0.2822483479976654), ('weepy', 0.2816569209098816), ('hovels', 0.28125858306884766), ('“lower', 0.2796911299228668), ('three-hundred', 0.27883827686309814), ('earthwork', 0.27815642952919006), ('hogsheads', 0.27751028537750244), ('powick', 0.27641579508781433), ('blockhouse', 0.2754054665565491), ('somerhill', 0.27449262142181396)]
+
+george - Sentence n. 2
+ Alpha: Current alpha: 0.9985724484938566
+
+Words: [['there', 'were', 'four', 'of', 'us', '___', 'and', 'william', 'samuel', 'harris', 'and', 'myself', 'and', 'montmorency']]
+Top similarities:[('‘oh', 0.5087543725967407), ('did”', 0.49787843227386475), ('myself', 0.4925295412540436), ('fun?', 0.4728012681007385), ('better?', 0.4693836271762848), ('“you’re', 0.4574129283428192), ('something?', 0.4549117088317871), ('need?', 0.4537814259529114), ('piss', 0.44891977310180664), ('whatll', 0.44734689593315125), ('down?', 0.4472768306732178), ('“he’s', 0.4444253444671631), ('i’ll', 0.4439161717891693), ('too”', 0.4421209394931793), ('my', 0.4420793652534485), ('“that’s', 0.4416193962097168), ('“i’ll', 0.44130146503448486), ('idolize', 0.440565288066864), ('wait!', 0.44001299142837524), ('yknow', 0.43980520963668823)]
+
+george - Sentence n. 3
+ Alpha: Current alpha: 0.997146934891016
+
+Words: [['harris', 'said', 'he', 'felt', 'such', 'extraordinary', 'fits', 'of', 'giddiness', 'come', 'over', 'him', 'at', 'times', 'that', 'he', 'hardly', 'knew', 'what', 'he', 'was', 'doing', 'and', 'then', '___', 'said', 'that', 'he', 'had', 'fits', 'of', 'giddiness', 'too', 'and', 'hardly', 'knew', 'what', 'he', 'was', 'doing']]
+Top similarities:[('knew', 0.45429912209510803), ('know', 0.4298039972782135), ('imagine', 0.4223049581050873), ('__notoc__', 0.4211723208427429), ('imagined', 0.41369038820266724), ('did”', 0.40007835626602173), ('“i', 0.3973711133003235), ('remember', 0.396472692489624), ('else', 0.3958253860473633), ('together?', 0.3954337537288666), ('talked', 0.39206188917160034), ('‘oh', 0.3916500508785248), ('remembers', 0.3897312879562378), ('interviewer', 0.38933199644088745), ('anybody', 0.3884916603565216), ('about”', 0.3879123628139496), ('say', 0.3875630795955658), ('before?', 0.38717979192733765), ('what', 0.3861921429634094), ('“if', 0.3851430416107178)]
+
+george - Sentence n. 4
+ Alpha: Current alpha: 0.9957234562822662
+
+Words: [['i', 'explained', 'to', '___', 'and', 'william', 'harris', 'how', 'i', 'felt', 'when', 'i', 'got', 'up', 'in', 'the', 'morning', 'and', 'william', 'harris', 'told', 'us', 'how', 'he', 'felt', 'when', 'he', 'went', 'to', 'bed', 'and', '___', 'stood', 'on', 'the', 'hearth', 'rug', 'and', 'gave', 'us', 'a', 'clever', 'and', 'powerful', 'piece', 'of', 'acting', 'illustrative', 'of', 'how', 'he', 'felt', 'in', 'the', 'night']]
+Top similarities:[('couch', 0.3793613314628601), ('‘when', 0.36336439847946167), ('it’', 0.3539203405380249), ('“he', 0.35290151834487915), ('sobbing', 0.3522855043411255), ('‘i', 0.35207515954971313), ('him”', 0.3445095419883728), ('“she', 0.34373313188552856), ('‘oh', 0.34289324283599854), ('kissed', 0.34171968698501587), ('groaned', 0.3399800658226013), ('gazed', 0.33993643522262573), ('hearth', 0.3391982913017273), ('knew', 0.3388676643371582), ('crying', 0.3379981517791748), ('sackcloth', 0.3367048501968384), ('he?', 0.3364598751068115), ('‘why', 0.33516019582748413), ('shudder', 0.3349500596523285), ('bed', 0.3324334919452667)]
+
+george - Sentence n. 5
+ Alpha: Current alpha: 0.9943020097625482
+
+Words: [['___', 'fancies', 'he', 'is', 'ill', 'but', 'there', 's', 'never', 'anything', 'really', 'the', 'matter', 'with', 'him', 'you', 'know']]
+Top similarities:[('couch', 0.38474076986312866), ('‘when', 0.3690991699695587), ('him”', 0.35885563492774963), ('“he', 0.35407912731170654), ('‘i', 0.3480096459388733), ('it’', 0.3463577628135681), ('sobbing', 0.3427112102508545), ('groaned', 0.3409463167190552), ('‘oh', 0.3353877365589142), ('gazed', 0.3345588445663452), ('knew', 0.3345463275909424), ('he?', 0.3326239585876465), ('‘why', 0.33239859342575073), ('idly', 0.3318680226802826), ('muttered', 0.3293154239654541), ('‘he', 0.32913443446159363), ('sobbed', 0.32884636521339417), ('kurelek', 0.3279266953468323), ('“she', 0.3272068202495575), ('sackcloth', 0.32698357105255127)]
+
+george - Sentence n. 6
+ Alpha: Current alpha: 0.9928825924309503
+
+Words: [['rest', 'and', 'a', 'complete', 'change', 'said', '___']]
+Top similarities:[('it’', 0.33663564920425415), ('‘when', 0.326410174369812), ('him”', 0.32246118783950806), ('couch', 0.3218632936477661), ('“he', 0.3123188018798828), ('‘i', 0.30864137411117554), ('‘why', 0.3047066330909729), ('it”', 0.3013325333595276), ('groaned', 0.2981121838092804), ('shudder', 0.2955612540245056), ('down?', 0.29554033279418945), ('sobbing', 0.2951841652393341), ('“when', 0.294072687625885), ('everything', 0.2934197187423706), ('knew', 0.29282522201538086), ('suddenly', 0.2925136983394623), ('“i', 0.2912851572036743), ('together?', 0.2880293130874634), ('sackcloth', 0.2879375219345093), ('‘he', 0.2872033715248108)]
+
+george - Sentence n. 7
+ Alpha: Current alpha: 0.991465201390702
+
+Words: [['___', 'has', 'a', 'cousin', 'who', 'is', 'usually', 'described', 'in', 'the', 'charge', 'sheet', 'as', 'a', 'medical', 'student', 'so', 'that', 'he', 'naturally', 'has', 'a', 'somewhat', 'family', 'way', 'of', 'putting', 'things']]
+Top similarities:[('hearth', 0.34561192989349365), ('helwys', 0.323986291885376), ('phelips', 0.3203304708003998), ('couch', 0.31923261284828186), ('coffin', 0.31458038091659546), ('sobbing', 0.3145444989204407), ('sobbed', 0.3134988248348236), ('salesbury', 0.3096504807472229), ('oglander', 0.3093545436859131), ('traherne', 0.3088591396808624), ('wordsworth', 0.3083302080631256), ('lightoller', 0.30672451853752136), ('robertland', 0.3062317371368408), ('tillyard', 0.30603957176208496), ('lenthall', 0.30527764558792114), ('bargrave', 0.3046681880950928), ('bed', 0.3027682900428772), ('deathbed', 0.3027065396308899), ('cowper', 0.3003096282482147), ('gazed', 0.2999829649925232)]
+
+george - Sentence n. 8
+ Alpha: Current alpha: 0.9900498337491681
+
+Words: [['i', 'agreed', 'with', '___', 'and', 'suggested', 'that', 'we', 'should', 'seek', 'out', 'some', 'retired', 'and', 'old', 'world', 'spot', 'far', 'from', 'the', 'madding', 'crowd', 'and', 'dream', 'away', 'a', 'sunny', 'week', 'among', 'its', 'drowsy', 'lanes', 'some', 'half', 'forgotten', 'nook', 'hidden', 'away', 'by', 'the', 'fairies', 'out', 'of', 'reach', 'of', 'the', 'noisy', 'world', 'some', 'quaint', 'perched', 'eyrie', 'on', 'the', 'cliffs', 'of', 'time', 'from', 'whence', 'the', 'surging', 'waves', 'of', 'the', 'nineteenth', 'century', 'would', 'sound', 'far', 'off', 'and', 'faint']]
+Top similarities:[('!bgcolor=#cccccc', 0.33349156379699707), ('!date', 0.32635295391082764), ('kai-shek’s', 0.3168123960494995), ('ex-situ', 0.31230008602142334), ('phocian', 0.30963024497032166), ('peloponnesians', 0.3072546720504761), ('cerrejón', 0.3039501905441284), ('|}', 0.30364298820495605), ('artaphernes', 0.301641583442688), ('thebans', 0.3011131286621094), ('scuttling', 0.2991890013217926), ('rulemaking', 0.2983548045158386), ('congkes', 0.2971072793006897), ('libyans', 0.2950223982334137), ('okl', 0.29499489068984985), ('pharnabazus', 0.2947870194911957), ('libya', 0.2938326597213745), ('achaeus', 0.29318931698799133), ('siblicide', 0.2928094267845154), ('aristagoras', 0.2925412058830261)]
+
+george - Sentence n. 9
+ Alpha: Current alpha: 0.9886364866178425
+
+Words: [['but', 'i', 'was', 'afraid', 'for', '___']]
+Top similarities:[('pharnabazus', 0.28257450461387634), ('nectanebo', 0.278877854347229), ('thebans', 0.27862071990966797), ('psamtik', 0.27824854850769043), ('achaeus', 0.27649885416030884), ('aristagoras', 0.2753351628780365), ('campioni', 0.2748159170150757), ('artaphernes', 0.2730485200881958), ('agesilaus', 0.2728379964828491), ('libyans', 0.2716113030910492), ('antigonus', 0.27064651250839233), ('peloponnesians', 0.27009254693984985), ('phocian', 0.2700778543949127), ('kai-shek’s', 0.26866424083709717), ('cleomenes', 0.26608806848526), ('jiān', 0.26593464612960815), ('cunxiao', 0.26501864194869995), ('congkes', 0.2641986012458801), ('tarentines', 0.2630819082260132), ('athenians', 0.2618769407272339)]
+
+george - Sentence n. 10
+ Alpha: Current alpha: 0.9872251571123429
+
+Words: [['___', 'said', 'he', 'should', 'be', 'all', 'right', 'and', 'would', 'rather', 'like', 'it', 'but', 'he', 'would', 'advise', 'harris', 'and', 'me', 'not', 'to', 'think', 'of', 'it', 'as', 'he', 'felt', 'sure', 'we', 'should', 'both', 'be', 'ill', 'harris', 'said', 'that', 'to', 'himself', 'it', 'was', 'always', 'a', 'mystery', 'how', 'people', 'managed', 'to', 'get', 'sick', 'at', 'sea', 'said', 'he', 'thought', 'people', 'must', 'do', 'it', 'on', 'purpose', 'from', 'affectation', 'said', 'he', 'had', 'often', 'wished', 'to', 'be', 'but', 'had', 'never', 'been', 'able']]
+Top similarities:[('thebans', 0.29313069581985474), ('phocian', 0.2857501804828644), ('psamtik', 0.2810904085636139), ('rhodians', 0.2799612879753113), ('nectanebo', 0.2790255844593048), ('achaeus', 0.2785179615020752), ('peloponnesians', 0.2746981680393219), ('lacedaemonians', 0.27402064204216003), ('agesilaus', 0.2715810537338257), ('aristagoras', 0.27142733335494995), ('satyros', 0.26905208826065063), ('campioni', 0.2673117220401764), ('libyans', 0.2659163773059845), ('intervene', 0.2653714716434479), ('tarentines', 0.26525330543518066), ('gallienus', 0.264120489358902), ('antigonus', 0.2634199559688568), ('war?', 0.26337409019470215), ('himilco', 0.26151829957962036), ('pharnabazus', 0.2610650658607483)]
+
+george - Sentence n. 11
+ Alpha: Current alpha: 0.9858158423524046
+
+Words: [['___', 'said', 'let', 's', 'go', 'up', 'the', 'river']]
+Top similarities:[('ready?', 0.27263468503952026), ('rupo', 0.2672457695007324), ('campioni', 0.26586127281188965), ('magjike', 0.2602140009403229), ('n}', 0.2591257393360138), ('think', 0.2570049464702606), ('vatutin', 0.25500035285949707), ('war?', 0.25490689277648926), ('yeddyurappa', 0.2545062303543091), ('nectanebo', 0.2529011368751526), ('invest', 0.2503088116645813), ('løkke', 0.24982081353664398), ('\\relative', 0.24938982725143433), ('neptunia', 0.24936366081237793), ('këngës', 0.24861489236354828), ('feds', 0.2483757883310318), ('fix', 0.24758459627628326), ('kai-shek’s', 0.246993750333786), ('quelli', 0.24674120545387268), ('varalakshmi', 0.24634936451911926)]
+
+george - Sentence n. 12
+ Alpha: Current alpha: 0.9844085394618745
+
+Words: [['harris', 'said', 'he', 't', 'think', '___', 'ought', 'to', 'do', 'anything', 'that', 'would', 'have', 'a', 'tendency', 'to', 'make', 'him', 'than', 'he', 'always', 'was', 'as', 'it', 'might', 'be', 'dangerous']]
+Top similarities:[('palicha', 0.31272435188293457), ('varalakshmi', 0.3038250803947449), ('n}', 0.3023541569709778), ('sowcar', 0.2979736328125), ('sreenivas', 0.2962879538536072), ('rajagopalan', 0.28810644149780273), ('kannamba', 0.2878641188144684), ('soundararajan', 0.28686755895614624), ('sailaja', 0.2862478494644165), ('thangavelu', 0.28345632553100586), ('think', 0.28210294246673584), ('nagarajan', 0.2797538638114929), ('chellappa', 0.2796221971511841), ('muthuraman', 0.27879366278648376), ('eswari', 0.2781030535697937), ('ashwath', 0.2779437005519867), ('venkatesan', 0.2777474522590637), ('believe', 0.2768670916557312), ('nicolaou', 0.27675554156303406), ('vanisri', 0.27629899978637695)]
+
+george - Sentence n. 13
+ Alpha: Current alpha: 0.9830032455687053
+
+Words: [['he', 'said', 'he', 't', 'very', 'well', 'understand', 'how', '___', 'was', 'going', 'to', 'sleep', 'any', 'more', 'than', 'he', 'did', 'now', 'seeing', 'that', 'there', 'were', 'only', 'twenty', 'four', 'hours', 'in', 'each', 'day', 'summer', 'and', 'winter', 'alike', 'but', 'thought', 'that', 'if', 'he', 'did', 'sleep', 'any', 'more', 'he', 'might', 'just', 'as', 'well', 'be', 'dead', 'and', 'so', 'save', 'his', 'board', 'and', 'lodging']]
+Top similarities:[('i’m', 0.42467746138572693), ('together?', 0.4064359664916992), ('school?', 0.4032261371612549), ('youll', 0.4021622836589813), ('thats', 0.39910218119621277), ('fun?', 0.39901548624038696), ('youre', 0.39228755235671997), ('feel?', 0.3864132761955261), ('it’ll', 0.3855418264865875), ('i’d', 0.3832360506057739), ('you', 0.3830314874649048), ('you’re', 0.3821178674697876), ('effortful', 0.382033109664917), ('better!', 0.38192713260650635), ('yknow', 0.3802962899208069), ('weirder', 0.37879815697669983), ('that’s', 0.37777000665664673), ('youd', 0.3758648931980133), ('ive', 0.37481921911239624), ('bad?', 0.3733369708061218)]
+
+george - Sentence n. 14
+ Alpha: Current alpha: 0.98159995780495
+
+Words: [['it', 'suited', 'me', 'to', 'a', 't', 'too', 'and', 'harris', 'and', 'i', 'both', 'said', 'it', 'was', 'a', 'good', 'idea', 'of', '___', 's', 'and', 'we', 'said', 'it', 'in', 'a', 'tone', 'that', 'seemed', 'to', 'somehow', 'imply', 'that', 'we', 'were', 'surprised', 'that', '___', 'should', 'have', 'come', 'out', 'so', 'sensible']]
+Top similarities:[('rule-based', 0.21671587228775024), ('defused', 0.19982147216796875), ('intermittent', 0.19653375446796417), ('manageable', 0.1938886195421219), ('subdued', 0.19272541999816895), ('hostile', 0.19241055846214294), ('coincidental', 0.1869201362133026), ('suspicious', 0.18144556879997253), ('passable', 0.1803160011768341), ('dependant', 0.18022051453590393), ('receptive', 0.1796794831752777), ('ambushed', 0.17896543443202972), ('escalates', 0.17713424563407898), ('marginally', 0.17701423168182373), ('tenuous', 0.17692157626152039), ('brienz', 0.1762494146823883), ('re-emerges', 0.17514702677726746), ('month-to-month', 0.1750059872865677), ('workable', 0.17132668197155), ('infrequent', 0.17050085961818695)]
+
+george - Sentence n. 15
+ Alpha: Current alpha: 0.9801986733067553
+
+Words: [['harris', 'and', 'i', 'would', 'go', 'down', 'in', 'the', 'morning', 'and', 'take', 'the', 'boat', 'up', 'to', 'chertsey', 'and', '___', 'who', 'would', 'not', 'be', 'able', 'to', 'get', 'away', 'from', 'the', 'city', 'till', 'the', 'afternoon', '___', 'goes', 'to', 'sleep', 'at', 'a', 'bank', 'from', 'ten', 'to', 'four', 'each', 'day', 'except', 'saturdays', 'when', 'they', 'wake', 'him', 'up', 'and', 'put', 'him', 'outside', 'at', 'two', 'would', 'meet', 'us', 'there']]
+Top similarities:[('bargrave', 0.3007616698741913), ('unwell', 0.2992151379585266), ('half-past', 0.2966352701187134), ('amiss', 0.29605934023857117), ('mapledurham', 0.29371708631515503), ('houseboat', 0.2936875820159912), ('sickbed', 0.2935557961463928), ('deserted', 0.28925037384033203), ('semi-conscious', 0.2849184274673462), ('penniless', 0.28351765871047974), ('ughtred', 0.28289079666137695), ('awakes', 0.28266000747680664), ('radley', 0.2819695472717285), ('uttanka', 0.28184062242507935), ('convalesce', 0.2810796797275543), ('suddenly', 0.2791537642478943), ('maidservants', 0.27898263931274414), ('reluctantly', 0.27769291400909424), ('asleep', 0.2766894996166229), ('casaubon', 0.27537405490875244)]
+
+george - Sentence n. 16
+ Alpha: Current alpha: 0.9787993892143566
+
+Words: [['___', 'and', 'i', 'were', 'for', 'camping', 'out']]
+Top similarities:[('bargrave', 0.29791754484176636), ('unwell', 0.29783758521080017), ('half-past', 0.29510802030563354), ('houseboat', 0.294852077960968), ('amiss', 0.29469090700149536), ('mapledurham', 0.29346808791160583), ('sickbed', 0.2915269732475281), ('deserted', 0.2889028489589691), ('semi-conscious', 0.28289341926574707), ('awakes', 0.28224554657936096), ('penniless', 0.2821045517921448), ('convalesce', 0.2800998091697693), ('radley', 0.2800244688987732), ('uttanka', 0.27960577607154846), ('ughtred', 0.27939510345458984), ('suddenly', 0.2773689925670624), ('maidservants', 0.27734440565109253), ('asleep', 0.2762914299964905), ('reluctantly', 0.2762446403503418), ('boarding-house', 0.27431491017341614)]
+
+george - Sentence n. 17
+ Alpha: Current alpha: 0.9774021026720714
+
+Words: [['picture', 'whisky', 'glass', '___', 'said', 'he', 'felt', 'thirsty', 'i', 'never', 'knew', '___', 'when', 'he', 't', 'and', 'as', 'i', 'had', 'a', 'that', 'a', 'little', 'whisky', 'warm', 'with', 'a', 'slice', 'of', 'lemon', 'would', 'do', 'my', 'complaint', 'good', 'the', 'debate', 'was', 'by', 'common', 'assent', 'adjourned', 'to', 'the', 'following', 'night', 'and', 'the', 'assembly', 'put', 'on', 'its', 'hats', 'and', 'went', 'out']]
+Top similarities:[('unwell', 0.36182790994644165), ('half-past', 0.3577379584312439), ('sobered', 0.35623306035995483), ('chandar', 0.3487436771392822), ('fitfully', 0.34730762243270874), ('exhilarated', 0.34546223282814026), ('freaked', 0.34498369693756104), ('kaikeyi', 0.3416959047317505), ('she’d', 0.3415529131889343), ('uttanka', 0.34006449580192566), ('nauseated', 0.33903488516807556), ('menstruating', 0.33810484409332275), ('flabbergasted', 0.3375276029109955), ('amiss', 0.3369865119457245), ('vihaan', 0.33583423495292664), ('liir', 0.33579516410827637), ('pammi', 0.3349273204803467), ('woke', 0.3339739441871643), ('frightfully', 0.3335172235965729), ('sudha', 0.33323395252227783)]
+
+george - Sentence n. 18
+ Alpha: Current alpha: 0.9760068108282943
+
+Words: [['arrangements', 'settled', 'harris', 's', 'method', 'of', 'doing', 'work', 'how', 'the', 'elderly', 'family', 'man', 'puts', 'up', 'a', 'picture', '___', 'makes', 'a', 'sensible', 'remark', 'delights', 'of', 'early', 'morning', 'bathing', 'provisions', 'for', 'getting', 'upset']]
+Top similarities:[('kaikeyi', 0.3313135504722595), ('chellamma', 0.3272724151611328), ('fitfully', 0.32707417011260986), ('frightfully', 0.3226674199104309), ('liir', 0.32152220606803894), ('rupali', 0.3209376633167267), ('amudha', 0.3201979100704193), ('chandar', 0.3148347735404968), ('carousing', 0.31372547149658203), ('savitri', 0.3114978075027466), ('chakor', 0.3101375102996826), ('glum', 0.3099038600921631), ('siddhu', 0.30918729305267334), ('gentlewomen', 0.3074719309806824), ('sudha', 0.3072074055671692), ('dreadfully', 0.30715811252593994), ('mandodari', 0.3070942759513855), ('unsociable', 0.3056965470314026), ('anandhi', 0.30436593294143677), ('uttanka', 0.30393725633621216)]
+
+george - Sentence n. 19
+ Alpha: Current alpha: 0.9746135108354902
+
+Words: [['now', 'you', 'get', 'a', 'bit', 'of', 'paper', 'and', 'write', 'down', 'j', 'and', 'you', 'get', 'the', 'grocery', 'catalogue', '___', 'and', 'somebody', 'give', 'me', 'a', 'bit', 'of', 'pencil', 'and', 'then', 'i', 'll', 'make', 'out', 'a', 'list']]
+Top similarities:[('rupali', 0.28698253631591797), ('ishara', 0.27595049142837524), ('pyrrha', 0.26660045981407166), ('launderette', 0.2648333013057709), ('proprietress', 0.2647290825843811), ('potiphar', 0.2643086314201355), ('morwenna', 0.26374393701553345), ('gopu', 0.2623080313205719), ('rajs', 0.26178890466690063), ('ghote', 0.2607486844062805), ('sudha', 0.2600966989994049), ('beauman', 0.2599528133869171), ('relangi', 0.2558879256248474), ('chitra', 0.25569379329681396), ('sadie', 0.2550063729286194), ('siddhu', 0.25460124015808105), ('liir', 0.2544110417366028), ('varalakshmi', 0.2543743848800659), ('moyra', 0.25420916080474854), ('burgle', 0.2540479898452759)]
+
+george - Sentence n. 20
+ Alpha: Current alpha: 0.9732221998501893
+
+Words: [['i', 'said', 'no', 'you', 'get', 'the', 'paper', 'and', 'the', 'pencil', 'and', 'the', 'catalogue', 'and', '___', 'write', 'down', 'and', 'i', 'll', 'do', 'the', 'work']]
+Top similarities:[('spier', 0.2767334282398224), ('meyers', 0.27473145723342896), ('self-distributed', 0.26930713653564453), ('lamplight', 0.26671308279037476), ('absolut', 0.26592719554901123), ('holler', 0.26515454053878784), ('stickman', 0.2632986903190613), ('sidran', 0.26154205203056335), ('crosby’s', 0.2610648274421692), ('budget-priced', 0.261013388633728), ('dwork', 0.26013195514678955), ('glasers', 0.25834038853645325), ('moreland', 0.25788775086402893), ('kristoffersons', 0.25469422340393066), ('mclauchlan', 0.2542935013771057), ('rappin', 0.25356000661849976), ('itsy', 0.25324517488479614), ('sandin', 0.2530044615268707), ('lier', 0.2528122663497925), ('leventhal', 0.2517736256122589)]
+
+george - Sentence n. 21
+ Alpha: Current alpha: 0.9718328750329811
+
+Words: [['___', 'said', 'you', 'know', 'we', 'are', 'on', 'a', 'wrong', 'track', 'altogether']]
+Top similarities:[('anyway', 0.31359046697616577), ('__notoc__', 0.31179285049438477), ('phoning', 0.3077235221862793), ('!bgcolor=#cccccc', 0.30214443802833557), ('!date', 0.3017849326133728), ('dealers', 0.30033811926841736), ('incentive', 0.29836341738700867), ('ious', 0.2925371527671814), ('advising', 0.29164403676986694), ('debase', 0.29050588607788086), ('telling', 0.2902611792087555), ('printouts', 0.2893175184726715), ('incentives', 0.28856509923934937), ('high-interest', 0.28853079676628113), ('discount', 0.283633291721344), ('!scope=row|worldwide', 0.2823060154914856), ('|}', 0.2822408676147461), ('overdrafts', 0.28162580728530884), ('irresponsibly', 0.2810811400413513), ('ignoring', 0.2805899381637573)]
+
+george - Sentence n. 22
+ Alpha: Current alpha: 0.9704455335485082
+
+Words: [['___', 'comes', 'out', 'really', 'quite', 'sensible', 'at', 'times']]
+Top similarities:[('furtively', 0.34247201681137085), ('luckless', 0.3322378396987915), ('panic-stricken', 0.3315020501613617), ('well-fed', 0.32536470890045166), ('famished', 0.3239482045173645), ('well-supplied', 0.3212506175041199), ('robbers', 0.31796878576278687), ('perseveres', 0.31223970651626587), ('fearfully', 0.3101334571838379), ('country-side', 0.3066282868385315), ('bombed-out', 0.30590593814849854), ('deserted', 0.3030795753002167), ('calwyn', 0.3024347424507141), ('thoughtlessly', 0.3007931113243103), ('hiding', 0.3001338839530945), ('pursuers', 0.29664862155914307), ('carousing', 0.2966465651988983), ('fitfully', 0.2957509756088257), ('defenceless', 0.2954322099685669), ('dejected', 0.2946438789367676)]
+
+george - Sentence n. 23
+ Alpha: Current alpha: 0.969060172565461
+
+Words: [['well', 'we', 'left', 'the', 'list', 'to', '___', 'and', 'he', 'began', 'it']]
+Top similarities:[('well-supplied', 0.3451387584209442), ('bombed-out', 0.322471559047699), ('robbers', 0.30805596709251404), ('famished', 0.3064984679222107), ('well-stocked', 0.3062671422958374), ('furtively', 0.3007248044013977), ('emigrant', 0.2958211898803711), ('panic-stricken', 0.2957189679145813), ('bushmans', 0.29294806718826294), ('unsullied', 0.2923581302165985), ('cowering', 0.2911572754383087), ('kopje', 0.28895509243011475), ('smuggles', 0.2889505922794342), ('waterhole', 0.2882117033004761), ('hilltop', 0.286285936832428), ('country-side', 0.2842509150505066), ('miriams', 0.28389254212379456), ('strongbox', 0.28268003463745117), ('deserted', 0.28257042169570923), ('unfortified', 0.2822491526603699)]
+
+george - Sentence n. 24
+ Alpha: Current alpha: 0.9676767892565716
+
+Words: [['picture', 'tent', 'we', 'won', 't', 'take', 'a', 'tent', 'suggested', '___', 'we', 'will', 'have', 'a', 'boat', 'with', 'a', 'cover']]
+Top similarities:[('orjen', 0.28833723068237305), ('isil-held', 0.28183674812316895), ('back-country', 0.2760068476200104), ('no-mans-land', 0.2757941484451294), ('bushwalkers', 0.2757326364517212), ('lovćen', 0.27428460121154785), ('cavalries', 0.27241775393486023), ('Žepa', 0.27176153659820557), ('anti-lebanon', 0.27142998576164246), ('airdrops', 0.2652372717857361), ('epipelagic', 0.26396870613098145), ('bmp-1s', 0.26311248540878296), ('taygetus', 0.2631056308746338), ('well-supplied', 0.262356698513031), ('concealable', 0.26030710339546204), ('t-55s', 0.25815606117248535), ('non-combatants', 0.25804436206817627), ('pohorje', 0.25794559717178345), ('categoryliving', 0.2574996054172516), ('bivouacs', 0.25728312134742737)]
+
+george - Sentence n. 25
+ Alpha: Current alpha: 0.9662953807986084
+
+Words: [['___', 'said', 'that', 'in', 'that', 'case', 'we', 'must', 'take', 'a', 'rug', 'each', 'a', 'lamp', 'some', 'soap', 'a', 'brush', 'and', 'comb', 'between', 'us', 'a', 'toothbrush', 'each', 'a', 'basin', 'some', 'tooth', 'powder', 'some', 'shaving', 'tackle', 'sounds', 'like', 'a', 'french', 'exercise', 't', 'it']]
+Top similarities:[('soarers', 0.32706427574157715), ('epipelagic', 0.31246986985206604), ('downrange', 0.3088003098964691), ('__notoc__', 0.30275145173072815), ('full-duplex', 0.3016340732574463), ('on-time', 0.2962731122970581), ('km/hour', 0.2949610948562622), ('gigabits', 0.29061928391456604), ('shotshells', 0.2893640697002411), ('short-duration', 0.2877970039844513), ('€0', 0.284740686416626), ('mig-23s', 0.28328949213027954), ('isil-held', 0.2826884388923645), ('cool-down', 0.2822829484939575), ('high-bandwidth', 0.2821313440799713), ('setups', 0.28197112679481506), ('cloudiness', 0.28196442127227783), ('feature-rich', 0.28133469820022583), ('latencies', 0.28063154220581055), ('cm/s', 0.28000348806381226)]
+
+george - Sentence n. 26
+ Alpha: Current alpha: 0.96491594437237
+
+Words: [['___', 'said', 'it', 'was', 'so', 'pleasant', 'to', 'wake', 'up', 'in', 'the', 'boat', 'in', 'the', 'fresh', 'morning', 'and', 'plunge', 'into', 'the', 'limpid', 'river']]
+Top similarities:[('!date', 0.438903272151947), ('!bgcolor=#cccccc', 0.4205373525619507), ('categoryliving', 0.4179367423057556), ('__notoc__', 0.39806365966796875), ('headwinds', 0.38091927766799927), ('|}', 0.3641747832298279), ('soarers', 0.3611754775047302), ('santror', 0.3539309501647949), ('menfolk', 0.3502066731452942), ('drop-offs', 0.3443414568901062), ('€0', 0.34324705600738525), ('epipelagic', 0.33912909030914307), ('$19688', 0.33882325887680054), ('airspeeds', 0.33731433749198914), ('elektroboote', 0.3364207446575165), ('sport/discipline', 0.3326869010925293), ('$25938', 0.33258527517318726), ('!votes', 0.33257433772087097), ('na%', 0.33219629526138306), ('place!', 0.3317936658859253)]
+
+george - Sentence n. 27
+ Alpha: Current alpha: 0.9635384771626796
+
+Words: [['___', 'said', 'that', 'if', 'it', 'was', 'going', 'to', 'make', 'harris', 'eat', 'more', 'than', 'harris', 'ordinarily', 'ate', 'then', 'he', 'should', 'protest', 'against', 'harris', 'having', 'a', 'bath', 'at', 'all']]
+Top similarities:[('!date', 0.42836087942123413), ('!bgcolor=#cccccc', 0.4090763330459595), ('categoryliving', 0.4046536684036255), ('__notoc__', 0.38853874802589417), ('headwinds', 0.3769989013671875), ('santror', 0.35600754618644714), ('soarers', 0.34930160641670227), ('menfolk', 0.34518963098526), ('|}', 0.34456580877304077), ('€0', 0.33956578373908997), ('anyone’s', 0.33743107318878174), ('drop-offs', 0.33648645877838135), ('me/', 0.3362971842288971), ('airspeeds', 0.3347975015640259), ('place!', 0.33247268199920654), ('epipelagic', 0.3293461501598358), ('$19688', 0.3293353021144867), ('na%', 0.3271726965904236), ('endotherms', 0.3247324824333191), ('!votes', 0.3246307969093323)]
+
+george - Sentence n. 28
+ Alpha: Current alpha: 0.962162976358379
+
+Words: [['i', 'urged', 'upon', '___', 'however', 'how', 'much', 'it', 'would', 'be', 'to', 'have', 'harris', 'clean', 'and', 'fresh', 'about', 'the', 'boat', 'even', 'if', 'we', 'did', 'have', 'to', 'take', 'a', 'few', 'more', 'hundredweight', 'of', 'provisions', 'and', 'he', 'got', 'to', 'see', 'it', 'in', 'my', 'light', 'and', 'withdrew', 'his', 'opposition', 'to', 'harris', 's', 'bath']]
+Top similarities:[('!date', 0.3739280104637146), ('headwinds', 0.3666309118270874), ('!bgcolor=#cccccc', 0.366544246673584), ('categoryliving', 0.36483362317085266), ('santror', 0.35147160291671753), ('menfolk', 0.33468687534332275), ('__notoc__', 0.3313758969306946), ('phocians', 0.3209364712238312), ('veientes', 0.32086536288261414), ('anyone’s', 0.3193090558052063), ('heedless', 0.3163219690322876), ('himilco', 0.31536972522735596), ('cower', 0.3122178614139557), ('brasidas', 0.31154608726501465), ('uttanka', 0.31141340732574463), ('drona', 0.3113641142845154), ('peloponnesians', 0.31135720014572144), ('agesilaus', 0.3112124800682068), ('airspeeds', 0.3111814558506012), ('maráthás', 0.3100764751434326)]
+
+george - Sentence n. 29
+ Alpha: Current alpha: 0.9607894391523232
+
+Words: [['for', 'clothes', '___', 'said', 'two', 'suits', 'of', 'flannel', 'would', 'be', 'sufficient', 'as', 'we', 'could', 'wash', 'them', 'ourselves', 'in', 'the', 'river', 'when', 'they', 'got', 'dirty']]
+Top similarities:[('chandar', 0.33931195735931396), ('dunno', 0.33302855491638184), ('she’ll', 0.3196297883987427), ('amudha', 0.3173063397407532), ('theyd', 0.31598037481307983), ('hee-dong', 0.3159315586090088), ('menfolk', 0.31426578760147095), ('young-min', 0.3137599229812622), ('varalakshmi', 0.3127487897872925), ('malathi', 0.31228089332580566), ('sudha', 0.31198883056640625), ('madhavans', 0.30901920795440674), ('kunti', 0.307159423828125), ('sreenu', 0.306756854057312), ('seetha', 0.3056298494338989), ('kaikeyi', 0.30554723739624023), ('rajalakshmi', 0.3048155903816223), ('savithri', 0.3046739399433136), ('aarthi', 0.30287009477615356), ('yudhishthira', 0.3018247187137604)]
+
+george - Sentence n. 30
+ Alpha: Current alpha: 0.9594178627413747
+
+Words: [['we', 'were', 'to', 'learn', 'in', 'the', 'days', 'to', 'come', 'when', 'it', 'was', 'too', 'late', 'that', '___', 'was', 'a', 'miserable', 'impostor', 'who', 'could', 'evidently', 'have', 'known', 'nothing', 'whatever', 'about', 'the', 'matter']]
+Top similarities:[('chandar', 0.34822720289230347), ('she’ll', 0.3196127414703369), ('menfolk', 0.31368210911750793), ('uttanka', 0.31286633014678955), ('hee-dong', 0.3093245029449463), ('someplace', 0.30910444259643555), ('kaikeyi', 0.3074641525745392), ('kunti', 0.30721789598464966), ('down?', 0.30446261167526245), ('‘well', 0.3040013313293457), ('dunno', 0.3028215169906616), ('young-min', 0.3022081255912781), ('yudhishthira', 0.30074524879455566), ('gi-tae', 0.30010202527046204), ('ghote', 0.2995837330818176), ('satyavati', 0.2994133532047272), ('sudha', 0.29934555292129517), ('die”', 0.2949892282485962), ('thirumal', 0.2943112850189209), ('aarthi', 0.2936828136444092)]
+
+george - Sentence n. 31
+ Alpha: Current alpha: 0.9580482443263975
+
+Words: [['___', 'impressed', 'upon', 'us', 'to', 'take', 'a', 'change', 'of', 'under', 'things', 'and', 'plenty', 'of', 'socks', 'in', 'case', 'we', 'got', 'upset', 'and', 'wanted', 'a', 'change', 'also', 'plenty', 'of', 'handkerchiefs', 'as', 'they', 'would', 'do', 'to', 'wipe', 'things', 'and', 'a', 'pair', 'of', 'leather', 'boots', 'as', 'well', 'as', 'our', 'boating', 'shoes', 'as', 'we', 'should', 'want', 'them', 'if', 'we', 'got', 'upset']]
+Top similarities:[('uttanka', 0.3745032548904419), ('menfolk', 0.3730961084365845), ('!date', 0.3667534589767456), ('!bgcolor=#cccccc', 0.3662411570549011), ('expedients', 0.35915321111679077), ('categoryliving', 0.35700350999832153), ('chandar', 0.35558950901031494), ('kaikeyi', 0.3530673086643219), ('well-fed', 0.34930387139320374), ('__notoc__', 0.3448098301887512), ('unfitted', 0.34202519059181213), ('hee-dong', 0.3370399475097656), ('victuals', 0.3364294767379761), ('mealtimes', 0.3340545892715454), ('momín', 0.332080602645874), ('thoughtlessly', 0.33189430832862854), ('groom’s', 0.3298739194869995), ('fengguan', 0.32921016216278076), ('maráthás', 0.3287550210952759), ('accustom', 0.3278862237930298)]
+
+george - Sentence n. 32
+ Alpha: Current alpha: 0.9566805811122513
+
+Words: [['the', 'food', 'question', 'objections', 'to', 'oil', 'as', 'an', 'atmosphere', 'advantages', 'of', 'cheese', 'as', 'a', 'travelling', 'companion', 'a', 'married', 'woman', 'deserts', 'her', 'home', 'further', 'provision', 'for', 'getting', 'upset', 'i', 'pack', 'of', 'tooth', 'brushes', '___', 'and', 'harris', 'pack', 'awful', 'behaviour', 'of', 'montmorency', 'we', 'retire', 'to', 'rest']]
+Top similarities:[('insensible', 0.30700716376304626), ('accustom', 0.3051872253417969), ('expedients', 0.30143117904663086), ('anyone’s', 0.2980579733848572), ('shotshells', 0.29479044675827026), ('menfolk', 0.2935918867588043), ('cool-down', 0.2929595708847046), ('discomforts', 0.29125064611434937), ('headwinds', 0.2890547215938568), ('mealtimes', 0.28855177760124207), ('snugly', 0.2863842844963074), ('handloading', 0.2840760350227356), ('impaction', 0.2823874056339264), ('single-file', 0.2811656594276428), ('low-oxygen', 0.2792433798313141), ('well-fed', 0.27914339303970337), ('iron-deficiency', 0.2780885398387909), ('airspeeds', 0.2772895395755768), ('nibbling', 0.27665624022483826), ('!date', 0.2761285603046417)]
+
+george - Sentence n. 33
+ Alpha: Current alpha: 0.9553148703077865
+
+Words: [['___', 'said', 'begin', 'with', 'breakfast']]
+Top similarities:[('accustom', 0.3000948429107666), ('mealtimes', 0.2996986508369446), ('insensible', 0.29520249366760254), ('menfolk', 0.28538620471954346), ('anyone’s', 0.2815864384174347), ('cool-down', 0.2807033658027649), ('expedients', 0.28020235896110535), ('discomforts', 0.2792762517929077), ('shotshells', 0.2742146849632263), ('nibbling', 0.27334755659103394), ('well-fed', 0.2732735872268677), ('snugly', 0.27323925495147705), ('hand-washing', 0.2689245939254761), ('impaction', 0.26764529943466187), ('headwinds', 0.26675719022750854), ('groom’s', 0.2655395567417145), ('caked', 0.2627703547477722), ('soggy', 0.26242339611053467), ('single-file', 0.26238447427749634), ('everyones', 0.2616439461708069)]
+
+george - Sentence n. 34
+ Alpha: Current alpha: 0.9539511091258375
+
+Words: [['___', 'is', 'so', 'practical']]
+Top similarities:[('accustom', 0.3000948131084442), ('mealtimes', 0.2996985912322998), ('insensible', 0.29520243406295776), ('menfolk', 0.2853861451148987), ('anyone’s', 0.28158634901046753), ('cool-down', 0.28070324659347534), ('expedients', 0.28020232915878296), ('discomforts', 0.27927619218826294), ('shotshells', 0.27421462535858154), ('nibbling', 0.2733474373817444), ('well-fed', 0.2732735872268677), ('snugly', 0.2732391357421875), ('hand-washing', 0.2689245939254761), ('impaction', 0.2676452398300171), ('headwinds', 0.26675713062286377), ('groom’s', 0.2655394673347473), ('caked', 0.26277026534080505), ('soggy', 0.2624232769012451), ('single-file', 0.26238441467285156), ('everyones', 0.2616438865661621)]
+
+george - Sentence n. 35
+ Alpha: Current alpha: 0.9525892947832177
+
+Words: [['now', 'for', 'breakfast', 'we', 'shall', 'want', 'a', 'frying', 'pan', 'harris', 'said', 'it', 'was', 'indigestible', 'but', 'we', 'merely', 'urged', 'him', 'not', 'to', 'be', 'an', 'ass', 'and', '___', 'went', 'on', 'a', 'tea', 'pot', 'and', 'a', 'kettle', 'and', 'a', 'methylated', 'spirit', 'stove']]
+Top similarities:[('utilizes', 0.24281328916549683), ('know?', 0.23652046918869019), ('jong-hyun', 0.23314404487609863), ('avron', 0.2292579859495163), ('masser', 0.22786059975624084), ('couldve', 0.2248098999261856), ('can', 0.2213168740272522), ('isnt', 0.21484316885471344), ('lackluster', 0.21472924947738647), ('fun?', 0.21342025697231293), ('sorta', 0.212143212556839), ('isn’t', 0.21117213368415833), ('maragos', 0.21062935888767242), ('itll', 0.20985542237758636), ('r-', 0.20854464173316956), ('theres', 0.20836110413074493), ('co-wrote', 0.20692473649978638), ('play?', 0.20599842071533203), ('adds', 0.20475487411022186), ('yeah', 0.20410823822021484)]
+
+george - Sentence n. 36
+ Alpha: Current alpha: 0.951229424500714
+
+Words: [['no', 'oil', 'said', '___', 'with', 'a', 'significant', 'look', 'and', 'harris', 'and', 'i', 'agreed']]
+Top similarities:[('know?', 0.3853403329849243), ('i’m', 0.3689534068107605), ('fun?', 0.35981497168540955), ('day?', 0.34270066022872925), ('really?', 0.3409861922264099), ('thats', 0.33863428235054016), ('can’t', 0.3370840549468994), ('am?', 0.33314090967178345), ('about?', 0.33176255226135254), ('youre', 0.33067065477371216), ('itll', 0.330504834651947), ('ive', 0.3303014636039734), ('yknow', 0.3301253914833069), ('i’ll', 0.33001211285591125), ('theres', 0.32997506856918335), ('bad?', 0.3288145959377289), ('youd', 0.3279839754104614), ('yeah', 0.3277828097343445), ('feel?', 0.3272247910499573), ('you’re', 0.32701969146728516)]
+
+george - Sentence n. 37
+ Alpha: Current alpha: 0.9498714955030801
+
+Words: [['for', 'other', 'breakfast', 'things', '___', 'suggested', 'eggs', 'and', 'bacon', 'which', 'were', 'easy', 'to', 'cook', 'cold', 'meat', 'tea', 'bread', 'and', 'butter', 'and', 'jam']]
+Top similarities:[('mealtimes', 0.3631919026374817), ('teaspoons', 0.33659282326698303), ('undrinkable', 0.3322022557258606), ('teaspoon', 0.3307676911354065), ('soggy', 0.3261029124259949), ('fengguan', 0.32493865489959717), ('tablespoons', 0.32134103775024414), ('hee-dong', 0.3208862841129303), ('milliliters', 0.32074105739593506), ('nauseated', 0.32034000754356384), ('vomited', 0.3184676170349121), ('tablespoon', 0.313088595867157), ('caked', 0.3117629289627075), ('overcooked', 0.31059569120407104), ('sodden', 0.30847421288490295), ('cool-down', 0.30799251794815063), ('rinsed', 0.30640554428100586), ('softeners', 0.3055881857872009), ('healthily', 0.3047076463699341), ('discomforts', 0.30470287799835205)]
+
+george - Sentence n. 38
+ Alpha: Current alpha: 0.9485155050190321
+
+Words: [['fond', 'as', 'i', 'am', 'of', 'cheese', 'therefore', 'i', 'hold', 'that', '___', 'was', 'right', 'in', 'declining', 'to', 'take', 'any']]
+Top similarities:[('awoke', 0.28375130891799927), ('forenoon', 0.28354430198669434), ('mealtimes', 0.2812642753124237), ('vomited', 0.2784723937511444), ('fainted', 0.26971399784088135), ('sweated', 0.2643868327140808), ('smelled', 0.2642541527748108), ('teaspoon', 0.2622392177581787), ('drenched', 0.26205724477767944), ('half-past', 0.2614017128944397), ('chastened', 0.261325865983963), ('unwell', 0.26008129119873047), ('teaspoons', 0.25903841853141785), ('nauseated', 0.2579101324081421), ('housemaids', 0.2552458941936493), ('smelling', 0.25226128101348877), ('stovetop', 0.24831727147102356), ('frostbitten', 0.24600985646247864), ('undrinkable', 0.24540506303310394), ('scalded', 0.24516764283180237)]
+
+george - Sentence n. 39
+ Alpha: Current alpha: 0.9471614502812419
+
+Words: [['we', 'shan', 't', 'want', 'any', 'tea', 'said', '___', 'harris', 's', 'face', 'fell', 'at', 'this', 'but', 'we', 'll', 'have', 'a', 'good', 'round', 'square', 'slap', 'up', 'meal', 'at', 'seven', 'dinner', 'tea', 'and', 'supper', 'combined']]
+Top similarities:[('softeners', 0.2844231128692627), ('mealtimes', 0.2829984426498413), ('braising', 0.2752279043197632), ('coagulant', 0.27364230155944824), ('dehydrate', 0.2676059603691101), ('frostbitten', 0.26453477144241333), ('vomited', 0.2644308805465698), ('forenoon', 0.2639505863189697), ('stovetop', 0.26262059807777405), ('carbonization', 0.2610975503921509), ('drenched', 0.2604621350765228), ('vinaigrette', 0.25782740116119385), ('immiscible', 0.25767895579338074), ('macerated', 0.2558334767818451), ('fainted', 0.25558024644851685), ('unwashed', 0.2539079785346985), ('congealed', 0.2536928057670593), ('degreasing', 0.2528049945831299), ('blanched', 0.2525765299797058), ('theyre', 0.2507208585739136)]
+
+george - Sentence n. 40
+ Alpha: Current alpha: 0.945809328526332
+
+Words: [['___', 'suggested', 'meat', 'and', 'fruit', 'pies', 'cold', 'meat', 'tomatoes', 'fruit', 'and', 'green', 'stuff']]
+Top similarities:[('softeners', 0.2988538444042206), ('macerated', 0.2926720380783081), ('vinaigrette', 0.29040202498435974), ('braising', 0.28896278142929077), ('mealtimes', 0.28487634658813477), ('coagulant', 0.2841275632381439), ('sugared', 0.28333795070648193), ('stovetop', 0.2795504927635193), ('dehydrate', 0.2777930200099945), ('blanched', 0.27777642011642456), ('vomited', 0.2769097685813904), ('tablespoons', 0.27404338121414185), ('cornstarch', 0.2709851861000061), ('carbonization', 0.27022892236709595), ('smelling', 0.2696959972381592), ('unwashed', 0.2683200538158417), ('congealed', 0.2676207423210144), ('browned', 0.2675929367542267), ('degreasing', 0.26751387119293213), ('high-fat', 0.26685452461242676)]
+
+george - Sentence n. 41
+ Alpha: Current alpha: 0.9444591369948698
+
+Words: [['for', 'drink', 'we', 'took', 'some', 'wonderful', 'sticky', 'concoction', 'of', 'harris', 's', 'which', 'you', 'mixed', 'with', 'water', 'and', 'called', 'lemonade', 'plenty', 'of', 'tea', 'and', 'a', 'bottle', 'of', 'whisky', 'in', 'case', 'as', '___', 'said', 'we', 'got', 'upset']]
+Top similarities:[('famished', 0.3731032609939575), ('undrinkable', 0.3689863085746765), ('teaspoons', 0.3631765842437744), ('frostbitten', 0.3626159131526947), ('macerated', 0.358256071805954), ('well-fed', 0.3548983335494995), ('sugared', 0.35353922843933105), ('mealtimes', 0.35289323329925537), ('tablespoon', 0.3497045040130615), ('teaspoon', 0.3482791781425476), ('tablespoons', 0.3463903069496155), ('unsweetened', 0.3462050259113312), ('vinaigrette', 0.33802974224090576), ('congealed', 0.336471825838089), ('pints', 0.3304729461669922), ('decanted', 0.32953977584838867), ('stovetop', 0.3258286118507385), ('nauseated', 0.32542258501052856), ('high-protein', 0.3236781358718872), ('insensible', 0.32341688871383667)]
+
+george - Sentence n. 42
+ Alpha: Current alpha: 0.943110872931362
+
+Words: [['it', 'seemed', 'to', 'me', 'that', '___', 'too', 'much', 'on', 'the', 'getting', 'upset', 'idea']]
+Top similarities:[('famished', 0.39463263750076294), ('frostbitten', 0.3786410987377167), ('teaspoons', 0.37678390741348267), ('mealtimes', 0.3740291893482208), ('well-fed', 0.3728337287902832), ('undrinkable', 0.3702860474586487), ('sugared', 0.3567497730255127), ('teaspoon', 0.35634326934814453), ('unsweetened', 0.35232260823249817), ('macerated', 0.34981226921081543), ('tablespoon', 0.3485420048236847), ('drenched', 0.3466642200946808), ('tablespoons', 0.34379464387893677), ('waist-deep', 0.3421173691749573), ('soggy', 0.3419160842895508), ('victuals', 0.3407329320907593), ('pints', 0.33907535672187805), ('nauseated', 0.3389446437358856), ('insensible', 0.33590468764305115), ('churns', 0.3355898857116699)]
+
+george - Sentence n. 43
+ Alpha: Current alpha: 0.9417645335842487
+
+Words: [['i', 'impressed', 'the', 'fact', 'upon', '___', 'and', 'harris', 'and', 'told', 'them', 'that', 'they', 'had', 'better', 'leave', 'the', 'whole', 'matter', 'entirely', 'to', 'me']]
+Top similarities:[('bathrobe', 0.2860502600669861), ('commiserate', 0.2766224145889282), ('tuppence', 0.27217352390289307), ('famished', 0.26978743076324463), ('churns', 0.26646867394447327), ('teetotal', 0.265267014503479), ('sugared', 0.2652077376842499), ('massaged', 0.2649328410625458), ('rodge', 0.2642538547515869), ('mealtimes', 0.26073452830314636), ('vomited', 0.25997141003608704), ('syrupy', 0.2590523362159729), ('pints', 0.2590094208717346), ('frostbitten', 0.2587778568267822), ('sipped', 0.2574714422225952), ('macerated', 0.25731682777404785), ('creamers', 0.25602978467941284), ('after-dinner', 0.255298376083374), ('dressing', 0.255143940448761), ('drenched', 0.25399500131607056)]
+
+george - Sentence n. 44
+ Alpha: Current alpha: 0.9404201162058982
+
+Words: [['___', 'put', 'on', 'a', 'pipe', 'and', 'spread', 'himself', 'over', 'the', 'easy', 'chair', 'and', 'harris', 'cocked', 'his', 'legs', 'on', 'the', 'table', 'and', 'lit', 'a', 'cigar']]
+Top similarities:[('schoolfriend', 0.29985544085502625), ('adeney', 0.2833922803401947), ('tyack', 0.2815725803375244), ('then-partner', 0.27952122688293457), ('gwillim', 0.2786034345626831), ('ivon', 0.2762463390827179), ('guitarist/keyboardist', 0.27337169647216797), ('desanto', 0.27319666743278503), ('vintner', 0.26915979385375977), ('1589', 0.26910048723220825), ('oteri', 0.26881077885627747), ('leycester', 0.2686399817466736), ('lizz', 0.2679027318954468), ('brickmaker', 0.26765114068984985), ('1450s', 0.2672806978225708), ('haggart', 0.26726672053337097), ('1580s', 0.2670263648033142), ('luya', 0.26624804735183716), ('1517', 0.26429131627082825), ('dayman', 0.26288798451423645)]
+
+george - Sentence n. 45
+ Alpha: Current alpha: 0.9390776180526009
+
+Words: [['what', 'i', 'had', 'meant', 'of', 'course', 'was', 'that', 'i', 'should', 'boss', 'the', 'job', 'and', 'that', 'harris', 'and', '___', 'should', 'potter', 'about', 'under', 'my', 'directions', 'i', 'pushing', 'them', 'aside', 'every', 'now', 'and', 'then', 'with', 'oh', 'you']]
+Top similarities:[('ughtred', 0.36196187138557434), ('humfrey', 0.3615805506706238), ('evelyn', 0.35231703519821167), ('wroth', 0.34307152032852173), ('stansfeld', 0.340117484331131), ('pargeter', 0.3375179171562195), ('lucy', 0.3372419774532318), ('talboys', 0.3371920883655548), ('katherine', 0.3367684483528137), ('maude', 0.33564263582229614), ('delia', 0.33351629972457886), ('pellatt', 0.3304007053375244), ('phyllis', 0.32782602310180664), ('darcy', 0.327534556388855), ('glendenning', 0.3274814188480377), ('okes', 0.3268679082393646), ('twysden', 0.32644516229629517), ('cammie', 0.32638633251190186), ('gervaise', 0.32587891817092896), ('peggy', 0.3251810073852539)]
+
+george - Sentence n. 46
+ Alpha: Current alpha: 0.9377370363845645
+
+Words: [['and', '___', 'laughed', 'one', 'of', 'those', 'irritating', 'senseless', 'chuckle', 'headed', 'crack', 'jawed', 'laughs', 'of', 'his']]
+Top similarities:[('ughtred', 0.37314242124557495), ('humfrey', 0.3717234134674072), ('okes', 0.3679444193840027), ('domville', 0.36254698038101196), ('lucy', 0.3525438904762268), ('wroth', 0.3517020344734192), ('scawen', 0.35146859288215637), ('stammers', 0.3495718240737915), ('manoah', 0.3486441969871521), ('maude', 0.3471115827560425), ('knyvet', 0.34553688764572144), ('phelips', 0.3444077968597412), ('algy', 0.342597633600235), ('talboys', 0.3410798907279968), ('courtier', 0.3405986726284027), ('thrale', 0.339891642332077), ('trevanion', 0.3384081721305847), ('indignantly', 0.3370548486709595), ('evelyn', 0.3353419303894043), ('belasyse', 0.3352946639060974)]
+
+george - Sentence n. 47
+ Alpha: Current alpha: 0.9363983684659073
+
+Words: [['of', 'course', 'i', 'found', '___', 's', 'and', 'harris', 's', 'eighteen', 'times', 'over', 'but', 'i', 't', 'find', 'my', 'own']]
+Top similarities:[('okes', 0.37053775787353516), ('humfrey', 0.35498589277267456), ('ughtred', 0.35030078887939453), ('domville', 0.3415754437446594), ('fancies', 0.3376292586326599), ('algy', 0.33124667406082153), ('queene', 0.3304746747016907), ('knyvet', 0.3271982669830322), ('trevanion', 0.32447361946105957), ('wroth', 0.3233283758163452), ('courtier', 0.32215845584869385), ('talboys', 0.3194954991340637), ('lucy', 0.31882306933403015), ('scawen', 0.3176195025444031), ('pargeter', 0.31545114517211914), ('trifles', 0.31515175104141235), ('countesss', 0.3145958185195923), ('oglander', 0.31377020478248596), ('dethick', 0.3135293424129486), ('phelips', 0.3131849765777588)]
+
+george - Sentence n. 48
+ Alpha: Current alpha: 0.9350616115646536
+
+Words: [['when', 'i', 'had', 'finished', '___', 'asked', 'if', 'the', 'soap', 'was', 'in']]
+Top similarities:[('point?', 0.3003750741481781), ('it!', 0.27405664324760437), ('“that’s', 0.27383023500442505), ('brazile', 0.2722398340702057), ('“yes', 0.2721889913082123), ('mean?', 0.27170127630233765), ('interviewer', 0.270891934633255), ('cowell', 0.26684466004371643), ('i', 0.260410338640213), ('am?', 0.2601581811904907), ('said', 0.257450133562088), ('show?', 0.2574303448200226), ('quillin', 0.25675639510154724), ('somebodys', 0.2560611069202423), ('so!', 0.25484901666641235), ('know', 0.2547096610069275), ('geri', 0.254336416721344), ('diederick', 0.25429901480674744), ('catchphrases', 0.2540459632873535), ('masser', 0.2538336515426636)]
+
+george - Sentence n. 49
+ Alpha: Current alpha: 0.9337267629527277
+
+Words: [['harris', 'said', 'that', 'we', 'should', 'be', 'wanting', 'to', 'start', 'in', 'less', 'than', 'twelve', 'hours', 'time', 'and', 'thought', 'that', 'he', 'and', '___', 'had', 'better', 'do', 'the', 'rest', 'and', 'i', 'agreed', 'and', 'sat', 'down', 'and', 'they', 'had', 'a', 'go']]
+Top similarities:[('show?', 0.34498488903045654), ('i’ll', 0.3374441862106323), ('you', 0.33654582500457764), ('“that’s', 0.335615336894989), ('point?', 0.332406222820282), ('cant', 0.3291211426258087), ('want', 0.3290994167327881), ('vitales', 0.3288310170173645), ('ok?', 0.3279215693473816), ('i’d', 0.32787811756134033), ('“i’ll', 0.32680514454841614), ('youd', 0.32559722661972046), ('better?', 0.3254396915435791), ('they’ll', 0.325413316488266), ('else?', 0.3247905671596527), ('somebody', 0.3244936764240265), ('don’t', 0.32404816150665283), ('fun?', 0.3231154680252075), ('really?', 0.32297369837760925), ('couldn’t', 0.3224908113479614)]
+
+george - Sentence n. 50
+ Alpha: Current alpha: 0.9323938199059483
+
+Words: [['when', '___', 'is', 'hanged', 'harris', 'will', 'be', 'the', 'worst', 'packer', 'in', 'this', 'world', 'and', 'i', 'looked', 'at', 'the', 'piles', 'of', 'plates', 'and', 'cups', 'and', 'kettles', 'and', 'bottles', 'and', 'jars', 'and', 'pies', 'and', 'stoves', 'and', 'cakes', 'and', 'tomatoes', 'c', 'and', 'felt', 'that', 'the', 'thing', 'would', 'soon', 'become', 'exciting']]
+Top similarities:[('i’ll', 0.3453335165977478), ('“that’s', 0.3430931568145752), ('point?', 0.34248948097229004), ('i’d', 0.3373776078224182), ('you', 0.33469802141189575), ('youd', 0.3345107436180115), ('show?', 0.33251500129699707), ('“i’ll', 0.3315776586532593), ('somebody', 0.33095142245292664), ('ok?', 0.32814502716064453), ('else?', 0.3257899284362793), ('better?', 0.3247831463813782), ('back?', 0.3227804899215698), ('fuckin', 0.3219654858112335), ('she’ll', 0.32145214080810547), ('want', 0.3212180733680725), ('gonna', 0.32004499435424805), ('fun?', 0.31803810596466064), ('wrong!', 0.3173075318336487), ('thing?', 0.316779762506485)]
+
+george - Sentence n. 51
+ Alpha: Current alpha: 0.9310627797040227
+
+Words: [['and', 'then', 'it', 'was', '___', 's', 'turn', 'and', 'he', 'trod', 'on', 'the', 'butter']]
+Top similarities:[('tennessees', 0.20036736130714417), ('handloading', 0.18133190274238586), ('army’s', 0.17008131742477417), ('austria-hungarys', 0.16788668930530548), ('f-22s', 0.16725660860538483), ('shotshells', 0.1663600504398346), ('slovenias', 0.16536769270896912), ('yungay', 0.16516850888729095), ('redeployment', 0.1649351567029953), ('oregons', 0.16485518217086792), ('destructively', 0.16237902641296387), ('pasgt', 0.16190844774246216), ('single-file', 0.16062474250793457), ('chile’s', 0.16033290326595306), ('all!', 0.15999925136566162), ('lovćen', 0.15956389904022217), ('ecuadors', 0.15942613780498505), ('rock’s', 0.159337118268013), ('non-neutral', 0.1578262746334076), ('alabamas', 0.1553792655467987)]
+
+george - Sentence n. 52
+ Alpha: Current alpha: 0.9297336396305423
+
+Words: [['after', '___', 'had', 'got', 'it', 'off', 'his', 'slipper', 'they', 'tried', 'to', 'put', 'it', 'in', 'the', 'kettle']]
+Top similarities:[('all!', 0.30308303236961365), ('tennessees', 0.29248133301734924), ('thundered', 0.2907716631889343), ('aboutrika', 0.276276171207428), ('anyone’s', 0.2692321538925171), ('handloading', 0.26678401231765747), ('play”', 0.26541367173194885), ('die”', 0.2635026276111603), ('misery', 0.2621317505836487), ('12-play', 0.26126334071159363), ('snugly', 0.2606230676174164), ('two”', 0.25968116521835327), ('cause”', 0.2585586607456207), ('single-file', 0.2554040551185608), ('justice”', 0.2532470226287842), ('fanaticism', 0.2521376609802246), ('oregon’s', 0.2521277070045471), ('unrolled', 0.25155678391456604), ('ourselves', 0.2498508095741272), ('“death', 0.24957717955112457)]
+
+george - Sentence n. 53
+ Alpha: Current alpha: 0.9284063969729756
+
+Words: [['i', 'll', 'take', 'my', 'oath', 'i', 'put', 'it', 'down', 'on', 'that', 'chair', 'said', '___', 'staring', 'at', 'the', 'empty', 'seat']]
+Top similarities:[('invalids', 0.3223833441734314), ('famished', 0.3130071759223938), ('frostbitten', 0.3043699562549591), ('vinaigrette', 0.28412002325057983), ('communicants', 0.2807238698005676), ('1681', 0.2758482098579407), ('liters', 0.26998385787010193), ('ceremoniously', 0.26164180040359497), ('pints', 0.26044517755508423), ('disinterred', 0.2596367597579956), ('hartlebury', 0.2589496374130249), ('1660', 0.25798189640045166), ('unsweetened', 0.2578340768814087), ('archangelsk', 0.25737741589546204), ('noon', 0.25706321001052856), ('1653', 0.25619903206825256), ('congealed', 0.25605130195617676), ('kyrburg', 0.2556909918785095), ('bungoma', 0.2556629478931427), ('stolberg-wernigerode', 0.25565987825393677)]
+
+george - Sentence n. 54
+ Alpha: Current alpha: 0.9270810490226638
+
+Words: [['most', 'extraordinary', 'thing', 'i', 'ever', 'heard', 'of', 'said', '___']]
+Top similarities:[('famished', 0.25687089562416077), ('invalids', 0.2532256543636322), ('frostbitten', 0.25049424171447754), ('vinaigrette', 0.24141763150691986), ('minced', 0.22988563776016235), ('boonah', 0.22502371668815613), ('karlowitz', 0.22465431690216064), ('bundestag', 0.22374999523162842), ('alpinists', 0.22320780158042908), ('mildness', 0.22158072888851166), ('horsemeat', 0.22100403904914856), ('disuse', 0.22072890400886536), ('parliamentarians', 0.2204747498035431), ('royalism', 0.22041575610637665), ('ceremoniously', 0.22010941803455353), ('chequamegon', 0.2180461883544922), ('jurist', 0.2174045741558075), ('1681', 0.2168111354112625), ('communicants', 0.21513840556144714), ('expellees', 0.2150242179632187)]
+
+george - Sentence n. 55
+ Alpha: Current alpha: 0.9257575930748145
+
+Words: [['then', '___', 'got', 'round', 'at', 'the', 'back', 'of', 'harris', 'and', 'saw', 'it']]
+Top similarities:[('invalids', 0.32362598180770874), ('liters', 0.3071790635585785), ('vinaigrette', 0.3011084198951721), ('famished', 0.29817020893096924), ('macerated', 0.292441189289093), ('frostbitten', 0.2873818874359131), ('undrinkable', 0.28245455026626587), ('unsweetened', 0.2809053659439087), ('litres', 0.2803223729133606), ('high-protein', 0.28010696172714233), ('tablespoon', 0.2794211506843567), ('decanted', 0.27926361560821533), ('teaspoons', 0.2714666724205017), ('groseilliers', 0.27074965834617615), ('tablespoons', 0.27038347721099854), ('teaspoon', 0.26940399408340454), ('excursionists', 0.26733797788619995), ('kashgaria', 0.2656097412109375), ('drank', 0.2605321407318115), ('protein-rich', 0.2598307430744171)]
+
+george - Sentence n. 56
+ Alpha: Current alpha: 0.924436026428497
+
+Words: [['roared', '___', 'flying', 'after', 'him']]
+Top similarities:[('invalids', 0.3021647334098816), ('famished', 0.28811562061309814), ('liters', 0.2864953875541687), ('frostbitten', 0.27742502093315125), ('vinaigrette', 0.27080148458480835), ('macerated', 0.26457953453063965), ('litres', 0.25987333059310913), ('high-protein', 0.2554921507835388), ('undrinkable', 0.2547183930873871), ('excursionists', 0.2547042667865753), ('drank', 0.25105953216552734), ('tablespoon', 0.25096121430397034), ('decanted', 0.2509537935256958), ('groseilliers', 0.25073307752609253), ('teaspoon', 0.24715229868888855), ('pints', 0.24632497131824493), ('precariously', 0.24608436226844788), ('unsweetened', 0.24482059478759766), ('sipped', 0.2436021864414215), ('tablespoons', 0.24298444390296936)]
+
+george - Sentence n. 57
+ Alpha: Current alpha: 0.9231163463866358
+
+Words: [['he', 'came', 'and', 'sat', 'down', 'on', 'things', 'just', 'when', 'they', 'were', 'wanted', 'to', 'be', 'packed', 'and', 'he', 'laboured', 'under', 'the', 'fixed', 'belief', 'that', 'whenever', 'harris', 'or', '___', 'reached', 'out', 'their', 'hand', 'for', 'anything', 'it', 'was', 'his', 'cold', 'damp', 'nose', 'that', 'they', 'wanted']]
+Top similarities:[('1681', 0.32542818784713745), ('1644', 0.29909417033195496), ('1679', 0.296217143535614), ('drank', 0.2954116463661194), ('thomasin', 0.2928006947040558), ('1629', 0.2925163805484772), ('1692', 0.2912614047527313), ('1643', 0.2907799184322357), ('leycester', 0.2903173565864563), ('1698', 0.29023176431655884), ('1653', 0.2898673415184021), ('1589', 0.28940463066101074), ('invalids', 0.2892954647541046), ('sipped', 0.2852851152420044), ('1634', 0.2838127017021179), ('1683', 0.28321215510368347), ('1660', 0.28302574157714844), ('1727', 0.28293246030807495), ('1587', 0.2824837565422058), ('1715', 0.2816101312637329)]
+
+george - Sentence n. 58
+ Alpha: Current alpha: 0.921798550256006
+
+Words: [['___', 'said', 'that', 'if', 'anything', 'was', 'broken', 'it', 'was', 'broken', 'which', 'reflection', 'seemed', 'to', 'comfort', 'him']]
+Top similarities:[('famished', 0.3292473554611206), ('undrinkable', 0.3126676082611084), ('precariously', 0.31014391779899597), ('invalids', 0.3077003061771393), ('sipped', 0.3051328957080841), ('well-supplied', 0.298298180103302), ('liters', 0.2959301173686981), ('drank', 0.2934250235557556), ('supplicants', 0.2927858233451843), ('frostbitten', 0.29251575469970703), ('macerated', 0.29093021154403687), ('unsweetened', 0.28749603033065796), ('pints', 0.2834126949310303), ('litres', 0.2818390130996704), ('well-fed', 0.2794348895549774), ('vinaigrette', 0.2792280912399292), ('sugared', 0.27903151512145996), ('waist-deep', 0.27894580364227295), ('teaspoon', 0.27876272797584534), ('chests', 0.27799656987190247)]
+
+george - Sentence n. 59
+ Alpha: Current alpha: 0.9204826353472273
+
+Words: [['___', 'said', 'what', 'time', 'shall', 'i', 'wake', 'you', 'fellows']]
+Top similarities:[('famished', 0.3501713275909424), ('well-supplied', 0.3405803442001343), ('categoryliving', 0.32597601413726807), ('besiegers', 0.3181428909301758), ('panic-stricken', 0.3175135850906372), ('frostbitten', 0.310543417930603), ('supplicants', 0.30776676535606384), ('dug-in', 0.3056252598762512), ('unhorsed', 0.3027192950248718), ('chests', 0.30207690596580505), ('sugared', 0.30161577463150024), ('soldiery', 0.30090752243995667), ('waist-deep', 0.29961639642715454), ('precariously', 0.298550546169281), ('fearfully', 0.29830294847488403), ('onlookers', 0.2976517081260681), ('kyrburg', 0.2976263761520386), ('stampeded', 0.29748398065567017), ('excursionists', 0.29661303758621216), ('butchered', 0.296548068523407)]
+
+george - Sentence n. 60
+ Alpha: Current alpha: 0.9191685989747587
+
+Words: [['wake', 'us', 'at', '___', 'we', 'said']]
+Top similarities:[('famished', 0.35322001576423645), ('well-supplied', 0.34336233139038086), ('categoryliving', 0.329006552696228), ('besiegers', 0.3236047029495239), ('panic-stricken', 0.32071220874786377), ('supplicants', 0.311629056930542), ('frostbitten', 0.3115585744380951), ('dug-in', 0.3084225356578827), ('soldiery', 0.3068748712539673), ('unhorsed', 0.3068363666534424), ('kyrburg', 0.30346250534057617), ('waist-deep', 0.30233749747276306), ('sugared', 0.30201518535614014), ('chests', 0.301368772983551), ('onlookers', 0.30070728063583374), ('fearfully', 0.30001556873321533), ('stampeded', 0.29971954226493835), ('precariously', 0.29929235577583313), ('excursionists', 0.2986128330230713), ('butchered', 0.2979412078857422)]
+
+george - Sentence n. 61
+ Alpha: Current alpha: 0.9178564384568926
+
+Words: [['___', 'made', 'no', 'answer', 'and', 'we', 'found', 'on', 'going', 'over', 'that', 'he', 'had', 'been', 'asleep', 'for', 'some', 'time', 'so', 'we', 'placed', 'the', 'bath', 'where', 'he', 'could', 'tumble', 'into', 'it', 'on', 'getting', 'out', 'in', 'the', 'morning', 'and', 'went', 'to', 'bed', 'ourselves']]
+Top similarities:[('famished', 0.32195597887039185), ('well-supplied', 0.3085244297981262), ('categoryliving', 0.3037520945072174), ('besiegers', 0.3032427728176117), ('frostbitten', 0.29964932799339294), ('chests', 0.29345643520355225), ('insensible', 0.2889467179775238), ('supplicants', 0.2883230447769165), ('unhorsed', 0.28832292556762695), ('onlookers', 0.2856225073337555), ('withal', 0.2854725420475006), ('rhinegraves', 0.28514304757118225), ('fearfully', 0.2844412922859192), ('communicants', 0.2837024927139282), ('excursionists', 0.2836916148662567), ('panic-stricken', 0.28228479623794556), ('kyrburg', 0.28147217631340027), ('sugared', 0.2812807559967041), ('mealtimes', 0.2803608775138855), ('bushwalkers', 0.2793199419975281)]
+
+george - Sentence n. 62
+ Alpha: Current alpha: 0.9165461511157501
+
+Words: [['picture', 'luggage', 'with', 'dog', 'on', 'top', 'chapter', 'v', 'mrs', 'p', 'arouses', 'us', '___', 'the', 'the', 'weather', 'forecast', 'swindle', 'our', 'luggage', 'depravity', 'of', 'the', 'small', 'boy', 'the', 'people', 'gather', 'round', 'us', 'we', 'drive', 'off', 'in', 'great', 'style', 'and', 'arrive', 'at', 'waterloo', 'innocence', 'of', 'south', 'western', 'officials', 'concerning', 'such', 'worldly', 'things', 'as', 'trains', 'we', 'are', 'afloat', 'afloat', 'in', 'an', 'open', 'boat']]
+Top similarities:[('famished', 0.29175931215286255), ('besiegers', 0.2771998345851898), ('well-supplied', 0.27392494678497314), ('frostbitten', 0.2731751799583435), ('supplicants', 0.2666383981704712), ('unhorsed', 0.2651507556438446), ('fearfully', 0.2647712528705597), ('withal', 0.2634901702404022), ('onlookers', 0.26268917322158813), ('panic-stricken', 0.26104965806007385), ('insensible', 0.25971710681915283), ('mildness', 0.25508224964141846), ('chests', 0.2534292936325073), ('throngs', 0.2531058192253113), ('communicants', 0.24918118119239807), ('soldiery', 0.24834832549095154), ('heaved', 0.24809129536151886), ('profaned', 0.24777361750602722), ('unsuspecting', 0.24742534756660461), ('excursionists', 0.24644091725349426)]
+
+george - Sentence n. 63
+ Alpha: Current alpha: 0.915237734277275
+
+Words: [['picture', '___', 'snoring', 'we', 'snarled', 'at', 'one', 'another', 'in', 'this', 'strain', 'for', 'the', 'next', 'few', 'minutes', 'when', 'we', 'were', 'interrupted', 'by', 'a', 'defiant', 'snore', 'from', '___']]
+Top similarities:[('unaccountably', 0.2485898733139038), ('zolote', 0.24569576978683472), ('panic-stricken', 0.24565432965755463), ('deceitfully', 0.2442970871925354), ('mineko', 0.24041399359703064), ('besiegers', 0.23300376534461975), ('cunningly', 0.23222601413726807), ('unhorsed', 0.23031581938266754), ('pursuers', 0.22979335486888885), ('unawares', 0.22970882058143616), ('zholobok', 0.22862893342971802), ('opytne', 0.228277325630188), ('abduct', 0.22750118374824524), ('deceiving', 0.22666065394878387), ('attacker', 0.2265244424343109), ('dervishes', 0.22439128160476685), ('boriss', 0.2241387963294983), ('professing', 0.22341665625572205), ('turks', 0.22195497155189514), ('massacring', 0.2209140658378601)]
+
+george - Sentence n. 64
+ Alpha: Current alpha: 0.9139311852712282
+
+Words: [['there', 'was', '___', 'throwing', 'away', 'in', 'hideous', 'sloth', 'the', 'inestimable', 'gift', 'of', 'time', 'his', 'valuable', 'life', 'every', 'second', 'of', 'which', 'he', 'would', 'have', 'to', 'account', 'for', 'hereafter', 'passing', 'away', 'from', 'him', 'unused']]
+Top similarities:[('well-supplied', 0.3771190345287323), ('panic-stricken', 0.35679006576538086), ('fearfully', 0.3542596101760864), ('besiegers', 0.35161757469177246), ('famished', 0.3469046652317047), ('supplicants', 0.3378501534461975), ('unaccountably', 0.3377269208431244), ('pursuers', 0.33584487438201904), ('narnians', 0.32582125067710876), ('unsuspecting', 0.32296469807624817), ('heedless', 0.3198605477809906), ('waist-deep', 0.31859907507896423), ('magically', 0.3184284567832947), ('momín', 0.31654027104377747), ('well-fed', 0.3148568868637085), ('salamandastron', 0.31283432245254517), ('uttanka', 0.3115789294242859), ('thoughtlessly', 0.3114572763442993), ('soldiery', 0.31132370233535767), ('dug-in', 0.3112372159957886)]
+
+george - Sentence n. 65
+ Alpha: Current alpha: 0.9126265014311828
+
+Words: [['and', 'when', 'we', 'had', 'done', 'that', '___', 'wanted', 'the', 'shaving', 'tackle']]
+Top similarities:[('scytale', 0.26717865467071533), ('cunningly', 0.26686230301856995), ('jaina', 0.25957345962524414), ('kanjar', 0.25660574436187744), ('tleilaxu', 0.2519938051700592), ('hyllus', 0.24744319915771484), ('planeswalker', 0.24629098176956177), ('ninus', 0.24602393805980682), ('armlet', 0.24461548030376434), ('rupali', 0.24267546832561493), ('kailasam', 0.24186913669109344), ('corroborate', 0.2407594919204712), ('psychokinetic', 0.23924753069877625), ('parashuram', 0.23883087933063507), ('gibborim', 0.23808486759662628), ('alinda', 0.23648366332054138), ('chandrasena', 0.23634658753871918), ('rakshasas', 0.2357075810432434), ('ballista', 0.23522533476352692), ('warstar', 0.23462329804897308)]
+
+george - Sentence n. 66
+ Alpha: Current alpha: 0.9113236800945185
+
+Words: [['___', 'got', 'hold', 'of', 'the', 'paper', 'and', 'read', 'us', 'out', 'the', 'boating', 'fatalities', 'and', 'the', 'weather', 'forecast', 'which', 'latter', 'prophesied', 'rain', 'cold', 'wet', 'to', 'fine', 'whatever', 'more', 'than', 'usually', 'ghastly', 'thing', 'in', 'weather', 'that', 'may', 'be', 'occasional', 'local', 'thunder', 'storms', 'east', 'wind', 'with', 'general', 'depression', 'over', 'the', 'midland', 'counties', 'london', 'and', 'channel']]
+Top similarities:[('withal', 0.4142190217971802), ('chandar', 0.41300010681152344), ('hee-dong', 0.405361533164978), ('fearfully', 0.4033760130405426), ('groaned', 0.40094590187072754), ('dreadfully', 0.3972095251083374), ('insensible', 0.39594441652297974), ('sniffed', 0.39147689938545227), ('nauseated', 0.3875253200531006), ('uttanka', 0.3874412477016449), ('terribly', 0.38452011346817017), ('waist-deep', 0.3844791352748871), ('mikay', 0.3835046589374542), ('crazily', 0.38151100277900696), ('hong-joo', 0.3813475966453552), ('wringing', 0.3812977075576782), ('exhilarated', 0.3810845911502838), ('mealtimes', 0.3787788152694702), ('fengguan', 0.3787524998188019), ('numbed', 0.3782612383365631)]
+
+george - Sentence n. 67
+ Alpha: Current alpha: 0.9100227186024155
+
+Words: [['it', 'was', 'too', 'bright', 'and', 'sunny', 'on', 'this', 'especial', 'morning', 'for', '___', 's', 'blood', 'curdling', 'readings', 'about', 'bar']]
+Top similarities:[('chandar', 0.42441362142562866), ('withal', 0.4209117293357849), ('hee-dong', 0.41609928011894226), ('groaned', 0.4106314480304718), ('dreadfully', 0.40921247005462646), ('nauseated', 0.4052554965019226), ('fearfully', 0.4035407602787018), ('insensible', 0.400296151638031), ('wringing', 0.39342838525772095), ('terribly', 0.3930937349796295), ('crazily', 0.3895467519760132), ('sniffed', 0.38869568705558777), ('exhilarated', 0.38724809885025024), ('pathetically', 0.385964572429657), ('uttanka', 0.38370436429977417), ('wearily', 0.38316476345062256), ('fengguan', 0.3830283284187317), ('caked', 0.38019421696662903), ('numbed', 0.37973517179489136), ('hong-joo', 0.3797142803668976)]
+
+george - Sentence n. 68
+ Alpha: Current alpha: 0.9087236142998499
+
+Words: [['harris', 'said', 'he', 'thought', 'it', 'was', 'a', 'very', 'fine', 'maze', 'so', 'far', 'as', 'he', 'was', 'a', 'judge', 'and', 'we', 'agreed', 'that', 'we', 'would', 'try', 'to', 'get', '___', 'to', 'go', 'into', 'it', 'on', 'our', 'way', 'back']]
+Top similarities:[('insensible', 0.38894426822662354), ('groaned', 0.38047927618026733), ('caked', 0.37201595306396484), ('fearfully', 0.37129098176956177), ('withal', 0.3647676706314087), ('famished', 0.3644242584705353), ('nibbling', 0.36369773745536804), ('sniffed', 0.3628217577934265), ('thoughtlessly', 0.35829296708106995), ('waist-deep', 0.3559448719024658), ('bivouacs', 0.3532056212425232), ('horse’s', 0.3453608453273773), ('numbed', 0.34381574392318726), ('frostbitten', 0.3430994749069214), ('prettily', 0.34233105182647705), ('wringing', 0.34008532762527466), ('well-fed', 0.33874958753585815), ('hee-dong', 0.33833956718444824), ('clammy', 0.3380660116672516), ('categoryliving', 0.33806508779525757)]
+
+george - Sentence n. 69
+ Alpha: Current alpha: 0.9074263645355882
+
+Words: [['the', 'river', 'in', 'its', 'sunday', 'garb', 'dress', 'on', 'the', 'river', 'a', 'chance', 'for', 'the', 'men', 'absence', 'of', 'taste', 'in', 'harris', '___', 's', 'blazer', 'a', 'day', 'with', 'the', 'fashion', 'plate', 'young', 'lady', 'mrs']]
+Top similarities:[('fingertips', 0.2175915241241455), ('nbacom', 0.20822614431381226), ('easily', 0.2075692117214203), ('e-amusement', 0.20655587315559387), ('wildest', 0.19937707483768463), ('saber', 0.1977139115333557), ('concussive', 0.19566066563129425), ('uvc', 0.195395365357399), ('ramified', 0.19510287046432495), ('sharpshooting', 0.19441619515419006), ('ultramarathons', 0.19336821138858795), ('easiest', 0.19266366958618164), ('sabers', 0.18861132860183716), ('combatives', 0.18836821615695953), ('urticating', 0.1871177852153778), ('556mm', 0.18704703450202942), ('jammer', 0.18624520301818848), ('plebe', 0.18611370027065277), ('20-plus', 0.18603676557540894), ('sacroiliac', 0.185683935880661)]
+
+george - Sentence n. 70
+ Alpha: Current alpha: 0.9061309666621813
+
+Words: [['thomas', 's', 'tomb', 'the', 'man', 'who', 'loves', 'not', 'graves', 'and', 'coffins', 'and', 'skulls', 'harris', 'mad', 'his', 'views', 'on', '___', 'and', 'banks', 'and', 'lemonade', 'he', 'performs', 'tricks']]
+Top similarities:[('1681', 0.2967246472835541), ('aristocrat', 0.2905060350894928), ('1589', 0.27639302611351013), ('isobel', 0.2721744775772095), ('tsarina', 0.27190807461738586), ('1644', 0.27187877893447876), ('drue', 0.2708408534526825), ('1689', 0.26932573318481445), ('1591', 0.2693249583244324), ('manservant', 0.2673189640045166), ('armine', 0.2669904828071594), ('damboise', 0.26648953557014465), ('courtier', 0.26567864418029785), ('noblewoman', 0.2653888761997223), ('1388', 0.2653525471687317), ('rieux', 0.26466450095176697), ('thomasin', 0.263896644115448), ('1578', 0.26366373896598816), ('clermont-tonnerre', 0.2635107636451721), ('1414', 0.26237353682518005)]
+
+george - Sentence n. 71
+ Alpha: Current alpha: 0.9048374180359595
+
+Words: [['___', 'has', 'bought', 'some', 'new', 'things', 'for', 'this', 'trip', 'and', 'i', 'm', 'rather', 'vexed', 'about', 'them']]
+Top similarities:[('georgie', 0.2873469591140747), ('muffy', 0.28678077459335327), ('pegge', 0.279491662979126), ('brame', 0.27702775597572327), ('kay', 0.2757849097251892), ('embezzle', 0.2719043493270874), ('lizotte', 0.26885467767715454), ('messinger', 0.2682895064353943), ('abortionist', 0.2682202160358429), ('atwill', 0.268200546503067), ('roderigo', 0.26729127764701843), ('connie', 0.26616761088371277), ('portelli', 0.2651881277561188), ('liz', 0.2622200548648834), ('morwenna', 0.26184743642807007), ('cambell', 0.26178160309791565), ('evelyn', 0.26164379715919495), ('cappy', 0.26161184906959534), ('schoolfriend', 0.26098787784576416), ('silbert', 0.2596377730369568)]
+
+george - Sentence n. 72
+ Alpha: Current alpha: 0.9035457160170275
+
+Words: [['i', 'should', 'not', 'like', '___', 'to', 'know', 'that', 'i', 'thought', 'so', 'but', 'there', 'really', 'is', 'no', 'other', 'word', 'for', 'it']]
+Top similarities:[('rappin', 0.26239675283432007), ('interpolation', 0.25745102763175964), ('vybz', 0.25526052713394165), ('name-checked', 0.2546824812889099), ('schnapps', 0.25337880849838257), ('tomte', 0.2510506212711334), ('unattributed', 0.2500287890434265), ('keak', 0.24885743856430054), ('nibbles', 0.24732756614685059), ('referencing', 0.24280647933483124), ('burna', 0.24237702786922455), ('snippets', 0.2398766428232193), ('interpolates', 0.23879113793373108), ('capleton', 0.23681104183197021), ('blac', 0.2357211709022522), ('$ign', 0.23375555872917175), ('b2k', 0.23330551385879517), ('aubin', 0.2320529967546463), ('deriving', 0.23179706931114197), ('manuva', 0.23122087121009827)]
+
+george - Sentence n. 73
+ Alpha: Current alpha: 0.902255857969258
+
+Words: [['___', 'put', 'it', 'on', 'and', 'asked', 'us', 'what', 'we', 'thought', 'of', 'it']]
+Top similarities:[('categoryliving', 0.33043718338012695), ('__notoc__', 0.32546207308769226), ('depressingly', 0.31060007214546204), ('downloaders', 0.30783697962760925), ('!bgcolor=#cccccc', 0.3045941889286041), ('traceability', 0.3033853769302368), ('menfolk', 0.3014684319496155), ('chargeback', 0.30058807134628296), ('anyway', 0.2964194416999817), ('!date', 0.2949081063270569), ('respirators', 0.2940320372581482), ('trade-offs', 0.29029691219329834), ('foreign-made', 0.28953295946121216), ('them—and', 0.2890505790710449), ('theyre', 0.2887336015701294), ('sugared', 0.28849658370018005), ('undrinkable', 0.28803953528404236), ('non-experts', 0.28629279136657715), ('non-users', 0.28600749373435974), ('time-saving', 0.28459423780441284)]
+
+george - Sentence n. 74
+ Alpha: Current alpha: 0.9009678412602874
+
+Words: [['harris', 'said', 'that', 'as', 'an', 'object', 'to', 'hang', 'over', 'a', 'flower', 'bed', 'in', 'early', 'spring', 'to', 'frighten', 'the', 'birds', 'away', 'he', 'should', 'respect', 'it', 'but', 'that', 'considered', 'as', 'an', 'article', 'of', 'dress', 'for', 'any', 'human', 'being', 'except', 'a', 'margate', 'nigger', 'it', 'made', 'him', 'ill', '___', 'got', 'quite', 'huffy', 'but', 'as', 'harris', 'said', 'if', 'he', 't', 'want', 'his', 'opinion', 'why', 'did', 'he', 'ask', 'for', 'it']]
+Top similarities:[('tailbone', 0.2956724762916565), ('bushwalkers', 0.29505497217178345), ('al-talaba', 0.2865176796913147), ('perianal', 0.28315168619155884), ('frostbitten', 0.2826129198074341), ('ulcerations', 0.28240418434143066), ('jawán', 0.28157174587249756), ('conquistadors', 0.27958887815475464), ('cricoid', 0.2754018306732178), ('momín', 0.27539074420928955), ('wearers', 0.2743534445762634), ('categoryliving', 0.2742258608341217), ('!date', 0.27347463369369507), ('snowmobilers', 0.2730869650840759), ('upper-body', 0.27245065569877625), ('hyperextension', 0.2701793313026428), ('mountaineers', 0.26946473121643066), ('sternocleidomastoid', 0.269401490688324), ('hikers', 0.2677108645439148), ('kryvbas', 0.2670929431915283)]
+
+george - Sentence n. 75
+ Alpha: Current alpha: 0.8996816632615096
+
+Words: [['i', 'reminded', 'him', 'of', '___', 'and', 'how', 'we', 'had', 'to', 'get', 'the', 'boat', 'up', 'to', 'shepperton', 'by', 'five', 'o', 'clock', 'to', 'meet', 'him', 'and', 'then', 'he', 'went', 'for', '___']]
+Top similarities:[('momín', 0.32947880029678345), ('bushwalkers', 0.32114169001579285), ('maráthás', 0.31935951113700867), ('lakotas', 0.3179340362548828), ('snorkelers', 0.311477392911911), ('wearers', 0.31072354316711426), ('jawán', 0.3069908618927002), ('ulcerations', 0.30642449855804443), ('uttanka', 0.30493420362472534), ('bivouacs', 0.3028661012649536), ('kagato', 0.3025164008140564), ('saurons', 0.3011860251426697), ('short-duration', 0.29848259687423706), ('well-camouflaged', 0.29743295907974243), ('snowmobilers', 0.29724591970443726), ('manasarovar', 0.2967895269393921), ('kimihito', 0.2964247465133667), ('hikers', 0.2959342896938324), ('murids', 0.2954307794570923), ('mawali', 0.2923445403575897)]
+
+george - Sentence n. 76
+ Alpha: Current alpha: 0.898397321348071
+
+Words: [['why', 'was', '___', 'to', 'fool', 'about', 'all', 'day', 'and', 'leave', 'us', 'to', 'lug', 'this', 'lumbering', 'old', 'top', 'heavy', 'barge', 'up', 'and', 'down', 'the', 'river', 'by', 'ourselves', 'to', 'meet', 'him']]
+Top similarities:[('maráthás', 0.3801882266998291), ('momín', 0.37720465660095215), ('rakshasas', 0.36528339982032776), ('lakotas', 0.36268165707588196), ('!date', 0.3624386787414551), ('uttanka', 0.360952228307724), ('ashwatthama', 0.3565990924835205), ('!bgcolor=#cccccc', 0.35369110107421875), ('jawán', 0.34690040349960327), ('andhaka', 0.3451214134693146), ('snorkelers', 0.34465086460113525), ('categoryliving', 0.34237217903137207), ('thingol', 0.3394666314125061), ('jarlaxle', 0.33786821365356445), ('salamandastron', 0.33732324838638306), ('kaikeyi', 0.3343043625354767), ('kagato', 0.33207079768180847), ('fingolfin', 0.33158159255981445), ('infiltrators', 0.3301466107368469), ('maedhros', 0.3289675712585449)]
+
+george - Sentence n. 77
+ Alpha: Current alpha: 0.8971148128988655
+
+Words: [['why', 't', '___', 'come', 'and', 'do', 'some', 'work']]
+Top similarities:[('maráthás', 0.378466933965683), ('momín', 0.37562066316604614), ('rakshasas', 0.3644040822982788), ('lakotas', 0.3617461621761322), ('uttanka', 0.3581579625606537), ('!date', 0.3569619059562683), ('ashwatthama', 0.3538201153278351), ('!bgcolor=#cccccc', 0.3493850827217102), ('jawán', 0.3439931869506836), ('snorkelers', 0.3439481556415558), ('andhaka', 0.3429566025733948), ('categoryliving', 0.33950865268707275), ('thingol', 0.33569085597991943), ('jarlaxle', 0.33564698696136475), ('salamandastron', 0.33522090315818787), ('kaikeyi', 0.3320751488208771), ('infiltrators', 0.32969656586647034), ('kagato', 0.32923322916030884), ('sadhus', 0.3292008638381958), ('bivouacs', 0.3285965919494629)]
+
+george - Sentence n. 78
+ Alpha: Current alpha: 0.8958341352965282
+
+Words: [['blackmailing', 'the', 'proper', 'course', 'to', 'pursue', 'selfish', 'of', 'river', 'side', 'landowner', 'notice', 'boards', 'feelings', 'of', 'harris', 'how', 'harris', 'sings', 'a', 'comic', 'song', 'a', 'high', 'class', 'party', 'shameful', 'conduct', 'of', 'two', 'abandoned', 'young', 'men', 'some', 'useless', 'information', '___', 'buys', 'a', 'banjo']]
+Top similarities:[('asleep', 0.37428754568099976), ('arbella', 0.37243032455444336), ('grief-stricken', 0.3655869960784912), ('invalids', 0.3646511435508728), ('townspeople', 0.35656678676605225), ('commiserate', 0.3564439117908478), ('shuhui', 0.354491263628006), ('tweedledee', 0.3537035286426544), ('kaikeyi', 0.3534158766269684), ('chandar', 0.35280749201774597), ('drugged', 0.35069704055786133), ('unwell', 0.34942641854286194), ('sobbing', 0.34905433654785156), ('expectant', 0.3482562005519867), ('awakes', 0.34821274876594543), ('mealtimes', 0.34803301095962524), ('mombi', 0.347128689289093), ('teaspoons', 0.34593307971954346), ('uttanka', 0.3457950949668884), ('gi-tae', 0.3443637490272522)]
+
+george - Sentence n. 79
+ Alpha: Current alpha: 0.894555285927431
+
+Words: [['the', 'lock', 'is', 'just', 'opposite', 'the', 'town', 'and', 'the', 'first', 'thing', 'that', 'we', 'saw', 'when', 'we', 'came', 'in', 'view', 'of', 'it', 'was', '___', 's', 'blazer', 'on', 'one', 'of', 'the', 'lock', 'gates', 'closer', 'inspection', 'showing', 'that', '___', 'was', 'inside', 'it']]
+Top similarities:[('impeaching', 0.2540556788444519), ('literals', 0.2517358064651489), ('poundage', 0.23606321215629578), ('superuser', 0.2338661253452301), ('impliedly', 0.23343811929225922), ('saxbe', 0.23266743123531342), ('cross-examine', 0.23170113563537598), ('sulfatide', 0.22786986827850342), ('wager', 0.22703883051872253), ('codice_42', 0.2235451638698578), ('mourdock', 0.22323589026927948), ('conjugate', 0.22267168760299683), ('pym', 0.22211983799934387), ('approver', 0.22143316268920898), ('codice_44', 0.22133931517601013), ('nonmembers', 0.22065198421478271), ('codice_28', 0.22030869126319885), ('impartially', 0.22024065256118774), ('c-section', 0.22014662623405457), ('flagella', 0.21785390377044678)]
+
+george - Sentence n. 80
+ Alpha: Current alpha: 0.8932782621816769
+
+Words: [['montmorency', 'set', 'up', 'a', 'furious', 'barking', 'i', 'harris', 'roared', '___', 'waved', 'his', 'hat', 'and', 'yelled', 'back']]
+Top similarities:[('!date', 0.31086283922195435), ('prostration', 0.304439902305603), ('loudly', 0.3034154176712036), ('flustered', 0.2948143482208252), ('momín', 0.29208990931510925), ('promptly', 0.2917082607746124), ('ulcerations', 0.2907792329788208), ('whoever', 0.28780731558799744), ('jawán', 0.2872121036052704), ('!bgcolor=#cccccc', 0.2865374684333801), ('decisively', 0.2832377254962921), ('audibly', 0.2822044789791107), ('instinctively', 0.281501829624176), ('pedicellariae', 0.27971750497817993), ('tailbone', 0.27857211232185364), ('depressurized', 0.2764366865158081), ('turbinates', 0.27607250213623047), ('he/she', 0.2752055823802948), ('prorogue', 0.2751942276954651), ('smiled', 0.2746547758579254)]
+
+george - Sentence n. 81
+ Alpha: Current alpha: 0.8920030614530944
+
+Words: [['___', 'had', 'rather', 'a', 'curious', 'covered', 'parcel', 'in', 'his', 'hand']]
+Top similarities:[('prostration', 0.2881452441215515), ('loudly', 0.2872852683067322), ('flustered', 0.27933716773986816), ('momín', 0.2748884856700897), ('audibly', 0.27215179800987244), ('ulcerations', 0.27096644043922424), ('whoever', 0.27065643668174744), ('pedicellariae', 0.2683093547821045), ('!date', 0.2683003842830658), ('promptly', 0.2677346467971802), ('instinctively', 0.26707354187965393), ('jawán', 0.26492607593536377), ('tailbone', 0.2623140215873718), ('turbinates', 0.2622660994529724), ('smiled', 0.26211246848106384), ('he/she', 0.2620752453804016), ('timidly', 0.26191285252571106), ('decisively', 0.2607123851776123), ('swung', 0.2576907277107239), ('stretcher', 0.25751373171806335)]
+
+george - Sentence n. 82
+ Alpha: Current alpha: 0.8907296811392326
+
+Words: [['no', 'said', '___', 'with', 'a', 'strange', 'wild', 'look', 'glittering', 'in', 'his', 'eyes', 'they', 'are', 'all', 'the', 'rage', 'this', 'season', 'everybody', 'has', 'got', 'them', 'up', 'the', 'river']]
+Top similarities:[('timidly', 0.33031272888183594), ('footman', 0.3030012845993042), ('caressed', 0.29214829206466675), ('offstage', 0.29125893115997314), ('magically', 0.2878686189651489), ('bridegroom', 0.28711265325546265), ('sobbing', 0.2860996127128601), ('unhorsed', 0.28224822878837585), ('reverently', 0.2815897464752197), ('howled', 0.2800854742527008), ('prostration', 0.2757876515388489), ('terrified', 0.2753502130508423), ('heaved', 0.27498751878738403), ('cromwell’s', 0.2747928500175476), ('perching', 0.274544358253479), ('railing', 0.27391642332077026), ('whimpering', 0.2736811637878418), ('jadis', 0.2723480463027954), ('meekly', 0.2723437249660492), ('thundered', 0.27143675088882446)]
+
+george - Sentence n. 83
+ Alpha: Current alpha: 0.8894581186413557
+
+Words: [['not', 'exactly', 'replied', '___', 'but', 'it', 's', 'very', 'easy', 'they', 'tell', 'me', 'and', 'i', 've', 'got', 'the', 'instruction', 'book']]
+Top similarities:[('purviance', 0.3229178786277771), ('wenman', 0.29971617460250854), ('vinaigrette', 0.2996380925178528), ('leeves', 0.29711073637008667), ('christabel', 0.2885817885398865), ('marie-jeanne', 0.287580668926239), ('unwell', 0.28630295395851135), ('dressing', 0.2838781177997589), ('bletchingley', 0.28240102529525757), ('phelips', 0.2800223231315613), ('mysis', 0.2788849472999573), ('invalids', 0.27675557136535645), ('pinchback', 0.2733708322048187), ('seated', 0.2728903293609619), ('high-protein', 0.2725781202316284), ('honyman', 0.2720683813095093), ('oxenden', 0.27161914110183716), ('galsworthy', 0.27157050371170044), ('thewlis', 0.2711399793624878), ('pretyman', 0.27064788341522217)]
+
+george - Sentence n. 84
+ Alpha: Current alpha: 0.8881883713644378
+
+Words: [['picture', '___', 'and', 'the', 'banjo', 'chapter', 'ix']]
+Top similarities:[('purviance', 0.2967906594276428), ('leeves', 0.27609503269195557), ('vinaigrette', 0.27241599559783936), ('marie-jeanne', 0.2721322178840637), ('wenman', 0.2717387080192566), ('christabel', 0.270413875579834), ('unwell', 0.27002787590026855), ('invalids', 0.26890480518341064), ('mysis', 0.26233232021331787), ('pōmare', 0.26203009486198425), ('dressing', 0.2606382668018341), ('seated', 0.25965023040771484), ('bletchingley', 0.2593098282814026), ('fowls', 0.25765758752822876), ('silenus', 0.2573835849761963), ('customarily', 0.2571939527988434), ('phelips', 0.25716981291770935), ('crossbencher', 0.2550971210002899), ('jiabao', 0.2542143166065216), ('grypus', 0.2541131377220154)]
+
+george - Sentence n. 85
+ Alpha: Current alpha: 0.8869204367171575
+
+Words: [['___', 'is', 'introduced', 'to', 'work', 'instincts', 'of', 'tow', 'lines', 'ungrateful', 'conduct', 'of', 'a', 'double', 'sculling', 'skiff', 'towers', 'and', 'towed', 'a', 'use', 'discovered', 'for', 'lovers', 'strange', 'disappearance', 'of', 'an', 'elderly', 'lady', 'much', 'haste', 'less', 'speed', 'being', 'towed', 'by', 'girls', 'exciting', 'sensation', 'the', 'missing', 'lock', 'or', 'the', 'haunted', 'river', 'music', 'saved']]
+Top similarities:[('seckau', 0.2701510488986969), ('karlowitz', 0.2618887424468994), ('afyon', 0.25145745277404785), ('vinaigrette', 0.24888154864311218), ('15–20%', 0.2474055290222168), ('turpan', 0.2468438446521759), ('hunchun', 0.2427224963903427), ('zhetysu', 0.2408568114042282), ('nerchinsk', 0.23966866731643677), ('Ü-tsang', 0.23780056834220886), ('immiscible', 0.23708978295326233), ('marbling', 0.23665042221546173), ('kyakhta', 0.23582127690315247), ('resorbed', 0.23526528477668762), ('Çıldır', 0.23435957729816437), ('liters', 0.23373782634735107), ('coagulant', 0.23369565606117249), ('balkars', 0.23311404883861542), ('odorless', 0.2328464537858963), ('rice-based', 0.23282521963119507)]
+
+george - Sentence n. 86
+ Alpha: Current alpha: 0.8856543121118926
+
+Words: [['we', 'made', '___', 'work', 'now', 'we', 'had', 'got', 'him']]
+Top similarities:[('seckau', 0.2712623178958893), ('karlowitz', 0.262843519449234), ('afyon', 0.25242501497268677), ('vinaigrette', 0.2497348189353943), ('turpan', 0.24787965416908264), ('15–20%', 0.24742238223552704), ('hunchun', 0.2432001233100891), ('zhetysu', 0.24172770977020264), ('nerchinsk', 0.24060893058776855), ('Ü-tsang', 0.2386159896850586), ('immiscible', 0.23765313625335693), ('marbling', 0.2370876967906952), ('kyakhta', 0.2364593744277954), ('resorbed', 0.23608145117759705), ('Çıldır', 0.23560118675231934), ('balkars', 0.23416393995285034), ('coagulant', 0.23410774767398834), ('liters', 0.23402287065982819), ('rice-based', 0.23375776410102844), ('odorless', 0.2336154282093048)]
+
+george - Sentence n. 87
+ Alpha: Current alpha: 0.8843899949647149
+
+Words: [['he', 'could', 'not', 'in', 'conscience', 'not', 'even', '___', 's', 'conscience', 'object', 'though', 'he', 'did', 'suggest', 'that', 'perhaps', 'it', 'would', 'be', 'better', 'for', 'him', 'to', 'stop', 'in', 'the', 'boat', 'and', 'get', 'tea', 'ready', 'while', 'harris', 'and', 'i', 'towed', 'because', 'getting', 'tea', 'was', 'such', 'a', 'worrying', 'work', 'and', 'harris', 'and', 'i', 'looked', 'tired']]
+Top similarities:[('midleg', 0.3621232807636261), ('ulcerations', 0.3610883057117462), ('hindleg', 0.3559858798980713), ('scarcely', 0.35129213333129883), ('femurs', 0.35067927837371826), ('supercilia', 0.3503105342388153), ('weight-bearing', 0.34675511717796326), ('infratemporal', 0.3467037081718445), ('perianal', 0.34650471806526184), ('vibrated', 0.3448530435562134), ('calcaneum', 0.3419060707092285), ('corneous', 0.3394024670124054), ('preorbital', 0.338784396648407), ('hyperkeratosis', 0.3385712504386902), ('saddle-shaped', 0.33799105882644653), ('digitigrade', 0.33739733695983887), ('hairpencil', 0.3362460732460022), ('tailbone', 0.3359318971633911), ('up-curved', 0.33496761322021484), ('postocular', 0.33495575189590454)]
+
+george - Sentence n. 88
+ Alpha: Current alpha: 0.883127482695385
+
+Words: [['harris', 'had', 'lifted', 'it', 'up', 'scientifically', 'and', 'had', 'put', 'it', 'into', '___', 's', 'hand']]
+Top similarities:[('qualitatively', 0.2832643985748291), ('tonally', 0.2675687372684479), ('finely', 0.26396045088768005), ('textured', 0.26351112127304077), ('ochres', 0.26091495156288147), ('polychromed', 0.26076552271842957), ('three-dimensionally', 0.25604405999183655), ('colorless', 0.2543991506099701), ('polished', 0.25380027294158936), ('mechanistic', 0.25285443663597107), ('tone', 0.25213342905044556), ('immiscible', 0.2506266236305237), ('emphasized', 0.24868620932102203), ('hydroxyapatite', 0.2483445256948471), ('aesthetical', 0.24802210927009583), ('formalistic', 0.24628528952598572), ('lifeworld', 0.24564331769943237), ('reflexion', 0.24494662880897522), ('body-centered', 0.24466414749622345), ('reflective', 0.24439701437950134)]
+
+george - Sentence n. 89
+ Alpha: Current alpha: 0.8818667727273467
+
+Words: [['___', 'had', 'taken', 'it', 'firmly', 'and', 'held', 'it', 'away', 'from', 'him', 'and', 'had', 'begun', 'to', 'unravel', 'it', 'as', 'if', 'he', 'were', 'taking', 'the', 'swaddling', 'clothes', 'off', 'a', 'new', 'born', 'infant', 'and', 'before', 'he', 'had', 'unwound', 'a', 'dozen', 'yards', 'the', 'thing', 'was', 'more', 'like', 'a', 'badly', 'made', 'door', 'mat', 'than', 'anything', 'else']]
+Top similarities:[('hardly', 0.384509801864624), ('obviously', 0.3656441569328308), ('terribly', 0.36402618885040283), ('scarcely', 0.362202525138855), ('superficial', 0.3529937267303467), ('vibrated', 0.3486199378967285), ('prettily', 0.3456805646419525), ('grasp', 0.3437519073486328), ('groaned', 0.34357935190200806), ('utterly', 0.3433626890182495), ('there’s', 0.3432103991508484), ('really', 0.33878493309020996), ('something', 0.33878326416015625), ('quite', 0.3379512429237366), ('oozes', 0.3345492482185364), ('crazily', 0.3338678777217865), ('could’ve', 0.33341658115386963), ('depressingly', 0.3314361572265625), ('maybe', 0.32831627130508423), ('exhilarated', 0.3280673623085022)]
+
+george - Sentence n. 90
+ Alpha: Current alpha: 0.8806078624877219
+
+Words: [['as', 'an', 'example', 'of', 'how', 'utterly', 'oblivious', 'a', 'pair', 'of', 'towers', 'can', 'be', 'to', 'their', 'work', '___', 'told', 'us', 'later', 'on', 'in', 'the', 'evening', 'when', 'we', 'were', 'discussing', 'the', 'subject', 'after', 'supper', 'of', 'a', 'very', 'curious', 'instance']]
+Top similarities:[('terribly', 0.42148399353027344), ('groaned', 0.4091750383377075), ('vibrated', 0.40669897198677063), ('crazily', 0.4015180766582489), ('something', 0.4008117914199829), ('prettily', 0.4002878963947296), ('exhilarated', 0.3990147113800049), ('really', 0.3968752324581146), ('person?', 0.39683783054351807), ('wringing', 0.395786315202713), ('wearily', 0.3945687413215637), ('thing?', 0.3943515419960022), ('obviously', 0.3941888213157654), ('nibbling', 0.3926178812980652), ('instinctively', 0.38589686155319214), ('utterly', 0.3822351396083832), ('purring', 0.38126346468925476), ('caressed', 0.38111254572868347), ('…', 0.3810725212097168), ('that’s', 0.37995022535324097)]
+
+george - Sentence n. 91
+ Alpha: Current alpha: 0.879350749407306
+
+Words: [['___', 'was', 'about', 'to', 'call', 'out', 'and', 'wake', 'them', 'up', 'but', 'at', 'that', 'moment', 'a', 'bright', 'idea', 'flashed', 'across', 'him', 'and', 'he', 't']]
+Top similarities:[('something', 0.3883354067802429), ('terribly', 0.3861522078514099), ('obviously', 0.3776100277900696), ('really', 0.37749722599983215), ('crazily', 0.37529826164245605), ('person?', 0.3746110498905182), ('thing?', 0.3706774413585663), ('thing', 0.3651553690433502), ('absolutely', 0.3639502227306366), ('feeling', 0.3561452329158783), ('vibrated', 0.3520808517932892), ('utterly', 0.3517458736896515), ('everything', 0.3511176109313965), ('emoting', 0.348246306180954), ('weirdly', 0.3478583097457886), ('was!', 0.3475959300994873), ('instinctively', 0.3475402295589447), ('anything', 0.347529798746109), ('marvellously', 0.34718984365463257), ('genuinely', 0.3467092514038086)]
+
+george - Sentence n. 92
+ Alpha: Current alpha: 0.8780954309205613
+
+Words: [['___', 'said', 'he', 'never', 'saw', 'so', 'much', 'thoughtful', 'sadness', 'concentrated', 'into', 'one', 'glance', 'before', 'as', 'when', 'at', 'the', 'lock', 'that', 'young', 'couple', 'grasped', 'the', 'idea', 'that', 'for', 'the', 'last', 'two', 'miles', 'they', 'had', 'been', 'towing', 'the', 'wrong', 'boat']]
+Top similarities:[('cathey', 0.2689926028251648), ('hemsley', 0.26494356989860535), ('reiley', 0.26179999113082886), ('stand', 0.2605831027030945), ('gumm', 0.25864216685295105), ('cherie', 0.25734418630599976), ('harriette', 0.25202974677085876), ('daddy', 0.25145429372787476), ('carol', 0.24817028641700745), ('carll', 0.2481503039598465), ('work!', 0.2475876659154892), ('angelica', 0.2471487671136856), ('dead!', 0.24652040004730225), ('president?', 0.24637925624847412), ('snooks', 0.2460423707962036), ('dornan', 0.24602073431015015), ('linney', 0.245946004986763), ('giorno', 0.2456989586353302), ('dourif', 0.2449783980846405), ('meloy', 0.24492336809635162)]
+
+george - Sentence n. 93
+ Alpha: Current alpha: 0.8768419044656132
+
+Words: [['___', 'fancied', 'that', 'if', 'it', 'had', 'not', 'been', 'for', 'the', 'restraining', 'influence', 'of', 'the', 'sweet', 'woman', 'at', 'his', 'side', 'the', 'young', 'man', 'might', 'have', 'given', 'way', 'to', 'violent', 'language']]
+Top similarities:[('thoughtlessly', 0.38635674118995667), ('foolishly', 0.3774547874927521), ('children!', 0.36507120728492737), ('väinämöinen', 0.36293596029281616), ('kaikeyi', 0.3617568612098694), ('everyones', 0.3527705669403076), ('aðils', 0.3527188003063202), ('mandodari', 0.3516926169395447), ('everyone', 0.35166770219802856), ('mordred', 0.35147541761398315), ('selfishly', 0.3514626622200012), ('money!', 0.3506840467453003), ('misbehave', 0.3491906523704529), ('displease', 0.34909147024154663), ('men!', 0.3490460515022278), ('mombi', 0.34812042117118835), ('heedless', 0.34705445170402527), ('her!', 0.3447830379009247), ('santror', 0.3441718816757202), ('temerity', 0.3421792984008789)]
+
+george - Sentence n. 94
+ Alpha: Current alpha: 0.8755901674842437
+
+Words: [['___', 'replied', 'he', 'did', 'not', 'know']]
+Top similarities:[('thackery', 0.25142425298690796), ('sherriff', 0.23954685032367706), ('herrick', 0.23913125693798065), ('laurence', 0.2378736287355423), ('fowlds', 0.23471131920814514), ('gordon', 0.22675321996212006), ('kristyn', 0.22437971830368042), ('catherine', 0.22361330687999725), ('allyn', 0.22350916266441345), ('lloyd', 0.22341975569725037), ('clarence', 0.22287742793560028), ('esq', 0.22189241647720337), ('dromgoole', 0.22185149788856506), ('angell', 0.21726731956005096), ('ann', 0.2161308228969574), ('prudence', 0.21542580425739288), ('sidney', 0.213424950838089), ('ransom', 0.21317309141159058), ('barclay', 0.21316781640052795), ('irving', 0.21223145723342896)]
+
+george - Sentence n. 95
+ Alpha: Current alpha: 0.8743402174218873
+
+Words: [['another', 'example', 'of', 'the', 'dangerous', 'want', 'of', 'sympathy', 'between', 'tower', 'and', 'towed', 'was', 'witnessed', 'by', '___', 'and', 'myself', 'once', 'up', 'near', 'walton']]
+Top similarities:[('thackery', 0.3164466619491577), ('wager', 0.3074568212032318), ('esq', 0.3051614761352539), ('evelyn', 0.3023107945919037), ('sherriff', 0.29828912019729614), ('macready', 0.294308602809906), ('oxenden', 0.2914847135543823), ('holles', 0.2903158664703369), ('ransoms', 0.2902815341949463), ('maude', 0.28946346044540405), ('godmother', 0.28858470916748047), ('prudence', 0.28792744874954224), ('ransom', 0.28785350918769836), ('henrietta', 0.28699153661727905), ('arbella', 0.28661420941352844), ('gordon', 0.28656262159347534), ('elizabeth', 0.2860060930252075), ('fay', 0.28556710481643677), ('demoulas', 0.2848862409591675), ('steuart', 0.28479456901550293)]
+
+george - Sentence n. 96
+ Alpha: Current alpha: 0.8730920517276249
+
+Words: [['i', 'should', 'like', 'to', 'see', 'him', 'pull', 'the', 'wrong', 'line', 'murmured', '___', 'as', 'they', 'passed']]
+Top similarities:[('didst', 0.37570443749427795), ('kaikeyi', 0.3711051046848297), ('thoughtlessly', 0.3650705814361572), ('cower', 0.36291250586509705), ('men!', 0.3595098853111267), ('everyones', 0.35818183422088623), ('money!', 0.35597288608551025), ('santror', 0.35325223207473755), ('heedless', 0.3529853820800781), ('head!', 0.3511701226234436), ('temerity', 0.3490709662437439), ('sorrowfully', 0.34727656841278076), ('mainwarings', 0.3469997048377991), ('whimpering', 0.3462613821029663), ('fearfully', 0.3460181951522827), ('wherewith', 0.3436766564846039), ('mombi', 0.3434174656867981), ('ladyship', 0.34319251775741577), ('children!', 0.3430311679840088), ('her!', 0.3416743874549866)]
+
+george - Sentence n. 97
+ Alpha: Current alpha: 0.8718456678541794
+
+Words: [['___', 'got', 'the', 'line', 'right', 'after', 'a', 'while', 'and', 'towed', 'us', 'steadily', 'on', 'to', 'penton', 'hook']]
+Top similarities:[('thackery', 0.2961834669113159), ('oxenden', 0.29404884576797485), ('evelyn', 0.28992894291877747), ('godmother', 0.2892249822616577), ('demoulas', 0.2842538356781006), ('steuart', 0.2840001583099365), ('henrietta', 0.28178131580352783), ('fay', 0.2796532213687897), ('waller', 0.2794473171234131), ('waldegrave', 0.2789546549320221), ('arbella', 0.27767065167427063), ('frere', 0.27727192640304565), ('leveson-gower', 0.27681460976600647), ('vere', 0.27603408694267273), ('cappy', 0.2757382094860077), ('ransoms', 0.27459877729415894), ('macready', 0.2727970480918884), ('gordon', 0.27174079418182373), ('bligh', 0.2710847854614258), ('esq', 0.27022305130958557)]
+
+george - Sentence n. 98
+ Alpha: Current alpha: 0.8706010632579096
+
+Words: [['a', 'comfortably', 'appointed', 'well', 'drained', 'desert', 'island', 'neighbourhood', 'of', 'south', 'pacific', 'ocean', 'preferred', 'funny', 'thing', 'that', 'happened', 'to', '___', 's', 'father', 'a', 'restless', 'night']]
+Top similarities:[('oxenden', 0.3624543845653534), ('godmother', 0.35828766226768494), ('!bgcolor=#cccccc', 0.3458346724510193), ('kūhiō', 0.34098950028419495), ('frere', 0.3345276117324829), ('lunalilo', 0.3327949047088623), ('akuffo-addo', 0.33145758509635925), ('ceremoniously', 0.32820814847946167), ('muluzi', 0.32465749979019165), ('dignitaries', 0.3230628967285156), ('abdirashid', 0.32268011569976807), ('yameen', 0.3219296336174011), ('domett', 0.3219245672225952), ('bride-to-be', 0.32148969173431396), ('rainilaiarivony', 0.32062363624572754), ('mainwaring', 0.3204200863838196), ('seychelles', 0.3198850452899933), ('customarily', 0.31987452507019043), ('groom', 0.31986910104751587), ('leveson-gower', 0.3187640905380249)]
+
+george - Sentence n. 99
+ Alpha: Current alpha: 0.8693582353988059
+
+Words: [['___', 'had', 'towed', 'us', 'up', 'to', 'staines', 'and', 'we', 'had', 'taken', 'the', 'boat', 'from', 'there', 'and', 'it', 'seemed', 'that', 'we', 'were', 'dragging', 'fifty', 'tons', 'after', 'us', 'and', 'were', 'walking', 'forty', 'miles']]
+Top similarities:[('prestigious', 0.32092928886413574), ('barbados', 0.3125373125076294), ('gravesend', 0.3097003102302551), ('cricketers', 0.3081532120704651), ('staines', 0.30217891931533813), ('yachting', 0.3013906478881836), ('hethersett', 0.3003700375556946), ('official', 0.3002309501171112), ('sandhurst', 0.29859137535095215), ('kapilavastu', 0.2976166605949402), ('lauderhill', 0.297273725271225), ('presidents', 0.29668042063713074), ('welsford', 0.2931249439716339), ('allsopp', 0.29268693923950195), ('diyatalawa', 0.29237812757492065), ('felsted', 0.2913605570793152), ('stortford', 0.28758183121681213), ('youngest', 0.287408709526062), ('wisley', 0.2868170142173767), ('hayes', 0.286719411611557)]
+
+george - Sentence n. 100
+ Alpha: Current alpha: 0.8681171817404841
+
+Words: [['then', 'we', 'thought', 'we', 'were', 'going', 'to', 'have', 'supper', 'we', 'had', 'dispensed', 'with', 'tea', 'so', 'as', 'to', 'save', 'time', 'but', '___', 'said', 'no', 'that', 'we', 'had', 'better', 'get', 'the', 'canvas', 'up', 'first', 'before', 'it', 'got', 'quite', 'dark', 'and', 'while', 'we', 'could', 'see', 'what', 'we', 'were', 'doing']]
+Top similarities:[('insensible', 0.37926769256591797), ('famished', 0.35791707038879395), ('withal', 0.3545808792114258), ('nervously', 0.35243624448776245), ('bridegroom', 0.34977567195892334), ('everyones', 0.3433617055416107), ('sobbed', 0.3384019136428833), ('mistresss', 0.33619225025177), ('massaged', 0.3357658386230469), ('heaved', 0.3350209593772888), ('hong-joo', 0.33417361974716187), ('sipped', 0.33374375104904175), ('sobbing', 0.3327622413635254), ('wearily', 0.3320068120956421), ('reverently', 0.330832839012146), ('mealtimes', 0.32737308740615845), ('chandar', 0.3271428942680359), ('ogress', 0.32669535279273987), ('!date', 0.3266424536705017), ('morsel', 0.3260817527770996)]
+
+george - Sentence n. 101
+ Alpha: Current alpha: 0.8668778997501816
+
+Words: [['___', 'unrolled', 'it', 'and', 'fastened', 'one', 'end', 'over', 'the', 'nose', 'of', 'the', 'boat']]
+Top similarities:[('magically', 0.35595810413360596), ('bridegroom', 0.3486614227294922), ('mistresss', 0.3322408199310303), ('meekness', 0.32976359128952026), ('godmother', 0.32826969027519226), ('groom', 0.3279384672641754), ('wickedness', 0.3275172710418701), ('fellow-citizens', 0.327423095703125), ('faerie', 0.326404869556427), ('uthers', 0.32495057582855225), ('aðils', 0.31372612714767456), ('griefs', 0.3134579658508301), ('thundered', 0.3127650022506714), ('gawains', 0.3122483789920807), ('everyones', 0.31064802408218384), ('duly', 0.3105751872062683), ('conscience', 0.30930188298225403), ('treachery', 0.3087208867073059), ('darnleys', 0.3079281449317932), ('agamemnons', 0.3075803220272064)]
+
+george - Sentence n. 102
+ Alpha: Current alpha: 0.8656403868987509
+
+Words: [['harris', 'stood', 'in', 'the', 'middle', 'to', 'take', 'it', 'from', '___', 'and', 'roll', 'it', 'on', 'to', 'me', 'and', 'i', 'kept', 'by', 'the', 'stern', 'to', 'receive', 'it']]
+Top similarities:[('poet', 0.27763593196868896), ('catafalque', 0.266990065574646), ('stool', 0.26422905921936035), ('malouf', 0.259304404258728), ('satirist', 0.25564247369766235), ('crossbencher', 0.25512784719467163), ('moncrieff', 0.2502797842025757), ('titley', 0.24981360137462616), ('ceremoniously', 0.2492137849330902), ('elegies', 0.24919354915618896), ('worthies', 0.2478795349597931), ('1654', 0.24756714701652527), ('urn', 0.2472127079963684), ('aphorisms', 0.24652905762195587), ('1660', 0.24634134769439697), ('highgate', 0.24470743536949158), ('posterity', 0.24407608807086945), ('toryism', 0.2438879907131195), ('eloquence', 0.24365848302841187), ('1648', 0.24332451820373535)]
+
+george - Sentence n. 103
+ Alpha: Current alpha: 0.8644046406606551
+
+Words: [['___', 'did', 'his', 'part', 'all', 'right', 'but', 'it', 'was', 'new', 'work', 'to', 'harris', 'and', 'he', 'bungled', 'it']]
+Top similarities:[('caressed', 0.35939890146255493), ('stool', 0.33836641907691956), ('marvellously', 0.336455762386322), ('grasped', 0.33617478609085083), ('exquisitely', 0.33310961723327637), ('peculiarly', 0.3255775570869446), ('haunches', 0.324986070394516), ('sobbed', 0.32464197278022766), ('tenderly', 0.3245030641555786), ('person?', 0.3238884210586548), ('emptiness', 0.3230489492416382), ('imperishable', 0.3190171718597412), ('unafraid', 0.3180553913116455), ('roundness', 0.31805193424224854), ('meekness', 0.3171398937702179), ('self-satisfaction', 0.3169419765472412), ('perfectly', 0.3165200352668762), ('wearily', 0.3155362010002136), ('prettily', 0.3137093186378479), ('eyes', 0.313383013010025)]
+
+george - Sentence n. 104
+ Alpha: Current alpha: 0.8631706585139627
+
+Words: [['he', 'of', 'course', 'made', 'frantic', 'struggles', 'for', 'freedom', 'the', 'birthright', 'of', 'every', 'englishman', 'and', 'in', 'doing', 'so', 'i', 'learned', 'this', 'afterwards', 'knocked', 'over', '___', 'and', 'then', '___', 'swearing', 'at', 'harris', 'began', 'to', 'struggle', 'too', 'and', 'got', 'himself', 'entangled', 'and', 'rolled', 'up']]
+Top similarities:[('friends?', 0.2754599153995514), ('morality', 0.26869383454322815), ('cole’s', 0.2651922106742859), ('moranis', 0.2631174325942993), ('virtues', 0.2620457112789154), ('absalom', 0.25990402698516846), ('amstell', 0.25711023807525635), ('david', 0.25495603680610657), ('point?', 0.25410887598991394), ('godmother', 0.25296148657798767), ('cherie', 0.25279709696769714), ('deirdre', 0.25035518407821655), ('alls', 0.2501722276210785), ('children!', 0.2501254379749298), ('channing', 0.24941158294677734), ('linney', 0.24858412146568298), ('congreves', 0.24797333776950836), ('hayley', 0.2476910650730133), ('kristyn', 0.24727359414100647), ('everything', 0.24629081785678864)]
+
+george - Sentence n. 105
+ Alpha: Current alpha: 0.8619384379403424
+
+Words: [['we', 'waited', 'some', 'time', 'but', 'matters', 'seemed', 'to', 'get', 'only', 'more', 'and', 'more', 'involved', 'until', 'at', 'last', '___', 's', 'head', 'came', 'wriggling', 'out', 'over', 'the', 'side', 'of', 'the', 'boat', 'and', 'spoke', 'up']]
+Top similarities:[('pentonville', 0.2648565173149109), ('donda', 0.25840485095977783), ('berlins', 0.25173187255859375), ('half-mast', 0.2510724663734436), ('centerpiece', 0.24248893558979034), ('2009s', 0.24111175537109375), ('winehouses', 0.24094000458717346), ('re-introduction', 0.24052567780017853), ('2014s', 0.23985156416893005), ('50th-anniversary', 0.23551517724990845), ('notting', 0.23507854342460632), ('alannah', 0.2331690937280655), ('iconic', 0.23313966393470764), ('2012s', 0.23168405890464783), ('anniversary', 0.23056834936141968), ('long-anticipated', 0.22912874817848206), ('co-directing', 0.2277987152338028), ('centrepiece', 0.22634612023830414), ('quizon', 0.2263408899307251), ('wahlberg', 0.22561386227607727)]
+
+george - Sentence n. 106
+ Alpha: Current alpha: 0.8607079764250578
+
+Words: [['you', 'get', 'near', 'the', 'kettle', 'so', 'that', 'it', 'can', 'overhear', 'you', 'and', 'then', 'you', 'shout', 'out', 'i', 'don', 't', 'want', 'any', 'tea', 'do', 'you', '___']]
+Top similarities:[('chasin', 0.2068578600883484), ('long-anticipated', 0.20654305815696716), ('2014s', 0.19901221990585327), ('clarksons', 0.19673234224319458), ('wouldn’t', 0.19452741742134094), ('maloo', 0.19096538424491882), ('2011s', 0.1908208429813385), ('springsteens', 0.18794867396354675), ('2012s', 0.18698060512542725), ('2009s', 0.18396738171577454), ('ctrl', 0.18331603705883026), ('shouldve', 0.18294668197631836), ('madhavans', 0.18227188289165497), ('then-upcoming', 0.18025021255016327), ('millars', 0.1785929799079895), ('suedes', 0.17816317081451416), ('pt', 0.17798469960689545), ('pre-release', 0.17683593928813934), ('green-light', 0.17663797736167908), ('long-delayed', 0.17608894407749176)]
+
+george - Sentence n. 107
+ Alpha: Current alpha: 0.8594792714569627
+
+Words: [['to', 'which', '___', 'shouts', 'back', 'oh', 'no', 'i', 'don', 't', 'like', 'tea', 'we', 'll', 'have', 'lemonade', 'instead', 'tea', 's', 'so', 'indigestible']]
+Top similarities:[('run-down', 0.23888646066188812), ('tsing', 0.229024738073349), ('pyx', 0.22526666522026062), ('crossroad', 0.22164428234100342), ('pascha', 0.21944257616996765), ('rundown', 0.21700133383274078), ('outport', 0.21621499955654144), ('syrena', 0.21516954898834229), ('unrestored', 0.21483980119228363), ('candlelit', 0.20950943231582642), ('abode', 0.2088484913110733), ('berlins', 0.20856080949306488), ('ulica', 0.20820355415344238), ('hang', 0.20818395912647247), ('bolls', 0.20803791284561157), ('yangon', 0.20755040645599365), ('bier', 0.20474927127361298), ('rooftop', 0.20451733469963074), ('gothenburg', 0.20404857397079468), ('orphan', 0.20317915081977844)]
+
+george - Sentence n. 108
+ Alpha: Current alpha: 0.8582523205284953
+
+Words: [['five', 'minutes', 'afterwards', '___', 'said', 'ah']]
+Top similarities:[('abode', 0.2862180769443512), ('boughs', 0.2801179885864258), ('ashik', 0.2720675766468048), ('everythings', 0.2651456892490387), ('pyx', 0.2648624777793884), ('tour-de-force', 0.2642260789871216), ('epitaphios', 0.26406747102737427), ('serekh', 0.26331907510757446), ('pillar', 0.2631424367427826), ('kaddish', 0.26283639669418335), ('hang', 0.26198291778564453), ('lamenting', 0.2614396810531616), ('laments', 0.2608289122581482), ('enunciation', 0.2603984773159027), ('ulica', 0.25875920057296753), ('realisation', 0.256549596786499), ('foregrounding', 0.2561049461364746), ('milada', 0.256075382232666), ('allegory', 0.2559804618358612), ('!year', 0.2550849914550781)]
+

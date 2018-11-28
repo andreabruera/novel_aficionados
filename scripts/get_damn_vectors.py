@@ -2,6 +2,7 @@ import utilities
 import numpy 
 import math
 import sys
+import os
 
 from utilities import *
 from numpy import dot,sqrt,sum,linalg
@@ -20,17 +21,18 @@ def norm(value):
     norm=v / numpy.sqrt((numpy.sum(v**2)))
     return float(norm)
 
-def extract_char_vectors(book):
+def extract_char_vectors(book, training):
     novels_list=utilities.get_books_list(book)
     char_list=utilities.get_characters_list(book)
-
+    os.makedirs('{}_training'.format(training),exist_ok=True)
+    os.makedirs('{}_training/data_{}_training'.format(training, training),exist_ok=True)
     books_vectors=['{}.character_vectors'.format(i) for i in novels_list]
     vectors_dict={}
     for version in books_vectors:
             for index, character2 in enumerate(char_list):
                 character=character2.replace(' ','_')
                 vectors_dict['{}_{}'.format(character, version)]=[]
-                f=open('data/{}'.format(version)).readlines()
+                f=open('{}_training/data_{}_training/{}'.format(training,training,version)).readlines()
                 marker=False
                 for line in f:
                     f2=line.strip('\b').strip('\n').strip('\b').replace('uncle podger','uncle_podger').replace(' ','\t').split('\t')
@@ -65,7 +67,7 @@ def extract_char_vectors(book):
     index=len(vectors_dict)/3
     return vectors_dict,index
 
-characters_vectors,index=extract_char_vectors('308')
+characters_vectors,index=extract_char_vectors(sys.argv[1],sys.argv[2])
 
 for key in characters_vectors:
     print('{}\t{}'.format(key, len(characters_vectors[key])))
@@ -78,12 +80,14 @@ def _cosine_similarity(peer_v, query_v):
     den_b = numpy.dot(query_v, query_v)
     return num / (math.sqrt(den_a) * math.sqrt(den_b))
 
-
-results=open('results/results.txt','w')
+training=sys.argv[2]
+os.makedirs('{}_training'.format(training),exist_ok=True)
+os.makedirs('{}_training/results_{}_training'.format(training, training),exist_ok=True)
+results=open('{}_training/results_{}_training/results.txt'.format(training,training),'w')
 #results_unsorted=open('results_unsorted.txt','w')
 for key in characters_vectors:
     good_vector=numpy.array(characters_vectors[key],dtype=float)
-    results.write('\nResults for the vector: {}\n\n'.format(key))
+    results.write('\nResults for the vector: {}\n\n'.format(key.replace('_308_clean.txt_ready.character_vectors',' - full novel').replace('_308_clean.txt_','_').replace('_ready.character_vectors','')))
     #results_unsorted.write('\nResults for the vector: {}\n\n'.format(key))
     simil_dict={}
     for other_key in characters_vectors:
@@ -93,6 +97,6 @@ for key in characters_vectors:
     sorted_simil_dict=sorted(simil_dict,reverse=True)
     for s in sorted_simil_dict:    
     #for s in simil_dict:    
-        results.write('\t{} - {}\n'.format(s,simil_dict[s].replace('_308_clean.txt_','_').replace('_ready.character_vectors','')))
+        results.write('\t{} - {}\n'.format(s,simil_dict[s].replace('_308_clean.txt_ready.character_vectors',' - full novel').replace('_308_clean.txt_','_').replace('_ready.character_vectors','')))
         #results_unsorted.write('\t{} - similarity: {}\n'.format(s,simil_dict[s]))
 

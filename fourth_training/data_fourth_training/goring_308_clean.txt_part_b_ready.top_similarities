@@ -1,0 +1,54 @@
+goring - Sentence n. 0
+ Alpha: Current alpha: 1.0028612283798433
+
+Words: [['he', 'between', 'his', 'contented', 'addressing', 'the', 'two', 'novices', 'who', 'have', 'been', 'grinding', 'away', 'steadily', 'up', 'stream', 'for', 'the', 'last', 'hour', 'and', 'a', 'half', 'why', 'jim', 'and', 'jack', 'and', 'i', 'last', 'season', 'pulled', 'up', 'from', 'marlow', 'to', '___', 'in', 'one', 'afternoon', 'never', 'stopped', 'once']]
+Top similarities:[('last', 0.5055833458900452), ('again', 0.49095165729522705), ('once', 0.4862784743309021), ('just', 0.4710787236690521), ('never', 0.4700886607170105), ('but', 0.46597063541412354), ('before', 0.462708055973053), ('had', 0.4546038508415222), ('back', 0.44233834743499756), ('away', 0.4416622221469879), ('however', 0.43764135241508484), ('saw', 0.4273592233657837), ('when', 0.42630434036254883), ('stopped', 0.40720370411872864), ('after', 0.4034794569015503), ('half', 0.40134358406066895), ('so', 0.4012221097946167), ('finally', 0.39997202157974243), ('got', 0.39728841185569763), ('up', 0.39588385820388794)]
+
+goring - Sentence n. 1
+ Alpha: Current alpha: 1.0
+
+Words: [['reading', 'we', 'are', 'towed', 'by', 'steam', 'launch', 'irritating', 'behaviour', 'of', 'small', 'boats', 'how', 'they', 'get', 'in', 'the', 'way', 'of', 'steam', 'launches', 'george', 'and', 'harris', 'again', 'shirk', 'their', 'work', 'rather', 'a', 'hackneyed', 'story', 'streatley', 'and', '___']]
+Top similarities:[('just', 0.36133962869644165), ('away', 0.31685400009155273), ('never', 0.3092283308506012), ('i’d', 0.29892635345458984), ('beeley', 0.2962062358856201), ('but', 0.2945675253868103), ('once', 0.287347674369812), ('i', 0.28634709119796753), ('walberswick', 0.28308582305908203), ('last', 0.2822098135948181), ('stanbury', 0.28003790974617004), ('fordingbridge', 0.2793652415275574), ('marlow', 0.2762298583984375), ('darent', 0.27501022815704346), ('streatley', 0.2734399437904358), ('hambleden', 0.2730847895145416), ('easby', 0.271761417388916), ('wargrave', 0.26886439323425293), ('back', 0.2684839963912964), ('warmington', 0.26797276735305786)]
+
+goring - Sentence n. 2
+ Alpha: Current alpha: 0.997146934891016
+
+Words: [['she', 'had', 'made', 'one', 'last', 'appeal', 'to', 'friends', 'but', 'against', 'the', 'chill', 'wall', 'of', 'their', 'respectability', 'the', 'voice', 'of', 'the', 'erring', 'outcast', 'fell', 'unheeded', 'and', 'then', 'she', 'had', 'gone', 'to', 'see', 'her', 'child', 'had', 'held', 'it', 'in', 'her', 'arms', 'and', 'kissed', 'it', 'in', 'a', 'weary', 'dull', 'sort', 'of', 'way', 'and', 'without', 'betraying', 'any', 'particular', 'emotion', 'of', 'any', 'kind', 'and', 'had', 'left', 'it', 'after', 'putting', 'into', 'its', 'hand', 'a', 'penny', 'box', 'of', 'chocolate', 'she', 'had', 'bought', 'it', 'and', 'afterwards', 'with', 'her', 'last', 'few', 'shillings', 'had', 'taken', 'a', 'ticket', 'and', 'come', 'down', 'to', '___']]
+Top similarities:[('just', 0.4473291039466858), ('once', 0.4140605330467224), ('i’d', 0.4045920670032501), ('last', 0.3955802321434021), ('but', 0.3955053687095642), ('never', 0.3940190076828003), ('back', 0.39263254404067993), ('ive', 0.3874300718307495), ('i', 0.3870982825756073), ('down', 0.38430774211883545), ('when', 0.38082224130630493), ('again', 0.3801370859146118), ('away', 0.37555932998657227), ('haven’t', 0.3747493028640747), ('saltford', 0.3736379146575928), ('verwood', 0.37308642268180847), ('having', 0.37069326639175415), ('being', 0.37034735083580017), ('youve', 0.3689163327217102), ('!bgcolor=#cccccc', 0.3684963881969452)]
+
+goring - Sentence n. 3
+ Alpha: Current alpha: 0.9943020097625482
+
+Words: [['picture', 'woman', 'in', 'the', 'water', 'it', 'seemed', 'that', 'the', 'bitterest', 'thoughts', 'of', 'her', 'life', 'must', 'have', 'centred', 'about', 'the', 'wooded', 'reaches', 'and', 'the', 'bright', 'green', 'meadows', 'around', '___', 'but', 'women', 'strangely', 'hug', 'the', 'knife', 'that', 'stabs', 'them', 'and', 'perhaps', 'amidst', 'the', 'gall', 'there', 'may', 'have', 'mingled', 'also', 'sunny', 'memories', 'of', 'sweetest', 'hours', 'spent', 'upon', 'those', 'shadowed', 'deeps', 'over', 'which', 'the', 'great', 'trees', 'bend', 'their', 'branches', 'down', 'so', 'low']]
+Top similarities:[('saltford', 0.31591618061065674), ('just', 0.31219202280044556), ('darent', 0.3114815354347229), ('hassocks', 0.3086669147014618), ('halliford', 0.3069011867046356), ('pagham', 0.30349698662757874), ('theale', 0.30167853832244873), ('verwood', 0.2995051145553589), ('mawddach', 0.2994312644004822), ('edale', 0.2983349859714508), ('wargrave', 0.2978009879589081), ('remenham', 0.297448068857193), ('away', 0.2962196469306946), ('marazion', 0.29426127672195435), ('beeley', 0.2942044138908386), ('marlow', 0.2935195565223694), ('streatley', 0.2900405526161194), ('chellaston', 0.2894311547279358), ('prettily', 0.2887757122516632), ('walberswick', 0.2884613573551178)]
+
+goring - Sentence n. 4
+ Alpha: Current alpha: 0.991465201390702
+
+Words: [['___', 'on', 'the', 'left', 'bank', 'and', 'streatley', 'on', 'the', 'right', 'are', 'both', 'or', 'either', 'charming', 'places', 'to', 'stay', 'at', 'for', 'a', 'few', 'days']]
+Top similarities:[('darent', 0.38467636704444885), ('cound', 0.3682088851928711), ('mawddach', 0.3669753074645996), ('halliford', 0.3586207628250122), ('saltford', 0.35767266154289246), ('hinksey', 0.34761717915534973), ('wargrave', 0.34735727310180664), ('just', 0.3445129990577698), ('remenham', 0.3434971868991852), ('streatley', 0.34327495098114014), ('hogsmill', 0.34239131212234497), ('swallowfield', 0.34156540036201477), ('sandiacre', 0.34021949768066406), ('meon', 0.3382575213909149), ('towpath', 0.3374924659729004), ('boldmere', 0.337324321269989), ('ewhurst', 0.33726197481155396), ('winnersh', 0.3369661271572113), ('staithe', 0.3368178606033325), ('stort', 0.3367556929588318)]
+
+goring - Sentence n. 5
+ Alpha: Current alpha: 0.9886364866178425
+
+Words: [['they', 'say', 'that', 'the', 'hills', 'on', 'each', 'ride', 'of', 'the', 'stream', 'here', 'once', 'joined', 'and', 'formed', 'a', 'barrier', 'across', 'what', 'is', 'now', 'the', 'thames', 'and', 'that', 'then', 'the', 'river', 'ended', 'there', 'above', '___', 'in', 'one', 'vast', 'lake']]
+Top similarities:[('darent', 0.34782689809799194), ('cound', 0.3390156924724579), ('halliford', 0.3335994482040405), ('mawddach', 0.3217015862464905), ('saltford', 0.31110894680023193), ('hogsmill', 0.3046284019947052), ('meon', 0.3037506341934204), ('just', 0.2998969256877899), ('wensum', 0.2986212968826294), ('towpath', 0.29855501651763916), ('wargrave', 0.29576629400253296), ('bassenthwaite', 0.2950621247291565), ('crummock', 0.2943962812423706), ('towy', 0.29345524311065674), ('a470', 0.2919529676437378), ('streatley', 0.29092738032341003), ('remenham', 0.2904312014579773), ('culverted', 0.28996825218200684), ('staithe', 0.2898820638656616), ('etherow', 0.28959789872169495)]
+
+goring - Sentence n. 6
+ Alpha: Current alpha: 0.9858158423524046
+
+Words: [['___', 'is', 'not', 'nearly', 'so', 'pretty', 'a', 'little', 'spot', 'to', 'stop', 'at', 'as', 'streatley', 'if', 'you', 'have', 'your', 'choice', 'but', 'it', 'is', 'passing', 'fair', 'enough', 'in', 'its', 'way', 'and', 'is', 'nearer', 'the', 'railway', 'in', 'case', 'you', 'want', 'to', 'slip', 'off', 'without', 'paying', 'your', 'hotel', 'bill']]
+Top similarities:[('enough”', 0.3435949683189392), ('it’s', 0.3143395483493805), ('pretty', 0.31407657265663147), ('thats', 0.3139619827270508), ('did”', 0.3121403753757477), ('they’d', 0.3119032680988312), ('there’s', 0.3102840185165405), ('letdown', 0.3067432641983032), ('specks', 0.30138975381851196), ('unimaginably', 0.3002079725265503), ('that’s', 0.30019766092300415), ('forgivable', 0.29940295219421387), ('better?', 0.29784393310546875), ('spot', 0.29711300134658813), ('wrong!', 0.29673606157302856), ('much?', 0.2928352952003479), ('here”', 0.28927183151245117), ('thered', 0.2860124111175537), ('hit-or-miss', 0.2854995131492615), ('things?', 0.2850603759288788)]
+
+goring - Sentence n. 7
+ Alpha: Current alpha: 0.9830032455687053
+
+Words: [['the', 'neighbourhood', 'of', 'streatley', 'and', '___', 'is', 'a', 'great', 'fishing', 'centre']]
+Top similarities:[('just', 0.3583373725414276), ('you’ve', 0.3167034089565277), ('i’d', 0.3130587339401245), ('watching', 0.30569347739219666), ('she’d', 0.2979764938354492), ('“i’ve', 0.2936445474624634), ('i’m', 0.292450875043869), ('did”', 0.2857127785682678), ('thats', 0.28426119685173035), ('homestretch', 0.27930760383605957), ('that’s', 0.2779349088668823), ('they’ve', 0.2754230201244354), ('it’s', 0.2749670445919037), ('we’d', 0.27465328574180603), ('hanlan', 0.2741730809211731), ('youve', 0.2733033299446106), ('looked', 0.27206307649612427), ('ive', 0.2716384530067444), ('nerve-wracking', 0.27096784114837646), ('beheld', 0.2689021825790405)]
+
+goring - Sentence n. 8
+ Alpha: Current alpha: 0.9801986733067553
+
+Words: [['we', 'were', 'a', 'little', 'past', '___', 'then', 'and', 'we', 'decided', 'to', 'paddle', 'on', 'to', 'pangbourne', 'and', 'put', 'up', 'there', 'for', 'the', 'night']]
+Top similarities:[('cound', 0.34245553612709045), ('just', 0.34120020270347595), ('homestretch', 0.33191677927970886), ('limped', 0.33099979162216187), ('galloped', 0.33058562874794006), ('righted', 0.32778480648994446), ('start-finish', 0.32757946848869324), ('hanlan', 0.3274218440055847), ('culverted', 0.3261484205722809), ('trotted', 0.32289445400238037), ('halliford', 0.3209095597267151), ('fordable', 0.3204747438430786), ('stopped', 0.3191722631454468), ('jogged', 0.3171103596687317), ('blundered', 0.31571298837661743), ('paddling', 0.3154189884662628), ('dived', 0.3137618899345398), ('crossed', 0.3127303123474121), ('she’d', 0.31231021881103516), ('go', 0.3116188645362854)]
+
