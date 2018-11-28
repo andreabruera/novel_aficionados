@@ -80,7 +80,10 @@ n2v check \
   --data /absolute/path/to/MEN/MEN_dataset_natural_form_full
   --model /absolute/path/to/gensim/word2vec/model
 ```
-#Test on one novel
+## Test on novels:
+
+###Test on one single novel, indicated under data
+
 n2v test \
   --on novels \
   --model /mnt/cimec-storage-sata/users/andrea.bruera/wiki_training/data/wiki_w2v_2018_size400_max_final_vocab250000_sg1 \

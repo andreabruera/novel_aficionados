@@ -4,6 +4,8 @@ This is the entry point of the application.
 """
 
 import os
+### NOVELS EDIT: added the sys & io modules to capture the sysout, thus capturing the alpha
+import sys,io
 
 import argparse
 import logging
@@ -95,6 +97,7 @@ def _load_nonce2vec_model(args, nonce):
     #model.trainables.info = info
     model.workers = args.num_threads
     model.vocabulary.nonce = nonce
+    model.sentence_count=0
     logger.info('Model loaded')
     return model
 
@@ -125,7 +128,7 @@ def _test_on_chimeras(args):
         # model.wv.index2word.append('___')
         vocab_size = len(model.wv.vocab)
         logger.info('vocab size = {}'.format(vocab_size))
-        model.build_vocab(novel_count,sentences, update=True)
+        model.build_vocab(sentences, update=True)
         if not args.sum_only:
             model.train(sentences, total_examples=model.corpus_count,
                         epochs=model.iter)
@@ -364,13 +367,15 @@ def test_on_novel(args):
     char_list=get_characters_list(args.dataset)
     books_list=get_books_list(args.dataset)
     nonce='___'
+    os.makedirs('data',exist_ok=True)
+    os.makedirs('results',exist_ok=True)
 
     for version in books_list:
-        out_file=open('{}.character_vectors'.format(version),'w')
+        out_file=open('data/{}.character_vectors'.format(version),'w')
         for character in char_list:
-            novel_count=1
+            sentence_count=0
 
-            similarities_out=open('{}_{}.top_similarities'.format(character,version),'w')
+            similarities_out=open('data/{}_{}.top_similarities'.format(character,version),'w')
 
             model=_load_nonce2vec_model(args, nonce)
             model.vocabulary.nonce=nonce
@@ -386,16 +391,25 @@ def test_on_novel(args):
                 if '___' in sentence:
                     vocab_sentence=[sentence]
                     logger.info('{}'.format(vocab_sentence))
-                    model.build_vocab(novel_count,vocab_sentence, update=True)
+                    model.build_vocab(sentence_count,vocab_sentence, update=True)
                     vocab_size=len(model.wv.vocab)
                     logger.info('vocab size = {}'.format(vocab_size))
                     logger.info('nonce: {}'.format(character))
-                    logger.info('\n\nsentence: {}\n\n'.format(sentence))
                     if not args.sum_only:
+                        ### NOTE BEGIN: this section is just to set some variables which can capture the alpha from the print output 
+                        stdout = sys.stdout
+                        sys.stdout = io.StringIO()
+                        ### NOTE: this is the part where the training happens
                         model.train(vocab_sentence, total_examples=model.corpus_count,epochs=model.iter)
                         top_similarities=model.most_similar(nonce,topn=20)
                         logger.info('\n\n{}\n\n'.format(top_similarities))
-                        similarities_out.write('{} - Sentence n. {}\t {}:\t{}\n\n'.format(character, novel_count,vocab_sentence,top_similarities))
-                    novel_count+=1
+                        ### NOTE: This is the part where the alpha is written to file and then stdout is reset
+                        out_alpha = sys.stdout.getvalue()
+                        logger.info('\n\n{}\n'.format(out_alpha))
+                        sys.stdout = stdout
+                        similarities_out.write('{} - Sentence n. {}\n Alpha: {}\nWords: {}\nTop similarities:{}\n\n'.format(character, sentence_count,out_alpha,vocab_sentence,top_similarities))
+                    sentence_count+=1
+                    model.sentence_count=sentence_count
+                    logger.info('\n\nSentence counter: {}\n\n'.format(model.sentence_count))
             character_vector=model.wv[nonce]
             out_file.write('{}\t{}\n'.format(character,character_vector))
