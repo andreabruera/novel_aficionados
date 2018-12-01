@@ -26,6 +26,10 @@ import nonce2vec.utils.files as futils
 
 from nonce2vec.models.nonce2vec import Nonce2Vec, Nonce2VecVocab, \
                                        Nonce2VecTrainables
+### NOVELS EDIT: importing the models needed for the novels training
+from nonce2vec.models.nonce2vec import Nonce2Vec_novels, Nonce2VecVocab_novels, \
+                                       Nonce2VecTrainables_novels
+
 from nonce2vec.utils.files import Samples
 
 from nonce2vec.utils.utilities import *
@@ -65,12 +69,12 @@ def _update_rr_and_count(relative_ranks, count, rank):
 def _load_nonce2vec_model(args, nonce):
     logger.info('Loading Nonce2Vec model...')
     ### NOVELS EDIT: added this condition, which loads the original modules for n2v if you want to test it NOT on novels
-    if model.test_data != 'novels':
+    if args.on != 'novels':
         model = Nonce2Vec.load(args.background)
         model.vocabulary = Nonce2VecVocab.load(model.vocabulary)
         model.trainables = Nonce2VecTrainables.load(model.trainables)
     ### NOVELS EDIT: added this condition, which calls the novels version of the functions and classes
-    elif model.test_data == 'novels':
+    elif args.on == 'novels':
         model = Nonce2Vec_novels.load(args.background)
         model.vocabulary = Nonce2VecVocab_novels.load(model.vocabulary)
         model.trainables = Nonce2VecTrainables_novels.load(model.trainables)
@@ -105,7 +109,7 @@ def _load_nonce2vec_model(args, nonce):
     model.workers = args.num_threads
     model.vocabulary.nonce = nonce
     ### NOVELS EDIT: added the sentence_count counter, which resets to 0 every time you load a model (i.e. every time you start a training session on novels)
-    if model.test_data=='novels':
+    if args.on=='novels':
         model.sentence_count=0
     logger.info('Model loaded')
     return model
@@ -347,7 +351,6 @@ def main():
     parser_test.set_defaults(func=_test)
     ### NOVELS EDIT: added the dest for this argument, because it's needed for calling the novels model of N2V or the basic one
     parser_test.add_argument('--on', required=True,
-                             dest='test-data',
                              choices=['nonces', 'chimeras','novels'],
                              help='type of test data to be used')
     parser_test.add_argument('--model', required=True,
