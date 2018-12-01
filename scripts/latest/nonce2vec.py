@@ -512,7 +512,8 @@ def train_batch_sg_novels(model, sentences, sentence_count, alpha, work=None, co
 class Nonce2VecVocab_novels(Word2VecVocab):
     def __init__(self, max_vocab_size=None, min_count=5, sample=1e-3,
                  sorted_vocab=True, null_word=0):
-        super(Nonce2VecVocab, self).__init__(max_vocab_size, min_count, sample,
+### NOVELS EDIT: added the '_novels' mark to the class name
+        super(Nonce2VecVocab_novels, self).__init__(max_vocab_size, min_count, sample,
                                              sorted_vocab, null_word)
         self.nonce = None
 
@@ -651,7 +652,8 @@ class Nonce2VecVocab_novels(Word2VecVocab):
 class Nonce2VecTrainables_novels(Word2VecTrainables):
 
     def __init__(self, vector_size=100, seed=1, hashfxn=hash):
-        super(Nonce2VecTrainables, self).__init__(vector_size, seed, hashfxn)
+### NOVELS EDIT: added the '_novels' mark at the end of the class name
+        super(Nonce2VecTrainables_novels, self).__init__(vector_size, seed, hashfxn)
         self.info = None
 
     @classmethod
@@ -739,21 +741,24 @@ class Nonce2Vec_novels(Word2Vec):
                  batch_words=MAX_WORDS_IN_BATCH, compute_loss=False,
                  callbacks=(), max_final_vocab=None, window_decay=0,
                  sample_decay=1.0):
-        super(Nonce2Vec, self).__init__(sentences, size, alpha, window,
+        ### NOVELS EDIT: added the '_novels' mark to the class name
+        super(Nonce2Vec_novels, self).__init__(sentences, size, alpha, window,
                                         min_count, max_vocab_size, sample,
                                         seed, workers, min_alpha, sg, hs,
                                         negative, cbow_mean, hashfxn, iter,
                                         null_word, trim_rule, sorted_vocab,
                                         batch_words, compute_loss, callbacks)
-        self.trainables = Nonce2VecTrainables(seed=seed, vector_size=size,
+        ### NOVELS EDIT: added the '_novels' mark to the class name
+        self.trainables = Nonce2VecTrainables_novels(seed=seed, vector_size=size,
                                               hashfxn=hashfxn)
         self.lambda_den = 0.0
         self.sample_decay = float(sample_decay)
         self.window_decay = int(window_decay)
 
     @classmethod
-    def load(cls, *args, **kwargs):
-        w2vec_model = super(Nonce2Vec, cls).load(*args, **kwargs)
+    def soad(cls, *args, **kwargs):
+        ### NOVELS EDIT: added the '_novels' mark to the called class
+        w2vec_model = super(Nonce2Vec_novels, cls).load(*args, **kwargs)
         n2vec_model = cls()
         for key, value in w2vec_model.__dict__.items():
             setattr(n2vec_model, key, value)

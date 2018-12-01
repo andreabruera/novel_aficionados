@@ -97,6 +97,8 @@ n2v test \
   --sample-decay 1.9 \
   --window-decay 5
 
+n2v test --on novels --model /mnt/cimec-storage-sata/users/andrea.bruera/wiki_training/data/wiki_w2v_2018_size400_max_final_vocab250000_sg1 --data 308 --alpha 1 --neg 3 --window 15 --sample 10000 --epochs 1 --lambda 70 --sample-decay 1.9 --window-decay 5
+
 ## Replication
 
 ### Test nonce2vec on the nonce definitional dataset
@@ -113,6 +115,8 @@ n2v test \
   --lambda 70 \
   --sample-decay 1.9 \
   --window-decay 5
+
+n2v test --on nonces --model /mnt/cimec-storage-sata/users/andrea.bruera/wiki_training/data/wiki_w2v_2018_size400_max_final_vocab250000_sg1 --data /mnt/cimec-storage-sata/users/andrea.bruera/wiki_training/test/definitions/nonce.definitions.299.test --alpha 1 --neg 3 --window 15 --sample 10000 --epochs 1 --lambda 70 --sample-decay 1.9 --window-decay 5
 ```
 
 
@@ -130,6 +134,13 @@ n2v test \
   --lambda 70 \
   --sample-decay 1.9 \
   --window-decay 5
+
+
+n2v test --on chimeras --model /mnt/cimec-storage-sata/users/andrea
+.bruera/wiki_training/data/wiki_w2v_2018_size400_max_final_vocab250000_sg1 --data /mnt/
+cimec-storage-sata/users/andrea.bruera/wiki_training/test/chimeras/chimeras.dataset.l2.
+tokenised.test.txt --alpha 1 --neg 3 --window 15 --sample 10000 --epochs 1 --lambda 70
+--sample-decay 1.9 --window-decay 5
 ```
 slightly
 ### Results
