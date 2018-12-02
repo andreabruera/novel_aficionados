@@ -19,7 +19,7 @@ import gensim
 
 from gensim.models import Word2Vec
 
-import nonce2vec.utils.utilities
+import nonce2vec.utils.novels_utilities
 
 import nonce2vec.utils.config as cutils
 import nonce2vec.utils.files as futils
@@ -32,7 +32,7 @@ from nonce2vec.models.nonce2vec import Nonce2Vec_novels, Nonce2VecVocab_novels, 
 
 from nonce2vec.utils.files import Samples
 
-from nonce2vec.utils.utilities import *
+from nonce2vec.utils.novels_utilities import *
 
 logging.config.dictConfig(
     cutils.load(
