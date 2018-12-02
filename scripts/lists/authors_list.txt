@@ -1,0 +1,110 @@
+d#a37	Dickens, Charles 
+a#a68	Austen, Jane 
+l#a9473	Leech, John 
+t#a53	Twain, Mark 
+d#a69	Doyle, Arthur Conan 
+w#a111	Wilde, Oscar 
+s#a35	Stevenson, Robert Louis 
+s#a61	Shelley, Mary Wollstonecraft 
+s#a326	Swift, Jonathan 
+s#a65	Shakespeare, William 
+c#a125	Conrad, Joseph 
+i#a861	Ibsen, Henrik 
+d#a314	Dostoyevsky, Fyodor 
+c#a7	Carroll, Lewis 
+m#a9	Melville, Herman 
+h#a28	Hawthorne, Nathaniel 
+n#a779	Nietzsche, Friedrich Wilhelm 
+d#a507	Dante Alighieri 
+p#a481	Poe, Edgar Allan 
+g#a2858	Garnett, Constance 
+k#a1735	Kafka, Franz 
+d#a1896	Doré, Gustave 
+h#a705	Homer 
+s#a190	Stoker, Bram 
+w#a30	Wells, H. G. 
+p#a93	Plato 
+w#a1736	Wyllie, David 
+p#a907	Pope, Alexander 
+t#a136	Tolstoy, Leo, graf 
+j#a94	Jowett, Benjamin 
+d#a492	Dumas, Alexandre 
+g#a972	Grimm, Wilhelm 
+g#a971	Grimm, Jacob 
+j#a1039	Joyce, James 
+j#a113	James, Henry 
+l#a120	London, Jack 
+k#a37155	Kemble, E. W. 
+s#a467	Shaw, Bernard 
+r#a355	Russell, Bertrand 
+g#a27	Gilman, Charlotte Perkins 
+t#a54	Thoreau, Henry David 
+c#a3622	Cary, Henry Francis 
+d#a34510	Douglass, Frederick 
+m#a1355	Morley, Henry 
+b#a42	Baum, L. Frank 
+h#a6638	Hall, J. Lesslie 
+c#a708	Chekhov, Anton Pavlovich 
+d#a226	Du Bois, W. E. B. 
+r#a2297	Robertson, James Alexander 
+v#a60	Verne, Jules 
+b#a25301	Buckley, Theodore Alois 
+c#a80	Chesterton, G. K. 
+b#a2296	Blair, Emma Helen 
+k#a132	Kipling, Rudyard 
+w#a104	Wharton, Edith 
+b#a5446	Bourne, Edward Gaylord 
+i#a34	Irving, Washington 
+b#a408	Brontë, Charlotte 
+h#a85	Hugo, Victor 
+m#a36	Montgomery, L. M. 
+c#a505	Cervantes Saavedra, Miguel de 
+d#a204	Defoe, Daniel 
+a#a102	Alcott, Louisa May 
+b#a251	Balzac, Honoré de 
+m#a500	Maude, Louise 
+m#a4589	Maude, Aylmer 
+v#a913	Voltaire 
+t#a9854	Townsend, F. H. 
+b#a206	Bierce, Ambrose 
+g#a586	Goethe, Johann Wolfgang von 
+b#a73	Burnett, Frances Hodgson 
+m#a573	Malory, Thomas, Sir 
+b#a10	Barrie, J. M. 
+h#a941	Hesse, Hermann 
+l#a79	Lang, Andrew 
+m#a306	Maupassant, Guy de 
+w#a1961	Widger, David 
+e#a90	Eliot, George 
+w#a600	Whitman, Walt 
+m#a563	Machiavelli, Niccolò 
+f#a8729	Fowler, Frank 
+h#a1133	Hobbes, Thomas 
+m#a410	Marlowe, Christopher 
+h#a23	Hardy, Thomas 
+m#a1705	Mill, John Stuart 
+s#a115	Stowe, Harriet Beecher 
+f#a2703	Foote, Mary Hallock 
+a#a31267	Anthony, A. V. S. 
+f#a92	Franklin, Benjamin 
+i#a31265	Ipsen, Ludvig Sandöe 
+m#a564	Marriott, W. K. 
+s#a59	Scott, Walter 
+r#a2183	Rizal, José 
+d#a485	Darwin, Charles 
+b#a48	Burroughs, Edgar Rice 
+c#a100	Chopin, Kate 
+b#a898	Burton, Richard Francis, Sir 
+c#a5123	Common, Thomas 
+w#a1861	Wittgenstein, Ludwig 
+o#a36795	Ogden, C. K. 
+w#a783	Wodehouse, P. G. 
+a#a168	Alger, Horatio, Jr. 
+p#a292	Potter, Beatrix 
+m#a1230	Montaigne, Michel de 
+h#a33608	Hapgood, Isabel Florence 
+r#a6335	Rackham, Arthur 
+c#a144	Chaucer, Geoffrey 
+e#a1071	Emerson, Ralph Waldo 
+o#a506	Ormsby, John 
+d#a5689	Dyce, Alexander 

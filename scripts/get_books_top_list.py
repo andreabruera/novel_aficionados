@@ -7,30 +7,31 @@ import re
 from bs4 import BeautifulSoup as bs
 
 top_page=str(sys.argv[1])
-file=bs(open('../pages/{}'.format(top_page)),features="html5lib")
+file=bs(open('pages/{}'.format(top_page)),features="html5lib")
 file_tags=file.find_all('a')
-'''
-os.makedirs('../lists',exist_ok=True)
-authors_list=open('../lists/authors_list.txt','w')
-os.makedirs('../lists',exist_ok=True)
-books_list=open('../lists/books_list.txt','w')
-'''
+
+os.makedirs('lists',exist_ok=True)
+#authors_list=open('lists/authors_list.txt','w')
+books_list=open('lists/books_list.txt','w')
+
 books_dict={}
 authors_dict={}
 for i in file_tags:
     link=i['href']
+    author_code=re.sub('\/.*\/.*\/','',link)
     text=i.text
     if 'ebooks/' in link and '(' in text:
         text_clean=re.sub('\(.*\)','',text)
         l2=re.sub('\/.*\/','',link)
         if l2 not in books_dict.keys():
-#            books_list.write('{}\n'.format(text_clean))
+            books_list.write('{}\t{}\n'.format(l2,text_clean))
             books_dict[l2]=text_clean
+
     elif 'authors/' in link:
-        if link not in authors_dict.keys():
-                author_code=re.sub('\/.*\/.*\/','',link)
-                authors_dict[author_code]=text
-#                authors_list.write('{}\t{}\n'.format(author_code,text))
+        if author_code not in authors_dict.keys():
+                text_clean=re.sub('\(.*\)','',text)
+                authors_dict[author_code]=text_clean
+                authors_list.write('{}\t{}\n'.format(author_code,text_clean))
 
 books_list=sorted(books_dict)
 authors_list=sorted(authors_dict)
@@ -80,4 +81,4 @@ for a_tag in readable_semi_final:
 print('{}'.format(len(books_dict.keys())))
 #i=h_soup.find_all('h2')[78]
 #print(i.find_all('a')[1]['href'])
-
+'''
