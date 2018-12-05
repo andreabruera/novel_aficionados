@@ -3,9 +3,11 @@ import nltk
 
 from nltk import sent_tokenize as tok
 
-file=sys.argv[1]
-f=open('novels/{}.txt'.format(file)).readlines()
-out_clean=open('novels/{}_clean.txt'.format(file),'w')
+number=sys.argv[1]
+folder=sys.argv[2]
+
+f=open('{}/{}.txt'.format(folder, number)).readlines()
+out_clean=open('{}/{}_clean.txt'.format(folder, number),'w')
 clean_list=[]
 for v,i in enumerate(f):
     if '***START' not in str(i) and v!=len(f)-1:
@@ -27,3 +29,4 @@ for i in sent_book:
     out_clean.write('{}\n'.format(i))
 
 out_clean.close()
+

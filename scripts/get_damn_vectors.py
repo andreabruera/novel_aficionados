@@ -1,10 +1,11 @@
-import utilities
+import nonce2vec 
 import numpy 
 import math
 import sys
 import os
+import pickle
 
-from utilities import *
+from nonce2vec.utils.novels_utilities import *
 from numpy import dot,sqrt,sum,linalg
 from math import sqrt
 
@@ -20,6 +21,14 @@ def norm(value):
     v=float(value)
     norm=v / numpy.sqrt((numpy.sum(v**2)))
     return float(norm)
+
+def _cosine_similarity(peer_v, query_v):
+    if len(peer_v) != len(query_v):
+        raise ValueError('Vectors must be of same length')
+    num = numpy.dot(peer_v, query_v)
+    den_a = numpy.dot(peer_v, peer_v)
+    den_b = numpy.dot(query_v, query_v)
+    return num / (math.sqrt(den_a) * math.sqrt(den_b))
 
 def extract_char_vectors(book, training):
     novels_list=utilities.get_books_list(book)
@@ -66,37 +75,49 @@ def extract_char_vectors(book, training):
                                     vectors_dict['{}_{}'.format(character, version)].append(w2)
     index=len(vectors_dict)/3
     return vectors_dict,index
-
+'''
 characters_vectors,index=extract_char_vectors(sys.argv[1],sys.argv[2])
+'''
+folder=sys.argv[1]
+number=sys.argv[2]
 
-for key in characters_vectors:
-    print('{}\t{}'.format(key, len(characters_vectors[key])))
+char_list=get_characters_list(folder, number)
+#folder=sys.argv[2]
+characters_vectors=pickle.load(open('novels/data/{}.pickle'.format(number), 'rb'))
+#for key in characters_vectors:
+#    print('{}\t{}'.format(key, len(characters_vectors[key])))
 
-def _cosine_similarity(peer_v, query_v):
-    if len(peer_v) != len(query_v):
-        raise ValueError('Vectors must be of same length')
-    num = numpy.dot(peer_v, query_v)
-    den_a = numpy.dot(peer_v, peer_v)
-    den_b = numpy.dot(query_v, query_v)
-    return num / (math.sqrt(den_a) * math.sqrt(den_b))
+reciprocal_ranks=[]
+ranks=[]
+details=open('results_{}.txt'.format(number),'w')
+#results=open('results.txt', 'a')
 
-training=sys.argv[2]
-os.makedirs('{}_training'.format(training),exist_ok=True)
-os.makedirs('{}_training/results_{}_training'.format(training, training),exist_ok=True)
-results=open('{}_training/results_{}_training/results.txt'.format(training,training),'w')
-#results_unsorted=open('results_unsorted.txt','w')
-for key in characters_vectors:
-    good_vector=numpy.array(characters_vectors[key],dtype=float)
-    results.write('\nResults for the vector: {}\n\n'.format(key.replace('_308_clean.txt_ready.character_vectors',' - full novel').replace('_308_clean.txt_','_').replace('_ready.character_vectors','')))
-    #results_unsorted.write('\nResults for the vector: {}\n\n'.format(key))
+for good_key, good_vector in characters_vectors.items():
+    norm_good_vector=normalise(good_vector)
+    character_name=good_key.split('_')[0]
+    character_part=good_key.split('_')[1]
     simil_dict={}
-    for other_key in characters_vectors:
-        other_vector=numpy.array(characters_vectors[other_key],dtype=float)
-        simil=_cosine_similarity(good_vector,other_vector)
-        simil_dict[float(simil)]=other_key
-    sorted_simil_dict=sorted(simil_dict,reverse=True)
-    for s in sorted_simil_dict:    
-    #for s in simil_dict:    
-        results.write('\t{} - {}\n'.format(s,simil_dict[s].replace('_308_clean.txt_ready.character_vectors',' - full novel').replace('_308_clean.txt_','_').replace('_ready.character_vectors','')))
-        #results_unsorted.write('\t{} - similarity: {}\n'.format(s,simil_dict[s]))
 
+    for other_key, other_vector in characters_vectors.items():
+        other_part=other_key.split('_')[1]
+        if other_part != character_part:
+            norm_other_vector=normalise(other_vector)
+            simil=_cosine_similarity(norm_good_vector, norm_other_vector)
+            simil_dict[float(simil)]=other_key
+
+    sorted_simil_list=sorted(simil_dict,reverse=True)
+    for rank, similarity in enumerate(sorted_simil_list):
+        rank+=1
+        current_character=simil_dict[similarity].split('_')
+        if current_character[0] == character_name:
+            reciprocal_ranks.append(1/rank)
+            ranks.append(rank)
+            details.write('\nResult for the vector: {}, coming from part {} of the book\nRank: {} out of {} characters\nReciprocal rank: {}\nCosine similarity to the query: {}\n\n'.format(character_name, character_part, rank, len(sorted_simil_list), (1/rank), similarity))
+            for i in sorted_simil_list:
+                details.write('{} - {}\n'.format(simil_dict[i], i))
+
+MRR=numpy.mean(reciprocal_ranks)
+median_rank=numpy.median(ranks)
+
+details.write('\nTotal number of characters: {}\nMedian rank: {}\nMRR: {}'.format(len(char_list), median_rank, MRR)) 
+#results.write('{}\t{}'.format(MRR, folder))

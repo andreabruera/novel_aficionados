@@ -2,9 +2,11 @@ import re
 import sys
 from re import sub
 
-file=sys.argv[1]
-f=open('novels/%s/book.id.html'%(file)).read().split('<br />')
-out=open('novels/%s/%s_characters.txt'%(file,file),'w')
+folder=sys.argv[1]
+number=sys.argv[2]
+
+f=open('{}/booknlp/book.id.html'.format(folder)).read().split('<br />')
+out=open('{}/{}_characters.txt'.format(folder, number),'w')
 
 for i in f:
     if '<h1>Text' in i:

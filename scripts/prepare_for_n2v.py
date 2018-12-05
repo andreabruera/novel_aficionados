@@ -1,18 +1,23 @@
 import nltk
 import sys
-import utilities
+import nonce2vec 
 
 from nltk import sent_tokenize as tok
-from utilities import *
+from nonce2vec.utils.novels_utilities import *
 
-char_list=get_characters_list(sys.argv[1])
+folder=sys.argv[1]
+number=sys.argv[2]
+filename=sys.argv[3]
 
-filename='{}_clean.txt'.format(sys.argv[1])
+char_list=get_characters_list(folder, number)
+
+
+
 files=['{}'.format(filename),'{}_part_a'.format(filename),'{}_part_b'.format(filename)]
 
 for i in files:
-    f=open('novels/{}'.format(i)).read()
-    out=open('novels/{}_ready'.format(i),'w')
+    f=open('{}'.format(i)).read()
+    out=open('{}_ready'.format(i),'w')
 
     lines=tok(f)
 

@@ -756,7 +756,7 @@ class Nonce2Vec_novels(Word2Vec):
         self.window_decay = int(window_decay)
 
     @classmethod
-    def soad(cls, *args, **kwargs):
+    def load(cls, *args, **kwargs):
         ### NOVELS EDIT: added the '_novels' mark to the called class
         w2vec_model = super(Nonce2Vec_novels, cls).load(*args, **kwargs)
         n2vec_model = cls()
@@ -781,7 +781,7 @@ class Nonce2Vec_novels(Word2Vec):
         return tally, self._raw_word_count(sentences)
 
     ### NOVELS EDIT: added the sentence_count argument, 
-    def build_vocab(self, sentence_count, sentences, update=False, progress_per=10000,
+    def build_vocab(self, sentences, sentence_count, update=False, progress_per=10000,
                     keep_raw_vocab=False, trim_rule=None, **kwargs):
         total_words, corpus_count = self.vocabulary.scan_vocab(
             sentences, progress_per=progress_per, trim_rule=trim_rule)

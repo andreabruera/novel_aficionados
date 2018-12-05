@@ -1,0 +1,100 @@
+
+Result for the vector: george, coming from part a of the book
+Rank: 1 out of 7 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.21676209370864036
+
+george_b - 0.21676209370864036
+tom_b - 0.19380496107369463
+goring_b - 0.12876794509696657
+john_b - 0.1249101087397404
+harris_b - 0.10810362547636108
+marlow_b - 0.05018599630510794
+montmorency_b - -0.0645746067166333
+
+Result for the vector: harris, coming from part a of the book
+Rank: 5 out of 7 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.13504595249617407
+
+george_b - 0.2919751703739166
+goring_b - 0.1757613718509674
+tom_b - 0.16913966834545135
+john_b - 0.14177289605140686
+harris_b - 0.13504595249617407
+marlow_b - 0.13301235437393188
+montmorency_b - -0.07326259772404459
+
+Result for the vector: montmorency, coming from part a of the book
+Rank: 6 out of 7 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.055559097064760636
+
+harris_b - 0.15918717803993354
+george_b - 0.15831272775866778
+goring_b - 0.1523123875949499
+john_b - 0.08537546054647749
+marlow_b - 0.05572020801067975
+montmorency_b - 0.055559097064760636
+tom_b - 0.030293536343977953
+
+Result for the vector: tom, coming from part a of the book
+Rank: 3 out of 7 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.10832500035539275
+
+goring_b - 0.14230211503213994
+george_b - 0.13702191820806028
+tom_b - 0.10832500035539275
+harris_b - 0.08844310526719411
+marlow_b - 0.06827174330567552
+montmorency_b - 0.009124156747038498
+john_b - -0.012818944091169366
+
+Result for the vector: george, coming from part b of the book
+Rank: 2 out of 5 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.21676209370864036
+
+harris_a - 0.2919751703739166
+george_a - 0.21676209370864036
+montmorency_a - 0.15831272775866778
+tom_a - 0.13702191820806028
+biggs_a - 0.11867329515973976
+
+Result for the vector: harris, coming from part b of the book
+Rank: 2 out of 5 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.13504595249617407
+
+montmorency_a - 0.15918717803993354
+harris_a - 0.13504595249617407
+biggs_a - 0.12143173111298905
+george_a - 0.10810362547636108
+tom_a - 0.08844310526719411
+
+Result for the vector: montmorency, coming from part b of the book
+Rank: 1 out of 5 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.055559097064760636
+
+montmorency_a - 0.055559097064760636
+tom_a - 0.009124156747038498
+george_a - -0.0645746067166333
+harris_a - -0.07326259772404459
+biggs_a - -0.1126245051473969
+
+Result for the vector: tom, coming from part b of the book
+Rank: 4 out of 5 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.10832500035539275
+
+george_a - 0.19380496107369463
+harris_a - 0.16913966834545135
+biggs_a - 0.16853657850405135
+tom_a - 0.10832500035539275
+montmorency_a - 0.030293536343977953
+
+Total number of characters: 9
+Median rank: 2.5
+MRR: 0.49375

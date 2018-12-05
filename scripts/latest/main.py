@@ -4,8 +4,8 @@ This is the entry point of the application.
 """
 
 import os
-### NOVELS EDIT: added the sys & io modules to capture the sysout, thus capturing the alpha
-import sys,io
+### NOVELS EDIT: added pickle, and then the sys & io modules to capture the sysout, thus capturing the alpha
+import sys, io, pickle
 
 import argparse
 import logging
@@ -75,6 +75,7 @@ def _load_nonce2vec_model(args, nonce):
         model.trainables = Nonce2VecTrainables.load(model.trainables)
     ### NOVELS EDIT: added this condition, which calls the novels version of the functions and classes
     elif args.on == 'novels':
+        logger.info('\n\ntesting on novels')
         model = Nonce2Vec_novels.load(args.background)
         model.vocabulary = Nonce2VecVocab_novels.load(model.vocabulary)
         model.trainables = Nonce2VecTrainables_novels.load(model.trainables)
@@ -358,6 +359,10 @@ def main():
                              help='absolute path to word2vec pretrained model')
     parser_test.add_argument('--data', required=True, dest='dataset',
                              help='absolute path to test dataset')
+    ### NOVELS EDIT: added this argument, which is needed for getting the right folder
+    parser_test.add_argument('--folder', required=False,
+                             dest='folder',
+                             help='absolute path to the novel folder')
     parser_test.add_argument('--train-with',
                              choices=['exp_alpha'],
                              help='learning rate computation function')
@@ -378,18 +383,20 @@ def main():
 
 def test_on_novel(args):
 
-    char_list=get_characters_list(args.dataset)
-    books_list=get_books_list(args.dataset)
-    nonce='___'
-    os.makedirs('data',exist_ok=True)
-    os.makedirs('results',exist_ok=True)
+    char_list=get_characters_list(args.folder, args.dataset)
+    books_dict=get_books_dict(args.dataset)
+    char_dict={} 
 
-    for version in books_list:
-        out_file=open('data/{}.character_vectors'.format(version),'w')
+    nonce='___'
+    os.makedirs('{}/data'.format(args.folder),exist_ok=True)
+
+    for part in books_dict.keys():
+        filename=books_dict[part]
+#        out_file=open('data/{}.character_vectors'.format(filename),'w')
         for character in char_list:
             sentence_count=0
 
-            similarities_out=open('data/{}_{}.top_similarities'.format(character,version),'w')
+#            similarities_out=open('data/{}_{}.top_similarities'.format(character,version),'w')
 
             model=_load_nonce2vec_model(args, nonce)
             model.vocabulary.nonce=nonce
@@ -397,7 +404,7 @@ def test_on_novel(args):
             w2v_vocab=[key for key in model.wv.vocab]
             logger.info('Lenghth of vocabulary: {}'.format(len(w2v_vocab)))
 
-            sent_list,sent_vocab_list=get_novel_sentences(version,w2v_vocab,character)
+            sent_list, sent_vocab_list=get_novel_sentences(args.folder, filename, w2v_vocab, character)
             logger.info('\nlist of sentences created!\n')
             logger.info('Number of total sentences: {}'.format(len(sent_list)))
 
@@ -405,7 +412,7 @@ def test_on_novel(args):
                 if '___' in sentence:
                     vocab_sentence=[sentence]
                     logger.info('{}'.format(vocab_sentence))
-                    model.build_vocab(sentence_count,vocab_sentence, update=True)
+                    model.build_vocab(vocab_sentence, sentence_count, update=True)
                     vocab_size=len(model.wv.vocab)
                     logger.info('vocab size = {}'.format(vocab_size))
                     logger.info('nonce: {}'.format(character))
@@ -421,9 +428,16 @@ def test_on_novel(args):
                         out_alpha = sys.stdout.getvalue()
                         logger.info('\n\n{}\n'.format(out_alpha))
                         sys.stdout = stdout
-                        similarities_out.write('{} - Sentence n. {}\n Alpha: {}\nWords: {}\nTop similarities:{}\n\n'.format(character, sentence_count,out_alpha,vocab_sentence,top_similarities))
+#                        similarities_out.write('{} - Sentence n. {}\n Alpha: {}\nWords: {}\nTop similarities:{}\n\n'.format(character, sentence_count,out_alpha,vocab_sentence,top_similarities))
                     sentence_count+=1
                     model.sentence_count=sentence_count
                     logger.info('\n\nSentence counter: {}\n\n'.format(model.sentence_count))
-            character_vector=model.wv[nonce]
-            out_file.write('{}\t{}\n'.format(character,character_vector))
+            if sentence_count > 2:
+                character_vector=model[nonce]
+                char_dict['{}_{}'.format(character, part)]=character_vector
+            else:
+                pass
+    with open('{}/data/{}.pickle'.format(args.folder, args.dataset),'wb') as out:        
+        pickle.dump(char_dict,out,pickle.HIGHEST_PROTOCOL) 
+#np.savez('{}.vectors'.format(args.dataset), (char_dict[i]=i for i in char_dict), allow_pickle=False)
+#           out_file.write('{}\t{}\n'.format(character,character_vector))

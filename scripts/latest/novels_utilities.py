@@ -1,9 +1,9 @@
 '''First, we get the list of the characters for each novel.
 We follow Uncle Podger's Heuristics: we won't consider characters appearing less than 10 times.
 '''
-def get_characters_list(novel):
+def get_characters_list(folder, number):
     char_list=[]
-    with open('novels/{}/{}_characters.txt'.format(novel,novel)) as c:
+    with open('{}/{}_characters.txt'.format(folder, number)) as c:
         char_file=c.readlines()
         for l in char_file:
             l2=l.strip('\n').split('\t')
@@ -18,15 +18,18 @@ def get_characters_list(novel):
                 break
     return char_list
 
-'''Then, we want to get a list of the three versions of each book (full, part a, part b)'''
-def get_books_list(novel):
-    books_list=['{}_clean.txt_ready'.format(novel),'{}_clean.txt_part_a_ready'.format(novel),'{}_clean.txt_part_b_ready'.format(novel)]
-    return books_list
+'''Then, we want to get a list of the two versions of each book (part a, part b)'''
+def get_books_dict(novel):
+    versions={}
+    parts=['a','b']
+    for i in parts:
+        versions[i]='{}_clean.txt_part_{}_ready'.format(novel,i)
+    return versions
 
 '''Starting from the list of the books, this function opens each book, and returns a list of sentences'''
-def get_novel_vocab(version):
+def get_novel_vocab(folder, filename):
     words=[]
-    with open('novels/{}'.format(version)) as book:
+    with open('{}/{}'.format(folder, filename)) as book:
         book_list=book.readlines()
         for line in book_list:
             line_words=line.strip('\n').split(' ')
@@ -36,10 +39,10 @@ def get_novel_vocab(version):
         yield [words]
 
 '''This is just a small function for opening the books and yielding one line at a time, for training'''
-def get_novel_sentences(version,w2v_vocab,character):
+def get_novel_sentences(folder, filename, w2v_vocab, character):
     book_final=[]
     vocab_final=[]
-    with open('novels/{}'.format(version)) as book:
+    with open('{}/{}'.format(folder, filename)) as book:
         book_list=book.readlines()
         for line in book_list:
             line_list=[]
