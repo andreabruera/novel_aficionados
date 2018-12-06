@@ -27,13 +27,13 @@ for i in files:
                 character=alias[0]
                 aliases=alias[1:]
                 for name in aliases:
-                    line_coref=line.replace(str(name),str(character))
+                    line=line.replace(str(name),str(character))
             else:
-                line_coref=line
-        for i,v in enumerate(line_coref): #character-level
-            p=line_coref[i-1]
-            if i<len(line_coref)-1:
-                n=line_coref[i+1]
+                pass 
+        for i,v in enumerate(line): #character-level
+            p=line[i-1]
+            if i<len(line)-1:
+                n=line[i+1]
             if v.isalpha()==1:
                 out.write(v.lower()) 
             else:
@@ -42,12 +42,12 @@ for i in files:
                         out.write(v)
                     else:
                         pass
-                elif i<len(line_coref)-1:
+                elif i<len(line)-1:
                     if p==' ' or n==' ':
                         pass
                     else:
                         out.write(' ')
-                elif i==len(line_coref)-1:
+                elif i==len(line)-1:
                         if p==' ':
                             pass
                         else:

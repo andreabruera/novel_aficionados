@@ -1,0 +1,224 @@
+1608	levin_nikolay_nikolay levin
+803	anna_anna arkadyevna
+665	kitty_shtcherbatskaya_kitty shtcherbatskaya
+665	alexey alexandrovitch_alexey_karenin_alexey alexandrovitch karenin
+544	stepan arkadyevitch
+307	sergey ivanovitch_koznishev_sergey ivanovitch koznishev_sergey koznishev_sergey
+281	dolly
+206	darya alexandrovna_darya
+169	vronsky_alexander_alexander vronsky
+136	sviazhsky_nikolay ivanovitch_nikolay ivanovitch sviazhsky
+124	betsy_tverskaya_betsy tverskaya
+121	veslovsky_vassenka veslovsky_vassenka
+114	oblonsky_pyotr_pyotr oblonsky
+110	seryozha
+110	lidia ivanovna_lidia
+109	konstantin levin_konstantin_konstantin dmitrievitch_konstantin dmitrievitch levin
+100	varenka_mademoiselle varenka_mademoiselle
+76	katavasov
+70	agafea mihalovna
+62	golenishtchev
+58	yashvin_prince yashvin
+45	laska
+44	mihailov
+38	stiva
+37	madame stahl_stahl
+36	grisha
+34	pestsov
+34	marya nikolaevna_marya
+34	madame karenina_karenina
+34	petritsky
+33	kostya
+32	serpuhovskoy
+31	varvara_varvara andreevna
+27	tanya
+26	matvey
+24	lizaveta petrovna
+24	metrov
+22	shtcherbatsky_prince shtcherbatsky_prince
+22	stremov
+21	landau_jules landau
+21	myakaya
+20	fyodor_ryezunov_fyodor ryezunov
+20	masha_masha tchibisova
+20	vassily_vassily fedorovitch
+19	ryabinin
+19	kouzma
+19	liza merkalova_liza
+18	christ
+18	tushkevitch
+17	annushka
+17	ivan_ivan parmenov
+16	countess nordston
+16	mahotin
+15	turovtsin
+15	nevyedovsky
+15	anna pavlovna
+15	vassily lukitch
+14	korsunsky
+13	sappho_sappho shtoltz
+12	korney
+11	petersburg
+11	mitya
+11	yegor
+10	mihail vassilievitch_mihail
+10	marya philimonovna
+10	sorokina_princess sorokina
+10	vorkuev
+10	kapitonitch
+10	snetkov
+9	nikolay dmitrievitch
+9	natalia
+9	kritsky
+9	varya
+9	pava
+8	vaska
+8	petrov
+8	tchirikov
+8	mademoiselle linon
+8	katerina alexandrovna
+8	philip
+8	katya
+8	madame lvova
+8	bryansky
+7	bartnyansky
+7	flerov
+7	pyotr dmitrievitch
+7	levins
+7	kuzovlev
+7	marya borissovna
+6	krak
+6	alexander nevsky
+6	matrona philimonovna_matrona
+6	grinevitch
+6	lily
+6	gladiator
+6	prince tchetchensky_tchetchensky
+6	enoch
+6	mishka
+6	lvov
+6	marie_marie sanina
+6	alexey vronsky
+6	corps of pages_corps
+6	john
+6	annie
+6	arseny
+5	commission
+5	patti
+5	sludin
+5	volgarinov
+5	miss hoole
+5	kamerovsky
+5	alexey kirillovitch
+5	marya yevgenyevna
+5	gagin
+4	malthus
+4	imperial council_council
+4	diana
+4	pilate
+4	vozdvizhenskoe
+4	prince kaluzhsky_kaluzhsky
+4	mihail petrovitch
+4	nilsson
+4	vronskaya
+4	fomin
+4	spencer
+4	ekaterina
+4	sergey alexyevitch
+4	nadinka
+4	soden
+3	madame kartasova
+3	rebecca
+3	sokolov
+3	raphael
+3	madame vrede
+3	mihalitch
+3	ivan petrovitch
+3	mariette
+3	homiakov
+3	gvozdyov
+3	pomorsky
+3	andrey
+3	nikolay ivanitch
+3	voytov
+3	ivanov
+3	madame berthe
+3	lear
+3	cordelia
+3	anna karenina
+3	board of irrigation
+3	oblonskys
+3	count bezzubov_bezzubov
+2	god
+2	servia
+2	church
+2	franklin
+2	fomitch
+2	foulde
+2	shtcherbatskys
+2	leo tolstoy
+2	shakespeare
+2	sergey alexeitch
+2	berkoot
+2	tiutkin
+2	ignat
+2	oblonskaya
+2	madame korsunskaya
+2	shuraev
+2	society of agriculture
+2	isaac
+2	venus
+2	semyon
+2	parfen denisitch
+2	tversky
+2	charles
+2	dussot
+2	ivan the coachman
+2	platon
+2	darya dmitrievna
+2	vladimir
+2	wagner
+2	château des fleurs
+2	kirillov
+2	kartasov
+2	elle
+2	maman
+2	konstantin demitrievitch
+2	pryatchnikov
+2	kedrov
+2	schopenhauer
+2	hliustov
+2	pravdin
+2	sventitsky
+2	plato
+2	hannah
+2	brownie
+2	lafitte
+2	fokanitch
+2	nikolay shtcherbatsky
+2	madame sviazhskaya
+2	mulhausen
+2	durchlaucht
+2	fyodor bogdanitch
+2	michelli
+2	komissarov
+2	pripasov
+2	dolinka
+2	kauffmann
+2	pierre
+2	levy
+2	sitnikov
+2	nikitin
+2	marya vlasyevna
+2	katerina pavlovna
+2	aline
+2	nice
+2	karibanov
+2	cela
+2	alabin
+2	tyndall
+2	venovsky
+2	wilson
+2	madame nikolaeva
+2	tcharskaya
+2	dunyasha
