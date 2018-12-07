@@ -1,3 +1,0 @@
-#! /bin/bash
-
-find ../gutenberg/book_nlp/data/originalTexts -iname '*.txt' -exec ./scripts/bash_cut {} \;

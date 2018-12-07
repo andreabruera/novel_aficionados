@@ -417,14 +417,14 @@ def test_on_novel(args):
                     logger.info('vocab size = {}'.format(vocab_size))
                     logger.info('nonce: {}'.format(character))
                     if not args.sum_only:
-                        ### NOTE BEGIN: this section is just to set some variables which can capture the alpha from the print output 
+                        ### NOVELS NOTE: this section is just to set some variables which can capture the alpha from the print output 
                         stdout = sys.stdout
                         sys.stdout = io.StringIO()
-                        ### NOTE: this is the part where the training happens
+                        ### NOVELS NOTE: this is the part where the training happens
                         model.train(vocab_sentence, total_examples=model.corpus_count,epochs=model.iter)
                         top_similarities=model.most_similar(nonce,topn=20)
                         logger.info('\n\n{}\n\n'.format(top_similarities))
-                        ### NOTE: This is the part where the alpha is written to file and then stdout is reset
+                        ### NOVELS NOTE: This is the part where the alpha is written to file and then stdout is reset
                         out_alpha = sys.stdout.getvalue()
                         logger.info('\n\n{}\n'.format(out_alpha))
                         sys.stdout = stdout
@@ -432,6 +432,7 @@ def test_on_novel(args):
                     sentence_count+=1
                     model.sentence_count=sentence_count
                     logger.info('\n\nSentence counter: {}\n\n'.format(model.sentence_count))
+            ### NOVELS NOTE: added the condition >2, because in the absence of a character in a certain part of the book, the same vector is created for all the absent characters and this creates fake 1.0 similarities at evaluation time.
             if sentence_count > 2:
                 character_vector=model[nonce]
                 char_dict['{}_{}'.format(character, part)]=character_vector

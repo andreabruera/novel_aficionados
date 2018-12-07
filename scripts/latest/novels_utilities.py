@@ -23,7 +23,7 @@ def get_books_dict(novel):
     versions={}
     parts=['a','b']
     for i in parts:
-        versions[i]='{}_clean.txt_part_{}_ready'.format(novel,i)
+        versions[i]='{}_part_{}_n2v'.format(novel,i)
     return versions
 
 '''Starting from the list of the books, this function opens each book, and returns a list of sentences'''

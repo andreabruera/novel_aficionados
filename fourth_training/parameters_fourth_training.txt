@@ -1,1 +1,0 @@
-n2v test --on novels --model /mnt/cimec-storage-sata/users/andrea.bruera/wiki_training/data/wiki_w2v_2018_size400_max_final_vocab250000_sg1 --data 308 --alpha 1 --neg 3 --window 15 --sample 10000 --epochs 1 --lambda 350 --sample-decay 1.9 --window-decay 5
