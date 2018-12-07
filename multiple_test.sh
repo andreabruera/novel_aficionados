@@ -33,7 +33,6 @@ for i in $(ls 100_books); do
 
     cd ../novel_aficionados/
 
-    python3 scripts/characters_list_from_booknlp.py ${ORIGINAL_FOLDER} ${BOOK_NUMBER}
     python3 scripts/prepare_for_n2v.py ${ORIGINAL_FOLDER} ${BOOK_NUMBER} ${CLEAN_PATH}
 
     find ${ORIGINAL_FOLDER} -name '*clean*' | xargs rm
