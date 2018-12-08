@@ -83,13 +83,13 @@ number=sys.argv[2]
 
 char_list=get_characters_list(folder, number)
 #folder=sys.argv[2]
-characters_vectors=pickle.load(open('novels/data/{}.pickle'.format(number), 'rb'))
+characters_vectors=pickle.load(open('{}/data/{}.pickle'.format(folder, number), 'rb'))
 #for key in characters_vectors:
 #    print('{}\t{}'.format(key, len(characters_vectors[key])))
 
 reciprocal_ranks=[]
 ranks=[]
-details=open('results_{}.txt'.format(number),'w')
+details=open('{}/results_{}.txt'.format(folder, number),'w')
 #results=open('results.txt', 'a')
 
 for good_key, good_vector in characters_vectors.items():
@@ -119,5 +119,5 @@ for good_key, good_vector in characters_vectors.items():
 MRR=numpy.mean(reciprocal_ranks)
 median_rank=numpy.median(ranks)
 
-details.write('\nTotal number of characters: {}\nMedian rank: {}\nMRR: {}'.format(len(char_list), median_rank, MRR)) 
+details.write('\nTotal number of characters:\t{}\nMedian rank:\t{}\nMRR:\t{}'.format(len(char_list), median_rank, MRR)) 
 #results.write('{}\t{}'.format(MRR, folder))

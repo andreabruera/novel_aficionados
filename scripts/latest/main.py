@@ -391,6 +391,7 @@ def test_on_novel(args):
     os.makedirs('{}/data'.format(args.folder),exist_ok=True)
 
     for part in books_dict.keys():
+        alpha_decay_output=open('{}/data/alpha_decay_output_{}_{}.txt'.format(args.folder, args.dataset, part),'w')
         filename=books_dict[part]
 #        out_file=open('data/{}.character_vectors'.format(filename),'w')
         for character in char_list:
@@ -435,10 +436,10 @@ def test_on_novel(args):
             ### NOVELS NOTE: added the condition >2, because in the absence of a character in a certain part of the book, the same vector is created for all the absent characters and this creates fake 1.0 similarities at evaluation time.
             if sentence_count > 2:
                 character_vector=model[nonce]
-                char_dict['{}_{}'.format(character, part)]=character_vector
+                character_name_and_part='{}_{}'.format(character, part)
+                char_dict[character_name_and_part]=character_vector
+                alpha_decay_output.write('{}\t{}\{}'.format(character_name_and_part, sentence_count, out_alpha))
             else:
                 pass
     with open('{}/data/{}.pickle'.format(args.folder, args.dataset),'wb') as out:        
         pickle.dump(char_dict,out,pickle.HIGHEST_PROTOCOL) 
-#np.savez('{}.vectors'.format(args.dataset), (char_dict[i]=i for i in char_dict), allow_pickle=False)
-#           out_file.write('{}\t{}\n'.format(character,character_vector))

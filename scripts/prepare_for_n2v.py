@@ -38,9 +38,9 @@ char_list=get_characters_list(folder, number)
 files=['{}'.format(filename),'{}_part_a'.format(filename),'{}_part_b'.format(filename)]
 
 for i in files:
-    f=open('{}'.format(i)).read()
-    out_filename=i.replace('_clean.txt_','')
-    out=open('{}_n2v'.format(out_filename),'w')
+    f=open('../{}'.format(i)).read()
+    out_filename=i.replace('_clean.txt_','_')
+    out=open('../{}_n2v'.format(out_filename),'w')
 
     lines=tok(f)
 

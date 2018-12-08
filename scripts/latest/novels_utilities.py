@@ -19,11 +19,11 @@ def get_characters_list(folder, number):
     return char_list
 
 '''Then, we want to get a list of the two versions of each book (part a, part b)'''
-def get_books_dict(novel):
+def get_books_dict(number):
     versions={}
     parts=['a','b']
     for i in parts:
-        versions[i]='{}_part_{}_n2v'.format(novel,i)
+        versions[i]='{}_part_{}_n2v'.format(number, i)
     return versions
 
 '''Starting from the list of the books, this function opens each book, and returns a list of sentences'''
