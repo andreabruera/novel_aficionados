@@ -50,4 +50,5 @@ for i in $(ls 100_books); do
     n2v test --on novels --model /mnt/cimec-storage-sata/users/andrea.bruera/wiki_training/data/wiki_w2v_2018_size400_max_final_vocab250000_sg1 --folder /mnt/cimec-storage-sata/users/andrea.bruera/${ORIGINAL_FOLDER} --data ${BOOK_NUMBER} --alpha 1 --neg 3 --window 15 --sample 10000 --epochs 1 --lambda 70 --sample-decay 1.9 --window-decay 5
     
     python3 scripts/get_damn_evaluation.py ../${ORIGINAL_FOLDER} ${BOOK_NUMBER}
+    cd ../
 done

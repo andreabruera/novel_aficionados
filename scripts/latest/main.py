@@ -438,7 +438,7 @@ def test_on_novel(args):
                 character_vector=model[nonce]
                 character_name_and_part='{}_{}'.format(character, part)
                 char_dict[character_name_and_part]=character_vector
-                alpha_decay_output.write('{}\t{}\{}'.format(character_name_and_part, sentence_count, out_alpha))
+                alpha_decay_output.write('{}\t{}\t{}'.format(character_name_and_part, sentence_count, out_alpha))
             else:
                 pass
     with open('{}/data/{}.pickle'.format(args.folder, args.dataset),'wb') as out:        
