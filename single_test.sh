@@ -26,9 +26,11 @@ cd ../book_nlp
 
 echo "characters list created"
 
-cd ../novel_aficionados/
+cd ../novel_aficionados
 
-python3 scripts/prepare_for_n2v.py ${ORIGINAL_FOLDER} ${BOOK_NUMBER} ${CLEAN_PATH}
+python3 scripts/prepare_for_n2v.py ${ORIGINAL_FOLDER} ${BOOK_NUMBER} novel_aficionados/${CLEAN_PATH}
+
+n2v test --on novels --model /mnt/cimec-storage-sata/users/andrea.bruera/wiki_training/data/wiki_w2v_2018_size400_max_final_vocab250000_sg1 --folder /mnt/cimec-storage-sata/users/andrea.bruera/novel_aficionados/${ORIGINAL_FOLDER} --data ${BOOK_NUMBER} --alpha 1 --neg 3 --window 15 --sample 10000 --epochs 1 --lambda 70 --sample-decay 1.9 --window-decay 5 --simil_out
 
 find ${ORIGINAL_FOLDER} -name '*clean*' | xargs rm
 rm -r ${ORIGINAL_FOLDER}/booknlp 
