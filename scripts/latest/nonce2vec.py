@@ -471,6 +471,8 @@ def train_batch_sg_novels(model, sentences, sentence_count, alpha, work=None, co
         word_vocabs = [model.wv.vocab[w] for w in sentence if w in
                        model.wv.vocab and model.wv.vocab[w].sample_int
                        > model.random.rand() * 2 ** 32 or w == '___']
+        ### NOVELS_EDIT: added this line to create a list with the subsampled words
+        subsampled_words=[]
         for pos, word in enumerate(word_vocabs):
             # Note: we have got rid of the random window size
             start = max(0, pos - window)
@@ -494,13 +496,15 @@ def train_batch_sg_novels(model, sentences, sentence_count, alpha, work=None, co
                             model, model.wv.index2word[word.index],
                             len(model.wv.vocab)-1, alpha, nonce_count,
                             compute_loss=compute_loss)
-        ### START OF NOVELS EDIT: this is just to print out the current alpha in an easy to read format, and to then write it down onto file.
+                        ###NOVELS_EDIT: Added this line to collect and print the subsampled line
+                        subsampled_words.append(model.wv.index2word[word.index])
+        ### START OF NOVELS EDIT: this is just to print out the current alpha and the subsampled sentence in an easy to read format, and to then write it down onto file.
         exp_decay = -(nonce_count-1) / model.lambda_den
         if alpha * np.exp(exp_decay) > model.min_alpha:
             alpha = alpha * np.exp(exp_decay)
         else:
             alpha = model.min_alpha
-        print('Current alpha: {}'.format(alpha))
+        print('Current alpha: {}\nSubsampled line: {}'.format(alpha, subsampled_words))
         ### END OF NOVELS EDIT
         result += len(word_vocabs)
         if window - 1 >= 3:
@@ -543,15 +547,16 @@ class Nonce2VecVocab_novels(Word2VecVocab):
         pre_exist_words = []
         if self.nonce is not None:
             ### NOVELS EDIT: added this condition, which makes sure that the character's vector is reinitialized to zero only once, during the first sentence.
-            if sentence_count==0:
+            if sentence_count==1:
             #if self.nonce is not None and self.nonce in wv.vocab:
                 if self.nonce in wv.vocab:
-                    gold_nonce = '{}_true'.format(self.nonce)
+                    #original_nonce = '{}_original'.format(self.nonce)
                     nonce_index = wv.vocab[self.nonce].index
-                    wv.vocab[gold_nonce] = wv.vocab[self.nonce]
-                    wv.index2word[nonce_index] = gold_nonce
-                    #del wv.index2word[wv.vocab[self.nonce].index]
+                    #wv.vocab[original_nonce] = wv.vocab[self.nonce]
+                    #wv.index2word[nonce_index] = original_nonce
+                    del wv.index2word[wv.vocab[self.nonce].index]
                     del wv.vocab[self.nonce]
+                    logger.info('Deleted the vector for the nonce - index no. {}'.format(nonce_index))
             for word, v in iteritems(self.raw_vocab):
                 # Update count of all words already in vocab
                 if word in wv.vocab:
@@ -733,7 +738,7 @@ class Nonce2Vec_novels(Word2Vec):
 
     MAX_WORDS_IN_BATCH = 10000
 
-    def __init__(self,sentences=None, sentence_count=0, size=100, alpha=0.025, window=5,
+    def __init__(self, sentences=None, sentence_count=0, size=100, alpha=0.025, window=5,
                  min_count=5, max_vocab_size=None, sample=1e-3, seed=1,
                  workers=3, min_alpha=0.0001, sg=1, hs=0, negative=5,
                  cbow_mean=1, hashfxn=hash, iter=5, null_word=0,
@@ -754,6 +759,8 @@ class Nonce2Vec_novels(Word2Vec):
         self.lambda_den = 0.0
         self.sample_decay = float(sample_decay)
         self.window_decay = int(window_decay)
+        ### NOVEL EDIT: added the self.sentence_count to make sure it initializes to the passed value        
+        self.sentence_count = int(sentence_count)
 
     @classmethod
     def load(cls, *args, **kwargs):

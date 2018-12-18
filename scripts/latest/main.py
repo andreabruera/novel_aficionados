@@ -75,7 +75,7 @@ def _load_nonce2vec_model(args, nonce):
         model.trainables = Nonce2VecTrainables.load(model.trainables)
     ### NOVELS EDIT: added this condition, which calls the novels version of the functions and classes
     elif args.on == 'novels':
-        logger.info('\n\ntesting on novels')
+        logger.info('Testing on:     novels')
         model = Nonce2Vec_novels.load(args.background)
         model.vocabulary = Nonce2VecVocab_novels.load(model.vocabulary)
         model.trainables = Nonce2VecTrainables_novels.load(model.trainables)
@@ -363,6 +363,9 @@ def main():
     parser_test.add_argument('--folder', required=False,
                              dest='folder',
                              help='absolute path to the novel folder')
+    parser_test.add_argument('--simil_out', required=False, default='False',
+                             action='store_true',
+                             help='specify whether it is needed to write a file with top similarities')
     parser_test.add_argument('--train-with',
                              choices=['exp_alpha'],
                              help='learning rate computation function')
@@ -389,13 +392,20 @@ def test_on_novel(args):
 
     nonce='___'
     os.makedirs('{}/data'.format(args.folder),exist_ok=True)
+    if args.simil_out==True:
+        os.makedirs('{}/data/details'.format(args.folder), exist_ok=True)
 
     for part in books_dict.keys():
-        alpha_decay_output=open('{}/data/alpha_decay_output_{}_{}.txt'.format(args.folder, args.dataset, part),'w')
+        
         filename=books_dict[part]
 #        out_file=open('data/{}.character_vectors'.format(filename),'w')
         for character in char_list:
-            sentence_count=0
+            #if character not in open('{}/{}'.format(args.folder, filename)):
+            #    pass
+
+            if args.simil_out==True:
+                simil_out_file=open('{}/data/details/{}_{}.similarities'.format(args.folder, character, part),'w')
+                simil_out_file.write('{} part {}\n\n'.format(character, part))
 
 #            similarities_out=open('data/{}_{}.top_similarities'.format(character,version),'w')
 
@@ -403,7 +413,7 @@ def test_on_novel(args):
             model.vocabulary.nonce=nonce
 
             w2v_vocab=[key for key in model.wv.vocab]
-            logger.info('Lenghth of vocabulary: {}'.format(len(w2v_vocab)))
+            logger.info('Length of vocabulary: {}'.format(len(w2v_vocab)))
 
             sent_list, sent_vocab_list=get_novel_sentences(args.folder, filename, w2v_vocab, character)
             logger.info('\nlist of sentences created!\n')
@@ -411,12 +421,13 @@ def test_on_novel(args):
 
             for index,sentence in enumerate(sent_list):
                 if '___' in sentence:
+                    model.sentence_count+=1
                     vocab_sentence=[sentence]
-                    logger.info('{}'.format(vocab_sentence))
-                    model.build_vocab(vocab_sentence, sentence_count, update=True)
+                    logger.info('Full sentence: {}'.format(vocab_sentence))
+                    model.build_vocab(vocab_sentence, model.sentence_count, update=True)
                     vocab_size=len(model.wv.vocab)
-                    logger.info('vocab size = {}'.format(vocab_size))
-                    logger.info('nonce: {}'.format(character))
+                    #logger.info('vocab size = {}'.format(vocab_size))
+                    logger.info('Current nonce: {}'.format(character))
                     if not args.sum_only:
                         ### NOVELS NOTE: this section is just to set some variables which can capture the alpha from the print output 
                         stdout = sys.stdout
@@ -424,22 +435,18 @@ def test_on_novel(args):
                         ### NOVELS NOTE: this is the part where the training happens
                         model.train(vocab_sentence, total_examples=model.corpus_count,epochs=model.iter)
                         top_similarities=model.most_similar(nonce,topn=20)
-                        logger.info('\n\n{}\n\n'.format(top_similarities))
+                        logger.info('Top similarities for {} at this point during the training: {}'.format(character, top_similarities))
                         ### NOVELS NOTE: This is the part where the alpha is written to file and then stdout is reset
                         out_alpha = sys.stdout.getvalue()
-                        logger.info('\n\n{}\n'.format(out_alpha))
+                        logger.info('{}'.format(out_alpha))
                         sys.stdout = stdout
 #                        similarities_out.write('{} - Sentence n. {}\n Alpha: {}\nWords: {}\nTop similarities:{}\n\n'.format(character, sentence_count,out_alpha,vocab_sentence,top_similarities))
-                    sentence_count+=1
-                    model.sentence_count=sentence_count
-                    logger.info('\n\nSentence counter: {}\n\n'.format(model.sentence_count))
-            ### NOVELS NOTE: added the condition >2, because in the absence of a character in a certain part of the book, the same vector is created for all the absent characters and this creates fake 1.0 similarities at evaluation time.
-            if sentence_count > 2:
+                    if args.simil_out==True:
+                        simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n{}\n\n'.format(sentence_count, sentence, out_alpha, model.wv.most_similar('___', topn=50))) 
+                ### NOVELS NOTE: added the condition >0, because in the absence of a character in a certain part of the book, the same vector is created for all the absent characters and this creates fake 1.0 similarities at evaluation time.
+            if model.sentence_count>0:
                 character_vector=model[nonce]
                 character_name_and_part='{}_{}'.format(character, part)
                 char_dict[character_name_and_part]=character_vector
-                alpha_decay_output.write('{}\t{}\t{}'.format(character_name_and_part, sentence_count, out_alpha))
-            else:
-                pass
     with open('{}/data/{}.pickle'.format(args.folder, args.dataset),'wb') as out:        
         pickle.dump(char_dict,out,pickle.HIGHEST_PROTOCOL) 
