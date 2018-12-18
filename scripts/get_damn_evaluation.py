@@ -92,32 +92,51 @@ ranks=[]
 details=open('{}/results_{}.txt'.format(folder, number),'w')
 #results=open('results.txt', 'a')
 
+disappearing_characters=[]
+
 for good_key, good_vector in characters_vectors.items():
     norm_good_vector=normalise(good_vector)
     character_name=good_key.split('_')[0]
     character_part=good_key.split('_')[1]
-    simil_dict={}
+    marker = False
 
     for other_key, other_vector in characters_vectors.items():
+        other_name=other_key.split('_')[0]
         other_part=other_key.split('_')[1]
         if other_part != character_part:
-            norm_other_vector=normalise(other_vector)
-            simil=_cosine_similarity(norm_good_vector, norm_other_vector)
-            simil_dict[float(simil)]=other_key
+            if other_name == character_name:
+                marker = True
+    if marker == False:
+        disappearing_characters.append(character_name)
 
-    sorted_simil_list=sorted(simil_dict,reverse=True)
-    for rank, similarity in enumerate(sorted_simil_list):
-        rank+=1
-        current_character=simil_dict[similarity].split('_')
-        if current_character[0] == character_name:
-            reciprocal_ranks.append(1/rank)
-            ranks.append(rank)
-            details.write('\nResult for the vector: {}, coming from part {} of the book\nRank: {} out of {} characters\nReciprocal rank: {}\nCosine similarity to the query: {}\n\n'.format(character_name, character_part, rank, len(sorted_simil_list), (1/rank), similarity))
-            for i in sorted_simil_list:
-                details.write('{} - {}\n'.format(simil_dict[i], i))
+for good_key, good_vector in characters_vectors.items():
+    norm_good_vector=normalise(good_vector)
+    character_name=good_key.split('_')[0]
+    character_part=good_key.split('_')[1]
+    if character_name not in disappearing_characters:
+        simil_dict={}
+
+        for other_key, other_vector in characters_vectors.items():
+            other_name=other_key.split('_')[0]
+            other_part=other_key.split('_')[1]
+            if other_part != character_part and other_name not in disappearing_characters:
+                norm_other_vector=normalise(other_vector)
+                simil=_cosine_similarity(norm_good_vector, norm_other_vector)
+                simil_dict[float(simil)]=other_key
+                        
+        sorted_simil_list=sorted(simil_dict,reverse=True)
+        for rank, similarity in enumerate(sorted_simil_list):
+            rank+=1
+            current_character=simil_dict[similarity].split('_')
+            if current_character[0] == character_name:
+                reciprocal_ranks.append(1/rank)
+                ranks.append(rank)
+                details.write('\nResult for the vector: {}, coming from part {} of the book\nRank: {} out of {} characters\nReciprocal rank: {}\nCosine similarity to the query: {}\n\n'.format(character_name, character_part, rank, len(sorted_simil_list), (1/rank), similarity))
+                for i in sorted_simil_list:
+                    details.write('{} - {}\n'.format(simil_dict[i], i))
 
 MRR=numpy.mean(reciprocal_ranks)
 median_rank=numpy.median(ranks)
 
-details.write('\nTotal number of characters:\t{}\nMedian rank:\t{}\nMRR:\t{}'.format(len(char_list), median_rank, MRR)) 
+details.write('\nTotal number of characters:\t{}\nMedian rank:\t{}\nMRR:\t{}'.format(len(sorted_simil_list)+1, median_rank, MRR)) 
 #results.write('{}\t{}'.format(MRR, folder))

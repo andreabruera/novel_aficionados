@@ -1,0 +1,634 @@
+
+Result for the vector: elizabeth, coming from part a of the book
+Rank: 1 out of 15 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.32338512996523855
+
+elizabeth_b - 0.32338512996523855
+jane_b - 0.25333651900291443
+wickham_b - 0.23514500260353088
+lizzy_b - 0.1985036044866922
+maria_b - 0.17706428468227386
+forster_b - 0.17055726051330566
+lydia_b - 0.16212880611419678
+mary_b - 0.11856677421529468
+georgiana_b - 0.11160501425281215
+kitty_b - 0.09806823277676803
+charlotte_b - 0.09141874313354492
+pemberley_b - 0.016617462038993835
+denny_b - 0.01646295983978987
+rosings_b - 0.006028642984262538
+william_b - -0.026023495942354202
+
+Result for the vector: jane, coming from part a of the book
+Rank: 2 out of 15 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.2546474039554596
+
+elizabeth_b - 0.286469412656462
+jane_b - 0.2546474039554596
+maria_b - 0.23227564990520477
+wickham_b - 0.21043166518211365
+lizzy_b - 0.20527345553855475
+forster_b - 0.19675052165985107
+charlotte_b - 0.17766670882701874
+kitty_b - 0.17323707560411328
+denny_b - 0.14206335371921527
+mary_b - 0.1350139895073184
+lydia_b - 0.12775038182735443
+pemberley_b - 0.10422301292419434
+georgiana_b - 0.046995548069344424
+rosings_b - 0.03646861544438515
+william_b - 0.028337661176919937
+
+Result for the vector: wickham, coming from part a of the book
+Rank: 3 out of 15 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.15965935049410793
+
+rosings_b - 0.20296877622604514
+denny_b - 0.16923274122769313
+wickham_b - 0.15965935049410793
+maria_b - 0.15714415354395855
+forster_b - 0.1482818364072943
+jane_b - 0.14611337459763163
+lizzy_b - 0.1412434555211773
+pemberley_b - 0.139597349738917
+lydia_b - 0.1303834694852515
+mary_b - 0.0551852136850361
+elizabeth_b - 0.0378470569849017
+william_b - 0.036090066944960836
+kitty_b - 0.031716636423763926
+charlotte_b - 0.02256799623775464
+georgiana_b - -0.0504298404243446
+
+Result for the vector: lydia, coming from part a of the book
+Rank: 4 out of 15 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.23708359897136688
+
+lizzy_b - 0.3564505087271486
+maria_b - 0.3170085847377777
+elizabeth_b - 0.31304530423609644
+lydia_b - 0.23708359897136688
+wickham_b - 0.23577149212360382
+mary_b - 0.22101813727509195
+forster_b - 0.2201373428106308
+jane_b - 0.19076508283615112
+georgiana_b - 0.13487328990916286
+denny_b - 0.12118524674133208
+pemberley_b - 0.10538502782583237
+charlotte_b - 0.10489664226770401
+kitty_b - 0.07752808414483324
+william_b - 0.011332366615533829
+rosings_b - -0.01717846924492903
+
+Result for the vector: lizzy, coming from part a of the book
+Rank: 1 out of 15 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.39594087564416625
+
+lizzy_b - 0.39594087564416625
+wickham_b - 0.26363276026444243
+elizabeth_b - 0.25610762834549133
+georgiana_b - 0.19389297311541207
+forster_b - 0.18322811622787247
+mary_b - 0.1804256588220609
+maria_b - 0.14463278023199944
+jane_b - 0.1390813373971785
+denny_b - 0.12558744480497647
+charlotte_b - 0.08641431995715633
+lydia_b - 0.07896107905871161
+pemberley_b - 0.07583025549830542
+kitty_b - 0.06644476799173071
+rosings_b - 0.03662132471799877
+william_b - -0.035753565177533995
+
+Result for the vector: kitty, coming from part a of the book
+Rank: 5 out of 15 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.0679038857789006
+
+maria_b - 0.14180198311805725
+lizzy_b - 0.08422513557151368
+elizabeth_b - 0.08244709179120724
+wickham_b - 0.07342065125703812
+kitty_b - 0.0679038857789006
+lydia_b - 0.0657997578382492
+forster_b - 0.06510044634342194
+rosings_b - 0.06178592894757228
+denny_b - 0.016949981956183382
+jane_b - -0.0036442172713577747
+mary_b - -0.006891617140673581
+charlotte_b - -0.012521546334028244
+william_b - -0.016254866495728493
+pemberley_b - -0.03203173726797104
+georgiana_b - -0.06830761785231886
+
+Result for the vector: william, coming from part a of the book
+Rank: 12 out of 15 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: 0.06411875784397125
+
+lizzy_b - 0.29861027892262587
+maria_b - 0.21554666757583618
+wickham_b - 0.17584258317947388
+mary_b - 0.17068541522709071
+jane_b - 0.15243041515350342
+elizabeth_b - 0.13865128823213077
+georgiana_b - 0.1358734856806245
+charlotte_b - 0.08760099112987518
+denny_b - 0.07992355763684389
+forster_b - 0.07787290960550308
+pemberley_b - 0.07624650746583939
+william_b - 0.06411875784397125
+kitty_b - 0.011566875847186924
+lydia_b - -0.01128049474209547
+rosings_b - -0.1846452841374112
+
+Result for the vector: mary, coming from part a of the book
+Rank: 11 out of 15 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.014901338231404038
+
+wickham_b - 0.10874534495202651
+lydia_b - 0.0927515868692646
+elizabeth_b - 0.08713635508580743
+pemberley_b - 0.08605714374440067
+maria_b - 0.08230547116366216
+denny_b - 0.08110317346146219
+jane_b - 0.0743000463068459
+charlotte_b - 0.05276916606610033
+forster_b - 0.0457752170696726
+lizzy_b - 0.03477812827294696
+mary_b - 0.014901338231404038
+william_b - 0.004813751850202578
+kitty_b - -0.00670678986737761
+georgiana_b - -0.03451920570375916
+rosings_b - -0.07078168442467636
+
+Result for the vector: forster, coming from part a of the book
+Rank: 11 out of 15 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.11067974897264692
+
+lizzy_b - 0.3648971238671019
+maria_b - 0.3101387414377554
+wickham_b - 0.2626019794524307
+elizabeth_b - 0.25248395644176236
+pemberley_b - 0.20701982697903604
+mary_b - 0.1993517518236719
+jane_b - 0.1910252031989457
+denny_b - 0.13787258493140847
+lydia_b - 0.12455936147449503
+kitty_b - 0.12411591405367339
+forster_b - 0.11067974897264692
+georgiana_b - 0.07047599229073478
+charlotte_b - 0.05708514696613395
+william_b - -0.01646528628365059
+rosings_b - -0.05341315855344679
+
+Result for the vector: rosings, coming from part a of the book
+Rank: 13 out of 15 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: 0.023784146602851556
+
+georgiana_b - 0.1725985505402527
+lydia_b - 0.16002028226731554
+jane_b - 0.15151440194163338
+maria_b - 0.13174677599985765
+charlotte_b - 0.12007228314445736
+elizabeth_b - 0.11846179593064833
+wickham_b - 0.1003049030718267
+forster_b - 0.06697382378734221
+lizzy_b - 0.060532739444591664
+mary_b - 0.05129014089225043
+william_b - 0.04637830055485373
+kitty_b - 0.04258454836653046
+rosings_b - 0.023784146602851556
+denny_b - 0.0027786506443127908
+pemberley_b - -0.013127037472901518
+
+Result for the vector: maria, coming from part a of the book
+Rank: 12 out of 15 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: 0.01906820945441723
+
+wickham_b - 0.20781487226486206
+elizabeth_b - 0.19745406821643935
+kitty_b - 0.11277675219704968
+charlotte_b - 0.10480163246393204
+lydia_b - 0.10457022488117218
+jane_b - 0.09783975034952164
+forster_b - 0.0932905375957489
+lizzy_b - 0.08731514475688773
+pemberley_b - 0.055999767035245895
+mary_b - 0.050623529367236623
+georgiana_b - 0.04328148195986398
+maria_b - 0.01906820945441723
+rosings_b - -0.009963645937225483
+denny_b - -0.04747343204836347
+william_b - -0.06308870762586594
+
+Result for the vector: charlotte, coming from part a of the book
+Rank: 10 out of 15 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.13835494220256805
+
+elizabeth_b - 0.2554190006602411
+maria_b - 0.23717492818832397
+lizzy_b - 0.23499209389066986
+wickham_b - 0.20877206325531006
+kitty_b - 0.19599646913994764
+denny_b - 0.1824137473825738
+forster_b - 0.1668219119310379
+jane_b - 0.15367911756038666
+mary_b - 0.1418538456050252
+charlotte_b - 0.13835494220256805
+lydia_b - 0.08520129323005676
+georgiana_b - 0.058909805384570545
+pemberley_b - 0.05514492839574814
+william_b - 0.020758507773280144
+rosings_b - -0.019216333301881987
+
+Result for the vector: georgiana, coming from part a of the book
+Rank: 11 out of 15 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: -0.01975438243908831
+
+elizabeth_b - 0.16775094462925555
+charlotte_b - 0.13904552161693573
+kitty_b - 0.12210169798438847
+forster_b - 0.08782064914703369
+denny_b - 0.06725830040151778
+lydia_b - 0.06652677059173584
+maria_b - 0.05374934896826744
+william_b - 0.04998723044991493
+jane_b - 0.01162224542349577
+pemberley_b - 0.002156631788238883
+georgiana_b - -0.01975438243908831
+wickham_b - -0.019790563732385635
+lizzy_b - -0.03897594031619849
+mary_b - -0.04320472221346373
+rosings_b - -0.09549597826624064
+
+Result for the vector: denny, coming from part a of the book
+Rank: 12 out of 15 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: -0.02690388714980744
+
+kitty_b - 0.09360548387782232
+pemberley_b - 0.08951753377914429
+forster_b - 0.06131429970264435
+maria_b - 0.059808533638715744
+mary_b - 0.05052800920438721
+elizabeth_b - 0.038867612846636077
+lydia_b - 0.030855953693389893
+wickham_b - 0.02873319573700428
+georgiana_b - 0.016310794765078872
+charlotte_b - 0.013842170126736164
+jane_b - 0.005375398322939873
+denny_b - -0.02690388714980744
+lizzy_b - -0.049853277947106325
+william_b - -0.0578593909740448
+rosings_b - -0.09197432744656057
+
+Result for the vector: pemberley, coming from part a of the book
+Rank: 14 out of 15 characters
+Reciprocal rank: 0.07142857142857142
+Cosine similarity to the query: -0.01619784809959843
+
+lizzy_b - 0.1727364607829917
+elizabeth_b - 0.16789528216179822
+jane_b - 0.14329402784740786
+maria_b - 0.14086007232307982
+wickham_b - 0.13618192755091646
+kitty_b - 0.12816547965510303
+mary_b - 0.11860561447076624
+lydia_b - 0.11830436478231184
+charlotte_b - 0.07803242188498857
+georgiana_b - 0.06330793162262668
+forster_b - 0.03997540980724045
+rosings_b - 0.01970853421586344
+william_b - 0.0168961947026137
+pemberley_b - -0.01619784809959843
+denny_b - -0.0490119852420098
+
+Result for the vector: elizabeth, coming from part b of the book
+Rank: 1 out of 15 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.32338512996523855
+
+elizabeth_a - 0.32338512996523855
+lydia_a - 0.31304530423609644
+jane_a - 0.286469412656462
+lizzy_a - 0.25610762834549133
+charlotte_a - 0.2554190006602411
+forster_a - 0.25248395644176236
+maria_a - 0.19745406821643935
+pemberley_a - 0.16789528216179822
+georgiana_a - 0.16775094462925555
+william_a - 0.13865128823213077
+rosings_a - 0.11846179593064833
+mary_a - 0.08713635508580743
+kitty_a - 0.08244709179120724
+denny_a - 0.038867612846636077
+wickham_a - 0.0378470569849017
+
+Result for the vector: jane, coming from part b of the book
+Rank: 1 out of 15 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.2546474039554596
+
+jane_a - 0.2546474039554596
+elizabeth_a - 0.25333651900291443
+forster_a - 0.1910252031989457
+lydia_a - 0.19076508283615112
+charlotte_a - 0.15367911756038666
+william_a - 0.15243041515350342
+rosings_a - 0.15151440194163338
+wickham_a - 0.14611337459763163
+pemberley_a - 0.14329402784740786
+lizzy_a - 0.1390813373971785
+maria_a - 0.09783975034952164
+mary_a - 0.0743000463068459
+georgiana_a - 0.01162224542349577
+denny_a - 0.005375398322939873
+kitty_a - -0.0036442172713577747
+
+Result for the vector: wickham, coming from part b of the book
+Rank: 9 out of 15 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.15965935049410793
+
+lizzy_a - 0.26363276026444243
+forster_a - 0.2626019794524307
+lydia_a - 0.23577149212360382
+elizabeth_a - 0.23514500260353088
+jane_a - 0.21043166518211365
+charlotte_a - 0.20877206325531006
+maria_a - 0.20781487226486206
+william_a - 0.17584258317947388
+wickham_a - 0.15965935049410793
+pemberley_a - 0.13618192755091646
+mary_a - 0.10874534495202651
+rosings_a - 0.1003049030718267
+kitty_a - 0.07342065125703812
+denny_a - 0.02873319573700428
+georgiana_a - -0.019790563732385635
+
+Result for the vector: lydia, coming from part b of the book
+Rank: 1 out of 15 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.23708359897136688
+
+lydia_a - 0.23708359897136688
+elizabeth_a - 0.16212880611419678
+rosings_a - 0.16002028226731554
+wickham_a - 0.1303834694852515
+jane_a - 0.12775038182735443
+forster_a - 0.12455936147449503
+pemberley_a - 0.11830436478231184
+maria_a - 0.10457022488117218
+mary_a - 0.0927515868692646
+charlotte_a - 0.08520129323005676
+lizzy_a - 0.07896107905871161
+georgiana_a - 0.06652677059173584
+kitty_a - 0.0657997578382492
+denny_a - 0.030855953693389893
+william_a - -0.01128049474209547
+
+Result for the vector: lizzy, coming from part b of the book
+Rank: 1 out of 15 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.39594087564416625
+
+lizzy_a - 0.39594087564416625
+forster_a - 0.3648971238671019
+lydia_a - 0.3564505087271486
+william_a - 0.29861027892262587
+charlotte_a - 0.23499209389066986
+jane_a - 0.20527345553855475
+elizabeth_a - 0.1985036044866922
+pemberley_a - 0.1727364607829917
+wickham_a - 0.1412434555211773
+maria_a - 0.08731514475688773
+kitty_a - 0.08422513557151368
+rosings_a - 0.060532739444591664
+mary_a - 0.03477812827294696
+georgiana_a - -0.03897594031619849
+denny_a - -0.049853277947106325
+
+Result for the vector: kitty, coming from part b of the book
+Rank: 10 out of 15 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.0679038857789006
+
+charlotte_a - 0.19599646913994764
+jane_a - 0.17323707560411328
+pemberley_a - 0.12816547965510303
+forster_a - 0.12411591405367339
+georgiana_a - 0.12210169798438847
+maria_a - 0.11277675219704968
+elizabeth_a - 0.09806823277676803
+denny_a - 0.09360548387782232
+lydia_a - 0.07752808414483324
+kitty_a - 0.0679038857789006
+lizzy_a - 0.06644476799173071
+rosings_a - 0.04258454836653046
+wickham_a - 0.031716636423763926
+william_a - 0.011566875847186924
+mary_a - -0.00670678986737761
+
+Result for the vector: william, coming from part b of the book
+Rank: 1 out of 15 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.06411875784397125
+
+william_a - 0.06411875784397125
+georgiana_a - 0.04998723044991493
+rosings_a - 0.04637830055485373
+wickham_a - 0.036090066944960836
+jane_a - 0.028337661176919937
+charlotte_a - 0.020758507773280144
+pemberley_a - 0.0168961947026137
+lydia_a - 0.011332366615533829
+mary_a - 0.004813751850202578
+kitty_a - -0.016254866495728493
+forster_a - -0.01646528628365059
+elizabeth_a - -0.026023495942354202
+lizzy_a - -0.035753565177533995
+denny_a - -0.0578593909740448
+maria_a - -0.06308870762586594
+
+Result for the vector: mary, coming from part b of the book
+Rank: 13 out of 15 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: 0.014901338231404038
+
+lydia_a - 0.22101813727509195
+forster_a - 0.1993517518236719
+lizzy_a - 0.1804256588220609
+william_a - 0.17068541522709071
+charlotte_a - 0.1418538456050252
+jane_a - 0.1350139895073184
+pemberley_a - 0.11860561447076624
+elizabeth_a - 0.11856677421529468
+wickham_a - 0.0551852136850361
+rosings_a - 0.05129014089225043
+maria_a - 0.050623529367236623
+denny_a - 0.05052800920438721
+mary_a - 0.014901338231404038
+kitty_a - -0.006891617140673581
+georgiana_a - -0.04320472221346373
+
+Result for the vector: forster, coming from part b of the book
+Rank: 7 out of 15 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.11067974897264692
+
+lydia_a - 0.2201373428106308
+jane_a - 0.19675052165985107
+lizzy_a - 0.18322811622787247
+elizabeth_a - 0.17055726051330566
+charlotte_a - 0.1668219119310379
+wickham_a - 0.1482818364072943
+forster_a - 0.11067974897264692
+maria_a - 0.0932905375957489
+georgiana_a - 0.08782064914703369
+william_a - 0.07787290960550308
+rosings_a - 0.06697382378734221
+kitty_a - 0.06510044634342194
+denny_a - 0.06131429970264435
+mary_a - 0.0457752170696726
+pemberley_a - 0.03997540980724045
+
+Result for the vector: rosings, coming from part b of the book
+Rank: 5 out of 15 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.023784146602851556
+
+wickham_a - 0.20296877622604514
+kitty_a - 0.06178592894757228
+lizzy_a - 0.03662132471799877
+jane_a - 0.03646861544438515
+rosings_a - 0.023784146602851556
+pemberley_a - 0.01970853421586344
+elizabeth_a - 0.006028642984262538
+maria_a - -0.009963645937225483
+lydia_a - -0.01717846924492903
+charlotte_a - -0.019216333301881987
+forster_a - -0.05341315855344679
+mary_a - -0.07078168442467636
+denny_a - -0.09197432744656057
+georgiana_a - -0.09549597826624064
+william_a - -0.1846452841374112
+
+Result for the vector: maria, coming from part b of the book
+Rank: 15 out of 15 characters
+Reciprocal rank: 0.06666666666666667
+Cosine similarity to the query: 0.01906820945441723
+
+lydia_a - 0.3170085847377777
+forster_a - 0.3101387414377554
+charlotte_a - 0.23717492818832397
+jane_a - 0.23227564990520477
+william_a - 0.21554666757583618
+elizabeth_a - 0.17706428468227386
+wickham_a - 0.15714415354395855
+lizzy_a - 0.14463278023199944
+kitty_a - 0.14180198311805725
+pemberley_a - 0.14086007232307982
+rosings_a - 0.13174677599985765
+mary_a - 0.08230547116366216
+denny_a - 0.059808533638715744
+georgiana_a - 0.05374934896826744
+maria_a - 0.01906820945441723
+
+Result for the vector: charlotte, coming from part b of the book
+Rank: 3 out of 15 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.13835494220256805
+
+jane_a - 0.17766670882701874
+georgiana_a - 0.13904552161693573
+charlotte_a - 0.13835494220256805
+rosings_a - 0.12007228314445736
+lydia_a - 0.10489664226770401
+maria_a - 0.10480163246393204
+elizabeth_a - 0.09141874313354492
+william_a - 0.08760099112987518
+lizzy_a - 0.08641431995715633
+pemberley_a - 0.07803242188498857
+forster_a - 0.05708514696613395
+mary_a - 0.05276916606610033
+wickham_a - 0.02256799623775464
+denny_a - 0.013842170126736164
+kitty_a - -0.012521546334028244
+
+Result for the vector: georgiana, coming from part b of the book
+Rank: 12 out of 15 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: -0.01975438243908831
+
+lizzy_a - 0.19389297311541207
+rosings_a - 0.1725985505402527
+william_a - 0.1358734856806245
+lydia_a - 0.13487328990916286
+elizabeth_a - 0.11160501425281215
+forster_a - 0.07047599229073478
+pemberley_a - 0.06330793162262668
+charlotte_a - 0.058909805384570545
+jane_a - 0.046995548069344424
+maria_a - 0.04328148195986398
+denny_a - 0.016310794765078872
+georgiana_a - -0.01975438243908831
+mary_a - -0.03451920570375916
+wickham_a - -0.0504298404243446
+kitty_a - -0.06830761785231886
+
+Result for the vector: denny, coming from part b of the book
+Rank: 13 out of 15 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: -0.02690388714980744
+
+charlotte_a - 0.1824137473825738
+wickham_a - 0.16923274122769313
+jane_a - 0.14206335371921527
+forster_a - 0.13787258493140847
+lizzy_a - 0.12558744480497647
+lydia_a - 0.12118524674133208
+mary_a - 0.08110317346146219
+william_a - 0.07992355763684389
+georgiana_a - 0.06725830040151778
+kitty_a - 0.016949981956183382
+elizabeth_a - 0.01646295983978987
+rosings_a - 0.0027786506443127908
+denny_a - -0.02690388714980744
+maria_a - -0.04747343204836347
+pemberley_a - -0.0490119852420098
+
+Result for the vector: pemberley, coming from part b of the book
+Rank: 14 out of 15 characters
+Reciprocal rank: 0.07142857142857142
+Cosine similarity to the query: -0.01619784809959843
+
+forster_a - 0.20701982697903604
+wickham_a - 0.139597349738917
+lydia_a - 0.10538502782583237
+jane_a - 0.10422301292419434
+denny_a - 0.08951753377914429
+mary_a - 0.08605714374440067
+william_a - 0.07624650746583939
+lizzy_a - 0.07583025549830542
+maria_a - 0.055999767035245895
+charlotte_a - 0.05514492839574814
+elizabeth_a - 0.016617462038993835
+georgiana_a - 0.002156631788238883
+rosings_a - -0.013127037472901518
+pemberley_a - -0.01619784809959843
+kitty_a - -0.03203173726797104
+
+Total number of characters:	16
+Median rank:	9.5
+MRR:	0.3438996188996189

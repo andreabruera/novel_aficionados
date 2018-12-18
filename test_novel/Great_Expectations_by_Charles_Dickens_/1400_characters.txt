@@ -1,0 +1,93 @@
+745	joe_mrs. joe_joe gargery_gargery_mrs. joe gargery
+306	herbert_herbert pocket
+263	estella_miss estella_estella
+238	mr. jaggers_jaggers_mr. jaggers
+237	wemmick_mr. wemmick
+225	biddy
+211	pip_mr. pip
+148	miss havisham
+132	mr. pumblechook_pumblechook
+114	mr. wopsle_wopsle
+73	mr. pocket_matthew_mr. matthew pocket_mr. matthew
+68	provis_mr. provis
+56	orlick_old orlick
+55	drummle_mr. drummle
+52	handel
+44	mr. trabb_trabb
+36	joseph_joseph gargery
+28	jack
+28	sarah pocket_sarah_miss sarah pocket_miss sarah
+27	camilla_mrs. camilla
+27	compeyson
+27	magwitch_abel_abel magwitch
+24	startop
+20	clara
+15	flopson
+15	barnard
+14	miss skiffins
+14	uncle pumblechook
+13	blue boar
+13	bentley drummle_mrs. bentley drummle_bentley
+13	mrs. pocket
+12	mrs. hubble
+12	mr. gargery
+12	mike
+12	jane_miss jane
+11	jolly bargemen
+11	newgate
+10	walworth
+10	georgiana_miss georgiana
+10	bill barley_bill
+10	richard
+10	tom
+9	clarriker
+9	mr. waldengarver
+9	john
+8	mr. hubble
+8	philip_philip pirrip_pirrip
+8	house_manor house
+7	raymond_cousin raymond
+7	arthur
+7	molly
+7	george barnwell_barnwell_george
+6	mrs. coiler
+6	mrs. brandley
+6	mrs. whimple
+5	satis house
+5	william
+5	mrs. j. gargery_j. gargery
+5	mr. herbert
+5	clem
+5	belinda
+4	smithfield
+4	mill pond bank
+4	junior
+4	mr. campbell
+3	church
+3	finch
+3	mithter jaggerth_jaggerth
+3	collins
+3	grove
+3	custom house
+3	mr jaggers_jaggers
+3	time
+3	mr. camilla
+3	habraham latharuth
+2	bailey
+2	charles dickens
+2	paul
+2	noah
+2	wolf
+2	sophia
+2	mrs. wemmick
+2	temple
+2	hamlet
+2	squires
+2	lloyd
+2	hereupon
+2	parliament
+2	justice
+2	halloa
+2	alick
+2	knight
+0	
