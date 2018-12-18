@@ -79,6 +79,7 @@ tom_a - 0.11086615090764468
 harris_a - 0.06960921196965018
 montmorency_a - 0.03332012246013054
 
-Total number of characters:	5
+Total number of characters considered:	5
+Characters disappearing when dividing the novel in two:	4
 Median rank:	2.0
 MRR:	0.6354166666666666

@@ -138,5 +138,5 @@ for good_key, good_vector in characters_vectors.items():
 MRR=numpy.mean(reciprocal_ranks)
 median_rank=numpy.median(ranks)
 
-details.write('\nTotal number of characters:\t{}\nMedian rank:\t{}\nMRR:\t{}'.format(len(sorted_simil_list)+1, median_rank, MRR)) 
+details.write('\nTotal number of characters considered:\t{}\nCharacters disappearing when dividing the novel in two:\t{}\nMedian rank:\t{}\nMRR:\t{}'.format(len(sorted_simil_list)+1, len(char_list)-(len(sorted_simil_list)+1), median_rank, MRR)) 
 #results.write('{}\t{}'.format(MRR, folder))

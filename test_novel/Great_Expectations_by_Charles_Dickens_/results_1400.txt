@@ -863,6 +863,7 @@ herbert_a - 0.028891006344020795
 pip_a - 0.018255989998579154
 barnard_a - 0.01664404297733566
 
-Total number of characters:	19
+Total number of characters considered:	19
+Characters disappearing when dividing the novel in two:	23
 Median rank:	9.0
 MRR:	0.2071494432401295

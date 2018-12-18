@@ -629,6 +629,7 @@ rosings_a - -0.013127037472901518
 pemberley_a - -0.01619784809959843
 kitty_a - -0.03203173726797104
 
-Total number of characters:	16
+Total number of characters considered:	16
+Characters disappearing when dividing the novel in two:	20
 Median rank:	9.5
 MRR:	0.3438996188996189
