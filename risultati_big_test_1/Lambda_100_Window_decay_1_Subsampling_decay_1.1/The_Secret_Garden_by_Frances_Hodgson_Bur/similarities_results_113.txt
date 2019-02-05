@@ -1,0 +1,480 @@
+
+Result for the vector: mary, coming from part a of the book
+Rank: 2 out of 12 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.1821417862815198
+
+colin_b - 0.2551618218421936
+mary_b - 0.1821417862815198
+mrs_medlock_a - 0.18005705296653227
+magic_b - 0.17111611876237753
+dickon_b - 0.15308856964111328
+shell_b - 0.1499449461698532
+mrs_sowerby_a - 0.13454613089561462
+mrs_medlock_b - 0.13264891414059327
+rajah_b - 0.11976739376090155
+mrs_sowerby_b - 0.11669638007879257
+yorkshire_b - 0.1000577300752564
+martha_b - 0.0430440716445446
+
+Result for the vector: dickon, coming from part a of the book
+Rank: 8 out of 12 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.0605100878769108
+
+colin_b - 0.17415710245626584
+martha_b - 0.12050209966289424
+mrs_sowerby_a - 0.09854702064114704
+yorkshire_b - 0.0787913928876647
+shell_b - 0.07785970253588556
+mary_b - 0.07541234566532566
+magic_b - 0.061553532285883304
+dickon_b - 0.0605100878769108
+mrs_medlock_a - 0.04709540118629918
+rajah_b - 0.04380577299577692
+mrs_medlock_b - 0.02959992579819104
+mrs_sowerby_b - -0.09406856631823995
+
+Result for the vector: colin, coming from part a of the book
+Rank: 9 out of 12 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.0910083604159463
+
+magic_b - 0.19237914337987563
+mrs_medlock_b - 0.18260259783840999
+mary_b - 0.1799060958567915
+mrs_medlock_a - 0.17764165468091872
+martha_b - 0.1676962574629861
+shell_b - 0.15294526973203634
+mrs_sowerby_a - 0.13239854968781922
+dickon_b - 0.12674940010158425
+colin_b - 0.0910083604159463
+yorkshire_b - 0.06175191888952521
+rajah_b - 0.04876958869514398
+mrs_sowerby_b - -0.035980706244132125
+
+Result for the vector: martha, coming from part a of the book
+Rank: 10 out of 12 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.07650987742929585
+
+magic_b - 0.37684465966757125
+colin_b - 0.2646209536153941
+mary_b - 0.22645616250707695
+mrs_medlock_a - 0.2190302824685086
+mrs_medlock_b - 0.21656426141965082
+dickon_b - 0.20518696652534388
+mrs_sowerby_b - 0.1857786195676292
+mrs_sowerby_a - 0.1279545838792255
+shell_b - 0.08215136070412675
+martha_b - 0.07650987742929585
+rajah_b - 0.06755243302016664
+yorkshire_b - 0.05437220050013723
+
+Result for the vector: mrs, coming from part medlock of the book
+Rank: 2 out of 18 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.2827099393183034
+
+shell_a - 0.33188932157882195
+mrs_sowerby_a - 0.2827099393183034
+rajah_a - 0.27326214313507274
+shell_b - 0.268392546868769
+yorkshire_a - 0.23843006858646504
+martha_a - 0.2190302824685086
+mary_b - 0.18621244471632184
+mary_a - 0.18005705296653227
+colin_a - 0.17764165468091872
+magic_b - 0.15603601467502135
+mrs_sowerby_b - 0.15447441312823246
+martha_b - 0.15262805505823787
+magic_a - 0.1483537957562871
+dickon_b - 0.08612045877453946
+colin_b - 0.08218818413089624
+dickon_a - 0.04709540118629918
+yorkshire_b - 0.029315609715508256
+rajah_b - 0.008868358764995409
+
+Result for the vector: mrs, coming from part medlock of the book
+Rank: 11 out of 18 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.15447441312823246
+
+shell_a - 0.33188932157882195
+mrs_sowerby_a - 0.2827099393183034
+rajah_a - 0.27326214313507274
+shell_b - 0.268392546868769
+yorkshire_a - 0.23843006858646504
+martha_a - 0.2190302824685086
+mary_b - 0.18621244471632184
+mary_a - 0.18005705296653227
+colin_a - 0.17764165468091872
+magic_b - 0.15603601467502135
+mrs_sowerby_b - 0.15447441312823246
+martha_b - 0.15262805505823787
+magic_a - 0.1483537957562871
+dickon_b - 0.08612045877453946
+colin_b - 0.08218818413089624
+dickon_a - 0.04709540118629918
+yorkshire_b - 0.029315609715508256
+rajah_b - 0.008868358764995409
+
+Result for the vector: mrs, coming from part sowerby of the book
+Rank: 1 out of 18 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.2827099393183034
+
+mrs_medlock_a - 0.2827099393183034
+shell_a - 0.21424886797375312
+mrs_medlock_b - 0.17955889647497109
+yorkshire_b - 0.16763774051441338
+yorkshire_a - 0.15950828790664673
+shell_b - 0.15223127603530884
+rajah_a - 0.1392678850452834
+mary_a - 0.13454613089561462
+colin_a - 0.13239854968781922
+martha_a - 0.1279545838792255
+mary_b - 0.11816455030931687
+martha_b - 0.10046347975730896
+dickon_a - 0.09854702064114704
+magic_a - 0.07105092170986303
+colin_b - 0.05628122016787529
+magic_b - 0.04678221186346449
+dickon_b - -0.026970820501446724
+rajah_b - -0.07169650708724583
+
+Result for the vector: mrs, coming from part sowerby of the book
+Rank: 3 out of 18 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.17955889647497109
+
+mrs_medlock_a - 0.2827099393183034
+shell_a - 0.21424886797375312
+mrs_medlock_b - 0.17955889647497109
+yorkshire_b - 0.16763774051441338
+yorkshire_a - 0.15950828790664673
+shell_b - 0.15223127603530884
+rajah_a - 0.1392678850452834
+mary_a - 0.13454613089561462
+colin_a - 0.13239854968781922
+martha_a - 0.1279545838792255
+mary_b - 0.11816455030931687
+martha_b - 0.10046347975730896
+dickon_a - 0.09854702064114704
+magic_a - 0.07105092170986303
+colin_b - 0.05628122016787529
+magic_b - 0.04678221186346449
+dickon_b - -0.026970820501446724
+rajah_b - -0.07169650708724583
+
+Result for the vector: yorkshire, coming from part a of the book
+Rank: 9 out of 12 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.10382333524088072
+
+magic_b - 0.25804931694416167
+mary_b - 0.25260365762125436
+mrs_medlock_a - 0.23843006858646504
+mrs_sowerby_b - 0.2145223468542099
+dickon_b - 0.20996862649917603
+shell_b - 0.17681582272052765
+mrs_medlock_b - 0.1638602121042964
+mrs_sowerby_a - 0.15950828790664673
+yorkshire_b - 0.10382333524088072
+colin_b - 0.101820208132267
+martha_b - 0.0769217312335968
+rajah_b - 0.03327071765871996
+
+Result for the vector: rajah, coming from part a of the book
+Rank: 12 out of 12 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: -0.06432320752649377
+
+mrs_medlock_a - 0.27326214313507274
+mrs_medlock_b - 0.21399626350425446
+magic_b - 0.1563225677301796
+shell_b - 0.147611805654276
+mary_b - 0.13936780149052758
+mrs_sowerby_a - 0.1392678850452834
+colin_b - 0.13893363707862147
+mrs_sowerby_b - 0.13140416928554613
+dickon_b - 0.08990064799193447
+martha_b - 0.08418274427549521
+yorkshire_b - 0.04344725608825714
+rajah_b - -0.06432320752649377
+
+Result for the vector: shell, coming from part a of the book
+Rank: 2 out of 12 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.2851361760415931
+
+mrs_medlock_a - 0.33188932157882195
+shell_b - 0.2851361760415931
+mrs_medlock_b - 0.23251596405816763
+mrs_sowerby_a - 0.21424886797375312
+magic_b - 0.19431441443221603
+mary_b - 0.1762855596457262
+dickon_b - 0.1628914527361722
+martha_b - 0.11335770110144033
+colin_b - 0.09823616753601047
+yorkshire_b - 0.06276415285299386
+mrs_sowerby_b - 0.06259188427973494
+rajah_b - 0.020656763891674246
+
+Result for the vector: magic, coming from part a of the book
+Rank: 8 out of 12 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.08807655203798724
+
+dickon_b - 0.20237641639639198
+mary_b - 0.19818840612103975
+mrs_medlock_a - 0.1483537957562871
+colin_b - 0.13547902212974502
+mrs_sowerby_b - 0.1301359275023916
+martha_b - 0.12975131361935482
+mrs_medlock_b - 0.0895169222786804
+magic_b - 0.08807655203798724
+shell_b - 0.08364529411927746
+mrs_sowerby_a - 0.07105092170986303
+rajah_b - 0.024480364813230324
+yorkshire_b - -0.04017727702327753
+
+Result for the vector: mary, coming from part b of the book
+Rank: 5 out of 12 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.1821417862815198
+
+yorkshire_a - 0.25260365762125436
+martha_a - 0.22645616250707695
+magic_a - 0.19818840612103975
+mrs_medlock_a - 0.18621244471632184
+mary_a - 0.1821417862815198
+colin_a - 0.1799060958567915
+shell_a - 0.1762855596457262
+rajah_a - 0.13936780149052758
+mrs_sowerby_a - 0.11816455030931687
+mrs_medlock_b - 0.08631067696416382
+dickon_a - 0.07541234566532566
+mrs_sowerby_b - 0.032760479532494544
+
+Result for the vector: dickon, coming from part b of the book
+Rank: 10 out of 12 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.0605100878769108
+
+yorkshire_a - 0.20996862649917603
+martha_a - 0.20518696652534388
+magic_a - 0.20237641639639198
+shell_a - 0.1628914527361722
+mary_a - 0.15308856964111328
+colin_a - 0.12674940010158425
+rajah_a - 0.08990064799193447
+mrs_medlock_a - 0.08612045877453946
+mrs_medlock_b - 0.07399425518581262
+dickon_a - 0.0605100878769108
+mrs_sowerby_b - 0.02105734497308731
+mrs_sowerby_a - -0.026970820501446724
+
+Result for the vector: colin, coming from part b of the book
+Rank: 9 out of 12 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.0910083604159463
+
+martha_a - 0.2646209536153941
+mary_a - 0.2551618218421936
+dickon_a - 0.17415710245626584
+mrs_medlock_b - 0.17137854738491332
+rajah_a - 0.13893363707862147
+magic_a - 0.13547902212974502
+yorkshire_a - 0.101820208132267
+shell_a - 0.09823616753601047
+colin_a - 0.0910083604159463
+mrs_medlock_a - 0.08218818413089624
+mrs_sowerby_b - 0.06391812860965729
+mrs_sowerby_a - 0.05628122016787529
+
+Result for the vector: martha, coming from part b of the book
+Rank: 11 out of 12 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.07650987742929585
+
+colin_a - 0.1676962574629861
+mrs_medlock_b - 0.15918463061039195
+mrs_medlock_a - 0.15262805505823787
+mrs_sowerby_b - 0.14067621529102325
+magic_a - 0.12975131361935482
+dickon_a - 0.12050209966289424
+shell_a - 0.11335770110144033
+mrs_sowerby_a - 0.10046347975730896
+rajah_a - 0.08418274427549521
+yorkshire_a - 0.0769217312335968
+martha_a - 0.07650987742929585
+mary_a - 0.0430440716445446
+
+Result for the vector: mrs, coming from part medlock of the book
+Rank: 5 out of 18 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.17955889647497109
+
+shell_a - 0.23251596405816763
+martha_a - 0.21656426141965082
+rajah_a - 0.21399626350425446
+colin_a - 0.18260259783840999
+mrs_sowerby_a - 0.17955889647497109
+colin_b - 0.17137854738491332
+magic_b - 0.1682530640137455
+yorkshire_a - 0.1638602121042964
+martha_b - 0.15918463061039195
+mary_a - 0.13264891414059327
+shell_b - 0.12292806083821613
+magic_a - 0.0895169222786804
+mary_b - 0.08631067696416382
+dickon_b - 0.07399425518581262
+yorkshire_b - 0.0627235732572843
+mrs_sowerby_b - 0.0354665065745706
+dickon_a - 0.02959992579819104
+rajah_b - -0.11828793272782105
+
+Result for the vector: mrs, coming from part medlock of the book
+Rank: 16 out of 18 characters
+Reciprocal rank: 0.0625
+Cosine similarity to the query: 0.0354665065745706
+
+shell_a - 0.23251596405816763
+martha_a - 0.21656426141965082
+rajah_a - 0.21399626350425446
+colin_a - 0.18260259783840999
+mrs_sowerby_a - 0.17955889647497109
+colin_b - 0.17137854738491332
+magic_b - 0.1682530640137455
+yorkshire_a - 0.1638602121042964
+martha_b - 0.15918463061039195
+mary_a - 0.13264891414059327
+shell_b - 0.12292806083821613
+magic_a - 0.0895169222786804
+mary_b - 0.08631067696416382
+dickon_b - 0.07399425518581262
+yorkshire_b - 0.0627235732572843
+mrs_sowerby_b - 0.0354665065745706
+dickon_a - 0.02959992579819104
+rajah_b - -0.11828793272782105
+
+Result for the vector: mrs, coming from part sowerby of the book
+Rank: 4 out of 18 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.15447441312823246
+
+yorkshire_a - 0.2145223468542099
+martha_a - 0.1857786195676292
+magic_b - 0.17373395483893028
+mrs_medlock_a - 0.15447441312823246
+martha_b - 0.14067621529102325
+rajah_a - 0.13140416928554613
+magic_a - 0.1301359275023916
+mary_a - 0.11669638007879257
+shell_b - 0.08660617470741272
+rajah_b - 0.06661784847431926
+colin_b - 0.06391812860965729
+shell_a - 0.06259188427973494
+mrs_medlock_b - 0.0354665065745706
+mary_b - 0.032760479532494544
+dickon_b - 0.02105734497308731
+yorkshire_b - -0.022991398841655363
+colin_a - -0.035980706244132125
+dickon_a - -0.09406856631823995
+
+Result for the vector: mrs, coming from part sowerby of the book
+Rank: 13 out of 18 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: 0.0354665065745706
+
+yorkshire_a - 0.2145223468542099
+martha_a - 0.1857786195676292
+magic_b - 0.17373395483893028
+mrs_medlock_a - 0.15447441312823246
+martha_b - 0.14067621529102325
+rajah_a - 0.13140416928554613
+magic_a - 0.1301359275023916
+mary_a - 0.11669638007879257
+shell_b - 0.08660617470741272
+rajah_b - 0.06661784847431926
+colin_b - 0.06391812860965729
+shell_a - 0.06259188427973494
+mrs_medlock_b - 0.0354665065745706
+mary_b - 0.032760479532494544
+dickon_b - 0.02105734497308731
+yorkshire_b - -0.022991398841655363
+colin_a - -0.035980706244132125
+dickon_a - -0.09406856631823995
+
+Result for the vector: yorkshire, coming from part b of the book
+Rank: 2 out of 12 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.10382333524088072
+
+mrs_sowerby_a - 0.16763774051441338
+yorkshire_a - 0.10382333524088072
+mary_a - 0.1000577300752564
+dickon_a - 0.0787913928876647
+shell_a - 0.06276415285299386
+mrs_medlock_b - 0.0627235732572843
+colin_a - 0.06175191888952521
+martha_a - 0.05437220050013723
+rajah_a - 0.04344725608825714
+mrs_medlock_a - 0.029315609715508256
+mrs_sowerby_b - -0.022991398841655363
+magic_a - -0.04017727702327753
+
+Result for the vector: rajah, coming from part b of the book
+Rank: 10 out of 12 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: -0.06432320752649377
+
+mary_a - 0.11976739376090155
+martha_a - 0.06755243302016664
+mrs_sowerby_b - 0.06661784847431926
+colin_a - 0.04876958869514398
+dickon_a - 0.04380577299577692
+yorkshire_a - 0.03327071765871996
+magic_a - 0.024480364813230324
+shell_a - 0.020656763891674246
+mrs_medlock_a - 0.008868358764995409
+rajah_a - -0.06432320752649377
+mrs_sowerby_a - -0.07169650708724583
+mrs_medlock_b - -0.11828793272782105
+
+Result for the vector: shell, coming from part b of the book
+Rank: 1 out of 12 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.2851361760415931
+
+shell_a - 0.2851361760415931
+mrs_medlock_a - 0.268392546868769
+yorkshire_a - 0.17681582272052765
+colin_a - 0.15294526973203634
+mrs_sowerby_a - 0.15223127603530884
+mary_a - 0.1499449461698532
+rajah_a - 0.147611805654276
+mrs_medlock_b - 0.12292806083821613
+mrs_sowerby_b - 0.08660617470741272
+magic_a - 0.08364529411927746
+martha_a - 0.08215136070412675
+dickon_a - 0.07785970253588556
+
+Result for the vector: magic, coming from part b of the book
+Rank: 10 out of 12 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.08807655203798724
+
+martha_a - 0.37684465966757125
+yorkshire_a - 0.25804931694416167
+shell_a - 0.19431441443221603
+colin_a - 0.19237914337987563
+mrs_sowerby_b - 0.17373395483893028
+mary_a - 0.17111611876237753
+mrs_medlock_b - 0.1682530640137455
+rajah_a - 0.1563225677301796
+mrs_medlock_a - 0.15603601467502135
+magic_a - 0.08807655203798724
+dickon_a - 0.061553532285883304
+mrs_sowerby_a - 0.04678221186346449

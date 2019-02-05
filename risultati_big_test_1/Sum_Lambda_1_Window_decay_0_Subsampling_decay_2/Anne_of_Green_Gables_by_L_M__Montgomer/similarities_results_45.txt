@@ -1,0 +1,510 @@
+
+Result for the vector: anne, coming from part a of the book
+Rank: 2 out of 12 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.9139806032180786
+
+mrs_lynde_a - 0.9867123953528657
+anne_b - 0.9139806032180786
+diana_b - 0.9094303846359253
+carmody_b - 0.9058756772205653
+mr_bell_b - 0.9053414733809676
+matthew_b - 0.8993327677647626
+marilla_b - 0.899286150932312
+jane_b - 0.8988184332847595
+mr_phillips_a - 0.8966597318649292
+geraldine_b - 0.8961889805681137
+gilbert_b - 0.8781211376190186
+gil_b - 0.2799133062362671
+
+Result for the vector: marilla, coming from part a of the book
+Rank: 10 out of 12 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.9284794373226518
+
+mrs_lynde_a - 0.9950796365737986
+anne_b - 0.9453758033886089
+diana_b - 0.942198279965028
+mr_bell_b - 0.9394188839370382
+carmody_b - 0.9392780065536566
+geraldine_b - 0.9335966785434868
+mr_phillips_a - 0.9315242212102298
+jane_b - 0.931331280986592
+matthew_b - 0.9292747462660377
+marilla_b - 0.9284794373226518
+gilbert_b - 0.9211977767230421
+gil_b - 0.26226250754222274
+
+Result for the vector: diana, coming from part a of the book
+Rank: 3 out of 12 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.8977279602127067
+
+mrs_lynde_a - 0.9840987901805389
+anne_b - 0.8988360106251262
+diana_b - 0.8977279602127067
+carmody_b - 0.8971179601094675
+mr_bell_b - 0.8950348700614161
+geraldine_b - 0.8931278586387698
+mr_phillips_a - 0.8824140955456568
+marilla_b - 0.8819123436160308
+matthew_b - 0.8808606266975465
+jane_b - 0.8794922756846131
+gilbert_b - 0.8722837491204605
+gil_b - 0.27326287467854515
+
+Result for the vector: matthew, coming from part a of the book
+Rank: 9 out of 12 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.9247424647365547
+
+mrs_lynde_a - 0.9921193118166531
+anne_b - 0.9385774731636047
+diana_b - 0.9360942244529724
+carmody_b - 0.9360530338318981
+mr_bell_b - 0.9355662147869536
+geraldine_b - 0.9284502310484527
+jane_b - 0.9275664687156677
+marilla_b - 0.9257206320762634
+matthew_b - 0.9247424647365547
+mr_phillips_a - 0.92259281873703
+gilbert_b - 0.9138928055763245
+gil_b - 0.26428043842315674
+
+Result for the vector: gilbert, coming from part a of the book
+Rank: 10 out of 12 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.9482283592224121
+
+jane_b - 0.9688124060630798
+matthew_b - 0.9680433888409519
+mr_bell_b - 0.9680012156963715
+diana_b - 0.9679667353630066
+marilla_b - 0.9648863673210144
+carmody_b - 0.9565782521115709
+anne_b - 0.9550074934959412
+mr_phillips_a - 0.954575777053833
+geraldine_b - 0.9499637514374422
+gilbert_b - 0.9482283592224121
+mrs_lynde_a - 0.9227151228615731
+gil_b - 0.2130456566810608
+
+Result for the vector: jane, coming from part a of the book
+Rank: 6 out of 12 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.9543767002596455
+
+mr_bell_b - 0.9659227440976318
+carmody_b - 0.9614161252975533
+diana_b - 0.9603170180131799
+matthew_b - 0.9565249137252672
+anne_b - 0.9565049435791424
+jane_b - 0.9543767002596455
+marilla_b - 0.9521291284484208
+mr_phillips_a - 0.9500626355372306
+gilbert_b - 0.9435306225102785
+geraldine_b - 0.9415989587785055
+mrs_lynde_a - 0.9314591288566656
+gil_b - 0.25298328679899695
+
+Result for the vector: mr, coming from part phillips of the book
+Rank: 1 out of 19 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.959808676237127
+
+mr_bell_b - 0.959808676237127
+diana_b - 0.958544909954071
+gilbert_a - 0.954575777053833
+carmody_a - 0.954124927520752
+jane_b - 0.9540045857429504
+anne_b - 0.9521059989929199
+jane_a - 0.9500626355372306
+matthew_b - 0.949207785772815
+carmody_b - 0.949084278886575
+gilbert_b - 0.9486051201820374
+marilla_b - 0.9396067261695862
+geraldine_b - 0.937182609010781
+marilla_a - 0.9315242212102298
+matthew_a - 0.92259281873703
+mrs_lynde_a - 0.9219311429221135
+cordelia_a - 0.9056768473579394
+anne_a - 0.8966597318649292
+diana_a - 0.8824140955456568
+gil_b - 0.22868327796459198
+
+Result for the vector: mrs, coming from part spencer of the book
+Rank: 7 out of 20 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.25630642511286933
+
+gil_b - 1.0
+anne_a - 0.2799133062362671
+diana_a - 0.27326287467854515
+matthew_a - 0.26428043842315674
+marilla_a - 0.26226250754222274
+cordelia_a - 0.2621522687582814
+mrs_lynde_a - 0.25630642511286933
+carmody_b - 0.25519560308430256
+jane_a - 0.25298328679899695
+carmody_a - 0.24901534616947174
+mr_bell_b - 0.2406707626781096
+matthew_b - 0.23765888883716574
+anne_b - 0.22900664806365967
+mr_phillips_a - 0.22868327796459198
+marilla_b - 0.22695337235927582
+diana_b - 0.2160070687532425
+gilbert_b - 0.21515116095542908
+gilbert_a - 0.2130456566810608
+geraldine_b - 0.20294469875426932
+jane_b - 0.20179910957813263
+
+Result for the vector: mrs, coming from part thomas of the book
+Rank: 7 out of 20 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.25630642511286933
+
+gil_b - 1.0
+anne_a - 0.2799133062362671
+diana_a - 0.27326287467854515
+matthew_a - 0.26428043842315674
+marilla_a - 0.26226250754222274
+cordelia_a - 0.2621522687582814
+mrs_lynde_a - 0.25630642511286933
+carmody_b - 0.25519560308430256
+jane_a - 0.25298328679899695
+carmody_a - 0.24901534616947174
+mr_bell_b - 0.2406707626781096
+matthew_b - 0.23765888883716574
+anne_b - 0.22900664806365967
+mr_phillips_a - 0.22868327796459198
+marilla_b - 0.22695337235927582
+diana_b - 0.2160070687532425
+gilbert_b - 0.21515116095542908
+gilbert_a - 0.2130456566810608
+geraldine_b - 0.20294469875426932
+jane_b - 0.20179910957813263
+
+Result for the vector: carmody, coming from part a of the book
+Rank: 1 out of 12 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9764881120019043
+
+carmody_b - 0.9764881120019043
+mr_bell_b - 0.9716759613655799
+diana_b - 0.9642840027809143
+jane_b - 0.9603700041770935
+anne_b - 0.9581686854362488
+matthew_b - 0.9560616638623693
+marilla_b - 0.955548107624054
+mr_phillips_a - 0.954124927520752
+geraldine_b - 0.9525586990977126
+gilbert_b - 0.9486010670661926
+mrs_lynde_a - 0.9329186637949164
+gil_b - 0.24901534616947174
+
+Result for the vector: mr, coming from part bell of the book
+Rank: 13 out of 19 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: 0.22868327796459198
+
+gil_b - 1.0
+anne_a - 0.2799133062362671
+diana_a - 0.27326287467854515
+matthew_a - 0.26428043842315674
+marilla_a - 0.26226250754222274
+cordelia_a - 0.2621522687582814
+mrs_lynde_a - 0.25630642511286933
+carmody_b - 0.25519560308430256
+jane_a - 0.25298328679899695
+carmody_a - 0.24901534616947174
+matthew_b - 0.23765888883716574
+anne_b - 0.22900664806365967
+mr_phillips_a - 0.22868327796459198
+marilla_b - 0.22695337235927582
+diana_b - 0.2160070687532425
+gilbert_b - 0.21515116095542908
+gilbert_a - 0.2130456566810608
+geraldine_b - 0.20294469875426932
+jane_b - 0.20179910957813263
+
+Result for the vector: geraldine, coming from part a of the book
+Rank: 11 out of 12 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.20294469875426932
+
+gil_b - 1.0
+mrs_lynde_a - 0.25630642511286933
+carmody_b - 0.25519560308430256
+mr_bell_b - 0.2406707626781096
+matthew_b - 0.23765888883716574
+anne_b - 0.22900664806365967
+mr_phillips_a - 0.22868327796459198
+marilla_b - 0.22695337235927582
+diana_b - 0.2160070687532425
+gilbert_b - 0.21515116095542908
+geraldine_b - 0.20294469875426932
+jane_b - 0.20179910957813263
+
+Result for the vector: gil, coming from part a of the book
+Rank: 1 out of 12 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 1.0
+
+gil_b - 1.0
+mrs_lynde_a - 0.25630642511286933
+carmody_b - 0.25519560308430256
+mr_bell_b - 0.2406707626781096
+matthew_b - 0.23765888883716574
+anne_b - 0.22900664806365967
+mr_phillips_a - 0.22868327796459198
+marilla_b - 0.22695337235927582
+diana_b - 0.2160070687532425
+gilbert_b - 0.21515116095542908
+geraldine_b - 0.20294469875426932
+jane_b - 0.20179910957813263
+
+Result for the vector: anne, coming from part b of the book
+Rank: 9 out of 12 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.9139806032180786
+
+mr_bell_b - 0.96067151310061
+carmody_a - 0.9581686854362488
+jane_a - 0.9565049435791424
+gilbert_a - 0.9550074934959412
+mr_phillips_a - 0.9521059989929199
+marilla_a - 0.9453758033886089
+matthew_a - 0.9385774731636047
+mrs_lynde_a - 0.9379578195785193
+anne_a - 0.9139806032180786
+cordelia_a - 0.9058662709077451
+diana_a - 0.8988360106251262
+mrs_thomas_b - 0.22900664806365967
+
+Result for the vector: marilla, coming from part b of the book
+Rank: 7 out of 12 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.9284794373226518
+
+gilbert_a - 0.9648863673210144
+mr_bell_b - 0.9599463033660149
+carmody_a - 0.955548107624054
+jane_a - 0.9521291284484208
+cordelia_a - 0.9469366701283072
+mr_phillips_a - 0.9396067261695862
+marilla_a - 0.9284794373226518
+matthew_a - 0.9257206320762634
+mrs_lynde_a - 0.9183366250000389
+anne_a - 0.899286150932312
+diana_a - 0.8819123436160308
+mrs_thomas_b - 0.22695337235927582
+
+Result for the vector: diana, coming from part b of the book
+Rank: 11 out of 12 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.8977279602127067
+
+gilbert_a - 0.9679667353630066
+mr_bell_b - 0.9670894434180695
+carmody_a - 0.9642840027809143
+jane_a - 0.9603170180131799
+mr_phillips_a - 0.958544909954071
+marilla_a - 0.942198279965028
+mrs_lynde_a - 0.936167832384578
+matthew_a - 0.9360942244529724
+cordelia_a - 0.9116722397999637
+anne_a - 0.9094303846359253
+diana_a - 0.8977279602127067
+mrs_thomas_b - 0.2160070687532425
+
+Result for the vector: matthew, coming from part b of the book
+Rank: 8 out of 12 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.9247424647365547
+
+gilbert_a - 0.9680433888409519
+mr_bell_b - 0.9636642645697553
+jane_a - 0.9565249137252672
+carmody_a - 0.9560616638623693
+mr_phillips_a - 0.949207785772815
+cordelia_a - 0.9371337965567355
+marilla_a - 0.9292747462660377
+matthew_a - 0.9247424647365547
+mrs_lynde_a - 0.9222944974899357
+anne_a - 0.8993327677647626
+diana_a - 0.8808606266975465
+mrs_thomas_b - 0.23765888883716574
+
+Result for the vector: gilbert, coming from part b of the book
+Rank: 4 out of 12 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.9482283592224121
+
+mr_bell_b - 0.956569342510979
+mr_phillips_a - 0.9486051201820374
+carmody_a - 0.9486010670661926
+gilbert_a - 0.9482283592224121
+jane_a - 0.9435306225102785
+marilla_a - 0.9211977767230421
+matthew_a - 0.9138928055763245
+mrs_lynde_a - 0.9117116279430184
+anne_a - 0.8781211376190186
+diana_a - 0.8722837491204605
+cordelia_a - 0.8692984658897853
+mrs_thomas_b - 0.21515116095542908
+
+Result for the vector: jane, coming from part b of the book
+Rank: 4 out of 12 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.9543767002596455
+
+gilbert_a - 0.9688124060630798
+mr_bell_b - 0.9676968147664318
+carmody_a - 0.9603700041770935
+jane_a - 0.9543767002596455
+mr_phillips_a - 0.9540045857429504
+marilla_a - 0.931331280986592
+cordelia_a - 0.9300502580374342
+matthew_a - 0.9275664687156677
+mrs_lynde_a - 0.9221522165627625
+anne_a - 0.8988184332847595
+diana_a - 0.8794922756846131
+mrs_thomas_b - 0.20179910957813263
+
+Result for the vector: mr, coming from part phillips of the book
+Rank: 11 out of 19 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.2406707626781096
+
+gil_b - 1.0
+anne_a - 0.2799133062362671
+diana_a - 0.27326287467854515
+matthew_a - 0.26428043842315674
+marilla_a - 0.26226250754222274
+cordelia_a - 0.2621522687582814
+mrs_lynde_a - 0.25630642511286933
+carmody_b - 0.25519560308430256
+jane_a - 0.25298328679899695
+carmody_a - 0.24901534616947174
+mr_bell_b - 0.2406707626781096
+matthew_b - 0.23765888883716574
+anne_b - 0.22900664806365967
+marilla_b - 0.22695337235927582
+diana_b - 0.2160070687532425
+gilbert_b - 0.21515116095542908
+gilbert_a - 0.2130456566810608
+geraldine_b - 0.20294469875426932
+jane_b - 0.20179910957813263
+
+Result for the vector: mrs, coming from part spencer of the book
+Rank: 7 out of 20 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.25630642511286933
+
+gil_b - 1.0
+anne_a - 0.2799133062362671
+diana_a - 0.27326287467854515
+matthew_a - 0.26428043842315674
+marilla_a - 0.26226250754222274
+cordelia_a - 0.2621522687582814
+mrs_lynde_a - 0.25630642511286933
+carmody_b - 0.25519560308430256
+jane_a - 0.25298328679899695
+carmody_a - 0.24901534616947174
+mr_bell_b - 0.2406707626781096
+matthew_b - 0.23765888883716574
+anne_b - 0.22900664806365967
+mr_phillips_a - 0.22868327796459198
+marilla_b - 0.22695337235927582
+diana_b - 0.2160070687532425
+gilbert_b - 0.21515116095542908
+gilbert_a - 0.2130456566810608
+geraldine_b - 0.20294469875426932
+jane_b - 0.20179910957813263
+
+Result for the vector: mrs, coming from part thomas of the book
+Rank: 7 out of 20 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.25630642511286933
+
+gil_b - 1.0
+anne_a - 0.2799133062362671
+diana_a - 0.27326287467854515
+matthew_a - 0.26428043842315674
+marilla_a - 0.26226250754222274
+cordelia_a - 0.2621522687582814
+mrs_lynde_a - 0.25630642511286933
+carmody_b - 0.25519560308430256
+jane_a - 0.25298328679899695
+carmody_a - 0.24901534616947174
+mr_bell_b - 0.2406707626781096
+matthew_b - 0.23765888883716574
+anne_b - 0.22900664806365967
+mr_phillips_a - 0.22868327796459198
+marilla_b - 0.22695337235927582
+diana_b - 0.2160070687532425
+gilbert_b - 0.21515116095542908
+gilbert_a - 0.2130456566810608
+geraldine_b - 0.20294469875426932
+jane_b - 0.20179910957813263
+
+Result for the vector: carmody, coming from part b of the book
+Rank: 1 out of 12 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9764881120019043
+
+carmody_a - 0.9764881120019043
+mr_bell_b - 0.9690567525377951
+jane_a - 0.9614161252975533
+gilbert_a - 0.9565782521115709
+mr_phillips_a - 0.949084278886575
+marilla_a - 0.9392780065536566
+matthew_a - 0.9360530338318981
+mrs_lynde_a - 0.9289823089816939
+cordelia_a - 0.922378540039069
+anne_a - 0.9058756772205653
+diana_a - 0.8971179601094675
+mrs_thomas_b - 0.25519560308430256
+
+Result for the vector: mr, coming from part bell of the book
+Rank: 10 out of 19 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.959808676237127
+
+carmody_a - 0.9716759613655799
+carmody_b - 0.9690567525377951
+gilbert_a - 0.9680012156963715
+jane_b - 0.9676968147664318
+diana_b - 0.9670894434180695
+jane_a - 0.9659227440976318
+matthew_b - 0.9636642645697553
+anne_b - 0.96067151310061
+marilla_b - 0.9599463033660149
+mr_phillips_a - 0.959808676237127
+gilbert_b - 0.956569342510979
+geraldine_b - 0.9562865210686209
+marilla_a - 0.9394188839370382
+matthew_a - 0.9355662147869536
+mrs_lynde_a - 0.9318393109893187
+cordelia_a - 0.9197154963101335
+anne_a - 0.9053414733809676
+diana_a - 0.8950348700614161
+gil_b - 0.2406707626781096
+
+Result for the vector: cordelia, coming from part b of the book
+Rank: 6 out of 12 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.2621522687582814
+
+mrs_thomas_b - 1.0
+anne_a - 0.2799133062362671
+diana_a - 0.27326287467854515
+matthew_a - 0.26428043842315674
+marilla_a - 0.26226250754222274
+cordelia_a - 0.2621522687582814
+mrs_lynde_a - 0.25630642511286933
+jane_a - 0.25298328679899695
+carmody_a - 0.24901534616947174
+mr_bell_b - 0.2406707626781096
+mr_phillips_a - 0.22868327796459198
+gilbert_a - 0.2130456566810608

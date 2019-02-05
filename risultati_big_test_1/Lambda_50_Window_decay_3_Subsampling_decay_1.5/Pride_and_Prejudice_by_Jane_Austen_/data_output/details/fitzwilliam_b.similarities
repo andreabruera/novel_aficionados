@@ -1,0 +1,11 @@
+fitzwilliam part b
+
+Sentence no. 1
+Sentence: ['till', 'i', 'was', 'in', 'kent', 'and', 'saw', 'so', 'much', 'both', 'of', 'and', 'his', 'relation', 'colonel', '___', 'i', 'was', 'ignorant', 'of', 'the', 'truth', 'myself']
+Sampling: 100000.0	Window: 15
+Window decay: 3	Sample decay: 1.5	Lambda: 50.0
+Current alpha: 1.0
+Subsampled line: ['till', 'i', 'kent', 'saw', 'so', 'much', 'both', 'of', 'his', 'relation', 'colonel', 'i', 'was', 'ignorant', 'truth', 'myself']
+
+[('ignorant', 0.4120967984199524), ('serges', 0.3970070481300354), ('prosvita', 0.3937130272388458), ('jimenes', 0.385442852973938), ('petrol-powered', 0.3767123222351074), ('jini', 0.37113863229751587), ('two-set', 0.3708098530769348), ('leocadia', 0.37079909443855286), ('andromaque', 0.3680969774723053), ('görgei', 0.3668545186519623), ('self-evident', 0.36533796787261963), ('interclube', 0.36504170298576355), ('eastburn', 0.363150954246521), ('paheli', 0.36279213428497314), ('unwise', 0.3624120056629181), ('pospíšil', 0.3615826368331909), ('erlingsson', 0.36134588718414307), ('hagadol', 0.36082667112350464), ('al-oruba', 0.3600505292415619), ('fourth-straight', 0.35862481594085693), ('indeed', 0.358542263507843), ('muça', 0.357725590467453), ('dolgorukov', 0.35732826590538025), ('jeżów', 0.35499122738838196), ('perranporth', 0.35492026805877686), ('hibberts', 0.3544608950614929), ('adame', 0.353426456451416), ('paihia', 0.3521115779876709), ('romeoville', 0.35162198543548584), ('unseemly', 0.3509611487388611), ('prc2', 0.350873738527298), ('höss', 0.3505800664424896), ('matfield', 0.349956214427948), ('susya', 0.34972333908081055), ('3151', 0.3494936227798462), ('wydawnictwo', 0.3489546775817871), ('tradewind', 0.34882187843322754), ('manifestly', 0.3487541973590851), ('kültür', 0.3486885130405426), ('groundless', 0.3482890725135803), ('cumorah', 0.3480202555656433), ('fnr', 0.34694021940231323), ('lebanese-born', 0.3469390273094177), ('eldr', 0.34681111574172974), ('bronchopneumonia', 0.34661415219306946), ('eclampsia', 0.3465726971626282), ('zaritsky', 0.34610292315483093), ('ardfinnan', 0.34557652473449707), ('plaids', 0.34475481510162354), ('imprudent', 0.34460437297821045)]
+

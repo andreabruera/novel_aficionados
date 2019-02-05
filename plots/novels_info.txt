@@ -1,0 +1,84 @@
+Name:	A Christmas Carol
+Length in words:	33241
+Characters evaluated:	7
+Median Rank:	3.5
+MRR:	0.5
+Variance in characters frequency: 6709.959999999999
+
+Name:	Adventures of Huckleberry Finn
+Length in words:	120917
+Characters evaluated:	15
+Median Rank:	8.5
+MRR:	0.17202932892271128
+Variance in characters frequency: 16107.64
+
+Name:	Anne of Green Gables
+Length in words:	110458
+Characters evaluated:	21
+Median Rank:	10.5
+MRR:	0.16679386829644527
+Variance in characters frequency: 67823.8988888889
+
+Name:	Confessions of a Thug
+Length in words:	230521
+Characters evaluated:	18
+Median Rank:	8.5
+MRR:	0.2688727482628867
+Variance in characters frequency: 3016.6726530612236
+
+Name:	Moby Dick Or The Whale
+Length in words:	221916
+Characters evaluated:	15
+Median Rank:	4.0
+MRR:	0.3411086928944072
+Variance in characters frequency: 11705.969754253307
+
+Name:	Peter Pan
+Length in words:	51741
+Characters evaluated:	12
+Median Rank:	3.5
+MRR:	0.3735963531418077
+Variance in characters frequency: 14799.494897959183
+
+Name:	Pride and Prejudice
+Length in words:	126073
+Characters evaluated:	32
+Median Rank:	24.0
+MRR:	0.11853040631822744
+Variance in characters frequency: 17443.354166666668
+
+Name:	The Hound of the Baskervilles
+Length in words:	63098
+Characters evaluated:	9
+Median Rank:	2.0
+MRR:	0.5855654761904762
+Variance in characters frequency: 3490.0867346938785
+
+Name:	The Secret Garden
+Length in words:	86433
+Characters evaluated:	13
+Median Rank:	3.5
+MRR:	0.4039075099736864
+Variance in characters frequency: 29256.875
+
+Name:	The Three Brothers
+Length in words:	145690
+Characters evaluated:	27
+Median Rank:	13.0
+MRR:	0.17341356152160747
+Variance in characters frequency: 9163.604570637122
+
+Name:	The Turn of the Screw
+Length in words:	46626
+Characters evaluated:	5
+Median Rank:	3.0
+MRR:	0.5104166666666666
+Variance in characters frequency: 893.0612244897958
+
+Name:	The Yellow Wallpaper
+Length in words:	9429
+Characters evaluated:	3
+Median Rank:	1.0
+MRR:	1.0
+Variance in characters frequency: 272.25
+

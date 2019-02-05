@@ -1,0 +1,11 @@
+char_minar part b
+
+Sentence no. 1
+Sentence: ['p', '79', 'buiding', 'changed', 'to', 'building', 'that', 'noble', 'building', 'the', '___']
+Sampling: 100000.0	Window: 15
+Window decay: 0	Sample decay: 1.1	Lambda: 50.0
+Current alpha: 1.0
+Subsampled line: ['p', '79', 'changed', 'building', 'that', 'noble', 'building']
+
+[('noble', 0.42182815074920654), ('przedmieście', 0.382928729057312), ('houses', 0.37812551856040955), ('building', 0.37565553188323975), ('gdańska', 0.36977455019950867), ('Święcicki', 0.3632064759731293), ('tharakan', 0.36152493953704834), ('sakthan', 0.36113080382347107), ('4-storey', 0.3550015687942505), ('three-winged', 0.3541637063026428), ('neo-georgian', 0.3541277348995209), ('sieniawski', 0.35401225090026855), ('!year', 0.35224491357803345), ('ostrogski', 0.3511587679386139), ('neo-baroque', 0.3504514694213867), ('ramavarma', 0.349590003490448), ('ii-listed', 0.3488788604736328), ('jagiellońska', 0.3488238453865051), ('!bgcolor=#cccccc', 0.34862077236175537), ('balthasar', 0.3485623300075531), ('pakubuwono', 0.3479219377040863), ('ii*-listed', 0.34754234552383423), ('three-storied', 0.3464377522468567), ('kolathiri', 0.34538695216178894), ('two-and-a-half-story', 0.34537121653556824), ('marcianus', 0.34397584199905396), ('krishnappa', 0.3433549404144287), ('patrician', 0.34255534410476685), ('ogiński', 0.34226900339126587), ('gable-front', 0.34183162450790405), ('flavian', 0.34123513102531433), ('neo-renaissance', 0.3411467969417572), ('radziwiłł', 0.3410980701446533), ('p', 0.34100401401519775), ('tharavadu', 0.34090089797973633), ('krakowskie', 0.34081196784973145), ('kovilakam', 0.3405616879463196), ('balassa', 0.3404724895954132), ('csáky', 0.3394886255264282), ('5-story', 0.33947932720184326), ('sub-castes', 0.3393269181251526), ('!totals', 0.3390015661716461), ('rathnamala', 0.33871355652809143), ('cethegus', 0.33818745613098145), ('tyszkiewicz', 0.3375885784626007), ('__notoc__', 0.3372986912727356), ('bredgade', 0.33726078271865845), ('townhouses', 0.3371075689792633), ('younkers', 0.33684366941452026), ('church”', 0.3366378843784332)]
+

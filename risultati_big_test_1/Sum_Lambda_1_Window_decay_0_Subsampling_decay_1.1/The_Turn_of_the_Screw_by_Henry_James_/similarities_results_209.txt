@@ -1,0 +1,80 @@
+
+Result for the vector: miles, coming from part a of the book
+Rank: 2 out of 4 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.9631341695785522
+
+bly_b - 0.9652196764945984
+miles_b - 0.9631341695785522
+flora_b - 0.9546802043914795
+quint_b - 0.201242133975029
+
+Result for the vector: flora, coming from part a of the book
+Rank: 1 out of 4 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.962740421295166
+
+flora_b - 0.962740421295166
+miles_b - 0.9621298909187317
+bly_b - 0.9610349535942078
+quint_b - 0.21000365912914276
+
+Result for the vector: quint, coming from part a of the book
+Rank: 4 out of 4 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.19096873348765012
+
+bly_b - 0.9573934648867544
+flora_b - 0.9390714132232333
+miles_b - 0.931285079198188
+quint_b - 0.19096873348765012
+
+Result for the vector: bly, coming from part a of the book
+Rank: 3 out of 4 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.2136673480272293
+
+quint_b - 1.0
+flora_b - 0.22096006572246552
+bly_b - 0.2136673480272293
+miles_b - 0.21323005855083466
+
+Result for the vector: miles, coming from part b of the book
+Rank: 1 out of 4 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9631341695785522
+
+miles_a - 0.9631341695785522
+flora_a - 0.9621298909187317
+quint_a - 0.931285079198188
+bly_a - 0.21323005855083466
+
+Result for the vector: flora, coming from part b of the book
+Rank: 1 out of 4 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.962740421295166
+
+flora_a - 0.962740421295166
+miles_a - 0.9546802043914795
+quint_a - 0.9390714132232333
+bly_a - 0.22096006572246552
+
+Result for the vector: quint, coming from part b of the book
+Rank: 4 out of 4 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.19096873348765012
+
+bly_a - 1.0
+flora_a - 0.21000365912914276
+miles_a - 0.201242133975029
+quint_a - 0.19096873348765012
+
+Result for the vector: bly, coming from part b of the book
+Rank: 4 out of 4 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.2136673480272293
+
+miles_a - 0.9652196764945984
+flora_a - 0.9610349535942078
+quint_a - 0.9573934648867544
+bly_a - 0.2136673480272293

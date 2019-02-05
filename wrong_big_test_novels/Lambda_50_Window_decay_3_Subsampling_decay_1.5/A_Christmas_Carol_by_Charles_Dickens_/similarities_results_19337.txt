@@ -1,0 +1,144 @@
+
+Result for the vector: scrooge, coming from part a of the book
+Rank: 3 out of 6 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.13341055015262687
+
+bob_b - 0.21347492079362046
+martha_b - 0.1692517250776291
+scrooge_b - 0.13341055015262687
+spirit_b - 0.12843807424420345
+marley_b - 0.06497890695866668
+peter_b - -0.015945762395858765
+
+Result for the vector: bob, coming from part a of the book
+Rank: 5 out of 6 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.04143142202087772
+
+spirit_b - 0.20560477409391248
+scrooge_b - 0.16948356719364094
+marley_b - 0.08407828712930007
+martha_b - 0.08042811842048525
+bob_b - 0.04143142202087772
+peter_b - 0.030543970854400734
+
+Result for the vector: marley, coming from part a of the book
+Rank: 3 out of 6 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.19365766308651347
+
+spirit_b - 0.2458103296643692
+scrooge_b - 0.23700334915508875
+marley_b - 0.19365766308651347
+peter_b - 0.1732290736803137
+bob_b - 0.1109203091812318
+martha_b - 0.0778637477118894
+
+Result for the vector: peter, coming from part a of the book
+Rank: 3 out of 6 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.08980517089366913
+
+bob_b - 0.1418340099404458
+spirit_b - 0.11365443806810498
+peter_b - 0.08980517089366913
+martha_b - 0.07114093750715256
+scrooge_b - 0.03765456526550268
+marley_b - -0.0013397706606170737
+
+Result for the vector: spirit, coming from part a of the book
+Rank: 2 out of 6 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.15960160373454113
+
+peter_b - 0.16150349378585815
+spirit_b - 0.15960160373454113
+bob_b - 0.1188128178957945
+scrooge_b - 0.09318442087266338
+martha_b - 0.08777555078268051
+marley_b - 0.08556132273558748
+
+Result for the vector: martha, coming from part a of the book
+Rank: 5 out of 6 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.04033605381846428
+
+spirit_b - 0.24376634489793625
+bob_b - 0.19784434729350656
+scrooge_b - 0.1428907428448952
+marley_b - 0.1116196844464447
+martha_b - 0.04033605381846428
+peter_b - 0.016431724652647972
+
+Result for the vector: scrooge, coming from part b of the book
+Rank: 4 out of 6 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.13341055015262687
+
+marley_a - 0.23700334915508875
+bob_a - 0.16948356719364094
+martha_a - 0.1428907428448952
+scrooge_a - 0.13341055015262687
+spirit_a - 0.09318442087266338
+peter_a - 0.03765456526550268
+
+Result for the vector: bob, coming from part b of the book
+Rank: 6 out of 6 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.04143142202087772
+
+scrooge_a - 0.21347492079362046
+martha_a - 0.19784434729350656
+peter_a - 0.1418340099404458
+spirit_a - 0.1188128178957945
+marley_a - 0.1109203091812318
+bob_a - 0.04143142202087772
+
+Result for the vector: marley, coming from part b of the book
+Rank: 1 out of 6 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.19365766308651347
+
+marley_a - 0.19365766308651347
+martha_a - 0.1116196844464447
+spirit_a - 0.08556132273558748
+bob_a - 0.08407828712930007
+scrooge_a - 0.06497890695866668
+peter_a - -0.0013397706606170737
+
+Result for the vector: peter, coming from part b of the book
+Rank: 3 out of 6 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.08980517089366913
+
+marley_a - 0.1732290736803137
+spirit_a - 0.16150349378585815
+peter_a - 0.08980517089366913
+bob_a - 0.030543970854400734
+martha_a - 0.016431724652647972
+scrooge_a - -0.015945762395858765
+
+Result for the vector: spirit, coming from part b of the book
+Rank: 4 out of 6 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.15960160373454113
+
+marley_a - 0.2458103296643692
+martha_a - 0.24376634489793625
+bob_a - 0.20560477409391248
+spirit_a - 0.15960160373454113
+scrooge_a - 0.12843807424420345
+peter_a - 0.11365443806810498
+
+Result for the vector: martha, coming from part b of the book
+Rank: 6 out of 6 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.04033605381846428
+
+scrooge_a - 0.1692517250776291
+spirit_a - 0.08777555078268051
+bob_a - 0.08042811842048525
+marley_a - 0.0778637477118894
+peter_a - 0.07114093750715256
+martha_a - 0.04033605381846428

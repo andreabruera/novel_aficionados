@@ -1,0 +1,11 @@
+zora part b
+
+Sentence no. 1
+Sentence: ['___', 'was', 'beautiful', 'azima', 'was', 'even', 'more', 'so', 'but', 'surpassed', 'them', 'both', 'in', 'as', 'great', 'a', 'degree', 'as', 'they', 'excelled', 'any', 'of', 'their', 'sex', 'i', 'had', 'ever', 'seen']
+Sampling: 100000.0	Window: 15
+Window decay: 3	Sample decay: 1.5	Lambda: 10.0
+Current alpha: 1.0
+Subsampled line: ['was', 'beautiful', 'even', 'more', 'so', 'but', 'surpassed', 'them', 'both', 'great', 'a', 'degree', 'they', 'excelled', 'any']
+
+[('co-screenwriter', 0.3462693989276886), ('degrees', 0.3381919264793396), ('degree', 0.3345181941986084), ('கோயில்', 0.33446988463401794), ('jdt', 0.33194640278816223), ('accreting', 0.3316631615161896), ('subtlety', 0.3279523253440857), ('expressiveness', 0.327630877494812), ('erudition', 0.32679176330566406), ('musicianship', 0.3254072666168213), ('angelelli', 0.3246273398399353), ('expressive', 0.32382017374038696), ('solidity', 0.3233398199081421), ('aforethought', 0.32329893112182617), ('virtuosity', 0.3213855028152466), ('earth-shattering', 0.3212094008922577), ('vividness', 0.317462682723999), ('glass-walled', 0.3170078992843628), ('profundity', 0.3148035407066345), ('monsell', 0.3128586411476135), ('accomplishment', 0.3113411068916321), ('progestogenic', 0.310837984085083), ('grandeur', 0.3092918395996094), ('earnestness', 0.30536365509033203), ('hegemann', 0.30470457673072815), ('statesmanship', 0.3046003580093384), ('exactness', 0.3042408227920532), ('roundness', 0.3039659559726715), ('baillet', 0.30370593070983887), ('eloquence', 0.3026147782802582), ('phds', 0.302174836397171), ('monumentality', 0.30142882466316223), ('butes', 0.3001253604888916), ('drilon', 0.30002471804618835), ('lyricism', 0.2998811602592468), ('manoeuvrable', 0.29952389001846313), ('musicality', 0.2981007695198059), ('dalr', 0.2971082925796509), ('agnar', 0.29693838953971863), ('agreeableness', 0.29662778973579407), ('grandiosity', 0.29618513584136963), ('benching', 0.29609277844429016), ('vivacity', 0.29601821303367615), ('rochat', 0.2953210771083832), ('peutinger', 0.29517215490341187), ('vojtech', 0.2951415479183197), ('songcraft', 0.295141339302063), ('metacentric', 0.2947312593460083), ('velli', 0.29343825578689575), ('sensuous', 0.29312068223953247)]
+

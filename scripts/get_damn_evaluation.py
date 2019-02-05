@@ -83,14 +83,14 @@ number=sys.argv[2]
 
 char_list=get_characters_list(folder, number)
 #folder=sys.argv[2]
-characters_vectors=pickle.load(open('{}/data/{}.pickle'.format(folder, number), 'rb'))
+characters_vectors=pickle.load(open('{}/data_output/{}.pickle'.format(folder, number), 'rb'))
 #for key in characters_vectors:
 #    print('{}\t{}'.format(key, len(characters_vectors[key])))
 
 reciprocal_ranks=[]
 ranks=[]
-details=open('{}/results_{}.txt'.format(folder, number),'w')
-#results=open('results.txt', 'a')
+evaluation_file=open('{}/evaluation_results_{}.txt'.format(folder, number),'w')
+similarities_file=open('{}/similarities_results_{}.txt'.format(folder, number), 'w')
 
 disappearing_characters=[]
 
@@ -131,12 +131,13 @@ for good_key, good_vector in characters_vectors.items():
             if current_character[0] == character_name:
                 reciprocal_ranks.append(1/rank)
                 ranks.append(rank)
-                details.write('\nResult for the vector: {}, coming from part {} of the book\nRank: {} out of {} characters\nReciprocal rank: {}\nCosine similarity to the query: {}\n\n'.format(character_name, character_part, rank, len(sorted_simil_list), (1/rank), similarity))
+                similarities_file.write('\nResult for the vector: {}, coming from part {} of the book\nRank: {} out of {} characters\nReciprocal rank: {}\nCosine similarity to the query: {}\n\n'.format(character_name, character_part, rank, len(sorted_simil_list), (1/rank), similarity))
                 for i in sorted_simil_list:
-                    details.write('{} - {}\n'.format(simil_dict[i], i))
+                    similarities_file.write('{} - {}\n'.format(simil_dict[i], i))
 
 MRR=numpy.mean(reciprocal_ranks)
 median_rank=numpy.median(ranks)
+mean_rank=numpy.mean(ranks)
 
-details.write('\nTotal number of characters considered:\t{}\nCharacters disappearing when dividing the novel in two:\t{}\nMedian rank:\t{}\nMRR:\t{}'.format(len(sorted_simil_list)+1, len(char_list)-(len(sorted_simil_list)+1), median_rank, MRR)) 
+evaluation_file.write('MRR:\t{}\nMedian rank:\t{}\nMean rank:\t{}\nTotal number of characters considered:\t{}\nCharacters disappearing when dividing the novel in two:\t{}'.format(MRR, median_rank, mean_rank, len(sorted_simil_list)+1, len(char_list)-(len(sorted_simil_list)+1))) 
 #results.write('{}\t{}'.format(MRR, folder))

@@ -1,0 +1,11 @@
+sid part a
+
+Sentence no. 1
+Sentence: ['pap', 'and', 'judge', 'thatcher', 'and', 'bessie', 'thatcher', 'and', 'jo', 'harper', 'and', 'jim', 'jim', 'and', 'his', 'old', 'aunt', 'polly', 'and', '___', 'and', 'mary_jane', 'and', 'plenty', 'more']
+Sampling: 100000.0	Window: 15
+Window decay: 0	Sample decay: 1.1	Lambda: 50.0
+Current alpha: 1.0
+Subsampled line: ['thatcher', 'and', 'bessie', 'thatcher', 'and', 'jo', 'harper', 'and', 'jim', 'jim', 'and', 'his', 'old', 'aunt', 'polly', 'plenty', 'more']
+
+[('grandma', 0.43485498428344727), ('mother-in-law', 0.42988115549087524), ('bessie', 0.4274183213710785), ('aunt', 0.42283740639686584), ('granddad', 0.41360169649124146), ('landlady', 0.40346336364746094), ('housekeeper', 0.40031737089157104), ('auntie', 0.40002378821372986), ('grandmother', 0.3974095582962036), ('margie', 0.3960929811000824), ('stepmother', 0.3934074938297272), ('sharp-tongued', 0.3918988108634949), ('shrewish', 0.390101820230484), ('mum', 0.388148695230484), ('grandpa', 0.38430869579315186), ('henpecked', 0.37463998794555664), ('wife-to-be', 0.3740350604057312), ('winsome', 0.37143784761428833), ('bessies', 0.37141135334968567), ('gossipy', 0.3681759834289551), ('maggie', 0.36637452244758606), ('granny', 0.3635008633136749), ('dorrie', 0.3632720410823822), ('domineering', 0.3628629744052887), ('nell', 0.36036086082458496), ('cantankerous', 0.3600708842277527), ('feisty', 0.35960114002227783), ('spinster', 0.3589116334915161), ('lizzie', 0.3578776717185974), ('minnie', 0.3572351932525635), ('grandad', 0.3568490743637085), ('mother', 0.35443639755249023), ('great-aunt', 0.3542056679725647), ('pushy', 0.35410988330841064), ('jane', 0.35363101959228516), ('margaret', 0.35333630442619324), ('sadie', 0.35309940576553345), ('daughter-in-law', 0.35232144594192505), ('in-laws', 0.3521655797958374), ('busybody', 0.35093164443969727), ('helen', 0.3505905270576477), ('housemaid', 0.3503227233886719), ('haddy', 0.34870219230651855), ('sissy', 0.3486326038837433), ('emsworths', 0.34829097986221313), ('queenie', 0.3477550745010376), ('nellie', 0.34629467129707336), ('wife', 0.34561920166015625), ('overbearing', 0.3451683521270752), ('sister-in-law', 0.3448653221130371)]
+

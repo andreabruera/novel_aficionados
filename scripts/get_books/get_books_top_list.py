@@ -76,7 +76,7 @@ for a_tag in readable_semi_final:
     number=a_tag['href']
     number_clean=re.sub('\/.*\/','',number)
     text_clean=readable_semi_final[3].text
-    if number_clean not in books_dict.keys():
+    if number_clean not in books_dict.keys() and text_clean not in [books_dict[i] for i in books_dict.keys()]:
         books_dict[number_clean]=text_clean
 print('{}'.format(len(books_dict.keys())))
 #i=h_soup.find_all('h2')[78]

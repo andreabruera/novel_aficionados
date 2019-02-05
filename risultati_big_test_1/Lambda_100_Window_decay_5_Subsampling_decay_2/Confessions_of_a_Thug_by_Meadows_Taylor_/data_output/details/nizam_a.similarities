@@ -1,0 +1,11 @@
+nizam part a
+
+Sentence no. 1
+Sentence: ['you', 'and', 'your', 'master', 'may', 'be', 'the', 'portion', 'of', 'the', 'devil', 'said', 'the', 'old', 'merchant', 'ever', 'since', 'i', 'have', 'entered', 'the', 'territories', 'of', 'the', '___', 'i', 'have', 'been', 'treated', 'in', 'this', 'manner']
+Sampling: 100000.0	Window: 15
+Window decay: 5	Sample decay: 2.0	Lambda: 100.0
+Current alpha: 1.0
+Subsampled line: ['may', 'be', 'portion', 'of', 'the', 'devil', 'said', 'old', 'merchant', 'ever', 'since', 'i', 'have', 'entered', 'territories', 'i', 'have', 'been', 'treated', 'this', 'manner']
+
+[('sinned', 0.320840984582901), ('urbanity', 0.3053758144378662), ('dishonourable', 0.2960672378540039), ('herbiers', 0.2919994592666626), ('behaved', 0.2919415235519409), ('bigamous', 0.2893831729888916), ('ritually', 0.289354532957077), ('seemed', 0.2874530255794525), ('rosseau', 0.2864658534526825), ('he’d', 0.2839927077293396), ('ought', 0.28388118743896484), ('beheld', 0.2830149531364441), ('wouldnt', 0.2820896506309509), ('302d', 0.28201615810394287), ('longed', 0.27838677167892456), ('seems', 0.2768113613128662), ('frisson', 0.2765410542488098), ('done?', 0.27606362104415894), ('pretended', 0.2758784890174866), ('ashamed', 0.2748016119003296), ('watusi', 0.27426135540008545), ('renovación', 0.27395761013031006), ('like?', 0.27356866002082825), ('5fm', 0.2727851867675781), ('taukei', 0.2727278769016266), ('caricaturists', 0.2719486951828003), ('i-485', 0.27190300822257996), ('statesmans', 0.27116233110427856), ('tasted', 0.2707447111606598), ('dürers', 0.26982206106185913), ('chalcides', 0.2691285312175751), ('inayatullah', 0.2690586447715759), ('wouldn’t', 0.26865798234939575), ('2704', 0.2686350345611572), ('bitz', 0.26824524998664856), ('grotesquely', 0.26815301179885864), ('adulterous', 0.2681322693824768), ('shameful', 0.26810309290885925), ('grafted', 0.2667474150657654), ('mitrailleuse', 0.26589328050613403), ('Ágúst', 0.2655746042728424), ('taihe', 0.2655555307865143), ('paray', 0.26529252529144287), ('cried', 0.26524069905281067), ('aspired', 0.26496225595474243), ('laughed', 0.2641444802284241), ('lucarelli', 0.26364946365356445), ('seem', 0.26330888271331787), ('theirs', 0.26295116543769836), ('a149', 0.26247864961624146)]
+

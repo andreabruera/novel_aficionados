@@ -39,7 +39,6 @@
 2500	Siddhartha by Hermann Hesse 
 2814	Dubliners by James Joyce 
 55	The Wonderful Wizard of Oz by L. Frank  Baum 
-33	The Scarlet Letter by Nathaniel Hawthorne 
 19942	Candide by Voltaire 
 779	The Tragical History of Doctor Faustus by Christopher Marlowe 
 19337	A Christmas Carol by Charles Dickens 
@@ -68,4 +67,3 @@
 105	Persuasion by Jane Austen 
 44881	Confessions of a Thug by Meadows Taylor 
 932	The Fall of the House of Usher by Edgar Allan Poe 
-42	The Strange Case of Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson 

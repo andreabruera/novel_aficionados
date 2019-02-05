@@ -1,0 +1,782 @@
+
+Result for the vector: bhudrinath, coming from part a of the book
+Rank: 14 out of 17 characters
+Reciprocal rank: 0.07142857142857142
+Cosine similarity to the query: 0.8562753286197601
+
+nuwab_b - 0.9292427259232255
+azima_b - 0.9278891277148122
+ganesha_b - 0.9248158931732178
+bhowanee_b - 0.92017581821012
+junglee_b - 0.9196123528711602
+cheetoo_b - 0.9175090740626515
+hoosein_b - 0.9162591049825628
+thuggee_b - 0.9155752012476461
+motee_b - 0.9125241313136859
+nizam_b - 0.9067806275719595
+hindostan_b - 0.9017807899844191
+kotwal_b - 0.8961295485496521
+alla_b - 0.8621530789778558
+bhudrinath_b - 0.8562753286197601
+sahoukar_b - 0.8525043638053172
+bhutteara_b - 0.8484040155531176
+zora_b - 0.831230605579335
+
+Result for the vector: alla, coming from part a of the book
+Rank: 13 out of 17 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: 0.8552011506319392
+
+nuwab_b - 0.9099601453518971
+thuggee_b - 0.9062191788088801
+azima_b - 0.8991862087229305
+bhowanee_b - 0.891392078739169
+hindostan_b - 0.8887249297663627
+sahoukar_b - 0.8791583108400307
+hoosein_b - 0.8745490833848184
+kotwal_b - 0.8721852898597717
+motee_b - 0.8712719938538076
+ganesha_b - 0.8666730523109436
+bhudrinath_b - 0.8630573235119999
+junglee_b - 0.8552088823790039
+alla_b - 0.8552011506319392
+cheetoo_b - 0.8532358916542481
+nizam_b - 0.8463037862272202
+bhutteara_b - 0.8252444513214965
+zora_b - 0.7927726743451562
+
+Result for the vector: cheetoo, coming from part a of the book
+Rank: 5 out of 17 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.8661419153213562
+
+azima_b - 0.8702730718499377
+thuggee_b - 0.8694812655448976
+nizam_b - 0.8671454528824885
+nuwab_b - 0.8665290474891724
+cheetoo_b - 0.8661419153213562
+ganesha_b - 0.8653472146184928
+bhowanee_b - 0.863222752117436
+hindostan_b - 0.8374893262995092
+motee_b - 0.8369328130205661
+kotwal_b - 0.8345990279555915
+junglee_b - 0.8259006350158888
+hoosein_b - 0.8098407387733517
+bhutteara_b - 0.8052246330611549
+alla_b - 0.8030363081980884
+bhudrinath_b - 0.7931187995530606
+sahoukar_b - 0.7807306647300776
+zora_b - 0.7725674279759132
+
+Result for the vector: motee, coming from part a of the book
+Rank: 5 out of 17 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.9107405218702714
+
+junglee_b - 0.9299007099926065
+kotwal_b - 0.9156338572502136
+nuwab_b - 0.913870091072924
+azima_b - 0.9136186411408647
+motee_b - 0.9107405218702714
+thuggee_b - 0.89902018898846
+sahoukar_b - 0.8945254024580377
+hindostan_b - 0.892247027620852
+bhowanee_b - 0.8905223873413325
+ganesha_b - 0.881921112537384
+hoosein_b - 0.8814968396125356
+alla_b - 0.8754049204410593
+cheetoo_b - 0.8747236057951231
+bhudrinath_b - 0.8696207481848763
+nizam_b - 0.8660479446067797
+bhutteara_b - 0.8582846182073542
+zora_b - 0.7916957375912592
+
+Result for the vector: azima, coming from part a of the book
+Rank: 2 out of 17 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.9381056633749206
+
+nuwab_b - 0.9403322303493177
+azima_b - 0.9381056633749206
+bhowanee_b - 0.9297040381939427
+motee_b - 0.928051022531123
+thuggee_b - 0.9200854849866338
+kotwal_b - 0.9145466089248657
+bhudrinath_b - 0.9098834449122299
+hindostan_b - 0.9088916236822846
+junglee_b - 0.9066396411276094
+ganesha_b - 0.9060958623886108
+hoosein_b - 0.9058925453360421
+sahoukar_b - 0.9058880749874175
+nizam_b - 0.8978532224253785
+cheetoo_b - 0.8974418579007318
+alla_b - 0.895652082432869
+bhutteara_b - 0.8777790927225085
+zora_b - 0.7973321317831321
+
+Result for the vector: bhowanee, coming from part a of the book
+Rank: 5 out of 17 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.8932173518305232
+
+azima_b - 0.9190573869731211
+hindostan_b - 0.9173126269988656
+nuwab_b - 0.9061243478133901
+thuggee_b - 0.9028751196190802
+bhowanee_b - 0.8932173518305232
+hoosein_b - 0.8921891982668176
+kotwal_b - 0.885154128074646
+motee_b - 0.8845675851275802
+ganesha_b - 0.8804618120193481
+alla_b - 0.8785021566898278
+junglee_b - 0.87504184990872
+cheetoo_b - 0.8715895933860314
+nizam_b - 0.8686329385230824
+sahoukar_b - 0.852712860865169
+bhudrinath_b - 0.8480206818568315
+bhutteara_b - 0.8076045753837999
+zora_b - 0.786670112212602
+
+Result for the vector: ganesha, coming from part a of the book
+Rank: 9 out of 17 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.9075288772583008
+
+nuwab_b - 0.9363463483063207
+thuggee_b - 0.9337196906637978
+motee_b - 0.9256196893936307
+kotwal_b - 0.92378169298172
+azima_b - 0.9209034027015375
+cheetoo_b - 0.9204924059207698
+junglee_b - 0.9178463865610147
+bhowanee_b - 0.9155468021496181
+ganesha_b - 0.9075288772583008
+hoosein_b - 0.9056298676508602
+hindostan_b - 0.9048090633863785
+nizam_b - 0.9031124980185185
+sahoukar_b - 0.8853080204312829
+alla_b - 0.8808143997435097
+bhudrinath_b - 0.8744232133374699
+bhutteara_b - 0.8523985997557226
+zora_b - 0.828569198506153
+
+Result for the vector: hoosein, coming from part a of the book
+Rank: 10 out of 17 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.9025925993919437
+
+nuwab_b - 0.9512020349502631
+thuggee_b - 0.9435876607894964
+motee_b - 0.9385996777236595
+hindostan_b - 0.9373196438169904
+azima_b - 0.931949102754831
+kotwal_b - 0.9256596609556893
+alla_b - 0.9144710029819345
+bhowanee_b - 0.9121677603671658
+junglee_b - 0.9049754256039351
+hoosein_b - 0.9025925993919437
+sahoukar_b - 0.8985459208488529
+cheetoo_b - 0.8981115818023745
+ganesha_b - 0.8911044066486132
+bhudrinath_b - 0.8869379297568882
+nizam_b - 0.8801437950091459
+zora_b - 0.8744376041162762
+bhutteara_b - 0.8392541158421635
+
+Result for the vector: nuwab, coming from part a of the book
+Rank: 1 out of 17 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9499683976173469
+
+nuwab_b - 0.9499683976173469
+azima_b - 0.9314061043923794
+motee_b - 0.9269535861327213
+kotwal_b - 0.9233471796901731
+thuggee_b - 0.9230886101722783
+bhowanee_b - 0.9214637600939383
+hindostan_b - 0.918584594895292
+ganesha_b - 0.9129061154779143
+sahoukar_b - 0.9078323841095035
+cheetoo_b - 0.9013490676879947
+hoosein_b - 0.9001727104187076
+junglee_b - 0.8934025891539348
+nizam_b - 0.8846885894331792
+alla_b - 0.8793561196519136
+bhudrinath_b - 0.874901130807265
+bhutteara_b - 0.8677090743866873
+zora_b - 0.8237272255502011
+
+Result for the vector: zora, coming from part a of the book
+Rank: 17 out of 17 characters
+Reciprocal rank: 0.058823529411764705
+Cosine similarity to the query: 0.8145283813915172
+
+azima_b - 0.9132476669473549
+nuwab_b - 0.907062411308295
+hindostan_b - 0.9039371128157243
+junglee_b - 0.9028308507405698
+thuggee_b - 0.8976803421974245
+kotwal_b - 0.8942571345414455
+bhowanee_b - 0.8840475414977246
+motee_b - 0.8836957548947443
+cheetoo_b - 0.8820060491561952
+hoosein_b - 0.8767700195312562
+ganesha_b - 0.8725923971776741
+alla_b - 0.8670877555880654
+sahoukar_b - 0.8625677824020447
+nizam_b - 0.8528524979098921
+bhudrinath_b - 0.8501460134809001
+bhutteara_b - 0.8319598784458707
+zora_b - 0.8145283813915172
+
+Result for the vector: sahoukar, coming from part a of the book
+Rank: 14 out of 17 characters
+Reciprocal rank: 0.07142857142857142
+Cosine similarity to the query: 0.8578945909675727
+
+nuwab_b - 0.9284165458927497
+ganesha_b - 0.9194222092628479
+cheetoo_b - 0.9175854276171598
+azima_b - 0.9106623099241223
+hoosein_b - 0.9093635624267811
+motee_b - 0.8997141390953706
+nizam_b - 0.8986729055247581
+kotwal_b - 0.8963658213615417
+thuggee_b - 0.8938791688608644
+bhowanee_b - 0.8923722771517125
+junglee_b - 0.8909759586467784
+bhutteara_b - 0.8634212274378907
+bhudrinath_b - 0.8618686281520961
+sahoukar_b - 0.8578945909675727
+hindostan_b - 0.8506068080302011
+alla_b - 0.8432887447860467
+zora_b - 0.7705177298342508
+
+Result for the vector: junglee, coming from part a of the book
+Rank: 11 out of 17 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.8676881272978723
+
+nuwab_b - 0.9171099613374465
+thuggee_b - 0.8907169634531135
+azima_b - 0.8862497339024842
+sahoukar_b - 0.8815134097047708
+bhowanee_b - 0.8785534166858623
+hoosein_b - 0.8738828226258069
+ganesha_b - 0.8723418712615967
+kotwal_b - 0.871832013130188
+bhudrinath_b - 0.8718034701464508
+hindostan_b - 0.8686382252789617
+junglee_b - 0.8676881272978723
+motee_b - 0.8597424882573634
+cheetoo_b - 0.8559076700155553
+alla_b - 0.8501184240018855
+nizam_b - 0.8376437675250703
+bhutteara_b - 0.8344783435606467
+zora_b - 0.7652282942899556
+
+Result for the vector: kotwal, coming from part a of the book
+Rank: 6 out of 17 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.9081506729125977
+
+nuwab_b - 0.9342935046132524
+azima_b - 0.9295214011552141
+motee_b - 0.923162607048828
+bhowanee_b - 0.9152637396831439
+thuggee_b - 0.9129871674172398
+kotwal_b - 0.9081506729125977
+cheetoo_b - 0.9080654923954916
+junglee_b - 0.9045084771806925
+nizam_b - 0.9042786629283034
+hindostan_b - 0.9002459704729352
+ganesha_b - 0.898795485496521
+hoosein_b - 0.8916228945030523
+alla_b - 0.8804971242099148
+bhudrinath_b - 0.87981391669429
+sahoukar_b - 0.8752506897002885
+bhutteara_b - 0.8510082617702566
+zora_b - 0.8230632192809353
+
+Result for the vector: bhutteara, coming from part a of the book
+Rank: 14 out of 17 characters
+Reciprocal rank: 0.07142857142857142
+Cosine similarity to the query: 0.8869722817250442
+
+nuwab_b - 0.950615346431739
+thuggee_b - 0.934968531131751
+kotwal_b - 0.9335433880362892
+azima_b - 0.9295961495873072
+motee_b - 0.9286138138588164
+bhowanee_b - 0.9165936435284161
+hindostan_b - 0.9160932998546004
+sahoukar_b - 0.9110897183418338
+junglee_b - 0.9094414818952701
+ganesha_b - 0.9033340273300409
+hoosein_b - 0.9010871052742069
+alla_b - 0.898033294140304
+cheetoo_b - 0.897811830043799
+bhutteara_b - 0.8869722817250442
+bhudrinath_b - 0.8798819923541555
+nizam_b - 0.8750476576373715
+zora_b - 0.8079763410098484
+
+Result for the vector: thuggee, coming from part a of the book
+Rank: 1 out of 17 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.8982778726981818
+
+thuggee_b - 0.8982778726981818
+nuwab_b - 0.8962716994447545
+hindostan_b - 0.8939856950053174
+azima_b - 0.8929292102052684
+nizam_b - 0.8769321106950082
+cheetoo_b - 0.8713643474199995
+motee_b - 0.8669252057947283
+bhowanee_b - 0.8657892008360986
+ganesha_b - 0.8655242323875427
+kotwal_b - 0.8595800995826721
+hoosein_b - 0.856831542064641
+junglee_b - 0.8552839246223033
+alla_b - 0.8374970208852599
+zora_b - 0.82020809710646
+bhudrinath_b - 0.7985018015800847
+sahoukar_b - 0.7920675153772556
+bhutteara_b - 0.7604108083370572
+
+Result for the vector: nizam, coming from part a of the book
+Rank: 1 out of 17 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.834849278312837
+
+nizam_b - 0.834849278312837
+nuwab_b - 0.8222157988273802
+cheetoo_b - 0.8163557673030749
+azima_b - 0.8110332634528326
+ganesha_b - 0.8091915973298222
+hindostan_b - 0.8048240186221695
+thuggee_b - 0.7989830373202323
+hoosein_b - 0.7910888181759149
+bhowanee_b - 0.7855496150910409
+motee_b - 0.7808892465697834
+junglee_b - 0.776694261333184
+alla_b - 0.7701832378129064
+kotwal_b - 0.7672234267494197
+zora_b - 0.7495334445874042
+bhudrinath_b - 0.7426049334587219
+bhutteara_b - 0.7156364578767381
+sahoukar_b - 0.7134988775102615
+
+Result for the vector: hindostan, coming from part a of the book
+Rank: 12 out of 17 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: 0.9095475727589402
+
+nuwab_b - 0.9480098454958126
+ganesha_b - 0.9455946087837219
+azima_b - 0.9376141634008636
+cheetoo_b - 0.9368165097723328
+thuggee_b - 0.934686358850383
+nizam_b - 0.9338265339680477
+motee_b - 0.924212423688544
+bhowanee_b - 0.9235690511336644
+kotwal_b - 0.921660304069519
+hoosein_b - 0.9167410085642955
+junglee_b - 0.9129460505875335
+hindostan_b - 0.9095475727589402
+sahoukar_b - 0.8742406889343688
+alla_b - 0.8641374368708565
+bhutteara_b - 0.8624049682141834
+bhudrinath_b - 0.8611421667848741
+zora_b - 0.8160391097080446
+
+Result for the vector: bhudrinath, coming from part b of the book
+Rank: 12 out of 17 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: 0.8562753286197601
+
+azima_a - 0.9098834449122299
+hoosein_a - 0.8869379297568882
+bhutteara_a - 0.8798819923541555
+kotwal_a - 0.87981391669429
+nuwab_a - 0.874901130807265
+ganesha_a - 0.8744232133374699
+junglee_a - 0.8718034701464508
+motee_a - 0.8696207481848763
+alla_a - 0.8630573235119999
+sahoukar_a - 0.8618686281520961
+hindostan_a - 0.8611421667848741
+bhudrinath_a - 0.8562753286197601
+zora_a - 0.8501460134809001
+bhowanee_a - 0.8480206818568315
+thuggee_a - 0.7985018015800847
+cheetoo_a - 0.7931187995530606
+nizam_a - 0.7426049334587219
+
+Result for the vector: alla, coming from part b of the book
+Rank: 12 out of 17 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: 0.8552011506319392
+
+hoosein_a - 0.9144710029819345
+bhutteara_a - 0.898033294140304
+azima_a - 0.895652082432869
+ganesha_a - 0.8808143997435097
+kotwal_a - 0.8804971242099148
+nuwab_a - 0.8793561196519136
+bhowanee_a - 0.8785021566898278
+motee_a - 0.8754049204410593
+zora_a - 0.8670877555880654
+hindostan_a - 0.8641374368708565
+bhudrinath_a - 0.8621530789778558
+alla_a - 0.8552011506319392
+junglee_a - 0.8501184240018855
+sahoukar_a - 0.8432887447860467
+thuggee_a - 0.8374970208852599
+cheetoo_a - 0.8030363081980884
+nizam_a - 0.7701832378129064
+
+Result for the vector: cheetoo, coming from part b of the book
+Rank: 14 out of 17 characters
+Reciprocal rank: 0.07142857142857142
+Cosine similarity to the query: 0.8661419153213562
+
+hindostan_a - 0.9368165097723328
+ganesha_a - 0.9204924059207698
+sahoukar_a - 0.9175854276171598
+bhudrinath_a - 0.9175090740626515
+kotwal_a - 0.9080654923954916
+nuwab_a - 0.9013490676879947
+hoosein_a - 0.8981115818023745
+bhutteara_a - 0.897811830043799
+azima_a - 0.8974418579007318
+zora_a - 0.8820060491561952
+motee_a - 0.8747236057951231
+bhowanee_a - 0.8715895933860314
+thuggee_a - 0.8713643474199995
+cheetoo_a - 0.8661419153213562
+junglee_a - 0.8559076700155553
+alla_a - 0.8532358916542481
+nizam_a - 0.8163557673030749
+
+Result for the vector: motee, coming from part b of the book
+Rank: 9 out of 17 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.9107405218702714
+
+hoosein_a - 0.9385996777236595
+bhutteara_a - 0.9286138138588164
+azima_a - 0.928051022531123
+nuwab_a - 0.9269535861327213
+ganesha_a - 0.9256196893936307
+hindostan_a - 0.924212423688544
+kotwal_a - 0.923162607048828
+bhudrinath_a - 0.9125241313136859
+motee_a - 0.9107405218702714
+sahoukar_a - 0.8997141390953706
+bhowanee_a - 0.8845675851275802
+zora_a - 0.8836957548947443
+alla_a - 0.8712719938538076
+thuggee_a - 0.8669252057947283
+junglee_a - 0.8597424882573634
+cheetoo_a - 0.8369328130205661
+nizam_a - 0.7808892465697834
+
+Result for the vector: azima, coming from part b of the book
+Rank: 1 out of 17 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9381056633749206
+
+azima_a - 0.9381056633749206
+hindostan_a - 0.9376141634008636
+hoosein_a - 0.931949102754831
+nuwab_a - 0.9314061043923794
+bhutteara_a - 0.9295961495873072
+kotwal_a - 0.9295214011552141
+bhudrinath_a - 0.9278891277148122
+ganesha_a - 0.9209034027015375
+bhowanee_a - 0.9190573869731211
+motee_a - 0.9136186411408647
+zora_a - 0.9132476669473549
+sahoukar_a - 0.9106623099241223
+alla_a - 0.8991862087229305
+thuggee_a - 0.8929292102052684
+junglee_a - 0.8862497339024842
+cheetoo_a - 0.8702730718499377
+nizam_a - 0.8110332634528326
+
+Result for the vector: bhowanee, coming from part b of the book
+Rank: 9 out of 17 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.8932173518305232
+
+azima_a - 0.9297040381939427
+hindostan_a - 0.9235690511336644
+nuwab_a - 0.9214637600939383
+bhudrinath_a - 0.92017581821012
+bhutteara_a - 0.9165936435284161
+ganesha_a - 0.9155468021496181
+kotwal_a - 0.9152637396831439
+hoosein_a - 0.9121677603671658
+bhowanee_a - 0.8932173518305232
+sahoukar_a - 0.8923722771517125
+alla_a - 0.891392078739169
+motee_a - 0.8905223873413325
+zora_a - 0.8840475414977246
+junglee_a - 0.8785534166858623
+thuggee_a - 0.8657892008360986
+cheetoo_a - 0.863222752117436
+nizam_a - 0.7855496150910409
+
+Result for the vector: ganesha, coming from part b of the book
+Rank: 5 out of 17 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.9075288772583008
+
+hindostan_a - 0.9455946087837219
+bhudrinath_a - 0.9248158931732178
+sahoukar_a - 0.9194222092628479
+nuwab_a - 0.9129061154779143
+ganesha_a - 0.9075288772583008
+azima_a - 0.9060958623886108
+bhutteara_a - 0.9033340273300409
+kotwal_a - 0.898795485496521
+hoosein_a - 0.8911044066486132
+motee_a - 0.881921112537384
+bhowanee_a - 0.8804618120193481
+zora_a - 0.8725923971776741
+junglee_a - 0.8723418712615967
+alla_a - 0.8666730523109436
+thuggee_a - 0.8655242323875427
+cheetoo_a - 0.8653472146184928
+nizam_a - 0.8091915973298222
+
+Result for the vector: hoosein, coming from part b of the book
+Rank: 6 out of 17 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.9025925993919437
+
+hindostan_a - 0.9167410085642955
+bhudrinath_a - 0.9162591049825628
+sahoukar_a - 0.9093635624267811
+azima_a - 0.9058925453360421
+ganesha_a - 0.9056298676508602
+hoosein_a - 0.9025925993919437
+bhutteara_a - 0.9010871052742069
+nuwab_a - 0.9001727104187076
+bhowanee_a - 0.8921891982668176
+kotwal_a - 0.8916228945030523
+motee_a - 0.8814968396125356
+zora_a - 0.8767700195312562
+alla_a - 0.8745490833848184
+junglee_a - 0.8738828226258069
+thuggee_a - 0.856831542064641
+cheetoo_a - 0.8098407387733517
+nizam_a - 0.7910888181759149
+
+Result for the vector: nuwab, coming from part b of the book
+Rank: 3 out of 17 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.9499683976173469
+
+hoosein_a - 0.9512020349502631
+bhutteara_a - 0.950615346431739
+nuwab_a - 0.9499683976173469
+hindostan_a - 0.9480098454958126
+azima_a - 0.9403322303493177
+ganesha_a - 0.9363463483063207
+kotwal_a - 0.9342935046132524
+bhudrinath_a - 0.9292427259232255
+sahoukar_a - 0.9284165458927497
+junglee_a - 0.9171099613374465
+motee_a - 0.913870091072924
+alla_a - 0.9099601453518971
+zora_a - 0.907062411308295
+bhowanee_a - 0.9061243478133901
+thuggee_a - 0.8962716994447545
+cheetoo_a - 0.8665290474891724
+nizam_a - 0.8222157988273802
+
+Result for the vector: zora, coming from part b of the book
+Rank: 8 out of 17 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.8145283813915172
+
+hoosein_a - 0.8744376041162762
+bhudrinath_a - 0.831230605579335
+ganesha_a - 0.828569198506153
+nuwab_a - 0.8237272255502011
+kotwal_a - 0.8230632192809353
+thuggee_a - 0.82020809710646
+hindostan_a - 0.8160391097080446
+zora_a - 0.8145283813915172
+bhutteara_a - 0.8079763410098484
+azima_a - 0.7973321317831321
+alla_a - 0.7927726743451562
+motee_a - 0.7916957375912592
+bhowanee_a - 0.786670112212602
+cheetoo_a - 0.7725674279759132
+sahoukar_a - 0.7705177298342508
+junglee_a - 0.7652282942899556
+nizam_a - 0.7495334445874042
+
+Result for the vector: sahoukar, coming from part b of the book
+Rank: 12 out of 17 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: 0.8578945909675727
+
+bhutteara_a - 0.9110897183418338
+nuwab_a - 0.9078323841095035
+azima_a - 0.9058880749874175
+hoosein_a - 0.8985459208488529
+motee_a - 0.8945254024580377
+ganesha_a - 0.8853080204312829
+junglee_a - 0.8815134097047708
+alla_a - 0.8791583108400307
+kotwal_a - 0.8752506897002885
+hindostan_a - 0.8742406889343688
+zora_a - 0.8625677824020447
+sahoukar_a - 0.8578945909675727
+bhowanee_a - 0.852712860865169
+bhudrinath_a - 0.8525043638053172
+thuggee_a - 0.7920675153772556
+cheetoo_a - 0.7807306647300776
+nizam_a - 0.7134988775102615
+
+Result for the vector: junglee, coming from part b of the book
+Rank: 13 out of 17 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: 0.8676881272978723
+
+motee_a - 0.9299007099926065
+bhudrinath_a - 0.9196123528711602
+ganesha_a - 0.9178463865610147
+hindostan_a - 0.9129460505875335
+bhutteara_a - 0.9094414818952701
+azima_a - 0.9066396411276094
+hoosein_a - 0.9049754256039351
+kotwal_a - 0.9045084771806925
+zora_a - 0.9028308507405698
+nuwab_a - 0.8934025891539348
+sahoukar_a - 0.8909759586467784
+bhowanee_a - 0.87504184990872
+junglee_a - 0.8676881272978723
+thuggee_a - 0.8552839246223033
+alla_a - 0.8552088823790039
+cheetoo_a - 0.8259006350158888
+nizam_a - 0.776694261333184
+
+Result for the vector: kotwal, coming from part b of the book
+Rank: 8 out of 17 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.9081506729125977
+
+bhutteara_a - 0.9335433880362892
+hoosein_a - 0.9256596609556893
+ganesha_a - 0.92378169298172
+nuwab_a - 0.9233471796901731
+hindostan_a - 0.921660304069519
+motee_a - 0.9156338572502136
+azima_a - 0.9145466089248657
+kotwal_a - 0.9081506729125977
+sahoukar_a - 0.8963658213615417
+bhudrinath_a - 0.8961295485496521
+zora_a - 0.8942571345414455
+bhowanee_a - 0.885154128074646
+alla_a - 0.8721852898597717
+junglee_a - 0.871832013130188
+thuggee_a - 0.8595800995826721
+cheetoo_a - 0.8345990279555915
+nizam_a - 0.7672234267494197
+
+Result for the vector: bhutteara, coming from part b of the book
+Rank: 1 out of 17 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.8869722817250442
+
+bhutteara_a - 0.8869722817250442
+azima_a - 0.8777790927225085
+nuwab_a - 0.8677090743866873
+sahoukar_a - 0.8634212274378907
+hindostan_a - 0.8624049682141834
+motee_a - 0.8582846182073542
+ganesha_a - 0.8523985997557226
+kotwal_a - 0.8510082617702566
+bhudrinath_a - 0.8484040155531176
+hoosein_a - 0.8392541158421635
+junglee_a - 0.8344783435606467
+zora_a - 0.8319598784458707
+alla_a - 0.8252444513214965
+bhowanee_a - 0.8076045753837999
+cheetoo_a - 0.8052246330611549
+thuggee_a - 0.7604108083370572
+nizam_a - 0.7156364578767381
+
+Result for the vector: thuggee, coming from part b of the book
+Rank: 12 out of 17 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: 0.8982778726981818
+
+hoosein_a - 0.9435876607894964
+bhutteara_a - 0.934968531131751
+hindostan_a - 0.934686358850383
+ganesha_a - 0.9337196906637978
+nuwab_a - 0.9230886101722783
+azima_a - 0.9200854849866338
+bhudrinath_a - 0.9155752012476461
+kotwal_a - 0.9129871674172398
+alla_a - 0.9062191788088801
+bhowanee_a - 0.9028751196190802
+motee_a - 0.89902018898846
+thuggee_a - 0.8982778726981818
+zora_a - 0.8976803421974245
+sahoukar_a - 0.8938791688608644
+junglee_a - 0.8907169634531135
+cheetoo_a - 0.8694812655448976
+nizam_a - 0.7989830373202323
+
+Result for the vector: nizam, coming from part b of the book
+Rank: 17 out of 17 characters
+Reciprocal rank: 0.058823529411764705
+Cosine similarity to the query: 0.834849278312837
+
+hindostan_a - 0.9338265339680477
+bhudrinath_a - 0.9067806275719595
+kotwal_a - 0.9042786629283034
+ganesha_a - 0.9031124980185185
+sahoukar_a - 0.8986729055247581
+azima_a - 0.8978532224253785
+nuwab_a - 0.8846885894331792
+hoosein_a - 0.8801437950091459
+thuggee_a - 0.8769321106950082
+bhutteara_a - 0.8750476576373715
+bhowanee_a - 0.8686329385230824
+cheetoo_a - 0.8671454528824885
+motee_a - 0.8660479446067797
+zora_a - 0.8528524979098921
+alla_a - 0.8463037862272202
+junglee_a - 0.8376437675250703
+nizam_a - 0.834849278312837
+
+Result for the vector: hindostan, coming from part b of the book
+Rank: 5 out of 17 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.9095475727589402
+
+hoosein_a - 0.9373196438169904
+nuwab_a - 0.918584594895292
+bhowanee_a - 0.9173126269988656
+bhutteara_a - 0.9160932998546004
+hindostan_a - 0.9095475727589402
+azima_a - 0.9088916236822846
+ganesha_a - 0.9048090633863785
+zora_a - 0.9039371128157243
+bhudrinath_a - 0.9017807899844191
+kotwal_a - 0.9002459704729352
+thuggee_a - 0.8939856950053174
+motee_a - 0.892247027620852
+alla_a - 0.8887249297663627
+junglee_a - 0.8686382252789617
+sahoukar_a - 0.8506068080302011
+cheetoo_a - 0.8374893262995092
+nizam_a - 0.8048240186221695

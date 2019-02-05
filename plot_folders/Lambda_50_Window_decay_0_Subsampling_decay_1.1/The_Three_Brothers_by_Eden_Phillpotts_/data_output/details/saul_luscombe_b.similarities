@@ -1,0 +1,11 @@
+saul_luscombe part b
+
+Sentence no. 1
+Sentence: ['hesters', 'youngest', 'son', 'humphrey', 'had', 'been', 'provided', 'for', 'by', 'a', 'friend', 'and', 'he', 'was', 'now', 'working', 'with', '___', 'milly', 'at', 'trowlesworthy']
+Sampling: 100000.0	Window: 15
+Window decay: 0	Sample decay: 1.1	Lambda: 50.0
+Current alpha: 1.0
+Subsampled line: ['hesters', 'youngest', 'son', 'humphrey', 'had', 'been', 'provided', 'by', 'a', 'friend', 'and', 'he', 'was', 'now', 'working', 'milly', 'at']
+
+[('milly', 0.4459714889526367), ('tormented', 0.39641210436820984), ('gang-raped', 0.39000439643859863), ('heart-broken', 0.3889302909374237), ('traumatised', 0.38428717851638794), ('woken', 0.383602112531662), ('girlfriend', 0.38268664479255676), ('traumatized', 0.38062620162963867), ('womanizer', 0.3778592050075531), ('prostitute', 0.37280187010765076), ('heartbroken', 0.37278521060943604), ('burgled', 0.37271130084991455), ('distraught', 0.37189459800720215), ('housemaid', 0.37104904651641846), ('fiancée', 0.3697208762168884), ('awoken', 0.36650964617729187), ('chambermaid', 0.36604660749435425), ('housekeeper', 0.36580371856689453), ('flatmate', 0.3650180697441101), ('lover', 0.3644946217536926), ('seduced', 0.36260223388671875), ('knife-wielding', 0.3623162508010864), ('brokenhearted', 0.36221635341644287), ('sodomized', 0.3621380627155304), ('groped', 0.3613402843475342), ('entranced', 0.3609362542629242), ('romanced', 0.35988765954971313), ('co-worker', 0.3592173755168915), ('mugged', 0.3579551577568054), ('gold-digger', 0.3575127124786377), ('ex-fiancé', 0.3564586639404297), ('henpecked', 0.3560212254524231), ('bullied', 0.3560004234313965), ('cuckolded', 0.35559895634651184), ('stepdaughter', 0.35344597697257996), ('remorseful', 0.3512919545173645), ('disfigured', 0.35098332166671753), ('fantasizing', 0.3509172797203064), ('waitress', 0.3505927324295044), ('widower', 0.35030820965766907), ('drugged', 0.349839448928833), ('bigamist', 0.3494117558002472), ('inconsolable', 0.34874385595321655), ('disemboweled', 0.34829196333885193), ('washerwoman', 0.3477727472782135), ('overheard', 0.3477660119533539), ('-who', 0.34708863496780396), ('comforted', 0.3467921316623688), ('propositioned', 0.3466189503669739), ('goddaughter', 0.3460659384727478)]
+

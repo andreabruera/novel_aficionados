@@ -1,0 +1,80 @@
+
+Result for the vector: miles, coming from part a of the book
+Rank: 3 out of 4 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.15751789122606621
+
+flora_b - 0.242513940184478
+quint_b - 0.20140635056419962
+miles_b - 0.15751789122606621
+bly_b - 0.06845202296972323
+
+Result for the vector: flora, coming from part a of the book
+Rank: 3 out of 4 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.17963543953684363
+
+quint_b - 0.2681740500719488
+bly_b - 0.23399142920971083
+flora_b - 0.17963543953684363
+miles_b - 0.07626773997929812
+
+Result for the vector: quint, coming from part a of the book
+Rank: 2 out of 4 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.1299133074335275
+
+flora_b - 0.2241714596748352
+quint_b - 0.1299133074335275
+bly_b - 0.11985763876781716
+miles_b - 0.10439622524999248
+
+Result for the vector: bly, coming from part a of the book
+Rank: 1 out of 4 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.23568024358274742
+
+bly_b - 0.23568024358274742
+quint_b - 0.17444063203213786
+flora_b - 0.17128949377803493
+miles_b - 0.15041197388136524
+
+Result for the vector: miles, coming from part b of the book
+Rank: 1 out of 4 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.15751789122606621
+
+miles_a - 0.15751789122606621
+bly_a - 0.15041197388136524
+quint_a - 0.10439622524999248
+flora_a - 0.07626773997929812
+
+Result for the vector: flora, coming from part b of the book
+Rank: 3 out of 4 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.17963543953684363
+
+miles_a - 0.242513940184478
+quint_a - 0.2241714596748352
+flora_a - 0.17963543953684363
+bly_a - 0.17128949377803493
+
+Result for the vector: quint, coming from part b of the book
+Rank: 4 out of 4 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.1299133074335275
+
+flora_a - 0.2681740500719488
+miles_a - 0.20140635056419962
+bly_a - 0.17444063203213786
+quint_a - 0.1299133074335275
+
+Result for the vector: bly, coming from part b of the book
+Rank: 1 out of 4 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.23568024358274742
+
+bly_a - 0.23568024358274742
+flora_a - 0.23399142920971083
+quint_a - 0.11985763876781716
+miles_a - 0.06845202296972323
