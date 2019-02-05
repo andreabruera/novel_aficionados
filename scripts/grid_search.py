@@ -14,7 +14,7 @@ plot_mrr={}
 lengths={}
 names={}
 characters_dict={}
-characters_var={}
+characters_std={}
 
 for setup in os.listdir(big):
     setup_folder=os.listdir('{}/{}'.format(big, setup))
@@ -31,7 +31,7 @@ for setup in os.listdir(big):
     lengths[setup]=[]
     names[setup]=[]
     characters_dict[setup]=[]
-    characters_var[setup]=[]
+    characters_std[setup]=[]
     
     for novel in setup_folder:
         characters_frequency=[]
@@ -68,8 +68,8 @@ for setup in os.listdir(big):
         lengths[setup].append(novel_length)
         names[setup].append(novel)
         characters_dict[setup].append(int(line4))
-        var_characters_frequency=numpy.var(characters_frequency)
-        characters_var[setup].append(var_characters_frequency)
+        std_characters_frequency=numpy.std(characters_frequency)
+        characters_std[setup].append(std_characters_frequency)
     #average_mrr=mrr/float(counter)
     average_mrr=numpy.median(list_var_mrr)
     var_mrr=numpy.var(list_var_mrr)
@@ -103,7 +103,7 @@ for n in names[setup]:
 
 novels_info=open('plots/novels_info.txt', 'w')
 for n in [k for k in range(0, len(short_names))]:
-    novels_info.write('Name:\t{}\nLength in words:\t{}\nCharacters evaluated:\t{}\nMedian Rank:\t{}\nMRR:\t{}\nVariance in characters frequency: {}\n\n'.format(short_names[n],lengths[setup][n],characters_dict[setup][n],list_var_median[n],list_var_mrr[n], characters_var[setup][n]))
+    novels_info.write('Name:\t{}\nLength in words:\t{}\nCharacters evaluated:\t{}\nMedian Rank:\t{}\nMRR:\t{}\nStandard deviation of characters frequency: {}\n\n'.format(short_names[n],lengths[setup][n],characters_dict[setup][n],list_var_median[n],list_var_mrr[n], characters_std[setup][n]))
 
 
 ### Lenghts/score
@@ -141,11 +141,11 @@ plt.clf()
 ### Variance of characters frequency/score
 
 for setup in plot_median.keys():
-    plt.scatter( plot_median[setup], characters_var[setup], label='{}'.format(setup)) 
+    plt.scatter( plot_median[setup], characters_std[setup], label='{}'.format(setup)) 
 x_ticks, y_ticks=ticks(plot_median, 'median')
 plt.xlabel('Median Rank')
 plt.ylabel('Variance of characters frequency')
-plt.yticks(characters_var[setup])
+plt.yticks(characters_std[setup])
 plt.xticks(y_ticks)
 plt.legend(bbox_to_anchor=(0.9, 1.15))
 plt.tight_layout()
@@ -201,11 +201,11 @@ plt.clf()
 ### Variance of characters frequency/score MRR
 
 for setup in plot_mrr.keys():
-    plt.scatter( plot_mrr[setup], characters_var[setup], label='{}'.format(setup)) 
+    plt.scatter( plot_mrr[setup], characters_std[setup], label='{}'.format(setup)) 
 x_ticks, y_ticks=ticks(plot_mrr, 'mrr')
 plt.xlabel('MRR')
 plt.ylabel('Variance of characters frequency')
-plt.yticks(characters_var[setup])
+plt.yticks(characters_std[setup])
 plt.xticks(y_ticks)
 plt.legend(bbox_to_anchor=(0.9, 1.15))
 plt.tight_layout()
