@@ -1,0 +1,1527 @@
+
+Result for the vector: scrooge
+Rank: 3 out of 5 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.03533365156249385
+
+Position: 1 - spirit_a - 0.11563860680826882
+Position: 2 - marley_a - 0.10046834192246062
+Position: 3 - scrooge_a - 0.03533365156249385
+Position: 4 - peter_a - 0.03042118442528346
+Position: 5 - bob_a - -0.09464680765309243
+
+Result for the vector: bob
+Rank: 3 out of 5 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.014891979328275986
+
+Position: 1 - peter_a - 0.21537216007709503
+Position: 2 - scrooge_a - 0.047193386572993684
+Position: 3 - bob_a - 0.014891979328275986
+Position: 4 - marley_a - -0.009051875063553509
+Position: 5 - spirit_a - -0.024172814562916756
+
+Result for the vector: marley
+Rank: 3 out of 5 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.13162499587237977
+
+Position: 1 - peter_a - 0.1667492836713791
+Position: 2 - spirit_a - 0.15438036620616913
+Position: 3 - marley_a - 0.13162499587237977
+Position: 4 - bob_a - 0.11156026354072927
+Position: 5 - scrooge_a - 0.11136778525306094
+
+Result for the vector: peter
+Rank: 1 out of 5 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.18291400372982025
+
+Position: 1 - peter_a - 0.18291400372982025
+Position: 2 - marley_a - 0.14466768268732141
+Position: 3 - scrooge_a - 0.05534423557852305
+Position: 4 - spirit_a - 0.04294315353035927
+Position: 5 - bob_a - 0.02801722121136067
+
+Result for the vector: spirit
+Rank: 5 out of 5 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.08083501699075157
+
+Position: 1 - peter_a - 0.22518997565478024
+Position: 2 - marley_a - 0.1821904913612781
+Position: 3 - scrooge_a - 0.16821813082044995
+Position: 4 - bob_a - 0.16154415424036583
+Position: 5 - spirit_a - 0.08083501699075157
+
+Novel: 19337
+MRR:	0.44000000000000006
+Median rank:	3.0
+Mean rank:	3.0
+Total number of characters considered:	7
+
+
+
+Result for the vector: jim
+Rank: 7 out of 12 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.10834349915476141
+
+Position: 1 - silas_a - 0.18493438869323664
+Position: 2 - sid_a - 0.17894623216826425
+Position: 3 - thatcher_a - 0.17554988490193746
+Position: 4 - miss_watson_a - 0.14040733220620943
+Position: 5 - boggs_a - 0.13092645293035823
+Position: 6 - dey_a - 0.11881531384036885
+Position: 7 - jim_a - 0.10834349915476141
+Position: 8 - sherburn_a - 0.0956280799022893
+Position: 9 - sally_a - 0.08188885938458797
+Position: 10 - huck_a - 0.07867766130068854
+Position: 11 - george_a - 0.018791260757781893
+Position: 12 - huck_finn_a - 0.011806855330075488
+
+Result for the vector: huck
+Rank: 9 out of 12 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.056231140716740034
+
+Position: 1 - sherburn_a - 0.19500397473550027
+Position: 2 - boggs_a - 0.17094091090383867
+Position: 3 - sid_a - 0.1600641906261444
+Position: 4 - silas_a - 0.15183647429455746
+Position: 5 - dey_a - 0.1510077267885208
+Position: 6 - jim_a - 0.1317169893811341
+Position: 7 - sally_a - 0.08764207624322407
+Position: 8 - miss_watson_a - 0.06857270951785775
+Position: 9 - huck_a - 0.056231140716740034
+Position: 10 - thatcher_a - 0.05568385869264603
+Position: 11 - george_a - 0.04705566540360451
+Position: 12 - huck_finn_a - -0.05309580639004707
+
+Result for the vector: huck
+Rank: 12 out of 12 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: -0.05309580639004707
+
+Position: 1 - sherburn_a - 0.19500397473550027
+Position: 2 - boggs_a - 0.17094091090383867
+Position: 3 - sid_a - 0.1600641906261444
+Position: 4 - silas_a - 0.15183647429455746
+Position: 5 - dey_a - 0.1510077267885208
+Position: 6 - jim_a - 0.1317169893811341
+Position: 7 - sally_a - 0.08764207624322407
+Position: 8 - miss_watson_a - 0.06857270951785775
+Position: 9 - huck_a - 0.056231140716740034
+Position: 10 - thatcher_a - 0.05568385869264603
+Position: 11 - george_a - 0.04705566540360451
+Position: 12 - huck_finn_a - -0.05309580639004707
+
+Result for the vector: sally
+Rank: 6 out of 12 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.1204376441501167
+
+Position: 1 - miss_watson_a - 0.16768483326940734
+Position: 2 - sherburn_a - 0.15927689792880784
+Position: 3 - silas_a - 0.15629077889268272
+Position: 4 - boggs_a - 0.13248994246065274
+Position: 5 - sid_a - 0.1280951091079447
+Position: 6 - sally_a - 0.1204376441501167
+Position: 7 - george_a - 0.05762636088211422
+Position: 8 - huck_finn_a - 0.04418209326809924
+Position: 9 - dey_a - 0.04368716608545681
+Position: 10 - jim_a - 0.03146630806919708
+Position: 11 - huck_a - -0.005948291691984986
+Position: 12 - thatcher_a - -0.029182317605087698
+
+Result for the vector: silas
+Rank: 4 out of 12 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.08391648035992627
+
+Position: 1 - sherburn_a - 0.14379767216457917
+Position: 2 - boggs_a - 0.10492883935358646
+Position: 3 - sid_a - 0.10255953669548035
+Position: 4 - silas_a - 0.08391648035992627
+Position: 5 - miss_watson_a - 0.041548137859944656
+Position: 6 - sally_a - 0.020700226223475532
+Position: 7 - dey_a - 0.015590935945510864
+Position: 8 - thatcher_a - -0.0019082013750448823
+Position: 9 - jim_a - -0.0033049429408426906
+Position: 10 - huck_finn_a - -0.019348226487636566
+Position: 11 - george_a - -0.06665374338626862
+Position: 12 - huck_a - -0.1669600407457379
+
+Result for the vector: sid
+Rank: 5 out of 12 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.16994424164295197
+
+Position: 1 - silas_a - 0.24663243432737703
+Position: 2 - huck_a - 0.22010619760192657
+Position: 3 - sherburn_a - 0.2114705764370817
+Position: 4 - boggs_a - 0.20788014554620232
+Position: 5 - sid_a - 0.16994424164295197
+Position: 6 - dey_a - 0.16297446191310883
+Position: 7 - george_a - 0.11867722123861313
+Position: 8 - miss_watson_a - 0.10932777402781771
+Position: 9 - jim_a - 0.09652259776130918
+Position: 10 - sally_a - 0.08266609408456371
+Position: 11 - huck_finn_a - 0.03030742146074772
+Position: 12 - thatcher_a - -0.010142681188881397
+
+Result for the vector: george
+Rank: 9 out of 12 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.07713718712329865
+
+Position: 1 - sally_a - 0.1986585616665651
+Position: 2 - boggs_a - 0.1651266266443321
+Position: 3 - huck_finn_a - 0.15422233939170837
+Position: 4 - miss_watson_a - 0.1476714059016528
+Position: 5 - sherburn_a - 0.1451878908164569
+Position: 6 - dey_a - 0.14103956520557404
+Position: 7 - sid_a - 0.09967537969350815
+Position: 8 - silas_a - 0.0773352482120767
+Position: 9 - george_a - 0.07713718712329865
+Position: 10 - thatcher_a - 0.02997075766324997
+Position: 11 - jim_a - -0.011976228809429954
+Position: 12 - huck_a - -0.0608660428742197
+
+Result for the vector: sherburn
+Rank: 2 out of 12 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.22646585922045026
+
+Position: 1 - boggs_a - 0.2483181952427742
+Position: 2 - sherburn_a - 0.22646585922045026
+Position: 3 - jim_a - 0.15308500704929304
+Position: 4 - dey_a - 0.14351454804881067
+Position: 5 - silas_a - 0.135178067396764
+Position: 6 - sid_a - 0.08073538037345951
+Position: 7 - sally_a - 0.044731560035440925
+Position: 8 - huck_finn_a - 0.03556832032109263
+Position: 9 - miss_watson_a - 0.01620907991880655
+Position: 10 - george_a - -0.013564506949916694
+Position: 11 - thatcher_a - -0.05764499851003287
+Position: 12 - huck_a - -0.0785751338519276
+
+Result for the vector: thatcher
+Rank: 5 out of 12 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.18262645602226257
+
+Position: 1 - sid_a - 0.31284385919570923
+Position: 2 - silas_a - 0.22669888218339937
+Position: 3 - boggs_a - 0.20961513249919222
+Position: 4 - dey_a - 0.20619066059589386
+Position: 5 - thatcher_a - 0.18262645602226257
+Position: 6 - sherburn_a - 0.17726649777492925
+Position: 7 - sally_a - 0.14663021703452525
+Position: 8 - miss_watson_a - 0.13929982898532842
+Position: 9 - huck_a - 0.11339635332801085
+Position: 10 - george_a - 0.08082840591669083
+Position: 11 - jim_a - 0.05836481203823172
+Position: 12 - huck_finn_a - -0.0361156091094017
+
+Result for the vector: dey
+Rank: 3 out of 12 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.08984104066613442
+
+Position: 1 - george_a - 0.1144463454021915
+Position: 2 - sherburn_a - 0.11162198747330986
+Position: 3 - dey_a - 0.08984104066613442
+Position: 4 - boggs_a - 0.08442979064165299
+Position: 5 - huck_finn_a - 0.07231739378921374
+Position: 6 - jim_a - 0.061167402073806734
+Position: 7 - sid_a - 0.06036682234307597
+Position: 8 - sally_a - 0.05179397325479825
+Position: 9 - thatcher_a - 0.029044204325801275
+Position: 10 - huck_a - 0.025510043323937963
+Position: 11 - silas_a - 0.02395705462736217
+Position: 12 - miss_watson_a - -0.021379654638746658
+
+Result for the vector: boggs
+Rank: 1 out of 12 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.34789306055543384
+
+Position: 1 - boggs_a - 0.34789306055543384
+Position: 2 - sherburn_a - 0.289073795080187
+Position: 3 - sid_a - 0.15963074026291044
+Position: 4 - dey_a - 0.15776752875849803
+Position: 5 - silas_a - 0.13843896732678723
+Position: 6 - jim_a - 0.12071470865186557
+Position: 7 - miss_watson_a - 0.11184063063627164
+Position: 8 - sally_a - 0.031145802689713495
+Position: 9 - huck_finn_a - 0.016649498665302943
+Position: 10 - george_a - -0.0014200453561571478
+Position: 11 - thatcher_a - -0.025776182906400186
+Position: 12 - huck_a - -0.08354390663431963
+
+Novel: 76
+MRR:	0.2816738816738817
+Median rank:	5.0
+Mean rank:	5.7272727272727275
+Total number of characters considered:	18
+
+
+
+Result for the vector: anne
+Rank: 3 out of 12 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.08618214212762478
+
+Position: 1 - mr_phillips_a - 0.11951191043711776
+Position: 2 - jane_a - 0.10139278603878188
+Position: 3 - anne_a - 0.08618214212762478
+Position: 4 - marilla_a - 0.07829102640476776
+Position: 5 - josie_pye_a - 0.0622697807985676
+Position: 6 - matthew_a - 0.049235916160466985
+Position: 7 - mrs_thomas_a - 0.02609327652494456
+Position: 8 - mrs_lynde_a - 0.02542184479534644
+Position: 9 - minnie_may_a - 0.02235406011777946
+Position: 10 - carmody_a - -0.01959979976118808
+Position: 11 - gilbert_a - -0.03574183849269647
+Position: 12 - diana_a - -0.03661550099803519
+
+Result for the vector: marilla
+Rank: 6 out of 12 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.04300128924854334
+
+Position: 1 - anne_a - 0.10466588600474261
+Position: 2 - jane_a - 0.06327476163879772
+Position: 3 - josie_pye_a - 0.05734636432964698
+Position: 4 - minnie_may_a - 0.05523205505204529
+Position: 5 - mr_phillips_a - 0.05282056919275039
+Position: 6 - marilla_a - 0.04300128924854334
+Position: 7 - matthew_a - 0.03196840551307234
+Position: 8 - gilbert_a - 0.018266613752640114
+Position: 9 - diana_a - 0.016634832196523678
+Position: 10 - carmody_a - -0.016017698228886677
+Position: 11 - mrs_thomas_a - -0.03165292834201243
+Position: 12 - mrs_lynde_a - -0.03489951728876091
+
+Result for the vector: diana
+Rank: 6 out of 12 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.06986819415891753
+
+Position: 1 - marilla_a - 0.1399216097569946
+Position: 2 - mr_phillips_a - 0.13093898409968732
+Position: 3 - matthew_a - 0.11747959606288665
+Position: 4 - anne_a - 0.10457222163677216
+Position: 5 - minnie_may_a - 0.07503815963978054
+Position: 6 - diana_a - 0.06986819415891753
+Position: 7 - jane_a - 0.03509548842337803
+Position: 8 - gilbert_a - 0.027839003960460556
+Position: 9 - carmody_a - 0.027662884443998337
+Position: 10 - josie_pye_a - -0.014430411159992218
+Position: 11 - mrs_lynde_a - -0.05566217337025255
+Position: 12 - mrs_thomas_a - -0.06452926248311996
+
+Result for the vector: matthew
+Rank: 9 out of 12 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: -0.04846210260802221
+
+Position: 1 - anne_a - 0.13851302036565447
+Position: 2 - jane_a - 0.1023702275907722
+Position: 3 - diana_a - 0.08411890762690019
+Position: 4 - josie_pye_a - 0.07212736027673733
+Position: 5 - carmody_a - 0.021598967367472247
+Position: 6 - mr_phillips_a - 0.0056506775102701775
+Position: 7 - minnie_may_a - -0.009150232847028029
+Position: 8 - mrs_thomas_a - -0.02929874521203373
+Position: 9 - matthew_a - -0.04846210260802221
+Position: 10 - marilla_a - -0.05236983143181132
+Position: 11 - gilbert_a - -0.06470177129799835
+Position: 12 - mrs_lynde_a - -0.11372686177492222
+
+Result for the vector: gilbert
+Rank: 12 out of 12 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: -0.07438434137059279
+
+Position: 1 - minnie_may_a - 0.09555501775607524
+Position: 2 - diana_a - 0.07372791539811839
+Position: 3 - jane_a - 0.06797561389353204
+Position: 4 - josie_pye_a - 0.06515347957611084
+Position: 5 - marilla_a - 0.04007019967049957
+Position: 6 - mr_phillips_a - 0.03733274863167122
+Position: 7 - mrs_thomas_a - 0.036925844848155975
+Position: 8 - anne_a - 0.02835681289434433
+Position: 9 - carmody_a - 0.02142593450844288
+Position: 10 - mrs_lynde_a - 0.015750032857062418
+Position: 11 - matthew_a - 0.009960564150231013
+Position: 12 - gilbert_a - -0.07438434137059279
+
+Result for the vector: jane
+Rank: 5 out of 12 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.09834628100235217
+
+Position: 1 - marilla_a - 0.14367056115514795
+Position: 2 - mr_phillips_a - 0.13801759892754706
+Position: 3 - matthew_a - 0.11578540394132204
+Position: 4 - diana_a - 0.10923208108330759
+Position: 5 - jane_a - 0.09834628100235217
+Position: 6 - anne_a - 0.06897370388868812
+Position: 7 - carmody_a - 0.031636192497866804
+Position: 8 - mrs_thomas_a - 0.031152329398900044
+Position: 9 - gilbert_a - 0.019007405669379945
+Position: 10 - mrs_lynde_a - 0.005065099159642931
+Position: 11 - josie_pye_a - -0.009140215699990044
+Position: 12 - minnie_may_a - -0.012871357284052072
+
+Result for the vector: carmody
+Rank: 9 out of 12 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.05527334287762642
+
+Position: 1 - mrs_thomas_a - 0.18996937572956085
+Position: 2 - marilla_a - 0.1842931265918353
+Position: 3 - mr_phillips_a - 0.1646274677141033
+Position: 4 - jane_a - 0.140622428618525
+Position: 5 - anne_a - 0.12127452343702316
+Position: 6 - mrs_lynde_a - 0.0753825053800647
+Position: 7 - diana_a - 0.06939928440449493
+Position: 8 - josie_pye_a - 0.056501831859350204
+Position: 9 - carmody_a - 0.05527334287762642
+Position: 10 - matthew_a - 0.02258662574251372
+Position: 11 - minnie_may_a - 0.02191276727356814
+Position: 12 - gilbert_a - 0.010460635027606344
+
+Novel: 45
+MRR:	0.16746031746031748
+Median rank:	6.0
+Mean rank:	7.142857142857143
+Total number of characters considered:	23
+
+
+
+Result for the vector: bhudrinath
+Rank: 4 out of 5 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.0034944231156259775
+
+Position: 1 - cheetoo_a - 0.16316152136555215
+Position: 2 - thuggee_a - 0.08263533814934876
+Position: 3 - ganesha_a - 0.05952185037601897
+Position: 4 - bhudrinath_a - 0.0034944231156259775
+Position: 5 - meer_sahib_a - -0.03043855258639315
+
+Result for the vector: cheetoo
+Rank: 1 out of 5 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.22211261259838308
+
+Position: 1 - cheetoo_a - 0.22211261259838308
+Position: 2 - bhudrinath_a - 0.18812869489192963
+Position: 3 - ganesha_a - 0.11656605502569369
+Position: 4 - thuggee_a - 0.005944462138744476
+Position: 5 - meer_sahib_a - -0.006923521609560303
+
+Result for the vector: ganesha
+Rank: 2 out of 5 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.09468161495437549
+
+Position: 1 - bhudrinath_a - 0.1058153510093689
+Position: 2 - ganesha_a - 0.09468161495437549
+Position: 3 - thuggee_a - 0.013447920921568839
+Position: 4 - meer_sahib_a - 0.011151796539181373
+Position: 5 - cheetoo_a - 0.0036405017757861814
+
+Result for the vector: thuggee
+Rank: 5 out of 5 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.0034415568502064496
+
+Position: 1 - cheetoo_a - 0.14078950042787217
+Position: 2 - bhudrinath_a - 0.09388598799705505
+Position: 3 - ganesha_a - 0.09197703200715605
+Position: 4 - meer_sahib_a - 0.030456469370617564
+Position: 5 - thuggee_a - 0.0034415568502064496
+
+Novel: 44881
+MRR:	0.4875
+Median rank:	3.0
+Mean rank:	3.0
+Total number of characters considered:	22
+
+
+
+Result for the vector: ahab
+Rank: 4 out of 13 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.14471027882634163
+
+Position: 1 - stubb_a - 0.2139475261066811
+Position: 2 - daggoo_a - 0.18098365181782225
+Position: 3 - jonah_a - 0.16964369985666763
+Position: 4 - ahab_a - 0.14471027882634163
+Position: 5 - elijah_a - 0.12992888630284327
+Position: 6 - starbuck_a - 0.11210691260654435
+Position: 7 - ishmael_a - 0.10224577310731804
+Position: 8 - dick_a - 0.09831885566486719
+Position: 9 - tashtego_a - 0.06728962751750665
+Position: 10 - pip_a - 0.03980727764281329
+Position: 11 - cook_a - 0.020358826400777675
+Position: 12 - fedallah_a - -0.024667755553990117
+Position: 13 - gabriel_a - -0.05888386858894049
+
+Result for the vector: stubb
+Rank: 4 out of 13 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.07937295261782704
+
+Position: 1 - ahab_a - 0.1555518451661974
+Position: 2 - dick_a - 0.1540258675813675
+Position: 3 - elijah_a - 0.10175276547670364
+Position: 4 - stubb_a - 0.07937295261782704
+Position: 5 - daggoo_a - 0.07411762768731295
+Position: 6 - cook_a - 0.056776609271764755
+Position: 7 - pip_a - 0.05432191118597984
+Position: 8 - tashtego_a - 0.04438038170337677
+Position: 9 - jonah_a - 0.04437434805555191
+Position: 10 - starbuck_a - 0.028220496891170604
+Position: 11 - gabriel_a - 0.02350708283483982
+Position: 12 - ishmael_a - 0.020093407481908798
+Position: 13 - fedallah_a - 0.011305301450192928
+
+Result for the vector: starbuck
+Rank: 7 out of 13 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.1026919720952544
+
+Position: 1 - jonah_a - 0.21965777400215744
+Position: 2 - ahab_a - 0.16867185123730863
+Position: 3 - stubb_a - 0.162737996088625
+Position: 4 - dick_a - 0.1346220958683386
+Position: 5 - daggoo_a - 0.11327434401069202
+Position: 6 - pip_a - 0.11124712392722162
+Position: 7 - starbuck_a - 0.1026919720952544
+Position: 8 - tashtego_a - 0.10104210960363107
+Position: 9 - ishmael_a - 0.08131191655255417
+Position: 10 - elijah_a - 0.07214973751905761
+Position: 11 - cook_a - 0.06351090955604247
+Position: 12 - gabriel_a - 0.01064316522113507
+Position: 13 - fedallah_a - -0.002788216008905668
+
+Result for the vector: jonah
+Rank: 4 out of 13 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.125975575268997
+
+Position: 1 - ahab_a - 0.20803265273571162
+Position: 2 - ishmael_a - 0.1883897222048213
+Position: 3 - tashtego_a - 0.13949093881303462
+Position: 4 - jonah_a - 0.125975575268997
+Position: 5 - elijah_a - 0.12498331070045787
+Position: 6 - starbuck_a - 0.10550891607999877
+Position: 7 - stubb_a - 0.08949184095956791
+Position: 8 - pip_a - 0.07646438768718329
+Position: 9 - dick_a - 0.059327535520342964
+Position: 10 - fedallah_a - 0.05664340069035298
+Position: 11 - daggoo_a - 0.027812715619802673
+Position: 12 - gabriel_a - 0.002322423831899538
+Position: 13 - cook_a - -0.030660104041689448
+
+Result for the vector: dick
+Rank: 5 out of 13 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.1272087021345676
+
+Position: 1 - tashtego_a - 0.1403613900922903
+Position: 2 - ishmael_a - 0.1373931981686834
+Position: 3 - starbuck_a - 0.13281030952930545
+Position: 4 - elijah_a - 0.13067459281238383
+Position: 5 - dick_a - 0.1272087021345676
+Position: 6 - ahab_a - 0.10953839868307191
+Position: 7 - stubb_a - 0.07110191034055825
+Position: 8 - daggoo_a - 0.04324378445744545
+Position: 9 - gabriel_a - 0.015101711296933242
+Position: 10 - pip_a - 0.014206112447016715
+Position: 11 - fedallah_a - 0.005979005822300575
+Position: 12 - jonah_a - 0.005927291522106804
+Position: 13 - cook_a - -0.03360035815236824
+
+Result for the vector: pip
+Rank: 11 out of 13 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.08395016193389893
+
+Position: 1 - stubb_a - 0.22211285101694797
+Position: 2 - elijah_a - 0.2052990198135376
+Position: 3 - ahab_a - 0.20470772413657487
+Position: 4 - tashtego_a - 0.1646963655948639
+Position: 5 - daggoo_a - 0.14340124388940623
+Position: 6 - dick_a - 0.12958328425884247
+Position: 7 - starbuck_a - 0.126616038478377
+Position: 8 - jonah_a - 0.1029024974376708
+Position: 9 - ishmael_a - 0.10227200388908386
+Position: 10 - gabriel_a - 0.08992359042167664
+Position: 11 - pip_a - 0.08395016193389893
+Position: 12 - cook_a - 0.061839472502470016
+Position: 13 - fedallah_a - 0.011958605609834194
+
+Result for the vector: daggoo
+Rank: 8 out of 13 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.12006158710076699
+
+Position: 1 - jonah_a - 0.25776346074124934
+Position: 2 - ahab_a - 0.239249891571691
+Position: 3 - pip_a - 0.23800636047143828
+Position: 4 - ishmael_a - 0.2286471196605898
+Position: 5 - dick_a - 0.18840808237815157
+Position: 6 - starbuck_a - 0.13922638945815474
+Position: 7 - elijah_a - 0.13666426052642652
+Position: 8 - daggoo_a - 0.12006158710076699
+Position: 9 - tashtego_a - 0.06880736556075116
+Position: 10 - stubb_a - 0.05788098475691745
+Position: 11 - cook_a - -0.03941753624133876
+Position: 12 - gabriel_a - -0.06612773436688588
+Position: 13 - fedallah_a - -0.1494835659707656
+
+Result for the vector: tashtego
+Rank: 6 out of 13 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.1734631359577179
+
+Position: 1 - ahab_a - 0.27504398077988557
+Position: 2 - starbuck_a - 0.22554026398302737
+Position: 3 - dick_a - 0.2160051017999649
+Position: 4 - daggoo_a - 0.19655218401862323
+Position: 5 - ishmael_a - 0.17886723577976227
+Position: 6 - tashtego_a - 0.1734631359577179
+Position: 7 - pip_a - 0.16838248074054718
+Position: 8 - jonah_a - 0.14793380045693524
+Position: 9 - stubb_a - 0.14142418554877154
+Position: 10 - elijah_a - 0.12177319824695587
+Position: 11 - cook_a - 0.061934564262628555
+Position: 12 - gabriel_a - 0.030971242114901543
+Position: 13 - fedallah_a - -0.022490164265036583
+
+Result for the vector: fedallah
+Rank: 13 out of 13 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: -0.054563933746931984
+
+Position: 1 - ahab_a - 0.25991212665249064
+Position: 2 - jonah_a - 0.20021816791404295
+Position: 3 - tashtego_a - 0.16642211873597268
+Position: 4 - ishmael_a - 0.16231957561730082
+Position: 5 - stubb_a - 0.1564784897423247
+Position: 6 - dick_a - 0.14257687755158185
+Position: 7 - pip_a - 0.12868532921926173
+Position: 8 - starbuck_a - 0.12283157165332785
+Position: 9 - cook_a - 0.1078542652086695
+Position: 10 - elijah_a - 0.10482080593171142
+Position: 11 - daggoo_a - 0.06752472229522967
+Position: 12 - gabriel_a - -0.0012198464610009335
+Position: 13 - fedallah_a - -0.054563933746931984
+
+Result for the vector: gabriel
+Rank: 13 out of 13 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: -0.051271285861730576
+
+Position: 1 - tashtego_a - 0.1755032241344452
+Position: 2 - jonah_a - 0.1686195036357494
+Position: 3 - ahab_a - 0.15949601885652684
+Position: 4 - stubb_a - 0.1270105614059831
+Position: 5 - pip_a - 0.12160149961709976
+Position: 6 - dick_a - 0.10553961247205734
+Position: 7 - elijah_a - 0.041038960218429565
+Position: 8 - ishmael_a - 0.03595815598964691
+Position: 9 - starbuck_a - 0.03318152774462275
+Position: 10 - daggoo_a - 0.028033640043952517
+Position: 11 - fedallah_a - 0.012167832814157009
+Position: 12 - cook_a - -0.019458331167697906
+Position: 13 - gabriel_a - -0.051271285861730576
+
+Result for the vector: ishmael
+Rank: 10 out of 13 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.020534685520250506
+
+Position: 1 - tashtego_a - 0.2060842391202311
+Position: 2 - gabriel_a - 0.11360064961906396
+Position: 3 - dick_a - 0.10772032393692012
+Position: 4 - fedallah_a - 0.09598913216655676
+Position: 5 - ahab_a - 0.09564654529094764
+Position: 6 - stubb_a - 0.0862721325430712
+Position: 7 - elijah_a - 0.07502001821875477
+Position: 8 - jonah_a - 0.04796511536940608
+Position: 9 - starbuck_a - 0.02770903520286103
+Position: 10 - ishmael_a - 0.020534685520250506
+Position: 11 - daggoo_a - 0.012253344058990565
+Position: 12 - cook_a - 0.0016546020229398029
+Position: 13 - pip_a - -0.11412966316165568
+
+Result for the vector: elijah
+Rank: 13 out of 13 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: -0.023848998139768793
+
+Position: 1 - tashtego_a - 0.22213474578066914
+Position: 2 - ahab_a - 0.20170843914524675
+Position: 3 - jonah_a - 0.18238445713427406
+Position: 4 - ishmael_a - 0.14712249181039613
+Position: 5 - dick_a - 0.14339439998252398
+Position: 6 - stubb_a - 0.12793403482633778
+Position: 7 - daggoo_a - 0.10828721746390027
+Position: 8 - pip_a - 0.10820897246029895
+Position: 9 - starbuck_a - 0.05942123542021832
+Position: 10 - gabriel_a - 0.05111606198895165
+Position: 11 - cook_a - 0.014881885122713009
+Position: 12 - fedallah_a - 0.0008878825147750237
+Position: 13 - elijah_a - -0.023848998139768793
+
+Result for the vector: cook
+Rank: 12 out of 13 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: -0.005427910157119632
+
+Position: 1 - ahab_a - 0.1810670495033277
+Position: 2 - starbuck_a - 0.1631994247436535
+Position: 3 - dick_a - 0.16052197453248682
+Position: 4 - tashtego_a - 0.14671390374220017
+Position: 5 - ishmael_a - 0.13258428081367749
+Position: 6 - gabriel_a - 0.12855928370003225
+Position: 7 - elijah_a - 0.12759726479069822
+Position: 8 - daggoo_a - 0.12422260642051786
+Position: 9 - pip_a - 0.07975780488504157
+Position: 10 - jonah_a - 0.06196461805806727
+Position: 11 - fedallah_a - 0.031993268013401806
+Position: 12 - cook_a - -0.005427910157119632
+Position: 13 - stubb_a - -0.015033201385056807
+
+Novel: 2701
+MRR:	0.1453488818873434
+Median rank:	8.0
+Mean rank:	8.461538461538462
+Total number of characters considered:	16
+
+
+
+Result for the vector: peter
+Rank: 9 out of 14 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.06672504941970417
+
+Position: 1 - george_a - 0.22380918108279632
+Position: 2 - starkey_a - 0.14446574880080673
+Position: 3 - tiger_lily_a - 0.13461335003376007
+Position: 4 - wendy_a - 0.11632603406906128
+Position: 5 - michael_a - 0.10554981231689453
+Position: 6 - liza_a - 0.10283108800649643
+Position: 7 - hook_a - 0.08996774792478983
+Position: 8 - tinker_bell_a - 0.08925501523181846
+Position: 9 - peter_a - 0.06672504941970417
+Position: 10 - tinker_bell - 0.06609084808284961
+Position: 11 - smee_a - 0.06600039452314377
+Position: 12 - nana_a - 0.05889841914176941
+Position: 13 - john_a - 0.03654750917993515
+Position: 14 - cecco_a - -0.0385405928516742
+
+Result for the vector: wendy
+Rank: 2 out of 14 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.12870884664602025
+
+Position: 1 - starkey_a - 0.14934122117336984
+Position: 2 - wendy_a - 0.12870884664602025
+Position: 3 - george_a - 0.04209687188267738
+Position: 4 - peter_a - 0.035060469061136496
+Position: 5 - tinker_bell - 0.004608300896489514
+Position: 6 - john_a - -0.0075836803366637435
+Position: 7 - smee_a - -0.009114831142733641
+Position: 8 - hook_a - -0.009882905520498822
+Position: 9 - liza_a - -0.017201120871238686
+Position: 10 - nana_a - -0.02483469099791704
+Position: 11 - tinker_bell_a - -0.02681673797021108
+Position: 12 - cecco_a - -0.03034412115812323
+Position: 13 - michael_a - -0.07472450585815289
+Position: 14 - tiger_lily_a - -0.08986664027770534
+
+Result for the vector: john
+Rank: 3 out of 14 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.16586278873273108
+
+Position: 1 - starkey_a - 0.25192133342985323
+Position: 2 - peter_a - 0.18632493533640748
+Position: 3 - john_a - 0.16586278873273108
+Position: 4 - hook_a - 0.15087280576663079
+Position: 5 - tiger_lily_a - 0.14924819767475128
+Position: 6 - tinker_bell_a - 0.14837772096329102
+Position: 7 - smee_a - 0.1447276771068573
+Position: 8 - george_a - 0.11756955042895996
+Position: 9 - wendy_a - 0.11535505950450897
+Position: 10 - tinker_bell - 0.09409017300068317
+Position: 11 - cecco_a - 0.045460975644646705
+Position: 12 - michael_a - 0.04510088264942169
+Position: 13 - liza_a - 0.04006045684218407
+Position: 14 - nana_a - 0.025996917858719826
+
+Result for the vector: michael
+Rank: 11 out of 14 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.0570636036116959
+
+Position: 1 - george_a - 0.22071826941236292
+Position: 2 - john_a - 0.20359107575363372
+Position: 3 - tiger_lily_a - 0.2020867080118272
+Position: 4 - wendy_a - 0.17073745044283428
+Position: 5 - smee_a - 0.14962810723865358
+Position: 6 - starkey_a - 0.13979763625846126
+Position: 7 - liza_a - 0.1327752659551879
+Position: 8 - hook_a - 0.1195793854814219
+Position: 9 - tinker_bell_a - 0.09874544136199005
+Position: 10 - peter_a - 0.07061806207460723
+Position: 11 - michael_a - 0.0570636036116959
+Position: 12 - tinker_bell - 0.039211197518968816
+Position: 13 - nana_a - 0.036460650308747615
+Position: 14 - cecco_a - 0.02983787736337282
+
+Result for the vector: nana
+Rank: 5 out of 14 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.09687847644090652
+
+Position: 1 - starkey_a - 0.16020551801340344
+Position: 2 - liza_a - 0.15156610310077667
+Position: 3 - smee_a - 0.14175303280353546
+Position: 4 - hook_a - 0.09863298974233822
+Position: 5 - nana_a - 0.09687847644090652
+Position: 6 - wendy_a - 0.0839960053563118
+Position: 7 - tinker_bell - 0.07333597848796986
+Position: 8 - george_a - 0.0651211479378432
+Position: 9 - peter_a - 0.0621861927024242
+Position: 10 - michael_a - 0.023988207802176476
+Position: 11 - tiger_lily_a - 0.00917853694409132
+Position: 12 - cecco_a - -0.008450564500723168
+Position: 13 - tinker_bell_a - -0.03532306582698424
+Position: 14 - john_a - -0.04673605179000057
+
+Result for the vector: smee
+Rank: 11 out of 14 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: -0.01976163195004276
+
+Position: 1 - peter_a - 0.14349980652332409
+Position: 2 - tinker_bell - 0.10626220181438902
+Position: 3 - george_a - 0.07752536982297953
+Position: 4 - john_a - 0.07122904595050107
+Position: 5 - hook_a - 0.0690886154770856
+Position: 6 - tiger_lily_a - 0.0630383230424928
+Position: 7 - wendy_a - 0.049125582776929064
+Position: 8 - tinker_bell_a - 0.031036908744665845
+Position: 9 - starkey_a - 0.017720316939940615
+Position: 10 - cecco_a - 0.014011339284479717
+Position: 11 - smee_a - -0.01976163195004276
+Position: 12 - michael_a - -0.019863578238274
+Position: 13 - liza_a - -0.06498963743510035
+Position: 14 - nana_a - -0.0863739573136595
+
+Result for the vector: starkey
+Rank: 2 out of 14 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.12088291322487076
+
+Position: 1 - peter_a - 0.17196284281875285
+Position: 2 - starkey_a - 0.12088291322487076
+Position: 3 - tinker_bell - 0.06920315119018727
+Position: 4 - wendy_a - 0.05067909659979038
+Position: 5 - hook_a - 0.043043498072936975
+Position: 6 - john_a - 0.02823715266508774
+Position: 7 - cecco_a - 0.024426827528491107
+Position: 8 - tinker_bell_a - 0.023526628972687064
+Position: 9 - michael_a - 0.01562667498370037
+Position: 10 - tiger_lily_a - 0.0065559532584534095
+Position: 11 - liza_a - -0.011465254581429206
+Position: 12 - smee_a - -0.013576165246253175
+Position: 13 - nana_a - -0.01494597688156298
+Position: 14 - george_a - -0.02294602822774902
+
+Result for the vector: hook
+Rank: 6 out of 14 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.14967401325702773
+
+Position: 1 - wendy_a - 0.27483858020075724
+Position: 2 - tiger_lily_a - 0.19984406531786564
+Position: 3 - george_a - 0.18445943295955788
+Position: 4 - tinker_bell - 0.17344983834626218
+Position: 5 - starkey_a - 0.1678169170672627
+Position: 6 - hook_a - 0.14967401325702773
+Position: 7 - peter_a - 0.1304980665445337
+Position: 8 - john_a - 0.12120338913192234
+Position: 9 - tinker_bell_a - 0.11006261080316913
+Position: 10 - michael_a - 0.10979368628301125
+Position: 11 - smee_a - 0.06223291532797137
+Position: 12 - liza_a - 0.038268005057096245
+Position: 13 - nana_a - 0.017739350781479462
+Position: 14 - cecco_a - -0.024303292855620558
+
+Result for the vector: george
+Rank: 6 out of 14 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.06044936912950104
+
+Position: 1 - peter_a - 0.18482353894850875
+Position: 2 - starkey_a - 0.11619685191502731
+Position: 3 - wendy_a - 0.11154169589281082
+Position: 4 - tinker_bell - 0.08770413174008554
+Position: 5 - cecco_a - 0.0735648169258129
+Position: 6 - george_a - 0.06044936912950104
+Position: 7 - tiger_lily_a - 0.01936044543981552
+Position: 8 - liza_a - 0.01572449877858162
+Position: 9 - tinker_bell_a - 0.010622320081958778
+Position: 10 - john_a - 0.004427945838956413
+Position: 11 - hook_a - -0.00243623871907525
+Position: 12 - smee_a - -0.012121841311454773
+Position: 13 - nana_a - -0.03156900405883789
+Position: 14 - michael_a - -0.06736242026090622
+
+Result for the vector: cecco
+Rank: 10 out of 14 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: -0.005174954264608289
+
+Position: 1 - peter_a - 0.18490631490387444
+Position: 2 - starkey_a - 0.14975683837404372
+Position: 3 - wendy_a - 0.07387367635965347
+Position: 4 - tinker_bell - 0.07240507320135409
+Position: 5 - tinker_bell_a - 0.03711488953575164
+Position: 6 - tiger_lily_a - 0.018859783187508583
+Position: 7 - hook_a - 0.01585043688717111
+Position: 8 - john_a - 0.0037318245688624566
+Position: 9 - george_a - -0.0019745646290221623
+Position: 10 - cecco_a - -0.005174954264608289
+Position: 11 - michael_a - -0.015063921920955181
+Position: 12 - smee_a - -0.017262965440750122
+Position: 13 - liza_a - -0.07197903841733932
+Position: 14 - nana_a - -0.09856458753347397
+
+Result for the vector: liza
+Rank: 13 out of 14 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: -0.0015901342267170548
+
+Position: 1 - wendy_a - 0.1979752480983734
+Position: 2 - hook_a - 0.17469346074422992
+Position: 3 - peter_a - 0.16526740284367847
+Position: 4 - george_a - 0.14492366581700267
+Position: 5 - tinker_bell_a - 0.10883546199904273
+Position: 6 - tiger_lily_a - 0.09238384664058685
+Position: 7 - john_a - 0.0891122919056503
+Position: 8 - michael_a - 0.08645452558994293
+Position: 9 - cecco_a - 0.08403115475363476
+Position: 10 - starkey_a - 0.0833621124435101
+Position: 11 - tinker_bell - 0.030478484974593874
+Position: 12 - smee_a - 0.024721678346395493
+Position: 13 - liza_a - -0.0015901342267170548
+Position: 14 - nana_a - -0.02417955920100212
+
+Novel: 16
+MRR:	0.2124108215017306
+Median rank:	6.0
+Mean rank:	7.090909090909091
+Total number of characters considered:	14
+
+
+
+Result for the vector: elizabeth
+Rank: 18 out of 19 characters
+Reciprocal rank: 0.05555555555555555
+Cosine similarity to the query: 0.02627304647186538
+
+Position: 1 - georgiana_a - 0.27223629570711555
+Position: 2 - miss_lucas_a - 0.2367348514041216
+Position: 3 - lydia_a - 0.23443670478085904
+Position: 4 - charlotte_a - 0.1895934101818029
+Position: 5 - mr_bingley - 0.18435196029091072
+Position: 6 - mr_darcy_a - 0.17897365030567805
+Position: 7 - fitzwilliam_a - 0.17412546862667455
+Position: 8 - lady_catherine_a - 0.17284647145409804
+Position: 9 - rosings_a - 0.14149591748404264
+Position: 10 - jane_a - 0.1306754577562486
+Position: 11 - william_a - 0.1181429585261035
+Position: 12 - kitty_a - 0.1165458480445056
+Position: 13 - mr_collins_a - 0.1100195455556973
+Position: 14 - mr_bingley_a - 0.1002694025716008
+Position: 15 - pemberley_a - 0.07472907974508645
+Position: 16 - wickham_a - 0.0632341522942231
+Position: 17 - mrs_hurst_a - 0.050144200776344586
+Position: 18 - elizabeth_a - 0.02627304647186538
+Position: 19 - mary_a - 0.005054312593746936
+
+Result for the vector: jane
+Rank: 19 out of 19 characters
+Reciprocal rank: 0.05263157894736842
+Cosine similarity to the query: -0.06677754769392197
+
+Position: 1 - mrs_hurst_a - 0.152791908216959
+Position: 2 - mr_bingley - 0.07167141775233533
+Position: 3 - mr_collins_a - 0.06289009375035215
+Position: 4 - fitzwilliam_a - 0.06118574920850313
+Position: 5 - mr_bingley_a - 0.04698469954820286
+Position: 6 - pemberley_a - 0.042172891368097654
+Position: 7 - rosings_a - 0.04104215034591263
+Position: 8 - lydia_a - 0.02873422864871547
+Position: 9 - georgiana_a - 0.018732976914466837
+Position: 10 - wickham_a - 0.017258706405239948
+Position: 11 - lady_catherine_a - 0.011123534560290919
+Position: 12 - elizabeth_a - -0.011858553850140958
+Position: 13 - william_a - -0.014685059022303904
+Position: 14 - kitty_a - -0.014902754242636197
+Position: 15 - mr_darcy_a - -0.019535825354705764
+Position: 16 - charlotte_a - -0.02443621907018314
+Position: 17 - miss_lucas_a - -0.05255741096861947
+Position: 18 - mary_a - -0.05801003625959073
+Position: 19 - jane_a - -0.06677754769392197
+
+Result for the vector: wickham
+Rank: 2 out of 19 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.20045863387235235
+
+Position: 1 - mr_collins_a - 0.2827546427992204
+Position: 2 - wickham_a - 0.20045863387235235
+Position: 3 - lydia_a - 0.18419031249909734
+Position: 4 - lady_catherine_a - 0.1756446107837793
+Position: 5 - rosings_a - 0.15652070006604818
+Position: 6 - miss_lucas_a - 0.1533612861227612
+Position: 7 - fitzwilliam_a - 0.11914796737277543
+Position: 8 - georgiana_a - 0.11783684087772146
+Position: 9 - elizabeth_a - 0.0903821086655792
+Position: 10 - kitty_a - 0.0841739823170313
+Position: 11 - mr_bingley - 0.07861397968364005
+Position: 12 - pemberley_a - 0.06797981602073824
+Position: 13 - charlotte_a - 0.06556582060063966
+Position: 14 - jane_a - 0.057615080993918384
+Position: 15 - mr_darcy_a - 0.04534082216973181
+Position: 16 - mrs_hurst_a - 0.044814502011865334
+Position: 17 - mr_bingley_a - 0.03311508324056373
+Position: 18 - mary_a - 0.03127288725158921
+Position: 19 - william_a - -0.0019580797522169534
+
+Result for the vector: lydia
+Rank: 9 out of 19 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.18865326609174218
+
+Position: 1 - charlotte_a - 0.2587364912033081
+Position: 2 - fitzwilliam_a - 0.23701170715794423
+Position: 3 - mr_bingley - 0.22171408106600796
+Position: 4 - mr_darcy_a - 0.21813319623470306
+Position: 5 - mr_collins_a - 0.2139406055212021
+Position: 6 - miss_lucas_a - 0.2024354995022864
+Position: 7 - georgiana_a - 0.19505073130130768
+Position: 8 - lady_catherine_a - 0.18961113691329956
+Position: 9 - lydia_a - 0.18865326609174218
+Position: 10 - jane_a - 0.16086090090456318
+Position: 11 - kitty_a - 0.1501912221369512
+Position: 12 - mr_bingley_a - 0.14241716265678406
+Position: 13 - rosings_a - 0.1338806450366974
+Position: 14 - pemberley_a - 0.1282946616411209
+Position: 15 - wickham_a - 0.09008689224720001
+Position: 16 - elizabeth_a - 0.07092156261205673
+Position: 17 - william_a - 0.06387054175138474
+Position: 18 - mrs_hurst_a - 0.0542890764772892
+Position: 19 - mary_a - -0.06029317707697088
+
+Result for the vector: kitty
+Rank: 14 out of 19 characters
+Reciprocal rank: 0.07142857142857142
+Cosine similarity to the query: 0.17617059719054182
+
+Position: 1 - miss_lucas_a - 0.3253476820782531
+Position: 2 - william_a - 0.2711843984613186
+Position: 3 - fitzwilliam_a - 0.2661044676931073
+Position: 4 - georgiana_a - 0.26218421684597676
+Position: 5 - charlotte_a - 0.25666318794112325
+Position: 6 - lydia_a - 0.25112741437174735
+Position: 7 - jane_a - 0.242094196614797
+Position: 8 - lady_catherine_a - 0.23816150497427596
+Position: 9 - pemberley_a - 0.23032762227489856
+Position: 10 - mr_bingley_a - 0.2033725259678054
+Position: 11 - mr_collins_a - 0.1848892012304547
+Position: 12 - mr_darcy_a - 0.18239918754105675
+Position: 13 - elizabeth_a - 0.18130848221132298
+Position: 14 - kitty_a - 0.17617059719054182
+Position: 15 - rosings_a - 0.15010755359485453
+Position: 16 - mr_bingley - 0.14871723667177716
+Position: 17 - mary_a - 0.02188702421227034
+Position: 18 - wickham_a - -0.014632716834085202
+Position: 19 - mrs_hurst_a - -0.091166669656833
+
+Result for the vector: william
+Rank: 14 out of 19 characters
+Reciprocal rank: 0.07142857142857142
+Cosine similarity to the query: 0.12427226824379772
+
+Position: 1 - lady_catherine_a - 0.25713736585191993
+Position: 2 - georgiana_a - 0.2152521525398539
+Position: 3 - fitzwilliam_a - 0.2140428530028887
+Position: 4 - lydia_a - 0.2093990569948588
+Position: 5 - mr_darcy_a - 0.19777407341522205
+Position: 6 - miss_lucas_a - 0.16846622040666465
+Position: 7 - pemberley_a - 0.16330455730273008
+Position: 8 - mr_bingley - 0.16285220793330116
+Position: 9 - charlotte_a - 0.15322663346608387
+Position: 10 - kitty_a - 0.15279375927411076
+Position: 11 - mrs_hurst_a - 0.13898353692840157
+Position: 12 - wickham_a - 0.13019721598020845
+Position: 13 - elizabeth_a - 0.12494504824116975
+Position: 14 - william_a - 0.12427226824379772
+Position: 15 - rosings_a - 0.09429420066756612
+Position: 16 - jane_a - 0.09249942556020174
+Position: 17 - mr_bingley_a - 0.08155578617917858
+Position: 18 - mr_collins_a - 0.042381857853587224
+Position: 19 - mary_a - 0.02359727351947269
+
+Result for the vector: mary
+Rank: 18 out of 19 characters
+Reciprocal rank: 0.05555555555555555
+Cosine similarity to the query: -0.01647087882545958
+
+Position: 1 - fitzwilliam_a - 0.22237316436687848
+Position: 2 - georgiana_a - 0.21502296835047233
+Position: 3 - mr_collins_a - 0.1840391943431384
+Position: 4 - miss_lucas_a - 0.1582525474353872
+Position: 5 - lady_catherine_a - 0.15189460504683253
+Position: 6 - pemberley_a - 0.1509801059377133
+Position: 7 - lydia_a - 0.13836988394350214
+Position: 8 - mr_darcy_a - 0.13763696625012384
+Position: 9 - mr_bingley_a - 0.136951900306231
+Position: 10 - mr_bingley - 0.13603205847358008
+Position: 11 - kitty_a - 0.12706885853204603
+Position: 12 - mrs_hurst_a - 0.12585369492449217
+Position: 13 - elizabeth_a - 0.1136707819300426
+Position: 14 - rosings_a - 0.10508123903982425
+Position: 15 - charlotte_a - 0.09943103197628086
+Position: 16 - jane_a - 0.05525601863098111
+Position: 17 - wickham_a - 0.030714063005801314
+Position: 18 - mary_a - -0.01647087882545958
+Position: 19 - william_a - -0.0394960655572376
+
+Result for the vector: rosings
+Rank: 7 out of 19 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.1073489636182785
+
+Position: 1 - georgiana_a - 0.2704313099384308
+Position: 2 - charlotte_a - 0.2171500027179718
+Position: 3 - miss_lucas_a - 0.1930551735477202
+Position: 4 - lady_catherine_a - 0.18608377873897552
+Position: 5 - kitty_a - 0.1836789603137661
+Position: 6 - mr_bingley - 0.1373698480504844
+Position: 7 - rosings_a - 0.1073489636182785
+Position: 8 - lydia_a - 0.10418685091098703
+Position: 9 - pemberley_a - 0.10259605199098587
+Position: 10 - fitzwilliam_a - 0.10091336973727115
+Position: 11 - wickham_a - 0.09757113456726074
+Position: 12 - william_a - 0.08864185214042664
+Position: 13 - mr_darcy_a - 0.08036009967327118
+Position: 14 - elizabeth_a - 0.0711786150932312
+Position: 15 - mary_a - 0.05680576881187468
+Position: 16 - mr_collins_a - 0.048213571310043335
+Position: 17 - mr_bingley_a - 0.03744683414697647
+Position: 18 - jane_a - 0.03734935186354376
+Position: 19 - mrs_hurst_a - -0.0461462140083313
+
+Result for the vector: fitzwilliam
+Rank: 3 out of 19 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.18155545670455212
+
+Position: 1 - lydia_a - 0.19700267595068668
+Position: 2 - kitty_a - 0.1933239515616865
+Position: 3 - fitzwilliam_a - 0.18155545670455212
+Position: 4 - rosings_a - 0.177836587364572
+Position: 5 - miss_lucas_a - 0.1656935760792241
+Position: 6 - mrs_hurst_a - 0.15841916675624756
+Position: 7 - jane_a - 0.14733459933606383
+Position: 8 - georgiana_a - 0.13260642089266844
+Position: 9 - lady_catherine_a - 0.12514065578999095
+Position: 10 - mr_collins_a - 0.11233426965279196
+Position: 11 - mr_bingley - 0.10772742009975297
+Position: 12 - mr_bingley_a - 0.09442821426475691
+Position: 13 - elizabeth_a - 0.07915751871936083
+Position: 14 - charlotte_a - 0.06740404866349844
+Position: 15 - william_a - 0.0669896771606707
+Position: 16 - mr_darcy_a - 0.06498842880095332
+Position: 17 - mary_a - 0.051644238927617006
+Position: 18 - pemberley_a - 0.0391515952095865
+Position: 19 - wickham_a - -0.0003977761489607738
+
+Result for the vector: charlotte
+Rank: 6 out of 19 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.201498880982399
+
+Position: 1 - georgiana_a - 0.2903238832950592
+Position: 2 - miss_lucas_a - 0.2870615210253455
+Position: 3 - fitzwilliam_a - 0.27944194788711907
+Position: 4 - lady_catherine_a - 0.2274288833141327
+Position: 5 - pemberley_a - 0.20980027318000793
+Position: 6 - charlotte_a - 0.201498880982399
+Position: 7 - elizabeth_a - 0.19605807960033417
+Position: 8 - kitty_a - 0.17950732050857912
+Position: 9 - lydia_a - 0.17644076575162315
+Position: 10 - mr_bingley_a - 0.15023960173130035
+Position: 11 - jane_a - 0.14089736762337
+Position: 12 - mr_darcy_a - 0.12849503755569458
+Position: 13 - william_a - 0.12770090997219086
+Position: 14 - rosings_a - 0.11894941329956055
+Position: 15 - mr_collins_a - 0.11385171860456467
+Position: 16 - wickham_a - 0.10818535834550858
+Position: 17 - mr_bingley - 0.0896674639184796
+Position: 18 - mrs_hurst_a - 0.07887780666351318
+Position: 19 - mary_a - -0.006322166139548011
+
+Result for the vector: georgiana
+Rank: 2 out of 19 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.2467435747385025
+
+Position: 1 - miss_lucas_a - 0.28995580345260524
+Position: 2 - georgiana_a - 0.2467435747385025
+Position: 3 - elizabeth_a - 0.20197969675064087
+Position: 4 - mr_collins_a - 0.19679328799247742
+Position: 5 - fitzwilliam_a - 0.1854006068766667
+Position: 6 - charlotte_a - 0.17985686659812927
+Position: 7 - rosings_a - 0.16473381221294403
+Position: 8 - mr_bingley_a - 0.1643642634153366
+Position: 9 - lydia_a - 0.15409216743982343
+Position: 10 - william_a - 0.13996295630931854
+Position: 11 - jane_a - 0.13248336709986236
+Position: 12 - pemberley_a - 0.13054881989955902
+Position: 13 - mr_darcy_a - 0.12189710885286331
+Position: 14 - kitty_a - 0.11161235307491883
+Position: 15 - mr_bingley - 0.10315087567860648
+Position: 16 - lady_catherine_a - 0.08349943906068802
+Position: 17 - wickham_a - 0.02778790332376957
+Position: 18 - mrs_hurst_a - 0.018084540963172913
+Position: 19 - mary_a - -0.023018841386402897
+
+Result for the vector: pemberley
+Rank: 15 out of 19 characters
+Reciprocal rank: 0.06666666666666667
+Cosine similarity to the query: -0.020899221301078796
+
+Position: 1 - lydia_a - 0.19973320364156982
+Position: 2 - mr_collins_a - 0.16366305947303772
+Position: 3 - fitzwilliam_a - 0.10480115009556605
+Position: 4 - rosings_a - 0.1028224527835846
+Position: 5 - elizabeth_a - 0.0875062346458435
+Position: 6 - miss_lucas_a - 0.07961216806209592
+Position: 7 - william_a - 0.07423006743192673
+Position: 8 - mr_bingley - 0.06336160371532429
+Position: 9 - kitty_a - 0.057124318394789673
+Position: 10 - mrs_hurst_a - 0.048609357327222824
+Position: 11 - georgiana_a - 0.017834151163697243
+Position: 12 - mr_bingley_a - 0.009468937292695045
+Position: 13 - charlotte_a - 0.0020297057926654816
+Position: 14 - wickham_a - -0.0026151416823267937
+Position: 15 - pemberley_a - -0.020899221301078796
+Position: 16 - lady_catherine_a - -0.0415862575173378
+Position: 17 - mary_a - -0.04214744022928002
+Position: 18 - mr_darcy_a - -0.043499354273080826
+Position: 19 - jane_a - -0.06489231630838863
+
+Novel: 1342
+MRR:	0.1772695627958786
+Median rank:	11.5
+Mean rank:	10.583333333333334
+Total number of characters considered:	28
+
+
+
+Result for the vector: holmes
+Rank: 1 out of 10 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.1552424122609871
+
+Position: 1 - holmes_a - 0.1552424122609871
+Position: 2 - stapleton_a - 0.13479600963544985
+Position: 3 - selden_a - 0.13474888814230807
+Position: 4 - merripit_house_a - 0.133192566024593
+Position: 5 - watson_a - 0.11890075710120206
+Position: 6 - henry_a - 0.08351800096249606
+Position: 7 - barrymore_a - 0.07864176163699654
+Position: 8 - charles_a - 0.06702078733034048
+Position: 9 - miss_stapleton_a - 0.04733626595165742
+Position: 10 - dr_mortimer_a - 0.04652647812743471
+
+Result for the vector: henry
+Rank: 3 out of 10 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.09231315828302979
+
+Position: 1 - selden_a - 0.13699175417423248
+Position: 2 - holmes_a - 0.13573099672794342
+Position: 3 - henry_a - 0.09231315828302979
+Position: 4 - watson_a - 0.06074861447521373
+Position: 5 - miss_stapleton_a - 0.055210962891578674
+Position: 6 - stapleton_a - 0.03367035936326861
+Position: 7 - barrymore_a - 0.02662080312495255
+Position: 8 - charles_a - 0.007784544490277767
+Position: 9 - merripit_house_a - -0.012916813604533672
+Position: 10 - dr_mortimer_a - -0.07956410470222817
+
+Result for the vector: charles
+Rank: 3 out of 10 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.1431877741087479
+
+Position: 1 - selden_a - 0.1959199484515152
+Position: 2 - miss_stapleton_a - 0.14648246584675959
+Position: 3 - charles_a - 0.1431877741087479
+Position: 4 - holmes_a - 0.0935679906816478
+Position: 5 - merripit_house_a - 0.03498218893845592
+Position: 6 - watson_a - 0.026738309166977378
+Position: 7 - henry_a - 0.02134223536756464
+Position: 8 - stapleton_a - -0.00027776067545951064
+Position: 9 - dr_mortimer_a - -0.04187010353416559
+Position: 10 - barrymore_a - -0.08498447909719935
+
+Result for the vector: watson
+Rank: 2 out of 10 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.11952699753481186
+
+Position: 1 - selden_a - 0.13831856846809387
+Position: 2 - watson_a - 0.11952699753481186
+Position: 3 - dr_mortimer_a - 0.09821932177428491
+Position: 4 - charles_a - 0.08999964594841003
+Position: 5 - barrymore_a - 0.08749931082125387
+Position: 6 - holmes_a - 0.07161124050617218
+Position: 7 - merripit_house_a - 0.0709981769323349
+Position: 8 - henry_a - 0.06260045059324656
+Position: 9 - stapleton_a - 0.05574863570179452
+Position: 10 - miss_stapleton_a - 0.030501101166009903
+
+Result for the vector: stapleton
+Rank: 3 out of 10 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.12862534437700132
+
+Position: 1 - selden_a - 0.17705411153709255
+Position: 2 - watson_a - 0.15307590030719037
+Position: 3 - stapleton_a - 0.12862534437700132
+Position: 4 - holmes_a - 0.122921027367054
+Position: 5 - merripit_house_a - 0.10192250597938877
+Position: 6 - barrymore_a - 0.09986303001642298
+Position: 7 - charles_a - 0.08652243992552534
+Position: 8 - miss_stapleton_a - 0.0687030587373342
+Position: 9 - henry_a - 0.03372446719633154
+Position: 10 - dr_mortimer_a - 0.016428008579849173
+
+Result for the vector: barrymore
+Rank: 4 out of 10 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.14792457496220768
+
+Position: 1 - watson_a - 0.22938902676105663
+Position: 2 - selden_a - 0.21077595417356254
+Position: 3 - dr_mortimer_a - 0.15594275295734517
+Position: 4 - barrymore_a - 0.14792457496220768
+Position: 5 - charles_a - 0.11665192941736775
+Position: 6 - stapleton_a - 0.11530608224625136
+Position: 7 - merripit_house_a - 0.10122147805818803
+Position: 8 - holmes_a - 0.0967186896037276
+Position: 9 - miss_stapleton_a - 0.07702589494144305
+Position: 10 - henry_a - 0.058310223368724316
+
+Result for the vector: selden
+Rank: 6 out of 10 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.10829237103462219
+
+Position: 1 - watson_a - 0.20452973517598336
+Position: 2 - barrymore_a - 0.1837770899401364
+Position: 3 - charles_a - 0.1474440097808838
+Position: 4 - merripit_house_a - 0.1325031816959381
+Position: 5 - stapleton_a - 0.1231846697087488
+Position: 6 - selden_a - 0.10829237103462219
+Position: 7 - holmes_a - 0.0930224284529686
+Position: 8 - miss_stapleton_a - 0.08197981864213943
+Position: 9 - dr_mortimer_a - 0.042792004776477606
+Position: 10 - henry_a - 0.030592189150815893
+
+Novel: 2852
+MRR:	0.41666666666666663
+Median rank:	3.0
+Mean rank:	3.142857142857143
+Total number of characters considered:	12
+
+
+
+Result for the vector: mary
+Rank: 5 out of 7 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: -0.03313423670718256
+
+Position: 1 - yorkshire_a - 0.09777706861495972
+Position: 2 - martha_a - 0.06684045493602753
+Position: 3 - colin_a - -0.015664171894317035
+Position: 4 - mrs_sowerby_a - -0.017753061711605716
+Position: 5 - mary_a - -0.03313423670718256
+Position: 6 - dickon_a - -0.05084628763336803
+Position: 7 - mr_craven_a - -0.14925338928381296
+
+Result for the vector: dickon
+Rank: 2 out of 7 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.17670584778224516
+
+Position: 1 - martha_a - 0.2178961997597278
+Position: 2 - dickon_a - 0.17670584778224516
+Position: 3 - yorkshire_a - 0.17617978680669633
+Position: 4 - mr_craven_a - 0.11780430770503604
+Position: 5 - colin_a - 0.1012097880965345
+Position: 6 - mrs_sowerby_a - 0.08014783769405404
+Position: 7 - mary_a - 0.04648031623837556
+
+Result for the vector: colin
+Rank: 3 out of 7 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.08345362296424048
+
+Position: 1 - yorkshire_a - 0.11971378683190907
+Position: 2 - dickon_a - 0.11877611987448453
+Position: 3 - colin_a - 0.08345362296424048
+Position: 4 - mary_a - 0.06963325414360355
+Position: 5 - mrs_sowerby_a - 0.03538373379755828
+Position: 6 - mr_craven_a - 0.025362237532072243
+Position: 7 - martha_a - 0.010995974160610864
+
+Result for the vector: martha
+Rank: 1 out of 7 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.14429017901420593
+
+Position: 1 - martha_a - 0.14429017901420593
+Position: 2 - mrs_sowerby_a - 0.1348812350701552
+Position: 3 - colin_a - 0.10854783232652646
+Position: 4 - yorkshire_a - 0.08753804117441177
+Position: 5 - dickon_a - 0.07850169624393277
+Position: 6 - mr_craven_a - 0.06637788913381772
+Position: 7 - mary_a - 0.03759035019989634
+
+Result for the vector: yorkshire
+Rank: 2 out of 7 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.2177775800228119
+
+Position: 1 - mrs_sowerby_a - 0.2458809318613455
+Position: 2 - yorkshire_a - 0.2177775800228119
+Position: 3 - martha_a - 0.1418079137802124
+Position: 4 - mary_a - 0.10089870084539714
+Position: 5 - colin_a - 0.06642216641968987
+Position: 6 - mr_craven_a - 0.01887936963859981
+Position: 7 - dickon_a - -0.02414160852556255
+
+Novel: 113
+MRR:	0.5066666666666666
+Median rank:	2.0
+Mean rank:	2.6
+Total number of characters considered:	14
+
+
+
+Novel: 58355
+MRR:	nan
+Median rank:	nan
+Mean rank:	nan
+Total number of characters considered:	27
+
+
+
+Result for the vector: miles
+Rank: 6 out of 6 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: -0.05381700396537781
+
+Position: 1 - quint_a - 0.02880655787885189
+Position: 2 - mrs_grose_a - 0.009872715871576933
+Position: 3 - miss_jessel_a - 0.005629355255644183
+Position: 4 - flora_a - -0.038330321709494554
+Position: 5 - bly_a - -0.04288889723353973
+Position: 6 - miles_a - -0.05381700396537781
+
+Result for the vector: flora
+Rank: 6 out of 6 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.0030874893080446455
+
+Position: 1 - quint_a - 0.12012586355584459
+Position: 2 - mrs_grose_a - 0.07640810476638149
+Position: 3 - miss_jessel_a - 0.054752774074839
+Position: 4 - miles_a - 0.020621210951245167
+Position: 5 - bly_a - 0.009154058879976773
+Position: 6 - flora_a - 0.0030874893080446455
+
+Result for the vector: quint
+Rank: 4 out of 6 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.06657508214041838
+
+Position: 1 - miss_jessel_a - 0.2039830657233635
+Position: 2 - miles_a - 0.09421638680149282
+Position: 3 - flora_a - 0.06944707574108044
+Position: 4 - quint_a - 0.06657508214041838
+Position: 5 - bly_a - -0.03685981737314024
+Position: 6 - mrs_grose_a - -0.047992678492388634
+
+Result for the vector: bly
+Rank: 6 out of 6 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: -0.006833144608868179
+
+Position: 1 - quint_a - 0.1067356424550904
+Position: 2 - miles_a - 0.10452124787930397
+Position: 3 - flora_a - 0.08349434782581518
+Position: 4 - miss_jessel_a - 0.07327207614613034
+Position: 5 - mrs_grose_a - 0.0463914144207734
+Position: 6 - bly_a - -0.006833144608868179
+
+Novel: 209
+MRR:	0.18749999999999997
+Median rank:	6.0
+Mean rank:	5.5
+Total number of characters considered:	7
+
+
+
+Result for the vector: john
+Rank: 2 out of 2 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.0996739745042913
+
+Position: 1 - jennie_a - 0.1582383411597712
+Position: 2 - john_a - 0.0996739745042913
+
+Result for the vector: jennie
+Rank: 2 out of 2 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.03125099092721939
+
+Position: 1 - john_a - 0.07997313886880875
+Position: 2 - jennie_a - 0.03125099092721939
+
+Novel: 1952
+MRR:	0.5
+Median rank:	2.0
+Mean rank:	2.0
+Total number of characters considered:	2
+
+

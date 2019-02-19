@@ -141,3 +141,5 @@ mean_rank=numpy.mean(ranks)
 
 evaluation_file.write('MRR:\t{}\nMedian rank:\t{}\nMean rank:\t{}\nTotal number of characters considered:\t{}\nCharacters disappearing when dividing the novel in two:\t{}'.format(MRR, median_rank, mean_rank, len(sorted_simil_list)+1, len(char_list)-(len(sorted_simil_list)+1))) 
 #results.write('{}\t{}'.format(MRR, folder))
+
+################

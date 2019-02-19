@@ -3,11 +3,13 @@ import numpy
 import matplotlib.pyplot as plt
 import matplotlib
 import re
+
 from re import sub
 
 cwd=os.getcwd()
-#big='{}/big_test_novels'.format(cwd)
-big='{}/plot_folders'.format(cwd)
+big='{}/big_test_novels'.format(cwd)
+#big='../big_test_novels_14_02'
+#big='{}/plot_folders'.format(cwd)
 os.makedirs('plots', exist_ok=True)
 plot_median={}
 plot_mrr={}
@@ -15,13 +17,13 @@ lengths={}
 names={}
 characters_dict={}
 characters_std={}
+total_evaluations_runs_counter=0
 
 for setup in os.listdir(big):
     setup_folder=os.listdir('{}/{}'.format(big, setup))
     #median=[]
     #characters=0
     characters=[]
-    counter=0
     list_var_mrr=[]
     list_var_median=[]
     list_var_mean=[]
@@ -32,8 +34,13 @@ for setup in os.listdir(big):
     names[setup]=[]
     characters_dict[setup]=[]
     characters_std[setup]=[]
+
+    ambiguities={}
+    ambiguities_present=False
     
     for novel in setup_folder:
+        sentences_counter=[]
+        ambiguities_counter=[]
         characters_frequency=[]
         novel_folder=os.listdir('{}/{}/{}'.format(big, setup, novel))
         for single_file in novel_folder:
@@ -52,7 +59,6 @@ for setup in os.listdir(big):
                 plot_mrr[setup].append(float(line1))
                 #characters+=int(line3)
                 characters.append(int(line4))
-                #counter+=1
             if 'character' in single_file:
                 characters_file=open('{}/{}/{}/{}'.format(big, setup, novel, single_file)).readlines()
                 for l in characters_file:
@@ -60,6 +66,28 @@ for setup in os.listdir(big):
                     l=int(l[0])
                     if l>=10:
                         characters_frequency.append(l)
+            if 'data_output' in single_file:
+                data_output_filenames=os.listdir('{}/{}/{}/data_output'.format(big, setup, novel))
+                if 'ambiguities' in data_output_filenames:
+                    ambiguities_present=True
+                    ambiguities_filenames=os.listdir('{}/{}/{}/data_output/ambiguities'.format(big, setup, novel))
+                    for ambiguity in ambiguities_filenames:
+                        current_ambiguity=open('{}/{}/{}/data_output/ambiguities/{}'.format(big, setup, novel, ambiguity)).readlines()
+                        for character_line in current_ambiguity:
+                            if 'too: ' in character_line:
+                                character_line=character_line.strip('\n').split('too: ')[1]
+                                character_ambiguity=character_line.split(' out of ')[0]
+                                sent=character_line.split(' out of ')[1].strip('\n').replace(' sentences', '')
+                                ambiguities_counter.append(int(character_ambiguity))
+                                sentences_counter.append(int(sent))
+            if numpy.sum(sentences_counter)==0:
+                ambiguities_present=False
+        if ambiguities_present==True:
+            novel_ambiguity=numpy.sum(ambiguities_counter)
+            total_sentences=numpy.sum(sentences_counter)
+            percentage=round((float(novel_ambiguity)*100.0)/float(total_sentences), 2)
+            ambiguities[novel]=[novel_ambiguity, total_sentences, percentage]   
+
         original_file=os.listdir('{}/{}/{}/original_novel'.format(big, setup, novel))
         open_file=open('{}/{}/{}/original_novel/{}'.format(big, setup, novel, original_file[0])).read()
         open_file=sub(r'\W+', ' ', open_file)
@@ -70,17 +98,39 @@ for setup in os.listdir(big):
         characters_dict[setup].append(int(line4))
         std_characters_frequency=numpy.std(characters_frequency)
         characters_std[setup].append(std_characters_frequency)
-    #average_mrr=mrr/float(counter)
     average_mrr=numpy.median(list_var_mrr)
     var_mrr=numpy.var(list_var_mrr)
-    #average_median=median/float(counter)
     average_median=numpy.median(list_var_median)
     var_median=numpy.var(list_var_median)
     average_mean=numpy.median(list_var_mean)
     var_mean=numpy.var(list_var_mean)
-    #average_characters=characters/counter
     average_characters=numpy.mean(characters)
-    print('Setup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
+    if average_characters>14.0:
+        print('Setup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
+        if len(ambiguities.keys())>0 and total_evaluations_runs_counter==0:
+            ambiguity_percentages=[]
+            for amb in ambiguities.keys():
+                novel_amb=ambiguities[amb]
+                amb_sent=novel_amb[0]
+                total_sent=novel_amb[1]
+                percent=novel_amb[2]
+                ambiguity_percentages.append(percent)
+            final_percent=numpy.mean(ambiguity_percentages)
+            print('Percentage of ambiguous sentences of all sentences used for training (containing more than one character): {} %\n'.format(round(final_percent, 3)))
+            total_evaluations_runs_counter+=1
+
+'''
+
+### Ambiguity infos
+
+with open('plots/ambiguities_info.txt', 'w') as ambiguity_file:
+    if len(ambiguities.keys())>0:
+        for amb in ambiguities.keys():
+            novel_amb=ambiguities[amb]
+            median_amb=novel_amb[0]
+            mean_amb=novel_amb[1]
+            perc_amb=novel_amb[2]
+            ambiguity_file.write('\nAmbiguous sentences: {} out of {}\nPercentage: {} %\n\n'.format(amb, median_amb, mean_amb, perc_amb))
 
 def ticks(setups_dict, mode):
     max_value=[]
@@ -226,3 +276,4 @@ plt.tight_layout()
 plt.savefig('plots/name_mrr.png'.format(setup, novel), dpi=900)
 plt.clf()
 
+'''
