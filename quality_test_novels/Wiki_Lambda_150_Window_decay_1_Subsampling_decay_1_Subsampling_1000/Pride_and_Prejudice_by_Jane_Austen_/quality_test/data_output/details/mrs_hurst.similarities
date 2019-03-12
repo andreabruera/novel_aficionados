@@ -1,0 +1,11 @@
+mrs_hurst
+
+Sentence no. 1
+Sentence: ['though', 'and', '___', 'behave', 'and', 'speak', 'of', 'others', 'as', 'if', 'they', 'have', 'always', 'belonged', 'in', 'the', 'upper', 'echelons', 'of', 'society', 'austen', 'makes', 'point', 'to', 'explain', 'that', 'the', 'mr_bingleys', 'are', 'trade', 'rather', 'than', 'inheritors', 'and', 'rentiers']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 150.0
+Current alpha: 1.0
+Subsampled line: ['though', '___', 'behave', 'speak', 'always', 'belonged', 'echelons', 'austen', 'makes', 'explain', 'than', 'inheritors']
+
+[('actually', 0.3769882917404175), ('aristocratic', 0.36804574728012085), ('aristocracy', 0.36351144313812256), ('land-owning', 0.36126965284347534), ('behave', 0.36097967624664307), ('unquestioningly', 0.35798007249832153), ('echelons', 0.3540750741958618), ('intermarry', 0.34175094962120056), ('well-educated', 0.33927619457244873), ('belonged', 0.3388105630874634), ('always', 0.33576834201812744), ('yangban', 0.33346518874168396), ('somehow', 0.33082836866378784), ('genealogically', 0.33058130741119385), ('weak-willed', 0.3288848102092743), ('upper-caste', 0.3286682665348053), ('matriarchal', 0.32705265283584595), ('endogamous', 0.3265760540962219), ('nobility', 0.324889600276947), ('upper-class', 0.3246921896934509), ('patrilineally', 0.32445722818374634), ('morally', 0.32439929246902466), ('subservient', 0.32386255264282227), ('austen', 0.3234972655773163), ('noblewomen', 0.32349562644958496), ('politically', 0.3229494094848633), ('well-bred', 0.32211488485336304), ('shudras', 0.3220381736755371), ('obedient', 0.3184272050857544), ('know', 0.3167229890823364), ('upper', 0.3167189359664917), ('devoutly', 0.3166927695274353), ('well-off', 0.31602516770362854), ('seem', 0.3154611587524414), ('submissive', 0.3141847848892212), ('landowning', 0.3141452670097351), ('privileged', 0.3114740252494812), ('hypocritically', 0.30914586782455444), ('rightfully', 0.30849212408065796), ('seems', 0.30787375569343567), ('strong-minded', 0.30726784467697144), ('maternally', 0.3072153329849243), ('kshatriya', 0.3061034679412842), ('marry', 0.304935485124588), ('grandees', 0.3047102093696594), ('aristocrats', 0.30461567640304565), ('obeyed', 0.3035964071750641), ('wealthy', 0.30221027135849), ('snobbish', 0.3017338216304779), ('skolian', 0.3014454245567322)]
+

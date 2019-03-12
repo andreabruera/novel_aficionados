@@ -1,0 +1,11 @@
+fezziwig
+
+Sentence no. 1
+Sentence: ['the', 'scenes', 'reveal', 'lonely', 'childhood', 'at', 'boarding', 'school', 'his', 'relationship', 'with', 'his', 'beloved', 'sister', 'fan', 'and', 'christmas', 'party', 'hosted', 'by', 'his', 'first', 'employer', 'mr', '___', 'who', 'treated', 'him', 'like', 'son']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 150.0
+Current alpha: 1.0
+Subsampled line: ['scenes', 'reveal', 'lonely', 'childhood', 'boarding', 'relationship', 'beloved', 'sister', 'fan', 'christmas', 'hosted', 'employer', '___', 'treated']
+
+[('pampered', 0.41715896129608154), ('kind-hearted', 0.40799883008003235), ('boyfriend', 0.4044848680496216), ('fiancé', 0.40424972772598267), ('timmys', 0.4036485254764557), ('doting', 0.40363800525665283), ('ethans', 0.39681825041770935), ('lover', 0.3957367241382599), ('friend', 0.39519837498664856), ('stepmother', 0.39407023787498474), ('jackies', 0.39328086376190186), ('aunt', 0.3929998278617859), ('fiancée', 0.39294934272766113), ('fiance', 0.39169809222221375), ('babysat', 0.39053457975387573), ('long-suffering', 0.3904343843460083), ('befriends', 0.38981151580810547), ('julies', 0.38966843485832214), ('weatherfield', 0.38923126459121704), ('xiaoyanzi', 0.38760343194007874), ('pollys', 0.3871104121208191), ('comforted', 0.3866857886314392), ('bride-to-be', 0.38615959882736206), ('scenes', 0.3857330083847046), ('alexs', 0.3852139115333557), ('hostesses', 0.3848840594291687), ('sarahs', 0.38453325629234314), ('snobby', 0.38367533683776855), ('girlfriend', 0.38358932733535767), ('jennas', 0.3833372890949249), ('mother-in-law', 0.3823513388633728), ('suzys', 0.3817892074584961), ('kindhearted', 0.38136768341064453), ('adoptive', 0.3803907632827759), ('romanced', 0.37979573011398315), ('lauras', 0.3795490860939026), ('mother', 0.3791288137435913), ('uncaring', 0.3788050413131714), ('emmas', 0.3787750005722046), ('narrator’s', 0.37851452827453613), ('friends', 0.37735432386398315), ('melindas', 0.3761780261993408), ('grandma', 0.3756141662597656), ('daisys', 0.37550580501556396), ('landlady', 0.3752201199531555), ('ediths', 0.37515509128570557), ('chloes', 0.37478822469711304), ('estranged', 0.37447914481163025), ('debbies', 0.3742724657058716), ('step-mother', 0.37376391887664795)]
+

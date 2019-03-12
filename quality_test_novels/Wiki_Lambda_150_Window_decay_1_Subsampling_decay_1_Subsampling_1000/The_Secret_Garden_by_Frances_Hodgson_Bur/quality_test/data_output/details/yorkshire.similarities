@@ -1,0 +1,11 @@
+yorkshire
+
+Sentence no. 1
+Sentence: ['she', 'briefly', 'lives', 'with', 'an', 'english', 'clergyman', 'and', 'his', 'family', 'in', 'india', 'before', 'she', 'is', 'sent', 'to', '___', 'in', 'england', 'to', 'live', 'with', 'mr_mr_craven', 'wealthy', 'uncle', 'whom', 'she', 'has', 'never', 'met', 'at', 'his', 'isolated', 'house', 'misselthwaite', 'manor']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 150.0
+Current alpha: 1.0
+Subsampled line: ['briefly', 'lives', 'clergyman', 'she', 'sent', '___', 'live', 'wealthy', 'uncle', 'isolated', 'manor']
+
+[('manor', 0.4364955723285675), ('lived', 0.42910581827163696), ('briefly', 0.4090564250946045), ('isolated', 0.4050925672054291), ('resided', 0.3901279866695404), ('secluded', 0.3895292580127716), ('family', 0.3788585960865021), ('widowed', 0.3761768043041229), ('recluse', 0.3658657968044281), ('exiled', 0.3636680841445923), ('reclusive', 0.3606295585632324), ('well-to-do', 0.3599094748497009), ('wealthy', 0.35651689767837524), ('aunt', 0.35353153944015503), ('eversfield', 0.3485681414604187), ('aristocratic', 0.34846556186676025), ('satchville', 0.34845274686813354), ('brympton', 0.34731337428092957), ('painswick', 0.34657907485961914), ('fenny', 0.3463716506958008), ('couple', 0.3461773693561554), ('swineshead', 0.34601151943206787), ('lives', 0.34594398736953735), ('impoverished', 0.3458765149116516), ('coughton', 0.34451180696487427), ('tamerton', 0.34373903274536133), ('holidayed', 0.3427070379257202), ('schoolteacher', 0.34201690554618835), ('bradninch', 0.34161466360092163), ('residing', 0.3401106595993042), ('cuddington', 0.3397010564804077), ('filleigh', 0.33785155415534973), ('father', 0.33626070618629456), ('banished', 0.33558860421180725), ('fitzpaine', 0.33506500720977783), ('mother', 0.33485203981399536), ('grandmother', 0.33476096391677856), ('nobleman', 0.3345854878425598), ('governess', 0.33335304260253906), ('deserted', 0.3330482244491577), ('widower', 0.33136701583862305), ('polesworth', 0.331365704536438), ('chartley', 0.33085039258003235), ('sandleford', 0.3305753767490387), ('housekeeper', 0.33021801710128784), ('belonged', 0.3300570845603943), ('chagford', 0.3294358253479004), ('chittlehampton', 0.32928746938705444), ('nunnery', 0.3290952444076538), ('where', 0.3290228545665741)]
+

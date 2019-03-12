@@ -1,0 +1,11 @@
+sid
+
+Sentence no. 1
+Sentence: ['when', 'intercepts', 'the', 'real', 'jim', 'on', 'the', 'road', 'and', 'tells', 'him', 'everything', 'jim', 'decides', 'to', 'join', 'huck', 'scheme', 'pretending', 'to', 'be', 'his', 'own', 'younger', 'half', 'brother', '___', 'while', 'huck', 'continues', 'pretending', 'to', 'be', 'jim']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 150.0
+Current alpha: 1.0
+Subsampled line: ['intercepts', 'real', 'jim', 'on', 'tells', 'everything', 'decides', 'join', 'huck', 'scheme', 'pretending', 'half', '___', 'huck', 'pretending', 'jim']
+
+[('convinces', 0.5229147672653198), ('agrees', 0.5045429468154907), ('persuades', 0.4917895793914795), ('decides', 0.4891816973686218), ('pretends', 0.4682905673980713), ('refuses', 0.4589764475822449), ('confesses', 0.4578590393066406), ('reluctantly', 0.4518648087978363), ('tells', 0.44432199001312256), ('arrives', 0.43864697217941284), ('insists', 0.4386305510997772), ('relents', 0.43827635049819946), ('unbeknownst', 0.4355792999267578), ('blackmails', 0.43449079990386963), ('learns', 0.4332783818244934), ('asks', 0.4297478199005127), ('confronts', 0.4280778467655182), ('kidnaps', 0.42415010929107666), ('realises', 0.4238355755805969), ('toadie', 0.4237697124481201), ('discovers', 0.4215681552886963), ('intercepts', 0.4212300777435303), ('alexs', 0.4199863076210022), ('leannes', 0.4179683327674866), ('jayakrishnan', 0.41719985008239746), ('apologises', 0.4165871739387512), ('overhears', 0.416343092918396), ('swears', 0.4153282046318054), ('informs', 0.41417837142944336), ('reveals', 0.4131659269332886), ('fiancé', 0.4130050241947174), ('petyr', 0.4116971492767334), ('secretly', 0.40875715017318726), ('reneges', 0.40790170431137085), ('pretending', 0.40772995352745056), ('apologizes', 0.407703697681427), ('bens', 0.4062109589576721), ('nuckys', 0.40574175119400024), ('pleads', 0.40538135170936584), ('wants', 0.4053504467010498), ('begs', 0.4040827453136444), ('guilt-ridden', 0.4033353924751282), ('realizes', 0.40303564071655273), ('warns', 0.4028823673725128), ('datak', 0.4027227461338043), ('him', 0.40234440565109253), ('double-cross', 0.40173202753067017), ('confides', 0.39944279193878174), ('backfires', 0.399236798286438), ('alfies', 0.3990857005119324)]
+

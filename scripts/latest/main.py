@@ -69,12 +69,12 @@ def _update_rr_and_count(relative_ranks, count, rank):
 def _load_nonce2vec_model(args, nonce):
     logger.info('Loading Nonce2Vec model...')
     ### NOVELS EDIT: added this condition, which loads the original modules for n2v if you want to test it NOT on novels
-    if args.on != 'novels':
+    if 'novel' not in args.on:
         model = Nonce2Vec.load(args.background)
         model.vocabulary = Nonce2VecVocab.load(model.vocabulary)
         model.trainables = Nonce2VecTrainables.load(model.trainables)
     ### NOVELS EDIT: added this condition, which calls the novels version of the functions and classes
-    elif args.on == 'novels':
+    elif args.on == 'novels' or args.on == 'wiki_novel' or args.on == 'wiki_novels':
         logger.info('Testing on:     novels')
         model = Nonce2Vec_novels.load(args.background)
         model.vocabulary = Nonce2VecVocab_novels.load(model.vocabulary)
@@ -92,9 +92,12 @@ def _load_nonce2vec_model(args, nonce):
     if args.sample_decay is None:
         raise Exception('In replication mode you need to specify the '
                         'sample_decay parameter')
+    ### NOVELS EDIT: added the next line because the parameters didn't seem to be passed on
     model.sample_decay = args.sample_decay
+    ### NOVELS EDIT: added the next line because the parameters didn't seem to be passed on
     model.window_decay = args.window_decay
-    model.sample = args.sample
+    ### NOVELS EDIT: added the next line because the parameters didn't seem to be passed on
+    model.window = args.window
     if not args.sum_only:
         model.train_with = args.train_with
         model.alpha = args.alpha
@@ -110,9 +113,9 @@ def _load_nonce2vec_model(args, nonce):
     model.workers = args.num_threads
     model.vocabulary.nonce = nonce
     ### NOVELS EDIT: added the sentence_count counter, which resets to 0 every time you load a model (i.e. every time you start a training session on novels)
-    if args.on=='novels':
+    if args.on=='novels' or args.on=='wiki_novel' or args.on=='wiki_novels':
         model.sentence_count=0
-    logger.info('Model loaded')
+    logger.info('Model loaded with lambda_den= {}, window_decay= {} and sample_decay= {}'. format(model.lambda_den, model.sample_decay, model.window_decay))
     return model
 
 def _test_on_chimeras(args):
@@ -291,8 +294,10 @@ def _test(args):
         _test_on_chimeras(args)
     elif args.on == 'nonces':
         _test_on_nonces(args)
-    elif args.on == 'novels':
+    elif args.on == 'novels' or args.on == 'novel':
         test_on_novel(args)
+    elif args.on == 'wiki_novels' or args.on == 'wiki_novel':
+        test_on_wiki_novel(args)
 
 
 def main():
@@ -352,7 +357,7 @@ def main():
     parser_test.set_defaults(func=_test)
     ### NOVELS EDIT: added the dest for this argument, because it's needed for calling the novels model of N2V or the basic one
     parser_test.add_argument('--on', required=True,
-                             choices=['nonces', 'chimeras','novels'],
+                             choices=['nonces', 'chimeras','novels','novel','wiki_novel','wiki_novels'],
                              help='type of test data to be used')
     parser_test.add_argument('--model', required=True,
                              dest='background',
@@ -372,81 +377,317 @@ def main():
     parser_test.add_argument('--lambda', type=float,
                              dest='lambda_den',
                              help='lambda decay')
-    parser_test.add_argument('--sample-decay', type=float,
+    ### NOVELS_EDIT: added the destination with the '_' because it didn't seem to be present in the original code - and this messes everything up!
+    parser_test.add_argument('--sample-decay', type=float, dest='sample_decay',
                              help='sample decay')
-    parser_test.add_argument('--window-decay', type=int,
+    ### NOVELS_EDIT: added the destination with the '_' because it didn't seem to be present in the original code - and this messes everything up!
+    parser_test.add_argument('--window-decay', type=int, dest='window_decay',
                              help='window decay')
-    parser_test.add_argument('--sum-only', action='store_true', default=False,
+    ### NOVELS_EDIT: changed 'sum-only' to 'sum_only', added 'required=False'
+    parser_test.add_argument('--sum_only', required=False, action='store_true', default=False,
                              help='sum only: no additional training after '
                                   'sum initialization')
+    ### NOVELS_EDIT: added this for training on the wikipedia pages
+    parser_test.add_argument('--quality_test')
     args = parser.parse_args()
     args.func(args)
 
 #########################################################################################
 
 def test_on_novel(args):
-
-    char_list=get_characters_list(args.folder, args.dataset)
+    #char_list=get_characters_list(args.folder, args.dataset)
     books_dict=get_books_dict(args.dataset)
+    
     char_dict={} 
 
     nonce='___'
-    os.makedirs('{}/data'.format(args.folder),exist_ok=True)
+    
+    folder=args.folder
+    temp_novel_folder='{}/temp'.format(folder)
+    data_output_folder='{}/data_output'.format(folder)
+
+    os.makedirs('{}'.format(data_output_folder),exist_ok=True)
     if args.simil_out==True:
-        os.makedirs('{}/data/details'.format(args.folder), exist_ok=True)
+        os.makedirs('{}/details'.format(data_output_folder), exist_ok=True)
+        os.makedirs('{}/ambiguities'.format(data_output_folder), exist_ok=True)
 
-    for part in books_dict.keys():
-        
-        filename=books_dict[part]
-#        out_file=open('data/{}.character_vectors'.format(filename),'w')
-        for character in char_list:
-            #if character not in open('{}/{}'.format(args.folder, filename)):
-            #    pass
+    clean_novel_name='{}/{}_clean.txt'.format(temp_novel_folder, args.dataset)
 
-            if args.simil_out==True:
-                simil_out_file=open('{}/data/details/{}_{}.similarities'.format(args.folder, character, part),'w')
-                simil_out_file.write('{} part {}\n\n'.format(character, part))
+    novel_versions, current_char_list, background_vocab = prepare_for_n2v(args.folder, args.dataset, clean_novel_name, args.background, write_to_file=True)
 
-#            similarities_out=open('data/{}_{}.top_similarities'.format(character,version),'w')
+    novel_versions_keys=novel_versions.keys()
 
-            model=_load_nonce2vec_model(args, nonce)
-            model.vocabulary.nonce=nonce
+    #for part in books_dict.keys():
+    for path in novel_versions_keys:
+        if 'part_a' in path:
+            part='a'
+        elif 'part_b' in path:
+            part='b'
+        else:
+            part='full'
+    
+        #filename=books_dict[part]
+        version=novel_versions[path]
 
-            w2v_vocab=[key for key in model.wv.vocab]
-            logger.info('Length of vocabulary: {}'.format(len(w2v_vocab)))
+        for character in current_char_list:
 
-            sent_list, sent_vocab_list=get_novel_sentences(args.folder, filename, w2v_vocab, character)
-            logger.info('\nlist of sentences created!\n')
-            logger.info('Number of total sentences: {}'.format(len(sent_list)))
 
-            for index,sentence in enumerate(sent_list):
-                if '___' in sentence:
-                    model.sentence_count+=1
+            character_counter={}
+            
+            for key in novel_versions_keys:
+                character_counter[key]=0
+                for line in novel_versions[key]:
+                    if character in line:
+                        character_counter[key]+=1
+
+            if 0 not in [character_counter[i] for i in character_counter.keys()]:
+
+                model=_load_nonce2vec_model(args, nonce)
+                model.vocabulary.nonce=nonce
+                model.sentence_count=0
+
+
+                sent_list, sent_vocab_list = get_novel_sentences_from_versions_dict(version, character, background_vocab)
+                logger.info('List of sentences created!')
+                logger.info('Number of total sentences: {}'.format(len(sent_list)))
+
+                if args.simil_out==True and len(sent_list)>10 and len(sent_list)<10000:
+
+                    simil_out_file=open('{}/details/{}_{}.similarities'.format(data_output_folder, character, part),'w')
+                    simil_out_file.write('{} part {}\n\n'.format(character, part))
+                    ambiguity_out_file=open('{}/ambiguities/{}_ambiguity_detector_part_{}'.format(data_output_folder, character, part), 'w')
+                    ambiguity_out_file.write('{} part {}\n\n'.format(character, part))
+
+                ambiguity_detector={}
+
+                for alias in current_char_list:
+                    ambiguity_detector[alias]=0
+
+                for index,sentence in enumerate(sent_list):
+
+                    if '___' in sentence:
+
+                        model.sentence_count+=1
+                        for alias in current_char_list:
+                            if alias in sentence and alias != character:
+                                ambiguity_detector[alias]+=1
+                                sentence.remove(alias)
+                        ### NOVELS_EDIT: added the <50 condition in order to reduce training time and to give more or less equal training to every character.
+                        if not args.sum_only and model.sentence_count<=50:
+                            logger.info('Current subsampling rate: {}'.format(model.sample))
+                            vocab_sentence=[sentence]
+                            logger.info('Full sentence: {}'.format(vocab_sentence))
+                            model.build_vocab(vocab_sentence, model.sentence_count, update=True)
+                            vocab_size=len(model.wv.vocab)
+                            logger.info('Current nonce: {}'.format(character))
+                            ### NOVELS NOTE: this section is just to set some variables which can capture the alpha from the print output 
+                            stdout = sys.stdout
+                            sys.stdout = io.StringIO()
+                            ### NOVELS NOTE: this is the part where the training happens
+                            if not args.sum_only:
+                                model.train(vocab_sentence, total_examples=model.corpus_count,epochs=model.iter)
+                            top_similarities=model.most_similar(nonce,topn=20)
+                            logger.info('Top similarities for {} at this point during the training: {}'.format(character, top_similarities))
+                            ### NOVELS NOTE: This is the part where the alpha is written to file and then stdout is reset
+                            out_alpha = sys.stdout.getvalue()
+                            logger.info('{}'.format(out_alpha))
+                            sys.stdout = stdout
+
+                            simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n{}\n\n'.format(model.sentence_count, sentence, out_alpha, model.wv.most_similar(nonce, topn=50))) 
+                            if model.sample > 10:
+                                model.sample = model.sample / args.sample_decay
+                        elif model.sentence_count>49:
+                            break
+                        elif args.sum_only:
+                            if model.sentence_count==1:
+                                list_of_sentences=[]
+                            if model.sentence_count<50:
+                                list_of_sentences.append(sentence)
+                                summed_sentences=model.sentence_count
+                            elif model.sentence_count>49:
+                                break
+
+                if args.sum_only and model.sentence_count>0:
+                    list_of_words=[]
+                    stopwords=["","(",")","a","about","an","and","are","around","as","at","away","be","become","became","been","being","by","did","do","does","during","each","for","from","get","have","has","had","her","his","how","i","if","in","is","it","its","made","make","many","most","of","on","or","s","some","that","the","their","there","this","these","those","to","under","was","were","what","when","where","who","will","with","you","your"]
+                    for s in list_of_sentences:
+                        for w in s:
+                            if w not in stopwords:
+                                list_of_words.append(w)
+
+                    model.sentence_count=1
+                    sentence=list_of_words
+                    logger.info('Current subsampling rate: {}'.format(model.sample))
                     vocab_sentence=[sentence]
                     logger.info('Full sentence: {}'.format(vocab_sentence))
                     model.build_vocab(vocab_sentence, model.sentence_count, update=True)
                     vocab_size=len(model.wv.vocab)
-                    #logger.info('vocab size = {}'.format(vocab_size))
                     logger.info('Current nonce: {}'.format(character))
+                    ### NOVELS NOTE: this section is just to set some variables which can capture the alpha from the print output 
+                    stdout = sys.stdout
+                    sys.stdout = io.StringIO()
+                    ### NOVELS NOTE: this is the part where the training happens
+                    top_similarities=model.most_similar(nonce,topn=20)
+                    logger.info('Top similarities for {} at this point during the training: {}'.format(character, top_similarities))
+                    ### NOVELS NOTE: This is the part where the alpha is written to file and then stdout is reset
+                    out_alpha = sys.stdout.getvalue()
+                    logger.info('{}'.format(out_alpha))
+                    sys.stdout = stdout
+                    model.sentence_count=summed_sentences
+
+                    simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n{}\n\n'.format(model.sentence_count, sentence, out_alpha, model.wv.most_similar(nonce, topn=50))) 
+                    ### NOVELS NOTE: added the condition >0, because in the absence of a character in a certain part of the book, the same vector is created for all the absent characters and this creates fake 1.0 similarities at evaluation time.
+                if model.sentence_count>0:
+                    character_vector=model[nonce]
+                    character_name_and_part='{}_{}'.format(character, part)
+                    char_dict[character_name_and_part]=character_vector
+                else:
+                    os.remove('{}/details/{}_{}.similarities'.format(data_output_folder, character, part))
+                if args.simil_out==True and model.sentence_count>0:
+                    for alias in ambiguity_detector.keys():
+                        
+                        ambiguity_out_file.write('Character: {}\tNumber of sentences containing this character too: {} out of {} sentences\n\n'.format(alias, ambiguity_detector[alias], model.sentence_count))
+
+
+    folder=args.folder
+    logger.info('Length of the characters list: {}\n Characters list: {}\n'.format(len(char_dict.keys()), char_dict.keys()))
+    with open('{}/{}.pickle'.format(data_output_folder, args.dataset),'wb') as out:        
+        pickle.dump(char_dict,out,pickle.HIGHEST_PROTOCOL) 
+
+
+#########################################################################################
+
+def test_on_wiki_novel(args):
+
+    char_dict={} 
+
+    nonce='___'
+    
+    folder=args.folder
+    data_output_folder='{}/quality_test/data_output'.format(folder)
+
+    os.makedirs('{}'.format(data_output_folder),exist_ok=True)
+
+    if args.simil_out==True:
+        os.makedirs('{}/details'.format(data_output_folder), exist_ok=True)
+        os.makedirs('{}/ambiguities'.format(data_output_folder), exist_ok=True)
+
+    clean_novel_name='{}/quality_test/original_text/{}.txt'.format(folder, args.dataset)
+
+    novel_versions, current_char_list = prepare_for_n2v(args.folder, args.dataset, clean_novel_name, write_to_file=True, wiki_novel=True)
+
+    
+    version=novel_versions
+
+    for character in current_char_list:
+
+        model=_load_nonce2vec_model(args, nonce)
+        model.vocabulary.nonce=nonce
+        model.sentence_count=0
+
+        sent_list, sent_vocab_list = get_novel_sentences_from_versions_dict(version, character)
+        logger.info('List of sentences created!')
+        logger.info('Number of total sentences: {}'.format(len(sent_list)))
+
+        if args.simil_out==True and len(sent_list)>10 and len(sent_list)<10000:
+
+            simil_out_file=open('{}/details/{}.similarities'.format(data_output_folder, character),'w')
+            simil_out_file.write('{}\n\n'.format(character))
+            ambiguity_out_file=open('{}/ambiguities/{}_ambiguity_detector'.format(data_output_folder, character), 'w')
+            ambiguity_out_file.write('{}\n\n'.format(character))
+
+        ambiguity_detector={}
+
+        for alias in current_char_list:
+            ambiguity_detector[alias]=0
+
+        for index,sentence in enumerate(sent_list):
+
+            if '___' in sentence:
+
+                model.sentence_count+=1
+                for alias in current_char_list:
+                    if alias in sentence and alias != character:
+                        ambiguity_detector[alias]+=1
+                        sentence.remove(alias)
+                ### NOVELS_EDIT: added the <50 condition in order to reduce training time and to give more or less equal training to every character.
+                if not args.sum_only and model.sentence_count<=50:
+                    logger.info('Current subsampling rate: {}'.format(model.sample))
+                    vocab_sentence=[sentence]
+                    logger.info('Full sentence: {}'.format(vocab_sentence))
+                    model.build_vocab(vocab_sentence, model.sentence_count, update=True)
+                    vocab_size=len(model.wv.vocab)
+                    logger.info('Current nonce: {}'.format(character))
+                    ### NOVELS NOTE: this section is just to set some variables which can capture the alpha from the print output 
+                    stdout = sys.stdout
+                    sys.stdout = io.StringIO()
+                    ### NOVELS NOTE: this is the part where the training happens
                     if not args.sum_only:
-                        ### NOVELS NOTE: this section is just to set some variables which can capture the alpha from the print output 
-                        stdout = sys.stdout
-                        sys.stdout = io.StringIO()
-                        ### NOVELS NOTE: this is the part where the training happens
                         model.train(vocab_sentence, total_examples=model.corpus_count,epochs=model.iter)
-                        top_similarities=model.most_similar(nonce,topn=20)
-                        logger.info('Top similarities for {} at this point during the training: {}'.format(character, top_similarities))
-                        ### NOVELS NOTE: This is the part where the alpha is written to file and then stdout is reset
-                        out_alpha = sys.stdout.getvalue()
-                        logger.info('{}'.format(out_alpha))
-                        sys.stdout = stdout
-#                        similarities_out.write('{} - Sentence n. {}\n Alpha: {}\nWords: {}\nTop similarities:{}\n\n'.format(character, sentence_count,out_alpha,vocab_sentence,top_similarities))
-                    if args.simil_out==True:
-                        simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n{}\n\n'.format(sentence_count, sentence, out_alpha, model.wv.most_similar('___', topn=50))) 
-                ### NOVELS NOTE: added the condition >0, because in the absence of a character in a certain part of the book, the same vector is created for all the absent characters and this creates fake 1.0 similarities at evaluation time.
-            if model.sentence_count>0:
-                character_vector=model[nonce]
-                character_name_and_part='{}_{}'.format(character, part)
-                char_dict[character_name_and_part]=character_vector
-    with open('{}/data/{}.pickle'.format(args.folder, args.dataset),'wb') as out:        
+                    top_similarities=model.most_similar(nonce,topn=20)
+                    logger.info('Top similarities for {} at this point during the training: {}'.format(character, top_similarities))
+                    ### NOVELS NOTE: This is the part where the alpha is written to file and then stdout is reset
+                    out_alpha = sys.stdout.getvalue()
+                    logger.info('{}'.format(out_alpha))
+                    sys.stdout = stdout
+
+                    simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n{}\n\n'.format(model.sentence_count, sentence, out_alpha, model.wv.most_similar(nonce, topn=50))) 
+                    if model.sample > 10:
+                        model.sample = model.sample / args.sample_decay
+                elif model.sentence_count>49:
+                    break
+                elif args.sum_only:
+                    if model.sentence_count==1:
+                        list_of_sentences=[]
+                    if model.sentence_count<50:
+                        list_of_sentences.append(sentence)
+                        summed_sentences=model.sentence_count
+                    elif model.sentence_count>49:
+                        break
+
+        if args.sum_only and model.sentence_count>0:
+            list_of_words=[]
+            stopwords=["","(",")","a","about","an","and","are","around","as","at","away","be","become","became","been","being","by","did","do","does","during","each","for","from","get","have","has","had","her","his","how","i","if","in","is","it","its","made","make","many","most","of","on","or","s","some","that","the","their","there","this","these","those","to","under","was","were","what","when","where","who","will","with","you","your"]
+            for s in list_of_sentences:
+                for w in s:
+                    if w not in stopwords:
+                        list_of_words.append(w)
+
+            model.sentence_count=1
+            sentence=list_of_words
+            logger.info('Current subsampling rate: {}'.format(model.sample))
+            vocab_sentence=[sentence]
+            logger.info('Full sentence: {}'.format(vocab_sentence))
+            model.build_vocab(vocab_sentence, model.sentence_count, update=True)
+            vocab_size=len(model.wv.vocab)
+            logger.info('Current nonce: {}'.format(character))
+            ### NOVELS NOTE: this section is just to set some variables which can capture the alpha from the print output 
+            stdout = sys.stdout
+            sys.stdout = io.StringIO()
+            ### NOVELS NOTE: this is the part where the training happens
+            top_similarities=model.most_similar(nonce,topn=20)
+            logger.info('Top similarities for {} at this point during the training: {}'.format(character, top_similarities))
+            ### NOVELS NOTE: This is the part where the alpha is written to file and then stdout is reset
+            out_alpha = sys.stdout.getvalue()
+            logger.info('{}'.format(out_alpha))
+            sys.stdout = stdout
+            model.sentence_count=summed_sentences
+
+            simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n{}\n\n'.format(model.sentence_count, sentence, out_alpha, model.wv.most_similar(nonce, topn=50))) 
+            ### NOVELS NOTE: added the condition >0, because in the absence of a character in a certain part of the book, the same vector is created for all the absent characters and this creates fake 1.0 similarities at evaluation time.
+        if model.sentence_count>0:
+            character_vector=model[nonce]
+            character_name_and_part='{}'.format(character)
+            char_dict[character_name_and_part]=character_vector
+        else:
+            os.remove('{}/details/{}.similarities'.format(data_output_folder, character))
+        if args.simil_out==True and model.sentence_count>0:
+            for alias in ambiguity_detector.keys():
+                
+                ambiguity_out_file.write('Character: {}\tNumber of sentences containing this character too: {} out of {} sentences\n\n'.format(alias, ambiguity_detector[alias], model.sentence_count))
+
+
+    folder=args.folder
+    logger.info('Length of the characters list: {}\n Characters list: {}\n'.format(len(char_dict.keys()), char_dict.keys()))
+    with open('{}/wiki_{}.pickle'.format(data_output_folder, args.dataset),'wb') as out:        
         pickle.dump(char_dict,out,pickle.HIGHEST_PROTOCOL) 

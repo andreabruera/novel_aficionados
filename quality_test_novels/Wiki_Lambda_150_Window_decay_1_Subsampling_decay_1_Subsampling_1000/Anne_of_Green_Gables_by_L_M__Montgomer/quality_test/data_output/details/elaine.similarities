@@ -1,0 +1,11 @@
+elaine
+
+Sentence no. 1
+Sentence: ['of', 'green', 'gables', 'the', 'musical', 'was', 'composed', 'by', 'canadians', 'don', 'harron', 'and', 'norman', 'campmr_bell', 'with', 'lyrics', 'by', '___', 'campmr_bell', 'and', 'mavor', 'moore']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 150.0
+Current alpha: 1.0
+Subsampled line: ['green', 'gables', 'musical', 'canadians', 'don', 'harron', 'norman', 'with', 'lyrics', '___', 'mavor', 'moore']
+
+[('mavor', 0.4427656829357147), ('harron', 0.38419967889785767), ('muraille', 0.3351146876811981), ('canadians', 0.32335126399993896), ('lucille', 0.32114100456237793), ('gallienne', 0.3198031783103943), ('livesay', 0.31835031509399414), ('award-winners', 0.3162321448326111), ('torontos', 0.31571507453918457), ('swados', 0.31410226225852966), ('winsome', 0.31186068058013916), ('forbes-robertson', 0.3110550045967102), ('canadian-produced', 0.3089084029197693), ('cukors', 0.3079298138618469), ('dora', 0.30733722448349), ('alfre', 0.3057423233985901), ('actra', 0.3057209253311157), ('fontanne', 0.3056352138519287), ('swoosie', 0.30545473098754883), ('dupont-columbia', 0.3036453127861023), ('bluesfest', 0.3022710680961609), ('winnipeg', 0.3009468913078308), ('nightwood', 0.30070197582244873), ('toronto', 0.2992931306362152), ('aileen', 0.29632568359375), ('elsie', 0.29567477107048035), ('costarring', 0.2954399585723877), ('multicultural', 0.2953861951828003), ('marguerite', 0.2948933243751526), ('comden', 0.29475727677345276), ('drama-logue', 0.294382244348526), ('luminato', 0.29345211386680603), ('hiscott', 0.29185426235198975), ('bourke-white', 0.2915166914463043), ('lillian', 0.2912088632583618), ('maracle', 0.29098841547966003), ('jobeth', 0.2896538972854614), ('dubarry', 0.28844475746154785), ('moyra', 0.287950724363327), ('blanche', 0.28737300634384155), ('negga', 0.28698262572288513), ('english-canadian', 0.2864457964897156), ('patricia', 0.2863328456878662), ('manitoban', 0.2858944535255432), ('sullavan', 0.28513479232788086), ('oakie', 0.2848840057849884), ('jodoin', 0.28486180305480957), ('rtnda', 0.2845231890678406), ('feore', 0.28391915559768677), ('vancouver’s', 0.28340670466423035)]
+

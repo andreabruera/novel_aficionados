@@ -1,0 +1,11 @@
+harney
+
+Sentence no. 1
+Sentence: ['the', 'vendetta', 'finally', 'comes', 'to', 'head', 'when', 'buck', 'older', 'sister', 'elopes', 'with', 'member', 'of', 'the', '___', 'clan']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 150.0
+Current alpha: 1.0
+Subsampled line: ['vendetta', 'finally', 'comes', 'when', 'buck', 'sister', 'elopes', 'member', '___', 'clan']
+
+[('__notoc__', 0.5187751054763794), ('vendetta', 0.48951148986816406), ('!date', 0.47189995646476746), ('step-sister', 0.4645364284515381), ('!bgcolor=#cccccc', 0.46174049377441406), ('|}', 0.4559948742389679), ('auggie', 0.4522090256214142), ('nell', 0.4508317708969116), ('over-protective', 0.44965270161628723), ('stepmothers', 0.44949036836624146), ('beccas', 0.44879865646362305), ('street-wise', 0.44765761494636536), ('step-siblings', 0.44616925716400146), ('severide', 0.4446006715297699), ('wyatt', 0.4438159763813019), ('lyanna', 0.4435437023639679), ('marjories', 0.4415968954563141), ('trouble-making', 0.4413892328739166), ('blundetto', 0.44081613421440125), ('neer-do-well', 0.44027891755104065), ('jess', 0.43796399235725403), ('janies', 0.4379102885723114), ('paige', 0.4378354847431183), ('rubirosa', 0.4359816312789917), ('steffy', 0.4359484910964966), ('stepfather', 0.4357747435569763), ('stepmother', 0.43553829193115234), ('consuela', 0.43517208099365234), ('stuck-up', 0.43410754203796387), ('romalotti', 0.4335672855377197), ('luann', 0.4331997334957123), ('gold-digger', 0.4329551160335541), ('double-crossing', 0.4328887164592743), ('cassie', 0.43284592032432556), ('step-mother', 0.4316169023513794), ('crimefighting', 0.431216835975647), ('tyrions', 0.4309021830558777), ('fiance', 0.4306464195251465), ('babysits', 0.43036869168281555), ('allie', 0.4301239550113678), ('partner-in-crime', 0.42980217933654785), ('fiancé', 0.42978954315185547), ('nosey', 0.42915526032447815), ('ex-boyfriends', 0.42870691418647766), ('cousin-in-law', 0.4285246729850769), ('lucy', 0.4274882972240448), ('maureens', 0.4270879924297333), ('peggy', 0.4268530011177063), ('kaylie', 0.42637187242507935), ('renee', 0.4254329204559326)]
+

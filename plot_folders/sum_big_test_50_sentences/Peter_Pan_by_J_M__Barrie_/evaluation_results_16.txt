@@ -1,0 +1,5 @@
+MRR:	0.35536042240587695
+Median rank:	4.5
+Mean rank:	4.863636363636363
+Total number of characters considered:	12
+Characters disappearing when dividing the novel in two:	2

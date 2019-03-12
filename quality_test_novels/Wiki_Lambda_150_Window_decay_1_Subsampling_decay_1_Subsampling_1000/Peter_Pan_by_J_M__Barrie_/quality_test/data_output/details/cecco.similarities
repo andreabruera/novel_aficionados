@@ -1,0 +1,11 @@
+cecco
+
+Sentence no. 1
+Sentence: ['besides', 'du', 'maurier', 'the', 'pirates', 'were', 'shelton', 'sidney', 'harcourt', 'gentleman', 'charles', 'trevor', 'cookson', 'frederick', 'annerley', '___', 'hubert', 'willis', 'mullins', 'james', 'english', 'jukes', 'kelt', 'noodler']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 150.0
+Current alpha: 1.0
+Subsampled line: ['besides', 'du', 'maurier', 'pirates', 'shelton', 'sidney', 'harcourt', 'gentleman', 'charles', 'trevor', 'cookson', 'annerley', '___', 'hubert', 'willis', 'mullins', 'james', 'english', 'jukes', 'kelt']
+
+[('charles', 0.4911673069000244), ('william', 0.4647507071495056), ('ernest', 0.4582780599594116), ('henry', 0.45688629150390625), ('cecil', 0.45581066608428955), ('sidney', 0.4545295536518097), ('frederick', 0.4494549334049225), ('percy', 0.4479326605796814), ('herbert', 0.4476616382598877), ('fred', 0.44559067487716675), ('howard', 0.4435218572616577), ('arthur', 0.4424407184123993), ('alfred', 0.4405159056186676), ('allen', 0.43764883279800415), ('james', 0.4323398768901825), ('vernon', 0.42931073904037476), ('edwin', 0.42877262830734253), ('albert', 0.42762911319732666), ('stuart', 0.42584702372550964), ('leslie', 0.42476922273635864), ('robert', 0.4232681393623352), ('nicholson', 0.42281046509742737), ('kemp', 0.4226294755935669), ('godfrey', 0.42218244075775146), ('leroy', 0.42213189601898193), ('stanley', 0.42127183079719543), ('thomas', 0.42083463072776794), ('reginald', 0.4207250475883484), ('elvey', 0.4204450249671936), ('trevor', 0.419686883687973), ('barker', 0.41958582401275635), ('frederic', 0.4191988408565521), ('wallace', 0.41896775364875793), ('gilbert', 0.4166300892829895), ('calvert', 0.41631266474723816), ('george', 0.41609644889831543), ('cooke', 0.4151942729949951), ('harold', 0.41399648785591125), ('bowen', 0.40755927562713623), ('barry', 0.4062114953994751), ('clifford', 0.4052479863166809), ('baker', 0.40445226430892944), ('clarence', 0.40342971682548523), ('dobson', 0.4031018018722534), ('bert', 0.402382493019104), ('forrest', 0.40162983536720276), ('edward', 0.4008636474609375), ('maurice', 0.399846613407135), ('samuel', 0.3993389904499054), ('hugh', 0.39803993701934814)]
+

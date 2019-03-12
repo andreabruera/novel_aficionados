@@ -353,7 +353,8 @@ class Nonce2Vec(Word2Vec):
                                         batch_words, compute_loss, callbacks)
         self.trainables = Nonce2VecTrainables(seed=seed, vector_size=size,
                                               hashfxn=hashfxn)
-        self.lambda_den = 0.0
+        #self.lambda_den = 0.0
+        self.lambda_den=float(lambda_den)
         self.sample_decay = float(sample_decay)
         self.window_decay = int(window_decay)
 
@@ -463,6 +464,8 @@ def train_sg_pair_novels(model, word, context_index, alpha, nonce_count,
 def train_batch_sg_novels(model, sentences, sentence_count, alpha, work=None, compute_loss=False):
     result = 0
     window = model.window
+    ###NOVELS EDIT: added a debug for sample_decay and window decay
+    print('Sampling: {}\tWindow: {}\nWindow decay: {}\tSample decay: {}\tLambda: {}'.format(model.sample, window, model.window_decay, model.sample_decay, model.lambda_den))
     # Count the number of times that we see the nonce
     ### NOVELS EDIT: equalized nonce_count and sentence_count, which lets keep track of the current sentence being trained, and adjusted alpha all along the descent through the novel. 
     nonce_count=sentence_count
@@ -472,11 +475,12 @@ def train_batch_sg_novels(model, sentences, sentence_count, alpha, work=None, co
                        model.wv.vocab and model.wv.vocab[w].sample_int
                        > model.random.rand() * 2 ** 32 or w == '___']
         ### NOVELS_EDIT: added this line to create a list with the subsampled words
-        subsampled_words=[]
         for pos, word in enumerate(word_vocabs):
             # Note: we have got rid of the random window size
-            start = max(0, pos - window)
-            for pos2, word2 in enumerate(word_vocabs[start:(pos + window + 1)],
+            ### NOVELS EDIT: added 'model.' before window
+            start = max(0, pos - model.window)
+            ### NOVELS EDIT: added this variable in order to keep under control the subsampled line - so it avoids printing out multiple times the same words
+            for pos2, word2 in enumerate(word_vocabs[start:(pos + model.window + 1)],
                                          start):
                 # don't train on the `word` itself
                 if pos2 != pos:
@@ -497,19 +501,23 @@ def train_batch_sg_novels(model, sentences, sentence_count, alpha, work=None, co
                             len(model.wv.vocab)-1, alpha, nonce_count,
                             compute_loss=compute_loss)
                         ###NOVELS_EDIT: Added this line to collect and print the subsampled line
-                        subsampled_words.append(model.wv.index2word[word.index])
         ### START OF NOVELS EDIT: this is just to print out the current alpha and the subsampled sentence in an easy to read format, and to then write it down onto file.
         exp_decay = -(nonce_count-1) / model.lambda_den
         if alpha * np.exp(exp_decay) > model.min_alpha:
             alpha = alpha * np.exp(exp_decay)
         else:
             alpha = model.min_alpha
-        print('Current alpha: {}\nSubsampled line: {}'.format(alpha, subsampled_words))
+        sub_line=[model.wv.index2word[word.index] for word in word_vocabs]
+        print('Current alpha: {}\nSubsampled line: {}'.format(alpha, sub_line))
         ### END OF NOVELS EDIT
         result += len(word_vocabs)
-        if window - 1 >= 3:
-            window = window - model.window_decay
-        model.recompute_sample_ints()
+            ###  NOVELS EDIT: added 'model.' before calling window, trying to see if this way it works
+        if model.window - 1 >= 3:
+            ###  NOVELS EDIT: added 'model.' before calling window, trying to see if this way it works
+            model.window = window - model.window_decay
+        ### NOVELS EDIT: commented out this line, and added an easy fix to the subsampling issue
+        #model.recompute_sample_ints()
+        #model.sample = model.sample / model.sample_decay
     return result
 
 ### NOVELS EDIT: added the '_novels' mark to the class name
@@ -550,13 +558,16 @@ class Nonce2VecVocab_novels(Word2VecVocab):
             if sentence_count==1:
             #if self.nonce is not None and self.nonce in wv.vocab:
                 if self.nonce in wv.vocab:
-                    #original_nonce = '{}_original'.format(self.nonce)
+                    print('Sentence count == 1 and nonce deleted')
+                    original_nonce = '{}_original'.format(self.nonce)
                     nonce_index = wv.vocab[self.nonce].index
-                    #wv.vocab[original_nonce] = wv.vocab[self.nonce]
-                    #wv.index2word[nonce_index] = original_nonce
-                    del wv.index2word[wv.vocab[self.nonce].index]
+                    wv.vocab[original_nonce] = wv.vocab[self.nonce]
+                    wv.index2word[nonce_index] = original_nonce
+                    #del wv.index2word[wv.vocab[self.nonce].index]
                     del wv.vocab[self.nonce]
-                    logger.info('Deleted the vector for the nonce - index no. {}'.format(nonce_index))
+                    if self.nonce not in wv.vocab:
+                        logger.info('Deleted the vector for the nonce - index no. {}'.format(nonce_index))
+                    
             for word, v in iteritems(self.raw_vocab):
                 # Update count of all words already in vocab
                 if word in wv.vocab:
@@ -567,8 +578,11 @@ class Nonce2VecVocab_novels(Word2VecVocab):
                 else:
                     # For new words, keep the ones above the min count
                     # AND the nonce (regardless of count)
-                    if keep_vocab_item(word, v, min_count,
-                                       trim_rule=trim_rule) or word == self.nonce:
+                    ### NOVELS EDIT: commented out this condition, added another one which keeps only the nonce
+                    #if keep_vocab_item(word, v, min_count,
+                    #                   trim_rule=trim_rule) or word == self.nonce:
+                    if word == self.nonce and word not in new_words:
+                        print('Added this word to the list of unknown words: {}'.format(word))
                         new_words.append(word)
                         new_total += v
                         if not dry_run:
@@ -685,7 +699,7 @@ class Nonce2VecTrainables_novels(Word2VecTrainables):
         Copy all the existing weights, and reset the weights for the newly
         added vocabulary.
         """
-        logger.info('updating layer weights')
+        logger.info('updating layer weights - current nonce: {}'.format(nonce))
         gained_vocab = len(wv.vocab) - len(wv.vectors)
         # newvectors = empty((gained_vocab, wv.vector_size), dtype=REAL)
         newvectors = np.zeros((gained_vocab, wv.vector_size), dtype=np.float32)
@@ -706,9 +720,15 @@ class Nonce2VecTrainables_novels(Word2VecTrainables):
                             'properly deleted'.format(nonce))'''
         for i in xrange(len(wv.vectors), len(wv.vocab)):
             # Initialise to sum
+            print(i)
             for w in pre_exist_words:
-               if wv.vocab[w].sample_int > wv_random.rand() * 2**32 or w == nonce:
-                   #print "Adding",w,"to initialisation..."
+                ### NOVELS EDIT: rmoved the following condition, added a simpler one, which btw avoids adding the disgusting vector for '___'
+                #if wv.vocab[w].sample_int > wv_random.rand() * 2**32 or w == nonce:
+                #if wv.vocab[w].sample_int > wv_random.rand() * 2**32:
+                if wv.vocab[w].sample_int > wv_random.rand() * 2**32 and w != nonce:
+                #if w == nonce:
+                   ### NOVELS EDIT: modified the print text, does the same thing
+                   #print('Adding {} to initialisation...'.format(w))
                    newvectors[i-len(wv.vectors)] += wv.vectors[
                        wv.vocab[w].index]
 
@@ -759,6 +779,7 @@ class Nonce2Vec_novels(Word2Vec):
         self.lambda_den = 0.0
         self.sample_decay = float(sample_decay)
         self.window_decay = int(window_decay)
+        self.window=int(window)
         ### NOVEL EDIT: added the self.sentence_count to make sure it initializes to the passed value        
         self.sentence_count = int(sentence_count)
 

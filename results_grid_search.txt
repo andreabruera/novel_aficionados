@@ -1,0 +1,1264 @@
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_1_Subsampling_10000
+
+Median MRR: 0.27027839059089054
+MRR Variance: 0.02916942091217072
+Median Median: 6.0
+Variance in median median: 21.394097222222225
+Median of means: 6.757575757575758
+Median of means variance: 22.945040593279288
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Percentage of ambiguous sentences of all sentences used for training (containing more than one character): 1.747 %
+
+Setup: sum_big_test
+
+Median MRR: 0.33683250532765907
+MRR Variance: 0.027628892672575688
+Median Median: 5.25
+Variance in median median: 31.269097222222218
+Median of means: 6.697478991596638
+Median of means variance: 29.72094497711342
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12
+Setup: sum_big_test_10_sentences
+
+Median MRR: 0.3429516670074825
+MRR Variance: 0.031586679973832466
+Median Median: 5.25
+Variance in median median: 34.11805555555555
+Median of means: 7.072478991596638
+Median of means variance: 31.909025498876684
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_1_Subsampling_5000
+
+Median MRR: 0.28563786723900164
+MRR Variance: 0.047510417302895104
+Median Median: 6.0
+Variance in median median: 32.97743055555555
+Median of means: 6.316558441558442
+Median of means variance: 33.901373492024184
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: sum_big_test_100_sentences
+
+Median MRR: 0.3535833042938826
+MRR Variance: 0.028819892052281842
+Median Median: 5.25
+Variance in median median: 30.097222222222218
+Median of means: 6.626050420168067
+Median of means variance: 29.24942428692432
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12
+Setup: sum_big_test_50_sentences
+
+Median MRR: 0.33683250532765907
+MRR Variance: 0.027628892672575688
+Median Median: 5.25
+Variance in median median: 31.269097222222218
+Median of means: 6.697478991596638
+Median of means variance: 29.72094497711342
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_1_Subsampling_1000
+
+Median MRR: 0.3180088318193156
+MRR Variance: 0.029435707856047835
+Median Median: 5.25
+Variance in median median: 34.560763888888886
+Median of means: 5.815476190476191
+Median of means variance: 31.35565852286038
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_1.1_Subsampling_10000
+
+Median MRR: 0.2981952614962069
+MRR Variance: 0.03136809785145031
+Median Median: 7.0
+Variance in median median: 18.963541666666668
+Median of means: 6.717261904761905
+Median of means variance: 22.992320622362527
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_1.1_Subsampling_5000
+
+Median MRR: 0.30353877273520125
+MRR Variance: 0.04385241217632139
+Median Median: 6.5
+Variance in median median: 27.227430555555554
+Median of means: 6.255952380952381
+Median of means variance: 25.740605194371074
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_1.1_Subsampling_1000
+
+Median MRR: 0.297274216734444
+MRR Variance: 0.04052924967259618
+Median Median: 6.25
+Variance in median median: 22.722222222222218
+Median of means: 6.67271505376344
+Median of means variance: 28.401496700703024
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_1.5_Subsampling_10000
+
+Median MRR: 0.22904468216968216
+MRR Variance: 0.033853600760478726
+Median Median: 7.0
+Variance in median median: 15.602430555555552
+Median of means: 7.255952380952381
+Median of means variance: 19.182147589792084
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_1.5_Subsampling_5000
+
+Median MRR: 0.2735918888110446
+MRR Variance: 0.022592115246569594
+Median Median: 6.75
+Variance in median median: 18.868055555555557
+Median of means: 6.85752688172043
+Median of means variance: 22.36715242994983
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_1.5_Subsampling_1000
+
+Median MRR: 0.2747238005050505
+MRR Variance: 0.02188795703506687
+Median Median: 6.5
+Variance in median median: 23.166666666666668
+Median of means: 6.411290322580645
+Median of means variance: 24.064841384831567
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_2_Subsampling_10000
+
+Median MRR: 0.2754551236472349
+MRR Variance: 0.029299277283129293
+Median Median: 5.5
+Variance in median median: 19.38888888888889
+Median of means: 6.5095307917888565
+Median of means variance: 24.637946591523384
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_2_Subsampling_5000
+
+Median MRR: 0.24463556343340637
+MRR Variance: 0.040178018454980695
+Median Median: 6.75
+Variance in median median: 25.63888888888889
+Median of means: 7.4308755760368665
+Median of means variance: 29.47106145928078
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_0_Subsampling_decay_2_Subsampling_1000
+
+Median MRR: 0.2862719554801667
+MRR Variance: 0.032706734343285665
+Median Median: 6.5
+Variance in median median: 25.769097222222225
+Median of means: 6.332844574780058
+Median of means variance: 25.572763957741262
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_1_Subsampling_decay_1_Subsampling_10000
+
+Median MRR: 0.30607143352679067
+MRR Variance: 0.030446407313051597
+Median Median: 5.0
+Variance in median median: 26.9375
+Median of means: 5.811688311688312
+Median of means variance: 26.8506691282379
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_1_Subsampling_decay_1_Subsampling_5000
+
+Median MRR: 0.3062603757435136
+MRR Variance: 0.026284571678610882
+Median Median: 5.0
+Variance in median median: 26.602430555555554
+Median of means: 5.642857142857142
+Median of means variance: 29.344263148029068
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_1_Subsampling_decay_1_Subsampling_1000
+
+Median MRR: 0.354251410674421
+MRR Variance: 0.04137677772262581
+Median Median: 5.25
+Variance in median median: 23.930555555555557
+Median of means: 5.661290322580645
+Median of means variance: 26.041749200192246
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_1_Subsampling_decay_1.1_Subsampling_10000
+
+Median MRR: 0.31278602350030926
+MRR Variance: 0.04061386951402903
+Median Median: 5.25
+Variance in median median: 23.977430555555557
+Median of means: 5.9523809523809526
+Median of means variance: 27.239710045403385
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_1_Subsampling_decay_1.1_Subsampling_5000
+
+Median MRR: 0.2973838721351697
+MRR Variance: 0.034273810085726136
+Median Median: 5.5
+Variance in median median: 21.85243055555556
+Median of means: 6.19758064516129
+Median of means variance: 24.59291051877968
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_1_Subsampling_decay_1.5_Subsampling_1000
+
+Median MRR: 0.300098663804362
+MRR Variance: 0.04472542562426638
+Median Median: 5.0
+Variance in median median: 23.06076388888889
+Median of means: 5.877688172043011
+Median of means variance: 26.64046741517252
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_1_Subsampling_decay_2_Subsampling_10000
+
+Median MRR: 0.28868371212121213
+MRR Variance: 0.035739380786210424
+Median Median: 5.75
+Variance in median median: 21.354166666666668
+Median of means: 6.319220430107527
+Median of means variance: 23.96973333661259
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_1_Subsampling_decay_2_Subsampling_5000
+
+Median MRR: 0.3009759090116233
+MRR Variance: 0.029674957543628127
+Median Median: 5.75
+Variance in median median: 17.180555555555557
+Median of means: 6.498271889400922
+Median of means variance: 21.924866614964483
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_1_Subsampling_decay_2_Subsampling_1000
+
+Median MRR: 0.26546035809428664
+MRR Variance: 0.03973056607740461
+Median Median: 6.0
+Variance in median median: 24.852430555555557
+Median of means: 6.629032258064516
+Median of means variance: 24.56135279904569
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_1_Subsampling_10000
+
+Median MRR: 0.26401000273408104
+MRR Variance: 0.040174554703499725
+Median Median: 6.0
+Variance in median median: 15.269097222222223
+Median of means: 6.349025974025974
+Median of means variance: 17.75763821774026
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_1_Subsampling_5000
+
+Median MRR: 0.30981241300941764
+MRR Variance: 0.031730426468599
+Median Median: 6.0
+Variance in median median: 19.847222222222225
+Median of means: 6.5773809523809526
+Median of means variance: 21.559171146443916
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_1_Subsampling_1000
+
+Median MRR: 0.2618163566464258
+MRR Variance: 0.034157932918903684
+Median Median: 5.75
+Variance in median median: 34.06076388888888
+Median of means: 6.342261904761905
+Median of means variance: 29.91199628369022
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_1.1_Subsampling_10000
+
+Median MRR: 0.3425700456950457
+MRR Variance: 0.04019386531123082
+Median Median: 5.5
+Variance in median median: 16.020833333333332
+Median of means: 6.019009216589862
+Median of means variance: 19.454532551927148
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_1.1_Subsampling_5000
+
+Median MRR: 0.3204609759598431
+MRR Variance: 0.03634997933033797
+Median Median: 6.0
+Variance in median median: 12.102430555555555
+Median of means: 6.58736559139785
+Median of means variance: 16.147320135219417
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_1.1_Subsampling_1000
+
+Median MRR: 0.2986699087348438
+MRR Variance: 0.022159684299006308
+Median Median: 5.75
+Variance in median median: 25.0
+Median of means: 5.87987012987013
+Median of means variance: 26.56938131033661
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_1.5_Subsampling_10000
+
+Median MRR: 0.26905253783218674
+MRR Variance: 0.0331482429762572
+Median Median: 5.75
+Variance in median median: 21.5
+Median of means: 6.260752688172043
+Median of means variance: 23.263543410827154
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_1.5_Subsampling_5000
+
+Median MRR: 0.25016836803233233
+MRR Variance: 0.03661193984319739
+Median Median: 7.0
+Variance in median median: 17.409722222222225
+Median of means: 7.259408602150538
+Median of means variance: 22.53640784859053
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_1.5_Subsampling_1000
+
+Median MRR: 0.32579812980158596
+MRR Variance: 0.03805721885054864
+Median Median: 5.5
+Variance in median median: 38.03472222222223
+Median of means: 6.088037634408602
+Median of means variance: 35.12083387388125
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_2_Subsampling_10000
+
+Median MRR: 0.27381467738610593
+MRR Variance: 0.032153386277751106
+Median Median: 6.25
+Variance in median median: 16.22222222222222
+Median of means: 6.449596774193548
+Median of means variance: 20.389729441831587
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_2_Subsampling_5000
+
+Median MRR: 0.29280328708088443
+MRR Variance: 0.014774510580169752
+Median Median: 6.0
+Variance in median median: 16.63888888888889
+Median of means: 6.339442815249267
+Median of means variance: 17.429647279618916
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_3_Subsampling_decay_2_Subsampling_1000
+
+Median MRR: 0.2938087489503461
+MRR Variance: 0.03769028047115492
+Median Median: 5.25
+Variance in median median: 28.597222222222218
+Median of means: 6.1875
+Median of means variance: 27.37565475486332
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_1_Subsampling_10000
+
+Median MRR: 0.227012967739123
+MRR Variance: 0.03692120575612132
+Median Median: 7.75
+Variance in median median: 16.144097222222225
+Median of means: 7.289746543778802
+Median of means variance: 20.968379720225073
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_1_Subsampling_5000
+
+Median MRR: 0.25266412880049244
+MRR Variance: 0.03660154063741817
+Median Median: 7.0
+Variance in median median: 24.977430555555557
+Median of means: 7.25
+Median of means variance: 26.126596240071468
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_1_Subsampling_1000
+
+Median MRR: 0.23734056677874177
+MRR Variance: 0.03349224866141696
+Median Median: 6.25
+Variance in median median: 23.685763888888886
+Median of means: 7.017857142857142
+Median of means variance: 28.599831265879498
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_1.1_Subsampling_10000
+
+Median MRR: 0.2573845675429976
+MRR Variance: 0.039263040893393386
+Median Median: 7.5
+Variance in median median: 17.755208333333332
+Median of means: 7.389976958525345
+Median of means variance: 24.750048324023194
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_1.1_Subsampling_5000
+
+Median MRR: 0.24356061725013337
+MRR Variance: 0.0374579129516129
+Median Median: 7.0
+Variance in median median: 28.227430555555554
+Median of means: 7.134216589861751
+Median of means variance: 29.0068903454976
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_1.1_Subsampling_1000
+
+Median MRR: 0.22992001837767967
+MRR Variance: 0.046815083189205665
+Median Median: 7.25
+Variance in median median: 27.935763888888886
+Median of means: 7.133928571428571
+Median of means variance: 29.069872309842125
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_1.5_Subsampling_10000
+
+Median MRR: 0.258567082268381
+MRR Variance: 0.03181182033323433
+Median Median: 6.5
+Variance in median median: 15.130208333333334
+Median of means: 6.853686635944701
+Median of means variance: 20.393107058689743
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_1.5_Subsampling_5000
+
+Median MRR: 0.27259654039346115
+MRR Variance: 0.02290762534244921
+Median Median: 6.25
+Variance in median median: 29.477430555555557
+Median of means: 6.6676267281106
+Median of means variance: 29.78926768674263
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_1.5_Subsampling_1000
+
+Median MRR: 0.2387974770327711
+MRR Variance: 0.03249114951124338
+Median Median: 6.0
+Variance in median median: 18.602430555555554
+Median of means: 6.7351190476190474
+Median of means variance: 24.22483934879355
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_2_Subsampling_10000
+
+Median MRR: 0.2535047706922706
+MRR Variance: 0.04095804333218312
+Median Median: 6.25
+Variance in median median: 21.409722222222225
+Median of means: 6.737967914438503
+Median of means variance: 25.739225025800554
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_2_Subsampling_5000
+
+Median MRR: 0.2710578652948783
+MRR Variance: 0.025714753157493924
+Median Median: 5.5
+Variance in median median: 24.769097222222218
+Median of means: 6.152073732718894
+Median of means variance: 22.89763571416928
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_150_Window_decay_5_Subsampling_decay_2_Subsampling_1000
+
+Median MRR: 0.25249961670608256
+MRR Variance: 0.020461247664405612
+Median Median: 5.75
+Variance in median median: 26.388888888888886
+Median of means: 6.931547619047619
+Median of means variance: 26.430900590976297
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_1_Subsampling_10000
+
+Median MRR: 0.25706067921977016
+MRR Variance: 0.03361831323303056
+Median Median: 6.25
+Variance in median median: 24.171875
+Median of means: 6.818452380952381
+Median of means variance: 24.1578602289335
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_1_Subsampling_5000
+
+Median MRR: 0.2807191814249851
+MRR Variance: 0.04520295362118206
+Median Median: 5.25
+Variance in median median: 28.791666666666668
+Median of means: 6.123376623376624
+Median of means variance: 29.254626847634
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_1_Subsampling_1000
+
+Median MRR: 0.3163885717457146
+MRR Variance: 0.032708827436125916
+Median Median: 5.0
+Variance in median median: 31.47743055555556
+Median of means: 5.761520737327189
+Median of means variance: 29.23455276887306
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_1.1_Subsampling_10000
+
+Median MRR: 0.3002365774884157
+MRR Variance: 0.02930181347399081
+Median Median: 6.25
+Variance in median median: 19.1875
+Median of means: 6.032738095238095
+Median of means variance: 21.99137769494663
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_1.1_Subsampling_5000
+
+Median MRR: 0.2985218797857824
+MRR Variance: 0.0263555285300157
+Median Median: 6.25
+Variance in median median: 19.56076388888889
+Median of means: 6.595238095238095
+Median of means variance: 19.98946330957752
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_1.1_Subsampling_1000
+
+Median MRR: 0.31362090581298785
+MRR Variance: 0.041618584711290665
+Median Median: 5.0
+Variance in median median: 23.951388888888886
+Median of means: 6.198680351906159
+Median of means variance: 28.43454107780609
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_1.5_Subsampling_10000
+
+Median MRR: 0.2577104255116589
+MRR Variance: 0.03493493645514717
+Median Median: 6.5
+Variance in median median: 19.019097222222218
+Median of means: 7.291666666666666
+Median of means variance: 20.77080834853759
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_1.5_Subsampling_5000
+
+Median MRR: 0.28852004326841985
+MRR Variance: 0.022431072573592673
+Median Median: 6.0
+Variance in median median: 20.6875
+Median of means: 6.52016129032258
+Median of means variance: 23.58697698941577
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_1.5_Subsampling_1000
+
+Median MRR: 0.2817998841984848
+MRR Variance: 0.02725694731790485
+Median Median: 7.0
+Variance in median median: 21.352430555555554
+Median of means: 6.311827956989247
+Median of means variance: 24.5006760194017
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_2_Subsampling_10000
+
+Median MRR: 0.3056784030399947
+MRR Variance: 0.02853155955856534
+Median Median: 6.0
+Variance in median median: 18.019097222222225
+Median of means: 6.526392961876833
+Median of means variance: 22.628873980326706
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_2_Subsampling_5000
+
+Median MRR: 0.2838090302978064
+MRR Variance: 0.042021141794519684
+Median Median: 5.5
+Variance in median median: 23.097222222222225
+Median of means: 6.954493087557603
+Median of means variance: 28.035745319048207
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_0_Subsampling_decay_2_Subsampling_1000
+
+Median MRR: 0.2979867504061052
+MRR Variance: 0.029031090445419117
+Median Median: 6.25
+Variance in median median: 24.375
+Median of means: 6.343413978494624
+Median of means variance: 25.206151176443598
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_1_Subsampling_10000
+
+Median MRR: 0.2929450757575758
+MRR Variance: 0.02914169258275522
+Median Median: 5.75
+Variance in median median: 29.972222222222218
+Median of means: 5.955357142857142
+Median of means variance: 29.135975034852578
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_1_Subsampling_5000
+
+Median MRR: 0.3236445477922751
+MRR Variance: 0.028342716488622077
+Median Median: 5.5
+Variance in median median: 30.880208333333332
+Median of means: 5.946428571428571
+Median of means variance: 31.365027156874685
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_1_Subsampling_1000
+
+Median MRR: 0.3248194495170301
+MRR Variance: 0.04258026938691708
+Median Median: 6.0
+Variance in median median: 22.347222222222225
+Median of means: 6.116935483870968
+Median of means variance: 26.9678659813418
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_1.1_Subsampling_10000
+
+Median MRR: 0.32481824342161586
+MRR Variance: 0.051184916664812945
+Median Median: 4.25
+Variance in median median: 20.6875
+Median of means: 5.362170087976539
+Median of means variance: 24.95095037605492
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_1.1_Subsampling_5000
+
+Median MRR: 0.30946210412040864
+MRR Variance: 0.03061823845603491
+Median Median: 5.5
+Variance in median median: 18.838541666666668
+Median of means: 6.122023809523809
+Median of means variance: 23.995780032280994
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_1.1_Subsampling_1000
+
+Median MRR: 0.33638180001816365
+MRR Variance: 0.029064734555080834
+Median Median: 6.0
+Variance in median median: 27.713541666666668
+Median of means: 6.241071428571429
+Median of means variance: 27.564349584274257
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_1.5_Subsampling_10000
+
+Median MRR: 0.24768970388930062
+MRR Variance: 0.05349165438931568
+Median Median: 7.25
+Variance in median median: 23.618055555555554
+Median of means: 7.459005376344086
+Median of means variance: 25.558950285746732
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_1.5_Subsampling_5000
+
+Median MRR: 0.29209336050853907
+MRR Variance: 0.026201293883084422
+Median Median: 6.0
+Variance in median median: 25.020833333333332
+Median of means: 6.619047619047619
+Median of means variance: 23.59487035320453
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12/mnt/cimec-storage-sata/users/andrea.bruera/nunzio/lib/python3.6/site-packages/numpy-1.15.2-py3.6-linux-x86_64.egg/numpy/core/_methods.py:140: RuntimeWarning: Degrees of freedom <= 0 for slice
+  keepdims=keepdims)
+/mnt/cimec-storage-sata/users/andrea.bruera/nunzio/lib/python3.6/site-packages/numpy-1.15.2-py3.6-linux-x86_64.egg/numpy/core/_methods.py:110: RuntimeWarning: invalid value encountered in true_divide
+  arrmean, rcount, out=arrmean, casting='unsafe', subok=False)
+/mnt/cimec-storage-sata/users/andrea.bruera/nunzio/lib/python3.6/site-packages/numpy-1.15.2-py3.6-linux-x86_64.egg/numpy/core/_methods.py:132: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/mnt/cimec-storage-sata/users/andrea.bruera/nunzio/lib/python3.6/site-packages/numpy-1.15.2-py3.6-linux-x86_64.egg/numpy/core/fromnumeric.py:2920: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/mnt/cimec-storage-sata/users/andrea.bruera/nunzio/lib/python3.6/site-packages/numpy-1.15.2-py3.6-linux-x86_64.egg/numpy/core/_methods.py:85: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/mnt/cimec-storage-sata/users/andrea.bruera/nunzio/lib/python3.6/site-packages/numpy-1.15.2-py3.6-linux-x86_64.egg/numpy/core/fromnumeric.py:3157: RuntimeWarning: Degrees of freedom <= 0 for slice
+  **kwargs)
+
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_1.5_Subsampling_1000
+
+Median MRR: 0.30786173392020166
+MRR Variance: 0.04207399111074833
+Median Median: 5.5
+Variance in median median: 23.477430555555557
+Median of means: 6.042521994134898
+Median of means variance: 27.60522642272909
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_2_Subsampling_10000
+
+Median MRR: 0.28606232782369145
+MRR Variance: 0.036508301089090915
+Median Median: 6.25
+Variance in median median: 19.838541666666668
+Median of means: 6.36491935483871
+Median of means variance: 23.912683343138312
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_2_Subsampling_5000
+
+Median MRR: 0.28213173155569465
+MRR Variance: 0.029384958365829227
+Median Median: 6.25
+Variance in median median: 19.352430555555554
+Median of means: 6.782834101382488
+Median of means variance: 22.967125413030917
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_1_Subsampling_decay_2_Subsampling_1000
+
+Median MRR: 0.27473883589955017
+MRR Variance: 0.03819851059555147
+Median Median: 5.75
+Variance in median median: 28.47222222222223
+Median of means: 6.4226190476190474
+Median of means variance: 26.399295098533326
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_1_Subsampling_10000
+
+Median MRR: 0.3157771551924778
+MRR Variance: 0.03935950645152772
+Median Median: 5.75
+Variance in median median: 15.102430555555557
+Median of means: 6.0426267281106
+Median of means variance: 18.64038609552925
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_1_Subsampling_5000
+
+Median MRR: 0.31276281588781585
+MRR Variance: 0.027345279026806908
+Median Median: 6.0
+Variance in median median: 20.451388888888886
+Median of means: 6.354166666666666
+Median of means variance: 20.7075934627243
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_1_Subsampling_1000
+
+Median MRR: 0.2999950611557754
+MRR Variance: 0.03340856821241435
+Median Median: 5.5
+Variance in median median: 29.93576388888889
+Median of means: 5.645833333333334
+Median of means variance: 30.381968362393298
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_1.1_Subsampling_10000
+
+Median MRR: 0.33564288720538715
+MRR Variance: 0.042330198089410104
+Median Median: 4.75
+Variance in median median: 17.463541666666668
+Median of means: 5.80241935483871
+Median of means variance: 21.693156829568792
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_1.1_Subsampling_5000
+
+Median MRR: 0.3167681334100926
+MRR Variance: 0.04011173053145362
+Median Median: 5.0
+Variance in median median: 14.130208333333334
+Median of means: 6.01747311827957
+Median of means variance: 17.463460553038644
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_1.1_Subsampling_1000
+
+Median MRR: 0.3011161232346298
+MRR Variance: 0.026137760394270182
+Median Median: 5.5
+Variance in median median: 22.51388888888889
+Median of means: 5.827922077922079
+Median of means variance: 26.55425025067937
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_1.5_Subsampling_10000
+
+Median MRR: 0.2887870929633602
+MRR Variance: 0.0329407440119378
+Median Median: 4.5
+Variance in median median: 21.930555555555557
+Median of means: 6.390456989247312
+Median of means variance: 24.83328402462082
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_1.5_Subsampling_5000
+
+Median MRR: 0.25788513734942303
+MRR Variance: 0.038204066472769464
+Median Median: 7.0
+Variance in median median: 17.519097222222225
+Median of means: 7.295698924731182
+Median of means variance: 22.6741687847554
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_1.5_Subsampling_1000
+
+Median MRR: 0.30547301680654215
+MRR Variance: 0.037383952878620064
+Median Median: 5.0
+Variance in median median: 35.15972222222222
+Median of means: 6.23521505376344
+Median of means variance: 32.22187021853252
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_2_Subsampling_10000
+
+Median MRR: 0.2882211568978431
+MRR Variance: 0.033196311599159777
+Median Median: 6.25
+Variance in median median: 13.625
+Median of means: 6.352822580645162
+Median of means variance: 19.152731468393444
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_2_Subsampling_5000
+
+Median MRR: 0.2703875861241932
+MRR Variance: 0.019747202208597627
+Median Median: 6.0
+Variance in median median: 15.826388888888891
+Median of means: 6.274926686217009
+Median of means variance: 18.63466869671821
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_3_Subsampling_decay_2_Subsampling_1000
+
+Median MRR: 0.29654763374123516
+MRR Variance: 0.03496936729380864
+Median Median: 5.25
+Variance in median median: 25.763888888888896
+Median of means: 6.070564516129032
+Median of means variance: 28.15907888441255
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_1_Subsampling_10000
+
+Median MRR: 0.22321790132546077
+MRR Variance: 0.03713827878354877
+Median Median: 7.5
+Variance in median median: 17.39409722222222
+Median of means: 7.323732718894009
+Median of means variance: 21.13744874536164
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_1_Subsampling_5000
+
+Median MRR: 0.25297978536614896
+MRR Variance: 0.03682243558028969
+Median Median: 6.5
+Variance in median median: 26.243055555555554
+Median of means: 7.25
+Median of means variance: 26.23487192845447
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_1_Subsampling_1000
+
+Median MRR: 0.23763297550977006
+MRR Variance: 0.033544422074201066
+Median Median: 6.25
+Variance in median median: 24.644097222222225
+Median of means: 7.038690476190476
+Median of means variance: 28.688096931000775
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_1.1_Subsampling_10000
+
+Median MRR: 0.2573677964161696
+MRR Variance: 0.0390585078807705
+Median Median: 7.5
+Variance in median median: 17.430555555555557
+Median of means: 7.409562211981567
+Median of means variance: 24.712422077935937
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_1.1_Subsampling_5000
+
+Median MRR: 0.24203731975909393
+MRR Variance: 0.037558782937608455
+Median Median: 6.75
+Variance in median median: 28.602430555555554
+Median of means: 7.150345622119815
+Median of means variance: 29.09286582754459
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_1.1_Subsampling_1000
+
+Median MRR: 0.23230868034295454
+MRR Variance: 0.03936099304787933
+Median Median: 7.25
+Variance in median median: 25.43576388888889
+Median of means: 7.092261904761905
+Median of means variance: 28.857031527099945
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_1.5_Subsampling_10000
+
+Median MRR: 0.26047905918035785
+MRR Variance: 0.031699689089833276
+Median Median: 6.5
+Variance in median median: 15.602430555555557
+Median of means: 6.800115207373272
+Median of means variance: 20.209920887614725
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_1.5_Subsampling_5000
+
+Median MRR: 0.27232306834579556
+MRR Variance: 0.022897837517389247
+Median Median: 6.5
+Variance in median median: 28.18576388888889
+Median of means: 6.651497695852535
+Median of means variance: 29.668640229948142
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_1.5_Subsampling_1000
+
+Median MRR: 0.23805342941372348
+MRR Variance: 0.032478792694577915
+Median Median: 6.25
+Variance in median median: 18.102430555555554
+Median of means: 6.714285714285714
+Median of means variance: 24.276933408808087
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_2_Subsampling_10000
+
+Median MRR: 0.25071136114482884
+MRR Variance: 0.04109306924416822
+Median Median: 6.25
+Variance in median median: 21.213541666666668
+Median of means: 6.639296187683284
+Median of means variance: 25.52882916914727
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_2_Subsampling_5000
+
+Median MRR: 0.26551132849834147
+MRR Variance: 0.022282295848693016
+Median Median: 5.5
+Variance in median median: 25.255208333333332
+Median of means: 6.203917050691244
+Median of means variance: 22.999791826413084
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_70_Window_decay_5_Subsampling_decay_2_Subsampling_1000
+
+Median MRR: 0.25245494876830304
+MRR Variance: 0.02054330940159604
+Median Median: 5.75
+Variance in median median: 24.993055555555554
+Median of means: 6.892857142857142
+Median of means variance: 26.40567695797601
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_1_Subsampling_10000
+
+Median MRR: 0.23222107627523964
+MRR Variance: 0.029018575068230513
+Median Median: 7.75
+Variance in median median: 31.49305555555556
+Median of means: 7.705357142857142
+Median of means variance: 29.67410720046253
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_1_Subsampling_5000
+
+Median MRR: 0.32169993728266766
+MRR Variance: 0.04377724604836939
+Median Median: 5.75
+Variance in median median: 34.645833333333336
+Median of means: 6.2648809523809526
+Median of means variance: 32.02167493098893
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_1_Subsampling_1000
+
+Median MRR: 0.30464691558441553
+MRR Variance: 0.038241102670318855
+Median Median: 5.75
+Variance in median median: 35.64409722222222
+Median of means: 6.041666666666666
+Median of means variance: 31.91670273988142
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_1.1_Subsampling_10000
+
+Median MRR: 0.29572262228512225
+MRR Variance: 0.02717596402183157
+Median Median: 7.0
+Variance in median median: 14.138888888888888
+Median of means: 6.88474025974026
+Median of means variance: 18.083398569227942
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_1.1_Subsampling_5000
+
+Median MRR: 0.29875501919605607
+MRR Variance: 0.03258172135524665
+Median Median: 6.25
+Variance in median median: 22.394097222222218
+Median of means: 6.642857142857142
+Median of means variance: 23.990501222064022
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_1.1_Subsampling_1000
+
+Median MRR: 0.31251065853338583
+MRR Variance: 0.04241082893026834
+Median Median: 6.5
+Variance in median median: 27.852430555555557
+Median of means: 6.577956989247312
+Median of means variance: 31.253722152688137
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_1.5_Subsampling_10000
+
+Median MRR: 0.24259205576169862
+MRR Variance: 0.033381552334538246
+Median Median: 7.0
+Variance in median median: 16.770833333333332
+Median of means: 7.0625
+Median of means variance: 21.237184908038614
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_1.5_Subsampling_5000
+
+Median MRR: 0.2863767808370081
+MRR Variance: 0.023482165552664386
+Median Median: 6.25
+Variance in median median: 23.352430555555557
+Median of means: 6.688172043010753
+Median of means variance: 25.297336774357465
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_1.5_Subsampling_1000
+
+Median MRR: 0.26139759383651695
+MRR Variance: 0.02448636332216307
+Median Median: 6.75
+Variance in median median: 21.95138888888889
+Median of means: 6.39516129032258
+Median of means variance: 24.44299216971909
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_2_Subsampling_10000
+
+Median MRR: 0.2833872721981049
+MRR Variance: 0.025782792264255245
+Median Median: 5.5
+Variance in median median: 19.227430555555554
+Median of means: 6.477272727272727
+Median of means variance: 22.252948138241674
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_2_Subsampling_5000
+
+Median MRR: 0.27003847617929816
+MRR Variance: 0.042519360272687046
+Median Median: 6.75
+Variance in median median: 25.972222222222225
+Median of means: 7.251728110599078
+Median of means variance: 29.57830971055124
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_0_Subsampling_decay_2_Subsampling_1000
+
+Median MRR: 0.27992013078156774
+MRR Variance: 0.031872906879384065
+Median Median: 6.0
+Variance in median median: 24.935763888888886
+Median of means: 6.230510752688172
+Median of means variance: 25.616408859114397
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_1_Subsampling_10000
+
+Median MRR: 0.2685139926211355
+MRR Variance: 0.03380264314795967
+Median Median: 6.0
+Variance in median median: 32.65972222222222
+Median of means: 6.300595238095238
+Median of means variance: 31.646568532516053
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_1_Subsampling_5000
+
+Median MRR: 0.34012327386425434
+MRR Variance: 0.030148823990348888
+Median Median: 5.75
+Variance in median median: 27.222222222222225
+Median of means: 6.086309523809524
+Median of means variance: 28.757403488645647
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_1_Subsampling_1000
+
+Median MRR: 0.3563169276145815
+MRR Variance: 0.04810076375520874
+Median Median: 4.75
+Variance in median median: 23.227430555555554
+Median of means: 5.665994623655914
+Median of means variance: 25.536390487238393
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_1.1_Subsampling_10000
+
+Median MRR: 0.3402057643534916
+MRR Variance: 0.03844452831013298
+Median Median: 4.5
+Variance in median median: 26.680555555555557
+Median of means: 5.6875
+Median of means variance: 27.942324635679032
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_1.1_Subsampling_5000
+
+Median MRR: 0.3155535352767187
+MRR Variance: 0.029948348099479483
+Median Median: 6.25
+Variance in median median: 19.041666666666668
+Median of means: 6.299731182795699
+Median of means variance: 22.784070995181555
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_1.1_Subsampling_1000
+
+Median MRR: 0.3199981194400837
+MRR Variance: 0.030717573011958658
+Median Median: 5.75
+Variance in median median: 24.810763888888886
+Median of means: 6.273809523809524
+Median of means variance: 27.61907815996862
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_1.5_Subsampling_10000
+
+Median MRR: 0.24397338212862404
+MRR Variance: 0.056333511678226124
+Median Median: 7.25
+Variance in median median: 26.534722222222225
+Median of means: 7.500672043010753
+Median of means variance: 26.817154493281162
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_1.5_Subsampling_5000
+
+Median MRR: 0.28975642692880593
+MRR Variance: 0.02761023276167064
+Median Median: 7.0
+Variance in median median: 27.18576388888889
+Median of means: 6.806547619047619
+Median of means variance: 24.751424119573944
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_1.5_Subsampling_1000
+
+Median MRR: 0.3080063698975519
+MRR Variance: 0.04504730142399784
+Median Median: 5.5
+Variance in median median: 23.505208333333332
+Median of means: 5.88474025974026
+Median of means variance: 27.003411761259432
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_2_Subsampling_10000
+
+Median MRR: 0.28981782106782106
+MRR Variance: 0.03474999448238331
+Median Median: 5.75
+Variance in median median: 21.171875
+Median of means: 6.231182795698924
+Median of means variance: 24.542305623390643
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_2_Subsampling_5000
+
+Median MRR: 0.29812546084867514
+MRR Variance: 0.029574860851363113
+Median Median: 5.5
+Variance in median median: 19.671875
+Median of means: 6.516129032258064
+Median of means variance: 22.07537238210683
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_1_Subsampling_decay_2_Subsampling_1000
+
+Median MRR: 0.2697630742273599
+MRR Variance: 0.03435877971410093
+Median Median: 5.75
+Variance in median median: 26.977430555555554
+Median of means: 6.491071428571429
+Median of means variance: 25.010412471183333
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_3_Subsampling_decay_1_Subsampling_10000
+
+Median MRR: 0.2884781479343168
+MRR Variance: 0.03656437247652258
+Median Median: 6.0
+Variance in median median: 15.102430555555552
+Median of means: 6.178571428571429
+Median of means variance: 18.601852791982655
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_3_Subsampling_decay_1_Subsampling_5000
+
+Median MRR: 0.3272517998681343
+MRR Variance: 0.03068134029418026
+Median Median: 5.25
+Variance in median median: 17.644097222222225
+Median of means: 6.425595238095238
+Median of means variance: 20.584276708738077
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_3_Subsampling_decay_1_Subsampling_1000
+
+Median MRR: 0.27393757676015745
+MRR Variance: 0.03306625410569999
+Median Median: 5.5
+Variance in median median: 32.0
+Median of means: 6.104166666666666
+Median of means variance: 30.439208666912975
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12
+Setup: Lambda_100_Window_decay_3_Subsampling_decay_1.1_Subsampling_10000
+
+Median MRR: 0.32526755651755657
+MRR Variance: 0.04355127057265904
+Median Median: 5.5
+Variance in median median: 15.560763888888886
+Median of means: 6.100806451612903
+Median of means variance: 20.390581724913165
+Average number of characters: 14.666666666666666
+Total of rankings taken into account: 12

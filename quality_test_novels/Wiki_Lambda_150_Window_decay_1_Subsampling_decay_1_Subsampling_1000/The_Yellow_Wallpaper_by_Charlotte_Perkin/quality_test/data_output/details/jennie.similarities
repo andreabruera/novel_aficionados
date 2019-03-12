@@ -1,0 +1,11 @@
+jennie
+
+Sentence no. 1
+Sentence: ['in', 'addition', 'to', 'the', 'couple', 'sister', '___', 'is', 'present', 'she', 'serves', 'as', 'their', 'housekeeper']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 150.0
+Current alpha: 1.0
+Subsampled line: ['addition', 'couple', 'sister', '___', 'present', 'housekeeper']
+
+[('guillermina', 0.39177292585372925), ('jayshree', 0.38175952434539795), ('step-siblings', 0.3809833824634552), ('hemalatha', 0.3792668581008911), ('saritha', 0.3733975291252136), ('addition', 0.3670620620250702), ('step-children', 0.3668344020843506), ('fredrikke', 0.364487886428833), ('ponnamma', 0.363986074924469), ('bhanupriya', 0.3635752201080322), ('husband', 0.3609481155872345), ('smita', 0.36016252636909485), ('nicoline', 0.3590324819087982), ('sialic', 0.35890597105026245), ('praskovia', 0.3577757477760315), ('ponvannan', 0.3576752841472626), ('granddaughters', 0.35745561122894287), ('glycosyltransferases', 0.3573873043060303), ('saranya', 0.3570006489753723), ('aniela', 0.3568373918533325), ('couple', 0.35568442940711975), ('lubomirska', 0.35428741574287415), ('mariangela', 0.35393983125686646), ('adelaida', 0.3529202938079834), ('next-door', 0.35290008783340454), ('skard', 0.3523104190826416), ('housekeeper', 0.3520969748497009), ('lucila', 0.3520857095718384), ('pandari', 0.351973295211792), ('lagoo', 0.3517168164253235), ('wenche', 0.3516008257865906), ('konstancja', 0.3497416377067566), ('transglutaminase', 0.34939366579055786), ('honeymooning', 0.34905141592025757), ('defensins', 0.3488118648529053), ('sumalatha', 0.3485569953918457), ('porphyrins', 0.3477221727371216), ('jayabharathi', 0.3477199077606201), ('dominga', 0.3472340404987335), ('dimeric', 0.3472275137901306), ('glycolipids', 0.34715813398361206), ('rivka', 0.346633642911911), ('stepchildren', 0.34653347730636597), ('lactobacilli', 0.34609827399253845), ('josefina', 0.3457251191139221), ('children-', 0.34557247161865234), ('non-families', 0.3453494608402252), ('propionic', 0.3452637195587158), ('gregoria', 0.34515324234962463), ('ippolita', 0.344928503036499)]
+

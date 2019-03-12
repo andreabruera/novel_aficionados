@@ -1,0 +1,11 @@
+miss_stacy
+
+Sentence no. 1
+Sentence: ['miss', 'muriel', '___', 'energetic', 'replacement', 'teacher']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 150.0
+Current alpha: 1.0
+Subsampled line: ['muriel', '___', 'energetic', 'replacement', 'teacher']
+
+[('energetic', 0.4687967300415039), ('muriel', 0.40262097120285034), ('!bgcolor=#cccccc', 0.3939024806022644), ('fun-loving', 0.3908994495868683), ('cheerful', 0.3871389627456665), ('|}', 0.3859662413597107), ('free-spirited', 0.38397109508514404), ('adventurous', 0.3784223198890686), ('hard-working', 0.3753417730331421), ('temperamental', 0.37244245409965515), ('__notoc__', 0.37044188380241394), ('style=|exhibition', 0.3699202537536621), ('attentive', 0.36793360114097595), ('quick-tempered', 0.36702969670295715), ('easy-going', 0.36194276809692383), ('talkative', 0.3610624074935913), ('gv232/28', 0.36043819785118103), ('excitable', 0.35961827635765076), ('youthful', 0.3591707944869995), ('forceful', 0.359102338552475), ('principled', 0.35782116651535034), ('shurmur', 0.35754382610321045), ('intelligent', 0.35749709606170654), ('!date', 0.3564501702785492), ('tributyltin', 0.356065571308136), ('hyperactive', 0.3554080128669739), ('playful', 0.35507792234420776), ('self-motivated', 0.35442525148391724), ('gu365/30', 0.35305699706077576), ('spunky', 0.3518694043159485), ('unsentimental', 0.35155630111694336), ('level-headed', 0.3515060245990753), ('vivacious', 0.3513583838939667), ('high-energy', 0.35120129585266113), ('easygoing', 0.35054486989974976), ('thoughtful', 0.3497433066368103), ('timid', 0.3489777445793152), ('photocatalytic', 0.3486897051334381), ('high-spirited', 0.34787243604660034), ('hardworking', 0.34741201996803284), ('dutiful', 0.3467351496219635), ('bespectacled', 0.34596696496009827), ('well-ventilated', 0.3459479808807373), ('hoseyn', 0.3454195261001587), ('35-year-old', 0.3450969457626343), ('perky', 0.34501147270202637), ('impetuous', 0.3449285924434662), ('brash', 0.34488892555236816), ('pirrie', 0.3446994423866272), ('dependable', 0.3434704542160034)]
+

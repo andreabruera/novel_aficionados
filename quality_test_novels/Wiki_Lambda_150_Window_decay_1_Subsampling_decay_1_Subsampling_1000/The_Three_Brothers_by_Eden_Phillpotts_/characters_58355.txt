@@ -1,0 +1,87 @@
+437	ned_mr baskerville_ned baskerville_baskerville_mr ned baskerville_mr ned
+302	cora_cora lintern_lintern
+289	nathan_nathan baskerville_mr nathan_mr nathan baskerville
+255	humphrey_humphrey baskerville_humphrey baskerville
+184	jack_jack head
+178	rupert_rupert baskerville
+168	mark_mark baskerville
+122	gollop_eliza_eliza gollop_miss gollop_miss eliza gollop_miss eliza
+112	heathman_heathman lintern
+96	dennis_masterman_dennis masterman
+93	vivian_vivian baskerville_mr vivian baskerville_mr vivian_vivian
+81	timothy_waite_mr waite_timothy waite_mr timothy waite
+76	milly_milly luscombe_luscombe
+68	thomas_thomas gollop
+67	susan_susan hacker_hacker
+63	joe voysey_joe_voysey
+60	mrs lintern
+53	mr gollop_gollop
+50	priscilla_priscilla lintern_lintern
+39	phyllis_phyllis lintern
+38	mr head
+36	mr masterman_masterman
+35	mrs hacker
+33	hawk house_house
+32	nat_uncle nat
+29	hester_hester baskerville
+26	miss masterman_masterman
+26	mrs baskerville
+23	cadworthy_cadworthy farm
+22	polly_polly baskerville
+19	st george_george
+14	mr voysey
+13	shaugh_shaugh prior
+11	tom_tom gollop
+11	mr luscombe
+10	baskervilles
+10	saul luscombe_saul
+10	mr popham_popham
+9	uncle humphrey
+9	sabra
+8	jehovah
+8	tommy gollop_tommy
+8	christ
+8	uncle nathan
+8	plymouth
+7	ben north
+7	alice_alice masterman
+7	st edward_edward
+6	valletort_mr valletort
+6	nicholas_nicholas bassett_bassett
+6	white thorn
+6	nick
+6	coldstone farm_coldstone
+6	bickleigh
+6	miss lintern
+5	mr elford_elford
+5	abraham elford_abraham
+5	mother dorothy_mother
+4	french eagle_eagle
+4	trowlesworthy_trowlesworthy warren
+4	mr humphrey
+4	undershaugh
+4	westcott_mr westcott
+3	penshiel
+3	jove
+3	tim waite_tim
+3	black hunter
+3	mr chave
+3	mr bassett
+3	abel
+3	state
+2	chapman
+2	plympton
+2	travers
+2	pen beacon
+2	john head
+2	thorpe
+2	christman eve
+2	devon
+2	parson
+2	jakes
+2	princetown
+2	coombes
+2	shaugh moor
+2	dawe
+2	cornwood
+2	bideford

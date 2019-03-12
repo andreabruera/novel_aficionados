@@ -1,0 +1,65 @@
+miss_jessel part a
+
+Sentence no. 1
+Sentence: ['___']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 100.0
+Current alpha: 1.0
+Subsampled line: ['___']
+
+[('esmailabad', nan), ('ebolavirus', nan), ('bulba', nan), ('rubell', nan), ('coury', nan), ('dwb', nan), ('dfd', nan), ('pin-ups', nan), ('spake', nan), ('mamdouh', nan), ('gigwise', nan), ('nchc', nan), ('newscenter', nan), ('dogar', nan), ('heterodoxy', nan), ('lübbecke', nan), ('reentrant', nan), ('babita', nan), ('lackadaisical', nan), ('electrocardiography', nan), ('palmitate', nan), ('hachenburg', nan), ('louis-alexandre', nan), ('ottaviani', nan), ('vio', nan), ('899%', nan), ('manges', nan), ('lazarov', nan), ('backhaus', nan), ('italienne', nan), ('galliera', nan), ('manaslu', nan), ('coale', nan), ('giustino', nan), ('marguerites', nan), ('lanternfish', nan), ('castronovo', nan), ('2/8th', nan), ('paolis', nan), ('nottage', nan), ('altach', nan), ('wadhams', nan), ('ghatkopar', nan), ('miscellanea', nan), ('anund', nan), ('kawajiri', nan), ('24p', nan), ('paulsboro', nan), ('bantustans', nan), ('austrian-german', nan)]
+
+Sentence no. 2
+Sentence: ['___']
+Sampling: 1000.0	Window: 14
+Window decay: 1	Sample decay: 1.0	Lambda: 100.0
+Current alpha: 0.9900498337491681
+Subsampled line: ['___']
+
+[('esmailabad', nan), ('ebolavirus', nan), ('bulba', nan), ('rubell', nan), ('coury', nan), ('dwb', nan), ('dfd', nan), ('pin-ups', nan), ('spake', nan), ('mamdouh', nan), ('gigwise', nan), ('nchc', nan), ('newscenter', nan), ('dogar', nan), ('heterodoxy', nan), ('lübbecke', nan), ('reentrant', nan), ('babita', nan), ('lackadaisical', nan), ('electrocardiography', nan), ('palmitate', nan), ('hachenburg', nan), ('louis-alexandre', nan), ('ottaviani', nan), ('vio', nan), ('899%', nan), ('manges', nan), ('lazarov', nan), ('backhaus', nan), ('italienne', nan), ('galliera', nan), ('manaslu', nan), ('coale', nan), ('giustino', nan), ('marguerites', nan), ('lanternfish', nan), ('castronovo', nan), ('2/8th', nan), ('paolis', nan), ('nottage', nan), ('altach', nan), ('wadhams', nan), ('ghatkopar', nan), ('miscellanea', nan), ('anund', nan), ('kawajiri', nan), ('24p', nan), ('paulsboro', nan), ('bantustans', nan), ('austrian-german', nan)]
+
+Sentence no. 3
+Sentence: ['it', 'was', 'as', 'if', 'now', 'in', 'my', 'friends', 'own', 'eyes', '___', 'had', 'again', 'appeared']
+Sampling: 1000.0	Window: 13
+Window decay: 1	Sample decay: 1.0	Lambda: 100.0
+Current alpha: 0.9801986733067553
+Subsampled line: ['my', 'friends', 'eyes', '___', 'again']
+
+[('my', 0.3715420365333557), ('thank', 0.3585749864578247), ('dear', 0.34932243824005127), ('again!', 0.33344370126724243), ('father!', 0.3306601643562317), ('hello', 0.32855260372161865), ('forever', 0.3249475359916687), ('high!', 0.3229407072067261), ('adored', 0.3229076862335205), ('friends', 0.3226606845855713), ('hows', 0.3222200274467468), ('cried', 0.32062822580337524), ('thankful', 0.3198419511318207), ('great!', 0.318731427192688), ('loved', 0.31868481636047363), ('home?', 0.3184729814529419), ('beloved', 0.31794920563697815), ('oh', 0.3178972601890564), ('everybody’s', 0.3176717758178711), ('wheres', 0.31437212228775024), ('reminisced', 0.3131895661354065), ('totoro', 0.3114512860774994), ('dearly', 0.3109709918498993), ('victory!', 0.3106665313243866), ('in!', 0.30912089347839355), ('better!', 0.3084074854850769), ('retitled', 0.3064296841621399), ('seeing', 0.30612310767173767), ('smiled', 0.30587226152420044), ('place!', 0.30540362000465393), ('glad', 0.3053736984729767), ('got', 0.304663747549057), ('lovin', 0.30458319187164307), ('too!', 0.30438143014907837), ('fondly', 0.30414968729019165), ('ready!', 0.3039921820163727), ('thrilled', 0.3029494881629944), ('once', 0.302767813205719), ('oh!', 0.3023872375488281), ('havin', 0.30194514989852905), ('back?', 0.30179011821746826), ('friends?', 0.30128639936447144), ('gone!', 0.30109065771102905), ('hey', 0.30107277631759644), ('need?', 0.2993547022342682), ('minding', 0.29934442043304443), ('talked', 0.29917001724243164), ('watching', 0.2990003526210785), ('your', 0.29891473054885864), ('again”', 0.2986949682235718)]
+
+Sentence no. 4
+Sentence: ['it', 'was', 'in', 'fact', 'the', 'very', 'appropriate', 'truth', 'that', 'she', 'had', 'ventured', 'to', 'criticize', 'the', 'propriety', 'to', 'hint', 'at', 'the', 'incongruity', 'of', 'so', 'close', 'an', 'alliance', 'and', 'even', 'to', 'go', 'so', 'far', 'on', 'the', 'subject', 'as', 'a', 'frank', 'overture', 'to', '___']
+Sampling: 1000.0	Window: 12
+Window decay: 1	Sample decay: 1.0	Lambda: 100.0
+Current alpha: 0.9704455335485082
+Subsampled line: ['very', 'appropriate', 'truth', 'that', 'ventured', 'criticize', 'propriety', 'hint', 'incongruity', 'close', 'alliance', 'even', 'subject', 'frank', 'overture', '___']
+
+[('zukerman', 0.26550301909446716), ('sardonically', 0.26407527923583984), ('foxman', 0.2556508481502533), ('risque', 0.25547051429748535), ('criticize', 0.253878116607666), ('song?', 0.25335532426834106), ('musing', 0.25273746252059937), ('ask', 0.2526235282421112), ('uneasy', 0.25239837169647217), ('eskenazi', 0.25032877922058105), ('coplands', 0.24985714256763458), ('stirs', 0.24951307475566864), ('steinem', 0.2479531615972519), ('loewes', 0.24795006215572357), ('alas!', 0.24749228358268738), ('sing-a-long', 0.24715307354927063), ('sighing', 0.2459414154291153), ('levinsons', 0.24506133794784546), ('coyly', 0.24504542350769043), ('mirth', 0.24494369328022003), ('deride', 0.24492017924785614), ('ah!', 0.24475455284118652), ('rhetorically', 0.24458342790603638), ('tiomkin', 0.24443256855010986), ('yearning', 0.2438005805015564), ('serkin', 0.243696391582489), ('rzewski', 0.24368257820606232), ('loathe', 0.243423193693161), ('dont', 0.2426060140132904), ('auld', 0.2425878643989563), ('legrands', 0.2418464571237564), ('balakirevs', 0.2414259910583496), ('silly', 0.24123278260231018), ('overtures', 0.2411179393529892), ('bolcom', 0.24079065024852753), ('ravels', 0.2402743697166443), ('glackens', 0.2397892326116562), ('work’s', 0.23971343040466309), ('lyadov', 0.23963162302970886), ('aldrichs', 0.23881259560585022), ('dadaists', 0.23783886432647705), ('friml', 0.23672792315483093), ('bakshis', 0.23641379177570343), ('muttered', 0.2360488325357437), ('reminding', 0.2358829826116562), ('glad', 0.23581582307815552), ('man?', 0.23556220531463623), ('kristol', 0.23549598455429077), ('francks', 0.2349419742822647), ('neoconservatives', 0.23459644615650177)]
+
+Sentence no. 5
+Sentence: ['___', 'had', 'with', 'a', 'most', 'strange', 'manner', 'requested', 'her', 'to', 'mind', 'her', 'business', 'and', 'the', 'good', 'woman', 'had', 'on', 'this', 'directly', 'approached', 'little']
+Sampling: 1000.0	Window: 11
+Window decay: 1	Sample decay: 1.0	Lambda: 100.0
+Current alpha: 0.9607894391523232
+Subsampled line: ['___', 'strange', 'manner', 'requested', 'good', 'woman', 'directly', 'approached', 'little']
+
+[('knowing', 0.3166922926902771), ('divulge', 0.3129015266895294), ('ask', 0.31041228771209717), ('reassure', 0.29949167370796204), ('courteously', 0.2994409203529358), ('sardonically', 0.29840192198753357), ('enquired', 0.29826951026916504), ('implore', 0.29686763882637024), ('entreat', 0.2929227948188782), ('trusting', 0.2926509976387024), ('asking', 0.2923640310764313), ('comforting', 0.291225790977478), ('coyly', 0.2882373332977295), ('reassuring', 0.2870888113975525), ('inquired', 0.28576499223709106), ('politely', 0.28548336029052734), ('ambivalent', 0.2841930687427521), ('antagonise', 0.283597469329834), ('messaged', 0.28295859694480896), ('know', 0.28240466117858887), ('“do', 0.27988743782043457), ('comment', 0.27796608209609985), ('divulges', 0.2768985629081726), ('greets', 0.2763121724128723), ('questioning', 0.2762896418571472), ('muttered', 0.27584174275398254), ('her?', 0.275554358959198), ('this?', 0.275523841381073), ('discloses', 0.27515602111816406), ('smiled', 0.27395719289779663), ('pleased', 0.2736981213092804), ('informed', 0.2733231484889984), ('inquires', 0.2733139991760254), ('disclose', 0.27272865176200867), ('consoling', 0.2724792957305908), ('balakirevs', 0.27219581604003906), ('hesitant', 0.27193671464920044), ('kindly', 0.2715303599834442), ('well-disposed', 0.27125468850135803), ('respectful', 0.27122166752815247), ('reticent', 0.27054789662361145), ('interject', 0.2700250744819641), ('replies', 0.26992011070251465), ('neednt', 0.26975131034851074), ('listen', 0.2692981958389282), ('reassured', 0.2688121795654297), ('come?', 0.26875850558280945), ('sighed', 0.26874858140945435), ('uneasy', 0.2684309482574463), ('work’s', 0.26803624629974365)]
+
+Sentence no. 6
+Sentence: ['when', 'they', 'had', 'been', 'about', 'together', 'quite', 'as', 'if', 'were', 'his', 'tutorand', 'a', 'very', 'grand', 'oneand', '___', 'only', 'for', 'the', 'little', 'lady']
+Sampling: 1000.0	Window: 10
+Window decay: 1	Sample decay: 1.0	Lambda: 100.0
+Current alpha: 0.951229424500714
+Subsampled line: ['___']
+
+[('knowing', 0.3166922926902771), ('divulge', 0.3129015266895294), ('ask', 0.31041228771209717), ('reassure', 0.29949167370796204), ('courteously', 0.2994409203529358), ('sardonically', 0.29840192198753357), ('enquired', 0.29826951026916504), ('implore', 0.29686763882637024), ('entreat', 0.2929227948188782), ('trusting', 0.2926509976387024), ('asking', 0.2923640310764313), ('comforting', 0.291225790977478), ('coyly', 0.2882373332977295), ('reassuring', 0.2870888113975525), ('inquired', 0.28576499223709106), ('politely', 0.28548336029052734), ('ambivalent', 0.2841930687427521), ('antagonise', 0.283597469329834), ('messaged', 0.28295859694480896), ('know', 0.28240466117858887), ('“do', 0.27988743782043457), ('comment', 0.27796608209609985), ('divulges', 0.2768985629081726), ('greets', 0.2763121724128723), ('questioning', 0.2762896418571472), ('muttered', 0.27584174275398254), ('her?', 0.275554358959198), ('this?', 0.275523841381073), ('discloses', 0.27515602111816406), ('smiled', 0.27395719289779663), ('pleased', 0.2736981213092804), ('informed', 0.2733231484889984), ('inquires', 0.2733139991760254), ('disclose', 0.27272865176200867), ('consoling', 0.2724792957305908), ('balakirevs', 0.27219581604003906), ('hesitant', 0.27193671464920044), ('kindly', 0.2715303599834442), ('well-disposed', 0.27125468850135803), ('respectful', 0.27122166752815247), ('reticent', 0.27054789662361145), ('interject', 0.2700250744819641), ('replies', 0.26992011070251465), ('neednt', 0.26975131034851074), ('listen', 0.2692981958389282), ('reassured', 0.2688121795654297), ('come?', 0.26875850558280945), ('sighed', 0.26874858140945435), ('uneasy', 0.2684309482574463), ('work’s', 0.26803624629974365)]
+
+Sentence no. 7
+Sentence: ['you', 'see', 'after', 'all', '___', 'didnt', 'mind']
+Sampling: 1000.0	Window: 9
+Window decay: 1	Sample decay: 1.0	Lambda: 100.0
+Current alpha: 0.9417645335842487
+Subsampled line: ['see', 'after', '___']
+
+[('knowing', 0.32922667264938354), ('enquired', 0.32305991649627686), ('divulge', 0.32102489471435547), ('ask', 0.3152119517326355), ('asking', 0.31232136487960815), ('inquired', 0.31062495708465576), ('implore', 0.3054395914077759), ('courteously', 0.3053934574127197), ('trusting', 0.3038148283958435), ('questioning', 0.30272164940834045), ('comforting', 0.30188971757888794), ('reassure', 0.2982383370399475), ('entreat', 0.2968599498271942), ('messaged', 0.2955804467201233), ('consoling', 0.29555922746658325), ('reassuring', 0.2919682264328003), ('informed', 0.29174864292144775), ('politely', 0.28907546401023865), ('inquires', 0.2872428894042969), ('him—and', 0.2865341603755951), ('muttered', 0.28638648986816406), ('antagonise', 0.28488221764564514), ('disclosing', 0.2847868800163269), ('sardonically', 0.28402259945869446), ('smiled', 0.28359556198120117), ('replying', 0.282314658164978), ('asked', 0.2817429304122925), ('informing', 0.2812933325767517), ('commiserate', 0.2802909016609192), ('discloses', 0.28013113141059875), ('divulges', 0.2799951434135437), ('comment', 0.27965351939201355), ('greets', 0.27952539920806885), ('reassured', 0.27874407172203064), ('uneasy', 0.27847349643707275), ('disclose', 0.27814802527427673), ('know', 0.2780863046646118), ('sighed', 0.277934193611145), ('balakirevs', 0.2775633931159973), ('coyly', 0.27679872512817383), ('wept', 0.2765613794326782), ('embarrassed', 0.2754831314086914), ('well-disposed', 0.2754344344139099), ('assurances', 0.2753646969795227), ('hesitant', 0.275343120098114), ('interject', 0.27454978227615356), ('betray', 0.2739560902118683), ('notifying', 0.27378392219543457), ('kindly', 0.2735047936439514), ('this?', 0.27242380380630493)]
+

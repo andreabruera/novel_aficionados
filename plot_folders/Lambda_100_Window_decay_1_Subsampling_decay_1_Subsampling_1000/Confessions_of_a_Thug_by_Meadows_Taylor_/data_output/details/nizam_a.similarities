@@ -1,0 +1,11 @@
+nizam part a
+
+Sentence no. 1
+Sentence: ['you', 'and', 'your', 'master', 'may', 'be', 'the', 'portion', 'of', 'the', 'devil', 'said', 'the', 'old', 'merchant', 'ever', 'since', 'i', 'have', 'entered', 'the', 'territories', 'of', 'the', '___', 'i', 'have', 'been', 'treated', 'in', 'this', 'manner']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 100.0
+Current alpha: 1.0
+Subsampled line: ['you', 'your', 'master', 'portion', 'devil', 'merchant', 'i', 'entered', 'territories', '___', 'i', 'treated', 'manner']
+
+[('categoryliving', 0.41926467418670654), ('!bgcolor=#cccccc', 0.3983900547027588), ('ishmaelites', 0.3941742777824402), ('__notoc__', 0.3881150484085083), ('lawfully', 0.38246825337409973), ('wronged', 0.37804144620895386), ('territories', 0.37732023000717163), ('whomsoever', 0.37330180406570435), ('forbear', 0.36892879009246826), ('|}', 0.36855486035346985), ('abihu', 0.3638223111629486), ('courteously', 0.3632047176361084), ('master', 0.36215847730636597), ('need”', 0.36178067326545715), ('sinned', 0.3614835739135742), ('lord?', 0.360826313495636), ('amalekites', 0.3589141368865967), ('moabites', 0.3579310178756714), ('sihon', 0.35388240218162537), ('idolaters', 0.35268616676330566), ('!date', 0.35228174924850464), ('edomites', 0.3517475426197052), ('so”', 0.34951573610305786), ('santror', 0.3480089008808136), ('land-dwelling', 0.3472999930381775), ('not”', 0.34700489044189453), ('consignee', 0.34692710638046265), ('equitably', 0.3467642068862915), ('territory', 0.3466067910194397), ('achaeus', 0.34559565782546997), ('israelites', 0.34524789452552795), ('transgressors', 0.34348270297050476), ('“did', 0.34250062704086304), ('off-reservation', 0.3421885669231415), ('fossilize', 0.3418128788471222), ('them—and', 0.34164369106292725), ('midianites', 0.340660035610199), ('wrongdoer', 0.34065869450569153), ('have?', 0.34065717458724976), ('wherefore', 0.3405865430831909), ('if', 0.34024757146835327), ('oogway', 0.3392694890499115), ('assuredly', 0.3381684124469757), ('shall', 0.33755558729171753), ('slaves', 0.3372972309589386), ('husbandmen', 0.3349968194961548), ('nadab', 0.33467960357666016), ('‘well', 0.33449384570121765), ('testators', 0.33406326174736023), ('possessory', 0.33376821875572205)]
+

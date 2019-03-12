@@ -1,0 +1,11 @@
+jhalone
+
+Sentence no. 1
+Sentence: ['after', 'becoming', 'prominent', 'he', 'and', 'his', 'father', 'relocate', 'to', '___', 'and', 'gain', 'the', 'confidence', 'of', 'the', 'local', 'ruler', 'raja', 'govindrao', 'ii']
+Sampling: 1000.0	Window: 15
+Window decay: 1	Sample decay: 1.0	Lambda: 150.0
+Current alpha: 1.0
+Subsampled line: ['after', 'becoming', 'and', 'relocate', '___', 'gain', 'confidence', 'ruler', 'raja']
+
+[('mukhtiyar', 0.40796610713005066), ('mahabat', 0.3983479142189026), ('karrani', 0.39598867297172546), ('gain', 0.3945663273334503), ('bavandid', 0.39454612135887146), ('confidence', 0.38437753915786743), ('ghiyath', 0.3783615231513977), ('aybak', 0.37706059217453003), ('gaining', 0.3765188455581665), ('sandhyas', 0.376049280166626), ('ruler', 0.3743349313735962), ('hastinapura', 0.37399616837501526), ('al-muktafi', 0.373484343290329), ('mahadji', 0.3728066384792328), ('raja', 0.3725055456161499), ('bahamani', 0.3689408600330353), ('befriending', 0.36694028973579407), ('udayaditya', 0.36385172605514526), ('basnyat', 0.3632393479347229), ('shahaji', 0.3623118996620178), ('sindhia', 0.3621664047241211), ('adud', 0.36210954189300537), ('abdicates', 0.3616117537021637), ('jalayir', 0.3609781563282013), ('maharajah', 0.3608435392379761), ('suzerains', 0.3607243299484253), ('mayadunne', 0.3603687882423401), ('maharaja', 0.3601311445236206), ('aaliya', 0.3593790531158447), ('temüjin', 0.35823512077331543), ('prabu', 0.35796552896499634), ('ala-ud-din', 0.3578864634037018), ('jám', 0.3575987219810486), ('shaybani', 0.35692280530929565), ('ndlambe', 0.3561539649963379), ('marrying', 0.3555215895175934), ('massina', 0.3554777503013611), ('sháh', 0.3552403151988983), ('abdicating', 0.35483428835868835), ('borbarua', 0.35461458563804626), ('marthanda', 0.35459470748901367), ('narapati', 0.35406747460365295), ('bendahara', 0.3537702262401581), ('naddula', 0.35297489166259766), ('zamindar', 0.35257112979888916), ('overthrowing', 0.3521243929862976), ('soon', 0.3515053391456604), ('zwide', 0.35148563981056213), ('temenggong', 0.35144490003585815), ('usurp', 0.351375013589859)]
+
