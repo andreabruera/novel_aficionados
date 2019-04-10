@@ -1,0 +1,7 @@
+mrs grose	FEMALE
+miles	MALE
+flora	FEMALE
+quint	MALE
+miss jessel	FEMALE
+bly	MALE
+douglas	MALE

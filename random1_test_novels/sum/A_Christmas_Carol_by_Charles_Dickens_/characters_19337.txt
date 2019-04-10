@@ -1,0 +1,26 @@
+293	scrooge_mr scrooge
+57	bob_bob cratchit_cratchit
+42	marley_jacob_jacob marley_marley
+24	tiny tim_tim
+19	mrs cratchit
+18	peter_peter cratchit
+17	joe
+15	fezziwig_mrs fezziwig
+13	spirit
+10	martha
+9	dickens_charles dickens_charles dickens
+9	fred
+6	cratchits
+6	ali baba
+6	dick
+6	topper
+5	mrs dilber
+4	ding
+3	robin crusoe
+2	ebenezer
+2	caroline
+2	carol
+2	miss belinda
+2	parliament
+2	george alfred williams
+2	robert

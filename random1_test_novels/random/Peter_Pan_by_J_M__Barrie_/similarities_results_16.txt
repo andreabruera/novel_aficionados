@@ -1,0 +1,374 @@
+
+Result for the vector: peter, coming from part a of the book
+Rank: 11 out of 11 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.1272502316683395
+
+wendy_b - 0.2655073623208008
+george_b - 0.20053603352713908
+starkey_b - 0.18843148087169362
+michael_b - 0.1776143802634254
+nana_b - 0.1618202284788813
+cecco_b - 0.1575019908695826
+hook_b - 0.1524940787259296
+john_b - 0.14931478206427232
+smee_b - 0.13042092323303314
+liza_b - 0.1287350279846773
+peter_b - 0.1272502316683395
+
+Result for the vector: wendy, coming from part a of the book
+Rank: 2 out of 11 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.3193503713414185
+
+cecco_b - 0.35151056502790956
+wendy_b - 0.3193503713414185
+michael_b - 0.3082478940486908
+george_b - 0.2972634104427776
+nana_b - 0.28025825141321165
+hook_b - 0.24074403941631317
+john_b - 0.21740230917930603
+liza_b - 0.20785954594612122
+smee_b - 0.18711237234547007
+peter_b - 0.15893110632896423
+starkey_b - 0.15399869245286865
+
+Result for the vector: john, coming from part a of the book
+Rank: 11 out of 11 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.1569194495677948
+
+michael_b - 0.30863332748413086
+cecco_b - 0.29472700639745625
+smee_b - 0.26740817829419294
+peter_b - 0.2662130296230316
+wendy_b - 0.25944656906862773
+hook_b - 0.2594126760959625
+liza_b - 0.25154000520706177
+nana_b - 0.23754745796039994
+george_b - 0.20676394165432013
+starkey_b - 0.18844162489299857
+john_b - 0.1569194495677948
+
+Result for the vector: michael, coming from part a of the book
+Rank: 3 out of 11 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.1930165199344314
+
+hook_b - 0.3002966433851912
+wendy_b - 0.20645284393148683
+michael_b - 0.1930165199344314
+liza_b - 0.1803482377632928
+cecco_b - 0.17845713665825944
+peter_b - 0.17581944691596774
+nana_b - 0.17525068893281623
+starkey_b - 0.1678961913523788
+george_b - 0.15351219815161232
+john_b - 0.13985807120377045
+smee_b - 0.12531798708301672
+
+Result for the vector: nana, coming from part a of the book
+Rank: 6 out of 11 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.2135174764969973
+
+michael_b - 0.2802036535618517
+smee_b - 0.2416600435972231
+wendy_b - 0.23789670354435827
+george_b - 0.22743005238265207
+john_b - 0.21818502436965598
+nana_b - 0.2135174764969973
+liza_b - 0.20454892787045706
+peter_b - 0.19638824782441605
+cecco_b - 0.17628442715750922
+starkey_b - 0.1711614527952245
+hook_b - 0.17113814227949756
+
+Result for the vector: smee, coming from part a of the book
+Rank: 5 out of 11 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.18549412488937508
+
+wendy_b - 0.2796098208543723
+hook_b - 0.22173038293538236
+liza_b - 0.19665953834894107
+john_b - 0.18574911738937427
+smee_b - 0.18549412488937508
+cecco_b - 0.18144566770059933
+michael_b - 0.17604233765349792
+nana_b - 0.17225147220474812
+starkey_b - 0.16434074448523753
+peter_b - 0.13042908129518763
+george_b - 0.10553670244028394
+
+Result for the vector: starkey, coming from part a of the book
+Rank: 6 out of 11 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.22403701472172186
+
+wendy_b - 0.2976088435170411
+cecco_b - 0.26324643900256145
+john_b - 0.25118146829715604
+smee_b - 0.2426302731037157
+nana_b - 0.22652969044093008
+starkey_b - 0.22403701472172186
+hook_b - 0.21384127653591214
+george_b - 0.20318441698504963
+michael_b - 0.1552790906858989
+liza_b - 0.14438667032798136
+peter_b - 0.07063639488003297
+
+Result for the vector: hook, coming from part a of the book
+Rank: 2 out of 11 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.25250035554175027
+
+michael_b - 0.2573579558560814
+hook_b - 0.25250035554175027
+nana_b - 0.2129899092310647
+wendy_b - 0.2034553890608839
+cecco_b - 0.1815592619119982
+peter_b - 0.11465480055270283
+john_b - 0.10835934231988772
+starkey_b - 0.09349842272675414
+smee_b - 0.08218476155723853
+liza_b - 0.06244377791211386
+george_b - 0.03445205066097841
+
+Result for the vector: george, coming from part a of the book
+Rank: 1 out of 11 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.23568987058669205
+
+george_b - 0.23568987058669205
+peter_b - 0.21390117920034094
+liza_b - 0.19542278674705144
+cecco_b - 0.1895867976669439
+hook_b - 0.15848567137207586
+michael_b - 0.15390951014104454
+smee_b - 0.15117353200912584
+nana_b - 0.14152581792762065
+wendy_b - 0.1320321967592186
+starkey_b - 0.10938696237245359
+john_b - 0.07301518630890941
+
+Result for the vector: cecco, coming from part a of the book
+Rank: 1 out of 11 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.18067174198245242
+
+cecco_b - 0.18067174198245242
+george_b - 0.16140018356444158
+michael_b - 0.15689851343631744
+smee_b - 0.12875256709769792
+wendy_b - 0.12685047468097438
+liza_b - 0.11043673008680344
+nana_b - 0.09798222196208126
+starkey_b - 0.07994281738826092
+hook_b - 0.07073632627725601
+peter_b - 0.06347324699163437
+john_b - 0.024146243929862976
+
+Result for the vector: liza, coming from part a of the book
+Rank: 4 out of 11 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.20416795325779785
+
+george_b - 0.2179337850730167
+starkey_b - 0.2146639951863286
+michael_b - 0.20499122753713223
+liza_b - 0.20416795325779785
+nana_b - 0.19557997001469302
+cecco_b - 0.19018534959467348
+hook_b - 0.1569609092760358
+wendy_b - 0.12546039375426732
+john_b - 0.12541745976857727
+peter_b - 0.12079975368975865
+smee_b - 0.10032067599779455
+
+Result for the vector: peter, coming from part b of the book
+Rank: 7 out of 11 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.1272502316683395
+
+john_a - 0.2662130296230316
+george_a - 0.21390117920034094
+nana_a - 0.19638824782441605
+michael_a - 0.17581944691596774
+wendy_a - 0.15893110632896423
+smee_a - 0.13042908129518763
+peter_a - 0.1272502316683395
+liza_a - 0.12079975368975865
+hook_a - 0.11465480055270283
+starkey_a - 0.07063639488003297
+cecco_a - 0.06347324699163437
+
+Result for the vector: wendy, coming from part b of the book
+Rank: 1 out of 11 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.3193503713414185
+
+wendy_a - 0.3193503713414185
+starkey_a - 0.2976088435170411
+smee_a - 0.2796098208543723
+peter_a - 0.2655073623208008
+john_a - 0.25944656906862773
+nana_a - 0.23789670354435827
+michael_a - 0.20645284393148683
+hook_a - 0.2034553890608839
+george_a - 0.1320321967592186
+cecco_a - 0.12685047468097438
+liza_a - 0.12546039375426732
+
+Result for the vector: john, coming from part b of the book
+Rank: 5 out of 11 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.1569194495677948
+
+starkey_a - 0.25118146829715604
+nana_a - 0.21818502436965598
+wendy_a - 0.21740230917930603
+smee_a - 0.18574911738937427
+john_a - 0.1569194495677948
+peter_a - 0.14931478206427232
+michael_a - 0.13985807120377045
+liza_a - 0.12541745976857727
+hook_a - 0.10835934231988772
+george_a - 0.07301518630890941
+cecco_a - 0.024146243929862976
+
+Result for the vector: michael, coming from part b of the book
+Rank: 6 out of 11 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.1930165199344314
+
+john_a - 0.30863332748413086
+wendy_a - 0.3082478940486908
+nana_a - 0.2802036535618517
+hook_a - 0.2573579558560814
+liza_a - 0.20499122753713223
+michael_a - 0.1930165199344314
+peter_a - 0.1776143802634254
+smee_a - 0.17604233765349792
+cecco_a - 0.15689851343631744
+starkey_a - 0.1552790906858989
+george_a - 0.15390951014104454
+
+Result for the vector: nana, coming from part b of the book
+Rank: 4 out of 11 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.2135174764969973
+
+wendy_a - 0.28025825141321165
+john_a - 0.23754745796039994
+starkey_a - 0.22652969044093008
+nana_a - 0.2135174764969973
+hook_a - 0.2129899092310647
+liza_a - 0.19557997001469302
+michael_a - 0.17525068893281623
+smee_a - 0.17225147220474812
+peter_a - 0.1618202284788813
+george_a - 0.14152581792762065
+cecco_a - 0.09798222196208126
+
+Result for the vector: smee, coming from part b of the book
+Rank: 5 out of 11 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.18549412488937508
+
+john_a - 0.26740817829419294
+starkey_a - 0.2426302731037157
+nana_a - 0.2416600435972231
+wendy_a - 0.18711237234547007
+smee_a - 0.18549412488937508
+george_a - 0.15117353200912584
+peter_a - 0.13042092323303314
+cecco_a - 0.12875256709769792
+michael_a - 0.12531798708301672
+liza_a - 0.10032067599779455
+hook_a - 0.08218476155723853
+
+Result for the vector: starkey, coming from part b of the book
+Rank: 1 out of 11 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.22403701472172186
+
+starkey_a - 0.22403701472172186
+liza_a - 0.2146639951863286
+john_a - 0.18844162489299857
+peter_a - 0.18843148087169362
+nana_a - 0.1711614527952245
+michael_a - 0.1678961913523788
+smee_a - 0.16434074448523753
+wendy_a - 0.15399869245286865
+george_a - 0.10938696237245359
+hook_a - 0.09349842272675414
+cecco_a - 0.07994281738826092
+
+Result for the vector: hook, coming from part b of the book
+Rank: 3 out of 11 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.25250035554175027
+
+michael_a - 0.3002966433851912
+john_a - 0.2594126760959625
+hook_a - 0.25250035554175027
+wendy_a - 0.24074403941631317
+smee_a - 0.22173038293538236
+starkey_a - 0.21384127653591214
+nana_a - 0.17113814227949756
+george_a - 0.15848567137207586
+liza_a - 0.1569609092760358
+peter_a - 0.1524940787259296
+cecco_a - 0.07073632627725601
+
+Result for the vector: george, coming from part b of the book
+Rank: 2 out of 11 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.23568987058669205
+
+wendy_a - 0.2972634104427776
+george_a - 0.23568987058669205
+nana_a - 0.22743005238265207
+liza_a - 0.2179337850730167
+john_a - 0.20676394165432013
+starkey_a - 0.20318441698504963
+peter_a - 0.20053603352713908
+cecco_a - 0.16140018356444158
+michael_a - 0.15351219815161232
+smee_a - 0.10553670244028394
+hook_a - 0.03445205066097841
+
+Result for the vector: cecco, coming from part b of the book
+Rank: 8 out of 11 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.18067174198245242
+
+wendy_a - 0.35151056502790956
+john_a - 0.29472700639745625
+starkey_a - 0.26324643900256145
+liza_a - 0.19018534959467348
+george_a - 0.1895867976669439
+hook_a - 0.1815592619119982
+smee_a - 0.18144566770059933
+cecco_a - 0.18067174198245242
+michael_a - 0.17845713665825944
+nana_a - 0.17628442715750922
+peter_a - 0.1575019908695826
+
+Result for the vector: liza, coming from part b of the book
+Rank: 4 out of 11 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.20416795325779785
+
+john_a - 0.25154000520706177
+wendy_a - 0.20785954594612122
+nana_a - 0.20454892787045706
+liza_a - 0.20416795325779785
+smee_a - 0.19665953834894107
+george_a - 0.19542278674705144
+michael_a - 0.1803482377632928
+starkey_a - 0.14438667032798136
+peter_a - 0.1287350279846773
+cecco_a - 0.11043673008680344
+hook_a - 0.06244377791211386

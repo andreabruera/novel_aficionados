@@ -1,0 +1,608 @@
+
+Result for the vector: jim, coming from part a of the book
+Rank: 2 out of 14 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.980620115417842
+
+sally_b - 0.9832304413089292
+jim_b - 0.980620115417842
+silas_b - 0.9759147458051074
+sid_b - 0.9756878309156849
+boggs_b - 0.9666544775160836
+sherburn_b - 0.965085892828879
+huck_b - 0.9345213453329014
+bill_b - 0.9220075332520185
+george_b - 0.9151924798007297
+thatcher_b - 0.9070081059341494
+dey_b - 0.9061609776664076
+huck_finn_a - 0.8848877812888561
+bob_b - 0.5732767923639293
+huck_finn_b - 0.4032442987932058
+
+Result for the vector: huck, coming from part a of the book
+Rank: 7 out of 14 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.9419814944267273
+
+sally_b - 0.9754658341407776
+jim_b - 0.9752452969551086
+sid_b - 0.9721041321754456
+silas_b - 0.9702190160751343
+boggs_b - 0.9491282984354589
+sherburn_b - 0.9470581412315369
+huck_b - 0.9419814944267273
+dey_b - 0.9274517893791199
+bill_b - 0.9212015914200804
+george_b - 0.9185015236884814
+thatcher_b - 0.9090757640920811
+huck_finn_a - 0.8810798525810242
+bob_b - 0.5912607488411891
+huck_finn_b - 0.43848687410354614
+
+Result for the vector: huck, coming from part a of the book
+Rank: 12 out of 14 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: 0.8810798525810242
+
+sally_b - 0.9754658341407776
+jim_b - 0.9752452969551086
+sid_b - 0.9721041321754456
+silas_b - 0.9702190160751343
+boggs_b - 0.9491282984354589
+sherburn_b - 0.9470581412315369
+huck_b - 0.9419814944267273
+dey_b - 0.9274517893791199
+bill_b - 0.9212015914200804
+george_b - 0.9185015236884814
+thatcher_b - 0.9090757640920811
+huck_finn_a - 0.8810798525810242
+bob_b - 0.5912607488411891
+huck_finn_b - 0.43848687410354614
+
+Result for the vector: huck, coming from part a of the book
+Rank: 14 out of 14 characters
+Reciprocal rank: 0.07142857142857142
+Cosine similarity to the query: 0.43848687410354614
+
+sally_b - 0.9754658341407776
+jim_b - 0.9752452969551086
+sid_b - 0.9721041321754456
+silas_b - 0.9702190160751343
+boggs_b - 0.9491282984354589
+sherburn_b - 0.9470581412315369
+huck_b - 0.9419814944267273
+dey_b - 0.9274517893791199
+bill_b - 0.9212015914200804
+george_b - 0.9185015236884814
+thatcher_b - 0.9090757640920811
+huck_finn_a - 0.8810798525810242
+bob_b - 0.5912607488411891
+huck_finn_b - 0.43848687410354614
+
+Result for the vector: sally, coming from part a of the book
+Rank: 1 out of 14 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9140238165855408
+
+sally_b - 0.9140238165855408
+jim_b - 0.9076381325721741
+silas_b - 0.9060158133506775
+sid_b - 0.9047721028327942
+sherburn_b - 0.8908239006996155
+boggs_b - 0.8884821202898662
+bill_b - 0.8715391831672694
+huck_b - 0.8529528975486755
+dey_b - 0.8417091965675354
+thatcher_b - 0.8338880191411981
+george_b - 0.8313772926144989
+huck_finn_a - 0.8288400173187256
+bob_b - 0.5374233286804955
+huck_finn_b - 0.388881117105484
+
+Result for the vector: silas, coming from part a of the book
+Rank: 3 out of 14 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.9060158133506775
+
+sally_b - 0.9140238165855408
+jim_b - 0.9076381325721741
+silas_b - 0.9060158133506775
+sid_b - 0.9047721028327942
+sherburn_b - 0.8908239006996155
+boggs_b - 0.8884821202898662
+bill_b - 0.8715391831672694
+huck_b - 0.8529528975486755
+dey_b - 0.8417091965675354
+thatcher_b - 0.8338880191411981
+george_b - 0.8313772926144989
+huck_finn_a - 0.8288400173187256
+bob_b - 0.5374233286804955
+huck_finn_b - 0.388881117105484
+
+Result for the vector: sid, coming from part a of the book
+Rank: 5 out of 14 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.6108943819999695
+
+dey_b - 0.6266141533851624
+sally_b - 0.6231022477149963
+silas_b - 0.6181563138961792
+bill_b - 0.6159853568085827
+sid_b - 0.6108943819999695
+thatcher_b - 0.6108364048849467
+jim_b - 0.6104414463043213
+george_b - 0.6071190418934539
+huck_b - 0.6036365628242493
+huck_finn_a - 0.5875235795974731
+boggs_b - 0.5749916605648896
+sherburn_b - 0.5593859553337097
+bob_b - 0.47120864603545226
+huck_finn_b - 0.395485520362854
+
+Result for the vector: huck, coming from part finn of the book
+Rank: 5 out of 22 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.8810798525810242
+
+bill_a - 0.8988547860893495
+thatcher_a - 0.8936906723287906
+silas_b - 0.8867906928062439
+jim_a - 0.8848877812888561
+huck_a - 0.8810798525810242
+jim_b - 0.8785127997398376
+sally_b - 0.8759741187095642
+dey_a - 0.8752260282500981
+george_b - 0.8687274714925135
+sid_b - 0.8672246336936951
+bob_a - 0.8560576524700149
+thatcher_b - 0.8534866229738782
+huck_b - 0.8479444980621338
+boggs_b - 0.8455101503583837
+sherburn_b - 0.8378438353538513
+bill_b - 0.8345590332413311
+silas_a - 0.8288400173187256
+boggs_a - 0.8284217817531969
+dey_b - 0.8232068419456482
+george_a - 0.8084747195243835
+sid_a - 0.5875235795974731
+bob_b - 0.49879862364526484
+
+Result for the vector: huck, coming from part finn of the book
+Rank: 13 out of 22 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: 0.8479444980621338
+
+bill_a - 0.8988547860893495
+thatcher_a - 0.8936906723287906
+silas_b - 0.8867906928062439
+jim_a - 0.8848877812888561
+huck_a - 0.8810798525810242
+jim_b - 0.8785127997398376
+sally_b - 0.8759741187095642
+dey_a - 0.8752260282500981
+george_b - 0.8687274714925135
+sid_b - 0.8672246336936951
+bob_a - 0.8560576524700149
+thatcher_b - 0.8534866229738782
+huck_b - 0.8479444980621338
+boggs_b - 0.8455101503583837
+sherburn_b - 0.8378438353538513
+bill_b - 0.8345590332413311
+silas_a - 0.8288400173187256
+boggs_a - 0.8284217817531969
+dey_b - 0.8232068419456482
+george_a - 0.8084747195243835
+sid_a - 0.5875235795974731
+bob_b - 0.49879862364526484
+
+Result for the vector: george, coming from part a of the book
+Rank: 6 out of 14 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.8889668848802715
+
+jim_b - 0.9032787084579468
+huck_b - 0.9021705389022827
+sid_b - 0.9015874266624451
+silas_b - 0.9013611078262329
+sally_b - 0.8996407985687256
+george_b - 0.8889668848802715
+dey_b - 0.8803449869155884
+thatcher_b - 0.8666109700981075
+bill_b - 0.8554293003422454
+sherburn_b - 0.8521572351455688
+boggs_b - 0.849771167331075
+huck_finn_a - 0.8084747195243835
+bob_b - 0.5937737403444573
+huck_finn_b - 0.42028969526290894
+
+Result for the vector: sherburn, coming from part a of the book
+Rank: 6 out of 14 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.8895955747607024
+
+sally_b - 0.9145304611605147
+jim_b - 0.9123718790786355
+sid_b - 0.904403155779652
+silas_b - 0.9018105923050305
+boggs_b - 0.8948073120472672
+sherburn_b - 0.8895955747607024
+huck_b - 0.8701843100676367
+bill_b - 0.8607498573362997
+dey_b - 0.8546817985366718
+george_b - 0.8473151669706388
+thatcher_b - 0.8467402801889131
+huck_finn_a - 0.8284217817531969
+bob_b - 0.5683461854354707
+huck_finn_b - 0.42818266581400316
+
+Result for the vector: thatcher, coming from part a of the book
+Rank: 9 out of 14 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.9157490084021692
+
+sally_b - 0.9666089107575693
+jim_b - 0.9637818027669733
+sid_b - 0.9610968518584033
+silas_b - 0.9578394579243502
+boggs_b - 0.944216009629727
+sherburn_b - 0.937615780163282
+george_b - 0.9266827658821801
+huck_b - 0.923858848925199
+thatcher_b - 0.9157490084021692
+bill_b - 0.9061022130816552
+dey_b - 0.9043590695965017
+huck_finn_a - 0.8936906723287906
+bob_b - 0.5863759271130519
+huck_finn_b - 0.42479561045156766
+
+Result for the vector: bill, coming from part a of the book
+Rank: 11 out of 14 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.9114684462547367
+
+jim_b - 0.9769087420051558
+sally_b - 0.9760971651135203
+sid_b - 0.9704708439392372
+silas_b - 0.969595549678539
+boggs_b - 0.951544787127804
+sherburn_b - 0.9464182225715071
+huck_b - 0.9406135642894263
+george_b - 0.9360650422631246
+dey_b - 0.9218853665521975
+thatcher_b - 0.9152913315854672
+bill_b - 0.9114684462547367
+huck_finn_a - 0.8988547860893495
+bob_b - 0.5849432276138571
+huck_finn_b - 0.41806739080353994
+
+Result for the vector: dey, coming from part a of the book
+Rank: 7 out of 14 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.9465863140472003
+
+jim_b - 0.9734751597955745
+sally_b - 0.9724227206455057
+sid_b - 0.9685050863918627
+silas_b - 0.9676176328886983
+boggs_b - 0.9533006264775843
+huck_b - 0.952640178642264
+dey_b - 0.9465863140472003
+sherburn_b - 0.9436232481227386
+bill_b - 0.9187211491201939
+thatcher_b - 0.913577708197308
+george_b - 0.9124129142638209
+huck_finn_a - 0.8752260282500981
+bob_b - 0.6043852983598347
+huck_finn_b - 0.4348959365549133
+
+Result for the vector: boggs, coming from part a of the book
+Rank: 5 out of 14 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.8948073120472672
+
+sally_b - 0.9145304611605147
+jim_b - 0.9123718790786355
+sid_b - 0.904403155779652
+silas_b - 0.9018105923050305
+boggs_b - 0.8948073120472672
+sherburn_b - 0.8895955747607024
+huck_b - 0.8701843100676367
+bill_b - 0.8607498573362997
+dey_b - 0.8546817985366718
+george_b - 0.8473151669706388
+thatcher_b - 0.8467402801889131
+huck_finn_a - 0.8284217817531969
+bob_b - 0.5683461854354707
+huck_finn_b - 0.42818266581400316
+
+Result for the vector: bob, coming from part a of the book
+Rank: 13 out of 14 characters
+Reciprocal rank: 0.07692307692307693
+Cosine similarity to the query: 0.5821870391909194
+
+sid_b - 0.9597233557866021
+sally_b - 0.9549514082103145
+silas_b - 0.9543263343378123
+jim_b - 0.9535994557381018
+sherburn_b - 0.9386246240958812
+boggs_b - 0.9377131182636919
+huck_b - 0.9242765352561171
+bill_b - 0.9180825450321979
+george_b - 0.9074791399395759
+dey_b - 0.9067938383344525
+thatcher_b - 0.8946158619339543
+huck_finn_a - 0.8560576524700149
+bob_b - 0.5821870391909194
+huck_finn_b - 0.444931838218461
+
+Result for the vector: jim, coming from part b of the book
+Rank: 1 out of 12 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.980620115417842
+
+jim_a - 0.980620115417842
+bill_a - 0.9769087420051558
+huck_a - 0.9752452969551086
+dey_a - 0.9734751597955745
+thatcher_a - 0.9637818027669733
+bob_a - 0.9535994557381018
+boggs_a - 0.9123718790786355
+silas_a - 0.9076381325721741
+george_a - 0.9032787084579468
+huck_finn_a - 0.8785127997398376
+sid_a - 0.6104414463043213
+huck_finn_b - 0.4249368906021118
+
+Result for the vector: huck, coming from part b of the book
+Rank: 2 out of 12 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.9419814944267273
+
+dey_a - 0.952640178642264
+huck_a - 0.9419814944267273
+bill_a - 0.9406135642894263
+jim_a - 0.9345213453329014
+bob_a - 0.9242765352561171
+thatcher_a - 0.923858848925199
+george_a - 0.9021705389022827
+boggs_a - 0.8701843100676367
+silas_a - 0.8529528975486755
+huck_finn_a - 0.8479444980621338
+sid_a - 0.6036365628242493
+huck_finn_b - 0.46802979707717896
+
+Result for the vector: huck, coming from part b of the book
+Rank: 10 out of 12 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.8479444980621338
+
+dey_a - 0.952640178642264
+huck_a - 0.9419814944267273
+bill_a - 0.9406135642894263
+jim_a - 0.9345213453329014
+bob_a - 0.9242765352561171
+thatcher_a - 0.923858848925199
+george_a - 0.9021705389022827
+boggs_a - 0.8701843100676367
+silas_a - 0.8529528975486755
+huck_finn_a - 0.8479444980621338
+sid_a - 0.6036365628242493
+huck_finn_b - 0.46802979707717896
+
+Result for the vector: huck, coming from part b of the book
+Rank: 12 out of 12 characters
+Reciprocal rank: 0.08333333333333333
+Cosine similarity to the query: 0.46802979707717896
+
+dey_a - 0.952640178642264
+huck_a - 0.9419814944267273
+bill_a - 0.9406135642894263
+jim_a - 0.9345213453329014
+bob_a - 0.9242765352561171
+thatcher_a - 0.923858848925199
+george_a - 0.9021705389022827
+boggs_a - 0.8701843100676367
+silas_a - 0.8529528975486755
+huck_finn_a - 0.8479444980621338
+sid_a - 0.6036365628242493
+huck_finn_b - 0.46802979707717896
+
+Result for the vector: silas, coming from part b of the book
+Rank: 7 out of 12 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.9060158133506775
+
+jim_a - 0.9759147458051074
+huck_a - 0.9702190160751343
+bill_a - 0.969595549678539
+dey_a - 0.9676176328886983
+thatcher_a - 0.9578394579243502
+bob_a - 0.9543263343378123
+silas_a - 0.9060158133506775
+boggs_a - 0.9018105923050305
+george_a - 0.9013611078262329
+huck_finn_a - 0.8867906928062439
+sid_a - 0.6181563138961792
+huck_finn_b - 0.41497138142585754
+
+Result for the vector: sid, coming from part b of the book
+Rank: 11 out of 12 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: 0.6108943819999695
+
+jim_a - 0.9756878309156849
+huck_a - 0.9721041321754456
+bill_a - 0.9704708439392372
+dey_a - 0.9685050863918627
+thatcher_a - 0.9610968518584033
+bob_a - 0.9597233557866021
+silas_a - 0.9047721028327942
+boggs_a - 0.904403155779652
+george_a - 0.9015874266624451
+huck_finn_a - 0.8672246336936951
+sid_a - 0.6108943819999695
+huck_finn_b - 0.43036139011383057
+
+Result for the vector: huck, coming from part finn of the book
+Rank: 2 out of 22 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.46802979707717896
+
+dey_b - 0.46987059712409973
+huck_b - 0.46802979707717896
+bob_a - 0.444931838218461
+bill_b - 0.4393531418232245
+huck_a - 0.43848687410354614
+thatcher_b - 0.4357753227882185
+dey_a - 0.4348959365549133
+sid_b - 0.43036139011383057
+sally_b - 0.4286682605743408
+boggs_a - 0.42818266581400316
+jim_b - 0.4249368906021118
+thatcher_a - 0.42479561045156766
+george_a - 0.42028969526290894
+bill_a - 0.41806739080353994
+silas_b - 0.41497138142585754
+bob_b - 0.4136617306966107
+boggs_b - 0.4042988241999993
+jim_a - 0.4032442987932058
+sid_a - 0.395485520362854
+silas_a - 0.388881117105484
+sherburn_b - 0.3857143223285675
+george_b - 0.3646352995823415
+
+Result for the vector: huck, coming from part finn of the book
+Rank: 5 out of 22 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.43848687410354614
+
+dey_b - 0.46987059712409973
+huck_b - 0.46802979707717896
+bob_a - 0.444931838218461
+bill_b - 0.4393531418232245
+huck_a - 0.43848687410354614
+thatcher_b - 0.4357753227882185
+dey_a - 0.4348959365549133
+sid_b - 0.43036139011383057
+sally_b - 0.4286682605743408
+boggs_a - 0.42818266581400316
+jim_b - 0.4249368906021118
+thatcher_a - 0.42479561045156766
+george_a - 0.42028969526290894
+bill_a - 0.41806739080353994
+silas_b - 0.41497138142585754
+bob_b - 0.4136617306966107
+boggs_b - 0.4042988241999993
+jim_a - 0.4032442987932058
+sid_a - 0.395485520362854
+silas_a - 0.388881117105484
+sherburn_b - 0.3857143223285675
+george_b - 0.3646352995823415
+
+Result for the vector: george, coming from part b of the book
+Rank: 7 out of 12 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.8889668848802715
+
+bill_a - 0.9360650422631246
+thatcher_a - 0.9266827658821801
+huck_a - 0.9185015236884814
+jim_a - 0.9151924798007297
+dey_a - 0.9124129142638209
+bob_a - 0.9074791399395759
+george_a - 0.8889668848802715
+huck_finn_a - 0.8687274714925135
+boggs_a - 0.8473151669706388
+silas_a - 0.8313772926144989
+sid_a - 0.6071190418934539
+huck_finn_b - 0.3646352995823415
+
+Result for the vector: thatcher, coming from part b of the book
+Rank: 1 out of 12 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9157490084021692
+
+thatcher_a - 0.9157490084021692
+bill_a - 0.9152913315854672
+dey_a - 0.913577708197308
+huck_a - 0.9090757640920811
+jim_a - 0.9070081059341494
+bob_a - 0.8946158619339543
+george_a - 0.8666109700981075
+huck_finn_a - 0.8534866229738782
+boggs_a - 0.8467402801889131
+silas_a - 0.8338880191411981
+sid_a - 0.6108364048849467
+huck_finn_b - 0.4357753227882185
+
+Result for the vector: bill, coming from part b of the book
+Rank: 5 out of 12 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.9114684462547367
+
+jim_a - 0.9220075332520185
+huck_a - 0.9212015914200804
+dey_a - 0.9187211491201939
+bob_a - 0.9180825450321979
+bill_a - 0.9114684462547367
+thatcher_a - 0.9061022130816552
+silas_a - 0.8715391831672694
+boggs_a - 0.8607498573362997
+george_a - 0.8554293003422454
+huck_finn_a - 0.8345590332413311
+sid_a - 0.6159853568085827
+huck_finn_b - 0.4393531418232245
+
+Result for the vector: dey, coming from part b of the book
+Rank: 1 out of 12 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9465863140472003
+
+dey_a - 0.9465863140472003
+huck_a - 0.9274517893791199
+bill_a - 0.9218853665521975
+bob_a - 0.9067938383344525
+jim_a - 0.9061609776664076
+thatcher_a - 0.9043590695965017
+george_a - 0.8803449869155884
+boggs_a - 0.8546817985366718
+silas_a - 0.8417091965675354
+huck_finn_a - 0.8232068419456482
+sid_a - 0.6266141533851624
+huck_finn_b - 0.46987059712409973
+
+Result for the vector: boggs, coming from part b of the book
+Rank: 7 out of 12 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.8948073120472672
+
+jim_a - 0.9666544775160836
+dey_a - 0.9533006264775843
+bill_a - 0.951544787127804
+huck_a - 0.9491282984354589
+thatcher_a - 0.944216009629727
+bob_a - 0.9377131182636919
+boggs_a - 0.8948073120472672
+silas_a - 0.8884821202898662
+george_a - 0.849771167331075
+huck_finn_a - 0.8455101503583837
+sid_a - 0.5749916605648896
+huck_finn_b - 0.4042988241999993
+
+Result for the vector: bob, coming from part b of the book
+Rank: 6 out of 12 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.5821870391909194
+
+dey_a - 0.6043852983598347
+george_a - 0.5937737403444573
+huck_a - 0.5912607488411891
+thatcher_a - 0.5863759271130519
+bill_a - 0.5849432276138571
+bob_a - 0.5821870391909194
+jim_a - 0.5732767923639293
+boggs_a - 0.5683461854354707
+silas_a - 0.5374233286804955
+huck_finn_a - 0.49879862364526484
+sid_a - 0.47120864603545226
+huck_finn_b - 0.4136617306966107

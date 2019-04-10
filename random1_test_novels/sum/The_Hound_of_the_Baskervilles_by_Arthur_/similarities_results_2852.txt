@@ -1,0 +1,224 @@
+
+Result for the vector: holmes, coming from part a of the book
+Rank: 1 out of 8 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9861906464752752
+
+holmes_b - 0.9861906464752752
+henry_b - 0.9805112773332385
+stapleton_b - 0.9780835204745393
+watson_b - 0.9771785431259441
+barrymore_b - 0.9701414379603961
+charles_b - 0.9537719772390124
+frankland_b - 0.9377682488491613
+selden_b - 0.9361025373966262
+
+Result for the vector: henry, coming from part a of the book
+Rank: 1 out of 8 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9876658320426941
+
+henry_b - 0.9876658320426941
+holmes_b - 0.9824103116989136
+stapleton_b - 0.9815670251846313
+watson_b - 0.9742541909217834
+charles_b - 0.9664245247840881
+barrymore_b - 0.9645252802685087
+selden_b - 0.9428953528404236
+frankland_b - 0.9365808963775635
+
+Result for the vector: charles, coming from part a of the book
+Rank: 3 out of 8 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.9798724639339741
+
+stapleton_b - 0.9815620769001309
+henry_b - 0.9804366219303996
+charles_b - 0.9798724639339741
+watson_b - 0.9627045966806784
+holmes_b - 0.9625369884095798
+barrymore_b - 0.9508842171292564
+selden_b - 0.9305239874436865
+frankland_b - 0.9181017826856261
+
+Result for the vector: watson, coming from part a of the book
+Rank: 1 out of 8 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.973284125328064
+
+watson_b - 0.973284125328064
+stapleton_b - 0.9713064432144165
+henry_b - 0.9699748754501343
+barrymore_b - 0.9650047996643083
+holmes_b - 0.9647755026817322
+charles_b - 0.9524818062782288
+selden_b - 0.9262286424636841
+frankland_b - 0.9229162335395813
+
+Result for the vector: stapleton, coming from part a of the book
+Rank: 1 out of 8 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9737866215046238
+
+stapleton_b - 0.9737866215046238
+henry_b - 0.9730869821633994
+holmes_b - 0.9662905623403364
+watson_b - 0.9624833751464901
+barrymore_b - 0.9542313475219625
+charles_b - 0.9495926782367435
+frankland_b - 0.9275251903392435
+selden_b - 0.9239301360824749
+
+Result for the vector: barrymore, coming from part a of the book
+Rank: 6 out of 8 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.9596877956111253
+
+henry_b - 0.9808218771464197
+stapleton_b - 0.9793317013779794
+holmes_b - 0.9773553305076166
+watson_b - 0.9720402649653042
+charles_b - 0.9645148803149133
+barrymore_b - 0.9596877956111253
+selden_b - 0.937652735044144
+frankland_b - 0.9326761046849524
+
+Result for the vector: frankland, coming from part a of the book
+Rank: 8 out of 8 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.8337423453850257
+
+henry_b - 0.890659418423755
+holmes_b - 0.8863305713632877
+stapleton_b - 0.883720185867554
+charles_b - 0.8704090377810314
+watson_b - 0.8689676186134705
+selden_b - 0.8638659973104599
+barrymore_b - 0.8563826849802753
+frankland_b - 0.8337423453850257
+
+Result for the vector: selden, coming from part a of the book
+Rank: 4 out of 8 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.4698421797109302
+
+henry_b - 0.4729656122018581
+frankland_b - 0.4716855130101895
+holmes_b - 0.4709574720548832
+selden_b - 0.4698421797109302
+charles_b - 0.46753893695887755
+stapleton_b - 0.4595107573124994
+barrymore_b - 0.4591568820914821
+watson_b - 0.4547037617773941
+
+Result for the vector: holmes, coming from part b of the book
+Rank: 1 out of 8 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9861906464752752
+
+holmes_a - 0.9861906464752752
+henry_a - 0.9824103116989136
+barrymore_a - 0.9773553305076166
+stapleton_a - 0.9662905623403364
+watson_a - 0.9647755026817322
+charles_a - 0.9625369884095798
+frankland_a - 0.8863305713632877
+selden_a - 0.4709574720548832
+
+Result for the vector: henry, coming from part b of the book
+Rank: 1 out of 8 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9876658320426941
+
+henry_a - 0.9876658320426941
+barrymore_a - 0.9808218771464197
+holmes_a - 0.9805112773332385
+charles_a - 0.9804366219303996
+stapleton_a - 0.9730869821633994
+watson_a - 0.9699748754501343
+frankland_a - 0.890659418423755
+selden_a - 0.4729656122018581
+
+Result for the vector: charles, coming from part b of the book
+Rank: 1 out of 8 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9798724639339741
+
+charles_a - 0.9798724639339741
+henry_a - 0.9664245247840881
+barrymore_a - 0.9645148803149133
+holmes_a - 0.9537719772390124
+watson_a - 0.9524818062782288
+stapleton_a - 0.9495926782367435
+frankland_a - 0.8704090377810314
+selden_a - 0.46753893695887755
+
+Result for the vector: watson, coming from part b of the book
+Rank: 3 out of 8 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.973284125328064
+
+holmes_a - 0.9771785431259441
+henry_a - 0.9742541909217834
+watson_a - 0.973284125328064
+barrymore_a - 0.9720402649653042
+charles_a - 0.9627045966806784
+stapleton_a - 0.9624833751464901
+frankland_a - 0.8689676186134705
+selden_a - 0.4547037617773941
+
+Result for the vector: stapleton, coming from part b of the book
+Rank: 5 out of 8 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.9737866215046238
+
+henry_a - 0.9815670251846313
+charles_a - 0.9815620769001309
+barrymore_a - 0.9793317013779794
+holmes_a - 0.9780835204745393
+stapleton_a - 0.9737866215046238
+watson_a - 0.9713064432144165
+frankland_a - 0.883720185867554
+selden_a - 0.4595107573124994
+
+Result for the vector: barrymore, coming from part b of the book
+Rank: 4 out of 8 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.9596877956111253
+
+holmes_a - 0.9701414379603961
+watson_a - 0.9650047996643083
+henry_a - 0.9645252802685087
+barrymore_a - 0.9596877956111253
+stapleton_a - 0.9542313475219625
+charles_a - 0.9508842171292564
+frankland_a - 0.8563826849802753
+selden_a - 0.4591568820914821
+
+Result for the vector: frankland, coming from part b of the book
+Rank: 7 out of 8 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.8337423453850257
+
+holmes_a - 0.9377682488491613
+henry_a - 0.9365808963775635
+barrymore_a - 0.9326761046849524
+stapleton_a - 0.9275251903392435
+watson_a - 0.9229162335395813
+charles_a - 0.9181017826856261
+frankland_a - 0.8337423453850257
+selden_a - 0.4716855130101895
+
+Result for the vector: selden, coming from part b of the book
+Rank: 8 out of 8 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.4698421797109302
+
+henry_a - 0.9428953528404236
+barrymore_a - 0.937652735044144
+holmes_a - 0.9361025373966262
+charles_a - 0.9305239874436865
+watson_a - 0.9262286424636841
+stapleton_a - 0.9239301360824749
+frankland_a - 0.8638659973104599
+selden_a - 0.4698421797109302

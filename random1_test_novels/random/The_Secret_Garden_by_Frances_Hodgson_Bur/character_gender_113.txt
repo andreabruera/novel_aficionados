@@ -1,0 +1,16 @@
+mary	FEMALE
+dickon	UNKNOWN
+colin	MALE
+martha	FEMALE
+ben weatherstaff	MALE
+mrs medlock	FEMALE
+mr craven	MALE
+dr craven	
+susan sowerby	FEMALE
+miss mary	FEMALE
+mrs sowerby	FEMALE
+yorkshire	UNKNOWN
+mr roach	MALE
+rajah	MALE
+shell	UNKNOWN
+magic	UNKNOWN

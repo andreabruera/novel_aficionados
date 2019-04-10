@@ -1,0 +1,10 @@
+Setup: sum
+
+Median MRR: 0.32866069177900725
+MRR Variance: 0.03024500642334139
+Median Median: 5.75
+Variance in median median: 30.38888888888889
+Median of means: 6.711904761904762
+Median of means variance: 31.638509278699548
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12

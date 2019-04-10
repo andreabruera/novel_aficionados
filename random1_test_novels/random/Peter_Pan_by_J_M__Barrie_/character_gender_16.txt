@@ -1,0 +1,14 @@
+peter	MALE
+wendy	FEMALE
+john	MALE
+michael	MALE
+nana	FEMALE
+smee	MALE
+starkey	MALE
+jane	FEMALE
+hook	MALE
+tinker bell	
+george	MALE
+tiger lily	
+cecco	UNKNOWN
+liza	FEMALE

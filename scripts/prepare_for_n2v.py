@@ -34,6 +34,10 @@ def prepare_for_n2v(folder, number, filename, w2v_model):
     ########   STEP 2: creating a list of characters from that file, by using a function in nonce2vec.utils.novels_utilities
 
     char_list=get_characters_list(folder, number)
+    
+    gender_list=get_characters_gender(folder, number, char_list)
+
+    print(gender_list)
 
     ########    STEP 3: creating the final version of the txt to be used for training on N2V. Main features are 1) one sentence per line, 2) different names for the same character are substituted with one single name, 3) punctuation is removed and double/triple backspaces, common within Gutenberg files, are removed
 
