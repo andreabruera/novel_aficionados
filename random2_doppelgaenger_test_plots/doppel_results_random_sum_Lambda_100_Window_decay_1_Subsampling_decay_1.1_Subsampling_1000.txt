@@ -1,0 +1,10 @@
+Setup: random_sum_Lambda_100_Window_decay_1_Subsampling_decay_1.1_Subsampling_1000
+
+Median MRR: 0.3091685327520103
+MRR Variance: 0.03050115968091306
+Median Median: 5.75
+Variance in median median: 32.270833333333336
+Median of means: 6.847619047619048
+Median of means variance: 32.0660583950627
+Average number of characters: 14.583333333333334
+Total of rankings taken into account: 12
