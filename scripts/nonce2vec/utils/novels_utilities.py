@@ -231,8 +231,8 @@ def prepare_for_n2v(folder, number, filename, w2v_model=None, write_to_file=Fals
                         current_char_list.append(first_name)
 
                     for a in alias:
-                        if a in line:
-                            line=line.replace(str(a), str(first_name))
+                        if ' {} '.format(a) in line:
+                            line=line.replace(' {} '.format(a), ' {} '.format(first_name))
 
                 else:
 
@@ -243,7 +243,7 @@ def prepare_for_n2v(folder, number, filename, w2v_model=None, write_to_file=Fals
                     if alias in line:
 
                         if ' ' in alias:
-                            line=line.replace(alias, first_name)
+                            line=line.replace(' {} '.format(alias), ' {} '.format(first_name))
 
             line2=re.sub(r'\W+',r' ',line)
             line3=line2.strip(' ')

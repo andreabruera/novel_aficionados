@@ -13,6 +13,7 @@ from re import sub
 
 parser=argparse.ArgumentParser()
 parser.add_argument('--training_mode')
+parser.add_argument('--plots')
 args = parser.parse_args()
 
 #from matplotlib import rcParams
@@ -127,8 +128,10 @@ for setup in os.listdir(big):
     average_characters=numpy.mean(characters)
     if average_characters>14.0:
         print('Setup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
-        results_output=open('{}/doppel_results_{}.txt'.format(output_folder, setup),'w')
-        results_output.write('Setup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
+
+        if args.plots==True:
+            results_output=open('{}/doppel_results_{}.txt'.format(output_folder, setup),'w')
+            results_output.write('Setup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
         if ambiguities_present==True:
             if len(ambiguities.keys())>0 and total_evaluations_runs_counter==0:
                 ambiguity_percentages=[]
@@ -141,230 +144,229 @@ for setup in os.listdir(big):
                 final_percent=numpy.mean(ambiguity_percentages)
                 print('Percentage of ambiguous sentences of all sentences used for training (containing more than one character): {} %\n'.format(round(final_percent, 3)))
                 total_evaluations_runs_counter+=1
+    
+    if args.plots==True:
+
+        ### Ambiguity infos
 
 
+        with open('{}/doppel_ambiguities_info.txt'.format(output_folder), 'w') as ambiguity_file:
+            if len(ambiguities.keys())>0:
+                for amb in ambiguities.keys():
+                    novel_amb=ambiguities[amb]
+                    amb_sent=novel_amb[0]
+                    total_sent=novel_amb[1]
+                    perc_amb=novel_amb[2]
+                    ambiguity_file.write('\nAmbiguous sentences: {} out of {}\nPercentage: {} %\n\n'.format(amb_sent, total_sent, perc_amb))
 
-    ### Ambiguity infos
+        def ticks(setups_dict, mode):
+            max_value=[]
+            for i in setups_dict.keys():
+                max_i=max(setups_dict[i])
+                max_value.append(max_i) 
+            x_ticks=[u for u in range(1, len(setups_dict[i])+1)]
+            if mode=='median':
+                y_ticks=[i for i in range(1, int(max(max_value))+1, 2)] 
+            elif mode=='mrr':
+                y_ticks=[i for i in numpy.linspace(0, 1, 11)] 
+            return x_ticks, y_ticks
 
+        short_names=[]
+        for n in names[setup]:
+            n=n.replace('_', ' ').split(' by')
+            short_names.append(n[0])
 
-    with open('{}/doppel_ambiguities_info.txt'.format(output_folder), 'w') as ambiguity_file:
-        if len(ambiguities.keys())>0:
-            for amb in ambiguities.keys():
-                novel_amb=ambiguities[amb]
-                amb_sent=novel_amb[0]
-                total_sent=novel_amb[1]
-                perc_amb=novel_amb[2]
-                ambiguity_file.write('\nAmbiguous sentences: {} out of {}\nPercentage: {} %\n\n'.format(amb_sent, total_sent, perc_amb))
+        sum_spearman='N.A.'
 
-    def ticks(setups_dict, mode):
-        max_value=[]
-        for i in setups_dict.keys():
-            max_i=max(setups_dict[i])
-            max_value.append(max_i) 
-        x_ticks=[u for u in range(1, len(setups_dict[i])+1)]
-        if mode=='median':
-            y_ticks=[i for i in range(1, int(max(max_value))+1, 2)] 
-        elif mode=='mrr':
-            y_ticks=[i for i in numpy.linspace(0, 1, 11)] 
-        return x_ticks, y_ticks
+        ### Novels data:
 
-    short_names=[]
-    for n in names[setup]:
-        n=n.replace('_', ' ').split(' by')
-        short_names.append(n[0])
+        novels_info=open('{}/{}_novels_info.txt'.format(output_folder, setup_shorthand), 'w')
+        for n in [k for k in range(0, len(short_names))]:
+            novels_info.write('Name:\t{}\nLength in words:\t{}\nCharacters evaluated:\t{}\nMedian Rank:\t{}\nMRR:\t{}\nStandard deviation of characters frequency: {}\n\n'.format(short_names[n],lengths[setup][n],characters_dict[setup][n],list_var_median[n],list_var_mrr[n], characters_std[setup][n]))
 
-    sum_spearman='N.A.'
+        sum_color=['lightslategrey', 'coral', 'darkgoldenrod', 'darkcyan', 'deeppink', 'lightgreen', 'aquamarine', 'green', 'purple', 'gold', 'sienna', 'olivedrab']
 
-    ### Novels data:
+        ### Lenghts/score
 
-    novels_info=open('{}/{}_novels_info.txt'.format(output_folder, setup_shorthand), 'w')
-    for n in [k for k in range(0, len(short_names))]:
-        novels_info.write('Name:\t{}\nLength in words:\t{}\nCharacters evaluated:\t{}\nMedian Rank:\t{}\nMRR:\t{}\nStandard deviation of characters frequency: {}\n\n'.format(short_names[n],lengths[setup][n],characters_dict[setup][n],list_var_median[n],list_var_mrr[n], characters_std[setup][n]))
+        for setup in plot_median.keys():
+            if 'sum' in setup:
+                legend_label='Sum'
+                plt.scatter(plot_median[setup],lengths[setup], label=legend_label, color=sum_color, marker='P') 
+                sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], lengths[setup])[0],2)) 
+            else:
+                legend_label='N2V'
+                plt.scatter(plot_median[setup],lengths[setup], label=legend_label, color=sum_color, marker='v') 
+                n2v_spearman='N2V: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], lengths[setup])[0],2)) 
+        #x_ticks, y_ticks=ticks(plot_median, 'median')
 
-    sum_color=['lightslategrey', 'coral', 'darkgoldenrod', 'darkcyan', 'deeppink', 'lightgreen', 'aquamarine', 'green', 'purple', 'gold', 'sienna', 'olivedrab']
+        plt.xlabel('Median Rank')
+        plt.ylabel('Novel length (words)')
+        plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
+        #plt.yticks([(((i+999)/1000)*1000) for i in numpy.linspace(0,max(lengths[setup]),10)])
+        #plt.xticks(y_ticks)
+        plt.legend(loc='best', ncol=2, borderaxespad=0.)
+        plt.tight_layout()
+        plt.savefig('{}/doppel_median_lenghts.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
 
-    ### Lenghts/score
-
-    for setup in plot_median.keys():
-        if 'sum' in setup:
-            legend_label='Sum'
-            plt.scatter(plot_median[setup],lengths[setup], label=legend_label, color=sum_color, marker='P') 
-            sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], lengths[setup])[0],2)) 
-        else:
-            legend_label='N2V'
-            plt.scatter(plot_median[setup],lengths[setup], label=legend_label, color=sum_color, marker='v') 
-            n2v_spearman='N2V: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], lengths[setup])[0],2)) 
-    #x_ticks, y_ticks=ticks(plot_median, 'median')
-
-    plt.xlabel('Median Rank')
-    plt.ylabel('Novel length (words)')
-    plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
-    #plt.yticks([(((i+999)/1000)*1000) for i in numpy.linspace(0,max(lengths[setup]),10)])
-    #plt.xticks(y_ticks)
-    plt.legend(loc='best', ncol=2, borderaxespad=0.)
-    plt.tight_layout()
-    plt.savefig('{}/doppel_median_lenghts.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
-
-    plt.clf()
+        plt.clf()
 
 
-    ### Number of characters/score
+        ### Number of characters/score
 
-    for setup in plot_median.keys():
-        if 'sum' in setup:
-            legend_label='Sum'
-            plt.scatter(plot_median[setup], characters_dict[setup], color=sum_color, label=legend_label, marker='P') 
-            sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], characters_dict[setup])[0],2)) 
-        else:
-            legend_label='N2V'
-            plt.scatter(plot_median[setup], characters_dict[setup], color=sum_color, label=legend_label, marker='v') 
-            n2v_spearman='N2v: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], characters_dict[setup])[0],2)) 
-    x_ticks, y_ticks=ticks(plot_median, 'median')
+        for setup in plot_median.keys():
+            if 'sum' in setup:
+                legend_label='Sum'
+                plt.scatter(plot_median[setup], characters_dict[setup], color=sum_color, label=legend_label, marker='P') 
+                sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], characters_dict[setup])[0],2)) 
+            else:
+                legend_label='N2V'
+                plt.scatter(plot_median[setup], characters_dict[setup], color=sum_color, label=legend_label, marker='v') 
+                n2v_spearman='N2v: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], characters_dict[setup])[0],2)) 
+        x_ticks, y_ticks=ticks(plot_median, 'median')
 
-    plt.xlabel('Median Rank')
-    plt.ylabel('Number of characters')
-    #plt.yticks(characters_dict[setup] )
-    plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
-    #plt.xticks(y_ticks)
-    plt.legend(loc='best', ncol=2, borderaxespad=0.)
-    plt.tight_layout()
-    plt.savefig('{}/doppel_median_characters.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        plt.xlabel('Median Rank')
+        plt.ylabel('Number of characters')
+        #plt.yticks(characters_dict[setup] )
+        plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
+        #plt.xticks(y_ticks)
+        plt.legend(loc='best', ncol=2, borderaxespad=0.)
+        plt.tight_layout()
+        plt.savefig('{}/doppel_median_characters.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
 
-    plt.clf()
-
-
-    ### Variance of characters frequency/score
-
-    for setup in plot_median.keys():
-        if 'sum' in setup:
-            legend_label='Sum'
-            plt.scatter(plot_median[setup], characters_std[setup], label=legend_label, color=sum_color, marker= 'P') 
-            sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], characters_std[setup])[0],2)) 
-        else:
-            legend_label='N2V'
-            plt.scatter(plot_median[setup], characters_std[setup], label=legend_label, color=sum_color, marker='v') 
-            n2v_spearman='N2v: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], characters_std[setup])[0],2)) 
-    #x_ticks, y_ticks=ticks(plot_median, 'median')
-
-    plt.xlabel('Median Rank')
-    plt.ylabel('Variance of character mention frequency')
-    plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
-    #plt.yticks(characters_std[setup] )
-    #plt.xticks(y_ticks)
-    plt.legend(loc='best', ncol=2, borderaxespad=0.)
-    plt.tight_layout()
-    plt.savefig('{}/doppel_median_frequency_std.eps'.format(output_folder), dpi=1200, format='eps', pad_inches=0.2, bbox_inches='tight')
-
-    plt.clf()
-
-    ### Score/novel
-
-    for setup in plot_median.keys():
-        if 'sum' in setup:
-            legend_label='Sum'
-            plt.scatter(plot_median[setup], short_names, label=legend_label, color=sum_color, marker='P')
-        else:
-            legend_label='N2V'
-            plt.scatter(plot_median[setup], short_names, label=legend_label, color=sum_color, marker='v')
-    plt.xlabel('Median Rank')
-    plt.ylabel('Novel')
-    #plt.xticks(y_ticks)
-    #plt.yticks(short_names )
-    plt.legend(loc='best', ncol=2, borderaxespad=0.)
-    plt.tight_layout()
-    plt.savefig('{}/doppel_median_names.eps'.format(output_folder, setup, novel), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
-    plt.clf()
-
-    ### Lenghts/score MRR
-
-    for setup in plot_mrr.keys():
-        if 'sum' in setup:
-            legend_label='Sum'
-            plt.scatter( plot_mrr[setup],lengths[setup], label=legend_label, color=sum_color, marker='P') 
-            sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup], lengths[setup])[0],2)) 
-        else:
-            legend_label='N2V'
-            plt.scatter( plot_mrr[setup],lengths[setup], label=legend_label, color=sum_color, marker='v') 
-            n2v_spearman='N2v: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup], lengths[setup])[0],2)) 
-    #x_ticks, y_ticks=ticks(plot_mrr, 'mrr')
-    plt.xlabel('MRR')
-    plt.ylabel('Novel length (words)')
-    plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
-    plt.gca().invert_xaxis()
-    #plt.yticks(lengths[setup] )
-    #plt.xticks(y_ticks)
-    plt.legend(loc='best', ncol=2, borderaxespad=0.)
-    plt.tight_layout()
-    plt.savefig('{}/doppel_mrr_lengths.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
-
-    plt.clf()
+        plt.clf()
 
 
-    ### Number of characters/score MRR
+        ### Variance of characters frequency/score
 
-    for setup in plot_mrr.keys():
-        if 'sum' in setup:
-            legend_label='Sum'
-            plt.scatter( plot_mrr[setup], characters_dict[setup], label=legend_label, color=sum_color, marker='P') 
-            sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup],characters_dict[setup])[0],2)) 
-        else:
-            legend_label='N2V'
-            plt.scatter( plot_mrr[setup], characters_dict[setup], label=legend_label, color=sum_color, marker='v') 
-            n2v_spearman='N2v: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup],characters_dict[setup])[0],2)) 
-    #x_ticks, y_ticks=ticks(plot_mrr, 'mrr')
-    plt.xlabel('MRR')
-    plt.ylabel('Number of characters')
-    plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
-    plt.gca().invert_xaxis()
-    #plt.yticks(characters_dict[setup] )
-    #plt.xticks(y_ticks)
-    plt.legend(loc='best', ncol=2, borderaxespad=0.)
-    plt.tight_layout()
-    plt.savefig('{}/doppel_MRR_characters.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        for setup in plot_median.keys():
+            if 'sum' in setup:
+                legend_label='Sum'
+                plt.scatter(plot_median[setup], characters_std[setup], label=legend_label, color=sum_color, marker= 'P') 
+                sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], characters_std[setup])[0],2)) 
+            else:
+                legend_label='N2V'
+                plt.scatter(plot_median[setup], characters_std[setup], label=legend_label, color=sum_color, marker='v') 
+                n2v_spearman='N2v: {}'.format(round(scipy.stats.spearmanr(plot_median[setup], characters_std[setup])[0],2)) 
+        #x_ticks, y_ticks=ticks(plot_median, 'median')
 
-    plt.clf()
+        plt.xlabel('Median Rank')
+        plt.ylabel('Variance of character mention frequency')
+        plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
+        #plt.yticks(characters_std[setup] )
+        #plt.xticks(y_ticks)
+        plt.legend(loc='best', ncol=2, borderaxespad=0.)
+        plt.tight_layout()
+        plt.savefig('{}/doppel_median_frequency_std.eps'.format(output_folder), dpi=1200, format='eps', pad_inches=0.2, bbox_inches='tight')
+
+        plt.clf()
+
+        ### Score/novel
+
+        for setup in plot_median.keys():
+            if 'sum' in setup:
+                legend_label='Sum'
+                plt.scatter(plot_median[setup], short_names, label=legend_label, color=sum_color, marker='P')
+            else:
+                legend_label='N2V'
+                plt.scatter(plot_median[setup], short_names, label=legend_label, color=sum_color, marker='v')
+        plt.xlabel('Median Rank')
+        plt.ylabel('Novel')
+        #plt.xticks(y_ticks)
+        #plt.yticks(short_names )
+        plt.legend(loc='best', ncol=2, borderaxespad=0.)
+        plt.tight_layout()
+        plt.savefig('{}/doppel_median_names.eps'.format(output_folder, setup, novel), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        plt.clf()
+
+        ### Lenghts/score MRR
+
+        for setup in plot_mrr.keys():
+            if 'sum' in setup:
+                legend_label='Sum'
+                plt.scatter( plot_mrr[setup],lengths[setup], label=legend_label, color=sum_color, marker='P') 
+                sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup], lengths[setup])[0],2)) 
+            else:
+                legend_label='N2V'
+                plt.scatter( plot_mrr[setup],lengths[setup], label=legend_label, color=sum_color, marker='v') 
+                n2v_spearman='N2v: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup], lengths[setup])[0],2)) 
+        #x_ticks, y_ticks=ticks(plot_mrr, 'mrr')
+        plt.xlabel('MRR')
+        plt.ylabel('Novel length (words)')
+        plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
+        plt.gca().invert_xaxis()
+        #plt.yticks(lengths[setup] )
+        #plt.xticks(y_ticks)
+        plt.legend(loc='best', ncol=2, borderaxespad=0.)
+        plt.tight_layout()
+        plt.savefig('{}/doppel_mrr_lengths.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+
+        plt.clf()
 
 
-    ### Variance of characters frequency/score MRR
+        ### Number of characters/score MRR
 
-    for setup in plot_mrr.keys():
-        if 'sum' in setup:
-            legend_label='Sum'
-            plt.scatter( plot_mrr[setup], characters_std[setup], label=legend_label, color=sum_color, marker='P') 
-            sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup], characters_std[setup])[0],2)) 
-        else:
-            legend_label='N2V'
-            plt.scatter( plot_mrr[setup], characters_std[setup], label=legend_label, color=sum_color, marker='v') 
-            n2v_spearman='N2v: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup],characters_std[setup])[0],2)) 
-    #x_ticks, y_ticks=ticks(plot_mrr, 'mrr')
-    plt.xlabel('MRR')
-    plt.ylabel('Variance of character mention frequency')
-    plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
-    plt.gca().invert_xaxis()
-    #plt.yticks(characters_std[setup] )
-    #plt.xticks(y_ticks)
-    plt.legend(loc='best', ncol=2, borderaxespad=0.)
-    plt.tight_layout()
-    plt.savefig('{}/doppel_MRR_characters_std.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        for setup in plot_mrr.keys():
+            if 'sum' in setup:
+                legend_label='Sum'
+                plt.scatter( plot_mrr[setup], characters_dict[setup], label=legend_label, color=sum_color, marker='P') 
+                sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup],characters_dict[setup])[0],2)) 
+            else:
+                legend_label='N2V'
+                plt.scatter( plot_mrr[setup], characters_dict[setup], label=legend_label, color=sum_color, marker='v') 
+                n2v_spearman='N2v: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup],characters_dict[setup])[0],2)) 
+        #x_ticks, y_ticks=ticks(plot_mrr, 'mrr')
+        plt.xlabel('MRR')
+        plt.ylabel('Number of characters')
+        plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
+        plt.gca().invert_xaxis()
+        #plt.yticks(characters_dict[setup] )
+        #plt.xticks(y_ticks)
+        plt.legend(loc='best', ncol=2, borderaxespad=0.)
+        plt.tight_layout()
+        plt.savefig('{}/doppel_MRR_characters.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
 
-    plt.clf()
+        plt.clf()
 
-    ### Score mrr /novel
 
-    for setup in plot_mrr.keys():
-        if 'sum' in setup:
-            legend_label='Sum'
-            plt.scatter(plot_mrr[setup], short_names, label=legend_label, color=sum_color, marker='P')
-        else:
-            legend_label='N2V'
-            plt.scatter(plot_mrr[setup], short_names, label=legend_label, color=sum_color, marker='v')
-    plt.xlabel('MRR')
-    plt.ylabel('Novel')
-    plt.gca().invert_xaxis()
-    #plt.xticks(y_ticks)
-    #plt.yticks(short_names )
-    plt.legend(loc='best', ncol=2, borderaxespad=0.)
-    plt.tight_layout()
-    plt.savefig('{}/doppel_MRR_names.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
-    plt.clf()
+        ### Variance of characters frequency/score MRR
 
+        for setup in plot_mrr.keys():
+            if 'sum' in setup:
+                legend_label='Sum'
+                plt.scatter( plot_mrr[setup], characters_std[setup], label=legend_label, color=sum_color, marker='P') 
+                sum_spearman='Sum: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup], characters_std[setup])[0],2)) 
+            else:
+                legend_label='N2V'
+                plt.scatter( plot_mrr[setup], characters_std[setup], label=legend_label, color=sum_color, marker='v') 
+                n2v_spearman='N2v: {}'.format(round(scipy.stats.spearmanr(plot_mrr[setup],characters_std[setup])[0],2)) 
+        #x_ticks, y_ticks=ticks(plot_mrr, 'mrr')
+        plt.xlabel('MRR')
+        plt.ylabel('Variance of character mention frequency')
+        plt.title('Spearman correlations: {} - {}'.format(sum_spearman, n2v_spearman))
+        plt.gca().invert_xaxis()
+        #plt.yticks(characters_std[setup] )
+        #plt.xticks(y_ticks)
+        plt.legend(loc='best', ncol=2, borderaxespad=0.)
+        plt.tight_layout()
+        plt.savefig('{}/doppel_MRR_characters_std.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+
+        plt.clf()
+
+        ### Score mrr /novel
+
+        for setup in plot_mrr.keys():
+            if 'sum' in setup:
+                legend_label='Sum'
+                plt.scatter(plot_mrr[setup], short_names, label=legend_label, color=sum_color, marker='P')
+            else:
+                legend_label='N2V'
+                plt.scatter(plot_mrr[setup], short_names, label=legend_label, color=sum_color, marker='v')
+        plt.xlabel('MRR')
+        plt.ylabel('Novel')
+        plt.gca().invert_xaxis()
+        #plt.xticks(y_ticks)
+        #plt.yticks(short_names )
+        plt.legend(loc='best', ncol=2, borderaxespad=0.)
+        plt.tight_layout()
+        plt.savefig('{}/doppel_MRR_names.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        plt.clf()
