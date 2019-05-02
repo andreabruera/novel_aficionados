@@ -1,0 +1,135 @@
+
+Result for the vector: jim
+Rank: 3 out of 10 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.1991750061266127
+huck_a - 0.2097856974474015
+boggs_a - 0.20215529203414917
+jim_a - 0.1991750061266127
+silas_a - 0.19614325784783054
+miss_watson_a - 0.19412885273270955
+thatcher_a - 0.19307906925678253
+george_a - 0.18107267263748275
+huck_finn_a - 0.17793637943647062
+dey_a - 0.17778973380831556
+sid_a - 0.14753109216690063
+
+Result for the vector: huck
+Rank: 4 out of 10 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.177344725490635
+sid_a - 0.22077201964771817
+dey_a - 0.19618023290398548
+george_a - 0.19256788149880658
+huck_a - 0.177344725490635
+thatcher_a - 0.17693760028295524
+miss_watson_a - 0.1760255702756856
+jim_a - 0.17057995024800005
+boggs_a - 0.1633610476064995
+silas_a - 0.15072974113435386
+huck_finn_a - 0.1501370772678537
+
+Result for the vector: huck
+Rank: 10 out of 10 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.1501370772678537
+sid_a - 0.22077201964771817
+dey_a - 0.19618023290398548
+george_a - 0.19256788149880658
+huck_a - 0.177344725490635
+thatcher_a - 0.17693760028295524
+miss_watson_a - 0.1760255702756856
+jim_a - 0.17057995024800005
+boggs_a - 0.1633610476064995
+silas_a - 0.15072974113435386
+huck_finn_a - 0.1501370772678537
+
+Result for the vector: silas
+Rank: 7 out of 10 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.06198430991126099
+george_a - 0.08715590383480848
+miss_watson_a - 0.08342546722672395
+boggs_a - 0.07996542721677698
+thatcher_a - 0.06534651506064992
+jim_a - 0.06447025411966503
+huck_a - 0.06222585770873098
+silas_a - 0.06198430991126099
+sid_a - 0.060025689902218515
+dey_a - 0.04658521054718683
+huck_finn_a - 0.04308876896169141
+
+Result for the vector: sid
+Rank: 9 out of 10 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.3215909004211426
+george_a - 0.3712132087711458
+thatcher_a - 0.35872772336006165
+miss_watson_a - 0.35129188604902606
+dey_a - 0.35026589187376866
+boggs_a - 0.34489136934280396
+huck_a - 0.337024023355486
+huck_finn_a - 0.331417570625689
+jim_a - 0.32892102983358606
+sid_a - 0.3215909004211426
+silas_a - 0.30838881084985725
+
+Result for the vector: george
+Rank: 8 out of 10 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.2746900997963579
+silas_a - 0.3139972499610638
+boggs_a - 0.3118656277656555
+huck_a - 0.2998717605991226
+miss_watson_a - 0.29821430434073887
+jim_a - 0.29685596516299156
+dey_a - 0.2887555618961669
+thatcher_a - 0.28423064947128296
+george_a - 0.2746900997963579
+huck_finn_a - 0.27380116142027655
+sid_a - 0.19225962460041046
+
+Result for the vector: thatcher
+Rank: 5 out of 10 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.4673490524291992
+sid_a - 0.5573476552963257
+boggs_a - 0.48968711495399475
+huck_a - 0.4835343649109828
+silas_a - 0.47283062500771217
+thatcher_a - 0.4673490524291992
+dey_a - 0.4655153869553275
+jim_a - 0.45922364173005964
+george_a - 0.45034913570729324
+miss_watson_a - 0.43726688249509904
+huck_finn_a - 0.4124108307116736
+
+Result for the vector: dey
+Rank: 8 out of 10 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.19866431637577048
+huck_finn_a - 0.25082611290138723
+silas_a - 0.22825833474819945
+sid_a - 0.219640723456166
+thatcher_a - 0.21560253845460836
+huck_a - 0.20268591070347236
+boggs_a - 0.20241512961432734
+jim_a - 0.2016018004180074
+dey_a - 0.19866431637577048
+miss_watson_a - 0.1829416766412566
+george_a - 0.17328939874705068
+
+Result for the vector: boggs
+Rank: 5 out of 10 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.40194403540754603
+jim_a - 0.42349604578280875
+huck_a - 0.41370563670464
+thatcher_a - 0.41038542451771715
+miss_watson_a - 0.4076623508527697
+boggs_a - 0.40194403540754603
+silas_a - 0.3938830792903928
+dey_a - 0.37680318605947305
+george_a - 0.37523642556993014
+huck_finn_a - 0.32719010114670033
+sid_a - 0.26670588652526706

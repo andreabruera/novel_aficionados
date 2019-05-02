@@ -1,0 +1,23 @@
+ahab	MALE
+stubb	MALE
+starbuck	MALE
+jonah	MALE
+dick	MALE
+peleg	MALE
+bildad	UNKNOWN
+pip	UNKNOWN
+daggoo	MALE
+steelkilt	UNKNOWN
+tashtego	UNKNOWN
+lakeman	MALE
+fedallah	UNKNOWN
+ishmael	MALE
+radney	UNKNOWN
+gabriel	MALE
+yojo	FEMALE
+don sebastian	MALE
+elijah	MALE
+mrs hussey	FEMALE
+cook	MALE
+derick	MALE
+bunger	UNKNOWN

@@ -1,0 +1,44 @@
+
+Result for the vector: miles
+Rank: 1 out of 6 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.12563351178668622
+miles_a - 0.12563351178668622
+bly_a - 0.05480321241645946
+flora_a - 0.0533100941273604
+miss_jessel_a - 0.01811685364547735
+mrs_grose_a - -0.06454491086973414
+quint_a - -0.06561588533114032
+
+Result for the vector: flora
+Rank: 1 out of 6 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.2420998071372628
+flora_a - 0.2420998071372628
+miss_jessel_a - 0.17156650169788384
+quint_a - 0.1377697181036985
+miles_a - 0.11518930585320647
+bly_a - 0.07242142409086227
+mrs_grose_a - 0.0020799540291699227
+
+Result for the vector: quint
+Rank: 4 out of 6 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.09313191940987388
+flora_a - 0.11688206441616245
+mrs_grose_a - 0.11660627275705421
+bly_a - 0.09689616579436285
+quint_a - 0.09313191940987388
+miss_jessel_a - 0.08165709917715579
+miles_a - 0.054125409573316956
+
+Result for the vector: bly
+Rank: 5 out of 6 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.015462120063602924
+miles_a - 0.16121215589118962
+quint_a - 0.1001000732213281
+miss_jessel_a - 0.09874382007811884
+flora_a - 0.08838278273446679
+bly_a - 0.015462120063602924
+mrs_grose_a - -0.036166338543077686

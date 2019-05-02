@@ -1,0 +1,135 @@
+
+Result for the vector: jim
+Rank: 1 out of 10 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9435811920041205
+jim_a - 0.9435811920041205
+huck_a - 0.9391438924756003
+thatcher_a - 0.9388831257820129
+miss_watson_a - 0.9253917291993949
+dey_a - 0.9122895221969095
+silas_a - 0.9087778384221905
+boggs_a - 0.9009520411491394
+huck_finn_a - 0.8849244186327223
+george_a - 0.8572604315656556
+sid_a - 0.64472895860672
+
+Result for the vector: huck
+Rank: 2 out of 10 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.9364391527437675
+thatcher_a - 0.9391072392463684
+huck_a - 0.9364391527437675
+jim_a - 0.9359520952687296
+miss_watson_a - 0.9240538432630223
+dey_a - 0.9096796729874355
+boggs_a - 0.9088408946990967
+silas_a - 0.9013229667351877
+huck_finn_a - 0.8727038578567605
+george_a - 0.8597283023514841
+sid_a - 0.6661290526390076
+
+Result for the vector: huck
+Rank: 8 out of 10 characters
+Reciprocal rank: 0.125
+Cosine similarity to the query: 0.8727038578567605
+thatcher_a - 0.9391072392463684
+huck_a - 0.9364391527437675
+jim_a - 0.9359520952687296
+miss_watson_a - 0.9240538432630223
+dey_a - 0.9096796729874355
+boggs_a - 0.9088408946990967
+silas_a - 0.9013229667351877
+huck_finn_a - 0.8727038578567605
+george_a - 0.8597283023514841
+sid_a - 0.6661290526390076
+
+Result for the vector: silas
+Rank: 3 out of 10 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.7746451035353493
+jim_a - 0.7807116145107634
+huck_a - 0.7755935058351474
+silas_a - 0.7746451035353493
+huck_finn_a - 0.7682247300014075
+thatcher_a - 0.765475869178772
+boggs_a - 0.7653017640113831
+dey_a - 0.7617975558457604
+miss_watson_a - 0.7583971475599509
+george_a - 0.7109803769284603
+sid_a - 0.5870193243026733
+
+Result for the vector: sid
+Rank: 10 out of 10 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.5518121719360352
+thatcher_a - 0.7557156085968018
+huck_a - 0.7510538548859285
+miss_watson_a - 0.7410920704062041
+jim_a - 0.7408500534549375
+dey_a - 0.7398106521198766
+george_a - 0.7297684767773297
+boggs_a - 0.7281097173690796
+silas_a - 0.6922428791378225
+huck_finn_a - 0.684122342817645
+sid_a - 0.5518121719360352
+
+Result for the vector: george
+Rank: 9 out of 10 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.7222466899303609
+dey_a - 0.7822681405863944
+huck_a - 0.7812264664077583
+jim_a - 0.7806325424094523
+thatcher_a - 0.7804495328798754
+miss_watson_a - 0.7794168096259367
+boggs_a - 0.7497518882081479
+huck_finn_a - 0.732283212772515
+silas_a - 0.7315226575278473
+george_a - 0.7222466899303609
+sid_a - 0.5264277019032153
+
+Result for the vector: thatcher
+Rank: 5 out of 10 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.5733011960983276
+sid_a - 0.7844593524932861
+boggs_a - 0.5867869853973389
+george_a - 0.5845132048282985
+huck_a - 0.5788742648884226
+thatcher_a - 0.5733011960983276
+dey_a - 0.5620834137871956
+jim_a - 0.5435831708783859
+silas_a - 0.534857300826473
+miss_watson_a - 0.5250470951227612
+huck_finn_a - 0.5053751763477825
+
+Result for the vector: dey
+Rank: 6 out of 10 characters
+Reciprocal rank: 0.16666666666666666
+Cosine similarity to the query: 0.6190974073795171
+huck_finn_a - 0.6432422612165068
+silas_a - 0.6318050842401346
+huck_a - 0.6316813607025968
+thatcher_a - 0.6228333115577698
+jim_a - 0.6209790891700714
+dey_a - 0.6190974073795171
+boggs_a - 0.6123339533805847
+sid_a - 0.6047106385231018
+miss_watson_a - 0.5877780668603232
+george_a - 0.5798098617735467
+
+Result for the vector: boggs
+Rank: 2 out of 10 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.7916892891115388
+huck_a - 0.7957714200019893
+boggs_a - 0.7916892891115388
+jim_a - 0.7911433937804911
+thatcher_a - 0.7848000058650981
+dey_a - 0.760348759900005
+miss_watson_a - 0.7567328810691887
+silas_a - 0.7553910904656541
+george_a - 0.7149586464477017
+huck_finn_a - 0.6921939620740459
+sid_a - 0.6170351137497965

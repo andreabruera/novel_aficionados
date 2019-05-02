@@ -1,0 +1,50 @@
+
+Result for the vector: scrooge
+Rank: 1 out of 5 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.9441309537965628
+scrooge_a - 0.9441309537965628
+spirit_a - 0.9401457274046974
+marley_a - 0.9398705011490439
+bob_a - 0.9117743048600649
+peter_a - 0.8951647014866894
+
+Result for the vector: bob
+Rank: 4 out of 5 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.8959772853844553
+scrooge_a - 0.9276215390933478
+spirit_a - 0.9167361805877793
+marley_a - 0.9085780598442016
+bob_a - 0.8959772853844553
+peter_a - 0.881616566133009
+
+Result for the vector: marley
+Rank: 3 out of 5 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.9190182315425488
+spirit_a - 0.9254468634990969
+scrooge_a - 0.921640689470809
+marley_a - 0.9190182315425488
+bob_a - 0.9009826451832849
+peter_a - 0.8813984131396325
+
+Result for the vector: peter
+Rank: 5 out of 5 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.688465276704276
+scrooge_a - 0.7397524559350286
+marley_a - 0.7381952468927429
+spirit_a - 0.7285934524889858
+bob_a - 0.704043290139535
+peter_a - 0.688465276704276
+
+Result for the vector: spirit
+Rank: 2 out of 5 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.9164457867411248
+scrooge_a - 0.921408886993461
+spirit_a - 0.9164457867411248
+marley_a - 0.9123855452882245
+bob_a - 0.8877337243477624
+peter_a - 0.8660225610130297

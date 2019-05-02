@@ -1,0 +1,36 @@
+elizabeth	MALE
+mr darcy	MALE
+jane	FEMALE
+mr bingley	MALE
+wickham	MALE
+lydia	FEMALE
+mrs bennet	FEMALE
+mr collins	MALE
+lady catherine	FEMALE
+lizzy	FEMALE
+mr bennet	MALE
+miss bingley	FEMALE
+kitty	FEMALE
+mrs gardiner	FEMALE
+william	MALE
+mary	FEMALE
+forster	FEMALE
+miss darcy	FEMALE
+mr gardiner	MALE
+mrs collins	FEMALE
+miss lucas	FEMALE
+mrs phillips	MALE
+rosings	UNKNOWN
+eliza	FEMALE
+fitzwilliam	UNKNOWN
+mrs hurst	FEMALE
+maria	FEMALE
+miss de bourgh	FEMALE
+lady lucas	FEMALE
+charlotte	FEMALE
+caroline	FEMALE
+georgiana	FEMALE
+mrs long	FEMALE
+denny	MALE
+mr hurst	MALE
+pemberley	UNKNOWN

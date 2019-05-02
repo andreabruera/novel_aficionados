@@ -1,4 +1,4 @@
-### EXAMPLE: python3 -m scripts.count_model --write_to_file True --print_results False wiki ../wiki_training/data/wiki_en_08202018_clean.txt 10 500
+### EXAMPLE: python3 -m scripts.count_model --write_to_file True --print_results False wiki /mnt/cimec-storage-sata/users/andrea.bruera/wikiextractor/wiki_parts 10 5000
 
 
 import numpy
@@ -27,14 +27,13 @@ def initialize_count_model():
 def train_current_word(vocabulary, word_counters, word_cooccurrences, args, corpus, word_index, word, stopwords):
 
     ### Collection of the window words which will be summed to the other ones
-    if word_index >= args.window_size:
+    if word_index >= args.window_size and (word_index + args.window_size +1) <= len(corpus):
 
         negative_indices = numpy.arange(word_index - args.window_size, word_index)
-        positive_indices = numpy.arange(word_index + 1, word_index + args_window_size + 1)
+        positive_indices = numpy.arange(word_index + 1, word_index + args.window_size + 1)
 
         window_words_negative = [corpus[index].strip('\n') for index in negative_indices if corpus[index].strip('\n') not in stopwords and  corpus[index].strip('\n') != word]
         window_words_positive = [corpus[index].strip('\n') for index in positive_indices if corpus[index].strip('\n') not in stopwords and  corpus[index].strip('\n') != word]
-        import pdb; pdb.set_trace()
 
         current_sentence= [word] + window_words_negative + window_words_positive
         current_word = current_sentence[0]
@@ -46,65 +45,72 @@ def train_current_word(vocabulary, word_counters, word_cooccurrences, args, corp
 
     return vocabulary, word_counters, word_cooccurrences
 
+class Corpus(object):
+    def __init__(self, args):
+        self.filedir = args.filedir
+        self.files = [os.path.join(root, name) for root, dirs, files in os.walk(args.filedir) for name in files]
+        self.length = len(self.files)
+        
+    def __iter__(self):
+
+        for individual_file in self.files: 
+
+            training_lines = open(individual_file).readlines()
+            if 'wiki' in args.input_type:
+                training_part = [re.sub('\s+|\W+|_+|[0-9]+', ' ', line) for line in training_lines]  
+            else:
+                training_part = [re.sub('\s+|\W+|[0-9]+', ' ', line) for line in training_lines]  
+            training_part = [line.strip(' ') for line in training_part if line != ' ']
+            training_part = [word.lower() for line in training_part for word in line.split()]
+            yield training_part
+                
+        
+        
+
 
 ### Testing
 
 parser=argparse.ArgumentParser()
 parser.add_argument('input_type', type=str, help = 'name of the dataset used for creating the word representations')
-parser.add_argument('filename', type=str, help='path to the file to be used for training')
+parser.add_argument('filedir', type=str, help='Absolute path to directory containing the files to be used for training')
 parser.add_argument('window_size', type=int, default=5)
 parser.add_argument('vector_size', type=int, default=1024, help='amount of words to be kept as columns of the matrix, according to their frequency')
 parser.add_argument('--character', type=str, default='house')
 parser.add_argument('--write_to_file', type=bool, default=False)
 parser.add_argument('--print_results', type=bool, default=True)
 parser.add_argument('--number_similarities', type=int, default=20)
+parser.add_argument('--spacy_sentence_up', type = bool, default = False)
 
 args=parser.parse_args()
 
+training_parts = Corpus(args)
 
-'''
-with open(args.filename) as f:
-    out=open('../wiki_training/wiki_one_word_per_line_08202018.txt', 'w')
-    for line in f:
-        line=re.sub('\d+', ' ', line)
-        line=re.sub('\s+|\W+', ' ', line)
-        line=line.split()
-        for word in line:
-            if word != '' and word.isalpha():
-                out.write('{}\n'.format(word))
+training_length = training_parts.length
 
-corpus=full_text.split()
-'''
+outputs = [round(value) for value in numpy.linspace(0, training_length, 100)]
+outputs_dictionary = defaultdict(int)
+for percentage, sentence_number in enumerate(outputs):
+    outputs_dictionary[sentence_number] = percentage
 
-with open(args.filename) as corpus_file:
+if args.write_to_file == True:
+    cwd = os.getcwd()
+    try:
+        current_output_folder='{}/count_models/count_{}'.format(cwd, args.input_type)
+        os.makedirs(current_output_folder)
+    except FileExistsError:
+        print("Training mode \"{}\" already found. Please change your training type".format(args.input_type))
 
-    corpus_file.seek(0)
-    corpus = corpus_file.readlines()
+stopwords = stopwords()
 
-    if args.write_to_file == True:
-        cwd=os.getcwd()
-        try:
-            current_output_folder='{}/count_models/count_{}'.format(cwd, args.input_type)
-            os.makedirs(current_output_folder)
-        except FileExistsError:
-            print("Training mode \"{}\" already found. Please change your training type".format(args.input_type))
+vocabulary, word_counters, word_cooccurrences=initialize_count_model()
+print('Count model initialized, started training...')
 
-    stopwords = stopwords()
+for corpus_index, corpus in enumerate(training_parts):
 
-    #training_length = sum(1 for line in corpus)
-    training_length = len(corpus)
-    outputs = [round(value) for value in numpy.linspace(0, training_length, 100)]
-    outputs_dictionary = defaultdict(int)
-    for percentage, sentence_number in enumerate(outputs):
-        outputs_dictionary[sentence_number] = percentage
-    print('Total amount of words to be trained on: {}'.format(training_length))
+    if corpus_index in outputs:
+        print('Currently at {}% of the training\n'.format(outputs_dictionary[corpus_index] + 1)) 
 
-    vocabulary, word_counters, word_cooccurrences=initialize_count_model()
-    print('Count model initialized, started training...')
-    #corpus.seek(0)
-    for word_index, word_line in enumerate(corpus):
-
-        word = word_line.strip('\n')
+    for word_index, word in enumerate(corpus):
 
         if word not in stopwords:
 
@@ -114,54 +120,52 @@ with open(args.filename) as corpus_file:
 
             word_counters[word] += 1
 
-            if word_index in outputs:
-                print('Currently at {}% of the training\n'.format(outputs_dictionary[word_index])) 
 
             vocabulary, word_counters, word_cooccurrences = train_current_word(vocabulary, word_counters, word_cooccurrences, args, corpus, word_index, word, stopwords)
 
 
-    ### Selecting the most common words
+### Selecting the most common words
 
-    columns = [pairing[0] for pairing in sorted(word_counters.items(), key = lambda kv:(kv[1], kv[0]), reverse=True) if pairing[1] not in stopwords][: args.vector_size]
+columns = [pairing[0] for pairing in sorted(word_counters.items(), key = lambda kv:(kv[1], kv[0]), reverse=True) if pairing[1] not in stopwords][: args.vector_size]
 
-    ### Turning frequency counts into vectors
+### Turning frequency counts into vectors
 
-    for row_index, row_word in enumerate(vocabulary.keys()):
+for row_index, row_word in enumerate(vocabulary.keys()):
 
-        if row_index == 0:
-            word_vectors = numpy.zeros(args.vector_size)
-        else:
-            current_vector = numpy.zeros(args.vector_size)
-            word_vectors = numpy.vstack((word_vectors, current_vector))
+    if row_index == 0:
+        word_vectors = numpy.zeros(args.vector_size)
+    else:
+        current_vector = numpy.zeros(args.vector_size)
+        word_vectors = numpy.vstack((word_vectors, current_vector))
 
-        if row_index in outputs:
-            print('Currently at {}% in the creation of the vectors...\n'.format(outputs_dictionary[row_index]))
+    if row_index in outputs:
+        print('Currently at {}% in the creation of the vectors...\n'.format(outputs_dictionary[row_index]))
 
-        for column_index, column_word in enumerate(columns):
-            current_cooccurrence = '{} {}'.format(row_word, column_word) 
-            if current_cooccurrence in word_cooccurrences.keys():
-                
-                if row_index == 0:
-                    word_vectors[column_index] = word_cooccurrences[current_cooccurrence]
-                else:
-                    word_vectors[row_index][column_index] = word_cooccurrences[current_cooccurrence]
+    for column_index, column_word in enumerate(columns):
+        current_cooccurrence = '{} {}'.format(row_word, column_word) 
+        if current_cooccurrence in word_cooccurrences.keys():
+            
+            if row_index == 0:
+                word_vectors[column_index] = word_cooccurrences[current_cooccurrence]
+            else:
+                word_vectors[row_index][column_index] = word_cooccurrences[current_cooccurrence]
 
-    ### Printing out top similarities for a query
+### Printing out top similarities for a query
 
-    if args.print_results == True:
-        top_similarities(args.character, vocabulary, word_vectors, args.number_similarities)
+if args.print_results == True:
+    top_similarities(args.character, vocabulary, word_vectors, args.number_similarities)
 
-    ### Saving to file
+### Saving to file
 
-    if args.write_to_file == True:
+if args.write_to_file == True:
 
-        numpy.save('{}/count_{}_vectors.npy'.format(current_output_folder, args.input_type), word_vectors)
+    numpy.save('{}/count_{}_vectors.npy'.format(current_output_folder, args.input_type), word_vectors)
 
-        with open('{}/count_{}_vocabulary.pickle'.format(current_output_folder, args.input_type), 'wb') as count_vocabulary:
-            pickle.dump(vocabulary, count_vocabulary)
+    with open('{}/count_{}_vocabulary.pickle'.format(current_output_folder, args.input_type), 'wb') as count_vocabulary:
+        pickle.dump(vocabulary, count_vocabulary)
 
-        with open('{}/count_{}_word_cooccurrences.pickle'.format(current_output_folder, args.input_type), 'wb') as cooccurrences_dictionary:
-            pickle.dump(word_cooccurrences, cooccurrences_dictionary)
+    with open('{}/count_{}_word_cooccurrences.pickle'.format(current_output_folder, args.input_type), 'wb') as cooccurrences_dictionary:
+        pickle.dump(word_cooccurrences, cooccurrences_dictionary)
 
-        with open('{}/count_{}_word_frequencies.pickle'.format(current_output_folder, args.input_type), 'wb') as frequencies_dictionary:
-            pickle.dump(word_counters, frequencies_dictionary)
+    with open('{}/count_{}_word_frequencies.pickle'.format(current_output_folder, args.input_type), 'wb') as frequencies_dictionary:
+        pickle.dump(word_counters, frequencies_dictionary)

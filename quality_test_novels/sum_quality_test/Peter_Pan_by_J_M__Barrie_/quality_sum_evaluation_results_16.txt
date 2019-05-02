@@ -1,0 +1,6 @@
+Novel":	Peter_Pan_by_J_M__Barrie_
+MRR:	0.3314190859645405
+Median rank:	5.0
+Mean rank:	5.454545454545454
+Total number of characters considered:	14
+

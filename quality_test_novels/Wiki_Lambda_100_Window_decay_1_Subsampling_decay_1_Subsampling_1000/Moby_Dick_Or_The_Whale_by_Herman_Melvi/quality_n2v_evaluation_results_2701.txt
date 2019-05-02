@@ -1,0 +1,6 @@
+Novel":	Moby_Dick_Or_The_Whale_by_Herman_Melvi
+MRR:	0.22242928012158783
+Median rank:	8.0
+Mean rank:	7.769230769230769
+Total number of characters considered:	16
+

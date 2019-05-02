@@ -1,0 +1,6 @@
+Novel":	Pride_and_Prejudice_by_Jane_Austen_
+MRR:	0.19454903756374345
+Median rank:	11.5
+Mean rank:	10.166666666666666
+Total number of characters considered:	28
+

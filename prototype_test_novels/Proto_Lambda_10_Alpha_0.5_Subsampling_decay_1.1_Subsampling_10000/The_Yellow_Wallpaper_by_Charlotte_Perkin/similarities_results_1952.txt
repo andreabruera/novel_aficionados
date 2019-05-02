@@ -1,0 +1,32 @@
+
+Result for the vector: john, coming from part a of the book
+Rank: 1 out of 2 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.44026214596484353
+
+john_b - 0.44026214596484353
+jennie_b - 0.37148778182413794
+
+Result for the vector: jennie, coming from part a of the book
+Rank: 2 out of 2 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.39789838207373796
+
+john_b - 0.40040851232954855
+jennie_b - 0.39789838207373796
+
+Result for the vector: john, coming from part b of the book
+Rank: 1 out of 2 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.44026214596484353
+
+john_a - 0.44026214596484353
+jennie_a - 0.40040851232954855
+
+Result for the vector: jennie, coming from part b of the book
+Rank: 1 out of 2 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.39789838207373796
+
+jennie_a - 0.39789838207373796
+john_a - 0.37148778182413794

@@ -1,0 +1,10 @@
+Setup: sum_quality_test - sum
+
+Median MRR: 0.3642857142857143
+MRR Variance: 0.020364014729058116
+Median Median: 4.0
+Variance in median median: 2.227272727272727
+Median of means: 4.428571428571429
+Median of means variance: 3.35599571912811
+Average number of characters: 14.818181818181818
+Total of rankings taken into account: 11

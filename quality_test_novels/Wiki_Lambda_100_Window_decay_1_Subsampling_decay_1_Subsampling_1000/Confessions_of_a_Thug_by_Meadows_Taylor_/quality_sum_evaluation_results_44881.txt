@@ -1,0 +1,6 @@
+Novel":	Confessions_of_a_Thug_by_Meadows_Taylor_
+MRR:	0.75
+Median rank:	1.5
+Mean rank:	1.5
+Total number of characters considered:	22
+

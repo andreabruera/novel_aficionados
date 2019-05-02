@@ -1,0 +1,112 @@
+
+Result for the vector: anne
+Rank: 5 out of 11 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.15357994000851935
+minnie_may_a - 0.2599361461420026
+josie_pye_a - 0.19872348602782158
+mrs_lynde_a - 0.19490980773626612
+marilla_a - 0.1656725207372022
+anne_a - 0.15357994000851935
+jane_a - 0.1435269309141318
+mr_phillips_a - 0.14071721677286725
+carmody_a - 0.10563873814459859
+gilbert_a - 0.08321699747049793
+diana_a - 0.06917585305951715
+matthew_a - -0.026016411990905524
+
+Result for the vector: marilla
+Rank: 5 out of 11 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.1461648984600574
+minnie_may_a - 0.2352722593979685
+diana_a - 0.19589645838120368
+mrs_lynde_a - 0.1810698265156099
+gilbert_a - 0.16700346770913677
+marilla_a - 0.1461648984600574
+josie_pye_a - 0.1335565596818924
+anne_a - 0.10303943604230881
+mr_phillips_a - 0.06044557870762288
+jane_a - 0.06008913367986679
+carmody_a - 0.053541604429483414
+matthew_a - 0.0004176747003715398
+
+Result for the vector: diana
+Rank: 10 out of 11 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.045715606702304366
+minnie_may_a - 0.26102982395709656
+jane_a - 0.13596226274967194
+carmody_a - 0.12896370887756348
+mrs_lynde_a - 0.12502828613007927
+marilla_a - 0.12463699652662869
+josie_pye_a - 0.09973519295454025
+anne_a - 0.09877029061317444
+matthew_a - 0.09258707888683916
+mr_phillips_a - 0.08592913555887749
+diana_a - 0.045715606702304366
+gilbert_a - -0.07168034359935047
+
+Result for the vector: matthew
+Rank: 11 out of 11 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: -0.013542958814766307
+minnie_may_a - 0.22489115595817727
+mrs_lynde_a - 0.15266153091146334
+mr_phillips_a - 0.13093276002401955
+josie_pye_a - 0.12720774872349216
+jane_a - 0.11895093285745004
+diana_a - 0.10526825252392918
+gilbert_a - 0.06980128881354467
+carmody_a - 0.06829409708345527
+marilla_a - 0.06521291123744055
+anne_a - -0.006279323158670864
+matthew_a - -0.013542958814766307
+
+Result for the vector: gilbert
+Rank: 9 out of 11 characters
+Reciprocal rank: 0.1111111111111111
+Cosine similarity to the query: 0.015373052525975194
+marilla_a - 0.12760638841447733
+mrs_lynde_a - 0.1115506614640947
+mr_phillips_a - 0.0982963083651342
+jane_a - 0.09760234341635383
+anne_a - 0.08702027571322192
+diana_a - 0.08453377598926735
+josie_pye_a - 0.07174986283480317
+matthew_a - 0.019802408200717714
+gilbert_a - 0.015373052525975194
+minnie_may_a - 0.012932736426591965
+carmody_a - -0.03257248372271566
+
+Result for the vector: jane
+Rank: 3 out of 11 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.13121739029884338
+mr_phillips_a - 0.15262388147782932
+marilla_a - 0.14329375753682136
+jane_a - 0.13121739029884338
+anne_a - 0.11075016111135483
+mrs_lynde_a - 0.11025911153135041
+carmody_a - 0.10443416982889175
+minnie_may_a - 0.09470378043033018
+josie_pye_a - 0.08125296235084534
+diana_a - 0.046778301702636665
+gilbert_a - -0.010021785238842876
+matthew_a - -0.09348745177648822
+
+Result for the vector: carmody
+Rank: 11 out of 11 characters
+Reciprocal rank: 0.09090909090909091
+Cosine similarity to the query: -0.06491003185510635
+minnie_may_a - 0.16639948389533288
+diana_a - 0.12070625994838854
+josie_pye_a - 0.11354589462280273
+gilbert_a - 0.09527753400303765
+mrs_lynde_a - 0.059435171915148875
+jane_a - 0.055617474019527435
+mr_phillips_a - 0.038609576630877766
+anne_a - 0.004305955953896046
+matthew_a - -0.0016440147791136742
+marilla_a - -0.0022060359554301498
+carmody_a - -0.06491003185510635

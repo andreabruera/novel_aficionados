@@ -1,0 +1,105 @@
+
+Result for the vector: holmes
+Rank: 5 out of 10 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.17573233996226428
+selden_a - 0.34371214173508535
+henry_a - 0.21710412851286326
+charles_a - 0.209612137365703
+dr_mortimer_a - 0.18694836834227016
+holmes_a - 0.17573233996226428
+stapleton_a - 0.16022496938035047
+watson_a - 0.15456361039172448
+merripit_house_a - 0.12664301316013943
+miss_stapleton_a - 0.11033811661643837
+barrymore_a - 0.06575014246254761
+
+Result for the vector: henry
+Rank: 2 out of 10 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.22468368558190419
+selden_a - 0.3414481885535887
+henry_a - 0.22468368558190419
+charles_a - 0.2227472050635345
+dr_mortimer_a - 0.20268085598945762
+holmes_a - 0.17574822983874952
+stapleton_a - 0.17447997629642611
+watson_a - 0.15088976328908013
+merripit_house_a - 0.13810105621814825
+miss_stapleton_a - 0.11036436085276137
+barrymore_a - 0.06176159530878111
+
+Result for the vector: charles
+Rank: 2 out of 10 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.24607939238066107
+selden_a - 0.36282236728934913
+charles_a - 0.24607939238066107
+henry_a - 0.2349965931472126
+dr_mortimer_a - 0.22792760216974278
+holmes_a - 0.1994234412221246
+stapleton_a - 0.1831650192488756
+merripit_house_a - 0.15894867953505334
+watson_a - 0.14960320141344144
+miss_stapleton_a - 0.11931534399320846
+barrymore_a - 0.05717287755527791
+
+Result for the vector: watson
+Rank: 7 out of 10 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.15553032424865249
+selden_a - 0.36561890346947745
+henry_a - 0.23101301604431812
+charles_a - 0.2239688799399809
+dr_mortimer_a - 0.21037684853352923
+stapleton_a - 0.18965191368437842
+holmes_a - 0.18643852512721718
+watson_a - 0.15553032424865249
+merripit_house_a - 0.13980330350359638
+miss_stapleton_a - 0.11014159023761827
+barrymore_a - 0.05673733049782151
+
+Result for the vector: stapleton
+Rank: 5 out of 10 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.2210541301651567
+selden_a - 0.3610510147244343
+charles_a - 0.24033901811656422
+henry_a - 0.23663697351923516
+dr_mortimer_a - 0.2237109028187134
+stapleton_a - 0.2210541301651567
+holmes_a - 0.2077994321465154
+watson_a - 0.17477946504293285
+merripit_house_a - 0.13984135866638006
+miss_stapleton_a - 0.13887671877831692
+barrymore_a - 0.06310204228454727
+
+Result for the vector: barrymore
+Rank: 10 out of 10 characters
+Reciprocal rank: 0.1
+Cosine similarity to the query: 0.04413513948707949
+selden_a - 0.3699538519964772
+dr_mortimer_a - 0.26756288006526996
+charles_a - 0.2621512711048126
+henry_a - 0.24995096027851105
+stapleton_a - 0.23047067341383298
+holmes_a - 0.20770727717004062
+merripit_house_a - 0.1639819941531426
+watson_a - 0.1603298783302307
+miss_stapleton_a - 0.1499308288056155
+barrymore_a - 0.04413513948707949
+
+Result for the vector: selden
+Rank: 1 out of 10 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.3721088579925556
+selden_a - 0.3721088579925556
+charles_a - 0.23144137859344482
+dr_mortimer_a - 0.22353266337319275
+henry_a - 0.20549599826335907
+stapleton_a - 0.20058238800869096
+watson_a - 0.17262153327465057
+holmes_a - 0.17175913368937779
+merripit_house_a - 0.1647410145556325
+miss_stapleton_a - 0.10762914911682321
+barrymore_a - 0.047178183664191825

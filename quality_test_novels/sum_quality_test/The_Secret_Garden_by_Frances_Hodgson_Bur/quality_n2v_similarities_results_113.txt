@@ -1,0 +1,60 @@
+
+Result for the vector: mary
+Rank: 7 out of 7 characters
+Reciprocal rank: 0.14285714285714285
+Cosine similarity to the query: 0.12256820879673384
+mr_craven_a - 0.28629712544100777
+dickon_a - 0.2590852457012338
+yorkshire_a - 0.1771990296603406
+martha_a - 0.1771601342308581
+colin_a - 0.13265341124971528
+mrs_sowerby_a - 0.12456785887479871
+mary_a - 0.12256820879673384
+
+Result for the vector: dickon
+Rank: 2 out of 7 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.203650579400447
+mr_craven_a - 0.2641659536460615
+dickon_a - 0.203650579400447
+yorkshire_a - 0.17418602108955508
+martha_a - 0.12002329826702157
+mary_a - 0.11085018761606706
+colin_a - 0.08909849874065809
+mrs_sowerby_a - 0.08069445409708668
+
+Result for the vector: colin
+Rank: 5 out of 7 characters
+Reciprocal rank: 0.2
+Cosine similarity to the query: 0.1232635789137017
+mr_craven_a - 0.26477847905287316
+dickon_a - 0.2482560052948027
+martha_a - 0.1720087877514616
+yorkshire_a - 0.1608044760460286
+colin_a - 0.1232635789137017
+mrs_sowerby_a - 0.11339285224676213
+mary_a - 0.11062071887789059
+
+Result for the vector: martha
+Rank: 4 out of 7 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.1653898208191837
+mr_craven_a - 0.2982962727546692
+dickon_a - 0.21829021438570834
+yorkshire_a - 0.1934141103378472
+martha_a - 0.1653898208191837
+mary_a - 0.1329290459432914
+mrs_sowerby_a - 0.11990542679461422
+colin_a - 0.11243114210460019
+
+Result for the vector: yorkshire
+Rank: 2 out of 7 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.21811272584048202
+mr_craven_a - 0.24995788932097662
+yorkshire_a - 0.21811272584048202
+martha_a - 0.21573272990384132
+dickon_a - 0.20640257616050997
+mrs_sowerby_a - 0.19922666251659535
+mary_a - 0.11878922972711284
+colin_a - 0.1028799607491509

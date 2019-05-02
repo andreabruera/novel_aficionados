@@ -1,0 +1,40 @@
+
+Result for the vector: bhudrinath
+Rank: 3 out of 5 characters
+Reciprocal rank: 0.3333333333333333
+Cosine similarity to the query: 0.4487526982279248
+cheetoo_a - 0.4562349319458008
+thuggee_a - 0.45156502434998974
+bhudrinath_a - 0.4487526982279248
+ganesha_a - 0.4466016888618469
+meer_sahib_a - 0.44038791776859537
+
+Result for the vector: cheetoo
+Rank: 2 out of 5 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.4606083333492279
+thuggee_a - 0.48143011220873155
+cheetoo_a - 0.4606083333492279
+ganesha_a - 0.45922476053237915
+bhudrinath_a - 0.4447987344741075
+meer_sahib_a - 0.43573947059331763
+
+Result for the vector: ganesha
+Rank: 4 out of 5 characters
+Reciprocal rank: 0.25
+Cosine similarity to the query: 0.6741228699684143
+thuggee_a - 0.6957316217262531
+bhudrinath_a - 0.6831762601838279
+meer_sahib_a - 0.6745220623767993
+ganesha_a - 0.6741228699684143
+cheetoo_a - 0.6607517600059509
+
+Result for the vector: thuggee
+Rank: 1 out of 5 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.7058139864095454
+thuggee_a - 0.7058139864095454
+bhudrinath_a - 0.6922420079852359
+meer_sahib_a - 0.6874863710250372
+ganesha_a - 0.6819068193435669
+cheetoo_a - 0.6556569337844849

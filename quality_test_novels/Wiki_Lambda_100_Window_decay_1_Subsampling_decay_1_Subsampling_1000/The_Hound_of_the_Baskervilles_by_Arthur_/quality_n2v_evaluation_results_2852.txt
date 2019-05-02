@@ -1,0 +1,6 @@
+Novel":	The_Hound_of_the_Baskervilles_by_Arthur_
+MRR:	0.15873015873015875
+Median rank:	8.0
+Mean rank:	7.0
+Total number of characters considered:	12
+

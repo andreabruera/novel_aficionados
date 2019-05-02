@@ -1,0 +1,6 @@
+Novel":	A_Christmas_Carol_by_Charles_Dickens_
+MRR:	0.45666666666666667
+Median rank:	3.0
+Mean rank:	3.0
+Total number of characters considered:	7
+

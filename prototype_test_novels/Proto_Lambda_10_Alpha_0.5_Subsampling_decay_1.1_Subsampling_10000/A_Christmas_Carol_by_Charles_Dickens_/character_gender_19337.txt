@@ -1,0 +1,10 @@
+scrooge	MALE
+bob	MALE
+marley	MALE
+tiny tim	MALE
+mrs cratchit	FEMALE
+peter	MALE
+joe	MALE
+fezziwig	FEMALE
+spirit	UNKNOWN
+martha	FEMALE

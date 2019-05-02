@@ -1,0 +1,10 @@
+Setup: sum_quality_test - n2v
+
+Median MRR: 0.31857142857142856
+MRR Variance: 0.028924438576942612
+Median Median: 5.0
+Variance in median median: 8.458677685950413
+Median of means: 4.571428571428571
+Median of means variance: 7.471892157181909
+Average number of characters: 14.818181818181818
+Total of rankings taken into account: 11

@@ -1,0 +1,10 @@
+Setup: Wiki_Lambda_100_Window_decay_1_Subsampling_decay_1_Subsampling_1000 - sum
+
+Median MRR: 0.38238236122851504
+MRR Variance: 0.030267368787283113
+Median Median: 3.5
+Variance in median median: 8.561983471074381
+Median of means: 3.6
+Median of means variance: 5.80774343567396
+Average number of characters: 14.818181818181818
+Total of rankings taken into account: 11

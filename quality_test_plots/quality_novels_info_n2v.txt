@@ -1,0 +1,77 @@
+Name:	A Christmas Carol
+Length in words:	33241
+Characters evaluated:	7
+Median Rank:	2.0
+MRR:	0.49000000000000005
+Standard deviation of character mention frequency: 81.91434550797558
+
+Name:	Adventures of Huckleberry Finn
+Length in words:	120917
+Characters evaluated:	18
+Median Rank:	6.0
+MRR:	0.3030988455988456
+Standard deviation of character mention frequency: 126.91587765130097
+
+Name:	Anne of Green Gables
+Length in words:	110458
+Characters evaluated:	23
+Median Rank:	8.0
+MRR:	0.18005050505050504
+Standard deviation of character mention frequency: 260.43021884736976
+
+Name:	Confessions of a Thug
+Length in words:	230521
+Characters evaluated:	22
+Median Rank:	3.0
+MRR:	0.4666666666666667
+Standard deviation of character mention frequency: 54.924244674471616
+
+Name:	Moby Dick Or The Whale
+Length in words:	221916
+Characters evaluated:	16
+Median Rank:	8.0
+MRR:	0.27074293228139384
+Standard deviation of character mention frequency: 108.19412994360326
+
+Name:	Peter Pan
+Length in words:	51741
+Characters evaluated:	14
+Median Rank:	9.0
+MRR:	0.1586196631651177
+Standard deviation of character mention frequency: 121.65317463165185
+
+Name:	Pride and Prejudice
+Length in words:	126073
+Characters evaluated:	28
+Median Rank:	11.0
+MRR:	0.13485376100507682
+Standard deviation of character mention frequency: 132.07329089057586
+
+Name:	The Hound of the Baskervilles
+Length in words:	63098
+Characters evaluated:	12
+Median Rank:	5.0
+MRR:	0.37755102040816324
+Standard deviation of character mention frequency: 59.0769560378146
+
+Name:	The Secret Garden
+Length in words:	86433
+Characters evaluated:	14
+Median Rank:	4.0
+MRR:	0.31857142857142856
+Standard deviation of character mention frequency: 171.0464118302398
+
+Name:	The Turn of the Screw
+Length in words:	46626
+Characters evaluated:	7
+Median Rank:	4.5
+MRR:	0.4041666666666667
+Standard deviation of character mention frequency: 29.884129977126584
+
+Name:	The Yellow Wallpaper
+Length in words:	9429
+Characters evaluated:	2
+Median Rank:	1.5
+MRR:	0.75
+Standard deviation of character mention frequency: 16.5
+

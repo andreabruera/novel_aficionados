@@ -1,0 +1,6 @@
+Novel":	Anne_of_Green_Gables_by_L_M__Montgomer
+MRR:	0.3642857142857143
+Median rank:	4.0
+Mean rank:	4.428571428571429
+Total number of characters considered:	23
+

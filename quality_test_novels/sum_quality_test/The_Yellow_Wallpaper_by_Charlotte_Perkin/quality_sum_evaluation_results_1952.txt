@@ -1,0 +1,6 @@
+Novel":	The_Yellow_Wallpaper_by_Charlotte_Perkin
+MRR:	0.75
+Median rank:	1.5
+Mean rank:	1.5
+Total number of characters considered:	2
+

@@ -1,0 +1,6 @@
+Novel":	Adventures_of_Huckleberry_Finn_by_Mark_T
+MRR:	0.1763668430335097
+Median rank:	7.0
+Mean rank:	6.555555555555555
+Total number of characters considered:	18
+

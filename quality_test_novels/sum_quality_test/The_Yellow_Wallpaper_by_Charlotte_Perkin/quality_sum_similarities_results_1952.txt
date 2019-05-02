@@ -1,0 +1,14 @@
+
+Result for the vector: john
+Rank: 1 out of 2 characters
+Reciprocal rank: 1.0
+Cosine similarity to the query: 0.87975963591813
+john_a - 0.87975963591813
+jennie_a - 0.8121886141412624
+
+Result for the vector: jennie
+Rank: 2 out of 2 characters
+Reciprocal rank: 0.5
+Cosine similarity to the query: 0.47788934343723505
+john_a - 0.5055217146873474
+jennie_a - 0.47788934343723505

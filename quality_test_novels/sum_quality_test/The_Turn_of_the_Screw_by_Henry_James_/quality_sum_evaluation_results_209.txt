@@ -1,0 +1,6 @@
+Novel":	The_Turn_of_the_Screw_by_Henry_James_
+MRR:	0.3541666666666667
+Median rank:	3.0
+Mean rank:	3.5
+Total number of characters considered:	7
+

@@ -1,0 +1,2 @@
+john	MALE
+jennie	FEMALE
