@@ -2,11 +2,14 @@
 
 TRAINING_MODE=$1
 
-LAMBDA=(10 50)
+LAMBDA=(100 70)
+#LAMBDA=(10 50)
 #LAMBDA=(50 70 100)
 #WINDOW_DECAY=(1 3)
-SUBSAMPLING_DECAY=(1.1 1.5)
-SUBSAMPLING=(1000 10000)
+#SUBSAMPLING_DECAY=(1.1 1.5)
+SUBSAMPLING_DECAY=(1.1)
+#SUBSAMPLING=(1000 10000)
+SUBSAMPLING=(1000)
 ALPHA=(1 0.5 0.1) 
 DOWNLOADED_NOVELS_FOLDER=novels_by_6
 #mkdir ${DOWNLOADED_NOVELS_FOLDER}
@@ -32,7 +35,7 @@ for alpha in ${ALPHA[@]};
                     echo 'Starting training'
                     for NOVEL_FOLDER in $(ls ${TRAINING_FOLDER});
                         do
-                        ./prova_${TRAINING_MODE}_individuale.sh ${TRAINING_FOLDER} ${NOVEL_FOLDER} ${lambda} ${alpha} ${subsampling_decay} ${subsampling} &  
+                        ./bash_scripts/prova_${TRAINING_MODE}_individuale.sh ${TRAINING_FOLDER} ${NOVEL_FOLDER} ${lambda} ${alpha} ${subsampling_decay} ${subsampling} &  
                         done
                     wait
                     done
@@ -43,4 +46,6 @@ for alpha in ${ALPHA[@]};
     done
 
 cp -ri ${TRAINING_MODE}_test_novels_part_1/* ${TRAINING_MODE}_test_novels_part_2/
-mv ${TRAINING_MODE}_test_novels_part_2/ ${TRAINING_MODE}_test_novels/
+rm -r ${TRAINING_MODE}_test_novels_part_1
+mv ${TRAINING_MODE}_test_novels_part_2/* ${TRAINING_MODE}_test_novels/
+rm -r ${TRAINING_MODE}_test_novels_part_2

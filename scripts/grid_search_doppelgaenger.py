@@ -12,18 +12,20 @@ from scipy import stats
 from re import sub
 
 parser=argparse.ArgumentParser()
-parser.add_argument('--training_mode')
-parser.add_argument('--plots')
+parser.add_argument('--training_mode', required=True, type = str, help = 'Specify the name of the training type, which should also correspond to the first part of the folder name')
+parser.add_argument('--make_plots', required=False, action='store_true')
 args = parser.parse_args()
 
 #from matplotlib import rcParams
 #rcParams['font.family'] = 'sans-serif'
 #rcParams['font.sans-serif'] = ['Helvetica']
-
 cwd=os.getcwd()
 big='{}/{}_test_novels'.format(cwd, args.training_mode)
-output_folder='{}_doppelgaenger_test_plots'.format(args.training_mode)
-os.makedirs(output_folder, exist_ok=True)
+
+if args.make_plots:
+    import pdb; pdb.set_trace()
+    output_folder='{}_doppelgaenger_test_plots'.format(args.training_mode)
+    os.makedirs(output_folder, exist_ok=True)
 
 plot_median={}
 plot_mrr={}
@@ -129,7 +131,7 @@ for setup in os.listdir(big):
     if average_characters>14.0:
         print('Setup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
 
-        if args.plots==True:
+        if args.make_plots:
             results_output=open('{}/doppel_results_{}.txt'.format(output_folder, setup),'w')
             results_output.write('Setup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
         if ambiguities_present==True:
@@ -145,7 +147,7 @@ for setup in os.listdir(big):
                 print('Percentage of ambiguous sentences of all sentences used for training (containing more than one character): {} %\n'.format(round(final_percent, 3)))
                 total_evaluations_runs_counter+=1
     
-    if args.plots==True:
+    if args.make_plots:
 
         ### Ambiguity infos
 

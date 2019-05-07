@@ -95,7 +95,7 @@ def train_batch_sg(model, sentences, alpha, work=None, compute_loss=False):
     for sentence in sentences:
         word_vocabs = [model.wv.vocab[w] for w in sentence if w in
                        model.wv.vocab and model.wv.vocab[w].sample_int
-                       > model.random.rand() * 2 ** 32 or w == '___']
+                       > model.random.rand() * 2 ** 32 or w == '[MASK]']
         for pos, word in enumerate(word_vocabs):
             # Note: we have got rid of the random window size
             start = max(0, pos - window)
@@ -482,7 +482,7 @@ def train_batch_sg_novels(model, sentences, sentence_count, alpha, work=None, co
     for sentence in sentences:
         word_vocabs = [model.wv.vocab[w] for w in sentence if w in
                        model.wv.vocab and model.wv.vocab[w].sample_int
-                       > model.random.rand() * 2 ** 32 or w == '___']
+                       > model.random.rand() * 2 ** 32 or w == '[MASK]']
         ### NOVELS_EDIT: added this line to create a list with the subsampled words
         for pos, word in enumerate(word_vocabs):
             # Note: we have got rid of the random window size
@@ -725,7 +725,7 @@ class Nonce2VecTrainables_novels(Word2VecTrainables):
             # Initialise to sum
             print(i)
             for w in pre_exist_words:
-                ### NOVELS EDIT: rmoved the following condition, added a simpler one, which btw avoids adding the disgusting vector for '___'
+                ### NOVELS EDIT: rmoved the following condition, added a simpler one, which btw avoids adding the disgusting vector for '[MASK]'
                 #if wv.vocab[w].sample_int > wv_random.rand() * 2**32 or w == nonce:
                 #if wv.vocab[w].sample_int > wv_random.rand() * 2**32:
                 if wv.vocab[w].sample_int > wv_random.rand() * 2**32 and w != nonce:

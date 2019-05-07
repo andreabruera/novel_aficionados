@@ -51,20 +51,24 @@ def create_word_index_vector(vocabulary, token, index_vectors, context_vectors):
     for pos_index in positive_ones_indexes:
         current_index_vector[pos_index]=1
     ### This condition checks whether this is the first token or not. If it is, it initializes the index_vectors array
-    if len(index_vectors)>0:
-        index_vectors=numpy.vstack((index_vectors, current_index_vector))
-        context_vectors=numpy.vstack((index_vectors, current_index_vector))
-    else:
-        index_vectors=current_index_vector
-        context_vectors=current_index_vector
+
+    #if len(index_vectors)>0:
+        #index_vectors=numpy.vstack((index_vectors, current_index_vector))
+        #context_vectors=numpy.vstack((index_vectors, current_index_vector))
+    #else:
+        #index_vectors=current_index_vector
+        #context_vectors=current_index_vector
+    index_vectors[current_word_index] = numpy.ndarray.tolist(current_index_vector)
+    context_vectors[current_word_index] = numpy.ndarray.tolist(current_index_vector)
+
     return vocabulary, index_vectors, context_vectors
 
 
 def initialize_RI_model():
 
     vocabulary=defaultdict(str)
-    index_vectors=[]
-    context_vectors=[]
+    index_vectors=defaultdict(list)
+    context_vectors = defaultdict(list)
     return vocabulary, index_vectors, context_vectors
 
 def train_current_word(vocabulary, index_vectors, context_vectors, args, corpus, word_index, word, stopwords):
@@ -74,26 +78,35 @@ def train_current_word(vocabulary, index_vectors, context_vectors, args, corpus,
     ### Collection of the window words which will be summed to the other ones
     if word_index >= args.window_size and (word_index + args.window_size + 1) <= len(corpus):
 
-        window_words_negative = [token.strip('\n') for token in corpus[word_index - args.window_size : word_index - 1] if token.strip('\n') not in stopwords and token.strip('\n') != word]
-        window_words_positive = [token.strip('\n') for token in corpus[word_index + 1 : word_index + args.window_size] if token.strip('\n') not in stopwords and token.strip('\n') != word]
+        #window_words_negative = [token.strip('\n') for token in corpus[word_index - args.window_size : word_index - 1] if token.strip('\n') not in stopwords and token.strip('\n') != word]
+        #window_words_positive = [token.strip('\n') for token in corpus[word_index + 1 : word_index + args.window_size] if token.strip('\n') not in stopwords and token.strip('\n') != word]
 
-        full_window = [word] + window_words_negative + window_words_positive
+        #full_window = [word] + window_words_negative + window_words_positive
 
         if args.spacy_sentence_up == True:
             window_spacy = ' '.join(window)
             full_window = spacy_sentence_up(window_spacy)
 
-        training_window = full_window[1:]
-        word = full_window[0]
+        #training_window = full_window[1:]
+        #word = full_window[0]
+        minimum_index = word_index - args.window_size
+        maximum_index = word_index + args.window_size
+        other_words = corpus[minimum_index : maximum_index]
 
-        for other_word in training_window:
+        current_word = corpus[word_index]
+        current_word_index = vocabulary[current_word]
+
+        for other_word in other_words:
  
-            if other_word not in vocabulary.keys():
-                vocabulary, index_vectors, context_vectors=create_word_index_vector(vocabulary, other_word, index_vectors, context_vectors)
-            ### This condition checks whether this is the first token or not. If it is, it initializes the index_vectors array
-            other_word_index=vocabulary[other_word]
-            context_vectors[current_word_index] = numpy.add(context_vectors[current_word_index], index_vectors[other_word_index])
+            if other_word != current_word:
 
+                if other_word not in vocabulary.keys():
+                    vocabulary, index_vectors, context_vectors=create_word_index_vector(vocabulary, other_word, index_vectors, context_vectors)
+                ### This condition checks whether this is the first token or not. If it is, it initializes the index_vectors array
+                other_word_index=vocabulary[other_word]
+                #new_vector = numpy.add(numpy.asarray(context_vectors[current_word_index]), numpy.asarray(index_vectors[other_word_index]))
+                for col_index, col_value in enumerate(context_vectors[current_word_index]):
+                    context_vectors[current_word_index][col_index] += context_vectors[other_word_index][col_index]    
     return vocabulary, index_vectors, context_vectors
 
 ### Testing

@@ -14,6 +14,9 @@ import logging.config
 import math
 import scipy
 import numpy as np
+import collections
+import torch
+from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM
 
 import gensim
 
@@ -30,9 +33,13 @@ from nonce2vec.models.nonce2vec import Nonce2Vec, Nonce2VecVocab, \
 from nonce2vec.models.nonce2vec import Nonce2Vec_novels, Nonce2VecVocab_novels, \
                                        Nonce2VecTrainables_novels
 
+from nonce2vec.models.BERT_for_novels import BERT_test
+
 from nonce2vec.utils.files import Samples
 
-from nonce2vec.utils.novels_utilities import *
+from nonce2vec.utils.get_damn_evaluation import NovelsEvaluation
+
+from collections import defaultdict
 
 logging.config.dictConfig(
     cutils.load(
@@ -119,7 +126,7 @@ def _load_nonce2vec_model(args, nonce):
     return model
 
 def _test_on_chimeras(args):
-    nonce = '___'
+    nonce = '[MASK]'
     rhos = []
     count = 0
     samples = Samples(args.dataset, source='chimeras')
@@ -138,11 +145,11 @@ def _test_on_chimeras(args):
         logger.info('probes = {}'.format(probes))
         logger.info('responses = {}'.format(responses))
         model = _load_nonce2vec_model(args, nonce)
-        model.vocabulary.nonce = '___'
+        model.vocabulary.nonce = '[MASK]'
         # A quick and dirty bugfix to add the nonce to the vocab
-        # model.wv.vocab['___'] = Vocab(count=1,
+        # model.wv.vocab['[MASK]'] = Vocab(count=1,
         #                               index=len(model.wv.index2word))
-        # model.wv.index2word.append('___')
+        # model.wv.index2word.append('[MASK]')
         vocab_size = len(model.wv.vocab)
         logger.info('vocab size = {}'.format(vocab_size))
         model.build_vocab(sentences, update=True)
@@ -298,6 +305,8 @@ def _test(args):
         test_on_novel(args)
     elif args.on == 'wiki_novels' or args.on == 'wiki_novel':
         test_on_wiki_novel(args)
+    elif args.on == 'bert_novels':
+        test_on_bert_novel(args)
 
 
 def main():
@@ -357,7 +366,7 @@ def main():
     parser_test.set_defaults(func=_test)
     ### NOVELS EDIT: added the dest for this argument, because it's needed for calling the novels model of N2V or the basic one
     parser_test.add_argument('--on', required=True,
-                             choices=['nonces', 'chimeras','novels','novel','wiki_novel','wiki_novels'],
+                             choices=['nonces', 'chimeras','novels','novel','wiki_novel','wiki_novels', 'bert_novels'],
                              help='type of test data to be used')
     parser_test.add_argument('--model', required=True,
                              dest='background',
@@ -371,28 +380,29 @@ def main():
     parser_test.add_argument('--simil_out', required=False, default='False',
                              action='store_true',
                              help='specify whether it is needed to write a file with top similarities')
-    parser_test.add_argument('--train-with',
+    parser_test.add_argument('--train-with', required = False, default = 1,
                              choices=['exp_alpha'],
                              help='learning rate computation function')
-    parser_test.add_argument('--lambda', type=float,
+    parser_test.add_argument('--lambda', type=float, required = False, default = 70.0,
                              dest='lambda_den',
                              help='lambda decay')
     ### NOVELS_EDIT: added the destination with the '_' because it didn't seem to be present in the original code - and this messes everything up!
-    parser_test.add_argument('--sample-decay', type=float, dest='sample_decay',
+    parser_test.add_argument('--sample-decay', type=float, required = False,
+                             default = 1.1, dest='sample_decay',
                              help='sample decay')
     ### NOVELS_EDIT: added the destination with the '_' because it didn't seem to be present in the original code - and this messes everything up!
-    parser_test.add_argument('--window-decay', type=int, dest='window_decay',
+    parser_test.add_argument('--window-decay', type=int, required = False, default = 3, 
+                             dest='window_decay',
                              help='window decay')
     ### NOVELS_EDIT: changed 'sum-only' to 'sum_only', added 'required=False'
     parser_test.add_argument('--sum_only', required=False, action='store_true', default=False,
                              help='sum only: no additional training after '
                                   'sum initialization')
     ### NOVELS_EDIT: added this for training on the wikipedia pages
-    parser_test.add_argument('--quality_test')
+    parser_test.add_argument('--quality_test', type = bool, required = False, default = False)
     ### NOVELS_EDIT: added this optional argument for testing the random selection of the sentences
-    parser_test.add_argument('--random_sentences', required=False, action='store_true', default=False,
-                             help='random_sentences: instead of picking sentences '
-                                  'the original order it picks up sentences randomly')
+    parser_test.add_argument('--random_sentences', required=False, type = bool, default=False, help='random_sentences: instead of picking sentences the original order it picks up sentences randomly')
+    parser_test.add_argument('--bert_layers', required = False, type = int, default = 2)
     args = parser.parse_args()
     args.func(args)
 
@@ -404,7 +414,7 @@ def test_on_novel(args):
     
     char_dict={} 
 
-    nonce='___'
+    nonce='[MASK]'
     
     folder=args.folder
     temp_novel_folder='{}/temp'.format(folder)
@@ -457,6 +467,7 @@ def test_on_novel(args):
 
 
                 sent_list, sent_vocab_list = get_novel_sentences_from_versions_dict(version, character, background_vocab)
+
                 logger.info('List of sentences created!')
                 logger.info('Number of total sentences: {}'.format(len(sent_list)))
 
@@ -481,7 +492,7 @@ def test_on_novel(args):
 
                     sentence=sent_list[index]
 
-                    if '___' in sentence and len(sentence)>3:
+                    if '[MASK]' in sentence and len(sentence)>3:
 
                         model.sentence_count+=1
                         for alias in current_char_list:
@@ -496,9 +507,10 @@ def test_on_novel(args):
                             model.build_vocab(vocab_sentence, model.sentence_count, update=True)
                             vocab_size=len(model.wv.vocab)
                             logger.info('Current nonce: {}'.format(character))
+
                             ### NOVELS NOTE: this is the part where the training happens
-                            if not args.sum_only:
-                                model.train(vocab_sentence, total_examples=model.corpus_count,epochs=model.iter)
+                            model.train(vocab_sentence, total_examples=model.corpus_count,epochs=model.iter)
+
                             top_similarities=model.most_similar(nonce,topn=20)
                             logger.info('Top similarities for {} at this point during the training: {}'.format(character, top_similarities))
 
@@ -563,7 +575,7 @@ def test_on_wiki_novel(args):
 
     char_dict={} 
 
-    nonce='___'
+    nonce='[MASK]'
     
     folder=args.folder
     data_output_folder='{}/quality_test/data_output'.format(folder)
@@ -605,7 +617,7 @@ def test_on_wiki_novel(args):
 
         for index,sentence in enumerate(sent_list):
 
-            if '___' in sentence and len(sentence)>=3:
+            if '[MASK]' in sentence and len(sentence)>=3:
 
                 model.sentence_count+=1
                 for alias in current_char_list:
@@ -680,3 +692,101 @@ def test_on_wiki_novel(args):
     logger.info('Length of the characters list: {}\n Characters list: {}\n'.format(len(char_dict.keys()), char_dict.keys()))
     with open('{}/wiki_{}.pickle'.format(data_output_folder, args.dataset),'wb') as out:        
         pickle.dump(char_dict,out,pickle.HIGHEST_PROTOCOL) 
+
+###############################################################################
+
+
+def test_on_bert_novel(args):
+
+    logger.info('Training on BERT')
+
+    books_dict=get_books_dict(args.dataset)
+    
+    char_dict = defaultdict(list) 
+
+    nonce='[MASK]'
+    
+    folder=args.folder
+    temp_novel_folder='{}/temp'.format(folder)
+    data_output_folder='{}/data_output'.format(folder)
+
+    os.makedirs('{}'.format(data_output_folder),exist_ok=True)
+
+    clean_novel_name='{}/{}_clean.txt'.format(temp_novel_folder, args.dataset)
+
+    novel_versions, current_char_list, genders_dict = prepare_for_bert(args.folder, args.dataset, clean_novel_name, write_to_file=True)
+
+    novel_versions_keys=novel_versions.keys()
+
+    logger.info('Length of the characters list: {}\n Characters list: {}\n'.format(len(current_char_list), current_char_list))
+
+    for path in novel_versions_keys:
+        if 'part_a' in path:
+            part='a'
+        elif 'part_b' in path:
+            part='b'
+        else:
+            part='full'
+    
+        version=novel_versions[path]
+
+        for character in current_char_list:
+
+            character_counter={}
+            
+            for key in novel_versions_keys:
+                character_counter[key]=0
+                for line in novel_versions[key]:
+                    if character in line:
+                        character_counter[key]+=1
+
+            character_name_and_part='{}_{}'.format(character, part)
+            logger.info('Current nonce: {} - for part: {}'.format(character, part))
+
+            if 0 not in [character_counter[i] for i in character_counter.keys()]:
+
+                if genders_dict[character]=='FEMALE':
+                    prototype='woman'
+                elif genders_dict[character]=='MALE':
+                    prototype='man'
+                else:
+                    prototype=nonce 
+
+                sentence_count = 0
+
+                sent_list, sent_vocab_list = get_novel_sentences_from_versions_dict_bert(version, character)
+
+                logger.info('Number of sentences in this part of the book: {}'.format(len(sent_list)))
+
+                if args.random_sentences == True:
+                    indexes=np.random.choice(len(sent_list), len(sent_list), replace=False)
+                else:
+                    indexes=np.arange(len(sent_list))
+
+                model = BertModel.from_pretrained('bert-base-uncased')
+                tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+                for index in indexes:
+
+                    sentence=sent_list[index]
+
+                    if '[MASK]' in sentence and len(sentence)>3:
+
+                        sentence_count+=1
+
+                        ### NOVELS_EDIT: added the <50 condition in order to reduce training time and to give more balanced training to every character.
+                        if not args.sum_only and sentence_count<=50:
+
+                            ### NOVELS NOTE: this is the part where the training happens
+                            if sentence_count == 1:
+                                char_dict[character_name_and_part] = BERT_test.train(args, sentence, character, model, tokenizer)    
+                            elif sentence_count > 1:
+                                char_dict[character_name_and_part] = BERT_test.train(args, sentence, character, model, tokenizer)    
+                #if sentence_count >= 1:
+                    #char_dict[character_name_and_part] = char_dict[character_name_and_part].numpy()
+
+    folder=args.folder
+    with open('{}/{}.pickle'.format(data_output_folder, args.dataset),'wb') as out:        
+        pickle.dump(char_dict,out,pickle.HIGHEST_PROTOCOL) 
+    evaluation = NovelsEvaluation()
+    evaluation.bert_evaluation(folder)
