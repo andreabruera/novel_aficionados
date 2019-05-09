@@ -219,7 +219,7 @@ for setup in os.listdir(big):
         #plt.xticks(y_ticks)
         plt.legend(loc='best', ncol=2, borderaxespad=0.)
         plt.tight_layout()
-        plt.savefig('{}/doppel_median_lenghts.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        plt.savefig('{}/doppel_median_lenghts.png'.format(output_folder), dpi=1200, format='png', bbox_inches='tight', pad_inches=0.2)
 
         plt.clf()
 
@@ -244,7 +244,7 @@ for setup in os.listdir(big):
         #plt.xticks(y_ticks)
         plt.legend(loc='best', ncol=2, borderaxespad=0.)
         plt.tight_layout()
-        plt.savefig('{}/doppel_median_characters.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        plt.savefig('{}/doppel_median_characters.png'.format(output_folder), dpi=1200, format='png', bbox_inches='tight', pad_inches=0.2)
 
         plt.clf()
 
@@ -269,7 +269,7 @@ for setup in os.listdir(big):
         #plt.xticks(y_ticks)
         plt.legend(loc='best', ncol=2, borderaxespad=0.)
         plt.tight_layout()
-        plt.savefig('{}/doppel_median_frequency_std.eps'.format(output_folder), dpi=1200, format='eps', pad_inches=0.2, bbox_inches='tight')
+        plt.savefig('{}/doppel_median_frequency_std.png'.format(output_folder), dpi=1200, format='png', pad_inches=0.2, bbox_inches='tight')
 
         plt.clf()
 
@@ -288,7 +288,7 @@ for setup in os.listdir(big):
         #plt.yticks(short_names )
         plt.legend(loc='best', ncol=2, borderaxespad=0.)
         plt.tight_layout()
-        plt.savefig('{}/doppel_median_names.eps'.format(output_folder, setup, novel), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        plt.savefig('{}/doppel_median_names.png'.format(output_folder, setup, novel), dpi=1200, format='png', bbox_inches='tight', pad_inches=0.2)
         plt.clf()
 
         ### Lenghts/score MRR
@@ -311,7 +311,7 @@ for setup in os.listdir(big):
         #plt.xticks(y_ticks)
         plt.legend(loc='best', ncol=2, borderaxespad=0.)
         plt.tight_layout()
-        plt.savefig('{}/doppel_mrr_lengths.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        plt.savefig('{}/doppel_mrr_lengths.png'.format(output_folder), dpi=1200, format='png', bbox_inches='tight', pad_inches=0.2)
 
         plt.clf()
 
@@ -336,7 +336,7 @@ for setup in os.listdir(big):
         #plt.xticks(y_ticks)
         plt.legend(loc='best', ncol=2, borderaxespad=0.)
         plt.tight_layout()
-        plt.savefig('{}/doppel_MRR_characters.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        plt.savefig('{}/doppel_MRR_characters.png'.format(output_folder), dpi=1200, format='png', bbox_inches='tight', pad_inches=0.2)
 
         plt.clf()
 
@@ -361,7 +361,7 @@ for setup in os.listdir(big):
         #plt.xticks(y_ticks)
         plt.legend(loc='best', ncol=2, borderaxespad=0.)
         plt.tight_layout()
-        plt.savefig('{}/doppel_MRR_characters_std.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        plt.savefig('{}/doppel_MRR_characters_std.png'.format(output_folder), dpi=1200, format='png', bbox_inches='tight', pad_inches=0.2)
 
         plt.clf()
 
@@ -381,5 +381,5 @@ for setup in os.listdir(big):
         #plt.yticks(short_names )
         plt.legend(loc='best', ncol=2, borderaxespad=0.)
         plt.tight_layout()
-        plt.savefig('{}/doppel_MRR_names.eps'.format(output_folder), dpi=1200, format='eps', bbox_inches='tight', pad_inches=0.2)
+        plt.savefig('{}/doppel_MRR_names.png'.format(output_folder), dpi=1200, format='png', bbox_inches='tight', pad_inches=0.2)
         plt.clf()
