@@ -11,20 +11,26 @@ import argparse
 from scipy import stats
 from re import sub
 
+numpy.seterr(all='raise')
+
 parser=argparse.ArgumentParser()
 parser.add_argument('--training_mode', required=True, type = str, help = 'Specify the name of the training type, which should also correspond to the first part of the folder name')
 parser.add_argument('--make_plots', required=False, action='store_true')
+parser.add_argument('--bert_layer', required=False, type=int, default=12)
 args = parser.parse_args()
 
 #from matplotlib import rcParams
 #rcParams['font.family'] = 'sans-serif'
 #rcParams['font.sans-serif'] = ['Helvetica']
 cwd=os.getcwd()
+
 big='{}/{}_test_novels'.format(cwd, args.training_mode)
 
 if args.make_plots:
-    import pdb; pdb.set_trace()
-    output_folder='{}_doppelgaenger_test_plots'.format(args.training_mode)
+    if args.training_mode == 'bert':
+        output_folder='{}_layer_{}_doppelgaenger_test_plots'.format(args.training_mode, args.bert_layer)
+    else:
+        output_folder='{}_doppelgaenger_test_plots'.format(args.training_mode)
     os.makedirs(output_folder, exist_ok=True)
 
 plot_median={}
@@ -65,6 +71,10 @@ for setup in os.listdir(big):
         sentences_counter=[]
         ambiguities_counter=[]
         characters_frequency=[]
+        base_novel = novel
+        if args.training_mode == 'bert':
+            novel = '{}/layer_{}'.format(novel, args.bert_layer)
+        base_folder=os.listdir('{}/{}/{}'.format(big, setup, base_novel))
         novel_folder=os.listdir('{}/{}/{}'.format(big, setup, novel))
         for single_file in novel_folder:
             if 'evaluation' in single_file:
@@ -82,20 +92,21 @@ for setup in os.listdir(big):
                 plot_mrr[setup].append(float(line1))
                 #characters+=int(line3)
                 characters.append(int(line4))
+        for single_file in base_folder:
             if 'character' in single_file and 'ender' not in single_file:
-                characters_file=open('{}/{}/{}/{}'.format(big, setup, novel, single_file)).readlines()
+                characters_file=open('{}/{}/{}/{}'.format(big, setup, base_novel, single_file)).readlines()
                 for l in characters_file:
                     l=l.split('\t') 
                     l=int(l[0])
                     if l>=10:
                         characters_frequency.append(l)
             if 'data_output' in single_file:
-                data_output_filenames=os.listdir('{}/{}/{}/data_output'.format(big, setup, novel))
+                data_output_filenames=os.listdir('{}/{}/{}/data_output'.format(big, setup, base_novel))
                 if 'ambiguities' in data_output_filenames:
                     ambiguities_present=True
-                    ambiguities_filenames=os.listdir('{}/{}/{}/data_output/ambiguities'.format(big, setup, novel))
+                    ambiguities_filenames=os.listdir('{}/{}/{}/data_output/ambiguities'.format(big, setup, base_novel))
                     for ambiguity in ambiguities_filenames:
-                        current_ambiguity=open('{}/{}/{}/data_output/ambiguities/{}'.format(big, setup, novel, ambiguity)).readlines()
+                        current_ambiguity=open('{}/{}/{}/data_output/ambiguities/{}'.format(big, setup, base_novel, ambiguity)).readlines()
                         for character_line in current_ambiguity:
                             if 'too: ' in character_line:
                                 character_line=character_line.strip('\n').split('too: ')[1]
@@ -111,8 +122,8 @@ for setup in os.listdir(big):
             percentage=round((float(novel_ambiguity)*100.0)/float(total_sentences), 2)
             ambiguities[novel]=[novel_ambiguity, total_sentences, percentage]   
 
-        original_file=os.listdir('{}/{}/{}/original_novel'.format(big, setup, novel))
-        open_file=open('{}/{}/{}/original_novel/{}'.format(big, setup, novel, original_file[0])).read()
+        original_file=os.listdir('{}/{}/{}/original_novel'.format(big, setup, base_novel))
+        open_file=open('{}/{}/{}/original_novel/{}'.format(big, setup, base_novel, original_file[0])).read()
         open_file=sub(r'\W+', ' ', open_file)
         open_file=open_file.split(' ')
         novel_length=len(open_file)
@@ -127,7 +138,7 @@ for setup in os.listdir(big):
     var_median=numpy.var(list_var_median)
     average_mean=numpy.median(list_var_mean)
     var_mean=numpy.var(list_var_mean)
-    average_characters=numpy.mean(characters)
+    average_characters=int(round(numpy.mean(characters)))
     if average_characters>14.0:
         print('Setup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
 

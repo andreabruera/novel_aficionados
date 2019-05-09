@@ -1,0 +1,10 @@
+Setup: bert_12
+
+Median MRR: 0.2710426429327131
+MRR Variance: 0.03951258027813801
+Median Median: 7.0
+Variance in median median: 30.805555555555557
+Median of means: 7.353794642857142
+Median of means variance: 32.28075774660808
+Average number of characters: 16
+Total of rankings taken into account: 12
