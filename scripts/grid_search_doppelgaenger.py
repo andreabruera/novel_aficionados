@@ -16,7 +16,7 @@ numpy.seterr(all='raise')
 parser=argparse.ArgumentParser()
 parser.add_argument('--training_mode', required=True, type = str, help = 'Specify the name of the training type, which should also correspond to the first part of the folder name')
 parser.add_argument('--make_plots', required=False, action='store_true')
-parser.add_argument('--bert_layer', required=False, type=int, default=12)
+parser.add_argument('--bert_layer', required=False, type=str, default=13)
 args = parser.parse_args()
 
 #from matplotlib import rcParams
