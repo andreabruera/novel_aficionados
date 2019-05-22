@@ -8,11 +8,11 @@ The final goal is to be able to generate a faithful semantic representation for 
 
 ## Results on 12 novels:
 
-# Doppelganger test:
+### Doppelganger test:
 
 | TRAINING MODE | PROPER NOUNS | COMMON NOUNS |
 | --- | --- | --- |
-| _Count_ | 0.471 - **3.25** | 0.601 - 2.0 |
-| _Bert_ | **0.482** - 3.5 | **0.649** - **1.0** |
-| _Character2Vec (prototype)_ | 0.343 - 5.5 | 0.436 - 3.25 |
+| _**Count**_ | 0.471 - **3.25** | 0.601 - 2.0 |
+| _**Bert**_ | **0.482** - 3.5 | **0.649** - **1.0** |
+| _**Character2Vec (prototype)**_ | 0.343 - 5.5 | 0.436 - 3.25 |
 
