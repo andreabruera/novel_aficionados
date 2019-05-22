@@ -10,10 +10,9 @@ Results on 12 novels:
 
 Doppelganger test:
 
-| TRAINING MODE | PROPER NOUNS | --- | COMMON NOUNS | --- |
-| --- | MRR | Median | MRR | Median |
-| --- | --- | --- | --- | --- |
-| Count | 0.471 | 3.25 | 0.601 | 2.0 |
-| Bert | 0.482 | 3.5 | 0.649 | 1.0 |
-| Character2Vec | 0.343 | 5.5 | 0.436 | 3.25 |
+| TRAINING MODE | PROPER NOUNS | COMMON NOUNS |
+| --- | --- | --- |
+| Count | 0.471 - 3.25 | 0.601 - 2.0 |
+| Bert | 0.482 - 3.5 | 0.649 - 1.0 |
+| Character2Vec | 0.343 - 5.5 | 0.436 - 3.25 |
 
