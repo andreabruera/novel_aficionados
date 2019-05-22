@@ -14,5 +14,5 @@ Doppelganger test:
 | --- | --- | --- |
 | Count | 0.471 - 3.25 | 0.601 - 2.0 |
 | Bert | 0.482 - 3.5 | 0.649 - 1.0 |
-| Character2Vec | 0.343 - 5.5 | 0.436 - 3.25 |
+| Character2Vec (prototype) | 0.343 - 5.5 | 0.436 - 3.25 |
 
