@@ -14,5 +14,5 @@ The final goal is to be able to generate a faithful semantic representation for 
 | --- | --- | --- |
 | _**Count**_ | 0.471 - **3.25** | 0.601 - 2.0 |
 | _**Bert**_ | **0.482** - 3.5 | **0.649** - **1.0** |
-| _**Character2Vec (prototype)**_ | 0.342 - 5.5 | 0.409 - 4.0 |
+| _**Character2Vec**_ | 0.342 - 5.5 | 0.409 - 4.0 |
 
