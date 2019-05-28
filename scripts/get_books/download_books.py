@@ -5,8 +5,8 @@ import sys
 
 folder=sys.argv[1]
 
-#filename=open('scripts/get_books/lists/books_list.txt').readlines()
-filename=open('scripts/get_books/lists/grid_search_books_list.txt').readlines()
+filename=open('scripts/get_books/lists/books_list.txt').readlines()
+#filename=open('scripts/get_books/lists/grid_search_books_list.txt').readlines()
 for l in filename:
     line=l.strip('\n').split('\t')
     b=requests.get('http://www.gutenberg.org/cache/epub/{}/pg{}.txt'.format(line[0], line[0])).text

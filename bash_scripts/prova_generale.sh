@@ -12,7 +12,7 @@ SUBSAMPLING=(1000 10000)
 #SUBSAMPLING=(1000)
 #ALPHA=(0.5 0.1 0.7) 
 ALPHA=(0.1 0.5)
-DOWNLOADED_NOVELS_FOLDER=novels_by_6
+DOWNLOADED_NOVELS_FOLDER=dataset/novels/hundred_novels_by_6
 #mkdir ${DOWNLOADED_NOVELS_FOLDER}
 #echo 'Downloading books...'
 #python3 scripts/get_books/download_books.py ${DOWNLOADED_NOVELS_FOLDER} 
