@@ -5,7 +5,12 @@ This is the entry point of the application.
 
 import os
 ### NOVELS EDIT: added pickle, and then the sys & io modules to capture the sysout, thus capturing the alpha
-import sys, io, pickle
+import sys
+import io
+import re
+import dill
+import pickle 
+import collections
 
 import argparse
 import logging
@@ -14,15 +19,15 @@ import logging.config
 import math
 import scipy
 import numpy as np
-import collections
 import torch
+import tqdm
+
+from tqdm import tqdm
 from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM
 
 import gensim
 
 from gensim.models import Word2Vec
-
-import nonce2vec.utils.novels_utilities
 
 import nonce2vec.utils.config as cutils
 import nonce2vec.utils.files as futils
@@ -39,7 +44,17 @@ from nonce2vec.utils.files import Samples
 
 from nonce2vec.utils.get_damn_evaluation import NovelsEvaluation
 
+from nonce2vec.utils.novels_utilities import *
+
+from nonce2vec.utils.count_based_models_utils import *
+
+from nonce2vec.utils.space_quality_test import *
+
 from collections import defaultdict
+
+from torch import Tensor
+
+from scipy.sparse import csr_matrix
 
 logging.config.dictConfig(
     cutils.load(
@@ -230,6 +245,7 @@ def _get_men_pairs_and_sim(men_dataset):
     with open(men_dataset, 'r') as men_stream:
         for line in men_stream:
             line = line.rstrip('\n')
+            line = re.sub('_\w\s|_\w$',' ',line) 
             items = line.split()
             pairs.append((items[0], items[1]))
             humans.append(float(items[2]))
@@ -245,16 +261,13 @@ def _cosine_similarity(peer_v, query_v):
     return num / (math.sqrt(den_a) * math.sqrt(den_b))
 
 
-def _check_men(args):
+def _check_men(args, model):
     """Check embeddings quality.
 
     Calculate correlation with the similarity ratings in the MEN dataset.
     """
     logger.info('Checking embeddings quality against MEN similarity ratings')
     pairs, humans = _get_men_pairs_and_sim(args.men_dataset)
-    logger.info('Loading word2vec model...')
-    model = Word2Vec.load(args.w2v_model)
-    logger.info('Model loaded')
     system_actual = []
     human_actual = []  # This is needed because we may not be able to
                        # calculate cosine for all pairs
@@ -307,6 +320,8 @@ def _test(args):
         test_on_wiki_novel(args)
     elif args.on == 'bert_novels':
         test_on_bert_novel(args)
+    elif args.on == 'count_novels':
+        test_on_count_novel(args)
 
 
 def main():
@@ -353,8 +368,8 @@ def main():
              'the similarity ratings in the MEN dataset. Also, check the '
              'distribution of context_entropy across datasets')
     parser_check.set_defaults(func=_check_men)
-    parser_check.add_argument('--data', required=True, dest='men_dataset',
-                              help='absolute path to dataset')
+    #parser_check.add_argument('--data', required=True, dest='men_dataset',
+                              #help='absolute path to dataset')
     parser_check.add_argument('--model', required=True, dest='w2v_model',
                               help='absolute path to the word2vec model')
 
@@ -366,7 +381,7 @@ def main():
     parser_test.set_defaults(func=_test)
     ### NOVELS EDIT: added the dest for this argument, because it's needed for calling the novels model of N2V or the basic one
     parser_test.add_argument('--on', required=True,
-                             choices=['nonces', 'chimeras','novels','novel','wiki_novel','wiki_novels', 'bert_novels'],
+                             choices=['nonces', 'chimeras','novels','novel','wiki_novel','wiki_novels', 'bert_novels', 'count_novels'],
                              help='type of test data to be used')
     parser_test.add_argument('--model', required=True,
                              dest='background',
@@ -398,19 +413,30 @@ def main():
     parser_test.add_argument('--sum_only', required=False, action='store_true', default=False,
                              help='sum only: no additional training after '
                                   'sum initialization')
+    parser_test.add_argument('--sum_CLS', required=False, action='store_true', default=False,
+                             help='sum only with CLS: in the BERT setting, it simply compares CLS - considering the whole sentence representation')
     ### NOVELS_EDIT: added this for training on the wikipedia pages
-    parser_test.add_argument('--quality_test', type = bool, required = False, default = False)
+    parser_test.add_argument('--quality_test', action='store_true', required = False, default = False)
     ### NOVELS_EDIT: added this optional argument for testing the random selection of the sentences
-    parser_test.add_argument('--random_sentences', required=False, type = bool, default=False, help='random_sentences: instead of picking sentences the original order it picks up sentences randomly')
+    parser_test.add_argument('--random_sentences', required=False, action='store_true', help='random_sentences: instead of picking sentences the original order it picks up sentences randomly')
     parser_test.add_argument('--bert_layers', required = False, type = int, default = 2)
+    parser_test.add_argument('--men_dataset', dest='men_dataset', required=False, type=str)
+    parser_test.add_argument('--common_nouns', action ='store_true', required=False)
+    parser_test.add_argument('--prototype', action ='store_true', required=False)
+    parser_test.add_argument('--vocabulary', type=str, required=False)
+    parser_test.add_argument('--window_size', type=int, required=False, default=15)
+    parser_test.add_argument('--top_contexts', type=int, required=False)
+    parser_test.add_argument('--weight', type=int, required=False)
+    parser_test.add_argument('--write_to_file', action ='store_true', required=False)
+
     args = parser.parse_args()
     args.func(args)
 
 #########################################################################################
 
 def test_on_novel(args):
-    #char_list=get_characters_list(args.folder, args.dataset)
-    books_dict=get_books_dict(args.dataset)
+
+    #books_dict=get_books_dict(args.dataset)
     
     char_dict={} 
 
@@ -421,7 +447,7 @@ def test_on_novel(args):
     data_output_folder='{}/data_output'.format(folder)
 
     os.makedirs('{}'.format(data_output_folder),exist_ok=True)
-    if args.simil_out==True:
+    if args.simil_out:
         os.makedirs('{}/details'.format(data_output_folder), exist_ok=True)
         os.makedirs('{}/ambiguities'.format(data_output_folder), exist_ok=True)
 
@@ -430,6 +456,24 @@ def test_on_novel(args):
     novel_versions, current_char_list, background_vocab, genders_dict = prepare_for_n2v(args.folder, args.dataset, clean_novel_name, args.background, write_to_file=True)
 
     novel_versions_keys=novel_versions.keys()
+
+    if args.common_nouns:
+        common_nouns_amount = len(current_char_list) - 1
+        common_noun_counter = defaultdict(int)
+        total_book = [sentence for part_key, part in novel_versions.items() for sentence in part]
+        import spacy
+        spacy_tagger = spacy.load("en_core_web_sm")
+        for sentence in total_book:
+            joint_sentence = ' '.join(sentence)
+            tagged_sentence = spacy_tagger(joint_sentence) 
+            for word in tagged_sentence:
+                if str(word) not in current_char_list and str(word.lemma_) not in current_char_list:
+                    if word.tag_ == 'NN' or word.tag_ == 'NNS':
+                        common_noun_counter[word.lemma_] += 1
+        current_char_list = sorted(common_noun_counter, key = common_noun_counter.get, reverse = True)[:common_nouns_amount] 
+        #current_char_list = ['face', 'smoke', 'hand', 'house', 'rain', 'sun', 'snow', 'child', 'man', 'water', 'food', 'tree', 'street', 'dog', 'church', 'bed', 'clothes', 'book']
+
+    variance_check_dict = defaultdict(list)
 
     #for part in books_dict.keys():
     for path in novel_versions_keys:
@@ -454,24 +498,26 @@ def test_on_novel(args):
                         character_counter[key]+=1
 
             if 0 not in [character_counter[i] for i in character_counter.keys()]:
-
-                if genders_dict[character]=='FEMALE':
-                    prototype='woman'
-                elif genders_dict[character]=='MALE':
-                    prototype='man'
-                else:
-                    prototype=nonce 
-                model=_load_nonce2vec_model(args, prototype)
+                
+                if args.prototype:
+                    if genders_dict[character]=='FEMALE':
+                        nonce='woman'
+                    elif genders_dict[character]=='MALE':
+                        nonce='man'
+                    else:
+                        nonce=nonce 
+                
+                model=_load_nonce2vec_model(args, nonce)
                 model.vocabulary.nonce=nonce
                 model.sentence_count=0
-
+                #_check_men(args, model)
 
                 sent_list, sent_vocab_list = get_novel_sentences_from_versions_dict(version, character, background_vocab)
 
                 logger.info('List of sentences created!')
                 logger.info('Number of total sentences: {}'.format(len(sent_list)))
 
-                if args.simil_out==True and len(sent_list)>10 and len(sent_list)<10000:
+                if args.simil_out and len(sent_list)>10 and len(sent_list)<10000:
 
                     simil_out_file=open('{}/details/{}_{}.similarities'.format(data_output_folder, character, part),'w')
                     simil_out_file.write('{} part {}\n\n'.format(character, part))
@@ -485,14 +531,19 @@ def test_on_novel(args):
  
                 if args.random_sentences==True:
                     indexes=np.random.choice(len(sent_list), len(sent_list), replace=False)
+
                 else:
                     indexes=np.arange(len(sent_list))
 
+                variance_collector = []
+
                 for index in indexes:
+
+                    logger.info('Now starting with a new sentence')
 
                     sentence=sent_list[index]
 
-                    if '[MASK]' in sentence and len(sentence)>3:
+                    if '[MASK]' in sentence and len(sentence)>5:
 
                         model.sentence_count+=1
                         for alias in current_char_list:
@@ -501,20 +552,26 @@ def test_on_novel(args):
                                 sentence.remove(alias)
                         ### NOVELS_EDIT: added the <50 condition in order to reduce training time and to give more balanced training to every character.
                         if not args.sum_only and model.sentence_count<=50:
-                            logger.info('Current subsampling rate: {}'.format(model.sample))
+                            #logger.info('Current subsampling rate: {}'.format(model.sample))
+                            logger.info('Now starting to build the vocabulary for the sentence')
                             vocab_sentence=[sentence]
                             logger.info('Full sentence: {}'.format(vocab_sentence))
                             model.build_vocab(vocab_sentence, model.sentence_count, update=True)
-                            vocab_size=len(model.wv.vocab)
-                            logger.info('Current nonce: {}'.format(character))
+                            #vocab_size=len(model.wv.vocab)
+                            logger.info('Now training sentence n. {}'.format(model.sentence_count))
 
                             ### NOVELS NOTE: this is the part where the training happens
                             model.train(vocab_sentence, total_examples=model.corpus_count,epochs=model.iter)
+                            variance_collector.append(model[nonce])
 
-                            top_similarities=model.most_similar(nonce,topn=20)
-                            logger.info('Top similarities for {} at this point during the training: {}'.format(character, top_similarities))
+                            logger.info('Now finished training the sentence')
+                            if model.sentence_count == 1:
+                                nonce = '[MASK]'
 
-                            simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n\n'.format(model.sentence_count, sentence, model.wv.most_similar(nonce, topn=50))) 
+                            #top_similarities=model.most_similar(nonce,topn=20)
+                            #logger.info('Top similarities for {} at this point during the training: {}'.format(character, top_similarities))
+                            if args.simil_out:
+                                simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n\n'.format(model.sentence_count, sentence, model.wv.most_similar(nonce, topn=100))) 
                             if model.sample > 10:
                                 model.sample = model.sample / args.sample_decay
                         elif model.sentence_count>49:
@@ -548,26 +605,58 @@ def test_on_novel(args):
                     top_similarities=model.most_similar(nonce,topn=20)
                     logger.info('Top similarities for {} at this point during the training: {}'.format(character, top_similarities))
                     model.sentence_count=summed_sentences
-
-                    simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n\n'.format(model.sentence_count, sentence, model.wv.most_similar(nonce, topn=50))) 
+                    if args.simil_out:
+                        simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n\n'.format(model.sentence_count, sentence, model.wv.most_similar(nonce, topn=50))) 
                     ### NOVELS NOTE: added the condition >0, because in the absence of a character in a certain part of the book, the same vector is created for all the absent characters and this creates fake 1.0 similarities at evaluation time.
                 if model.sentence_count>0:
                     character_vector=model[nonce]
                     character_name_and_part='{}_{}'.format(character, part)
                     char_dict[character_name_and_part]=character_vector
+
+                    ### Checking for the variance within each character's representation
+
+                    if len(variance_collector)>1:
+
+                        variance_check_dict[character_name_and_part] = variance_collector
+                        cosine_within_novel = []
+
+                        for vector_index, vector in enumerate(variance_collector):
+                            for other_vector_index, other_vector in enumerate(variance_collector):
+                                if vector_index < other_vector_index:
+                                    cosine_within_novel.append(cosine_similarity(vector, other_vector))
+
+                        median_similarity_within_novel = numpy.median(cosine_within_novel)
+                        std_within_novel = numpy.std(cosine_within_novel)
+                        logger.info('Median within-novel similarity for {}: {}'.format(character_name_and_part, median_similarity_within_novel))
+                        logger.info('Within-novel similarity standard deviation for {}: {}'.format(character_name_and_part, std_within_novel))
+                        logger.info('Number of sentences used for {}: {}'.format(character_name_and_part, len(variance_collector)))
+                        if args.simil_out:
+                            with open('{}/details/{}_within_novel.stats'.format(data_output_folder, character_name_and_part), 'w') as within_novel_file:
+                                within_novel_file.write('Median within-novel similarity for\t{}:\t{}\n'.format(character_name_and_part, median_similarity_within_novel))
+                                within_novel_file.write('Within-novel similarity standard deviation for\t{}:\t{}\n'.format(character_name_and_part, std_within_novel))
+                                within_novel_file.write('Number of sentences used for\t{}:\t{}\n'.format(character_name_and_part, len(variance_collector)))
+
                 else:
                     os.remove('{}/details/{}_{}.similarities'.format(data_output_folder, character, part))
-                if args.simil_out==True and model.sentence_count>0:
+                if args.simil_out and model.sentence_count>0:
                     for alias in ambiguity_detector.keys():
                         
                         ambiguity_out_file.write('Character: {}\tNumber of sentences containing this character too: {} out of {} sentences\n\n'.format(alias, ambiguity_detector[alias], model.sentence_count))
 
+                #_check_men(args, model)
+
 
     folder=args.folder
     logger.info('Length of the characters list: {}\n Characters list: {}\n'.format(len(char_dict.keys()), char_dict.keys()))
+
     with open('{}/{}.pickle'.format(data_output_folder, args.dataset),'wb') as out:        
         pickle.dump(char_dict,out,pickle.HIGHEST_PROTOCOL) 
 
+    with open('{}/{}_variance_dict.pickle'.format(data_output_folder, args.dataset),'wb') as out_variance:        
+        pickle.dump(variance_check_dict,out_variance,pickle.HIGHEST_PROTOCOL) 
+
+    evaluation = NovelsEvaluation()
+    evaluation.generic_evaluation(folder, char_dict)
 
 #########################################################################################
 
@@ -582,14 +671,13 @@ def test_on_wiki_novel(args):
 
     os.makedirs('{}'.format(data_output_folder),exist_ok=True)
 
-    if args.simil_out==True:
+    if args.simil_out:
         os.makedirs('{}/details'.format(data_output_folder), exist_ok=True)
         os.makedirs('{}/ambiguities'.format(data_output_folder), exist_ok=True)
 
     clean_novel_name='{}/quality_test/original_text/{}.txt'.format(folder, args.dataset)
 
     novel_versions, current_char_list, genders_dict = prepare_for_n2v(args.folder, args.dataset, clean_novel_name, write_to_file=True, wiki_novel=True)
-
     
     version=novel_versions
 
@@ -603,7 +691,7 @@ def test_on_wiki_novel(args):
         logger.info('List of sentences created!')
         logger.info('Number of total sentences: {}'.format(len(sent_list)))
 
-        if args.simil_out==True and len(sent_list)>10 and len(sent_list)<10000:
+        if args.simil_out and len(sent_list)>10 and len(sent_list)<10000:
 
             simil_out_file=open('{}/details/{}.similarities'.format(data_output_folder, character),'w')
             simil_out_file.write('{}\n\n'.format(character))
@@ -630,11 +718,10 @@ def test_on_wiki_novel(args):
                     vocab_sentence=[sentence]
                     logger.info('Full sentence: {}'.format(vocab_sentence))
                     model.build_vocab(vocab_sentence, model.sentence_count, update=True)
-                    vocab_size=len(model.wv.vocab)
+                    #vocab_size=len(model.wv.vocab)
                     logger.info('Current nonce: {}'.format(character))
                     ### NOVELS NOTE: this is the part where the training happens
-                    if not args.sum_only:
-                        model.train(vocab_sentence, total_examples=model.corpus_count,epochs=model.iter)
+                    model.train(vocab_sentence, total_examples=model.corpus_count,epochs=model.iter)
                     top_similarities=model.most_similar(nonce,topn=20)
                     logger.info('Top similarities for {} at this point during the training: {}'.format(character, top_similarities))
 
@@ -674,7 +761,8 @@ def test_on_wiki_novel(args):
 
             model.sentence_count=summed_sentences
 
-            simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n\n'.format(model.sentence_count, sentence, model.wv.most_similar(nonce, topn=50))) 
+            if args.simil_out:
+                simil_out_file.write('Sentence no. {}\nSentence: {}\n{}\n\n'.format(model.sentence_count, sentence, model.wv.most_similar(nonce, topn=50))) 
             ### NOVELS NOTE: added the condition >0, because in the absence of a character in a certain part of the book, the same vector is created for all the absent characters and this creates fake 1.0 similarities at evaluation time.
         if model.sentence_count>0:
             character_vector=model[nonce]
@@ -682,7 +770,7 @@ def test_on_wiki_novel(args):
             char_dict[character_name_and_part]=character_vector
         else:
             os.remove('{}/details/{}.similarities'.format(data_output_folder, character))
-        if args.simil_out==True and model.sentence_count>0:
+        if args.simil_out and model.sentence_count>0:
             for alias in ambiguity_detector.keys():
                 
                 ambiguity_out_file.write('Character: {}\tNumber of sentences containing this character too: {} out of {} sentences\n\n'.format(alias, ambiguity_detector[alias], model.sentence_count))
@@ -702,21 +790,40 @@ def test_on_bert_novel(args):
 
     books_dict=get_books_dict(args.dataset)
     
-    char_dict = defaultdict(list) 
+    char_dict = defaultdict(torch.Tensor) 
+    #char_dict = defaultdict(list)
 
     nonce='[MASK]'
-    
+
     folder=args.folder
     temp_novel_folder='{}/temp'.format(folder)
     data_output_folder='{}/data_output'.format(folder)
 
-    os.makedirs('{}'.format(data_output_folder),exist_ok=True)
+    os.makedirs('{}/details'.format(data_output_folder),exist_ok=True)
+
+    variance_check_dict = defaultdict(list)
 
     clean_novel_name='{}/{}_clean.txt'.format(temp_novel_folder, args.dataset)
 
     novel_versions, current_char_list, genders_dict = prepare_for_bert(args.folder, args.dataset, clean_novel_name, write_to_file=True)
 
     novel_versions_keys=novel_versions.keys()
+
+    if args.common_nouns:
+        common_nouns_amount = len(current_char_list) - 1
+        common_noun_counter = defaultdict(int)
+        total_book = [sentence for part_key, part in novel_versions.items() for sentence in part]
+        import spacy
+        spacy_tagger = spacy.load("en_core_web_sm")
+        for sentence in total_book:
+            joint_sentence = ' '.join(sentence)
+            tagged_sentence = spacy_tagger(joint_sentence) 
+            for word in tagged_sentence:
+                if str(word) not in current_char_list and str(word.lemma_) not in current_char_list:
+                    if word.tag_ == 'NN' or word.tag_ == 'NNS':
+                        common_noun_counter[word.lemma_] += 1
+        current_char_list = sorted(common_noun_counter, key = common_noun_counter.get, reverse = True)[:common_nouns_amount] 
+        #current_char_list = ['face', 'smoke', 'hand', 'house', 'rain', 'sun', 'snow', 'child', 'man', 'water', 'food', 'tree', 'street', 'dog', 'church', 'bed', 'clothes', 'book']
 
     logger.info('Length of the characters list: {}\n Characters list: {}\n'.format(len(current_char_list), current_char_list))
 
@@ -745,18 +852,19 @@ def test_on_bert_novel(args):
 
             if 0 not in [character_counter[i] for i in character_counter.keys()]:
 
-                if genders_dict[character]=='FEMALE':
-                    prototype='woman'
-                elif genders_dict[character]=='MALE':
-                    prototype='man'
+                if args.prototype:
+                    if genders_dict[character]=='FEMALE':
+                        prototype='female'
+                    elif genders_dict[character]=='MALE':
+                        prototype='male'
+                    else:
+                        prototype=None 
                 else:
-                    prototype=nonce 
+                    prototype=None
 
                 sentence_count = 0
 
-                sent_list, sent_vocab_list = get_novel_sentences_from_versions_dict_bert(version, character)
-
-                logger.info('Number of sentences in this part of the book: {}'.format(len(sent_list)))
+                sent_list, sent_vocab_list = get_novel_sentences_from_versions_dict_bert(version, character, prototype)
 
                 if args.random_sentences == True:
                     indexes=np.random.choice(len(sent_list), len(sent_list), replace=False)
@@ -770,23 +878,326 @@ def test_on_bert_novel(args):
 
                     sentence=sent_list[index]
 
-                    if '[MASK]' in sentence and len(sentence)>3:
+                    if '[MASK]' in sentence and len(sentence)>5 and len(sentence)<200:
+
+                        if sentence_count == 0:
+                            variance_collector = []
+                            bert_space = defaultdict(torch.Tensor)
+
+                        sentence_count+=1
+                        if sentence_count <= 50:
+
+                            #logger.info('Current sentence: {}'.format(sentence))
+                            #logger.info('Current character: {}'.format(character))
+
+                        ### NOVELS_EDIT: added the <50 condition in order to reduce training time and to give more balanced training to every character.
+                            ### NOVELS NOTE: this is the part where the training happens
+                            layered_tensor, other_words_vectors = BERT_test.train(args, sentence, character, model, tokenizer)    
+                            if sentence_count == 1:
+                                char_dict[character_name_and_part] = layered_tensor    
+                            elif sentence_count > 1:
+                                #for layer_index, layer in enumerate(char_dict[character_name_and_part]):
+                                char_dict[character_name_and_part] += layered_tensor
+                            variance_collector.append(layered_tensor[11])
+                            
+                            for other_word, other_word_vector in other_words_vectors.items():
+                                if other_word in bert_space.keys():
+                                    bert_space[other_word] += other_word_vector
+                                else:
+                                    bert_space[other_word] = other_word_vector
+                ### Checking for the variance within each character's representation
+
+                if len(variance_collector)>1:
+
+                    variance_check_dict[character_name_and_part] = variance_collector
+                    cosine_within_novel = []
+
+                    for vector_index, vector in enumerate(variance_collector):
+                        for other_vector_index, other_vector in enumerate(variance_collector):
+                            if vector_index < other_vector_index:
+                                cosine_within_novel.append(cosine_similarity(vector, other_vector))
+
+                    median_similarity_within_novel = numpy.median(cosine_within_novel)
+                    std_within_novel = numpy.std(cosine_within_novel)
+                    logger.info('Median within-novel similarity for {}: {}'.format(character_name_and_part, median_similarity_within_novel))
+                    logger.info('Within-novel similarity standard deviation for {}: {}'.format(character_name_and_part, std_within_novel))
+                    logger.info('Number of sentences used for {}: {}\n'.format(character_name_and_part, len(variance_collector)))
+
+                    if args.simil_out:
+                        with open('{}/details/{}_within_novel.stats'.format(data_output_folder, character_name_and_part), 'w') as within_novel_file:
+                            within_novel_file.write('Median within-novel similarity for\t{}:\t{}\n'.format(character_name_and_part, median_similarity_within_novel))
+                            within_novel_file.write('Within-novel similarity standard deviation for\t{}:\t{}\n'.format(character_name_and_part, std_within_novel))
+                            within_novel_file.write('Number of sentences used for\t{}:\t{}\n'.format(character_name_and_part, len(variance_collector)))
+
+                    ### Calculating top similarities
+
+                    current_bert_space = {other_word : cosine_similarity(other_vector, char_dict[character_name_and_part][11]) for other_word, other_vector in bert_space.items() if '#' not in other_word}
+                    top_similarities = sorted(current_bert_space, key = current_bert_space.get, reverse = True)[:99]
+                    top_info = [(word, current_bert_space[word]) for word in top_similarities]
+                    logger.info('Most similar words in this space for {}: {}'.format(character_name_and_part, top_info))
+                    if args.simil_out:
+                        with open('{}/details/{}_.similarities'.format(data_output_folder, character_name_and_part), 'w') as similarities:
+                            similarities.write('Top similarities for {}:\n\n{}'.format(character_name_and_part, top_info))
+
+    with open('{}/{}.pickle'.format(data_output_folder, args.dataset),'wb') as out:
+
+        pickle.dump(char_dict,out,pickle.HIGHEST_PROTOCOL) 
+
+    with open('{}/{}_variance_dict.pickle'.format(data_output_folder, args.dataset),'wb') as out_variance:        
+        pickle.dump(variance_check_dict,out_variance,pickle.HIGHEST_PROTOCOL) 
+    
+    evaluation = NovelsEvaluation()
+    evaluation.bert_evaluation(folder, char_dict, 12)
+
+
+###################################################################
+
+def test_on_count_novel(args):
+
+    logger.info('Training on count model')
+
+    books_dict=get_books_dict(args.dataset)
+    
+    char_dict = defaultdict(list)
+
+    nonce='[MASK]'
+
+    folder=args.folder
+    temp_novel_folder='{}/temp'.format(folder)
+    data_output_folder='{}/data_output'.format(folder)
+
+    os.makedirs('{}/details'.format(data_output_folder), exist_ok=True)
+
+    #os.makedirs('{}'.format(data_output_folder),exist_ok=True)
+
+    clean_novel_name='{}/{}_clean.txt'.format(temp_novel_folder, args.dataset)
+
+    if args.prototype:
+        char_contextualised = defaultdict(numpy.ndarray)
+        similarities_dict = defaultdict(float)
+
+    novel_versions, current_char_list, genders_dict = prepare_for_bert(args.folder, args.dataset, clean_novel_name, write_to_file=True)
+
+    novel_versions_keys=novel_versions.keys()
+
+    words_in_book = []
+    for part_key, part in novel_versions.items():
+        for sentence in part:
+            for word in sentence:
+                if word not in words_in_book:
+                    words_in_book.append(word)
+
+
+    if args.common_nouns:
+        common_nouns_amount = len(current_char_list) - 1
+        common_noun_counter = defaultdict(int)
+        total_book = [sentence for part_key, part in novel_versions.items() for sentence in part]
+        import spacy
+        spacy_tagger = spacy.load("en_core_web_sm")
+        for sentence in total_book:
+            joint_sentence = ' '.join(sentence)
+            tagged_sentence = spacy_tagger(joint_sentence) 
+            for word in tagged_sentence:
+                if str(word) not in current_char_list and str(word.lemma_) not in current_char_list:
+                    if word.tag_ == 'NN' or word.tag_ == 'NNS':
+                        common_noun_counter[word.lemma_] += 1
+        current_char_list = sorted(common_noun_counter, key = common_noun_counter.get, reverse = True)[:common_nouns_amount] 
+
+    logger.info('Length of the characters list: {}\n Characters list: {}\n'.format(len(current_char_list), current_char_list))
+
+    final_char_list = []
+
+    word_cooccurrences_file = open(args.background, 'rb')
+    lambda_word_cooccurrences = dill.load(word_cooccurrences_file)
+    word_cooccurrences_file.close()
+    word_cooccurrences=defaultdict(lambda: defaultdict(int))
+    for first_key, second_dict in lambda_word_cooccurrences.items():
+        for second_key, count_value in second_dict.items():
+            word_cooccurrences[first_key][second_key]=count_value
+    del lambda_word_cooccurrences
+    vocabulary_file = open(args.vocabulary, 'rb')
+    vocabulary = dill.load(vocabulary_file)
+    vocabulary_file.close()
+
+    reduced_vocabulary = vocabulary.keys()
+
+    for path in novel_versions_keys:
+        if 'part_a' in path:
+            part='a'
+        elif 'part_b' in path:
+            part='b'
+        else:
+            part='full'
+    
+        version=novel_versions[path]
+
+        for character in current_char_list:
+
+            character_counter={}
+            
+            for key in novel_versions_keys:
+                character_counter[key]=0
+                for line in novel_versions[key]:
+                    if character in line:
+                        character_counter[key]+=1
+
+
+            if 0 not in [character_counter[i] for i in character_counter.keys()]:
+
+
+                sentence_count = 0
+                prototype=None
+
+                sent_list, sent_vocab_list = get_novel_sentences_from_versions_dict_bert(version, character, prototype)
+
+                if args.random_sentences == True:
+                    indexes=np.random.choice(len(sent_list), len(sent_list), replace=False)
+                else:
+                    indexes=np.arange(len(sent_list))
+
+
+                for index in indexes:
+
+                    sentence=sent_list[index]
+
+                    if '[MASK]' in sentence and len(sentence)>5:
+
+                        if sentence_count == 0:
+                            logger.info('Initialization of the character...')
+                            character_name_and_part='{}_{}'.format(character, part)
+                            logger.info('Current nonce: {} - for part: {}'.format(character, part))
+                            vocabulary[character_name_and_part] = len(vocabulary)
+                            final_char_list.append(character_name_and_part)
+
+
+                            if args.prototype:
+                                if genders_dict[character]=='FEMALE':
+                                    genders_dict[character_name_and_part]='FEMALE'
+                                elif genders_dict[character]=='MALE':
+                                    genders_dict[character_name_and_part]='MALE'
+                                else:
+                                    genders_dict[character_name_and_part]='UNKNOWN' 
 
                         sentence_count+=1
 
+                        if sentence_count <= 50:
+
+                            #logger.info('Current sentence: {}'.format(sentence))
+                            #logger.info('Current character: {}'.format(character_name_and_part))
+
                         ### NOVELS_EDIT: added the <50 condition in order to reduce training time and to give more balanced training to every character.
-                        if not args.sum_only and sentence_count<=50:
+                            for word_index, word in enumerate(sentence):
 
-                            ### NOVELS NOTE: this is the part where the training happens
-                            if sentence_count == 1:
-                                char_dict[character_name_and_part] = BERT_test.train(args, sentence, character, model, tokenizer)    
-                            elif sentence_count > 1:
-                                char_dict[character_name_and_part] = BERT_test.train(args, sentence, character, model, tokenizer)    
-                #if sentence_count >= 1:
-                    #char_dict[character_name_and_part] = char_dict[character_name_and_part].numpy()
+                                if word =='[MASK]':
 
-    folder=args.folder
-    with open('{}/{}.pickle'.format(data_output_folder, args.dataset),'wb') as out:        
+                                    ### Collection of the window words which will be summed to the other ones
+                                    word_cooccurrences = train_current_word(reduced_vocabulary, vocabulary, word_cooccurrences, args, sentence, word_index, character_name_and_part)
+
+    ### Creating the sparse matrix containing the word vectors
+
+    logger.info('Now creating the word vectors')
+
+    ### In doing so, excluding the vectors for the characters' names, if they were already in the background space
+
+    characters_indexes = [vocabulary[char] for char in current_char_list]
+
+    rows_sparse_matrix = []
+    columns_sparse_matrix = []
+    cells_sparse_matrix = []
+
+    for row_word_index in tqdm(word_cooccurrences): 
+        if row_word_index not in characters_indexes:
+            for column_word_index in word_cooccurrences[row_word_index]:
+                if column_word_index not in characters_indexes:
+                    rows_sparse_matrix.append(row_word_index)
+                    columns_sparse_matrix.append(column_word_index)
+                    current_cooccurrence = word_cooccurrences[row_word_index][column_word_index]
+                    cells_sparse_matrix.append(current_cooccurrence)
+
+    shape_sparse_matrix = len(vocabulary)
+
+    logger.info('Now building the sparse matrix')
+
+    sparse_matrix_cooccurrences = csr_matrix((cells_sparse_matrix, (rows_sparse_matrix, columns_sparse_matrix)), shape = (shape_sparse_matrix, shape_sparse_matrix))
+
+    logger.info('Now applying ppmi to the matrix')
+ 
+    ppmi_matrix = ppmi(sparse_matrix_cooccurrences)
+
+    del sparse_matrix_cooccurrences
+
+    ### Saving the top similarities for each character
+
+    top_contexts = defaultdict(list)
+    
+    for character_name_and_part in tqdm(final_char_list):
+        top_similarities_file=open('{}/details/{}.top_similarities'.format(data_output_folder, character_name_and_part),'w')
+        top_similarities_file.write('{}\n\n'.format(character_name_and_part))
+        similarities_dict = defaultdict(float)
+        logger.info('Now looking for the top similarities for {}'.format(character_name_and_part))
+        char_index = vocabulary[character_name_and_part] 
+        character_vector = numpy.array(ppmi_matrix[char_index][0].todense())
+
+        for word in words_in_book:
+            if word != character_name_and_part and word in reduced_vocabulary:
+                word_index = vocabulary[word]
+                word_vector = numpy.array(ppmi_matrix[word_index][0].todense())
+                similarities_dict[word] = cosine_similarity(character_vector, word_vector)
+        top_contexts[character_name_and_part] = sorted(similarities_dict, key = similarities_dict.get, reverse=True)[:100]
+        top_info = [(word, similarities_dict[word]) for word in top_contexts[character_name_and_part]]
+        if args.write_to_file:
+            top_similarities_file.write('Top 100 similarities for the {}:\n{}\n'.format(character_name_and_part, top_info))
+        logger.info('Top 50 similarities for {}:\n{}\n'.format(character_name_and_part, top_info[:49]))
+        top_similarities_file.close() 
+
+    #### PROTOTYPE: creating the contextualised vectors
+
+    if args.prototype:
+
+        for character_name_and_part in tqdm(final_char_list):
+            if genders_dict[character_name_and_part]=='MALE':
+                kind='man'
+            elif genders_dict[character_name_and_part]=='MALE':
+                kind='woman'
+            else:
+                kind=character_name_and_part
+            char_index = vocabulary[character_name_and_part] 
+            character_vector = numpy.array(ppmi_matrix[char_index][0].todense())
+            kind_index = vocabulary[kind]
+            kind_vector = numpy.array(ppmi_matrix[kind_index][0].todense())
+            current_top_contexts = top_contexts[character_name_and_part][:args.top_contexts]
+            logger.info('List of words used for contextualisation: {}'.format(current_top_contexts))
+            contextualised_vectors = []
+            for context in tqdm(current_top_contexts):
+                individual_context_vector = numpy.zeros(shape_sparse_matrix)
+                context_index = vocabulary[context]
+                context_vector = numpy.array(ppmi_matrix[context_index][0].todense())
+                for word in words_in_book:
+                    word_vector = numpy.array(ppmi_matrix[vocabulary[word]][0].todense())
+                    context_weight = pow(cosine_similarity(context_vector, word_vector ), args.weight)
+                    individual_context_vector[vocabulary[word]]=context_weight
+                contextualised_kind_vector = kind_vector * individual_context_vector
+                contextualised_vectors.append(contextualised_kind_vector)
+            
+            char_contextualised[character_name_and_part] = numpy.sum(contextualised_vectors, axis=0)
+
+    ### Extracting the characters' vector for the current part of the novel
+
+    for character_name_and_part in final_char_list:
+        char_index = vocabulary[character_name_and_part] 
+        if args.prototype:
+            character_vector = char_contextualised[character_name_and_part]
+        else:
+            character_vector = numpy.array(ppmi_matrix[char_index][0].todense())
+        char_dict[character_name_and_part] = character_vector    
+
+    logger.info('Final list of characters: {}'.format(char_dict.keys()))
+
+    with open('{}/{}.pickle'.format(data_output_folder, args.dataset),'wb') as out:
+
         pickle.dump(char_dict,out,pickle.HIGHEST_PROTOCOL) 
+    
+    ### Testing the performances of the vectors on the Doppelganger test
+
     evaluation = NovelsEvaluation()
-    evaluation.bert_evaluation(folder)
+    evaluation.generic_evaluation(folder, char_dict)

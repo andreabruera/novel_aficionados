@@ -4,55 +4,58 @@ import math
 import sys
 import os
 import pickle
+import torch
+import collections
 
 from nonce2vec.utils.novels_utilities import *
-from nonce2vec.utils.count_based_models_utilities import cosine_similarity
+from nonce2vec.utils.count_based_models_utils import cosine_similarity, normalise
 from numpy import dot,sqrt,sum,linalg
 from math import sqrt
+from torch import Tensor
+from collections import defaultdict
 
-def normalise(v):
-    norm = numpy.linalg.norm(v)
-    if norm == 0:
-        return v
-    v = v / norm
-    #print(sum([i*i for i in v]))
-    return v
-
-def norm(value):
-    v=float(value)
-    norm=v / numpy.sqrt((numpy.sum(v**2)))
-    return float(norm)
-
-#def cosine_similarity(peer_v, query_v):
-    #if len(peer_v) != len(query_v):
-        #raise ValueError('Vectors must be of same length')
-    #num = numpy.dot(peer_v, query_v)
-    #den_a = numpy.dot(peer_v, peer_v)
-    #den_b = numpy.dot(query_v, query_v)
-    #return num / (math.sqrt(den_a) * math.sqrt(den_b))
-
-folder=sys.argv[1]
-number=sys.argv[2]
 
 class NovelsEvaluation:
 
-    def self.__init__(folder, number):
-        char_list=get_characters_list(folder, number)
-        characters_vectors=pickle.load(open('{}/data_output/{}.pickle'.format(folder, number), 'rb'))
-        reciprocal_ranks=[]
-        ranks=[]
-        evaluation_file=open('{}/evaluation_results_{}.txt'.format(folder, number),'w')
-        similarities_file=open('{}/similarities_results_{}.txt'.format(folder, number), 'w')
-        disappearing_characters=[]
-        layers_number = 1
+    def __init__(self):
+        self.reciprocal_ranks=[]
+        self.ranks=[]
+        self.disappearing_characters=[]
 
-    def self.bert_evaluation(characters_vectors, layers_number):
-        #layers_indices = range(layers_number)
-        #for layer in layers_indices: 
-        chosen_characters_vectors = {character_and_part : layers[layers_number] for character_and_part, layers in characters_vectors}
-        self.generic_evaluation(chosen_characters_vectors)
+    def bert_evaluation(self, folder, characters_vectors, *layers_number):
+        if len(layers_number) > 1:
+            chosen_characters_vectors = defaultdict(torch.Tensor)
+            for character, layers in characters_vectors.items():
+                for layer in layers_number:
+                    if len(chosen_characters_vectors[character]) == 0:
+                        chosen_characters_vectors[character] = layers[layer-1]
+                    else:
+                        chosen_characters_vectors[character] += layers[layer-1]
+            string_layer_numbers = [str(number) for number in layers_number]
+            layer_number = '_'.join(string_layer_numbers)
+        else:
+            layers_number = layers_number[0]
+            layers_indices = range(layers_number)
+            for layer in layers_indices: 
+                chosen_characters_vectors = {character_and_part : layers[layer] for character_and_part, layers in characters_vectors.items()}
+            layer_number = layers_number
+        self.generic_evaluation(folder, chosen_characters_vectors, layer_number)
 
-    def self.generic_evaluation(characters_vectors): 
+    def generic_evaluation(self, folder, characters_vectors, layer_number=None): 
+        
+        reciprocal_ranks = self.reciprocal_ranks
+        ranks = self.ranks
+        disappearing_characters = self.disappearing_characters
+
+        if layer_number == None:
+            evaluation_file=open('{}/evaluation_results.txt'.format(folder),'w')
+            similarities_file=open('{}/similarities_results.txt'.format(folder), 'w')
+        else:
+            folder = '{}/layer_{}'.format(folder, layer_number)
+            os.makedirs(folder)
+            evaluation_file=open('{}/evaluation_results.txt'.format(folder),'w')
+            similarities_file=open('{}/similarities_results.txt'.format(folder), 'w')
+            
 
         for good_key, good_vector in characters_vectors.items():
             norm_good_vector=normalise(good_vector)
@@ -83,7 +86,6 @@ class NovelsEvaluation:
                         norm_other_vector=normalise(other_vector)
                         simil=cosine_similarity(norm_good_vector, norm_other_vector)
                         simil_dict[float(simil)]=other_key
-                                
                 sorted_simil_list=sorted(simil_dict,reverse=True)
                 for rank, similarity in enumerate(sorted_simil_list):
                     rank+=1
@@ -99,4 +101,4 @@ class NovelsEvaluation:
         median_rank=numpy.median(ranks)
         mean_rank=numpy.mean(ranks)
 
-        evaluation_file.write('MRR:\t{}\nMedian rank:\t{}\nMean rank:\t{}\nTotal number of characters considered:\t{}\nCharacters disappearing when dividing the novel in two:\t{}'.format(MRR, median_rank, mean_rank, len(sorted_simil_list)+1, len(char_list)-(len(sorted_simil_list)+1))) 
+        evaluation_file.write('MRR:\t{}\nMedian rank:\t{}\nMean rank:\t{}\nTotal number of characters considered:\t{}\n'.format(MRR, median_rank, mean_rank, len(sorted_simil_list)+1)) 

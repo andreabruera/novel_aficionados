@@ -482,7 +482,8 @@ def train_batch_sg_novels(model, sentences, sentence_count, alpha, work=None, co
     for sentence in sentences:
         word_vocabs = [model.wv.vocab[w] for w in sentence if w in
                        model.wv.vocab and model.wv.vocab[w].sample_int
-                       > model.random.rand() * 2 ** 32 or w == '[MASK]']
+                       #> model.random.rand() * 2 ** 32 or w == '[MASK]']
+                       > model.random.rand() * 2 ** 32 or w == model.vocabulary.nonce]
         ### NOVELS_EDIT: added this line to create a list with the subsampled words
         for pos, word in enumerate(word_vocabs):
             # Note: we have got rid of the random window size
@@ -570,6 +571,7 @@ class Nonce2VecVocab_novels(Word2VecVocab):
                     del wv.vocab[self.nonce]
                     if self.nonce not in wv.vocab:
                         logger.info('Deleted the vector for the nonce - index no. {}'.format(nonce_index))
+                self.nonce = '[MASK]'
                     
             for word, v in iteritems(self.raw_vocab):
                 # Update count of all words already in vocab
@@ -723,18 +725,13 @@ class Nonce2VecTrainables_novels(Word2VecTrainables):
                             'properly deleted'.format(nonce))'''
         for i in xrange(len(wv.vectors), len(wv.vocab)):
             # Initialise to sum
-            print(i)
             for w in pre_exist_words:
                 ### NOVELS EDIT: rmoved the following condition, added a simpler one, which btw avoids adding the disgusting vector for '[MASK]'
-                #if wv.vocab[w].sample_int > wv_random.rand() * 2**32 or w == nonce:
-                #if wv.vocab[w].sample_int > wv_random.rand() * 2**32:
                 if wv.vocab[w].sample_int > wv_random.rand() * 2**32 and w != nonce:
-                #if w == nonce:
                    ### NOVELS EDIT: modified the print text, does the same thing
                    #print('Adding {} to initialisation...'.format(w))
                    newvectors[i-len(wv.vectors)] += wv.vectors[
                        wv.vocab[w].index]
-
 
         # Raise an error if an online update is run before initial training on
         # a corpus
@@ -752,6 +749,7 @@ class Nonce2VecTrainables_novels(Word2VecTrainables):
                                                      dtype=np.float32)])
         wv.vectors_norm = None
 
+        ### CHECK HERE ###
         # do not suppress learning for already learned words
         self.vectors_lockf = np.ones(len(wv.vocab),
                                         dtype=np.float32)  # zeros suppress learning

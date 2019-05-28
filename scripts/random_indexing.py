@@ -1,55 +1,42 @@
-### EXAMPLE: python3 -m scripts.random_indexing --write_to_file True --print_results True --non_zeros=16 wiki /mnt/cimec-storage-sata/users/andrea.bruera/wikiextractor/wiki_parts_small 10 2048
+### EXAMPLE: python3 -m scripts.random_indexing --input_type wiki --filedir /mnt/cimec-storage-sata/users/andrea.bruera/wiki_training/data/clean --window_size 10 --vector_size 2048
 
 
 import numpy
 import collections
 import spacy
 import argparse
-import pickle
+import dill as pickle
 import os
 import nonce2vec
 import re
+import scipy
+import tqdm
+import logging
 
 from collections import defaultdict
 from re import sub
 from nonce2vec.utils.stopwords import stopwords
-from nonce2vec.utils.count_based_models_utils import cosine_similarity, top_similarities, spacy_sentence_up
+from nonce2vec.utils.count_based_models_utils import cosine_similarity, top_similarities, spacy_sentence_up, ReducedVocabulary, Corpus, clean_wikipedia
 from collections import defaultdict
 from numpy import zeros, vstack
+from scipy.sparse import csr_matrix
+from tqdm import tqdm
 
-
-class Corpus(object):
-    def __init__(self, args):
-        self.filedir = args.filedir
-        self.files = [os.path.join(root, name) for root, dirs, files in os.walk(args.filedir) for name in files]
-        self.length = len(self.files)
-        
-    def __iter__(self):
-
-        for individual_file in self.files: 
-
-            training_lines = open(individual_file).readlines()
-            if 'wiki' in args.input_type:
-                training_part = [re.sub('\s+|\W+|_+|[0-9]+', ' ', line) for line in training_lines]  
-            else:
-                training_part = [re.sub('\s+|\W+|[0-9]+', ' ', line) for line in training_lines]  
-            training_part = [line.strip(' ') for line in training_part if line != ' ']
-            training_part = [word.lower() for line in training_part for word in line.split()]
-            yield training_part
 
 def create_word_index_vector(vocabulary, token, index_vectors, context_vectors):
 
     vocabulary[token]=len(vocabulary.keys())
     current_word_index=vocabulary[token]
-    current_index_vector=numpy.zeros(args.vector_size)
-    ones_indexes=numpy.random.choice(numpy.arange(args.vector_size), args.non_zeros, replace=False)
-    middle_index = int(args.non_zeros / 2)
-    negative_ones_indexes=ones_indexes[: middle_index -1]
-    positive_ones_indexes=ones_indexes[middle_index :]
-    for neg_index in negative_ones_indexes:
-        current_index_vector[neg_index]=-1
-    for pos_index in positive_ones_indexes:
-        current_index_vector[pos_index]=1
+    
+    columns=[int(number) for number in numpy.random.choice(numpy.arange(args.vector_size), args.non_zeros, replace=False)]
+    row = numpy.zeros(args.non_zeros)
+    onez = []
+    for column_index, column_position in enumerate(columns):
+        if column_index < int(round(args.non_zeros/2)):
+            onez.append(1)
+        else:
+            onez.append(-1)
+    current_index_vector = csr_matrix((onez, (row, columns)), shape=(1, args.vector_size), dtype=int)
     ### This condition checks whether this is the first token or not. If it is, it initializes the index_vectors array
 
     #if len(index_vectors)>0:
@@ -58,111 +45,137 @@ def create_word_index_vector(vocabulary, token, index_vectors, context_vectors):
     #else:
         #index_vectors=current_index_vector
         #context_vectors=current_index_vector
-    index_vectors[current_word_index] = numpy.ndarray.tolist(current_index_vector)
-    context_vectors[current_word_index] = numpy.ndarray.tolist(current_index_vector)
+    index_vectors[current_word_index] = current_index_vector.toarray()
+    context_vectors[current_word_index] = current_index_vector.toarray()
 
     return vocabulary, index_vectors, context_vectors
 
 
-def initialize_RI_model():
+def initialize_RI_model(vocabulary):
 
-    vocabulary=defaultdict(str)
-    index_vectors=defaultdict(list)
-    context_vectors = defaultdict(list)
-    return vocabulary, index_vectors, context_vectors
 
-def train_current_word(vocabulary, index_vectors, context_vectors, args, corpus, word_index, word, stopwords):
+    cwd = os.getcwd()
+    current_output_folder='{}/RI_models/count_{}'.format(cwd, args.input_type)
+    if args.write_to_file == True:
+        try:
+            os.makedirs(current_output_folder)
+        except FileExistsError:
+            logging.info("Training mode \"{}\" already found. Please change your training type".format(args.input_type))
+
+    index_vectors=defaultdict(numpy.ndarray)
+    context_vectors = defaultdict(numpy.ndarray)
+    for word in reduced_vocabulary:
+        if word not in vocabulary.keys():
+            vocabulary, index_vectors, context_vectors = create_word_index_vector(vocabulary, word, index_vectors, context_vectors)
+    return index_vectors, context_vectors, current_output_folder
+
+def train_current_word(vocabulary, index_vectors, context_vectors, args, corpus, word_index, current_word):
 
     current_word_index=vocabulary[word]
 
     ### Collection of the window words which will be summed to the other ones
     if word_index >= args.window_size and (word_index + args.window_size + 1) <= len(corpus):
 
-        #window_words_negative = [token.strip('\n') for token in corpus[word_index - args.window_size : word_index - 1] if token.strip('\n') not in stopwords and token.strip('\n') != word]
-        #window_words_positive = [token.strip('\n') for token in corpus[word_index + 1 : word_index + args.window_size] if token.strip('\n') not in stopwords and token.strip('\n') != word]
-
-        #full_window = [word] + window_words_negative + window_words_positive
-
-        if args.spacy_sentence_up == True:
-            window_spacy = ' '.join(window)
-            full_window = spacy_sentence_up(window_spacy)
-
-        #training_window = full_window[1:]
-        #word = full_window[0]
-        minimum_index = word_index - args.window_size
-        maximum_index = word_index + args.window_size
-        other_words = corpus[minimum_index : maximum_index]
-
-        current_word = corpus[word_index]
         current_word_index = vocabulary[current_word]
 
-        for other_word in other_words:
- 
-            if other_word != current_word:
+        window_start = 1
 
-                if other_word not in vocabulary.keys():
-                    vocabulary, index_vectors, context_vectors=create_word_index_vector(vocabulary, other_word, index_vectors, context_vectors)
-                ### This condition checks whether this is the first token or not. If it is, it initializes the index_vectors array
-                other_word_index=vocabulary[other_word]
-                #new_vector = numpy.add(numpy.asarray(context_vectors[current_word_index]), numpy.asarray(index_vectors[other_word_index]))
+        if window_start <= args.window_size:
+
+            ### Positive window word, notice the +
+
+            other_word_positive = corpus[word_index + window_start] 
+            
+            if other_word_positive in reduced_vocabulary:
+                   
+                other_word_positive_index = vocabulary[other_word_positive]
+                import pdb; pdb.set_trace()
+
                 for col_index, col_value in enumerate(context_vectors[current_word_index]):
-                    context_vectors[current_word_index][col_index] += context_vectors[other_word_index][col_index]    
-    return vocabulary, index_vectors, context_vectors
+                    context_vectors[current_word_index][col_index] += index_vectors[other_word_index][col_index]    
+
+            ### Symmetric negative window word, notice the -
+
+            other_word_negative = corpus[word_index - window_start] 
+
+            if other_word_negative in reduced_vocabulary:
+
+                other_word_negative_index = vocabulary[other_word_negative]
+
+                for col_index, col_value in enumerate(context_vectors[current_word_index]):
+                    context_vectors[current_word_index][col_index] += index_vectors[other_word_index][col_index]    
+
+                ### Adding + 1, thus moving 1 further away from the word at hand
+
+            window_start += 1
+                
+    return context_vectors
 
 ### Testing
 
+logging.basicConfig(format='%(asctime)s - %(message)s', level = logging.INFO)
+
 parser=argparse.ArgumentParser()
-parser.add_argument('input_type', type=str, help = 'name of the dataset used for creating the word representations')
-parser.add_argument('filedir', type=str, help='Directory where the corpus files to be used for training are stored')
-parser.add_argument('window_size', type=int, default=5)
-parser.add_argument('vector_size', type=int, default=1024, help='amount of words to be kept as columns of the matrix, according to their frequency')
-parser.add_argument('--character', type=str, default='house')
-parser.add_argument('--write_to_file', type=bool, default=False)
-parser.add_argument('--print_results', type=bool, default=True)
+parser.add_argument('--input_type', type=str, help = 'name of the dataset used for creating the word representations')
+parser.add_argument('--filedir', type=str, help='Directory where the corpus files to be used for training are stored')
+parser.add_argument('--window_size', type=int, default=5)
+parser.add_argument('--vector_size', type=int, default=1024, help='amount of words to be kept as columns of the matrix, according to their frequency')
+parser.add_argument('--character', type=str, dest='character', required=False, default='house')
+parser.add_argument('--write_to_file', required=False, action='store_true')
+parser.add_argument('--print_results', required=False, action='store_true')
 parser.add_argument('--number_similarities', type=int, default=20)
-parser.add_argument('--non_zeros', type=int, default=16)
+parser.add_argument('--non_zeros', dest='non_zeros', type=int, default=16)
 parser.add_argument('--spacy_sentence_up', type = bool, default = False)
+parser.add_argument('--minimum_count', type=int, default=500)
+parser.add_argument('--clean_wikipedia', required=False, type=str)
+parser.add_argument('--load_files', action='store_true', default=False)
 
 args=parser.parse_args()
 
-training_parts = Corpus(args)
+logging.info('Starting the basic Random Indexing model training')
 
-training_length = training_parts.length
+if args.clean_wikipedia:
+    logging.info('Cleaning up Wikipedia')
+    args.filedir = clean_wikipedia(args.filedir, args.clean_wikipedia)
 
-outputs = [round(value) for value in numpy.linspace(0, training_length, 100)]
-outputs_dictionary = defaultdict(int)
-for percentage, sentence_number in enumerate(outputs):
-    outputs_dictionary[sentence_number] = percentage
+training_parts = Corpus(args.filedir)
 
-if args.write_to_file == True:
-    cwd=os.getcwd()
-    try:
-        current_output_folder='{}/RI_models/RI_{}'.format(cwd, args.input_type)
-        os.makedirs(current_output_folder)
-    except FileExistsError:
-        print("Training mode \"{}\" already found. Please change your training type".format(args.input_type))
+number_of_files = training_parts.number_of_files
 
-stopwords = stopwords()
+if args.load_files:
 
-vocabulary, index_vectors, context_vectors=initialize_RI_model()
+    logging.info('Loading the vocabulary from file')
+    vocabulary_file =open('{}/count_{}_vocabulary_trimmed.pickle'.format(current_output_folder, args.input_type), 'rb')
+    vocabulary = pickle.load(vocabulary_file)
+    vocabulary_file.close()
+else:
+    logging.info('Now creating the reduced vocabulary from scratch...')
 
+    vocabulary = ReducedVocabulary(training_parts, args.minimum_count).to_dict()
 
-for corpus_index, corpus in enumerate(training_parts):
+reduced_vocabulary = vocabulary.keys()
 
-    if corpus_index in outputs:
-        print('Currently at {}% of the training\n'.format(outputs_dictionary[corpus_index] + 1)) 
+index_vectors, context_vectors, current_output_folder = initialize_RI_model(vocabulary)
 
-    for word_index, word in enumerate(corpus):
-        
-        if word not in stopwords:
+logging.info('Reduced vocabulary size: {} words'.format(len(reduced_vocabulary)))
+
+if args.write_to_file:
+    with open('{}/RI_{}_vocabulary.pickle'.format(current_output_folder, args.input_type), 'wb') as RI_vocabulary:
+        pickle.dump(vocabulary, RI_vocabulary)
+
+logging.info('Random Indexing model initialized, started training...')
+
+for line in training_parts:
+
+    line_length = len(line)
+
+    for word_index, word in enumerate(line):
+
+        if word in reduced_vocabulary:
        
             ### Inizialization of a new word: if the word has not been encountered yet, its index vector is created and appended to the index_vectors matrix 
 
-            if word not in vocabulary:
-                vocabulary, index_vectors, context_vectors = create_word_index_vector(vocabulary, word, index_vectors, context_vectors)
-
-            vocabulary, index_vectors, context_vectors = train_current_word(vocabulary, index_vectors, context_vectors, args, corpus, word_index, word, stopwords)
-
+            context_vectors = train_current_word(vocabulary, index_vectors, context_vectors, args, line, word_index, word)
 
 ### Printing out top similarities for a query
 
@@ -171,6 +184,6 @@ if args.print_results == True:
 
 ### Saving to file
 
-numpy.savez('{}/RI_{}_vectors'.format(current_output_folder, args.input_type), context_vectors, index_vectors)
-with open('{}/RI_{}_vocabulary.pickle'.format(current_output_folder, args.input_type), 'wb') as RI_vocabulary:
-    pickle.dump(vocabulary, RI_vocabulary)
+if args.write_to_file:
+
+    numpy.savez('{}/RI_{}_vectors'.format(current_output_folder, args.input_type), context_vectors, index_vectors)

@@ -36,7 +36,7 @@ number=sys.argv[2]
 
 class NovelsEvaluation:
 
-    def self.__init__(folder, number):
+    def __init__(self, folder, number):
         char_list=get_characters_list(folder, number)
         characters_vectors=pickle.load(open('{}/data_output/{}.pickle'.format(folder, number), 'rb'))
         reciprocal_ranks=[]

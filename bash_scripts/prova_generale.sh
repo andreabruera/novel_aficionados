@@ -2,15 +2,16 @@
 
 TRAINING_MODE=$1
 
-LAMBDA=(100 70)
+LAMBDA=(50 100)
 #LAMBDA=(10 50)
 #LAMBDA=(50 70 100)
 #WINDOW_DECAY=(1 3)
 #SUBSAMPLING_DECAY=(1.1 1.5)
 SUBSAMPLING_DECAY=(1.1)
-#SUBSAMPLING=(1000 10000)
-SUBSAMPLING=(1000)
-ALPHA=(1 0.5 0.1) 
+SUBSAMPLING=(1000 10000)
+#SUBSAMPLING=(1000)
+#ALPHA=(0.5 0.1 0.7) 
+ALPHA=(0.1 0.5)
 DOWNLOADED_NOVELS_FOLDER=novels_by_6
 #mkdir ${DOWNLOADED_NOVELS_FOLDER}
 #echo 'Downloading books...'
@@ -45,7 +46,7 @@ for alpha in ${ALPHA[@]};
         done
     done
 
-cp -ri ${TRAINING_MODE}_test_novels_part_1/* ${TRAINING_MODE}_test_novels_part_2/
-rm -r ${TRAINING_MODE}_test_novels_part_1
-mv ${TRAINING_MODE}_test_novels_part_2/* ${TRAINING_MODE}_test_novels/
-rm -r ${TRAINING_MODE}_test_novels_part_2
+#cp -ri ${TRAINING_MODE}_test_novels_part_1/* ${TRAINING_MODE}_test_novels_part_2/
+#rm -r ${TRAINING_MODE}_test_novels_part_1
+#mv ${TRAINING_MODE}_test_novels_part_2/* ${TRAINING_MODE}_test_novels/
+#rm -r ${TRAINING_MODE}_test_novels_part_2

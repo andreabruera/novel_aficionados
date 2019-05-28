@@ -1,199 +1,191 @@
-### EXAMPLE: python3 -m scripts.count_model --write_to_file True --logging.info_results False wiki /mnt/cimec-storage-sata/users/andrea.bruera/wikiextractor/wiki_parts 10 5000
+### EXAMPLE: python3 -m scripts.count_model --input_type wiki_${window} --filedir /mnt/cimec-storage-sata/users/andrea.bruera/wikiextractor/wiki_for_bert/wiki_clean_for_count.txt --window_size ${window}
 
 import logging
 import numpy
 import collections
 import spacy
 import argparse
-import pickle
+import dill as pickle
 import os
 import nonce2vec
 import re
 import tqdm
+import scipy
 
-import dill as pickle
 from re import sub
 from nonce2vec.utils.stopwords import stopwords
-from nonce2vec.utils.count_based_models_utils import cosine_similarity, top_similarities, spacy_sentence_up
+from nonce2vec.utils.count_based_models_utils import cosine_similarity, top_similarities, spacy_sentence_up, ReducedVocabulary, Corpus, clean_wikipedia, train_current_word
 from collections import defaultdict
 from numpy import zeros, vstack
+from tqdm import tqdm
+from scipy import sparse
+from scipy.sparse import csr_matrix, save_npz
 
+def initialize_count_model(args):
 
-def initialize_count_model():
+    cwd = os.getcwd()
+    current_output_folder='{}/count_models/count_{}'.format(cwd, args.input_type)
+    if args.write_to_file == True:
+        try:
+            os.makedirs(current_output_folder)
+        except FileExistsError:
+            logging.info("Training mode \"{}\" already found. Please change your training type".format(args.input_type))
 
-    vocabulary = defaultdict(int)
-    word_counters = defaultdict(int)
     word_cooccurrences=defaultdict(lambda: defaultdict(int))
-    soon_to_become_past_sentence = []
-    return vocabulary, word_counters, word_cooccurrences, soon_to_become_past_sentence
 
-def train_current_word(vocabulary, word_counters, word_cooccurrences, args, corpus, word_index, word, stopwords):
+    return word_cooccurrences, current_output_folder
 
-    current_word = word
+#def train_current_word(reduced_vocabulary, vocabulary, word_cooccurrences, args, corpus, word_index, current_word):
 
-    ### Inizialization of a new word: if the word has not been encountered yet, it is added to the vocabulary
-    if current_word not in vocabulary.keys():
-        vocabulary[current_word]=len(vocabulary.keys())
+    ### Initialization of a new word: if the word has not been encountered yet, it is added to the vocabulary
 
-    word_counters[current_word] += 1
+    #current_word_index = vocabulary[current_word]
 
-    current_word_index = vocabulary[current_word]
+    #window_start = 1
 
-    window_start = 1
-
-    while window_start <= args.window_size:
+    #if window_start <= args.window_size:
 
         ### Positive window word, notice the +
 
-        other_word_positive = corpus[word_index + window_start] 
+        #other_word_positive = corpus[word_index + window_start] 
+        
+        #if other_word_positive in reduced_vocabulary:
+               
+            #other_word_positive_index = vocabulary[other_word_positive]
 
-        if other_word_positive not in vocabulary.keys():
-            vocabulary[other_word_positive] = len(vocabulary.keys())
-           
-        other_word_positive_index = vocabulary[other_word_positive]
-
-        word_cooccurrences[current_word_index][other_word_positive_index] += 1
+            #word_cooccurrences[current_word_index][other_word_positive_index] += 1
 
         ### Symmetric negative window word, notice the -
 
-        other_word_negative = corpus[word_index - window_start] 
+        #other_word_negative = corpus[word_index - window_start] 
 
-        if other_word_negative not in vocabulary.keys():
-            vocabulary[other_word_negative] = len(vocabulary.keys())
-           
-        other_word_negative_index = vocabulary[other_word_negative]
+        #if other_word_negative in reduced_vocabulary:
 
-        word_cooccurrences[current_word_index][other_word_negative_index] += 1
+            #other_word_negative_index = vocabulary[other_word_negative]
 
-        ### Adding + 1, thus moving 1 further away from the word at hand
+            #word_cooccurrences[current_word_index][other_word_negative_index] += 1
 
-        window_start += 1
+            ### Adding + 1, thus moving 1 further away from the word at hand
 
-    return vocabulary, word_counters, word_cooccurrences
+        #window_start += 1
 
-class Corpus(object):
-    def __init__(self, args):
-        self.filedir = args.filedir
-        self.files = [os.path.join(root, name) for root, dirs, files in os.walk(args.filedir) for name in files]
-        self.length = len(self.files)
-        
-    def __iter__(self):
+    #return word_cooccurrences
 
-        for individual_file in self.files: 
-            logging.info(individual_file)
-
-            training_lines = open(individual_file).readlines()
-            length = len(training_lines)
-            #training_part = [line.strip(' ') for line in training_part if line != ' ']
-            #training_part = [word.lower() for line in training_part for word in line.split()]
-            #yield training_part
-            for line in training_lines:
-                line = re.sub('\W+|_+|[0-9]+', ' ', line)  
-                line = re.sub('\s+', ' ', line)  
-                line = [word.lower() for word in line.split()]
-                yield line, length
-                
         
 logging.basicConfig(format='%(asctime)s - %(message)s', level = logging.INFO)
 
+parser=argparse.ArgumentParser()
+parser.add_argument('--input_type', type=str, help = 'name of the dataset used for creating the word representations')
+parser.add_argument('--filedir', type=str, help='Directory where the corpus files to be used for training are stored')
+parser.add_argument('--window_size', type=int, default=5)
+#parser.add_argument('--vector_size', type=int, default=1024, help='amount of words to be kept as columns of the matrix, according to their frequency')
+parser.add_argument('--character', type=str, dest='character', required=False, default='house')
+parser.add_argument('--write_to_file', required=False, action='store_true')
+parser.add_argument('--print_results', required=False, action='store_true')
+parser.add_argument('--number_similarities', type=int, default=20)
+parser.add_argument('--spacy_sentence_up', type = bool, default = False)
+parser.add_argument('--minimum_count', type=int, default=500)
+parser.add_argument('--clean_wikipedia', required=False, type=str)
+parser.add_argument('--load_files', action='store_true')
 
 ### Testing
 
-parser=argparse.ArgumentParser()
-parser.add_argument('input_type', type=str, help = 'name of the dataset used for creating the word representations')
-parser.add_argument('filedir', type=str, help='Absolute path to directory containing the files to be used for training')
-parser.add_argument('window_size', type=int, default=5)
-parser.add_argument('vector_size', type=int, default=1024, help='amount of words to be kept as columns of the matrix, according to their frequency')
-parser.add_argument('--character', type=str, default='house')
-parser.add_argument('--write_to_file', type=bool, default=False)
-parser.add_argument('--logging.info_results', type=bool, default=True)
-parser.add_argument('--number_similarities', type=int, default=20)
-parser.add_argument('--spacy_sentence_up', type = bool, default = False)
-parser.add_argument('--minimum_count', type = int, default = 300)
+args = parser.parse_args()
 
-args=parser.parse_args()
+logging.info('Starting the basic count model training')
 
-training_parts = Corpus(args)
+if args.clean_wikipedia:
+    logging.info('Cleaning up Wikipedia')
+    args.filedir = clean_wikipedia(args.filedir, args.clean_wikipedia)
 
-training_length = training_parts.length
+training_parts = Corpus(args.filedir)
 
-outputs = [round(value) for value in numpy.linspace(0, training_length, 100)]
-outputs_dictionary = defaultdict(int)
-for percentage, sentence_number in enumerate(outputs):
-    outputs_dictionary[sentence_number] = percentage
+word_cooccurrences, current_output_folder = initialize_count_model(args)
 
-if args.write_to_file == True:
-    cwd = os.getcwd()
-    try:
-        current_output_folder='{}/count_models/count_{}'.format(cwd, args.input_type)
-        os.makedirs(current_output_folder)
-    except FileExistsError:
-        logging.info("Training mode \"{}\" already found. Please change your training type".format(args.input_type))
+if args.load_files:
 
-stopwords = stopwords()
+    logging.info('Loading the vocabulary from file')
+    vocabulary_file =open('{}/count_{}_vocabulary_trimmed.pickle'.format(current_output_folder, args.input_type), 'rb')
+    vocabulary = pickle.load(vocabulary_file)
+    vocabulary_file.close()
 
-vocabulary, word_counters, word_cooccurrences, soon_to_become_past_sentence = initialize_count_model()
-logging.info('Count model initialized, started training...')
+    #logging.info('Loading the cooccurrences from file')
+    #word_cooccurrences_file = open('{}/count_{}_cooccurrences.pickle'.format(current_output_folder, args.input_type), 'rb')
+    #word_cooccurrences = pickle.load(word_cooccurrences_file)
+    #word_cooccurrences_file.close()
+else:
 
-sentence_index = 0
+    logging.info('Now creating the reduced vocabulary from scratch...')
 
-for corpus, length in training_parts:
+    vocabulary = ReducedVocabulary(training_parts, args.minimum_count).to_dict()
 
-    sentence_index += 1
-    step = length / 100
-    length_dictionaries = { v : k for k, v in enumerate(range(1, round((length/100)*100), round(length / 100)))}
-    if sentence_index in length_dictionaries.keys():
-        logging.info('Current at {} / 100 of the training'.format(length_dictionaries[sentence_index])) 
+    reduced_vocabulary = vocabulary.keys()
 
-    corpus_length = len(corpus)
-    #logging.info(corpus)
+    logging.info('Reduced vocabulary size: {} words'.format(len(reduced_vocabulary)))
 
-    for word_index, word in enumerate(corpus):
+    logging.info('Count model initialized, started training...')
 
-        ### Collection of the window words which will be summed to the other ones
-        if word_index >= args.window_size and (word_index + args.window_size +1) <= corpus_length:
+    if args.write_to_file:
+        logging.info('Writing to file the reduced vocabulary, for quicker training in other trials')
+        with open('{}/count_{}_vocabulary_trimmed.pickle'.format(current_output_folder, args.input_type), 'wb') as reduced_vocabulary_dict:
+            pickle.dump(vocabulary, reduced_vocabulary_dict)
 
-            vocabulary, word_counters, word_cooccurrences = train_current_word(vocabulary, word_counters, word_cooccurrences, args, corpus, word_index, word, stopwords)
+    for line in training_parts:
 
-#if args.write_to_file == True:
-    #with open('{}/count_{}_vocabulary.pickle'.format(current_output_folder, args.input_type), 'wb') as count_vocabulary:
-        #pickle.dump(vocabulary, count_vocabulary)
+        #line_length = len(line)
 
-    #with open('{}/count_{}_word_cooccurrences.pickle'.format(current_output_folder, args.input_type), 'wb') as cooccurrences_dictionary:
-        #pickle.dump(word_cooccurrences, cooccurrences_dictionary)
+        for word_index, word in enumerate(line):
 
-    #with open('{}/count_{}_word_frequencies.pickle'.format(current_output_folder, args.input_type), 'wb') as frequencies_dictionary:
-        #pickle.dump(word_counters, frequencies_dictionary)
+            ### Collection of the window words which will be summed to the other ones
+            if word in reduced_vocabulary:
 
-### Selecting the most common words for the columns
+                word_cooccurrences = train_current_word(reduced_vocabulary, vocabulary, word_cooccurrences, args, line, word_index, word)
 
-trimmed_vocabulary = [freq_tuple[0] for freq_tuple in sorted(word_counters.items(), key = lambda kv: (kv[1], kv[0]), reverse = True) if freq_tuple[1] >= args.minimum_count and freq_tuple[0] not in stopwords()]
-
-### Taking away words if they don't reach a minimum count in the corpus
-#rows_vocabulary = {word : key for word, key in vocabulary.items() if word_counters[word] >= args.minimum_count}
+if args.write_to_file:
+    logging.info('Writing to file the cooccurrences vocabulary, for quicker training in other trials')
+    with open('{}/count_{}_cooccurrences.pickle'.format(current_output_folder, args.input_type), 'wb') as cooccurrences_dict:
+        pickle.dump(word_cooccurrences, cooccurrences_dict)
 
 ### Turning frequency counts into vectors
 
-word_vectors_as_lists = defaultdict(list)
+logging.info('Now creating the word vectors')
 
-for row_word, row_word_index in rows_vocabulary.items(): 
-    word_vectors_as_lists[row_word] = [word_cooccurrences[row_word_index][column_word_index] for word, column_word_index in columns_vocabulary.items()]
+rows_sparse_matrix = []
+columns_sparse_matrix = []
+cells_sparse_matrix = []
 
-word_vectors = {word : numpy.array(vector_as_list) for word, vector_as_list in word_vectors_as_lists.items()}
+for row_word_index in tqdm(word_cooccurrences): 
+    for column_word_index in word_cooccurrences[row_word_index]:
+        rows_sparse_matrix.append(row_word_index)
+        columns_sparse_matrix.append(column_word_index)
+        current_cooccurrence = word_cooccurrences[row_word_index][column_word_index]
+        cells_sparse_matrix.append(current_cooccurrence)
+
+shape_sparse_matrix = len(vocabulary)
+
+logging.info('Now building the sparse matrix')
+
+sparse_matrix_cooccurrences = csr_matrix((cells_sparse_matrix, (rows_sparse_matrix, columns_sparse_matrix)), shape = (shape_sparse_matrix, shape_sparse_matrix))
+
+logging.info('Now saving to file the sparse matrix')
+
+out_sparse_matrix = '{}/count_{}_sparse_matrix.npz'.format(current_output_folder, args.input_type)
+
+scipy.sparse.save_npz(out_sparse_matrix, sparse_matrix_cooccurrences)
+
+#word_vectors = {word_index : numpy.array(vector_as_list) for word_index, vector_as_list in word_vectors_as_lists.items()}
 
 ### Printing out top similarities for a query
 
-if args.print_results == True:
-    top_similarities(args.character, rows_vocabulary, word_vectors, args.number_similarities)
+#if args.print_results == True:
+    #top_similarities(args.character, vocabulary, word_vectors, args.number_similarities)
 
 ### Saving to file
 
-if args.write_to_file == True:
+#logging.info('Now writing to file the word vectors')
 
-    numpy.save('{}/count_{}_vectors.npy'.format(current_output_folder, args.input_type), word_vectors)
+#if args.write_to_file == True:
 
-    with open('{}/count_{}_vocabulary_trimmed.pickle'.format(current_output_folder, args.input_type), 'wb') as count_vocabulary_trimmed:
-        pickle.dump(vocabulary_trimmed, count_vocabulary_trimmed)
+    #numpy.save('{}/count_{}_vectors.npy'.format(current_output_folder, args.input_type), word_vectors)
 
-    with open('{}/count_{}_columns.pickle'.format(current_output_folder, args.input_type), 'wb') as columns_pickle:
-        pickle.dump(columns_pickle, columns)
+logging.info('Finished with training the background space for window size: {}'.format(args.window_size))

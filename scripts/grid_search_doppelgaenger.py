@@ -16,7 +16,7 @@ numpy.seterr(all='raise')
 parser=argparse.ArgumentParser()
 parser.add_argument('--training_mode', required=True, type = str, help = 'Specify the name of the training type, which should also correspond to the first part of the folder name')
 parser.add_argument('--make_plots', required=False, action='store_true')
-parser.add_argument('--bert_layer', required=False, type=str, default=13)
+parser.add_argument('--bert_layer', required=False, type=str, default=12)
 args = parser.parse_args()
 
 #from matplotlib import rcParams
@@ -27,7 +27,7 @@ cwd=os.getcwd()
 big='{}/{}_test_novels'.format(cwd, args.training_mode)
 
 if args.make_plots:
-    if args.training_mode == 'bert':
+    if 'bert' in args.training_mode:
         output_folder='{}_layer_{}_doppelgaenger_test_plots'.format(args.training_mode, args.bert_layer)
     else:
         output_folder='{}_doppelgaenger_test_plots'.format(args.training_mode)
@@ -72,7 +72,7 @@ for setup in os.listdir(big):
         ambiguities_counter=[]
         characters_frequency=[]
         base_novel = novel
-        if args.training_mode == 'bert':
+        if 'bert' in args.training_mode:
             novel = '{}/layer_{}'.format(novel, args.bert_layer)
         base_folder=os.listdir('{}/{}/{}'.format(big, setup, base_novel))
         novel_folder=os.listdir('{}/{}/{}'.format(big, setup, novel))
@@ -139,12 +139,12 @@ for setup in os.listdir(big):
     average_mean=numpy.median(list_var_mean)
     var_mean=numpy.var(list_var_mean)
     average_characters=int(round(numpy.mean(characters)))
-    if average_characters>14.0:
-        print('Setup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
+    if average_characters>1.0:
+        print('\nSetup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}\n'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
 
         if args.make_plots:
             results_output=open('{}/doppel_results_{}.txt'.format(output_folder, setup),'w')
-            results_output.write('Setup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
+            results_output.write('\nSetup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}\n'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
         if ambiguities_present==True:
             if len(ambiguities.keys())>0 and total_evaluations_runs_counter==0:
                 ambiguity_percentages=[]
