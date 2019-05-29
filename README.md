@@ -20,6 +20,6 @@ The final goal is to be able to generate a faithful semantic representation for 
 
 | TRAINING MODE | PROPER NOUNS |
 | --- | --- |
-| _**Count**_ | 0.000 - **0.00** |
-| _**Bert**_ | **0.577** - 2.0 |
+| _**Count**_ | 0.371 - 6.0 |
+| _**Bert**_ | **0.577** - **2.0** |
 | _**Character2Vec**_ | 0.353 - 5.5 |
