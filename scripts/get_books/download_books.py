@@ -3,7 +3,7 @@ import os
 import re
 import sys
 
-folder=sys.argv[1]
+folder=sys.argv[2]
 
 filename=open('scripts/get_books/lists/books_list.txt').readlines()
 #filename=open('scripts/get_books/lists/grid_search_books_list.txt').readlines()

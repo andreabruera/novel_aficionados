@@ -17,8 +17,8 @@ for SIX_NOVELS in $(ls ${DOWNLOADED_NOVELS_FOLDER});
     echo 'Created folder: '${TRAINING_FOLDER}
     for novel in $(ls ${DOWNLOADED_NOVELS_FOLDER}/${SIX_NOVELS});
         do
-        cp -r ${novel} ${TRAINING_FOLDER}/
-        ./bash_scripts/prova_${TRAINING_MODE}_individuale.sh ${TRAINING_FOLDER} ${NOVEL_FOLDER} &   
+        cp -r ${DOWNLOADED_NOVELS_FOLDER}/${SIX_NOVELS}/${novel} ${TRAINING_FOLDER}/
+        ./bash_scripts/prova_${TRAINING_MODE}_individuale.sh ${TRAINING_FOLDER} ${novel} &   
         done
     wait
     done

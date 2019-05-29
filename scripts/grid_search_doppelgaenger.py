@@ -66,6 +66,7 @@ for setup in os.listdir(big):
 
     ambiguities={}
     ambiguities_present=False
+    marker=False
     
     for novel in setup_folder:
         sentences_counter=[]
@@ -79,59 +80,64 @@ for setup in os.listdir(big):
         for single_file in novel_folder:
             if 'evaluation' in single_file:
                 evaluation=open('{}/{}/{}/{}'.format(big, setup, novel, single_file)).readlines()
-                line1=evaluation[0].strip('\n').split('\t')[1]
-                line2=evaluation[1].strip('\n').split('\t')[1]
-                line3=evaluation[2].strip('\n').split('\t')[1]
-                line4=evaluation[3].strip('\n').split('\t')[1]
-                #mrr+=float(line1)
-                #median+=float(line2)
-                list_var_mrr.append(float(line1))
-                list_var_median.append(float(line2))
-                list_var_mean.append(float(line3))
-                plot_median[setup].append(float(line2))
-                plot_mrr[setup].append(float(line1))
-                #characters+=int(line3)
-                characters.append(int(line4))
-        for single_file in base_folder:
-            if 'character' in single_file and 'ender' not in single_file:
-                characters_file=open('{}/{}/{}/{}'.format(big, setup, base_novel, single_file)).readlines()
-                for l in characters_file:
-                    l=l.split('\t') 
-                    l=int(l[0])
-                    if l>=10:
-                        characters_frequency.append(l)
-            if 'data_output' in single_file:
-                data_output_filenames=os.listdir('{}/{}/{}/data_output'.format(big, setup, base_novel))
-                if 'ambiguities' in data_output_filenames:
-                    ambiguities_present=True
-                    ambiguities_filenames=os.listdir('{}/{}/{}/data_output/ambiguities'.format(big, setup, base_novel))
-                    for ambiguity in ambiguities_filenames:
-                        current_ambiguity=open('{}/{}/{}/data_output/ambiguities/{}'.format(big, setup, base_novel, ambiguity)).readlines()
-                        for character_line in current_ambiguity:
-                            if 'too: ' in character_line:
-                                character_line=character_line.strip('\n').split('too: ')[1]
-                                character_ambiguity=character_line.split(' out of ')[0]
-                                sent=character_line.split(' out of ')[1].strip('\n').replace(' sentences', '')
-                                ambiguities_counter.append(int(character_ambiguity))
-                                sentences_counter.append(int(sent))
-            if numpy.sum(sentences_counter)==0:
-                ambiguities_present=False
-        if ambiguities_present==True:
-            novel_ambiguity=numpy.sum(ambiguities_counter)
-            total_sentences=numpy.sum(sentences_counter)
-            percentage=round((float(novel_ambiguity)*100.0)/float(total_sentences), 2)
-            ambiguities[novel]=[novel_ambiguity, total_sentences, percentage]   
+                if len(evaluation)>1:
+                    marker=True
+                if marker==True:
+                    line1=evaluation[0].strip('\n').split('\t')[1]
+                    line2=evaluation[1].strip('\n').split('\t')[1]
+                    line3=evaluation[2].strip('\n').split('\t')[1]
+                    line4=evaluation[3].strip('\n').split('\t')[1]
+                    #mrr+=float(line1)
+                    #median+=float(line2)
+                    list_var_mrr.append(float(line1))
+                    list_var_median.append(float(line2))
+                    list_var_mean.append(float(line3))
+                    plot_median[setup].append(float(line2))
+                    plot_mrr[setup].append(float(line1))
+                    #characters+=int(line3)
+                    characters.append(int(line4))
+        
+        if marker==True:
+            for single_file in base_folder:
+                if 'character' in single_file and 'ender' not in single_file:
+                    characters_file=open('{}/{}/{}/{}'.format(big, setup, base_novel, single_file)).readlines()
+                    for l in characters_file:
+                        l=l.split('\t') 
+                        l=int(l[0])
+                        if l>=10:
+                            characters_frequency.append(l)
+                if 'data_output' in single_file:
+                    data_output_filenames=os.listdir('{}/{}/{}/data_output'.format(big, setup, base_novel))
+                    if 'ambiguities' in data_output_filenames:
+                        ambiguities_present=True
+                        ambiguities_filenames=os.listdir('{}/{}/{}/data_output/ambiguities'.format(big, setup, base_novel))
+                        for ambiguity in ambiguities_filenames:
+                            current_ambiguity=open('{}/{}/{}/data_output/ambiguities/{}'.format(big, setup, base_novel, ambiguity)).readlines()
+                            for character_line in current_ambiguity:
+                                if 'too: ' in character_line:
+                                    character_line=character_line.strip('\n').split('too: ')[1]
+                                    character_ambiguity=character_line.split(' out of ')[0]
+                                    sent=character_line.split(' out of ')[1].strip('\n').replace(' sentences', '')
+                                    ambiguities_counter.append(int(character_ambiguity))
+                                    sentences_counter.append(int(sent))
+                if numpy.sum(sentences_counter)==0:
+                    ambiguities_present=False
+            if ambiguities_present==True:
+                novel_ambiguity=numpy.sum(ambiguities_counter)
+                total_sentences=numpy.sum(sentences_counter)
+                percentage=round((float(novel_ambiguity)*100.0)/float(total_sentences), 2)
+                ambiguities[novel]=[novel_ambiguity, total_sentences, percentage]   
 
-        original_file=os.listdir('{}/{}/{}/original_novel'.format(big, setup, base_novel))
-        open_file=open('{}/{}/{}/original_novel/{}'.format(big, setup, base_novel, original_file[0])).read()
-        open_file=sub(r'\W+', ' ', open_file)
-        open_file=open_file.split(' ')
-        novel_length=len(open_file)
-        lengths[setup].append(novel_length)
-        names[setup].append(novel)
-        characters_dict[setup].append(int(line4))
-        std_characters_frequency=numpy.std(characters_frequency)
-        characters_std[setup].append(std_characters_frequency)
+            original_file=os.listdir('{}/{}/{}/original_novel'.format(big, setup, base_novel))
+            open_file=open('{}/{}/{}/original_novel/{}'.format(big, setup, base_novel, original_file[0])).read()
+            open_file=sub(r'\W+', ' ', open_file)
+            open_file=open_file.split(' ')
+            novel_length=len(open_file)
+            lengths[setup].append(novel_length)
+            names[setup].append(novel)
+            characters_dict[setup].append(int(line4))
+            std_characters_frequency=numpy.std(characters_frequency)
+            characters_std[setup].append(std_characters_frequency)
     average_mrr=numpy.median(list_var_mrr)
     var_mrr=numpy.var(list_var_mrr)
     average_median=numpy.median(list_var_median)
