@@ -13,7 +13,7 @@ The final goal is to be able to generate a faithful semantic representation for 
 | TRAINING MODE | PROPER NOUNS | COMMON NOUNS |
 | --- | --- | --- |
 | _**Count**_ |  -  |  -  |
-| _**Bert**_ |  -  |  -  |
+| _**Bert**_ (54) | 0.505 - 3.0 |  -  |
 | _**Character2Vec**_ |  -  |  -  |
 
 ### Make Quality First Again test:
@@ -29,7 +29,7 @@ The final goal is to be able to generate a faithful semantic representation for 
 | TRAINING MODE | PROPER NOUNS |
 | --- | --- |
 | _**Count**_ |  -  |
-| _**Bert**_ |  -  |
+| _**Bert**_ (54) |  0.621 -  1.75  |
 | _**Character2Vec**_ | - |
 
 
@@ -43,7 +43,7 @@ The final goal is to be able to generate a faithful semantic representation for 
 | _**Bert**_ | **0.482** - 3.5 | **0.926** - **1.0** |
 | _**Character2Vec**_ | 0.342 - 5.5 | 0.409 - 4.0 |
 
-### Doppelganger test - PROTOTYPE:
+### PROTOTYPE SETUP - Doppelganger test:
 
 | TRAINING MODE | PROPER NOUNS |
 | --- | --- |
