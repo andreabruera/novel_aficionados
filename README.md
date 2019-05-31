@@ -1,4 +1,4 @@
-# Fast mapping for learning semantic representations ofindividuals
+# Fast mapping for learning semantic representations of individuals
 
 By deploying different strategies (e.g.  attention, rehearsal) we are certainly ableto do in one shot what we usually call learning somebody’s name, which involves both storing important information precisely about that individual (e.g.  face features, voice, personality traits) and learning a unique name to go with this representation, which can be subsequently used to retrieve that bundle of semantic information when we need it e.g. when recognizing or describing that individual.  Ideally, fast mapping should allow machine learning systems to dothe same, although this would have to be implemented by means of strategies which will be different from those used by humans, and specific to the chosen algorithm. Within this theoretical context, the aim of this work is to apply a fast mapping technique in order to obtain semantic information about individuals in novels - that is, semantic information about characters, by using the novels in which they appear:  since characters are lacking proper counterparts in the real world, their semantic information can only be extracted by means of the relevant texts.By human standards, learning a semantic representation for a character from a novel may not look like a fast mapping task, as novels are quite long.  However,by neural networks standards, novels constitute extremely small data. Therefore, this can be considered a machine learning-specific fast mapping task.
 
@@ -23,3 +23,11 @@ The final goal is to be able to generate a faithful semantic representation for 
 | _**Count**_ | 0.371 - 6.0 |
 | _**Bert**_ | **0.577** - **2.0** |
 | _**Character2Vec**_ | 0.353 - 5.5 |
+
+### Make Quality First Again test:
+
+| TRAINING MODE| PROPER NOUNS |
+| --- | --- |
+| _**Count**_ | ... - ... |
+| _**Bert**_ | 0.498 - 3.0 |
+| _**Character2Vec**_ | ... - ... |
