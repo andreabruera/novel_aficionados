@@ -12,9 +12,9 @@ The final goal is to be able to generate a faithful semantic representation for 
 
 | TRAINING MODE | PROPER NOUNS | COMMON NOUNS |
 | --- | --- | --- |
-| _**Count**_ |  -  |  -  |
-| _**Bert**_ (54) | 0.505 - 3.0 |  -  |
-| _**Character2Vec**_ |  -  |  -  |
+| _**Count**_ | - |  -  |
+| _**Bert**_ (54) | **0.505** - **3.0** |  -  |
+| _**Character2Vec**_ (59) | 0.335 - 4.5 |  -  |
 
 ### Make Quality First Again test:
 
