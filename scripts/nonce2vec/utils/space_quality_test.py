@@ -96,8 +96,8 @@ def sim_check(training_mode, model, vocabulary, men, SimLex):
                     p=model.wv.similarity(w1,w2)
 
                 elif training_mode == 'RI' or training_mode == 'count':
-                    vector_w1 = numpy.array(model[vocabulary[w1]])[0]
-                    vector_w2 = numpy.array(model[vocabulary[w2]])[0]
+                    vector_w1 = numpy.array(model[vocabulary[w1]][0].todense())
+                    vector_w2 = numpy.array(model[vocabulary[w2]][0].todense())
                     p = cosine_similarity(vector_w1, vector_w2)
 
                 if p > 0:

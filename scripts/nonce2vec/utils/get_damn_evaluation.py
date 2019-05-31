@@ -22,7 +22,7 @@ class NovelsEvaluation:
         self.ranks=[]
         self.disappearing_characters=[]
 
-    def bert_evaluation(self, folder, characters_vectors, *layers_number):
+    def bert_evaluation(self, folder, characters_vectors, *layers_number, wiki_novel=False):
         if len(layers_number) > 1:
             chosen_characters_vectors = defaultdict(torch.Tensor)
             for character, layers in characters_vectors.items():
@@ -39,22 +39,33 @@ class NovelsEvaluation:
             for layer in layers_indices: 
                 chosen_characters_vectors = {character_and_part : layers[layer] for character_and_part, layers in characters_vectors.items()}
             layer_number = layers_number
-        self.generic_evaluation(folder, chosen_characters_vectors, layer_number)
+        self.generic_evaluation(folder, chosen_characters_vectors, wiki_novel, layer_number)
 
-    def generic_evaluation(self, folder, characters_vectors, layer_number=None): 
+    def generic_evaluation(self, folder, characters_vectors, wiki_novel=False, layer_number=None): 
         
         reciprocal_ranks = self.reciprocal_ranks
         ranks = self.ranks
         disappearing_characters = self.disappearing_characters
 
         if layer_number == None:
-            evaluation_file=open('{}/evaluation_results.txt'.format(folder),'w')
-            similarities_file=open('{}/similarities_results.txt'.format(folder), 'w')
+            if wiki_novel==False:
+                evaluation_file=open('{}/evaluation_results.txt'.format(folder),'w')
+                similarities_file=open('{}/similarities_results.txt'.format(folder), 'w')
+            else:
+                evaluation_file=open('{}/wiki_evaluation_results.txt'.format(folder),'w')
+                similarities_file=open('{}/wiki_similarities_results.txt'.format(folder), 'w')
+                
         else:
-            folder = '{}/layer_{}'.format(folder, layer_number)
-            os.makedirs(folder)
-            evaluation_file=open('{}/evaluation_results.txt'.format(folder),'w')
-            similarities_file=open('{}/similarities_results.txt'.format(folder), 'w')
+            if wiki_novel==False:
+                folder = '{}/layer_{}'.format(folder, layer_number)
+                os.makedirs(folder, exist_ok=True)
+                evaluation_file=open('{}/evaluation_results.txt'.format(folder),'w')
+                similarities_file=open('{}/similarities_results.txt'.format(folder), 'w')
+            else:
+                folder = '{}/layer_{}'.format(folder, layer_number)
+                os.makedirs(folder, exist_ok=True)
+                evaluation_file=open('{}/wiki_evaluation_results.txt'.format(folder),'w')
+                similarities_file=open('{}/wiki_similarities_results.txt'.format(folder), 'w')
             
 
         for good_key, good_vector in characters_vectors.items():
@@ -102,3 +113,4 @@ class NovelsEvaluation:
         mean_rank=numpy.mean(ranks)
 
         evaluation_file.write('MRR:\t{}\nMedian rank:\t{}\nMean rank:\t{}\nTotal number of characters considered:\t{}\n'.format(MRR, median_rank, mean_rank, len(sorted_simil_list)+1)) 
+

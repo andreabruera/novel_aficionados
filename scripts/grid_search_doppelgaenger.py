@@ -78,6 +78,7 @@ for setup in os.listdir(big):
         base_folder=os.listdir('{}/{}/{}'.format(big, setup, base_novel))
         novel_folder=os.listdir('{}/{}/{}'.format(big, setup, novel))
         for single_file in novel_folder:
+            marker=False
             if 'evaluation' in single_file:
                 evaluation=open('{}/{}/{}/{}'.format(big, setup, novel, single_file)).readlines()
                 if len(evaluation)>1:

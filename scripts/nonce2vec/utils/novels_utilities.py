@@ -169,13 +169,16 @@ def transform_characters_list(book_nlp_output_folder, folder, number):
     out.close()
     print('Created the list of the characters, and written it to file')
 
-def cleanup_novels(char_list, lines, out, write_to_file):
+def cleanup_novels(char_list, lines, out, write_to_file, wiki_novel=False):
     current_char_list = []
     full_novel = []
     print('Trimming the novels, so as to take away all new words except the characters...')
     
     for line in lines:
         line=line.strip('\n').lower()
+        if wiki_novel==True:
+            line=sub('\W+', ' ', line)
+            line=sub('\s+', ' ', line) 
         line=sub(r'[^\w\s]', '', line)
         if 'chapter' not in line and 'gutenberg' not in line and 'email' not in line and 'copyright' not in line and 'ebook' not in line and 'http' not in line and 'online' not in line: 
 
@@ -232,15 +235,19 @@ def prepare_for_n2v(folder, number, filename, w2v_model=None, write_to_file=Fals
     if wiki_novel==False:
         filename=filename.replace('_clean.txt_','_')
     else:
-        filename='{}/quality_test/original_text/{}.txt'.format(folder, number)
+        filename='{}/original_wikipedia_page/{}.txt'.format(folder, number)
 
-    transform_characters_list(book_nlp_output_folder, folder, number)
+    if wiki_novel==False:
+        transform_characters_list(book_nlp_output_folder, folder, number)
 
     ########   STEP 3: creating a list of characters from that file, by using a function in nonce2vec.utils.novels_utilities
 
     char_list=get_characters_list(folder, number)
 
-    genders_dict=get_characters_gender(folder, number, char_list)
+    if wiki_novel==False:
+        genders_dict=get_characters_gender(folder, number, char_list)
+    else:
+        genders_dict={}
 
     ########   STEP 4: loading the model created with Word2Vec, in order to access its vocabulary
     if wiki_novel==False:
@@ -262,7 +269,10 @@ def prepare_for_n2v(folder, number, filename, w2v_model=None, write_to_file=Fals
         lines=open('{}'.format(filename)).readlines()
         out=open('{}_n2v'.format(filename),'w')
 
-    current_char_list, full_novel = cleanup_novels(char_list, lines, out, write_to_file)
+    if wiki_novel==False:
+        current_char_list, full_novel = cleanup_novels(char_list, lines, out, write_to_file)
+    else:
+        current_char_list, full_novel = cleanup_novels(char_list, lines, out, write_to_file, wiki_novel=True)
 
     if wiki_novel==False:
         novel_versions={}
@@ -316,16 +326,21 @@ def prepare_for_bert(folder, number, filename, write_to_file=False, wiki_novel=F
     if wiki_novel==False:
         filename=filename.replace('_clean.txt_','_')
     else:
-        filename='{}/quality_test/original_text/{}.txt'.format(folder, number)
+        filename='{}/original_wikipedia_page/{}.txt'.format(folder, number)
 
-    transform_characters_list(book_nlp_output_folder, folder, number)
+
+    if wiki_novel == False:
+        transform_characters_list(book_nlp_output_folder, folder, number)
 
 
     ########   STEP 3: creating a list of characters from that file, by using a function in nonce2vec.utils.novels_utilities
 
     char_list=get_characters_list(folder, number)
 
-    genders_dict=get_characters_gender(folder, number, char_list)
+    if wiki_novel == False:
+        genders_dict=get_characters_gender(folder, number, char_list)
+    else:
+        genders_dict={}
 
     ########    STEP 5: creating the final version of the txt to be used for training on N2V. Main features are 1) one sentence per line, 2) different names for the same character are substituted with one single name, 3) punctuation is removed and double/triple backspaces, common within Gutenberg files, are removed
     
@@ -338,7 +353,11 @@ def prepare_for_bert(folder, number, filename, write_to_file=False, wiki_novel=F
         lines=open('{}'.format(filename)).readlines()
         out=open('{}_bert'.format(filename),'w')
 
-    current_char_list, full_novel = cleanup_novels(char_list, lines, out, write_to_file)
+    if wiki_novel == False:
+        current_char_list, full_novel = cleanup_novels(char_list, lines, out, write_to_file)
+    else:
+        current_char_list, full_novel = cleanup_novels(char_list, lines, out, write_to_file, wiki_novel=True)
+
 
     if wiki_novel==False:
         novel_versions={}
@@ -346,10 +365,10 @@ def prepare_for_bert(folder, number, filename, write_to_file=False, wiki_novel=F
 
         novel_versions['{}_part_a'.format(filename)]=full_novel[:mid_novel]
         novel_versions['{}_part_b'.format(filename)]=full_novel[mid_novel:]
-        return novel_versions, current_char_list, genders_dict 
     elif wiki_novel==True:
         novel_versions=full_novel
-        return novel_versions, current_char_list, genders_dict 
+
+    return novel_versions, current_char_list, genders_dict 
 
 ###############################################################
 

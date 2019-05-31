@@ -40,9 +40,11 @@ if args.training_mode == 'count' or args.training_mode == 'RI':
                 model = load_npz(os.path.join(root, single_file))
                 if args.ppmi:
                     model = ppmi(model)
-                    model = model.todense()
+                    #model = model.todense()
                 else:
-                    model = load_npz(os.path.join(root, single_file)).todense()
+                    #model = load_npz(os.path.join(root, single_file)).todense()
+                    #model = load_npz(os.path.join(root, single_file))
+                    pass
 
 men = '{}/men.txt'.format(args.men_999)
 SimLex = '{}/SimLex-999.txt'.format(args.men_999)

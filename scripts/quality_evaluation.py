@@ -11,45 +11,26 @@ from nonce2vec.utils.novels_utilities import *
 from numpy import dot,sqrt,sum,linalg
 from math import sqrt
 
-def normalise(v):
-    norm = numpy.linalg.norm(v)
-    if norm == 0:
-        return v
-    v = v / norm
-    #print(sum([i*i for i in v]))
-    return v
+parser=argparse.ArgumentParser()
+parser.add_argument('--training_folder', type=str, required = True)
+args=parser.parse_args()
 
-def norm(value):
-    v=float(value)
-    norm=v / numpy.sqrt((numpy.sum(v**2)))
-    return float(norm)
-
-def _cosine_similarity(peer_v, query_v):
-    if len(peer_v) != len(query_v):
-        raise ValueError('Vectors must be of same length')
-    num = numpy.dot(peer_v, query_v)
-    den_a = numpy.dot(peer_v, peer_v)
-    den_b = numpy.dot(query_v, query_v)
-    return num / (math.sqrt(den_a) * math.sqrt(den_b))
-
-#parser=argparse.ArgumentParser()
-#parser.add_argument('folder')
-#args=parser.parse_args()
-#output_folders=os.listdir(folder)
-
-output_folders=[names for names in os.listdir('quality_test_novels') if 'Brothers' not in names]
+output_folders=[names for names in os.listdir(args.training_folder)]
 
 for setup_folder in output_folders:
+
+    current_folder='{}/{}'.format(args.training_folder, setup_folder)
+    data_output_folder='{}/data_output/MQFA_test'.format(current_folder)
     
-    novels_folders=[names for names in os.listdir('quality_test_novels/{}'.format(setup_folder)) if 'Brothers' not in names]
+    #novels_folders=[names for names in os.listdir(current_folder)]
 
     wiki=[]
-    for root, name, files in os.walk('quality_test_novels/{}'.format(setup_folder)):
+    for root, name, files in os.walk(current_folder):
         for f in files:
-            if 'pickle' in f and 'Brothers' not in root:
+            if 'pickle' in f:
                 wiki.append(os.path.join(root,f))
 
-    n2v_folders=[names for names in os.listdir('plot_folders') if 'Brothers' not in names]
+    n2v_folders=[names for names in os.listdir('plot_folders')]
 
     for n2v_folder in n2v_folders:
         if 'sum' in n2v_folder:
