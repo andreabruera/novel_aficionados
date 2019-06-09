@@ -24,15 +24,6 @@ The final goal is to be able to generate a faithful semantic representation for 
 | _**Bert**_ | 0.498 - 3.0 |
 | _**Character2Vec**_ | 0.340 - 5.0 |
 
-### PROTOTYPE SETUP - Doppelganger test:
-
-| TRAINING MODE | PROPER NOUNS |
-| --- | --- |
-| _**Count**_ (58) | 0.319 - 5.0 |
-| _**Bert**_ (54) |  **0.621** -  **1.75**  |
-| _**Character2Vec**_ |  0.348 - 5.5  |
-
-
 ## Results on 12 novels:
 
 ### Doppelganger test:
