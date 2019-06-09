@@ -10,11 +10,11 @@ The final goal is to be able to generate a faithful semantic representation for 
 
 ### Doppelganger test:
 
-| TRAINING MODE | PROPER NOUNS | COMMON NOUNS |
-| --- | --- | --- |
-| _**Count**_ | 0.432 - 4.0 |  0.574 -  2.0 |
-| _**Bert**_ (54) | **0.505** - **3.0** |  **0.935** - **1.0**  |
-| _**Character2Vec**_ (59) | 0.335 - 4.5 |  0.341 - 4.5  |
+| TRAINING MODE | PROPER NOUNS | PROPER NOUNS + PROTOYPE | COMMON NOUNS |
+| --- | --- | --- | --- |
+| _**Count**_ | 0.432 - 4.0 | 0.319 - 5.0 |  0.574 -  2.0 |
+| _**Bert**_ (54) | **0.505** - **3.0** | **0.621** -  **1.75** |  **0.935** - **1.0**  |
+| _**Character2Vec**_ (59) | 0.335 - 4.5 | 0.348 - 5.5 |  0.341 - 4.5  |
 
 ### Make Quality First Again test:
 
