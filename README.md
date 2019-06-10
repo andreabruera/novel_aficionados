@@ -22,7 +22,7 @@ The final goal is to be able to generate a faithful semantic representation for 
 | --- | --- | --- |
 | _**Count**_ | **0.544** - **2.5** | - |
 | _**Bert**_ | 0.498 - 3.0 | **0.630** - **1.5** |
-| _**Character2Vec**_ | 0.340 - 5.0 | - |
+| _**Character2Vec**_ | 0.340 - 5.0 | 0.369 - 4.5 |
 
 ## Results on 12 novels:
 
