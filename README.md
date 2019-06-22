@@ -14,7 +14,7 @@ The final goal is to be able to generate a faithful semantic representation for 
 | --- | --- | --- | --- |
 | _**Count**_ | 0.432 - 4.0 | 0.319 - 5.0 |  0.712 -  1.0 |
 | _**Bert**_ (54) | **0.505** - **3.0** | **0.621** -  **1.75** |  **0.935** - **1.0**  |
-| _**Character2Vec**_ (59) | 0.335 - 4.5 | 0.348 - 5.5 |  0.369 - 4.5  |
+| _**Character2Vec**_ (59) | 0.335 - 4.5 | 0.332 - 4.75 |  0.369 - 4.5  |
 
 ### Make Quality First Again test:
 
