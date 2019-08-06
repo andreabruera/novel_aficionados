@@ -30,7 +30,7 @@ echo 'Training on N2V on novel' ${BOOK_NUMBER}
 
 FULL_FOLDER=/mnt/cimec-storage-sata/users/andrea.bruera/novel_aficionados/${ORIGINAL_FOLDER}
 
-n2v test --on count_novels --model /mnt/cimec-storage-sata/users/andrea.bruera/novel_aficionados/count_models/count_wiki/count_wiki_cooccurrences.pickle --vocabulary /mnt/cimec-storage-sata/users/andrea.bruera/novel_aficionados/count_models/count_wiki/count_wiki_vocabulary_trimmed.pickle --folder ${FULL_FOLDER} --data ${BOOK_NUMBER} --window_size ${WINDOW_SIZE} --common_nouns --write_to_file > /dev/null 2>&1   
+n2v test --on count_novels --model /mnt/cimec-storage-sata/users/andrea.bruera/novel_aficionados/count_models/count_wiki_2/count_wiki_2_cooccurrences.pickle --vocabulary /mnt/cimec-storage-sata/users/andrea.bruera/novel_aficionados/count_models/count_wiki/count_wiki_vocabulary_trimmed.pickle --folder ${FULL_FOLDER} --data ${BOOK_NUMBER} --window_size ${WINDOW_SIZE} --common_nouns --write_to_file > /dev/null 2>&1   
 
 rm -r ${BOOK_NLP_OUTPUT_FOLDER}
 #rm -r ${TEMP_FOLDER}

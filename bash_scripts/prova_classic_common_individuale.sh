@@ -36,7 +36,7 @@ FULL_FOLDER=/mnt/cimec-storage-sata/users/andrea.bruera/novel_aficionados/${ORIG
 
 n2v test --on novels --model /mnt/cimec-storage-sata/users/andrea.bruera/wikiextractor/wiki_for_bert/wiki_w2v_2018_size300_window5_max_final_vocab250000_sg1 --folder ${FULL_FOLDER} --data ${BOOK_NUMBER} --alpha ${alpha} --neg 3 --window 15 --sample ${subsampling} --epochs 1 --lambda ${lambda} --sample-decay ${subsampling_decay} --window-decay 0 --men_dataset /mnt/cimec-storage-sata/users/andrea.bruera/novel_aficionados/men_999/men.txt --common_nouns --write_to_file > /dev/null 2>&1   
 
-rm -r ${BOOK_NLP_OUTPUT_FOLDER}
+#rm -r ${BOOK_NLP_OUTPUT_FOLDER}
 #rm -r ${TEMP_FOLDER}
-rm -r ${PROCESSED_NOVEL_FOLDER}
+#rm -r ${PROCESSED_NOVEL_FOLDER}
 echo 'All good with novel' ${BOOK_NUMBER}

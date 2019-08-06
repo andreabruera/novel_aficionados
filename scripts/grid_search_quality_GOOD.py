@@ -8,7 +8,6 @@ import scipy
 import matplotlib.pyplot as plt
 import argparse
 
-from collections import defaultdict
 from scipy import stats
 from re import sub
 
@@ -36,13 +35,19 @@ if args.make_plots:
 
 plot_median={}
 plot_mrr={}
-lengths= defaultdict(int)
+lengths={}
 names={}
 characters_dict={}
-characters_std = defaultdict(list)
+characters_std={}
 total_evaluations_runs_counter=0
 
 for setup in os.listdir(big):
+    
+    if 'sum' in setup:
+        setup_shorthand='sum'
+    else:
+        setup_shorthand='c2v'
+
 
     setup_folder=os.listdir('{}/{}'.format(big, setup))
     #median=[]
@@ -57,14 +62,13 @@ for setup in os.listdir(big):
     lengths[setup]=[]
     names[setup]=[]
     characters_dict[setup]=[]
-    #characters_std[setup]=[]
+    characters_std[setup]=[]
 
     ambiguities={}
     ambiguities_present=False
     marker=False
     
     for novel in setup_folder:
-        #print(novel)
         sentences_counter=[]
         ambiguities_counter=[]
         characters_frequency=[]
@@ -73,30 +77,29 @@ for setup in os.listdir(big):
             novel = '{}/layer_{}'.format(novel, args.bert_layer)
         base_folder=os.listdir('{}/{}/{}'.format(big, setup, base_novel))
         novel_folder=os.listdir('{}/{}/{}'.format(big, setup, novel))
-        marker=False
         for single_file in novel_folder:
-            if 'evaluation' in single_file and 'wiki' not in single_file:
+            marker=False
+            if 'evaluation' in single_file and 'wiki' in single_file:
                 evaluation=open('{}/{}/{}/{}'.format(big, setup, novel, single_file)).readlines()
-                #print(marker)
                 if len(evaluation)>1:
                     marker=True
-
+                if marker==True:
+                    line1=evaluation[0].strip('\n').split('\t')[1]
+                    line2=evaluation[1].strip('\n').split('\t')[1]
+                    line3=evaluation[2].strip('\n').split('\t')[1]
+                    line4=evaluation[3].strip('\n').split('\t')[1]
+                    #mrr+=float(line1)
+                    #median+=float(line2)
+                    list_var_mrr.append(float(line1))
+                    list_var_median.append(float(line2))
+                    list_var_mean.append(float(line3))
+                    plot_median[setup].append(float(line2))
+                    plot_mrr[setup].append(float(line1))
+                    #characters+=int(line3)
+                    characters.append(int(line4))
+        
         if marker==True:
-            line1=evaluation[0].strip('\n').split('\t')[1]
-            line2=evaluation[1].strip('\n').split('\t')[1]
-            line3=evaluation[2].strip('\n').split('\t')[1]
-            line4=evaluation[3].strip('\n').split('\t')[1]
-            #mrr+=float(line1)
-            #median+=float(line2)
-            list_var_mrr.append(float(line1))
-            list_var_median.append(float(line2))
-            list_var_mean.append(float(line3))
-            plot_median[setup].append(float(line2))
-            plot_mrr[setup].append(float(line1))
-            #characters+=int(line3)
-            characters.append(int(line4))
-            for single_file in novel_folder:
-
+            for single_file in base_folder:
                 if 'character' in single_file and 'ender' not in single_file:
                     characters_file=open('{}/{}/{}/{}'.format(big, setup, base_novel, single_file)).readlines()
                     for l in characters_file:
@@ -104,25 +107,6 @@ for setup in os.listdir(big):
                         l=int(l[0])
                         if l>=10:
                             characters_frequency.append(l)
-
-            original_file=os.listdir('{}/{}/{}/original_novel'.format(big, setup, base_novel))
-            open_file=open('{}/{}/{}/original_novel/{}'.format(big, setup, base_novel, original_file[0])).read()
-            open_file=sub(r'\W+', ' ', open_file)
-            open_file=open_file.split(' ')
-            novel_length=len(open_file)
-            lengths[setup].append(novel_length)
-            names[setup].append(novel)
-            characters_dict[setup].append(int(line4))
-            std_characters_frequency=numpy.std(characters_frequency)
-            #print(std_characters_frequency)
-            characters_std[setup].append(std_characters_frequency)
-        
-        else:
-            #print(novel)
-            pass
-        
-        if marker==True:
-            for single_file in base_folder:
                 if 'data_output' in single_file:
                     data_output_filenames=os.listdir('{}/{}/{}/data_output'.format(big, setup, base_novel))
                     if 'ambiguities' in data_output_filenames:
@@ -145,6 +129,16 @@ for setup in os.listdir(big):
                 percentage=round((float(novel_ambiguity)*100.0)/float(total_sentences), 2)
                 ambiguities[novel]=[novel_ambiguity, total_sentences, percentage]   
 
+            original_file=os.listdir('{}/{}/{}/original_novel'.format(big, setup, base_novel))
+            open_file=open('{}/{}/{}/original_novel/{}'.format(big, setup, base_novel, original_file[0])).read()
+            open_file=sub(r'\W+', ' ', open_file)
+            open_file=open_file.split(' ')
+            novel_length=len(open_file)
+            lengths[setup].append(novel_length)
+            names[setup].append(novel)
+            characters_dict[setup].append(int(line4))
+            std_characters_frequency=numpy.std(characters_frequency)
+            characters_std[setup].append(std_characters_frequency)
     average_mrr=numpy.median(list_var_mrr)
     var_mrr=numpy.var(list_var_mrr)
     average_median=numpy.median(list_var_median)
@@ -152,21 +146,8 @@ for setup in os.listdir(big):
     average_mean=numpy.median(list_var_mean)
     var_mean=numpy.var(list_var_mean)
     average_characters=int(round(numpy.mean(characters)))
-    #print(characters_std[setup])
     if average_characters>1.0:
-        setup_medians = [v for v in plot_median[setup] if v != []]
-        #print(setup_medians)
-        setup_lengths = [v for v in lengths[setup] if v != []]
-        #print(setup_lengths)
-        setup_chars = [v for v in characters_dict[setup] if v != []]
-        #print(len(setup_chars))
-        setup_std = [v for v in characters_std[setup]]
-        #print(len(setup_std))
-        spearman_lengths=round(scipy.stats.spearmanr(setup_lengths, setup_medians)[0],2) 
-        spearman_chars=round(scipy.stats.spearmanr(setup_chars, setup_medians)[0],2)
-        spearman_std = round(scipy.stats.spearmanr(setup_std, setup_medians)[0],2)
-        print('\nSetup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}\nCorrelation with length: {}\nCorrelation with number of characters: {}\nCorrelation with standard deviation of characters frequency: {}\n'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr), spearman_lengths, spearman_chars, spearman_std))
-        #print('\nSetup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}\n'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
+        print('\nSetup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}\n'.format(setup, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
 
         if args.make_plots:
             results_output=open('{}/doppel_results_{}.txt'.format(output_folder, setup),'w')

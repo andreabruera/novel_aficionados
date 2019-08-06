@@ -5,7 +5,7 @@
 TRAINING_MODE=$1
 NUMBER_NOVELS_AT_A_TIME=$2
 
-DOWNLOADED_NOVELS_FOLDER=dataset/novels/hundred_novels_by_${NUMBER_NOVELS_AT_A_TIME}
+DOWNLOADED_NOVELS_FOLDER=dataset/novels/hundred_novels_by_${NUMBER_NOVELS_AT_A_TIME}_wiki
 #DOWNLOADED_NOVELS_FOLDER=novels_by_6
 #mkdir ${DOWNLOADED_NOVELS_FOLDER}
 #echo 'Downloading books...'
@@ -18,8 +18,8 @@ for SIX_NOVELS in $(ls ${DOWNLOADED_NOVELS_FOLDER});
     echo 'Created folder: '${TRAINING_FOLDER}
     for novel in $(ls ${DOWNLOADED_NOVELS_FOLDER}/${SIX_NOVELS});
         do
-        cp -r ${DOWNLOADED_NOVELS_FOLDER}/${SIX_NOVELS}/${novel} ${TRAINING_FOLDER}/
-        ./bash_scripts/prova_${TRAINING_MODE}_individuale.sh ${TRAINING_FOLDER} ${novel} &   
+        cp -r ${DOWNLOADED_NOVELS_FOLDER}/${SIX_NOVELS}/${novel}/original_wikipedia_page ${TRAINING_FOLDER}/${novel}
+        ./bash_scripts/prova_${TRAINING_MODE}_wiki_individuale.sh ${TRAINING_FOLDER} ${novel} &   
         done
     wait
     done

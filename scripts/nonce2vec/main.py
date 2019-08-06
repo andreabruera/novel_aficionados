@@ -385,7 +385,7 @@ def main():
     parser_test.set_defaults(func=_test)
     ### NOVELS EDIT: added the dest for this argument, because it's needed for calling the novels model of N2V or the basic one
     parser_test.add_argument('--on', required=True,
-                             choices=['nonces', 'chimeras','novels','novel', 'wiki_count_novel', 'wiki_count_novels', 'wiki_novel','wiki_novels', 'wiki_bert_novels', 'wiki_bert_novel', 'bert_novels', 'count_novels'],
+                             choices=['nonces', 'chimeras','novels','novel', 'wiki_count_novel', 'wiki_count_novels', 'wiki_novel','wiki_novels', 'wiki_bert_novels', 'wiki_bert_novel', 'wiki_count_novels', 'wiki_count_novels', 'bert_novels', 'count_novels'],
                              help='type of test data to be used')
     parser_test.add_argument('--model', required=True,
                              dest='background',
@@ -1127,6 +1127,11 @@ def test_on_wiki_novel(args):
     
     version=novel_versions
 
+    if args.common_nouns:
+        with open('{}/data_output/{}.pickle'.format(args.folder, args.dataset), 'rb') as old_characters:
+            double_characters=pickle.load(old_characters)
+            current_char_list = [re.sub('_a', '', common_noun) for common_noun in double_characters.keys() if '_a' in common_noun]
+
     logger.info('Length of the characters list: {}\n Characters list: {}\n'.format(len(current_char_list), current_char_list))
 
 
@@ -1261,7 +1266,7 @@ def test_on_wiki_novel(args):
 
     with open('{}/data_output/{}.pickle'.format(args.folder, args.dataset), 'rb') as old_characters:
         double_characters=pickle.load(old_characters)
-        char_dict_wiki_evaluation=defaultdict(torch.Tensor)
+        char_dict_wiki_evaluation=defaultdict(numpy.ndarray)
         for char_name_wiki in char_dict.keys():
             char_name_clean=char_name_wiki.replace('_wiki', '')
             if '{}_a'.format(char_name_clean) in double_characters.keys():
@@ -1294,6 +1299,11 @@ def test_on_wiki_bert_novel(args):
     novel_versions, current_char_list, genders_dict = prepare_for_bert(args.folder, args.dataset, clean_novel_name, write_to_file=True, wiki_novel=True)
     
     version=novel_versions
+
+    if args.common_nouns:
+        with open('{}/data_output/{}.pickle'.format(args.folder, args.dataset), 'rb') as old_characters:
+            double_characters=pickle.load(old_characters)
+            current_char_list = [re.sub('_a', '', common_noun) for common_noun in double_characters.keys() if '_a' in common_noun]
 
     logger.info('Length of the characters list: {}\n Characters list: {}\n'.format(len(current_char_list), current_char_list))
 
@@ -1415,7 +1425,7 @@ def test_on_wiki_bert_novel(args):
 
 
 #########################################################################################
-'''
+
 def test_on_wiki_count_novel(args):
 
     nonce='[MASK]'
@@ -1433,15 +1443,6 @@ def test_on_wiki_count_novel(args):
 
     char_dict = defaultdict(list)
 
-    words_in_book = []
-    for part_key, part in novel_versions.items():
-        for sentence in part:
-            for word in sentence:
-                if word not in words_in_book:
-                    words_in_book.append(word)
-
-    logger.info('Length of the characters list: {}\n Characters list: {}\n'.format(len(current_char_list), current_char_list))
-
     final_char_list = []
 
     word_cooccurrences_file = open(args.background, 'rb')
@@ -1456,11 +1457,25 @@ def test_on_wiki_count_novel(args):
     vocabulary = dill.load(vocabulary_file)
     vocabulary_file.close()
 
+    reduced_vocabulary = vocabulary.keys()
+
     clean_novel_name='{}/original_wikipedia_page/{}.txt'.format(folder, args.dataset)
 
     novel_versions, current_char_list, genders_dict = prepare_for_bert(args.folder, args.dataset, clean_novel_name, write_to_file=True, wiki_novel=True)
     
     version=novel_versions
+
+    words_in_book = []
+    for sentence in version:
+        for word in sentence:
+            if word not in words_in_book:
+                words_in_book.append(word)
+
+    if args.common_nouns:
+        with open('{}/data_output/{}.pickle'.format(args.folder, args.dataset), 'rb') as old_characters:
+            double_characters=pickle.load(old_characters)
+            current_char_list = [re.sub('_a', '', common_noun) for common_noun in double_characters.keys() if '_a' in common_noun]
+    print(current_char_list)
 
     logger.info('Length of the characters list: {}\n Characters list: {}\n'.format(len(current_char_list), current_char_list))
 
@@ -1595,13 +1610,13 @@ def test_on_wiki_count_novel(args):
 
     with open('{}/data_output/{}.pickle'.format(args.folder, args.dataset), 'rb') as old_characters:
         double_characters=pickle.load(old_characters)
-        char_dict_wiki_evaluation=defaultdict(torch.Tensor)
+        char_dict_wiki_evaluation=defaultdict(numpy.ndarray)
         for char_name_wiki in char_dict.keys():
             char_name_clean=char_name_wiki.replace('_wiki', '')
             if '{}_a'.format(char_name_clean) in double_characters.keys():
-                char_dict_wiki_evaluation[char_name_wiki]=char_dict[char_name_wiki]
-                char_dict_wiki_evaluation['{}_novel'.format(char_name_clean)] = double_characters['{}_a'.format(char_name_clean)]
+                char_dict_wiki_evaluation['{}_novel'.format(char_name_clean)] = double_characters['{}_a'.format(char_name_clean)][0][:len(reduced_vocabulary)]
+                char_dict_wiki_evaluation[char_name_wiki]=char_dict[char_name_wiki][:len(char_dict_wiki_evaluation['{}_novel'.format(char_name_clean)])][0][:len(reduced_vocabulary)]
         evaluation = NovelsEvaluation()
-        evaluation.bert_evaluation(folder, char_dict_wiki_evaluation, 12, wiki_novel=True)
+        evaluation.generic_evaluation(folder, char_dict_wiki_evaluation, wiki_novel=True)
 
-'''
+

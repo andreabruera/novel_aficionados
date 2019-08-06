@@ -7,9 +7,7 @@ import re
 import scipy
 import matplotlib.pyplot as plt
 import argparse
-import collections
 
-from collections import defaultdict
 from scipy import stats
 from re import sub
 
@@ -35,11 +33,11 @@ if args.make_plots:
         output_folder='{}_doppelgaenger_test_plots'.format(args.training_mode)
     os.makedirs(output_folder, exist_ok=True)
 
-plot_median = defaultdict(float)
+plot_median={}
 plot_mrr={}
-lengths= defaultdict(int)
+lengths={}
 names={}
-characters_dict = defaultdict(int)
+characters_dict={}
 characters_std={}
 total_evaluations_runs_counter=0
 characters=[]
@@ -82,7 +80,7 @@ for novel in os.listdir(big):
     if 'bert' not in args.training_mode or 'layer_12' in base_folder: 
         novel_folder=os.listdir('{}/{}'.format(big, novel))
         for single_file in novel_folder:
-            if 'evaluation' in single_file and 'wiki' not in single_file:
+            if 'evaluation' in single_file and 'wiki' in single_file:
                 evaluation=open('{}/{}/{}'.format(big, novel, single_file)).readlines()
                 marker=False
                 if len(evaluation)>1:
@@ -97,7 +95,7 @@ for novel in os.listdir(big):
                     list_var_mrr.append(float(line1))
                     list_var_median.append(float(line2))
                     list_var_mean.append(float(line3))
-                    plot_median[novel_name] = float(line2)
+                    plot_median[novel_name].append(float(line2))
                     plot_mrr[novel_name].append(float(line1))
                     #characters+=int(line3)
                     characters.append(int(line4))
@@ -138,19 +136,15 @@ for novel in os.listdir(big):
             open_file=sub(r'\W+', ' ', open_file)
             open_file=open_file.split(' ')
             novel_length=len(open_file)
-            if type(novel_length) != list:
-                lengths[novel_name]=novel_length
-            else:
-                print(novel_name)
+            lengths[novel_name].append(novel_length)
             names[novel_name].append(novel)
-            characters_dict[novel_name] = int(line4)
+            characters_dict[novel_name].append(int(line4))
             #print(novel_name)
             #print(len(characters_frequency))
             std_characters_frequency=numpy.std(characters_frequency)
             characters_std[novel_name].append(std_characters_frequency)
     if marker==False:
-        #print(novel_name)
-        pass
+        print(novel_name)
     #import pdb; pdb.set_trace()
 
 average_mrr=numpy.median(list_var_mrr)
@@ -161,18 +155,7 @@ average_mean=numpy.median(list_var_mean)
 var_mean=numpy.var(list_var_mean)
 average_characters=int(round(numpy.mean(characters)))
 if average_characters>1.0:
-    setup_medians = [v for k, v in plot_median.items() if v != []]
-    #print(setup_medians)
-    setup_lengths = [v for k,v in lengths.items() if v != []]
-    #print(setup_lengths)
-    setup_chars = [v for k,v in characters_dict.items() if v != []]
-    #print(setup_chars)
-    setup_std = [v for k,v in characters_std.items() if v != []]
-    #print(setup_std)
-    spearman_lengths=round(scipy.stats.spearmanr(setup_lengths, setup_medians)[0],2) 
-    spearman_chars=round(scipy.stats.spearmanr(setup_chars, setup_medians)[0],2)
-    spearman_std = round(scipy.stats.spearmanr(setup_std, setup_medians)[0],2)
-    print('\nSetup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}\nCorrelation with length: {}\nCorrelation with number of characters: {}\nCorrelation with standard deviation of characters frequency: {}\n'.format(setup_shorthand, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr), spearman_lengths, spearman_chars, spearman_std))
+    print('\nSetup: {}\n\nMedian MRR: {}\nMRR Variance: {}\nMedian Median: {}\nVariance in median median: {}\nMedian of means: {}\nMedian of means variance: {}\nAverage number of characters: {}\nTotal of rankings taken into account: {}\n'.format(setup_shorthand, average_mrr, var_mrr, average_median, var_median, average_mean, var_mean, average_characters, len(list_var_mrr)))
 
     if args.make_plots:
         results_output=open('{}/doppel_results_{}.txt'.format(output_folder, novel),'w')
