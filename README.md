@@ -10,28 +10,19 @@ The final goal is to be able to generate a faithful semantic representation for 
 
 ### Doppelganger test:
 
-| TRAINING MODE | PROPER NOUNS | COMMON NOUNS |
-| --- | --- | --- |
-| _**Count**_ | - |  -  |
-| _**Bert**_ (54) | **0.505** - **3.0** |  -  |
-| _**Character2Vec**_ (59) | 0.335 - 4.5 |  -  |
+| TRAINING MODE | PROPER NOUNS | PROPER NOUNS + CATEGORY | COMMON NOUNS |
+| --- | --- | --- | --- |
+| _**Count**_ | 0.432 - 4.0 | 0.319 - 5.0 |  0.712 -  1.0 |
+| _**Bert**_ (54) | **0.505** - **3.0** | **0.621** -  **1.75** |  **0.935** - **1.0**  |
+| _**Character2Vec**_ (59) | 0.335 - 4.5 | 0.332 - 4.75 |  0.369 - 4.5  |
 
 ### Make Quality First Again test:
 
-| TRAINING MODE| PROPER NOUNS |
-| --- | --- |
-| _**Count**_ | ... - ... |
-| _**Bert**_ | 0.498 - 3.0 |
-| _**Character2Vec**_ | ... - ... |
-
-### PROTOTYPE SETUP - Doppelganger test:
-
-| TRAINING MODE | PROPER NOUNS |
-| --- | --- |
-| _**Count**_ |  -  |
-| _**Bert**_ (54) |  0.621 -  1.75  |
-| _**Character2Vec**_ | - |
-
+| TRAINING MODE| PROPER NOUNS | COMMON NOUNS |
+| --- | --- | --- |
+| _**Count**_ | **0.544** - **2.5** | 0.503 - 2.5 |
+| _**Bert**_ | 0.498 - 3.0 | **0.630** - **1.5** |
+| _**Character2Vec**_ | 0.340 - 5.0 | 0.000 - 0.0 |
 
 ## Results on 12 novels:
 
